@@ -339,14 +339,24 @@ li {
 
 .section-body {
   display: grid;
-  gap: 1rem;
+  gap: 1.05rem;
   max-width: 760px;
   padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.section-body h2 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.15rem;
+}
+
+.section-body h2:first-child {
+  margin-top: 0;
 }
 
 .section-body p {
   margin-bottom: 0;
   font-size: 1.08rem;
+  line-height: 1.75;
 }
 
 .placeholder-copy {
