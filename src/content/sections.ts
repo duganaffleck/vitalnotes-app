@@ -1600,12 +1600,12 @@ const sectionSeeds: SectionSeed[] = [
     'transfer',
   ],
   relatedSections: [
-    'cognitive-load',
-    'why-studying-feels-productive-but-fails-under-pressure',
-    'meaning-before-memorization',
-    'smart-notes-for-paramedic-students',
-    'scenario-days-as-learning-tools',
-  ],
+  'cognitive-load',
+  'why-studying-feels-productive-but-fails-under-pressure',
+  'meaning-before-memorization',
+  'smart-notes-for-paramedic-students',
+  'retrieval-and-spaced-learning',
+],
 },
  {
   id: 'meaning-before-memorization',
