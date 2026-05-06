@@ -621,267 +621,323 @@ const sectionSeeds: SectionSeed[] = [
     'Help students understand cognitive load as a normal part of paramedic learning, especially when assessment, communication, memory, decision-making, and procedures are all competing for attention.',
   pageType: 'conceptual',
   body: [
-    {
-      type: 'paragraph',
-      text: 'There is a particular kind of frustration that shows up early in paramedic training.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student studies. They know the content well enough to explain it. They can talk through an assessment sequence, describe a directive, list relevant findings, and identify what they would probably do in a calm conversation.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Then the scenario starts, and something simple disappears.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not something obscure. Not a rare contraindication hidden three layers deep. Something ordinary. A reassessment. A blood glucose. A second set of vitals. A question they meant to ask. A safety check they usually remember.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Afterward, the student often says, “I don’t know why I forgot that. I knew it.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'And most of the time, they are telling the truth.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Cognitive load is one way to understand what happened.',
-    },
-    {
-      type: 'heading',
-      text: 'What cognitive load means here',
-    },
-    {
-      type: 'paragraph',
-      text: 'Cognitive load is the amount of mental work your brain is trying to manage at one time.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That may sound simple, but in paramedicine the load builds quickly. You are rarely doing one thing. You are listening to the patient, watching their breathing, thinking about the scene, checking your partner’s progress, remembering a directive, deciding what matters now, and trying not to lose the overall direction of the call.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Even in a lab, where the patient is simulated and the stakes are controlled, the mental task is still crowded.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Your working memory can only hold and manipulate so much at once. When too many things compete for that limited space, performance starts to change. You may become more reactive. You may fixate on one task. You may stop hearing parts of the history. You may keep moving, but lose track of why you are moving.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is one way cognitive load shows up in performance.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It does not mean you are careless. It means the task is asking your attention to carry more than it can manage cleanly.',
-    },
-    {
-      type: 'heading',
-      text: 'Why trying harder does not always fix it',
-    },
-    {
-      type: 'paragraph',
-      text: 'When students feel overloaded, the first instinct is usually to push harder.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Focus more. Study more. Memorize the steps again. Promise yourself you will not miss that thing next time.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Sometimes that helps, especially if the issue really was a knowledge gap. But cognitive load problems are not always fixed by adding more content. In fact, adding more to remember can make the problem worse if the structure underneath has not improved.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student who keeps forgetting reassessment may not need another reminder that reassessment matters. They may need a more stable place for reassessment to live in their call flow.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The same is true for other common misses. A blood glucose in an altered patient may disappear because the student has not built a reliable early check for simple reversible causes. A directive may feel frozen not because the wording was never studied, but because the student does not yet understand what the directive is protecting.',
-    },
-    {
-      type: 'paragraph',
-      text: 'More effort is not useless. It just needs to be aimed at the right problem.',
-    },
-    {
-      type: 'heading',
-      text: 'What overload looks like in a scenario',
-    },
-    {
-      type: 'paragraph',
-      text: 'Cognitive overload usually does not feel dramatic from the outside.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student may still look busy. They may still be performing skills, asking questions, talking to their partner, and moving through the call. The problem is that their attention has narrowed without them noticing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You might see it as a student spending several minutes adjusting oxygen delivery while the larger assessment stalls. Or getting focused on lung sounds and missing that the patient’s mental status has changed. Or asking a long list of history questions without naming the risk that is already becoming clear.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In the moment, this can feel like being behind.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not always panicked. Just crowded. The student knows there are several things to do, but the order becomes blurry. They may start reaching for the next visible task instead of the next important one.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is one of the reasons cognitive load matters so much in paramedic education. When load gets too high, students do not simply forget facts. They lose access to priorities.',
-    },
-    {
-      type: 'heading',
-      text: 'A paramedic example',
-    },
-    {
-      type: 'paragraph',
-      text: 'Picture a student running a respiratory scenario.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The patient is short of breath, anxious, and speaking in short phrases. The student notices wheezing, checks oxygen saturation, applies oxygen, and starts thinking about bronchodilator treatment. So far, the call is moving.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Then the patient becomes quieter.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student is still busy. They are adjusting equipment, thinking through the medication, trying to communicate with their partner, and watching the monitor. But they do not pause to reassess work of breathing, mental status, or whether the quietness represents improvement or fatigue.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In debrief, the student may say, “I knew I should reassess. I just got focused on the treatment.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is a cognitive load problem.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The treatment became the center of attention. The reassessment, which is what gives the treatment meaning, slipped out of reach.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The fix is not simply telling the student, “Remember to reassess.” They already know that. The better question is where reassessment belongs in their structure so it returns after an intervention, even when the call feels busy.',
-    },
-    {
-      type: 'heading',
-      text: 'Structure protects thinking',
-    },
-    {
-      type: 'paragraph',
-      text: 'Structure matters because it reduces the number of decisions your working memory has to remake in the moment.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If every scenario requires you to rebuild your approach from scratch, you will run out of mental space quickly. You will be deciding what to ask, what to check, what matters, what comes next, what your partner needs, and what the patient is doing, all at the same time.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A stable structure does not remove clinical thinking. It protects it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'When your basic sequence is reliable, your attention is freed for the parts of the call that actually require judgment. You can notice when the patient changes. You can hear the detail in the history. You can compare findings instead of just collecting them. You can ask whether your first explanation still fits.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This is why experienced clinicians often look calmer than students. It is not because the call is simple. It is because more of the basic structure is already available to them. They are not spending as much attention deciding where their attention should go.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is part of what you are building as a student.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You are not only building knowledge. You are building structure that can still be used when the call gets crowded.',
-    },
-    {
-      type: 'heading',
-      text: 'Some load belongs in the work',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not all cognitive load is bad.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Some of it belongs in the work. Assessing a sick patient should require thinking. Making decisions with incomplete information should take effort. Learning a new skill should feel mentally demanding at first.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of load belongs in the work.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem is wasted load.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Wasted load comes from things like unclear routines, messy notes, poorly understood directives, trying to remember every step instead of using a stable assessment pattern, or repeatedly deciding the same basic priorities from scratch.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Students often blame themselves for this kind of strain. They assume they are slow, scattered, or not confident enough. Sometimes the better explanation is that too much of their attention is being spent on things that could have been structured earlier.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A good learning system does not remove challenge. It reduces unnecessary strain so the real challenge can be handled better.',
-    },
-    {
-      type: 'heading',
-      text: 'How to start working with cognitive load',
-    },
-    {
-      type: 'paragraph',
-      text: 'For now, do not try to fix everything.',
-    },
-    {
-      type: 'paragraph',
-      text: 'After a lab or scenario, choose one moment where your thinking became crowded. Not the whole call. Just one moment.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Ask what was competing for your attention there.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Were you trying to remember a sequence? Were you unsure what mattered most? Were you focused on a task while the patient’s overall condition was changing? Were you waiting for certainty before acting? Were you carrying too many possible explanations without a way to sort them?',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of question is more useful than simply asking, “What did I forget?”',
-    },
-    {
-      type: 'paragraph',
-      text: 'Forgetting is often the surface problem. The better learning is underneath it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Once you identify where the load built up, you can decide what kind of support is needed. Maybe you need a better assessment routine. Maybe a concept needs to be understood more clearly. Maybe a directive needs to be learned by purpose, not just wording. Maybe a note needs to be rebuilt so it supports thinking instead of storage.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is where the rest of VitalNotes starts to connect.',
-    },
-    {
-      type: 'heading',
-      text: 'Moving forward',
-    },
-    {
-      type: 'paragraph',
-      text: 'Cognitive load helps explain why capable students can lose access to simple things under pressure.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The next section looks at one of the most common reasons students get caught by this: studying can feel productive even when it is not preparing the brain to retrieve and use knowledge in motion.',
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: 'There is a particular kind of frustration that shows up early in paramedic training.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student studies. They know the content well enough to explain it. They can talk through an assessment sequence, describe a directive, list relevant findings, and identify what they would probably do in a calm conversation.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Then the scenario starts, and something simple disappears.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not something obscure. Not a rare contraindication hidden three layers deep. Something ordinary. A reassessment. A blood glucose. A second set of vitals. A question they meant to ask. A safety check they usually remember.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Afterward, the student often says, “I don’t know why I forgot that. I knew it.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'And most of the time, they are telling the truth.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Cognitive load is one way to understand what happened.',
+  },
+  {
+    type: 'heading',
+    text: 'What cognitive load means here',
+  },
+  {
+    type: 'paragraph',
+    text: 'Cognitive load is the amount of mental work your brain is trying to manage at one time.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That may sound simple, but in paramedicine the load builds quickly. You are rarely doing one thing. You are listening to the patient, watching their breathing, thinking about the scene, checking your partner’s progress, remembering a directive, deciding what matters now, and trying not to lose the overall direction of the call.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Even in a lab, where the patient is simulated and the stakes are controlled, the mental task is still crowded.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Your working memory can only hold and manipulate so much at once. When too many things compete for that limited space, performance starts to change.',
+  },
+  {
+    type: 'list',
+    items: [
+      'You may become more reactive.',
+      'You may fixate on one task.',
+      'You may stop hearing parts of the history.',
+      'You may keep moving, but lose track of why you are moving.',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That is one way cognitive load shows up in performance.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It does not mean you are careless. It means the task is asking your attention to carry more than it can manage cleanly.',
+  },
+  {
+    type: 'heading',
+    text: 'Why trying harder does not always fix it',
+  },
+  {
+    type: 'paragraph',
+    text: 'When students feel overloaded, the first instinct is usually to push harder.',
+  },
+  {
+    type: 'list',
+    items: [
+      'Focus more.',
+      'Study more.',
+      'Memorize the steps again.',
+      'Promise yourself you will not miss that thing next time.',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'Sometimes that helps, especially if the issue really was a knowledge gap. But cognitive load problems are not always fixed by adding more content. In fact, adding more to remember can make the problem worse if the structure underneath has not improved.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student who keeps forgetting reassessment may not need another reminder that reassessment matters. They may need a more stable place for reassessment to live in their call flow.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The same is true for other common misses. A blood glucose in an altered patient may disappear because the student has not built a reliable early check for simple reversible causes. A directive may feel frozen not because the wording was never studied, but because the student does not yet understand what the directive is protecting.',
+  },
+  {
+    type: 'paragraph',
+    text: 'More effort is not useless. It just needs to be aimed at the right problem.',
+  },
+  {
+    type: 'heading',
+    text: 'What overload looks like in a scenario',
+  },
+  {
+    type: 'paragraph',
+    text: 'Cognitive overload usually does not feel dramatic from the outside.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student may still look busy. They may still be performing skills, asking questions, talking to their partner, and moving through the call. The problem is that their attention has narrowed without them noticing.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You might see it as:',
+  },
+  {
+    type: 'list',
+    items: [
+      'a student spending several minutes adjusting oxygen delivery while the larger assessment stalls',
+      'getting focused on lung sounds and missing that the patient’s mental status has changed',
+      'asking a long list of history questions without naming the risk that is already becoming clear',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'In the moment, this can feel like being behind.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not always panicked. Just crowded. The student knows there are several things to do, but the order becomes blurry. They may start reaching for the next visible task instead of the next important one.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is one of the reasons cognitive load matters so much in paramedic education. When load gets too high, students do not simply forget facts. They lose access to priorities.',
+  },
+  {
+    type: 'heading',
+    text: 'A paramedic example',
+  },
+  {
+    type: 'paragraph',
+    text: 'Picture a student running a respiratory scenario.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The patient is short of breath, anxious, and speaking in short phrases. The student notices wheezing, checks oxygen saturation, applies oxygen, and starts thinking about bronchodilator treatment. So far, the call is moving.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Then the patient becomes quieter.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The student is still busy. They are adjusting equipment, thinking through the medication, trying to communicate with their partner, and watching the monitor. But they do not pause to reassess work of breathing, mental status, or whether the quietness represents improvement or fatigue.',
+  },
+  {
+    type: 'paragraph',
+    text: 'In debrief, the student may say, “I knew I should reassess. I just got focused on the treatment.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is a cognitive load problem.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The treatment became the center of attention. The reassessment, which is what gives the treatment meaning, slipped out of reach.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The fix is not simply telling the student, “Remember to reassess.” They already know that. The better question is where reassessment belongs in their structure so it returns after an intervention, even when the call feels busy.',
+  },
+  {
+    type: 'heading',
+    text: 'Structure protects thinking',
+  },
+  {
+    type: 'paragraph',
+    text: 'Structure matters because it reduces the number of decisions your working memory has to remake in the moment.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If every scenario requires you to rebuild your approach from scratch, you will run out of mental space quickly. You will be deciding what to ask, what to check, what matters, what comes next, what your partner needs, and what the patient is doing, all at the same time.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A stable structure does not remove clinical thinking. It protects it.',
+  },
+  {
+    type: 'paragraph',
+    text: 'When your basic sequence is reliable, your attention is freed for the parts of the call that actually require judgment.',
+  },
+  {
+    type: 'list',
+    items: [
+      'You can notice when the patient changes.',
+      'You can hear the detail in the history.',
+      'You can compare findings instead of just collecting them.',
+      'You can ask whether your first explanation still fits.',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'This is why experienced clinicians often look calmer than students. It is not because the call is simple. It is because more of the basic structure is already available to them. They are not spending as much attention deciding where their attention should go.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is part of what you are building as a student.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You are not only building knowledge. You are building structure that can still be used when the call gets crowded.',
+  },
+  {
+    type: 'heading',
+    text: 'Some load belongs in the work',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not all cognitive load is bad.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Some of it belongs in the work. Assessing a sick patient should require thinking. Making decisions with incomplete information should take effort. Learning a new skill should feel mentally demanding at first.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That kind of load belongs in the work.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The problem is wasted load.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Wasted load comes from things like:',
+  },
+  {
+    type: 'list',
+    items: [
+      'unclear routines',
+      'messy notes',
+      'poorly understood directives',
+      'trying to remember every step instead of using a stable assessment pattern',
+      'repeatedly deciding the same basic priorities from scratch',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'Students often blame themselves for this kind of strain. They assume they are slow, scattered, or not confident enough. Sometimes the better explanation is that too much of their attention is being spent on things that could have been structured earlier.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A good learning system does not remove challenge. It reduces unnecessary strain so the real challenge can be handled better.',
+  },
+  {
+    type: 'heading',
+    text: 'How to start working with cognitive load',
+  },
+  {
+    type: 'paragraph',
+    text: 'For now, do not try to fix everything.',
+  },
+  {
+    type: 'paragraph',
+    text: 'After a lab or scenario, choose one moment where your thinking became crowded. Not the whole call. Just one moment.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Ask what was competing for your attention there.',
+  },
+  {
+    type: 'list',
+    items: [
+      'Were you trying to remember a sequence?',
+      'Were you unsure what mattered most?',
+      'Were you focused on a task while the patient’s overall condition was changing?',
+      'Were you waiting for certainty before acting?',
+      'Were you carrying too many possible explanations without a way to sort them?',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That kind of question is more useful than simply asking, “What did I forget?”',
+  },
+  {
+    type: 'paragraph',
+    text: 'Forgetting is often the surface problem. The better learning is underneath it.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Once you identify where the load built up, you can decide what kind of support is needed.',
+  },
+  {
+    type: 'list',
+    items: [
+      'Maybe you need a better assessment routine.',
+      'Maybe a concept needs to be understood more clearly.',
+      'Maybe a directive needs to be learned by purpose, not just wording.',
+      'Maybe a note needs to be rebuilt so it supports thinking instead of storage.',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That is where the rest of VitalNotes starts to connect.',
+  },
+  {
+    type: 'heading',
+    text: 'Moving forward',
+  },
+  {
+    type: 'paragraph',
+    text: 'Cognitive load helps explain why capable students can lose access to simple things under pressure.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The next section looks at one of the most common reasons students get caught by this: studying can feel productive even when it is not preparing the brain to retrieve and use knowledge in motion.',
+  },
+],
   glossaryTerms: [
     'cognitive-load',
     'working-memory',
@@ -911,287 +967,301 @@ const sectionSeeds: SectionSeed[] = [
     'Help students understand why familiar study methods can feel productive without building the kind of access needed under pressure, and prepare them for the later section on retrieval and spaced learning.',
   pageType: 'conceptual',
   body: [
-    {
-      type: 'paragraph',
-      text: 'Some studying feels productive because it feels calm.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You sit down with your notes. The slides are open. The chart is in front of you. The directive is written out clearly. The medication dose is where it always is. The contraindications are listed in order. Nothing is moving, nobody is watching, and the material has labels attached to it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In that setting, things can feel solid.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You recognize the words. You remember seeing the explanation before. You can follow the logic while the page is guiding you. It feels like the knowledge is there, and in one sense, it is.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Then a scenario starts, and the same knowledge does not return the same way.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That can be frustrating because the student did not necessarily avoid the work. They may have spent real time studying. They may have reviewed carefully. They may have felt reasonably prepared. The problem is that performance asks for something different than recognition.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In a scenario, you are not looking at the answer. You are trying to bring it back while also assessing, listening, communicating, watching the patient, and deciding what matters next.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is a different task.',
-    },
-    {
-      type: 'heading',
-      text: 'Familiar is not the same as available',
-    },
-    {
-      type: 'paragraph',
-      text: 'A lot of common studying builds familiarity.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Familiarity is the sense that you have seen something before. It is what happens when the material looks clear while you are reading it. The heading reminds you what the topic is. The table separates the categories. The bolded term tells you what matters. The slide order gives the idea a shape before you have to create one yourself.',
-    },
-    {
-      type: 'paragraph',
-      text: 'There is nothing wrong with familiarity. It is part of learning.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem starts when familiarity is mistaken for access.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Access means you can bring the idea back when the cues are gone. You can explain it without the paragraph in front of you. You can recognize it when it appears in a patient instead of on a slide. You can use it when the presentation is incomplete, the room is busy, and your attention is already carrying several other things.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Paramedic learning depends heavily on access.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The patient will not present as a clean heading. They will present as breathing pattern, skin, posture, history fragments, vital signs, family comments, scene context, and changes over time. The student has to assemble meaning from that.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Review can make material feel known before it is ready for that kind of work.',
-    },
-    {
-      type: 'heading',
-      text: 'Why review can hide weak learning',
-    },
-    {
-      type: 'paragraph',
-      text: 'Most students are not lazy about studying. Many are doing exactly what school has trained them to do.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They review. They rewrite. They organize. They make cleaner notes. They spend time with the material, and time with the material feels like progress.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Sometimes it is progress.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The issue is that review often keeps the task too comfortable. The answer is visible. The structure is already provided. The cues are stable. The student can follow the explanation without having to rebuild it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Paramedicine rarely asks for knowledge that gently.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In labs and OSCEs, the student has to decide what matters without the slide headings. They have to notice which findings belong together. They have to remember a directive while also deciding whether the patient fits it. They have to keep thinking after the first intervention instead of mentally relaxing because something has been done.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is why studying can feel productive and still not transfer well. The study session may have strengthened recognition without doing enough to strengthen recall, comparison, or use.',
-    },
-    {
-      type: 'heading',
-      text: 'A common scenario problem',
-    },
-    {
-      type: 'paragraph',
-      text: 'Picture a student preparing for a respiratory lab.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The night before, they review asthma, COPD, and heart failure. The notes are organized. The categories look clear while reading. Asthma has bronchoconstriction and wheezing. COPD has chronic history and air trapping. Heart failure has fluid backup, crackles, edema, and cardiac history.',
-    },
-    {
-      type: 'paragraph',
-      text: 'At the desk, those categories behave themselves.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In the scenario, they do not.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The patient is short of breath. They are anxious. They have a cough. Their oxygen saturation is not terrible, but their work of breathing is high. Lung sounds are present, but not as clean as the notes made them seem. The student starts trying to remember which condition this is supposed to be.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The issue is not that they never studied.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The issue is that their studying may have stayed too close to the notes. They reviewed the differences while the categories were already separated for them. They did not spend enough time trying to retrieve those differences without cues, compare similar presentations, or ask what would make one explanation more likely than another.',
-    },
-    {
-      type: 'paragraph',
-      text: 'So when the call becomes less tidy, the categories start to blur.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That blur is not always a knowledge failure. Sometimes it is a practice-design problem.',
-    },
-    {
-      type: 'heading',
-      text: 'Pressure reveals what study did not test',
-    },
-    {
-      type: 'paragraph',
-      text: 'Pressure does not create every learning problem, but it makes weak access easier to see.',
-    },
-    {
-      type: 'paragraph',
-      text: 'When a student is calm, rested, and looking directly at their notes, fragile learning can hide. The material feels known because the environment is helping. The page gives cues. The order gives structure. The answer is nearby.',
-    },
-    {
-      type: 'paragraph',
-      text: 'During a scenario, that support disappears.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Now the student has to carry more in working memory. They have to listen, observe, decide, communicate, and remember at the same time. If knowledge has mostly been practiced through recognition, it may not return cleanly under that load.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This is why students sometimes describe “blanking.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'Blanking is not always empty memory. Sometimes the knowledge is there, but it has not been practiced in a way that makes it reachable under delay, distraction, or pressure.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That distinction matters. If the problem is missing knowledge, the student needs to learn the content. If the problem is access, the student needs to practice bringing the content back.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Those are related, but they are not the same job.',
-    },
-    {
-      type: 'heading',
-      text: 'Better studying asks more of the brain',
-    },
-    {
-      type: 'paragraph',
-      text: 'Better studying is not always longer studying.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Often, it is studying that asks the brain to do more of the work.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of rereading the asthma notes, close them and explain what air trapping means in your own words. Instead of looking over the nitroglycerin directive again, try to recall the major indications, contraindications, and the reason they matter before checking. Instead of reviewing a comparison chart, cover it and ask what would actually separate those conditions during a call.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This usually feels worse at first.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It is slower. It exposes gaps. It can make you feel less confident for a few minutes. You may realize that you recognized the explanation more easily than you could produce it. You may remember the wording of a directive but not the purpose behind it. You may know the list of symptoms but struggle to explain why they belong together.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That discomfort is useful when it is handled properly.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It shows you where the learning is still weak enough to need attention. It shows which connections are not stable yet. It shows where the notes are doing too much of the work for you.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is better information than another smooth review session.',
-    },
-    {
-      type: 'heading',
-      text: 'What productive studying can look like',
-    },
-    {
-      type: 'paragraph',
-      text: 'A useful study session may feel a little uneven.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You try to explain something and miss part of it. You check the notes and correct it. You compare two similar conditions and realize you were using the wrong cue. You attempt to recall a directive and notice that you remember the threshold but not what the threshold is protecting. You look back at a scenario mistake and realize the problem was not the treatment itself, but the moment where you stopped reassessing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of studying does not always feel polished.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It can feel like you are finding problems.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In a way, you are. But you are finding them at the desk, in a lower-stakes environment, before a scenario finds them for you. That is the advantage. You are not trying to prove that you know everything. You are trying to see what is stable enough to use and what still needs support.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The goal is not to make studying feel worse for its own sake. The goal is to make studying more honest.',
-    },
-    {
-      type: 'heading',
-      text: 'What to change first',
-    },
-    {
-      type: 'paragraph',
-      text: 'Do not overhaul your whole study routine at once.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Start by adding a small retrieval step after review.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Read a section of your notes, then close them. Explain the idea out loud, write a rough version from memory, or ask yourself what the concept would look like in a patient. Then reopen the notes and check what was accurate, what was missing, and what only felt obvious because the page was in front of you.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This does not need to take long.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A few minutes of honest retrieval can show you more than a long stretch of comfortable rereading. Not because rereading is useless, but because rereading often hides the gap between recognition and access.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You are trying to find that gap early enough to do something about it.',
-    },
-    {
-      type: 'heading',
-      text: 'Moving forward',
-    },
-    {
-      type: 'paragraph',
-      text: 'Studying feels productive when the material becomes familiar. Paramedic performance needs knowledge that can be retrieved, connected, and used while the call is moving.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The next section looks at why learning strain should not always be treated as a personal problem, and how to tell the difference between useful difficulty and wasted effort.',
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: `Some studying feels productive because it feels calm.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You sit down with your notes. The slides are open. The chart is in front of you. The directive is written out clearly. The medication dose is where it always is. The contraindications are listed in order. Nothing is moving, nobody is watching, and the material has labels attached to it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In that setting, things can feel solid.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You recognize the words. You remember seeing the explanation before. You can follow the logic while the page is guiding you. It feels like the knowledge is there, and in one sense, it is.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Then a scenario starts, and the same knowledge does not return the same way.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That can be frustrating because the student did not necessarily avoid the work. They may have spent real time studying. They may have reviewed carefully. They may have felt reasonably prepared. The problem is that performance asks for something different than recognition.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In a scenario, you are not looking at the answer. You are trying to bring it back while also assessing, listening, communicating, watching the patient, and deciding what matters next.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is a different task.`,
+  },
+  {
+    type: 'heading',
+    text: `Familiar is not the same as available`,
+  },
+  {
+    type: 'paragraph',
+    text: `A lot of common studying builds familiarity.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Familiarity is the sense that you have seen something before. It is what happens when the material looks clear while you are reading it. The heading reminds you what the topic is. The table separates the categories. The bolded term tells you what matters. The slide order gives the idea a shape before you have to create one yourself.`,
+  },
+  {
+    type: 'paragraph',
+    text: `There is nothing wrong with familiarity. It is part of learning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The problem starts when familiarity is mistaken for access.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Access means you can bring the idea back when the cues are gone. You can explain it without the paragraph in front of you. You can recognize it when it appears in a patient instead of on a slide. You can use it when the presentation is incomplete, the room is busy, and your attention is already carrying several other things.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Paramedic learning depends heavily on access.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The patient will not present as a clean heading. They will present as breathing pattern, skin, posture, history fragments, vital signs, family comments, scene context, and changes over time. The student has to assemble meaning from that.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Review can make material feel known before it is ready for that kind of work.`,
+  },
+  {
+    type: 'heading',
+    text: `Why review can hide weak learning`,
+  },
+  {
+    type: 'paragraph',
+    text: `Most students are not lazy about studying. Many are doing exactly what school has trained them to do.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They review. They rewrite. They organize. They make cleaner notes. They spend time with the material, and time with the material feels like progress.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Sometimes it is progress.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The issue is that review often keeps the task too comfortable. The answer is visible. The structure is already provided. The cues are stable. The student can follow the explanation without having to rebuild it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Paramedicine rarely asks for knowledge that gently.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In labs and OSCEs, the student has to decide what matters without the slide headings. They have to notice which findings belong together. They have to remember a directive while also deciding whether the patient fits it. They have to keep thinking after the first intervention instead of mentally relaxing because something has been done.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is why studying can feel productive and still not transfer well. The study session may have strengthened recognition without doing enough to strengthen recall, comparison, or use.`,
+  },
+  {
+    type: 'heading',
+    text: `A common scenario problem`,
+  },
+  {
+    type: 'paragraph',
+    text: `Picture a student preparing for a respiratory lab.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The night before, they review asthma, COPD, and heart failure. The notes are organized. The categories look clear while reading. Asthma has bronchoconstriction and wheezing. COPD has chronic history and air trapping. Heart failure has fluid backup, crackles, edema, and cardiac history.`,
+  },
+  {
+    type: 'paragraph',
+    text: `At the desk, those categories behave themselves.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In the scenario, they do not.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The patient is short of breath. They are anxious. They have a cough. Their oxygen saturation is not terrible, but their work of breathing is high. Lung sounds are present, but not as clean as the notes made them seem. The student starts trying to remember which condition this is supposed to be.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The issue is not that they never studied.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The issue is that their studying may have stayed too close to the notes. They reviewed the differences while the categories were already separated for them. They did not spend enough time trying to retrieve those differences without cues, compare similar presentations, or ask what would make one explanation more likely than another.`,
+  },
+  {
+    type: 'paragraph',
+    text: `So when the call becomes less tidy, the categories start to blur.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That blur is not always a knowledge failure. Sometimes it is a practice-design problem.`,
+  },
+  {
+    type: 'heading',
+    text: `Pressure reveals what study did not test`,
+  },
+  {
+    type: 'paragraph',
+    text: `Pressure does not create every learning problem, but it makes weak access easier to see.`,
+  },
+  {
+    type: 'paragraph',
+    text: `When a student is calm, rested, and looking directly at their notes, fragile learning can hide. The material feels known because the environment is helping. The page gives cues. The order gives structure. The answer is nearby.`,
+  },
+  {
+    type: 'paragraph',
+    text: `During a scenario, that support disappears.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Now the student has to carry more in working memory. They have to listen, observe, decide, communicate, and remember at the same time. If knowledge has mostly been practiced through recognition, it may not return cleanly under that load.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is why students sometimes describe “blanking.”`,
+  },
+  {
+    type: 'paragraph',
+    text: `Blanking is not always empty memory. Sometimes the knowledge is there, but it has not been practiced in a way that makes it reachable under delay, distraction, or pressure.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That distinction matters. If the problem is missing knowledge, the student needs to learn the content. If the problem is access, the student needs to practice bringing the content back.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Those are related, but they are not the same job.`,
+  },
+  {
+    type: 'heading',
+    text: `Better studying asks more of the brain`,
+  },
+  {
+    type: 'paragraph',
+    text: `Better studying is not always longer studying.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Often, it is studying that asks the brain to do more of the work.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instead of staying close to the notes, make the brain retrieve, explain, compare, and check.`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Instead of rereading the asthma notes, close them and explain what air trapping means in your own words.`,
+      `Instead of looking over the nitroglycerin directive again, try to recall the major indications, contraindications, and the reason they matter before checking.`,
+      `Instead of reviewing a comparison chart, cover it and ask what would actually separate those conditions during a call.`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `This usually feels worse at first.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It is slower. It exposes gaps. It can make you feel less confident for a few minutes. You may realize that you recognized the explanation more easily than you could produce it. You may remember the wording of a directive but not the purpose behind it. You may know the list of symptoms but struggle to explain why they belong together.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That discomfort is useful when it is handled properly.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It shows you where the learning is still weak enough to need attention. It shows which connections are not stable yet. It shows where the notes are doing too much of the work for you.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is better information than another smooth review session.`,
+  },
+  {
+    type: 'heading',
+    text: `What productive studying can look like`,
+  },
+  {
+    type: 'paragraph',
+    text: `A useful study session may feel a little uneven.`,
+  },
+  {
+    type: 'list',
+    items: [
+      `You try to explain something and miss part of it.`,
+      `You check the notes and correct it.`,
+      `You compare two similar conditions and realize you were using the wrong cue.`,
+      `You attempt to recall a directive and notice that you remember the threshold but not what the threshold is protecting.`,
+      `You look back at a scenario mistake and realize the problem was not the treatment itself, but the moment where you stopped reassessing.`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That kind of studying does not always feel polished.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It can feel like you are finding problems.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In a way, you are. But you are finding them at the desk, in a lower-stakes environment, before a scenario finds them for you. That is the advantage. You are not trying to prove that you know everything. You are trying to see what is stable enough to use and what still needs support.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is not to make studying feel worse for its own sake. The goal is to make studying more honest.`,
+  },
+  {
+    type: 'heading',
+    text: `What to change first`,
+  },
+  {
+    type: 'paragraph',
+    text: `Do not overhaul your whole study routine at once.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Start by adding a small retrieval step after review.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Read a section of your notes, then close them. Explain the idea out loud, write a rough version from memory, or ask yourself what the concept would look like in a patient. Then reopen the notes and check what was accurate, what was missing, and what only felt obvious because the page was in front of you.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This does not need to take long.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A few minutes of honest retrieval can show you more than a long stretch of comfortable rereading. Not because rereading is useless, but because rereading often hides the gap between recognition and access.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You are trying to find that gap early enough to do something about it.`,
+  },
+  {
+    type: 'heading',
+    text: `Moving forward`,
+  },
+  {
+    type: 'paragraph',
+    text: `Studying feels productive when the material becomes familiar. Paramedic performance needs knowledge that can be retrieved, connected, and used while the call is moving.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The next section looks at why learning strain should not always be treated as a personal problem, and how to tell the difference between useful difficulty and wasted effort.`,
+  },
+],
   glossaryTerms: [
     'retrieval-practice',
     'recognition',
@@ -1220,336 +1290,309 @@ const sectionSeeds: SectionSeed[] = [
   sectionPurpose:
     'Help students interpret learning strain more carefully by distinguishing useful difficulty from wasted difficulty, without turning every struggle into a personal failure or pretending every hard moment is automatically productive.',
   pageType: 'conceptual',
-  body: [
-    {
-      type: 'paragraph',
-      text: 'Paramedic school can make strain feel like evidence.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student falls behind in studying and assumes they lack discipline. They freeze during a scenario and assume they are not confident enough. They receive the same feedback twice and assume they are not improving. They leave lab tired or embarrassed, and the whole thing starts to feel like a statement about who they are.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That interpretation is understandable. It is also not always accurate.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Learning paramedicine asks a lot from a person. There is content to understand, skills to practice, directives to apply, scenarios to run, feedback to absorb, and pressure to tolerate. Some strain comes with learning a role where knowledge has to become action.',
-    },
-    {
-      type: 'paragraph',
-      text: 'But strain is not one thing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Some difficulty is useful. Some difficulty is waste. Some comes from being challenged in the right way. Some comes from trying to learn without enough structure underneath you. Some means you are finding the edge of your current understanding. Some means the method you are using is not giving much back for the energy you are spending.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That distinction matters because students often respond to all strain the same way. They push harder, study longer, blame confidence, or decide they are falling behind. Sometimes more effort is needed. Sometimes rest is needed. Sometimes a better system is needed.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Before deciding what to do next, it helps to understand what kind of strain you are actually dealing with.',
-    },
-    {
-      type: 'heading',
-      text: 'Why strain feels personal',
-    },
-    {
-      type: 'paragraph',
-      text: 'When learning becomes difficult, students usually feel it before they can explain it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They notice that scenarios feel worse than studying. They notice that feedback hits harder than expected. They notice that they can explain something calmly, but cannot use it smoothly when observed. They notice that other students look like they are handling the program better, even though that is rarely the full truth.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In that environment, it is easy to turn a learning problem into a personal label.',
-    },
-    {
-      type: 'paragraph',
-      text: '“I am bad at scenarios.”',
-    },
-    {
-      type: 'paragraph',
-      text: '“I am not a good test taker.”',
-    },
-    {
-      type: 'paragraph',
-      text: '“I am too anxious.”',
-    },
-    {
-      type: 'paragraph',
-      text: '“I am not built for this.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'There may be something real underneath those statements, but the statements themselves are usually too broad to help. They do not tell you what to practice, what to change, or what to ask for. They turn a specific difficulty into a fixed identity.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A better question is not, “What is wrong with me?”',
-    },
-    {
-      type: 'paragraph',
-      text: 'A better question is, “What is this strain pointing toward?”',
-    },
-    {
-      type: 'paragraph',
-      text: 'That question gives you somewhere to work.',
-    },
-    {
-      type: 'heading',
-      text: 'Some difficulty belongs in the process',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not every hard moment is a sign that something has gone wrong.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Trying to retrieve information without looking at notes should feel harder than rereading. Running a scenario should feel more demanding than talking through a case at a desk. Receiving feedback should create some discomfort, especially when it shows you a gap you did not notice on your own.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of difficulty can be useful because it asks the learning system to do something real.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It asks you to bring knowledge back, compare ideas, adjust your thinking, notice a pattern, or use a skill while attention is divided. Those are the conditions paramedic learning has to prepare for. If practice never reaches that level, it may feel smooth while leaving you underprepared.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student who struggles to explain the difference between asthma, COPD, and heart failure without notes is not necessarily failing. They may have found the exact place where their understanding needs to become more usable.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student who feels awkward during reassessment practice is not necessarily behind. They may be moving from knowing reassessment matters to actually making it part of their call flow.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Useful difficulty is not comfortable, but it gives you information you can act on.',
-    },
-    {
-      type: 'heading',
-      text: 'Some difficulty is just noise',
-    },
-    {
-      type: 'paragraph',
-      text: 'Other difficulty does not help much.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Rereading the same notes for hours without testing recall can feel responsible, but it may not change what happens in a scenario. Rewriting slides into cleaner language can feel productive, but it may not help if the ideas are still disconnected. Trying to memorize a directive without understanding its purpose can create more anxiety than confidence.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This is wasted difficulty.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It uses energy without improving access, understanding, judgment, or performance.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You can often recognize it by the lack of movement. The student is working, but the same problems keep appearing in almost the same way. They study, but cannot retrieve the material. They reflect after scenarios, but do not leave with a specific adjustment. They practice skills, but never connect the skill to the decision that makes it matter.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of strain deserves attention.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not because the student is the problem, but because the method is not giving enough back.',
-    },
-    {
-      type: 'heading',
-      text: 'A lab example',
-    },
-    {
-      type: 'paragraph',
-      text: 'Picture a student preparing for a medical lab.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The night before, they review respiratory conditions. They reread notes, highlight key findings, and look over the relevant directives. It feels like a solid study session because the material is familiar and organized.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In lab, the scenario starts messy. The patient is short of breath, anxious, and answering in short phrases. The student remembers pieces of the content, but the pieces are hard to use. Several possible causes come to mind, but the findings blur together. They ask questions, but the questions do not seem to narrow the problem. They begin treatment, but reassessment becomes inconsistent once the call gets busy.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Afterward, the student feels like they did not study enough.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Maybe there is some truth to that. But it may not be the most useful explanation.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem may be that the studying did not match the task. The student reviewed information in a calm, labelled format, but the scenario required retrieval, comparison, prioritization, and reassessment under load. The strain in the scenario was real, but repeating the same study method for longer may not solve it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A better response might be to change the study task.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of rereading respiratory notes again, the student could close the notes and explain how different respiratory problems would look in a patient. They could compare similar presentations. They could ask what finding would make them change their mind. They could build a small note around one recurring confusion. They could rehearse reassessment after treatment, not as a line on a checklist, but as the moment where they find out whether their plan is working.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The work is still hard, but now the strain is aimed at the actual problem.',
-    },
-    {
-      type: 'heading',
-      text: 'How to read strain more carefully',
-    },
-    {
-      type: 'paragraph',
-      text: 'Learning strain becomes more useful when you stop treating it as one category.',
-    },
-    {
-      type: 'paragraph',
-      text: 'After a difficult study session, lab, scenario, or OSCE, try to name what kind of difficulty showed up.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Was it missing knowledge?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Was it weak retrieval?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Was too much competing for attention?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Was the structure unclear?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Was the feedback accurate but too broad?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Were you trying to fix too many things at once?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Those are different problems, and they need different responses.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A knowledge gap may need teaching, reading, or clarification. Weak retrieval may need practice bringing information back without notes. Cognitive overload may need better structure. Repeated scenario errors may need reflection or a smaller practice target. Emotional residue after feedback may need containment, not more analysis.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The goal is not to diagnose yourself perfectly.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The goal is to stop treating every hard moment as proof that you are not working hard enough.',
-    },
-    {
-      type: 'heading',
-      text: 'The danger of overcorrecting',
-    },
-    {
-      type: 'paragraph',
-      text: 'There is another trap here.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Once students realize not all strain is personal, they can swing too far in the other direction. Every hard scenario starts to feel unfair. Every uncomfortable piece of feedback feels like too much. Every difficult study session feels like proof that the system is wrong.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is not the point either.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Some difficulty belongs in the work. Paramedicine requires judgment under uncertainty. It requires skill repetition. It requires correction. It requires learning to stay functional when the first explanation does not hold.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The goal is not to remove discomfort from the process.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The goal is to make discomfort useful where possible, and reduce the parts that are only adding noise.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is a more honest standard.',
-    },
-    {
-      type: 'heading',
-      text: 'What to do next time learning feels heavy',
-    },
-    {
-      type: 'paragraph',
-      text: 'When learning feels heavy, pause before adding more hours.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Ask what kind of work the strain is asking for.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If you are rereading and nothing is changing, switch to retrieval. If you are overwhelmed in scenarios, look for where attention is becoming crowded. If directives feel fragile, look for the purpose behind the rule. If feedback keeps repeating, choose one moment to examine instead of replaying the whole call.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Small adjustments matter here.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You do not need to rebuild your whole study system every time something feels hard. In fact, that can become another form of wasted difficulty. Choose one change that would make the next attempt clearer.',
-    },
-    {
-      type: 'paragraph',
-      text: 'One better retrieval attempt.',
-    },
-    {
-      type: 'paragraph',
-      text: 'One cleaner note.',
-    },
-    {
-      type: 'paragraph',
-      text: 'One reassessment habit.',
-    },
-    {
-      type: 'paragraph',
-      text: 'One feedback point carried into the next scenario.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is usually enough to move the work forward.',
-    },
-    {
-      type: 'heading',
-      text: 'Moving forward',
-    },
-    {
-      type: 'paragraph',
-      text: 'Learning strain is not automatically a personal failure. It is also not automatically meaningful just because it feels hard.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It needs to be interpreted.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Some difficulty helps learning become stronger. Some difficulty burns effort without changing much. The next part of the guide moves from why learning feels hard into how understanding is built, starting with the difference between memorizing facts and making meaning from them.',
-    },
-  ],
+ body: [
+  {
+    type: 'paragraph',
+    text: 'Paramedic school can make strain feel like evidence.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student falls behind in studying and assumes they lack discipline. They freeze during a scenario and assume they are not confident enough. They receive the same feedback twice and assume they are not improving. They leave lab tired or embarrassed, and the whole thing starts to feel like a statement about who they are.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That interpretation is understandable. It is also not always accurate.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Learning paramedicine asks a lot from a person. There is content to understand, skills to practice, directives to apply, scenarios to run, feedback to absorb, and pressure to tolerate. Some strain comes with learning a role where knowledge has to become action.',
+  },
+  {
+    type: 'paragraph',
+    text: 'But strain is not one thing.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Some difficulty is useful. Some difficulty is waste. Some comes from being challenged in the right way. Some comes from trying to learn without enough structure underneath you. Some means you are finding the edge of your current understanding. Some means the method you are using is not giving much back for the energy you are spending.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That distinction matters because students often respond to all strain the same way. They push harder, study longer, blame confidence, or decide they are falling behind. Sometimes more effort is needed. Sometimes rest is needed. Sometimes a better system is needed.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Before deciding what to do next, it helps to understand what kind of strain you are actually dealing with.',
+  },
+  {
+    type: 'heading',
+    text: 'Why strain feels personal',
+  },
+  {
+    type: 'paragraph',
+    text: 'When learning becomes difficult, students usually feel it before they can explain it.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They notice that scenarios feel worse than studying. They notice that feedback hits harder than expected. They notice that they can explain something calmly, but cannot use it smoothly when observed. They notice that other students look like they are handling the program better, even though that is rarely the full truth.',
+  },
+  {
+    type: 'paragraph',
+    text: 'In that environment, it is easy to turn a learning problem into a personal label.',
+  },
+  {
+    type: 'list',
+    items: [
+      '“I am bad at scenarios.”',
+      '“I am not a good test taker.”',
+      '“I am too anxious.”',
+      '“I am not built for this.”',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'There may be something real underneath those statements, but the statements themselves are usually too broad to help. They do not tell you what to practice, what to change, or what to ask for. They turn a specific difficulty into a fixed identity.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A better question is not, “What is wrong with me?”',
+  },
+  {
+    type: 'paragraph',
+    text: 'A better question is, “What is this strain pointing toward?”',
+  },
+  {
+    type: 'paragraph',
+    text: 'That question gives you somewhere to work.',
+  },
+  {
+    type: 'heading',
+    text: 'Some difficulty belongs in the process',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not every hard moment is a sign that something has gone wrong.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Trying to retrieve information without looking at notes should feel harder than rereading. Running a scenario should feel more demanding than talking through a case at a desk. Receiving feedback should create some discomfort, especially when it shows you a gap you did not notice on your own.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That kind of difficulty can be useful because it asks the learning system to do something real.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It asks you to bring knowledge back, compare ideas, adjust your thinking, notice a pattern, or use a skill while attention is divided. Those are the conditions paramedic learning has to prepare for. If practice never reaches that level, it may feel smooth while leaving you underprepared.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student who struggles to explain the difference between asthma, COPD, and heart failure without notes is not necessarily failing. They may have found the exact place where their understanding needs to become more usable.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student who feels awkward during reassessment practice is not necessarily behind. They may be moving from knowing reassessment matters to actually making it part of their call flow.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Useful difficulty is not comfortable, but it gives you information you can act on.',
+  },
+  {
+    type: 'heading',
+    text: 'Some difficulty is just noise',
+  },
+  {
+    type: 'paragraph',
+    text: 'Other difficulty does not help much.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Rereading the same notes for hours without testing recall can feel responsible, but it may not change what happens in a scenario. Rewriting slides into cleaner language can feel productive, but it may not help if the ideas are still disconnected. Trying to memorize a directive without understanding its purpose can create more anxiety than confidence.',
+  },
+  {
+    type: 'paragraph',
+    text: 'This is wasted difficulty.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It uses energy without improving access, understanding, judgment, or performance.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You can often recognize it by the lack of movement. The student is working, but the same problems keep appearing in almost the same way. They study, but cannot retrieve the material. They reflect after scenarios, but do not leave with a specific adjustment. They practice skills, but never connect the skill to the decision that makes it matter.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That kind of strain deserves attention.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not because the student is the problem, but because the method is not giving enough back.',
+  },
+  {
+    type: 'heading',
+    text: 'A lab example',
+  },
+  {
+    type: 'paragraph',
+    text: 'Picture a student preparing for a medical lab.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The night before, they review respiratory conditions. They reread notes, highlight key findings, and look over the relevant directives. It feels like a solid study session because the material is familiar and organized.',
+  },
+  {
+    type: 'paragraph',
+    text: 'In lab, the scenario starts messy. The patient is short of breath, anxious, and answering in short phrases. The student remembers pieces of the content, but the pieces are hard to use. Several possible causes come to mind, but the findings blur together. They ask questions, but the questions do not seem to narrow the problem. They begin treatment, but reassessment becomes inconsistent once the call gets busy.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Afterward, the student feels like they did not study enough.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Maybe there is some truth to that. But it may not be the most useful explanation.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The problem may be that the studying did not match the task. The student reviewed information in a calm, labelled format, but the scenario required retrieval, comparison, prioritization, and reassessment under load. The strain in the scenario was real, but repeating the same study method for longer may not solve it.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A better response might be to change the study task.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Instead of rereading respiratory notes again, the student could close the notes and explain how different respiratory problems would look in a patient. They could compare similar presentations. They could ask what finding would make them change their mind. They could build a small note around one recurring confusion. They could rehearse reassessment after treatment, not as a line on a checklist, but as the moment where they find out whether their plan is working.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The work is still hard, but now the strain is aimed at the actual problem.',
+  },
+  {
+    type: 'heading',
+    text: 'How to read strain more carefully',
+  },
+  {
+    type: 'paragraph',
+    text: 'Learning strain becomes more useful when you stop treating it as one category.',
+  },
+  {
+    type: 'paragraph',
+    text: 'After a difficult study session, lab, scenario, or OSCE, try to name what kind of difficulty showed up.',
+  },
+  {
+    type: 'list',
+    items: [
+      'Was it missing knowledge?',
+      'Was it weak retrieval?',
+      'Was too much competing for attention?',
+      'Was the structure unclear?',
+      'Was the feedback accurate but too broad?',
+      'Were you trying to fix too many things at once?',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'Those are different problems, and they need different responses.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A knowledge gap may need teaching, reading, or clarification. Weak retrieval may need practice bringing information back without notes. Cognitive overload may need better structure. Repeated scenario errors may need reflection or a smaller practice target. Emotional residue after feedback may need containment, not more analysis.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The goal is not to diagnose yourself perfectly.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The goal is to stop treating every hard moment as proof that you are not working hard enough.',
+  },
+  {
+    type: 'heading',
+    text: 'The danger of overcorrecting',
+  },
+  {
+    type: 'paragraph',
+    text: 'There is another trap here.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Once students realize not all strain is personal, they can swing too far in the other direction. Every hard scenario starts to feel unfair. Every uncomfortable piece of feedback feels like too much. Every difficult study session feels like proof that the system is wrong.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is not the point either.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Some difficulty belongs in the work. Paramedicine requires judgment under uncertainty. It requires skill repetition. It requires correction. It requires learning to stay functional when the first explanation does not hold.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The goal is not to remove discomfort from the process.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The goal is to make discomfort useful where possible, and reduce the parts that are only adding noise.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is a more honest standard.',
+  },
+  {
+    type: 'heading',
+    text: 'What to do next time learning feels heavy',
+  },
+  {
+    type: 'paragraph',
+    text: 'When learning feels heavy, pause before adding more hours.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Ask what kind of work the strain is asking for.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If you are rereading and nothing is changing, switch to retrieval. If you are overwhelmed in scenarios, look for where attention is becoming crowded. If directives feel fragile, look for the purpose behind the rule. If feedback keeps repeating, choose one moment to examine instead of replaying the whole call.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Small adjustments matter here.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You do not need to rebuild your whole study system every time something feels hard. In fact, that can become another form of wasted difficulty. Choose one change that would make the next attempt clearer.',
+  },
+  {
+    type: 'list',
+    items: [
+      'One better retrieval attempt.',
+      'One cleaner note.',
+      'One reassessment habit.',
+      'One feedback point carried into the next scenario.',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That is usually enough to move the work forward.',
+  },
+  {
+    type: 'heading',
+    text: 'Moving forward',
+  },
+  {
+    type: 'paragraph',
+    text: 'Learning strain is not automatically a personal failure. It is also not automatically meaningful just because it feels hard.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It needs to be interpreted.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Some difficulty helps learning become stronger. Some difficulty burns effort without changing much. The next part of the guide moves from why learning feels hard into how understanding is built, starting with the difference between memorizing facts and making meaning from them.',
+  },
+],
   glossaryTerms: [
     'cognitive-load',
     'retrieval-practice',
