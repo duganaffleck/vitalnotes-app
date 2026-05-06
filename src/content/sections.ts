@@ -1576,352 +1576,345 @@ const sectionSeeds: SectionSeed[] = [
   sectionPurpose:
     'Help students understand that useful knowledge in paramedicine comes from connecting facts through meaning, mechanism, and consequence, not simply memorizing more isolated information.',
   pageType: 'conceptual',
-  body: [
-    {
-      type: 'paragraph',
-      text: 'A lot of paramedic students try to solve confusion by adding more information.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That makes sense at first. When you feel unsure, more facts seem like the safest answer. More signs and symptoms. More medication details. More pathophysiology. More directive language. More notes from lectures, labs, textbooks, and debriefs.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Some of that is necessary. You do need facts. You need anatomy, physiology, medication doses, contraindications, assessment findings, and directive details. None of this guide is asking you to be vague about the actual content.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem is that facts do not automatically become understanding.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student can memorize a long list of findings and still freeze when a patient does not present cleanly. They can know the symptoms of several conditions and still struggle to decide which findings matter most. They can remember what a medication does and still hesitate because they do not understand what problem it is meant to solve in that patient, at that moment.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This is where the Build Understanding cluster begins.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The first part of VitalNotes looked at why learning can feel unstable. Now we start looking at how knowledge becomes more usable. That starts with meaning.',
-    },
-    {
-      type: 'heading',
-      text: 'What meaning means here',
-    },
-    {
-      type: 'paragraph',
-      text: 'In VitalNotes, meaning does not mean personal meaning, motivation, or having a big insight about the work.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It means connection.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A fact becomes more useful when it is connected to a process, a consequence, or a decision. A symptom becomes more useful when you understand what might be producing it. A vital sign becomes more useful when you can ask whether it fits with the patient’s story. A directive becomes more useful when you understand what risk it is trying to manage.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is why understanding feels different from memorization.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Memorization can help you recall that tachycardia is a fast heart rate. Meaning helps you ask why the heart rate is fast here. Pain, fever, anxiety, hypovolemia, hypoxia, stimulant use, sepsis, exertion, and compensation for shock can all produce tachycardia, but they do not point in the same clinical direction.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The number matters. What the number belongs to matters more.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is the shift this section is trying to make.',
-    },
-    {
-      type: 'heading',
-      text: 'Why isolated facts are hard to use',
-    },
-    {
-      type: 'paragraph',
-      text: 'Isolated facts are fragile because they have to be managed one at a time.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In calm study conditions, this can feel manageable. You can review one condition, then another. You can look at a comparison chart. You can read a list of signs and symptoms and feel like the differences are clear.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In scenarios, the facts arrive mixed together.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A patient may be pale, nauseated, weak, mildly short of breath, anxious, and unable to give a clean history. Their blood pressure may be lower than expected. Their pulse may be fast. Their blood glucose may be normal. Their ECG may not show anything dramatic right away. Their family may say they have “just been off today.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'If those findings are floating separately, they compete for attention. You start juggling. You ask more questions, collect more data, and wait for one finding to finally tell you what is happening.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Sometimes that finding never arrives.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Meaning helps by giving the information a shape. You begin asking what process could explain several findings at once. You start looking for relationships instead of waiting for a single clue to rescue the call.',
-    },
-    {
-      type: 'heading',
-      text: 'A paramedic example',
-    },
-    {
-      type: 'paragraph',
-      text: 'Picture a student assessing an older patient who feels weak and unwell.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The patient is sitting in a chair, pale and tired. They feel nauseated. They deny chest pain. They are mildly short of breath when speaking. Their skin is warm. Their pulse is fast. Their blood pressure is soft. The family says they seemed normal yesterday but have been more confused this morning.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A fact-by-fact approach can scatter quickly.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student thinks about nausea, then shortness of breath, then weakness, then altered mentation, then whether this is cardiac, diabetic, infectious, neurological, anxiety-related, or something else. Each finding creates another possible direction. The student keeps gathering information, but the call does not become clearer.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A meaning-based approach asks a steadier question:',
-    },
-    {
-      type: 'paragraph',
-      text: 'What process could explain several of these findings together?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Now the student can begin building a working explanation. Maybe this is infection with early sepsis. Maybe there is dehydration or poor perfusion. Maybe the shortness of breath is not the main problem, but part of the body trying to compensate. Maybe the confusion is not a separate complaint, but part of the same larger process.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That does not mean the student has the final answer. It means the information is starting to organize.',
-    },
-    {
-      type: 'paragraph',
-      text: 'From there, the assessment becomes more purposeful. Temperature matters. Skin signs matter. Blood pressure trends matter. Mental status changes matter. Recent infection, urinary symptoms, oral intake, medications, and baseline function matter. Reassessment matters because the patient may be compensating until they are not.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The findings are the same, but now they are being used together.',
-    },
-    {
-      type: 'heading',
-      text: 'Meaning reduces the number of loose pieces',
-    },
-    {
-      type: 'paragraph',
-      text: 'Meaning helps because it lowers the number of loose pieces your working memory has to carry.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Without meaning, every finding demands its own space. Pulse, skin, breathing, blood pressure, history, medications, and patient appearance all fight for attention. You may remember many of them and still not know what to do with them.',
-    },
-    {
-      type: 'paragraph',
-      text: 'With meaning, findings begin to group.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You are no longer holding “fast pulse” as an isolated fact. You are asking what it might be compensating for. You are no longer holding “confusion” as a separate item. You are asking whether it fits with perfusion, infection, hypoxia, glucose, stroke, medication effect, or something else. You are no longer collecting vital signs just to complete a set. You are using them to test whether your explanation still makes sense.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This does not make the call easy.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It makes the information easier to work with.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That matters in paramedicine because you rarely get perfect clarity at the start. You often get fragments, changes over time, and enough uncertainty that your first explanation has to stay flexible.',
-    },
-    {
-      type: 'heading',
-      text: 'Meaning is built through better questions',
-    },
-    {
-      type: 'paragraph',
-      text: 'Meaning develops when students start asking better questions of the material.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not more complicated questions. Better ones.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of only asking, “What are the signs and symptoms?” ask what those signs and symptoms have in common. Instead of only asking, “What is the treatment?” ask what problem the treatment is trying to change. Instead of only asking, “What does the directive say?” ask what risk the directive is trying to manage.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A few questions are especially useful:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Why does this finding matter?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What process could explain several findings together?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What would I expect to see next if this explanation is right?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What does not fit?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What would make me change my mind?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What decision does this information support?',
-    },
-    {
-      type: 'paragraph',
-      text: 'These questions pull facts into relationships.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They also prepare you for clinical reasoning later, because clinical reasoning is not just knowing what things are. It is building, testing, and adjusting an explanation while the patient is still in front of you.',
-    },
-    {
-      type: 'heading',
-      text: 'Memorization still has a place',
-    },
-    {
-      type: 'paragraph',
-      text: 'This section is not an argument against memorization.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Some things need to be memorized. Medication doses. Contraindications. Directive boundaries. Assessment sequences. Critical safety checks. You do not want to be figuring out the dose of a medication during an OSCE or trying to reconstruct a contraindication from first principles while the patient is waiting.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Memory matters.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The issue is when memorization is asked to do the whole job.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Memorization gives you access to pieces. Meaning helps you use those pieces properly. You need both, but they are not the same. If you memorize without meaning, the content may stay brittle. If you chase meaning without learning the details, your thinking can become too loose to be safe.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Good learning brings them together.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You learn the facts, then keep asking what they are connected to.',
-    },
-    {
-      type: 'heading',
-      text: 'How meaning grows over time',
-    },
-    {
-      type: 'paragraph',
-      text: 'Meaning is not built all at once.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Early in paramedic school, many things feel separate because they are separate in your experience. You learn anatomy in one place, pathophysiology in another, directives somewhere else, and assessment structure during lab. Then scenarios ask you to combine all of it before the connections feel natural.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That awkwardness is expected.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Meaning grows through repeated contact with similar problems. It grows when you compare cases, notice what changed your thinking, revise an explanation after feedback, or connect a new finding to something you already understand.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student may first learn that sepsis can cause fever and tachycardia. Later, they learn that sepsis can also involve altered mentation, weakness, low blood pressure, poor intake, and vague presentations in older adults. Later still, they begin to see how those findings connect through infection, inflammation, perfusion, and compensation.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The word stayed the same, but the student’s understanding of the word became deeper and more useful.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is what you are aiming for.',
-    },
-    {
-      type: 'heading',
-      text: 'A practical way to study for meaning',
-    },
-    {
-      type: 'paragraph',
-      text: 'When you study a topic, do not stop after the list.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Choose one concept and explain what is happening underneath it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'For example, instead of only writing:',
-    },
-    {
-      type: 'paragraph',
-      text: '“Shock signs: tachycardia, hypotension, pale skin, altered LOC.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'Push one layer deeper.',
-    },
-    {
-      type: 'paragraph',
-      text: 'What is the body trying to protect? What is it failing to maintain? Why might heart rate rise before blood pressure falls? Why might altered mental status matter early? What would you expect to happen if compensation fails?',
-    },
-    {
-      type: 'paragraph',
-      text: 'This does not need to become an essay. A few careful sentences are enough.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The point is to make the mechanism visible.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Then connect that explanation to assessment. What would you look for? What would you reassess? What would make you more concerned? What would make you reconsider?',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is how facts start becoming usable.',
-    },
-    {
-      type: 'heading',
-      text: 'Moving forward',
-    },
-    {
-      type: 'paragraph',
-      text: 'Meaning helps facts become organized enough to use.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It does not replace memory. It gives memory structure. It helps students see why findings matter together, why assessment should narrow rather than simply expand, and why decisions become easier when information has a shape.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The next section builds on this by looking at pathophysiology through patterns. We will stay with the same idea, but move closer to the body itself: how mechanisms create the patterns students need to recognize in scenarios and patient care.',
-    },
-  ],
+ body: [
+  {
+    type: 'paragraph',
+    text: 'A lot of paramedic students try to solve confusion by adding more information.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That makes sense at first. When you feel unsure, more facts seem like the safest answer. More signs and symptoms. More medication details. More pathophysiology. More directive language. More notes from lectures, labs, textbooks, and debriefs.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Some of that is necessary. You do need facts. You need anatomy, physiology, medication doses, contraindications, assessment findings, and directive details. None of this guide is asking you to be vague about the actual content.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The problem is that facts do not automatically become understanding.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student can memorize a long list of findings and still freeze when a patient does not present cleanly. They can know the symptoms of several conditions and still struggle to decide which findings matter most. They can remember what a medication does and still hesitate because they do not understand what problem it is meant to solve in that patient, at that moment.',
+  },
+  {
+    type: 'paragraph',
+    text: 'This is where the Build Understanding cluster begins.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The first part of VitalNotes looked at why learning can feel unstable. Now we start looking at how knowledge becomes more usable. That starts with meaning.',
+  },
+  {
+    type: 'heading',
+    text: 'What meaning means here',
+  },
+  {
+    type: 'paragraph',
+    text: 'In VitalNotes, meaning does not mean personal meaning, motivation, or having a big insight about the work.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It means connection.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A fact becomes more useful when it is connected to a process, a consequence, or a decision. A symptom becomes more useful when you understand what might be producing it. A vital sign becomes more useful when you can ask whether it fits with the patient’s story. A directive becomes more useful when you understand what risk it is trying to manage.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is why understanding feels different from memorization.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Memorization can help you recall that tachycardia is a fast heart rate. Meaning helps you ask why the heart rate is fast here. Pain, fever, anxiety, hypovolemia, hypoxia, stimulant use, sepsis, exertion, and compensation for shock can all produce tachycardia, but they do not point in the same clinical direction.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The number matters. What the number belongs to matters more.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is the shift this section is trying to make.',
+  },
+  {
+    type: 'heading',
+    text: 'Why isolated facts are hard to use',
+  },
+  {
+    type: 'paragraph',
+    text: 'Isolated facts are fragile because they have to be managed one at a time.',
+  },
+  {
+    type: 'paragraph',
+    text: 'In calm study conditions, this can feel manageable. You can review one condition, then another. You can look at a comparison chart. You can read a list of signs and symptoms and feel like the differences are clear.',
+  },
+  {
+    type: 'paragraph',
+    text: 'In scenarios, the facts arrive mixed together.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A patient may be pale, nauseated, weak, mildly short of breath, anxious, and unable to give a clean history. Their blood pressure may be lower than expected. Their pulse may be fast. Their blood glucose may be normal. Their ECG may not show anything dramatic right away. Their family may say they have “just been off today.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'If those findings are floating separately, they compete for attention. You start juggling. You ask more questions, collect more data, and wait for one finding to finally tell you what is happening.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Sometimes that finding never arrives.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Meaning helps by giving the information a shape. You begin asking what process could explain several findings at once. You start looking for relationships instead of waiting for a single clue to rescue the call.',
+  },
+  {
+    type: 'heading',
+    text: 'A paramedic example',
+  },
+  {
+    type: 'paragraph',
+    text: 'Picture a student assessing an older patient who feels weak and unwell.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The patient is sitting in a chair, pale and tired. They feel nauseated. They deny chest pain. They are mildly short of breath when speaking. Their skin is warm. Their pulse is fast. Their blood pressure is soft. The family says they seemed normal yesterday but have been more confused this morning.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A fact-by-fact approach can scatter quickly.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The student thinks about nausea, then shortness of breath, then weakness, then altered mentation, then whether this is cardiac, diabetic, infectious, neurological, anxiety-related, or something else. Each finding creates another possible direction. The student keeps gathering information, but the call does not become clearer.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A meaning-based approach asks a steadier question:',
+  },
+  {
+    type: 'paragraph',
+    text: 'What process could explain several of these findings together?',
+  },
+  {
+    type: 'paragraph',
+    text: 'Now the student can begin building a working explanation. Maybe this is infection with early sepsis. Maybe there is dehydration or poor perfusion. Maybe the shortness of breath is not the main problem, but part of the body trying to compensate. Maybe the confusion is not a separate complaint, but part of the same larger process.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That does not mean the student has the final answer. It means the information is starting to organize.',
+  },
+  {
+    type: 'paragraph',
+    text: 'From there, the assessment becomes more purposeful. Temperature matters. Skin signs matter. Blood pressure trends matter. Mental status changes matter. Recent infection, urinary symptoms, oral intake, medications, and baseline function matter. Reassessment matters because the patient may be compensating until they are not.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The findings are the same, but now they are being used together.',
+  },
+  {
+    type: 'heading',
+    text: 'Meaning reduces the number of loose pieces',
+  },
+  {
+    type: 'paragraph',
+    text: 'Meaning helps because it lowers the number of loose pieces your working memory has to carry.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Without meaning, every finding demands its own space. Pulse, skin, breathing, blood pressure, history, medications, and patient appearance all fight for attention. You may remember many of them and still not know what to do with them.',
+  },
+  {
+    type: 'paragraph',
+    text: 'With meaning, findings begin to group.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You are no longer holding “fast pulse” as an isolated fact. You are asking what it might be compensating for. You are no longer holding “confusion” as a separate item. You are asking whether it fits with perfusion, infection, hypoxia, glucose, stroke, medication effect, or something else. You are no longer collecting vital signs just to complete a set. You are using them to test whether your explanation still makes sense.',
+  },
+  {
+    type: 'paragraph',
+    text: 'This does not make the call easy.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It makes the information easier to work with.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That matters in paramedicine because you rarely get perfect clarity at the start. You often get fragments, changes over time, and enough uncertainty that your first explanation has to stay flexible.',
+  },
+  {
+    type: 'heading',
+    text: 'Meaning is built through better questions',
+  },
+  {
+    type: 'paragraph',
+    text: 'Meaning develops when students start asking better questions of the material.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not more complicated questions. Better ones.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Instead of only asking, “What are the signs and symptoms?” ask what those signs and symptoms have in common. Instead of only asking, “What is the treatment?” ask what problem the treatment is trying to change. Instead of only asking, “What does the directive say?” ask what risk the directive is trying to manage.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A few questions are especially useful:',
+  },
+  {
+    type: 'list',
+    items: [
+      'Why does this finding matter?',
+      'What process could explain several findings together?',
+      'What would I expect to see next if this explanation is right?',
+      'What does not fit?',
+      'What would make me change my mind?',
+      'What decision does this information support?',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'These questions pull facts into relationships.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They also prepare you for clinical reasoning later, because clinical reasoning is not just knowing what things are. It is building, testing, and adjusting an explanation while the patient is still in front of you.',
+  },
+  {
+    type: 'heading',
+    text: 'Memorization still has a place',
+  },
+  {
+    type: 'paragraph',
+    text: 'This section is not an argument against memorization.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Some things need to be memorized. Medication doses. Contraindications. Directive boundaries. Assessment sequences. Critical safety checks. You do not want to be figuring out the dose of a medication during an OSCE or trying to reconstruct a contraindication from first principles while the patient is waiting.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Memory matters.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The issue is when memorization is asked to do the whole job.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Memorization gives you access to pieces. Meaning helps you use those pieces properly. You need both, but they are not the same. If you memorize without meaning, the content may stay brittle. If you chase meaning without learning the details, your thinking can become too loose to be safe.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Good learning brings them together.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You learn the facts, then keep asking what they are connected to.',
+  },
+  {
+    type: 'heading',
+    text: 'How meaning grows over time',
+  },
+  {
+    type: 'paragraph',
+    text: 'Meaning is not built all at once.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Early in paramedic school, many things feel separate because they are separate in your experience. You learn anatomy in one place, pathophysiology in another, directives somewhere else, and assessment structure during lab. Then scenarios ask you to combine all of it before the connections feel natural.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That awkwardness is expected.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Meaning grows through repeated contact with similar problems. It grows when you compare cases, notice what changed your thinking, revise an explanation after feedback, or connect a new finding to something you already understand.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A student may first learn that sepsis can cause fever and tachycardia. Later, they learn that sepsis can also involve altered mentation, weakness, low blood pressure, poor intake, and vague presentations in older adults. Later still, they begin to see how those findings connect through infection, inflammation, perfusion, and compensation.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The word stayed the same, but the student’s understanding of the word became deeper and more useful.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is what you are aiming for.',
+  },
+  {
+    type: 'heading',
+    text: 'A practical way to study for meaning',
+  },
+  {
+    type: 'paragraph',
+    text: 'When you study a topic, do not stop after the list.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Choose one concept and explain what is happening underneath it.',
+  },
+  {
+    type: 'paragraph',
+    text: 'For example, instead of only writing:',
+  },
+  {
+    type: 'paragraph',
+    text: '“Shock signs: tachycardia, hypotension, pale skin, altered LOC.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'Push one layer deeper.',
+  },
+  {
+    type: 'list',
+    items: [
+      'What is the body trying to protect?',
+      'What is it failing to maintain?',
+      'Why might heart rate rise before blood pressure falls?',
+      'Why might altered mental status matter early?',
+      'What would you expect to happen if compensation fails?',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'This does not need to become an essay. A few careful sentences are enough.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The point is to make the mechanism visible.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Then connect that explanation to assessment. What would you look for? What would you reassess? What would make you more concerned? What would make you reconsider?',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is how facts start becoming usable.',
+  },
+  {
+    type: 'heading',
+    text: 'Moving forward',
+  },
+  {
+    type: 'paragraph',
+    text: 'Meaning helps facts become organized enough to use.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It does not replace memory. It gives memory structure. It helps students see why findings matter together, why assessment should narrow rather than simply expand, and why decisions become easier when information has a shape.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The next section builds on this by looking at pathophysiology through patterns. We will stay with the same idea, but move closer to the body itself: how mechanisms create the patterns students need to recognize in scenarios and patient care.',
+  },
+],
   glossaryTerms: [
     'meaning',
     'schema',
@@ -1949,507 +1942,440 @@ const sectionSeeds: SectionSeed[] = [
     'Help students use pathophysiology as a way to understand patterns in patient presentation, rather than treating it as a disconnected body of facts or disease labels.',
   pageType: 'conceptual',
   body: [
-    {
-      type: 'paragraph',
-      text: 'Pathophysiology often feels like it belongs somewhere else.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It lives in lectures, textbooks, diagrams, exams, and long explanations that can feel far away from actual patient care. Students learn terms, pathways, disease processes, and body systems, then step into scenarios where the patient is talking, breathing, moving, refusing, worsening, improving, or not fitting the category cleanly.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In that moment, physiology can disappear.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student may recognize wheezing, chest pain, confusion, weakness, fever, hypotension, or anxiety, but the process underneath the presentation is harder to hold onto. They may remember the disease label, but not what the body is trying to do or what might happen next.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That matters because pathophysiology is not supposed to sit beside patient care as a separate academic layer.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It should help you understand why the presentation is behaving the way it is.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A pattern is not just what a patient looks like. It is what the findings suggest together, how they are changing, what they may become, and what risk they point toward. Pathophysiology gives those patterns their shape.',
-    },
-    {
-      type: 'heading',
-      text: 'What pathophysiology is for',
-    },
-    {
-      type: 'paragraph',
-      text: 'Pathophysiology is a way of explaining what is happening in the body when normal function is disrupted.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That does not mean you need to recite every pathway during a call. It means physiology should help you stay oriented when the presentation is unclear.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Early in a call, you often do not know the diagnosis. You may not know whether a shortness of breath call is asthma, COPD, pneumonia, heart failure, pulmonary embolism, anxiety, sepsis, or something else. What you may be able to recognize earlier is that breathing is becoming ineffective, oxygen delivery is under stress, perfusion is poor, compensation is starting to fail, or neurologic function is changing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Those are not final answers.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are ways to keep thinking organized while more information appears.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Useful physiological understanding helps you ask questions like:',
-    },
-    {
-      type: 'paragraph',
-      text: 'What system is under stress?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What is the body trying to maintain?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What is starting to fail?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is the patient compensating?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is that compensation working?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What would I expect to see if this gets worse?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What action supports the process that is failing?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Those questions make pathophysiology practical. They move it from something you remember into something you use.',
-    },
-    {
-      type: 'heading',
-      text: 'Mechanisms before labels',
-    },
-    {
-      type: 'paragraph',
-      text: 'A common trap is learning pathophysiology mainly by diagnosis.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Asthma. Sepsis. ACS. Stroke. Anaphylaxis. Heart failure.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Those labels matter, but they often arrive late. Early in a call, the presentation is usually less tidy. You may have a patient who is short of breath and anxious. Or weak and pale. Or confused with vague symptoms. Or nauseated with borderline vitals. Several diagnoses may be possible, and none may be obvious yet.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If your thinking depends too heavily on naming the condition, uncertainty can feel like a wall.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Mechanism-based thinking gives you another way in.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of asking only, “What diagnosis is this?” you can ask:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is airflow limited?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is ventilation effective?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is gas exchange impaired?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is perfusion adequate?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is oxygen delivery meeting demand?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is neurologic function changing?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Is the body compensating or starting to fail?',
-    },
-    {
-      type: 'paragraph',
-      text: 'These questions do not require certainty. They help you act while certainty is still developing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You may not know exactly what the final label is yet, but you can often begin to understand what is going wrong.',
-    },
-    {
-      type: 'heading',
-      text: 'A respiratory example',
-    },
-    {
-      type: 'paragraph',
-      text: 'Consider a patient who is short of breath and anxious.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A label-first approach may bounce between possibilities. Is this asthma? Panic? COPD? Heart failure? Pneumonia? The early features can overlap, especially when the patient is distressed, the room is busy, and the history is incomplete.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student may start searching for the one finding that settles it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A mechanism-first approach is steadier.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student asks what is actually failing. Is air moving well? Is the patient working hard to breathe? Are they tiring? Is oxygenation adequate? Is the problem mainly airflow, gas exchange, perfusion, demand, or something else? Are they anxious because they are panicking, or because their body is struggling to breathe?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Now the assessment has direction.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Lung sounds matter, but so does work of breathing. Oxygen saturation matters, but so does mental status. Respiratory rate matters, but so does whether the patient can sustain that effort. The patient’s response to treatment matters because it tells you whether your explanation is still holding.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This does not mean the student ignores diagnoses.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It means physiology helps organize the possibilities before the diagnosis is clean.',
-    },
-    {
-      type: 'heading',
-      text: 'Patterns are more than appearances',
-    },
-    {
-      type: 'paragraph',
-      text: 'When students hear “pattern,” they often think of how something looks.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Wheezing looks like asthma. Facial droop looks like stroke. Chest pain looks cardiac. Hives and wheeze look like anaphylaxis.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Appearances matter, but they are not enough.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A useful clinical pattern includes behaviour over time. It includes what is changing, what is not changing, what improves after treatment, what worsens despite treatment, and what does not fit the initial impression.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Wheezing alone does not tell the whole story.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Wheezing with high work of breathing, decreasing air movement, fatigue, and altered mentation means something different than wheezing with stable effort and good response to treatment.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The sound is only one part of the pattern.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The mechanism tells you why the pattern matters.',
-    },
-    {
-      type: 'heading',
-      text: 'Compensation matters',
-    },
-    {
-      type: 'paragraph',
-      text: 'One of the most useful physiological ideas for students is compensation.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The body often works hard to hide a problem before it becomes obvious.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A patient may maintain blood pressure for a while despite poor perfusion. A patient may breathe faster to compensate for metabolic stress. A patient may look anxious because their body is responding to hypoxia, shock, fever, pain, or acidosis. A patient may become confused before a monitor value looks dramatic.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If students only memorize late signs, they may wait too long.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Pathophysiology helps you look for the work the body is doing before failure becomes obvious.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A fast pulse is not just a fast pulse. It may be compensation. Fast breathing is not just a respiratory finding. It may be the body trying to manage oxygen demand, ventilation, acid-base balance, pain, fever, or shock. Altered mental status is not just a separate complaint. It may be an early sign that oxygen delivery, perfusion, glucose, temperature, or neurologic function is under threat.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This is where physiology becomes clinically useful.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It helps you notice when the body is working too hard to appear stable.',
-    },
-    {
-      type: 'heading',
-      text: 'How mechanisms reduce mental strain',
-    },
-    {
-      type: 'paragraph',
-      text: 'Mechanism-based thinking reduces mental strain because it gives findings somewhere to go.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Without a mechanism, every finding becomes another loose detail. The student is holding pulse, respiratory rate, blood pressure, skin, mental status, lung sounds, history, medications, and scene information as separate pieces. That can overload working memory quickly.',
-    },
-    {
-      type: 'paragraph',
-      text: 'With a mechanism, findings begin to group.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Shortness of breath, anxiety, fatigue, and decreasing air movement may group around ventilation failure. Tachycardia, pale skin, weakness, and soft blood pressure may group around perfusion. Fever, confusion, fast breathing, and weakness may group around infection and systemic stress.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student is still thinking carefully, but they are no longer juggling every detail in isolation.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This is one reason pathophysiology supports clinical reasoning. It gives reasoning something solid to stand on while the call is still unclear.',
-    },
-    {
-      type: 'heading',
-      text: 'How to study pathophysiology so it transfers',
-    },
-    {
-      type: 'paragraph',
-      text: 'Studying pathophysiology by memorizing disease summaries rarely transfers well on its own.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A better approach is to study by mechanism families.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of only studying one condition at a time, compare conditions that share a similar underlying problem.',
-    },
-    {
-      type: 'paragraph',
-      text: 'For example:',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that impair ventilation',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that impair gas exchange',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that reduce preload',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that increase oxygen demand',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that reduce perfusion',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that disrupt neurologic control',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that create compensatory tachycardia',
-    },
-    {
-      type: 'paragraph',
-      text: 'conditions that cause altered mental status before obvious vital sign collapse',
-    },
-    {
-      type: 'paragraph',
-      text: 'This lets knowledge move across scenarios.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You are not only learning asthma. You are learning what airflow limitation looks like and what fatigue looks like. You are not only learning sepsis. You are learning how systemic infection can affect perfusion, mental status, temperature, respiratory drive, and compensation. You are not only learning shock. You are learning what happens when oxygen delivery does not meet demand.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of organization is more flexible than a list of diagnoses.',
-    },
-    {
-      type: 'heading',
-      text: 'A simple way to study a mechanism',
-    },
-    {
-      type: 'paragraph',
-      text: 'When reviewing a condition or lecture topic, avoid starting with the label alone.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Start with the mechanism.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Ask:',
-    },
-    {
-      type: 'paragraph',
-      text: 'What primary system is under stress?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What is the body trying to maintain?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What mechanism explains the key findings?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What compensation would I expect early?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What signs suggest compensation is failing?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What would I reassess after treatment?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What would make this pattern not fit?',
-    },
-    {
-      type: 'paragraph',
-      text: 'For example, if you are studying heart failure, do not only memorize crackles, edema, shortness of breath, and medications.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Ask what is backing up, what is not moving forward effectively, why breathing becomes difficult, why positioning matters, why blood pressure changes your options, and what deterioration might look like.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That turns the topic into a usable explanation.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The goal is not to write a textbook chapter. The goal is to understand enough of the mechanism that the presentation starts to make sense when it appears in a patient.',
-    },
-    {
-      type: 'heading',
-      text: 'How this supports directives',
-    },
-    {
-      type: 'paragraph',
-      text: 'Directives make more sense when physiology makes more sense.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Blood pressure thresholds stop feeling like random numbers. Contraindications feel protective rather than restrictive. Reassessment matters because treatment should change something. Timing matters because some problems worsen while you wait for perfect clarity.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This does not mean you make directives flexible in unsafe ways.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It means you understand why the boundaries exist.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student who understands physiology is better able to explain why a medication is appropriate, why it should be withheld, why transport should not be delayed, or why a patient needs reassessment after an intervention.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not simply choosing actions because the directive allows them.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are choosing actions because the action matches what appears to be happening in the body, within the limits of their scope and standards.',
-    },
-    {
-      type: 'heading',
-      text: 'What good understanding looks like',
-    },
-    {
-      type: 'paragraph',
-      text: 'Good pathophysiology understanding does not look like reciting long pathways from memory.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It looks like being able to stay oriented.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A student with useful physiological understanding can explain why a finding matters. They can anticipate what may happen next. They can notice when a familiar pattern is drifting. They can explain why reassessment matters after treatment. They can recognize when something does not fit and adjust their thinking.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In labs and OSCEs, this often shows up as steadier reasoning.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student may not have the final diagnosis early, but their questions become more purposeful. Their reassessments make more sense. Their treatment decisions are easier to explain. Their concern rises earlier when compensation starts to fail.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is the goal.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not perfect recall of every pathway.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Usable understanding of how systems fail, compensate, and recover.',
-    },
-    {
-      type: 'heading',
-      text: 'Moving forward',
-    },
-    {
-      type: 'paragraph',
-      text: 'Pathophysiology helps students understand why patient patterns behave the way they do.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It connects facts to mechanisms. It makes assessment more purposeful. It gives clinical reasoning something solid to work with before the final diagnosis is clear.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The next section keeps that same idea but applies it to directives. We will look at how directives carry purpose, risk, and decision boundaries, and why understanding what a directive is protecting makes it easier to apply safely.',
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: `Pathophysiology often feels like it belongs somewhere else.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It lives in lectures, textbooks, diagrams, exams, and long explanations that can feel far away from actual patient care. Students learn terms, pathways, disease processes, and body systems, then step into scenarios where the patient is talking, breathing, moving, refusing, worsening, improving, or not fitting the category cleanly.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In that moment, physiology can disappear.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student may recognize wheezing, chest pain, confusion, weakness, fever, hypotension, or anxiety, but the process underneath the presentation is harder to hold onto. They may remember the disease label, but not what the body is trying to do or what might happen next.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That matters because pathophysiology is not supposed to sit beside patient care as a separate academic layer.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It should help you understand why the presentation is behaving the way it is.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A pattern is not just what a patient looks like. It is what the findings suggest together, how they are changing, what they may become, and what risk they point toward. Pathophysiology gives those patterns their shape.`,
+  },
+  {
+    type: 'heading',
+    text: `What pathophysiology is for`,
+  },
+  {
+    type: 'paragraph',
+    text: `Pathophysiology is a way of explaining what is happening in the body when normal function is disrupted.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That does not mean you need to recite every pathway during a call. It means physiology should help you stay oriented when the presentation is unclear.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Early in a call, you often do not know the diagnosis. You may not know whether a shortness of breath call is asthma, COPD, pneumonia, heart failure, pulmonary embolism, anxiety, sepsis, or something else. What you may be able to recognize earlier is that breathing is becoming ineffective, oxygen delivery is under stress, perfusion is poor, compensation is starting to fail, or neurologic function is changing.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Those are not final answers.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are ways to keep thinking organized while more information appears.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Useful physiological understanding helps you ask questions like:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What system is under stress?`,
+      `What is the body trying to maintain?`,
+      `What is starting to fail?`,
+      `Is the patient compensating?`,
+      `Is that compensation working?`,
+      `What would I expect to see if this gets worse?`,
+      `What action supports the process that is failing?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Those questions make pathophysiology practical. They move it from something you remember into something you use.`,
+  },
+  {
+    type: 'heading',
+    text: `Mechanisms before labels`,
+  },
+  {
+    type: 'paragraph',
+    text: `A common trap is learning pathophysiology mainly by diagnosis.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Asthma. Sepsis. ACS. Stroke. Anaphylaxis. Heart failure.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Those labels matter, but they often arrive late. Early in a call, the presentation is usually less tidy. You may have a patient who is short of breath and anxious. Or weak and pale. Or confused with vague symptoms. Or nauseated with borderline vitals. Several diagnoses may be possible, and none may be obvious yet.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If your thinking depends too heavily on naming the condition, uncertainty can feel like a wall.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Mechanism-based thinking gives you another way in.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instead of asking only, “What diagnosis is this?” you can ask:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Is airflow limited?`,
+      `Is ventilation effective?`,
+      `Is gas exchange impaired?`,
+      `Is perfusion adequate?`,
+      `Is oxygen delivery meeting demand?`,
+      `Is neurologic function changing?`,
+      `Is the body compensating or starting to fail?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `These questions do not require certainty. They help you act while certainty is still developing.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You may not know exactly what the final label is yet, but you can often begin to understand what is going wrong.`,
+  },
+  {
+    type: 'heading',
+    text: `A respiratory example`,
+  },
+  {
+    type: 'paragraph',
+    text: `Consider a patient who is short of breath and anxious.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A label-first approach may bounce between possibilities. Is this asthma? Panic? COPD? Heart failure? Pneumonia? The early features can overlap, especially when the patient is distressed, the room is busy, and the history is incomplete.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student may start searching for the one finding that settles it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A mechanism-first approach is steadier.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student asks what is actually failing. Is air moving well? Is the patient working hard to breathe? Are they tiring? Is oxygenation adequate? Is the problem mainly airflow, gas exchange, perfusion, demand, or something else? Are they anxious because they are panicking, or because their body is struggling to breathe?`,
+  },
+  {
+    type: 'paragraph',
+    text: `Now the assessment has direction.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Lung sounds matter, but so does work of breathing. Oxygen saturation matters, but so does mental status. Respiratory rate matters, but so does whether the patient can sustain that effort. The patient’s response to treatment matters because it tells you whether your explanation is still holding.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This does not mean the student ignores diagnoses.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It means physiology helps organize the possibilities before the diagnosis is clean.`,
+  },
+  {
+    type: 'heading',
+    text: `Patterns are more than appearances`,
+  },
+  {
+    type: 'paragraph',
+    text: `When students hear “pattern,” they often think of how something looks.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Wheezing looks like asthma. Facial droop looks like stroke. Chest pain looks cardiac. Hives and wheeze look like anaphylaxis.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Appearances matter, but they are not enough.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A useful clinical pattern includes behaviour over time. It includes what is changing, what is not changing, what improves after treatment, what worsens despite treatment, and what does not fit the initial impression.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Wheezing alone does not tell the whole story.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Wheezing with high work of breathing, decreasing air movement, fatigue, and altered mentation means something different than wheezing with stable effort and good response to treatment.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The sound is only one part of the pattern.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The mechanism tells you why the pattern matters.`,
+  },
+  {
+    type: 'heading',
+    text: `Compensation matters`,
+  },
+  {
+    type: 'paragraph',
+    text: `One of the most useful physiological ideas for students is compensation.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The body often works hard to hide a problem before it becomes obvious.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A patient may maintain blood pressure for a while despite poor perfusion. A patient may breathe faster to compensate for metabolic stress. A patient may look anxious because their body is responding to hypoxia, shock, fever, pain, or acidosis. A patient may become confused before a monitor value looks dramatic.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If students only memorize late signs, they may wait too long.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Pathophysiology helps you look for the work the body is doing before failure becomes obvious.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A fast pulse is not just a fast pulse. It may be compensation. Fast breathing is not just a respiratory finding. It may be the body trying to manage oxygen demand, ventilation, acid-base balance, pain, fever, or shock. Altered mental status is not just a separate complaint. It may be an early sign that oxygen delivery, perfusion, glucose, temperature, or neurologic function is under threat.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is where physiology becomes clinically useful.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It helps you notice when the body is working too hard to appear stable.`,
+  },
+  {
+    type: 'heading',
+    text: `How mechanisms reduce mental strain`,
+  },
+  {
+    type: 'paragraph',
+    text: `Mechanism-based thinking reduces mental strain because it gives findings somewhere to go.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Without a mechanism, every finding becomes another loose detail. The student is holding pulse, respiratory rate, blood pressure, skin, mental status, lung sounds, history, medications, and scene information as separate pieces. That can overload working memory quickly.`,
+  },
+  {
+    type: 'paragraph',
+    text: `With a mechanism, findings begin to group.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Shortness of breath, anxiety, fatigue, and decreasing air movement may group around ventilation failure. Tachycardia, pale skin, weakness, and soft blood pressure may group around perfusion. Fever, confusion, fast breathing, and weakness may group around infection and systemic stress.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student is still thinking carefully, but they are no longer juggling every detail in isolation.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is one reason pathophysiology supports clinical reasoning. It gives reasoning something solid to stand on while the call is still unclear.`,
+  },
+  {
+    type: 'heading',
+    text: `How to study pathophysiology so it transfers`,
+  },
+  {
+    type: 'paragraph',
+    text: `Studying pathophysiology by memorizing disease summaries rarely transfers well on its own.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A better approach is to study by mechanism families.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instead of only studying one condition at a time, compare conditions that share a similar underlying problem.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For example:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `conditions that impair ventilation`,
+      `conditions that impair gas exchange`,
+      `conditions that reduce preload`,
+      `conditions that increase oxygen demand`,
+      `conditions that reduce perfusion`,
+      `conditions that disrupt neurologic control`,
+      `conditions that create compensatory tachycardia`,
+      `conditions that cause altered mental status before obvious vital sign collapse`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `This lets knowledge move across scenarios.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You are not only learning asthma. You are learning what airflow limitation looks like and what fatigue looks like. You are not only learning sepsis. You are learning how systemic infection can affect perfusion, mental status, temperature, respiratory drive, and compensation. You are not only learning shock. You are learning what happens when oxygen delivery does not meet demand.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That kind of organization is more flexible than a list of diagnoses.`,
+  },
+  {
+    type: 'heading',
+    text: `A simple way to study a mechanism`,
+  },
+  {
+    type: 'paragraph',
+    text: `When reviewing a condition or lecture topic, avoid starting with the label alone.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Start with the mechanism.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Ask:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What primary system is under stress?`,
+      `What is the body trying to maintain?`,
+      `What mechanism explains the key findings?`,
+      `What compensation would I expect early?`,
+      `What signs suggest compensation is failing?`,
+      `What would I reassess after treatment?`,
+      `What would make this pattern not fit?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `For example, if you are studying heart failure, do not only memorize crackles, edema, shortness of breath, and medications.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Ask what is backing up, what is not moving forward effectively, why breathing becomes difficult, why positioning matters, why blood pressure changes your options, and what deterioration might look like.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That turns the topic into a usable explanation.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is not to write a textbook chapter. The goal is to understand enough of the mechanism that the presentation starts to make sense when it appears in a patient.`,
+  },
+  {
+    type: 'heading',
+    text: `How this supports directives`,
+  },
+  {
+    type: 'paragraph',
+    text: `Directives make more sense when physiology makes more sense.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Blood pressure thresholds stop feeling like random numbers. Contraindications feel protective rather than restrictive. Reassessment matters because treatment should change something. Timing matters because some problems worsen while you wait for perfect clarity.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This does not mean you make directives flexible in unsafe ways.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It means you understand why the boundaries exist.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A student who understands physiology is better able to explain why a medication is appropriate, why it should be withheld, why transport should not be delayed, or why a patient needs reassessment after an intervention.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are not simply choosing actions because the directive allows them.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are choosing actions because the action matches what appears to be happening in the body, within the limits of their scope and standards.`,
+  },
+  {
+    type: 'heading',
+    text: `What good understanding looks like`,
+  },
+  {
+    type: 'paragraph',
+    text: `Good pathophysiology understanding does not look like reciting long pathways from memory.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It looks like being able to stay oriented.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A student with useful physiological understanding can explain why a finding matters. They can anticipate what may happen next. They can notice when a familiar pattern is drifting. They can explain why reassessment matters after treatment. They can recognize when something does not fit and adjust their thinking.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In labs and OSCEs, this often shows up as steadier reasoning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student may not have the final diagnosis early, but their questions become more purposeful. Their reassessments make more sense. Their treatment decisions are easier to explain. Their concern rises earlier when compensation starts to fail.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is the goal.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Not perfect recall of every pathway.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Usable understanding of how systems fail, compensate, and recover.`,
+  },
+  {
+    type: 'heading',
+    text: `Moving forward`,
+  },
+  {
+    type: 'paragraph',
+    text: `Pathophysiology helps students understand why patient patterns behave the way they do.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It connects facts to mechanisms. It makes assessment more purposeful. It gives clinical reasoning something solid to work with before the final diagnosis is clear.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The next section keeps that same idea but applies it to directives. We will look at how directives carry purpose, risk, and decision boundaries, and why understanding what a directive is protecting makes it easier to apply safely.`,
+  },
+],
   glossaryTerms: [
     'pathophysiology',
     'pattern-recognition',
@@ -2476,551 +2402,499 @@ const sectionSeeds: SectionSeed[] = [
     'Help students understand directives as safety structures built around clinical purpose, risk, physiology, and boundaries, rather than treating them as disconnected rules to memorize.',
   pageType: 'tool-supported',
   body: [
-    {
-      type: 'paragraph',
-      text: `Directives can feel heavier than almost anything else students learn.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is understandable. They carry authority. They are tied to scope, safety, evaluation, documentation, and patient care. Getting a directive wrong can feel more serious than missing a detail in a history or forgetting a term from lecture. Students know they are being watched closely when directives are involved, and that pressure changes how thinking feels.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The usual response is memorization.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Students study the wording. They repeat the indications. They memorize contraindications, doses, routes, thresholds, sequence, and patch points. That matters. You do need to know the details. A directive is not something you want to vaguely understand while trying to manage a real patient.`,
-    },
-    {
-      type: 'paragraph',
-      text: `But memorization can become brittle if it is the only layer.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If the patient fits the clean version you studied, the decision may feel straightforward. If the patient is borderline, evolving, compensating, vague, anxious, refusing, or giving conflicting information, the directive can suddenly feel harder to use. The student may know the words, but still not understand what the words are protecting.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is where this section fits.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The last two sections looked at meaning and pathophysiology. This section applies that same idea to directives. A directive becomes easier to use when you understand its purpose, its boundaries, and the clinical risk it is trying to manage.`,
-    },
-    {
-      type: 'heading',
-      text: `What directives are for`,
-    },
-    {
-      type: 'paragraph',
-      text: `Directives are not meant to replace thinking.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They are designed to support safe decision-making in situations where risk, time, scope, and uncertainty all matter. They help standardize care. They define boundaries. They protect patients. They protect providers. They reduce unnecessary variation when the situation already has enough moving parts.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A directive gives judgment a safer container.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is different from treating it like a script.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Students sometimes search for exact matches because exact matches feel safer. They want the patient to line up perfectly with the version they studied. They want the indication to be obvious, the contraindications to be absent, the vital signs to be comfortably within range, and the story to move in a straight line.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Sometimes that happens.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Often it does not.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Paramedic care frequently happens before complete certainty is available. The directive helps you decide what is safe, reasonable, and within scope while the picture is still developing.`,
-    },
-    {
-      type: 'heading',
-      text: `Purpose does not make directives loose`,
-    },
-    {
-      type: 'paragraph',
-      text: `Understanding purpose does not mean becoming casual with directives.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A directive has boundaries for a reason. Indications, contraindications, dosing limits, age limits, blood pressure limits, routes, patch points, reassessment expectations, and documentation requirements are part of the safety structure. They are not optional details.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Purpose does not give you permission to ignore them.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Purpose helps you understand why they are there.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That matters because students can drift into two different errors. Some become so rigid that they wait for a perfect presentation while the patient worsens. Others become too loose and treat the directive like a general suggestion because the situation feels urgent.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Neither approach is safe.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Better directive use means respecting the boundaries while understanding the problem those boundaries are built around.`,
-    },
-    {
-      type: 'heading',
-      text: `Why memorization can stall decision-making`,
-    },
-    {
-      type: 'paragraph',
-      text: `Memorizing directives can create short-term confidence.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You know the steps. You know the numbers. You know what is allowed.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The difficulty comes when the patient falls between the clean lines. A patient has symptoms that suggest risk, but the story is incomplete. A vital sign is borderline. The complaint sounds familiar, but one detail does not fit. A treatment seems possible, but the contraindication screen is not finished. A reassessment changes the picture.`,
-    },
-    {
-      type: 'paragraph',
-      text: `These are the moments where students often stall.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They may keep searching for the exact phrase that will make the decision feel safe. They may ask more and more questions without deciding what risk is already present. They may avoid an appropriate treatment because they do not feel confident enough to justify it. Or they may give a treatment because the directive seems to allow it, without being able to explain why it fits the patient.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The problem is not always that they forgot the directive.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Sometimes they learned the directive as wording without learning the clinical purpose underneath it.`,
-    },
-    {
-      type: 'heading',
-      text: `A paramedic example`,
-    },
-    {
-      type: 'paragraph',
-      text: `Consider oxygen administration.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A student who treats oxygen as a memorized rule may drift in one of two directions.`,
-    },
-    {
-      type: 'paragraph',
-      text: `One student may wait rigidly for a number before acting, even when the patient’s work of breathing, mental status, trajectory, or overall presentation is concerning. Another student may apply oxygen automatically to anyone who feels short of breath, without asking whether oxygen is needed, whether the reading is reliable, or whether oxygen is treating the actual problem.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Both students may be trying to be safe.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Both may be missing the purpose.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Oxygen is not meant to treat the word “shortness of breath” by itself. It is meant to support oxygenation when oxygenation is inadequate or at risk. That means the student has to consider the number, but not only the number. Waveform quality matters. Work of breathing matters. Mental status matters. Skin signs, trajectory, underlying complaint, and response to treatment matter.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The student who understands purpose is not being casual. They are more grounded.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They can explain why oxygen is indicated, why it is not indicated, or why reassessment is needed before the plan changes. They are not simply chasing a threshold or treating a complaint word. They are asking what clinical risk the directive is designed to manage.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That same kind of thinking applies across directives.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A pain medication decision is not only about whether pain exists. It is about severity, patient suitability, contraindications, route, dose, reassessment, and whether the treatment matches the clinical picture. A nausea treatment is not only about nausea. It is about cause, risk, patient condition, contraindications, and what needs to be watched after. A cardiac ischemia directive is not only about chest discomfort. It is about risk, presentation, contraindications, vital signs, ECG interpretation, response, and whether the patient’s condition is changing.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The directive gives the boundary.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Purpose helps you understand the decision inside that boundary.`,
-    },
-    {
-      type: 'heading',
-      text: `What directive intent sounds like`,
-    },
-    {
-      type: 'paragraph',
-      text: `Directive intent is the answer to a simple question:`,
-    },
-    {
-      type: 'paragraph',
-      text: `What is this directive trying to protect, support, or prevent?`,
-    },
-    {
-      type: 'paragraph',
-      text: `That question changes how you study.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Instead of only asking, “What does the directive allow?” you begin asking:`,
-    },
-    {
-      type: 'paragraph',
-      text: `What clinical risk is this directive built around?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What physiology is being supported or protected?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What patient group is this directive meant for?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What findings matter most before acting?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What findings make this treatment unsafe?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What needs to be reassessed after intervention?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Where are the boundaries firm?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What would justify withholding, patching, or changing course?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Those questions do not replace the directive.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They help the directive make sense.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They also make the details easier to remember because the pieces are no longer floating separately. Indications, contraindications, thresholds, doses, routes, and reassessment expectations start to connect around the risk being managed.`,
-    },
-    {
-      type: 'heading',
-      text: `Boundaries are part of the meaning`,
-    },
-    {
-      type: 'paragraph',
-      text: `Students sometimes treat directive meaning and directive boundaries as separate things.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Meaning feels like the flexible part. Boundaries feel like the rigid part.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It is more useful to see boundaries as part of the meaning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A contraindication is not just a rule that blocks treatment. It usually points to a risk that may become worse if the treatment is given. A threshold is not just a number to memorize. It often marks where the balance of benefit and harm changes. A reassessment requirement is not just something instructors want to hear. It is how you find out whether the intervention helped, harmed, or failed to change the problem.`,
-    },
-    {
-      type: 'paragraph',
-      text: `When students understand this, directive boundaries feel less random.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They become part of the clinical reasoning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You still follow them. You just understand why following them matters.`,
-    },
-    {
-      type: 'heading',
-      text: `Why this helps under pressure`,
-    },
-    {
-      type: 'paragraph',
-      text: `Directive anxiety increases cognitive load.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The student is already assessing the patient, listening to the history, managing equipment, communicating with a partner, watching the monitor, and thinking about transport. Then the directive enters the call, and attention narrows. The student may stop listening as well. They may look for reassurance from the instructor. They may repeat the same question several times. They may freeze because the decision feels like a test.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Purpose gives the mind a structure to hold onto.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Instead of holding every line as a separate rule, the student can organize the directive around a few anchors:`,
-    },
-    {
-      type: 'paragraph',
-      text: `the clinical risk`,
-    },
-    {
-      type: 'paragraph',
-      text: `the physiology or patient problem`,
-    },
-    {
-      type: 'paragraph',
-      text: `the firm boundaries`,
-    },
-    {
-      type: 'paragraph',
-      text: `the expected effect`,
-    },
-    {
-      type: 'paragraph',
-      text: `the reassessment`,
-    },
-    {
-      type: 'paragraph',
-      text: `The details still matter, but they now have somewhere to belong.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That makes decision-making steadier.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It also makes explanation easier. A student who understands purpose can say why they are acting, why they are withholding, or why they are reassessing before deciding. That is very different from guessing, stalling, or reciting.`,
-    },
-    {
-      type: 'heading',
-      text: `Labs and OSCEs are not obedience tests`,
-    },
-    {
-      type: 'paragraph',
-      text: `During labs and OSCEs, students often assume directives are evaluated as obedience.`,
-    },
-    {
-      type: 'paragraph',
-      text: `In reality, the better standard is judgment within boundaries.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Instructors are looking for decisions that are safe, reasonable, defensible, and responsive to the information available at the time. Blindly following a remembered sequence without interpreting the patient can be unsafe. Ignoring the directive because the situation feels urgent can also be unsafe.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Competence sits in the middle.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You need to know the directive. You need to respect the directive. You also need to apply it to the patient in front of you.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is why scenarios are often imperfect. They are not always designed to give you a clean checkbox moment. They are designed to show whether you can manage uncertainty without abandoning safety.`,
-    },
-    {
-      type: 'heading',
-      text: `Learning directives by problem space`,
-    },
-    {
-      type: 'paragraph',
-      text: `Trying to learn every directive in isolation is exhausting.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It also makes transfer harder.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A better approach is to learn directives by problem space.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Instead of treating each directive as a separate block of text, ask what kind of clinical problem it belongs to. Pain. Respiratory distress. Hypoglycemia. Nausea and vomiting. Suspected cardiac ischemia. Anaphylaxis. Seizure. Stroke. Trauma. Refusal. Capacity. Transport risk.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Then ask what each directive is doing inside that problem space.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Some directives support physiology. Some reduce risk of deterioration. Some define when a symptom relief option is reasonable. Some prevent harm by setting firm limits. Some guide communication, reassessment, or escalation.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This helps you see the directive as part of patient care, not as a separate document floating above it.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It also helps you compare.`,
-    },
-    {
-      type: 'paragraph',
-      text: `What makes one patient eligible and another not? What risk changes the decision? What would make treatment inappropriate even if the complaint sounds familiar? What reassessment would show whether your plan is still safe?`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is where understanding starts to become usable.`,
-    },
-    {
-      type: 'heading',
-      text: `A small way to study a directive`,
-    },
-    {
-      type: 'paragraph',
-      text: `When you review a directive, do not stop after the indications and contraindications.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Add a short purpose check.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Ask:`,
-    },
-    {
-      type: 'paragraph',
-      text: `What clinical risk is this directive protecting against?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What problem is the intervention trying to change?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What findings make the intervention more appropriate?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What findings make it unsafe?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What should improve if the intervention works?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What would I need to reassess?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What would make me stop, withhold, patch, or change course?`,
-    },
-    {
-      type: 'paragraph',
-      text: `This does not need to become a long note.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A few careful sentences are usually enough.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The goal is to connect the wording to the patient problem. If you can explain why the directive exists, when it helps, when it does not, and what needs to be checked afterward, you are much closer to using it safely.`,
-    },
-    {
-      type: 'heading',
-      text: `Using the Directive Meaning Check`,
-    },
-    {
-      type: 'paragraph',
-      text: `This section is one of the first places where a tool can help.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The Directive Meaning Check gives you a short structure for studying or reviewing a directive:`,
-    },
-    {
-      type: 'paragraph',
-      text: `What clinical risk is this directive protecting against?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What physiology is being supported or prevented?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Where are the firm boundaries?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What would justify reassessment or change?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Use it when a directive feels like wording you are trying to survive rather than a decision structure you understand.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You do not need to use it for every directive every time. It is most useful when a directive feels fragile, confusing, or hard to explain.`,
-    },
-    {
-      type: 'heading',
-      text: `What confidence looks like here`,
-    },
-    {
-      type: 'paragraph',
-      text: `Confidence with directives does not mean speed.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It does not mean you never hesitate. It does not mean every answer feels obvious. It does not mean you can recite every line without tension.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Better confidence looks steadier than that.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It looks like appropriate caution without paralysis. It looks like checking contraindications because they matter, not because you are panicking. It looks like explaining why a treatment fits the patient. It looks like withholding a treatment calmly when the boundary is present. It looks like reassessing after intervention because the decision is not finished once the medication is given or the treatment is started.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That kind of confidence is built through understanding and repetition together.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Not one or the other.`,
-    },
-    {
-      type: 'heading',
-      text: `Moving forward`,
-    },
-    {
-      type: 'paragraph',
-      text: `Directives are not obstacles to patient care.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They are structures designed to support safe care when information is incomplete, pressure is present, and decisions still have to be made. When you understand what a directive is protecting, the directive becomes less like a fragile rule and more like a guide for judgment within safe boundaries.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This completes the Build Understanding cluster.`,
-    },
-    {
-      type: 'paragraph',
-      text: `From here, the guide turns toward notes. The next section looks at how to build Smart Notes that help you keep, develop, and reuse the kind of understanding we have been building here.`,
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: `Directives can feel heavier than almost anything else students learn.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is understandable. They carry authority. They are tied to scope, safety, evaluation, documentation, and patient care. Getting a directive wrong can feel more serious than missing a detail in a history or forgetting a term from lecture. Students know they are being watched closely when directives are involved, and that pressure changes how thinking feels.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The usual response is memorization.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Students study the wording. They repeat the indications. They memorize contraindications, doses, routes, thresholds, sequence, and patch points. That matters. You do need to know the details. A directive is not something you want to vaguely understand while trying to manage a real patient.`,
+  },
+  {
+    type: 'paragraph',
+    text: `But memorization can become brittle if it is the only layer.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If the patient fits the clean version you studied, the decision may feel straightforward. If the patient is borderline, evolving, compensating, vague, anxious, refusing, or giving conflicting information, the directive can suddenly feel harder to use. The student may know the words, but still not understand what the words are protecting.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is where this section fits.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The last two sections looked at meaning and pathophysiology. This section applies that same idea to directives. A directive becomes easier to use when you understand its purpose, its boundaries, and the clinical risk it is trying to manage.`,
+  },
+  {
+    type: 'heading',
+    text: `What directives are for`,
+  },
+  {
+    type: 'paragraph',
+    text: `Directives are not meant to replace thinking.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are designed to support safe decision-making in situations where risk, time, scope, and uncertainty all matter. They help standardize care. They define boundaries. They protect patients. They protect providers. They reduce unnecessary variation when the situation already has enough moving parts.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A directive gives judgment a safer container.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is different from treating it like a script.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Students sometimes search for exact matches because exact matches feel safer. They want the patient to line up perfectly with the version they studied. They want the indication to be obvious, the contraindications to be absent, the vital signs to be comfortably within range, and the story to move in a straight line.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Sometimes that happens.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Often it does not.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Paramedic care frequently happens before complete certainty is available. The directive helps you decide what is safe, reasonable, and within scope while the picture is still developing.`,
+  },
+  {
+    type: 'heading',
+    text: `Purpose does not make directives loose`,
+  },
+  {
+    type: 'paragraph',
+    text: `Understanding purpose does not mean becoming casual with directives.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A directive has boundaries for a reason. Indications, contraindications, dosing limits, age limits, blood pressure limits, routes, patch points, reassessment expectations, and documentation requirements are part of the safety structure. They are not optional details.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Purpose does not give you permission to ignore them.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Purpose helps you understand why they are there.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That matters because students can drift into two different errors. Some become so rigid that they wait for a perfect presentation while the patient worsens. Others become too loose and treat the directive like a general suggestion because the situation feels urgent.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Neither approach is safe.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Better directive use means respecting the boundaries while understanding the problem those boundaries are built around.`,
+  },
+  {
+    type: 'heading',
+    text: `Why memorization can stall decision-making`,
+  },
+  {
+    type: 'paragraph',
+    text: `Memorizing directives can create short-term confidence.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You know the steps. You know the numbers. You know what is allowed.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The difficulty comes when the patient falls between the clean lines. A patient has symptoms that suggest risk, but the story is incomplete. A vital sign is borderline. The complaint sounds familiar, but one detail does not fit. A treatment seems possible, but the contraindication screen is not finished. A reassessment changes the picture.`,
+  },
+  {
+    type: 'paragraph',
+    text: `These are the moments where students often stall.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They may keep searching for the exact phrase that will make the decision feel safe. They may ask more and more questions without deciding what risk is already present. They may avoid an appropriate treatment because they do not feel confident enough to justify it. Or they may give a treatment because the directive seems to allow it, without being able to explain why it fits the patient.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The problem is not always that they forgot the directive.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Sometimes they learned the directive as wording without learning the clinical purpose underneath it.`,
+  },
+  {
+    type: 'heading',
+    text: `A paramedic example`,
+  },
+  {
+    type: 'paragraph',
+    text: `Consider oxygen administration.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A student who treats oxygen as a memorized rule may drift in one of two directions.`,
+  },
+  {
+    type: 'paragraph',
+    text: `One student may wait rigidly for a number before acting, even when the patient’s work of breathing, mental status, trajectory, or overall presentation is concerning. Another student may apply oxygen automatically to anyone who feels short of breath, without asking whether oxygen is needed, whether the reading is reliable, or whether oxygen is treating the actual problem.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Both students may be trying to be safe.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Both may be missing the purpose.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Oxygen is not meant to treat the word “shortness of breath” by itself. It is meant to support oxygenation when oxygenation is inadequate or at risk. That means the student has to consider the number, but not only the number. Waveform quality matters. Work of breathing matters. Mental status matters. Skin signs, trajectory, underlying complaint, and response to treatment matter.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student who understands purpose is not being casual. They are more grounded.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They can explain why oxygen is indicated, why it is not indicated, or why reassessment is needed before the plan changes. They are not simply chasing a threshold or treating a complaint word. They are asking what clinical risk the directive is designed to manage.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That same kind of thinking applies across directives.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A pain medication decision is not only about whether pain exists. It is about severity, patient suitability, contraindications, route, dose, reassessment, and whether the treatment matches the clinical picture. A nausea treatment is not only about nausea. It is about cause, risk, patient condition, contraindications, and what needs to be watched after. A cardiac ischemia directive is not only about chest discomfort. It is about risk, presentation, contraindications, vital signs, ECG interpretation, response, and whether the patient’s condition is changing.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The directive gives the boundary.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Purpose helps you understand the decision inside that boundary.`,
+  },
+  {
+    type: 'heading',
+    text: `What directive intent sounds like`,
+  },
+  {
+    type: 'paragraph',
+    text: `Directive intent is the answer to a simple question:`,
+  },
+  {
+    type: 'paragraph',
+    text: `What is this directive trying to protect, support, or prevent?`,
+  },
+  {
+    type: 'paragraph',
+    text: `That question changes how you study.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instead of only asking, “What does the directive allow?” you begin asking:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What clinical risk is this directive built around?`,
+      `What physiology is being supported or protected?`,
+      `What patient group is this directive meant for?`,
+      `What findings matter most before acting?`,
+      `What findings make this treatment unsafe?`,
+      `What needs to be reassessed after intervention?`,
+      `Where are the boundaries firm?`,
+      `What would justify withholding, patching, or changing course?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Those questions do not replace the directive.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They help the directive make sense.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They also make the details easier to remember because the pieces are no longer floating separately. Indications, contraindications, thresholds, doses, routes, and reassessment expectations start to connect around the risk being managed.`,
+  },
+  {
+    type: 'heading',
+    text: `Boundaries are part of the meaning`,
+  },
+  {
+    type: 'paragraph',
+    text: `Students sometimes treat directive meaning and directive boundaries as separate things.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Meaning feels like the flexible part. Boundaries feel like the rigid part.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It is more useful to see boundaries as part of the meaning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A contraindication is not just a rule that blocks treatment. It usually points to a risk that may become worse if the treatment is given. A threshold is not just a number to memorize. It often marks where the balance of benefit and harm changes. A reassessment requirement is not just something instructors want to hear. It is how you find out whether the intervention helped, harmed, or failed to change the problem.`,
+  },
+  {
+    type: 'paragraph',
+    text: `When students understand this, directive boundaries feel less random.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They become part of the clinical reasoning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You still follow them. You just understand why following them matters.`,
+  },
+  {
+    type: 'heading',
+    text: `Why this helps under pressure`,
+  },
+  {
+    type: 'paragraph',
+    text: `Directive anxiety increases cognitive load.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The student is already assessing the patient, listening to the history, managing equipment, communicating with a partner, watching the monitor, and thinking about transport. Then the directive enters the call, and attention narrows. The student may stop listening as well. They may look for reassurance from the instructor. They may repeat the same question several times. They may freeze because the decision feels like a test.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Purpose gives the mind a structure to hold onto.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instead of holding every line as a separate rule, the student can organize the directive around a few anchors:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `the clinical risk`,
+      `the physiology or patient problem`,
+      `the firm boundaries`,
+      `the expected effect`,
+      `the reassessment`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `The details still matter, but they now have somewhere to belong.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That makes decision-making steadier.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It also makes explanation easier. A student who understands purpose can say why they are acting, why they are withholding, or why they are reassessing before deciding. That is very different from guessing, stalling, or reciting.`,
+  },
+  {
+    type: 'heading',
+    text: `Labs and OSCEs are not obedience tests`,
+  },
+  {
+    type: 'paragraph',
+    text: `During labs and OSCEs, students often assume directives are evaluated as obedience.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In reality, the better standard is judgment within boundaries.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instructors are looking for decisions that are safe, reasonable, defensible, and responsive to the information available at the time. Blindly following a remembered sequence without interpreting the patient can be unsafe. Ignoring the directive because the situation feels urgent can also be unsafe.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Competence sits in the middle.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You need to know the directive. You need to respect the directive. You also need to apply it to the patient in front of you.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is why scenarios are often imperfect. They are not always designed to give you a clean checkbox moment. They are designed to show whether you can manage uncertainty without abandoning safety.`,
+  },
+  {
+    type: 'heading',
+    text: `Learning directives by problem space`,
+  },
+  {
+    type: 'paragraph',
+    text: `Trying to learn every directive in isolation is exhausting.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It also makes transfer harder.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A better approach is to learn directives by problem space.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Instead of treating each directive as a separate block of text, ask what kind of clinical problem it belongs to. Pain. Respiratory distress. Hypoglycemia. Nausea and vomiting. Suspected cardiac ischemia. Anaphylaxis. Seizure. Stroke. Trauma. Refusal. Capacity. Transport risk.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Then ask what each directive is doing inside that problem space.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Some directives support physiology. Some reduce risk of deterioration. Some define when a symptom relief option is reasonable. Some prevent harm by setting firm limits. Some guide communication, reassessment, or escalation.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This helps you see the directive as part of patient care, not as a separate document floating above it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It also helps you compare.`,
+  },
+  {
+    type: 'paragraph',
+    text: `What makes one patient eligible and another not? What risk changes the decision? What would make treatment inappropriate even if the complaint sounds familiar? What reassessment would show whether your plan is still safe?`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is where understanding starts to become usable.`,
+  },
+  {
+    type: 'heading',
+    text: `A small way to study a directive`,
+  },
+  {
+    type: 'paragraph',
+    text: `When you review a directive, do not stop after the indications and contraindications.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Add a short purpose check.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Ask:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What clinical risk is this directive protecting against?`,
+      `What problem is the intervention trying to change?`,
+      `What findings make the intervention more appropriate?`,
+      `What findings make it unsafe?`,
+      `What should improve if the intervention works?`,
+      `What would I need to reassess?`,
+      `What would make me stop, withhold, patch, or change course?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `This does not need to become a long note.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A few careful sentences are usually enough.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is to connect the wording to the patient problem. If you can explain why the directive exists, when it helps, when it does not, and what needs to be checked afterward, you are much closer to using it safely.`,
+  },
+  {
+    type: 'heading',
+    text: `Using the Directive Meaning Check`,
+  },
+  {
+    type: 'paragraph',
+    text: `This section is one of the first places where a tool can help.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The Directive Meaning Check gives you a short structure for studying or reviewing a directive:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What clinical risk is this directive protecting against?`,
+      `What physiology is being supported or prevented?`,
+      `Where are the firm boundaries?`,
+      `What would justify reassessment or change?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Use it when a directive feels like wording you are trying to survive rather than a decision structure you understand.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You do not need to use it for every directive every time. It is most useful when a directive feels fragile, confusing, or hard to explain.`,
+  },
+  {
+    type: 'heading',
+    text: `What confidence looks like here`,
+  },
+  {
+    type: 'paragraph',
+    text: `Confidence with directives does not mean speed.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It does not mean you never hesitate. It does not mean every answer feels obvious. It does not mean you can recite every line without tension.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Better confidence looks steadier than that.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It looks like appropriate caution without paralysis. It looks like checking contraindications because they matter, not because you are panicking. It looks like explaining why a treatment fits the patient. It looks like withholding a treatment calmly when the boundary is present. It looks like reassessing after intervention because the decision is not finished once the medication is given or the treatment is started.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That kind of confidence is built through understanding and repetition together.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Not one or the other.`,
+  },
+  {
+    type: 'heading',
+    text: `Moving forward`,
+  },
+  {
+    type: 'paragraph',
+    text: `Directives are not obstacles to patient care.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are structures designed to support safe care when information is incomplete, pressure is present, and decisions still have to be made. When you understand what a directive is protecting, the directive becomes less like a fragile rule and more like a guide for judgment within safe boundaries.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This completes the Build Understanding cluster.`,
+  },
+  {
+    type: 'paragraph',
+    text: `From here, the guide turns toward notes. The next section looks at how to build Smart Notes that help you keep, develop, and reuse the kind of understanding we have been building here.`,
+  },
+],
   glossaryTerms: [
     'directive',
     'contraindication',
