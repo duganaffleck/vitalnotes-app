@@ -68,6 +68,19 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Directives support safe decision-making, especially when information is incomplete or pressure is high.',
     relatedSections: ['directives-through-purpose'],
   },
+    {
+    id: 'directive-intent',
+    term: 'Directive intent',
+    shortDefinition:
+      'The purpose behind a directive, including the risk it is managing and the boundary it creates.',
+    paramedicRelevance:
+      'Understanding directive intent helps students apply standards safely instead of treating directives as fragile wording to memorize.',
+    relatedSections: [
+      'start-here-what-vitalnotes-is',
+      'where-to-begin',
+      'directives-through-purpose',
+    ],
+  },
   {
     id: 'learning-path',
     term: 'Learning path',
@@ -131,6 +144,29 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Pattern recognition can speed care, but students need reasoning checks to avoid premature closure.',
     relatedSections: ['pathophysiology-through-patterns'],
   },
+    {
+    id: 'performance-under-pressure',
+    term: 'Performance under pressure',
+    shortDefinition:
+      'The ability to keep thinking, structure, and decision-making available when stress and cognitive load increase.',
+    paramedicRelevance:
+      'Paramedic students need learning systems that hold up during scenarios, OSCEs, and patient care when attention narrows.',
+    relatedSections: [
+      'start-here-what-vitalnotes-is',
+      'where-to-begin',
+      'cognitive-load',
+      'why-studying-feels-productive-but-fails-under-pressure',
+    ],
+  },
+  {
+    id: 'perfusion',
+    term: 'Perfusion',
+    shortDefinition:
+      'The movement of blood through the body to deliver oxygen and nutrients to tissues.',
+    paramedicRelevance:
+      'Perfusion helps students connect vital signs, skin signs, mental status, compensation, and shock patterns during assessment.',
+    relatedSections: ['pathophysiology-through-patterns'],
+  },
   {
     id: 'reassessment',
     term: 'Reassessment',
@@ -157,6 +193,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     paramedicRelevance:
       'Recognition can feel like learning, but it does not always mean the student can use the information under pressure.',
     relatedSections: ['why-studying-feels-productive-but-fails-under-pressure'],
+  },
+   {
+    id: 'reflection',
+    term: 'Reflection',
+    shortDefinition:
+      'A focused review of experience that identifies what mattered and what should change next time.',
+    paramedicRelevance:
+      'Reflection helps students learn from scenarios, feedback, mistakes, and pressure without turning every difficulty into a personal failure.',
+    relatedSections: [
+      'start-here-what-vitalnotes-is',
+      'how-to-use-this-guide',
+      'where-to-begin',
+      'learning-strain-is-not-always-a-personal-problem',
+    ],
   },
   {
     id: 'retrieval-practice',
