@@ -10,7 +10,7 @@ export type PageType =
 export type ToolType = 'thinking-check' | 'template' | 'prompt-builder'
 
 export type BodyBlock = {
-  type: 'paragraph' | 'placeholder'
+  type: 'heading' | 'paragraph' | 'placeholder'
   text: string
 }
 
