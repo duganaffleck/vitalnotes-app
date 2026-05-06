@@ -9,10 +9,15 @@ export type PageType =
 
 export type ToolType = 'thinking-check' | 'template' | 'prompt-builder'
 
-export type BodyBlock = {
-  type: 'heading' | 'paragraph' | 'placeholder'
-  text: string
-}
+export type BodyBlock =
+  | {
+      type: 'heading' | 'paragraph' | 'placeholder'
+      text: string
+    }
+  | {
+      type: 'list'
+      items: string[]
+    }
 
 export type Section = {
   id: string
