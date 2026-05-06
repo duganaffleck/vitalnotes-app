@@ -362,13 +362,11 @@ const sectionSeeds: SectionSeed[] = [
     'retrieval-practice',
     'reflection',
   ],
-  relatedSections: [
-    'start-here-what-vitalnotes-is',
-    'where-to-begin',
-    'cognitive-load',
-    'smart-notes-for-paramedic-students',
-    'retrieval-and-spaced-learning',
-  ],
+ relatedSections: [
+  'start-here-what-vitalnotes-is',
+  'where-to-begin',
+  'cognitive-load',
+],
 },
 {
   id: 'where-to-begin',
@@ -598,15 +596,12 @@ const sectionSeeds: SectionSeed[] = [
     'reflection',
     'performance-under-pressure',
   ],
-  relatedSections: [
-    'start-here-what-vitalnotes-is',
-    'how-to-use-this-guide',
-    'cognitive-load',
-    'retrieval-and-spaced-learning',
-    'smart-notes-for-paramedic-students',
-    'meaning-before-memorization',
-    'directives-through-purpose',
-  ],
+relatedSections: [
+  'cognitive-load',
+  'meaning-before-memorization',
+  'smart-notes-for-paramedic-students',
+  'retrieval-and-spaced-learning',
+],
 },
 {
   id: 'cognitive-load',
@@ -945,14 +940,11 @@ const sectionSeeds: SectionSeed[] = [
     'reassessment',
     'performance-under-pressure',
   ],
-  relatedSections: [
-    'start-here-what-vitalnotes-is',
-    'how-to-use-this-guide',
-    'where-to-begin',
-    'why-studying-feels-productive-but-fails-under-pressure',
-    'learning-strain-is-not-always-a-personal-problem',
-    'smart-notes-for-paramedic-students',
-  ],
+relatedSections: [
+  'why-studying-feels-productive-but-fails-under-pressure',
+  'learning-strain-is-not-always-a-personal-problem',
+  'smart-notes-for-paramedic-students',
+],
 },
 {
   id: 'why-studying-feels-productive-but-fails-under-pressure',
@@ -1599,11 +1591,10 @@ const sectionSeeds: SectionSeed[] = [
     'reflection',
     'transfer',
   ],
-  relatedSections: [
+relatedSections: [
   'cognitive-load',
   'why-studying-feels-productive-but-fails-under-pressure',
   'meaning-before-memorization',
-  'smart-notes-for-paramedic-students',
   'retrieval-and-spaced-learning',
 ],
 },
@@ -3637,14 +3628,12 @@ const sectionSeeds: SectionSeed[] = [
     'clinical-reasoning',
   ],
   relatedTools: ['smart-note-template'],
-  relatedSections: [
-    'meaning-before-memorization',
-    'pathophysiology-through-patterns',
-    'directives-through-purpose',
-    'types-of-notes-and-idea-maturation',
-    'obsidian-for-learning-paramedicine',
-    'retrieval-and-spaced-learning',
-  ],
+relatedSections: [
+  'meaning-before-memorization',
+  'types-of-notes-and-idea-maturation',
+  'obsidian-for-learning-paramedicine',
+  'retrieval-and-spaced-learning',
+],
 },
 {
   id: 'types-of-notes-and-idea-maturation',
@@ -4436,13 +4425,11 @@ const sectionSeeds: SectionSeed[] = [
     'cognitive-load',
   ],
   relatedTools: ['smart-note-template'],
-  relatedSections: [
-    'smart-notes-for-paramedic-students',
-    'obsidian-for-learning-paramedicine',
-    'meaning-before-memorization',
-    'pathophysiology-through-patterns',
-    'retrieval-and-spaced-learning',
-  ],
+relatedSections: [
+  'smart-notes-for-paramedic-students',
+  'obsidian-for-learning-paramedicine',
+  'retrieval-and-spaced-learning',
+],
 },
 {
   id: 'obsidian-for-learning-paramedicine',
@@ -5135,14 +5122,11 @@ const sectionSeeds: SectionSeed[] = [
     'retrieval-practice',
   ],
   relatedTools: ['smart-note-template'],
-  relatedSections: [
-    'smart-notes-for-paramedic-students',
-    'types-of-notes-and-idea-maturation',
-    'meaning-before-memorization',
-    'pathophysiology-through-patterns',
-    'directives-through-purpose',
-    'retrieval-and-spaced-learning',
-  ],
+relatedSections: [
+  'smart-notes-for-paramedic-students',
+  'types-of-notes-and-idea-maturation',
+  'retrieval-and-spaced-learning',
+],
 },
  {
   id: 'retrieval-and-spaced-learning',
@@ -5519,12 +5503,10 @@ const sectionSeeds: SectionSeed[] = [
     'clinical-recall',
   ],
   relatedSections: [
-    'why-studying-feels-productive-but-fails-under-pressure',
-    'smart-notes-for-paramedic-students',
-    'types-of-notes-and-idea-maturation',
-    'clinical-recall-without-trivia',
-    'anki-for-paramedic-learning',
-  ],
+  'smart-notes-for-paramedic-students',
+  'types-of-notes-and-idea-maturation',
+  'retrieval-and-spaced-learning',
+],
 },
  {
   id: 'clinical-recall-without-trivia',
@@ -6097,14 +6079,12 @@ const sectionSeeds: SectionSeed[] = [
     'smart-notes',
   ],
   relatedTools: ['clinical-recall-prompt-builder'],
-  relatedSections: [
-    'retrieval-and-spaced-learning',
-    'smart-notes-for-paramedic-students',
-    'meaning-before-memorization',
-    'pathophysiology-through-patterns',
-    'directives-through-purpose',
-    'anki-for-paramedic-learning',
-  ],
+relatedSections: [
+  'retrieval-and-spaced-learning',
+  'meaning-before-memorization',
+  'directives-through-purpose',
+  'anki-for-paramedic-learning',
+],
 },
 {
   id: 'anki-for-paramedic-learning',
