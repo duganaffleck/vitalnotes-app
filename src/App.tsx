@@ -1,16 +1,84 @@
+import { useEffect, useMemo, useState } from 'react'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import LearningPath from './pages/LearningPath'
+import SectionPage from './pages/SectionPage'
+import Tools from './pages/Tools'
+import Glossary from './pages/Glossary'
+import { firstSection, getSectionById } from './content/sections'
+
+type AppRoute = {
+  page: 'home' | 'learning-path' | 'section' | 'tools' | 'glossary'
+  sectionId?: string
+}
+
+function parseHash(): AppRoute {
+  const hash = window.location.hash.replace('#', '')
+
+  if (!hash || hash === '/') {
+    return { page: 'home' }
+  }
+
+  if (hash === '/learning-path') {
+    return { page: 'learning-path' }
+  }
+
+  if (hash === '/tools') {
+    return { page: 'tools' }
+  }
+
+  if (hash === '/glossary') {
+    return { page: 'glossary' }
+  }
+
+  if (hash.startsWith('/section/')) {
+    const sectionId = hash.replace('/section/', '')
+    return { page: 'section', sectionId }
+  }
+
+  return { page: 'home' }
+}
+
+function navigateTo(hash: string) {
+  window.location.hash = hash
+}
+
 function App() {
+  const [route, setRoute] = useState<AppRoute>(() => parseHash())
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setRoute(parseHash())
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
+    window.addEventListener('hashchange', handleHashChange)
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
+
+  const currentSection = useMemo(() => {
+    if (route.page !== 'section') {
+      return undefined
+    }
+
+    return getSectionById(route.sectionId ?? '') ?? firstSection
+  }, [route])
+
   return (
-    <main className="app-shell">
-      <section className="hero-card">
-        <p className="eyebrow">VitalNotes</p>
-        <h1>Learning paramedicine with structure, not noise.</h1>
-        <p>
-          This is the first clean React checkpoint for the VitalNotes app. The next
-          step is to model the approved first-slice content and build the calm reading
-          interface around it.
-        </p>
-      </section>
-    </main>
+    <Layout currentPage={route.page} onNavigate={navigateTo}>
+      {route.page === 'home' && <Home onNavigate={navigateTo} />}
+      {route.page === 'learning-path' && (
+        <LearningPath onNavigate={navigateTo} />
+      )}
+      {route.page === 'section' && currentSection && (
+        <SectionPage section={currentSection} onNavigate={navigateTo} />
+      )}
+      {route.page === 'tools' && <Tools onNavigate={navigateTo} />}
+      {route.page === 'glossary' && <Glossary onNavigate={navigateTo} />}
+    </Layout>
   )
 }
 
