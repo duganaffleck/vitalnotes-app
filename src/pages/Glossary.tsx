@@ -4,7 +4,7 @@ type GlossaryProps = {
   onNavigate: (hash: string) => void
 }
 
-function Glossary({ onNavigate }: GlossaryProps) {
+function Glossary(_props: GlossaryProps) {
   return (
     <section className="page-stack">
       <header className="page-header">
@@ -22,17 +22,6 @@ function Glossary({ onNavigate }: GlossaryProps) {
             <h2>{term.term}</h2>
             <p>{term.shortDefinition}</p>
             <p className="muted-copy">{term.paramedicRelevance}</p>
-
-            {term.relatedSections.length > 0 && (
-              <button
-                className="text-button"
-                onClick={() =>
-                  onNavigate(`#/section/${term.relatedSections[0]}`)
-                }
-              >
-                Open related section
-              </button>
-            )}
           </article>
         ))}
       </div>
