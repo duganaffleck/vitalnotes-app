@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import GlossaryTerms from '../components/GlossaryTerms'
 import SectionBody from '../components/SectionBody'
 import SectionHeader from '../components/SectionHeader'
 import SectionNavigation from '../components/SectionNavigation'
@@ -37,6 +38,11 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
         <SectionHeader section={section} />
 
         <SectionBody body={section.body} />
+
+        <GlossaryTerms
+          glossaryTermIds={section.glossaryTerms}
+          onNavigate={onNavigate}
+        />
 
         {relatedTools.length > 0 && (
           <aside className="related-panel">
