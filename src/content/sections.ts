@@ -5727,53 +5727,1659 @@ const sectionSeeds: SectionSeed[] = [
     'retrieval-and-spaced-learning',
   ],
 },
-  {
-    id: 'retrieval-and-spaced-learning',
-    title: 'Retrieval and Spaced Learning',
-    subtitle: 'Remembering improves when access is practiced over time.',
-    cluster: '04 Build Recall',
-    clusterOrder: 4,
-    sectionOrder: 0,
-    studentProblem:
-      'Students may review repeatedly but avoid the uncomfortable work of recalling information without cues.',
-    sectionPurpose:
-      'Introduce retrieval and spacing as practical supports for durable access under pressure.',
-    pageType: 'conceptual',
-    glossaryTerms: ['retrieval-practice', 'spacing', 'recall'],
-    relatedSections: ['clinical-recall-without-trivia', 'anki-for-paramedic-learning'],
-  },
-  {
-    id: 'clinical-recall-without-trivia',
-    title: 'Clinical Recall Without Trivia',
-    subtitle: 'Recall should help you notice, decide, reassess, and explain.',
-    cluster: '04 Build Recall',
-    clusterOrder: 4,
-    sectionOrder: 1,
-    studentProblem:
-      'Students can turn recall practice into isolated fact testing that does not transfer well to patient care.',
-    sectionPurpose:
-      'Shape recall around clinical use rather than trivia.',
-    pageType: 'tool-supported',
-    glossaryTerms: ['clinical-recall', 'retrieval-practice', 'transfer'],
-    relatedTools: ['clinical-recall-prompt-builder'],
-    relatedSections: ['retrieval-and-spaced-learning', 'anki-for-paramedic-learning'],
-  },
-  {
-    id: 'anki-for-paramedic-learning',
-    title: 'Anki for Paramedic Learning',
-    subtitle: 'Use Anki to support recall, not to replace reasoning.',
-    cluster: '04 Build Recall',
-    clusterOrder: 4,
-    sectionOrder: 2,
-    studentProblem:
-      'Students may use Anki as a flashcard platform without shaping prompts around clinical judgment or transfer.',
-    sectionPurpose:
-      'Clarify how Anki can support spaced recall while remaining secondary to understanding, reasoning, and practice.',
-    pageType: 'tool-supported',
-    glossaryTerms: ['anki', 'spacing', 'clinical-recall'],
-    relatedTools: ['clinical-recall-prompt-builder'],
-    relatedSections: ['retrieval-and-spaced-learning', 'clinical-recall-without-trivia'],
-  },
+ {
+  id: 'retrieval-and-spaced-learning',
+  title: 'Retrieval and Spaced Learning',
+  subtitle: 'Remembering improves when access is practiced over time.',
+  cluster: '04 Build Recall',
+  clusterOrder: 4,
+  sectionOrder: 0,
+  studentProblem:
+    'I study and recognize the material when I see it, but I struggle to bring it back during scenarios, labs, or OSCEs.',
+  sectionPurpose:
+    'Explain why access matters more than recognition and how spaced retrieval helps learning become more reliable under paramedic training pressure.',
+  pageType: 'conceptual',
+  body: [
+    {
+      type: 'heading',
+      text: `Why remembering feels different from reviewing`,
+    },
+    {
+      type: 'paragraph',
+      text: `A lot of students meet this problem in a frustrating way.`,
+    },
+    {
+      type: 'paragraph',
+      text: `They review a topic and it feels clear. Respiratory distress makes sense while the notes are open. Cardiac chest pain seems organized while the lecture slides are in front of them. Stroke assessment feels manageable when the checklist is visible. The information is familiar, and that familiarity can feel like readiness.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Then a scenario starts.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The patient is talking. Their partner is asking questions. The monitor is producing numbers that need to be interpreted. The instructor is watching quietly. The student knows they have seen this material before, but the knowledge does not arrive in a clean, usable form.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This is where the problem changes from understanding the material to being able to reach it.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Earlier in the guide, we looked at why familiar study can feel productive without preparing students for pressure. Here, the focus becomes more practical: how do you train knowledge so it can be reached when the page is closed and the situation keeps moving?`,
+    },
+    {
+      type: 'heading',
+      text: `The problem with smooth review`,
+    },
+    {
+      type: 'paragraph',
+      text: `Review has a place. It helps you re-enter material, check wording, revisit explanations, and notice what you have forgotten. The problem comes when review becomes the only way students judge whether they know something.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Review gives you cues: the heading, the diagram, the slide order, and the sentence before and after the key idea. All of that support helps hold the idea in place.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Scenarios remove much of that support. They also add competing demands: assessment, communication, equipment, time awareness, uncertainty, and decisions that need to be explained. A student may recognize a concept during review but still struggle to retrieve and use it during performance.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The studying may have helped, but it did not yet train access strongly enough.`,
+    },
+    {
+      type: 'heading',
+      text: `What retrieval trains`,
+    },
+    {
+      type: 'paragraph',
+      text: `Retrieval means trying to bring information back before looking at the answer.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This is different from rereading. When you retrieve, you ask your memory to rebuild the idea. That process is less comfortable than review because it exposes gaps quickly. You may realize that you can name a condition but cannot explain what is happening physiologically. You may remember a medication but forget what would make you withhold it. You may know a directive threshold but struggle to explain the risk the directive is managing.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Those gaps are not a reason to avoid retrieval.`,
+    },
+    {
+      type: 'paragraph',
+      text: `They are the reason to use it.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A gap found during study is useful. A gap found during a scenario is still useful, but it is more expensive. There is more pressure, more emotion, and less time to repair the connection in the moment.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Retrieval lets students find weak access while the stakes are still low.`,
+    },
+    {
+      type: 'heading',
+      text: `Why spacing matters`,
+    },
+    {
+      type: 'paragraph',
+      text: `Spacing means returning to learning after some time has passed.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This matters because knowledge can feel stable immediately after studying even when it is still fragile. If you review a concept several times in one sitting, the material stays warm. You may remember it partly because the cues are still nearby.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Paramedic training does not usually ask for knowledge under those conditions.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You may learn something in lecture, use it in lab several days later, see it again during a scenario, and then need it during an OSCE when you are tired, watched, and managing several things at once. The delay is part of the test. So is the pressure.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Spacing gives learning a safer version of that delay.`,
+    },
+    {
+      type: 'paragraph',
+      text: `When you return to an idea after time has passed, you have to find it again. That effort is useful. It strengthens the path back to the knowledge and makes future access more reliable.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The goal is not to make recall feel effortless during study. The goal is to make it more available later.`,
+    },
+    {
+      type: 'heading',
+      text: `A paramedic example`,
+    },
+    {
+      type: 'paragraph',
+      text: `Imagine a student preparing for a respiratory scenario day.`,
+    },
+    {
+      type: 'paragraph',
+      text: `They review asthma, COPD, pneumonia, and heart failure the night before lab. The notes are organized. The differences seem clear enough. Asthma involves bronchoconstriction. COPD involves chronic airflow limitation. Pneumonia can impair gas exchange. Heart failure can produce fluid in the lungs.`,
+    },
+    {
+      type: 'paragraph',
+      text: `During review, the categories feel manageable.`,
+    },
+    {
+      type: 'paragraph',
+      text: `In the scenario, the patient is short of breath, anxious, pale, and speaking in short phrases. Lung sounds are abnormal. Oxygen saturation matters, but it does not explain everything. The student remembers fragments from several conditions at once and starts treating the call as generic respiratory distress. They are doing things, but they are not clearly tracking what pattern they are seeing or what would change their concern.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The issue is not that they failed to study.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Much of their study happened with the answer nearby.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A different approach would look less smooth during preparation, but it would build stronger access. Several days before lab, the student closes their notes and tries to explain the difference between obstructive breathing, impaired gas exchange, and fluid in the lungs. They check what was missing. The next day, they try a different prompt: “What findings would make this shortness of breath more concerning?” Later, they ask, “What should I reassess after oxygen, positioning, or bronchodilator treatment?”`,
+    },
+    {
+      type: 'paragraph',
+      text: `By scenario day, they still need to think. The call still has uncertainty. But the important distinctions are easier to reach because the student has practiced finding them without the notes open.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is the practical value of retrieval.`,
+    },
+    {
+      type: 'heading',
+      text: `Retrieval works better when meaning is already forming`,
+    },
+    {
+      type: 'paragraph',
+      text: `This is why the previous clusters matter.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If you retrieve only isolated facts, studying can turn into a trivia exercise. Some facts do need to be known, including doses, contraindications, timelines, and assessment details. But paramedic performance usually depends on how those facts are connected.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Smart Notes give retrieval better material.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A Smart Note about asthma and air trapping can become:`,
+    },
+    {
+      type: 'paragraph',
+      text: `Explain why quieter lung sounds may be concerning in severe asthma.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A Smart Note about chest pain and risk can become:`,
+    },
+    {
+      type: 'paragraph',
+      text: `Why might care begin before diagnostic certainty?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A Smart Note about directives can become:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What is this directive protecting against, and what would make me withhold or stop treatment?`,
+    },
+    {
+      type: 'paragraph',
+      text: `These prompts ask for relationships. They bring back mechanisms, risks, and decision points. That kind of retrieval is closer to what students need during assessment and reassessment.`,
+    },
+    {
+      type: 'heading',
+      text: `What to retrieve`,
+    },
+    {
+      type: 'paragraph',
+      text: `Not everything deserves the same retrieval effort.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Some information can be reviewed, checked, or looked up when needed. Other knowledge needs to be reachable because it shapes early decisions.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Good retrieval targets include:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'high-risk presentations',
+        'common conditions with overlapping findings',
+        'directive boundaries and contraindications',
+        'mechanisms that explain several findings at once',
+        'reassessment priorities after treatment',
+        'differences between similar presentations',
+        'repeated mistakes from scenarios or labs',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `For example, retrieving the exact wording of a long explanation may not be the best use of effort. Retrieving why a contraindication matters, what clinical risk is being managed, or what finding should change the plan is much more useful.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This is where retrieval starts to connect with judgment.`,
+    },
+    {
+      type: 'heading',
+      text: `A simple way to begin`,
+    },
+    {
+      type: 'paragraph',
+      text: `Do not start with a complicated calendar.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Start with one important idea.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Choose a concept from lecture, lab, a scenario, or a Smart Note. Close the source. Try to explain the idea in your own words. Then check what was accurate, what was missing, and what needs another attempt later.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A simple rhythm looks like this:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'Pick one concept that matters clinically.',
+        'Close your notes.',
+        'Explain the idea from memory.',
+        'Check against your notes or source material.',
+        'Mark one gap.',
+        'Return to the same idea after time has passed.',
+        'Use a slightly different prompt next time.',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `The changed prompt matters.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If you ask the exact same question every time, you may start memorizing the answer pattern. Real patients do not present the same cue in the same wording each time. Variation helps retrieval become more flexible.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You might retrieve a concept once by explaining it, once by comparing it to another condition, and once by asking what would change your plan. The content is related, but the route back to it is different.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is useful practice.`,
+    },
+    {
+      type: 'heading',
+      text: `What retrieval should feel like`,
+    },
+    {
+      type: 'paragraph',
+      text: `Retrieval often feels worse than review at first, especially when students are used to judging learning by how smooth review feels.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Review reassures you because the material is visible. Retrieval asks you to work before you feel fully ready. It can make knowledge feel less stable at the start because it shows you the parts that are not yet reachable.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This is where students need to be careful with interpretation.`,
+    },
+    {
+      type: 'paragraph',
+      text: `An incomplete retrieval attempt does not mean the method failed. It means the method found something. That finding gives you a place to work. You check the source, repair the explanation, and return later.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Over time, retrieval tends to become less dramatic. The knowledge does not always feel perfectly fluent, but it becomes easier to locate and use. That is the direction you are looking for: not a rush of confidence during review, but better access when the situation asks for it.`,
+    },
+    {
+      type: 'heading',
+      text: `Keeping spacing realistic`,
+    },
+    {
+      type: 'paragraph',
+      text: `Spacing does not need to become a perfect schedule.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For most students, a realistic pattern is enough. Return to important ideas after a short delay, then after a longer one. That might mean later the same day, a few days later, and again before a lab, scenario, or test.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The exact timing matters less than the habit of not keeping all retrieval inside one study block.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Let time pass.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Come back.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Try before looking.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This works especially well with Smart Notes because the notes are already built around meaning. You can open one note, read it briefly, close it, explain the idea, check yourself, then move on. A few minutes repeated across a week can do more for access than a long review session that never asks memory to work.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For this stage, small and repeatable is enough.`,
+    },
+    {
+      type: 'heading',
+      text: `What this sets up next`,
+    },
+    {
+      type: 'paragraph',
+      text: `Retrieval and spacing help knowledge become more available.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The next question is what kind of knowledge should be practiced this way. In paramedicine, you are not just trying to remember facts. You are trying to recall information in a form that supports assessment, prioritization, directive use, reassessment, and communication.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That distinction is important enough for its own section.`,
+    },
+  ],
+  glossaryTerms: [
+    'retrieval-practice',
+    'spacing',
+    'recognition',
+    'cognitive-load',
+    'smart-notes',
+    'clinical-recall',
+  ],
+  relatedSections: [
+    'why-studying-feels-productive-but-fails-under-pressure',
+    'smart-notes-for-paramedic-students',
+    'types-of-notes-and-idea-maturation',
+    'clinical-recall-without-trivia',
+    'anki-for-paramedic-learning',
+  ],
+},
+ {
+  id: 'clinical-recall-without-trivia',
+  title: 'Clinical Recall Without Trivia',
+  subtitle: 'Recall should help you notice, decide, reassess, and explain.',
+  cluster: '04 Build Recall',
+  clusterOrder: 4,
+  sectionOrder: 1,
+  studentProblem:
+    'I can remember isolated facts, but I do not always know how to use them during assessment, decisions, or scenarios.',
+  sectionPurpose:
+    'Show how recall practice should support clinical use rather than becoming disconnected trivia.',
+  pageType: 'tool-supported',
+  body: [
+    {
+      type: 'heading',
+      text: `Why recall can still miss the point`,
+    },
+    {
+      type: 'paragraph',
+      text: `Retrieval practice helps, but it can still be aimed at the wrong thing.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A student can get better at remembering isolated facts and still struggle during scenarios. They might recall a medication dose, a definition, a list of symptoms, or a protocol threshold, then hesitate when the patient does not present cleanly. They may know the answer in a study session and still have trouble deciding what matters first in the room.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That mismatch is common in paramedicine because the job rarely asks for knowledge in a neat format.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The patient does not present as a card. They say they feel weak, short of breath, nauseated, scared, dizzy, or not quite right. Their family adds details out of order. The monitor gives numbers that need context. The first explanation may not hold. The student has to decide what to ask, what to check, what to treat, what to withhold, what to reassess, and what to say out loud.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Recall has to serve that kind of situation.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You are not only trying to remember information. You are trying to remember it in a form that helps you assess, interpret, act, and adjust.`,
+    },
+    {
+      type: 'heading',
+      text: `Isolated recall and clinical recall`,
+    },
+    {
+      type: 'paragraph',
+      text: `Some recall is simple on purpose.`,
+    },
+    {
+      type: 'paragraph',
+      text: `There are facts students need to know cleanly: medication doses, routes, age limits, contraindications, timelines, normal values, red flags, and assessment steps. These details matter. Paramedic students cannot reason safely if every important detail is vague.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The problem begins when most recall practice stays isolated.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If every prompt asks for a definition, a dose, or a list, the student may become good at answering prompts while still struggling to use the information during a call. The knowledge is present, but it has not been practiced at the point where it becomes useful.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Clinical recall pulls the fact toward use.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It does not only ask, “What is this?”`,
+    },
+    {
+      type: 'paragraph',
+      text: `It also asks:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What does this change?',
+        'What would I look for next?',
+        'What risk am I managing?',
+        'What would make this unsafe?',
+        'What should I reassess after acting?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `Those questions do not replace factual recall. They give facts a job.`,
+    },
+    {
+      type: 'heading',
+      text: `What clinical recall needs to support`,
+    },
+    {
+      type: 'paragraph',
+      text: `Useful recall in paramedicine usually supports one of several clinical tasks.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It supports assessment when you remember what to ask, what to inspect, what to listen for, and which findings belong together.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It supports prioritization when you remember which problems can wait and which ones should change the pace of the call.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It supports directive use when you remember not only whether something is allowed, but what the directive is protecting, where the boundaries are firm, and what would make you withhold or stop.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It supports reassessment when you remember what should change after an intervention, what might worsen, and what would make your first explanation weaker.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It supports communication when you can explain your concern, your plan, and your reasoning without needing a perfect diagnosis.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This is the standard clinical recall should be moving toward. The question is not only whether you can remember the fact. It is whether the fact can help you do something safer or clearer when the call is moving.`,
+    },
+    {
+      type: 'heading',
+      text: `A paramedic example`,
+    },
+    {
+      type: 'paragraph',
+      text: `Consider chest pain.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A simple recall prompt might ask:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What is the adult dose of ASA?`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is worth knowing. It is also incomplete.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A more useful prompt might ask:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What does ASA support in suspected ischemic chest pain, and what would make it inappropriate?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Now the student has to remember the medication, the purpose, the patient context, and the safety boundary. The fact is still there, but it is connected to the reason it matters.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Another useful prompt might ask:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What would make chest pain more concerning even if the first 12-lead is non-diagnostic?`,
+    },
+    {
+      type: 'paragraph',
+      text: `That question pushes recall toward risk, trajectory, and reassessment. The student is no longer just retrieving a pathway. They are practicing the kind of thinking that helps during a real call, where certainty may arrive late or not at all.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Nitroglycerin works the same way.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A basic prompt asks for the dose.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A stronger prompt asks:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What must I know before giving nitro, and what would make me pause?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A more clinically shaped prompt asks:`,
+    },
+    {
+      type: 'paragraph',
+      text: `If the patient’s pain improves but blood pressure trends down, what needs reassessment before another dose?`,
+    },
+    {
+      type: 'paragraph',
+      text: `The information has not become less factual. It has become more usable.`,
+    },
+    {
+      type: 'heading',
+      text: `How facts become usable`,
+    },
+    {
+      type: 'paragraph',
+      text: `Facts become more useful when they are attached to a clinical job.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A fact might help you recognize risk.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A fact might help you separate similar presentations.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A fact might help you decide whether a treatment is safe.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A fact might tell you what to reassess.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A fact might help you explain your concern to a partner, preceptor, instructor, or receiving nurse.`,
+    },
+    {
+      type: 'paragraph',
+      text: `When students study facts without attaching them to any of those jobs, the information can stay inert. It is known, but it does not move easily.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For example, knowing that altered mental status can appear with hypoxia is useful. The clinical value is stronger when the student can say:`,
+    },
+    {
+      type: 'paragraph',
+      text: `If this short-of-breath patient becomes more confused, I should treat that as a worsening sign even if the SpO₂ has not changed dramatically yet.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is a different kind of memory. It is not only a remembered association. It is a cue that can change attention and action.`,
+    },
+    {
+      type: 'heading',
+      text: `Turning notes into clinical recall prompts`,
+    },
+    {
+      type: 'paragraph',
+      text: `Smart Notes are useful here because they already push ideas toward meaning.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A Smart Note should not just hold copied information. It should explain one idea, connect it to clinical signals, and name common confusion. That makes it easier to turn the note into recall practice that supports patient care.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A weak prompt from a note might be:`,
+    },
+    {
+      type: 'paragraph',
+      text: `Define shock.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A stronger prompt might be:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What early findings suggest poor perfusion before the blood pressure falls?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A weak prompt might ask:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What is sepsis?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A stronger prompt might ask:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What makes a vague infection call start to feel higher risk?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Or:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What would I reassess if the patient looks worse but the first vital signs are not dramatic?`,
+    },
+    {
+      type: 'paragraph',
+      text: `The goal is not to make every prompt long. Long prompts can become clumsy too. The goal is to make the prompt ask for the kind of memory the call will actually need.`,
+    },
+    {
+      type: 'heading',
+      text: `Recall should include relationships`,
+    },
+    {
+      type: 'paragraph',
+      text: `Students often practice recall as if knowledge lives in separate boxes.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Asthma in one box.`,
+    },
+    {
+      type: 'paragraph',
+      text: `COPD in another.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Pneumonia in another.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Heart failure in another.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That separation can help early learning, but real presentations overlap. Shortness of breath, anxiety, fatigue, abnormal lung sounds, poor air movement, and low oxygen saturation can appear across several problems. The student needs to retrieve distinctions, not just labels.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Useful prompts might ask:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What findings help separate obstructive breathing from impaired gas exchange?',
+        'What would make this respiratory patient less safe to leave sitting on scene?',
+        'What would I expect to change if the treatment is working?',
+        'What would make me worry the patient is tiring?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `These questions make recall relational. They ask the student to compare, prioritize, and anticipate.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is closer to the work of paramedicine.`,
+    },
+    {
+      type: 'heading',
+      text: `Recall should include action boundaries`,
+    },
+    {
+      type: 'paragraph',
+      text: `Clinical recall also needs boundaries.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Students often remember what they can do before they remember when they should not do it. That is understandable. Interventions stand out. They feel active. They are easier to rehearse than restraint.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Safe care depends on both.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A good recall prompt should sometimes ask:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'When would I withhold this?',
+        'What would make this unsafe?',
+        'What finding should make me stop and reassess?',
+        'What would make me patch?',
+        'What is outside my scope here?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `This matters especially with directives. If a student only recalls indications, they may feel confident too early. If they only recall contraindications, they may become hesitant and rigid. Clinical recall should hold both: what the care is trying to accomplish and where the guardrails are.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That balance can reduce anxiety because the student is not trying to memorize rules as isolated fragments. They are practicing the purpose and the boundary together.`,
+    },
+    {
+      type: 'heading',
+      text: `Recall should prepare communication`,
+    },
+    {
+      type: 'paragraph',
+      text: `A quiet test of understanding is whether you can explain your plan simply.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Not as a speech. Not as a textbook answer. Just clearly enough that someone else understands what you are concerned about and what you are doing next.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For example:`,
+    },
+    {
+      type: 'paragraph',
+      text: `I am concerned this chest pain could still be ischemic even though the first ECG is not diagnostic. I want to keep reassessing symptoms, vitals, and ECG changes while managing risk.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Or:`,
+    },
+    {
+      type: 'paragraph',
+      text: `This respiratory patient is tiring. I am watching work of breathing, mental status, air movement, and response to treatment, not just the saturation.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If students practice only short-answer recall, they may not rehearse this kind of explanation. Then, under pressure, their reasoning stays internal or comes out scattered.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Clinical recall should include some practice explaining why something matters. That helps in scenarios, OSCEs, preceptorship, and real calls.`,
+    },
+    {
+      type: 'heading',
+      text: `What to avoid`,
+    },
+    {
+      type: 'paragraph',
+      text: `Avoid recall practice that makes you better at cards but not better at calls.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That usually means being careful with prompts that are too isolated, too easy to recognize, or too disconnected from use.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Watch for prompts that only ask for:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'definitions',
+        'lists',
+        'medication doses without context',
+        'the same wording every time',
+        'indications without boundaries',
+        'actions without reassessment',
+        'labels without comparison',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `These prompts are not always wrong. Some simple cards are useful. The issue is proportion. If most of the system is trivia-style recall, then the student may improve at answering isolated questions without improving access during patient care.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The question is not only, “Is this fact important?”`,
+    },
+    {
+      type: 'paragraph',
+      text: `A better question is, “How does this fact need to show up when I am with a patient?”`,
+    },
+    {
+      type: 'heading',
+      text: `A simple clinical recall test`,
+    },
+    {
+      type: 'paragraph',
+      text: `When you make or review a recall prompt, ask three questions.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does this help me notice something?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does this help me decide something?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does this help me reassess something?`,
+    },
+    {
+      type: 'paragraph',
+      text: `If the answer is yes, the prompt is probably moving in the right direction.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If the answer is no, the prompt may still be useful, but it might belong in a smaller category: basic detail, terminology, or reference. Those details matter, but they should not dominate the way you practice recall.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Clinical recall should keep pulling information back toward use.`,
+    },
+    {
+      type: 'heading',
+      text: `Keeping it manageable`,
+    },
+    {
+      type: 'paragraph',
+      text: `This does not mean every study session needs elaborate prompts.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A practical system can stay simple.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For each important topic, try to create a few different kinds of recall:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'one prompt for the basic fact',
+        'one prompt for the clinical cue',
+        'one prompt for the decision or boundary',
+        'one prompt for reassessment',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `For chest pain, that might mean:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What medications may be considered?',
+        'What findings make ischemia more concerning?',
+        'What would make nitroglycerin unsafe or require caution?',
+        'What should be reassessed before repeating treatment or changing destination decisions?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `For respiratory distress, it might mean:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What patterns can cause shortness of breath?',
+        'What findings suggest increased work of breathing or fatigue?',
+        'What would make ventilation support more urgent?',
+        'What should be reassessed after oxygen, positioning, or medication?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `This is not a script to memorize. It is a way to make recall practice more clinically shaped.`,
+    },
+    {
+      type: 'heading',
+      text: `What this sets up next`,
+    },
+    {
+      type: 'paragraph',
+      text: `Clinical recall gives retrieval a better target.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Instead of practicing memory as isolated answers, students can practice bringing back knowledge in a form that supports assessment, decisions, safety, reassessment, and communication.`,
+    },
+    {
+      type: 'paragraph',
+      text: `This matters before we talk about Anki.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki can be useful, but it can also make weak recall habits feel efficient. If the prompts are too shallow, the app will help you repeat shallow thinking more consistently.`,
+    },
+  ],
+  glossaryTerms: [
+    'clinical-recall',
+    'retrieval-practice',
+    'directive',
+    'reassessment',
+    'clinical-reasoning',
+    'smart-notes',
+  ],
+  relatedTools: ['clinical-recall-prompt-builder'],
+  relatedSections: [
+    'retrieval-and-spaced-learning',
+    'smart-notes-for-paramedic-students',
+    'meaning-before-memorization',
+    'pathophysiology-through-patterns',
+    'directives-through-purpose',
+    'anki-for-paramedic-learning',
+  ],
+},
+{
+  id: 'anki-for-paramedic-learning',
+  title: 'Anki for Paramedic Learning',
+  subtitle: 'Use Anki to support recall, not to replace reasoning.',
+  cluster: '04 Build Recall',
+  clusterOrder: 4,
+  sectionOrder: 2,
+  studentProblem:
+    'I want to use flashcards to remember paramedic content, but I do not want to waste time memorizing isolated facts that do not help me in scenarios or patient care.',
+  sectionPurpose:
+    'Explain how to use Anki as a retrieval and spacing tool while keeping clinical reasoning, assessment, directive use, and reassessment central.',
+  pageType: 'tool-supported',
+  body: [
+    {
+      type: 'heading',
+      text: `Anki is useful, but it is not the learning system`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki can help paramedic students.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Used well, it gives you a structured way to practice retrieval over time. It brings material back after a delay. It makes you answer before looking. During busy weeks, when lectures, labs, scenarios, work, and life are all competing for attention, that can be genuinely useful.`,
+    },
+    {
+      type: 'paragraph',
+      text: `But Anki is still only a tool.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It does not decide what matters clinically. It does not build understanding for you. It does not know whether a card is useful, misleading, too easy, too vague, or disconnected from patient care. It will repeat whatever you give it.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is the important part.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If you put shallow prompts into Anki, it will help you practice shallow recall very consistently. That can feel productive while quietly pulling your attention away from the kind of thinking you need during scenarios.`,
+    },
+    {
+      type: 'paragraph',
+      text: `So the better question is not simply, “Should I use Anki?”`,
+    },
+    {
+      type: 'paragraph',
+      text: `The better question is, “What kind of recall am I training?”`,
+    },
+    {
+      type: 'heading',
+      text: `What Anki is good for`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki is strongest when important information needs to be brought back repeatedly over time.`,
+    },
+    {
+      type: 'paragraph',
+      text: `In paramedic school, that may include:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'medication names, doses, routes, and key safety considerations',
+        'contraindications and cautions',
+        'assessment steps that are easy to lose under pressure',
+        'normal ranges and high-risk abnormal findings',
+        'clinical cues that suggest worsening',
+        'directive boundaries',
+        'common comparisons between similar presentations',
+        'reassessment priorities after common interventions',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `These are reasonable Anki targets because they need to be reachable without a long search.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If a student has to rebuild every basic detail from scratch during a scenario, working memory gets crowded quickly. Some information needs to become easier to reach so attention can stay with the patient, the pattern, and the next decision.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is where Anki can reduce load.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It can make certain pieces of knowledge more available, which leaves more room for assessment and reasoning.`,
+    },
+    {
+      type: 'heading',
+      text: `Where Anki can mislead students`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki becomes less helpful when it makes clean answers feel like clinical readiness.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A flashcard can ask for a definition. It can ask for a dose. It can ask for a list. Those are sometimes useful. But real calls are not organized that way.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You do not get the topic heading first.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You do not get the exact wording from your card.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You do not get the patient problem neatly labelled.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You get a person who is vague, anxious, compensating, deteriorating, distracted, embarrassed, or unable to explain what is happening clearly. You get family members adding details out of order. You get findings that only become meaningful when they are connected.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki does not automatically train that kind of complexity.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It can support clinical learning, but it cannot replace it. Scenarios, labs, debriefs, assessment practice, directive interpretation, and Smart Notes still matter.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki should strengthen access to useful knowledge.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It should not flatten clinical reasoning into isolated answers.`,
+    },
+    {
+      type: 'heading',
+      text: `Start smaller than you want to`,
+    },
+    {
+      type: 'paragraph',
+      text: `Most students who struggle with Anki do not fail because the app is weak.`,
+    },
+    {
+      type: 'paragraph',
+      text: `They struggle because the deck becomes too large, too detailed, too repetitive, or too disconnected from actual use.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If you are starting, start smaller than feels impressive.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Do not try to turn every lecture slide into cards. Do not make hundreds of cards in one weekend. Do not create a deck that requires perfect daily discipline just to survive.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Start with a small number of high-value cards from material that keeps appearing in class, lab, directives, or scenarios.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A reasonable starting point might be:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'five to ten cards from a lecture',
+        'a few cards from a scenario mistake',
+        'a few cards from a directive that feels unclear',
+        'a few cards from a Smart Note that needs stronger access',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `That is enough to begin.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A smaller deck that you actually review is better than a large deck that becomes another source of guilt.`,
+    },
+    {
+      type: 'heading',
+      text: `The best cards have a clinical job`,
+    },
+    {
+      type: 'paragraph',
+      text: `Before making a card, ask what the knowledge is supposed to help you do.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does it help you notice something?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does it help you decide something?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does it help you avoid harm?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does it help you reassess?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Does it help you explain your reasoning?`,
+    },
+    {
+      type: 'paragraph',
+      text: `If the answer is yes, the card probably has a clinical job. That does not mean every card needs to be complicated. It means the card should point toward use.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A weak card asks:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What is hypoxia?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A stronger card asks:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What early changes might suggest poor oxygen delivery before the patient looks dramatically unstable?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A weak card asks:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What is the dose of nitroglycerin?`,
+    },
+    {
+      type: 'paragraph',
+      text: `A better set of cards might include:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What must be assessed before giving nitroglycerin?',
+        'What findings would make nitroglycerin unsafe or require caution?',
+        'What should be reassessed before repeating nitroglycerin?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `The dose still matters. It may deserve a simple card. But the dose should not be the only thing the student practices retrieving.`,
+    },
+    {
+      type: 'heading',
+      text: `Use more than one card for important ideas`,
+    },
+    {
+      type: 'paragraph',
+      text: `Some students try to make one perfect card for a complex topic.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That usually creates a card that is too vague, too heavy, or too frustrating to answer well.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A better approach is to make several smaller cards that approach the idea from different angles.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Instead of one large card called “Asthma,” you might create cards that ask:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What mechanism causes increased work of breathing in asthma?',
+        'Why can quieter lung sounds be concerning in severe asthma?',
+        'What findings suggest a respiratory patient is tiring?',
+        'What should be reassessed after bronchodilator treatment?',
+        'What would make ventilation support more urgent?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `Each card is small enough to answer. Together, they build a more usable pattern.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The goal is not to memorize a paragraph about asthma. The goal is to make the important pieces easier to reach when the patient is in front of you.`,
+    },
+    {
+      type: 'heading',
+      text: `Keep some cards simple`,
+    },
+    {
+      type: 'paragraph',
+      text: `Not every card needs to be clinically elaborate.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Some cards should be simple because some facts need clean access. Medication doses, routes, age limits, contraindications, timing rules, and key assessment values may need straightforward cards.`,
+    },
+    {
+      type: 'paragraph',
+      text: `There is nothing wrong with that.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The problem is not simple cards.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The problem is a deck made only of simple cards.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A useful paramedic deck usually needs a mix:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'simple fact cards',
+        'clinical cue cards',
+        'decision cards',
+        'boundary cards',
+        'reassessment cards',
+        'comparison cards',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `Simple cards help with accuracy.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Clinical cards help with use.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Both matter.`,
+    },
+    {
+      type: 'heading',
+      text: `Avoid cards that only work because the wording is familiar`,
+    },
+    {
+      type: 'paragraph',
+      text: `A common Anki trap is creating cards that become easy because the wording is familiar.`,
+    },
+    {
+      type: 'paragraph',
+      text: `You see the same question over and over. Eventually, you may not be retrieving the idea anymore. You may just be recognizing the card.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That can create false confidence.`,
+    },
+    {
+      type: 'paragraph',
+      text: `To avoid this, vary the way important ideas are tested. The deck does not need to become complicated. It just needs more than one route back to important knowledge.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For sepsis, do not only ask:`,
+    },
+    {
+      type: 'paragraph',
+      text: `What is sepsis?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Also ask:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What makes an infection call start to feel higher risk?',
+        'What early findings might suggest poor perfusion?',
+        'What would make me want to reassess sooner?',
+        'What changes would make transport feel more urgent?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `These prompts are connected, but they are not identical. They help the idea become more flexible.`,
+    },
+    {
+      type: 'heading',
+      text: `Use scenario mistakes as card material`,
+    },
+    {
+      type: 'paragraph',
+      text: `One of the best uses of Anki is repairing repeated errors.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If a scenario exposes a gap, that gap is valuable. It tells you what did not come back when you needed it.`,
+    },
+    {
+      type: 'paragraph',
+      text: `After a scenario, do not turn the whole call into cards. That becomes too much. Instead, choose one or two moments where better access would have helped.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Maybe you forgot a contraindication.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Maybe you missed that mental status was worsening.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Maybe you did not reassess after an intervention.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Maybe you knew a directive but could not explain why it applied.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Those moments can become useful cards because they come from performance, not abstract study.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For example:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What should I reassess after giving a bronchodilator?',
+        'What findings suggest a respiratory patient is tiring despite initial treatment?',
+        'What makes altered mental status concerning in a short-of-breath patient?',
+        'What would make me withhold this medication?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `These are not random facts. They are repairs to places where access failed.`,
+    },
+    {
+      type: 'heading',
+      text: `Connect Anki to Smart Notes`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki works best when it is fed by understanding.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Smart Notes help with this because they give you clearer source material. A Smart Note captures one idea, explains it in your own words, identifies clinical signals, and names common confusion. That is better source material than a copied slide or a highlighted paragraph.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The Smart Note is where understanding develops.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki is where selected pieces of that understanding are practiced over time.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Those jobs should stay separate.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Do not put the whole Smart Note into Anki. That usually creates long, clumsy cards. Instead, pull out the pieces that need stronger access.`,
+    },
+    {
+      type: 'paragraph',
+      text: `From a Smart Note about chest pain and risk, you might create:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'Why can ischemic chest pain remain concerning even when the first ECG is not diagnostic?',
+        'What changes would make reassessment more urgent?',
+        'What should be considered before repeating nitroglycerin?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `From a Smart Note about directive intent, you might create:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What clinical risk is this directive trying to manage?',
+        'What finding would make me stop and reassess?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `This keeps Anki connected to meaning without forcing it to carry the full explanation.`,
+    },
+    {
+      type: 'heading',
+      text: `Keep review honest`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki can make review feel automatic.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is useful, but it can also become mindless.`,
+    },
+    {
+      type: 'paragraph',
+      text: `When a card appears, pause long enough to actually answer. Do not flip the card the moment it feels familiar. Try to say the answer, explain the decision, or name the boundary before checking.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If you were wrong, take a few seconds to notice why.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Did you forget the fact?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Did you recognize the card but not understand the idea?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Did you remember the indication but miss the contraindication?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Did you know the answer but fail to connect it to a patient situation?`,
+    },
+    {
+      type: 'paragraph',
+      text: `Those are different problems. Treating them the same way makes Anki less useful.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki is not only a review queue. It can also show you what kind of access is weak.`,
+    },
+    {
+      type: 'heading',
+      text: `When to change or delete cards`,
+    },
+    {
+      type: 'paragraph',
+      text: `A deck should not be permanent just because you made it.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Some cards should be edited. Some should be suspended. Some should be deleted.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Change a card when:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'the wording gives away the answer',
+        'the card is too vague',
+        'the answer is too long',
+        'you keep getting it wrong for the wrong reason',
+        'the card asks for a fact but should ask for a decision',
+        'the card no longer reflects how the concept is being taught or used',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `Delete or suspend a card when:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'it no longer matters',
+        'it is too low-value',
+        'it duplicates several better cards',
+        'it keeps adding friction without improving recall',
+        'it belongs in reference material, not memory',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `This is not failure. It is maintenance.`,
+    },
+    {
+      type: 'paragraph',
+      text: `A good deck gets cleaner over time.`,
+    },
+    {
+      type: 'heading',
+      text: `What Anki should not become`,
+    },
+    {
+      type: 'paragraph',
+      text: `Anki should not become the place where all learning goes.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It should not replace reading, Smart Notes, scenarios, directive study, lab practice, or asking questions when something does not make sense.`,
+    },
+    {
+      type: 'paragraph',
+      text: `It also should not become a daily guilt machine.`,
+    },
+    {
+      type: 'paragraph',
+      text: `If Anki becomes heavy enough that it crowds out understanding, the tool has started to work against the goal. The point is not to have a perfect deck. The point is to make important knowledge easier to reach when you need it.`,
+    },
+    {
+      type: 'paragraph',
+      text: `For paramedic students, that means Anki should remain small enough, focused enough, and clinically shaped enough to support the rest of learning.`,
+    },
+    {
+      type: 'heading',
+      text: `A simple starting workflow`,
+    },
+    {
+      type: 'paragraph',
+      text: `Here is a reasonable way to begin.`,
+    },
+    {
+      type: 'paragraph',
+      text: `After lecture, lab, reading, or a scenario, choose a small number of important ideas.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Ask:`,
+    },
+    {
+      type: 'list',
+      items: [
+        'What facts need clean access?',
+        'What decisions does this knowledge support?',
+        'What boundaries or contraindications matter?',
+        'What should be reassessed?',
+        'What confusion keeps showing up?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: `Make a few cards from those answers.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Keep them short. Keep them specific. Keep them connected to use.`,
+    },
+    {
+      type: 'paragraph',
+      text: `During reviews, answer before flipping. Notice misses. Edit cards that are not helping. Let the deck stay smaller than your ambition.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That is enough to make Anki useful.`,
+    },
+    {
+      type: 'heading',
+      text: `What this sets up next`,
+    },
+    {
+      type: 'paragraph',
+      text: `The Build Recall cluster has focused on access.`,
+    },
+    {
+      type: 'paragraph',
+      text: `First, retrieval and spacing helped explain how knowledge becomes easier to reach over time. Then clinical recall helped shape what kind of knowledge is worth practicing. Anki can support that work, as long as it strengthens clinical access instead of flattening learning into disconnected answers.`,
+    },
+    {
+      type: 'paragraph',
+      text: `The next part of the guide moves from recall into clinical reasoning.`,
+    },
+    {
+      type: 'paragraph',
+      text: `That shift matters. Remembering information is not the same as knowing what to do with it. In the next section, we begin looking more directly at how students keep a working explanation of the call while information is incomplete, changing, and sometimes misleading.`,
+    },
+  ],
+  glossaryTerms: [
+    'anki',
+    'retrieval-practice',
+    'spacing',
+    'clinical-recall',
+    'smart-notes',
+    'directive',
+    'reassessment',
+  ],
+  relatedTools: ['clinical-recall-prompt-builder'],
+  relatedSections: [
+    'retrieval-and-spaced-learning',
+    'clinical-recall-without-trivia',
+    'smart-notes-for-paramedic-students',
+    'types-of-notes-and-idea-maturation',
+    'directives-through-purpose',
+  ],
+},
 ]
 
 export const sections: Section[] = sectionSeeds.map((section, index) => ({
