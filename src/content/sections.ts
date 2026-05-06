@@ -3048,791 +3048,666 @@ const sectionSeeds: SectionSeed[] = [
     'Introduce Smart Notes as a practical way for paramedic students to turn scattered learning into reusable explanations, connections, and clinical reasoning supports.',
   pageType: 'tool-supported',
   body: [
-    {
-      type: 'paragraph',
-      text: 'Most paramedic students already take notes.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They write during lectures. They highlight slides. They copy definitions, save charts, organize binders, and build folders by topic. Some students have polished notes. Some have messy notes. Some have notes spread across notebooks, apps, handouts, screenshots, and whatever document was open at the time.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem is not usually that students have no notes.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem is that many notes do not help much when the student has to think.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A note can be accurate and still not help during a scenario. It can be complete and still be hard to use. It can look responsible and still leave the student saying, “I knew that, I just could not put it together fast enough.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is the problem this section is trying to solve.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The last cluster focused on building understanding. This cluster is about keeping that understanding alive long enough to use it, revise it, and connect it to new situations. Smart Notes are one way to do that.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not a way to collect more information. They are a way to make important ideas easier to return to, explain, and use.',
-    },
-    {
-      type: 'heading',
-      text: 'What makes a note smart',
-    },
-    {
-      type: 'paragraph',
-      text: 'A Smart Note is not defined by software.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It is not defined by Obsidian, folders, backlinks, tags, plugins, templates, or a nice-looking graph. You can write a Smart Note in an app, a notebook, a document, or a plain text file.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A note is smart when it helps your future self think more clearly.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That means it does more than store information. It explains one idea in your own words. It shows why the idea matters. It connects to other ideas. It gives you something useful when you are preparing for a scenario, reviewing after feedback, or trying to understand why a decision felt hard.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A useful Smart Note usually answers some version of these questions:',
-    },
-    {
-      type: 'paragraph',
-      text: 'What is happening here?',
-    },
-    {
-      type: 'paragraph',
-      text: 'Why does it matter clinically?',
-    },
-    {
-      type: 'paragraph',
-      text: 'How would this show up in assessment?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What mistake could this prevent?',
-    },
-    {
-      type: 'paragraph',
-      text: 'What does this connect to?',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is different from copying a lecture slide.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A copied slide preserves someone else’s structure. A Smart Note helps build yours.',
-    },
-    {
-      type: 'heading',
-      text: 'Why regular notes stop helping',
-    },
-    {
-      type: 'paragraph',
-      text: 'Regular notes can be useful.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They preserve what was taught. They help you keep track of details. They give you something to review before a quiz, test, lab, or OSCE. Early in a topic, that may be exactly what you need.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The problem is that many notes are built for recognition, not use.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They work best when you already know what you are looking for. You open the folder, find the topic, reread the section, and recognize the information. In that setting, the note seems helpful because the situation is calm and the label is already attached.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Scenarios do not work that way.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A patient does not arrive as “respiratory pathology, slide twelve.” They arrive with effort, colour, posture, speech, anxiety, silence, family comments, vital signs, changing presentation, and a partner waiting for your next move.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If your notes are mostly lists, your brain still has to assemble the meaning later. If your notes mirror the order of a lecture, your brain still has to reorganize the ideas around the patient. If your notes collect every detail, your brain still has to decide what matters when attention is already busy.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Detailed notes can still fail if they store information without reducing the work of using it.',
-    },
-    {
-      type: 'heading',
-      text: 'What Smart Notes do differently',
-    },
-    {
-      type: 'paragraph',
-      text: 'Smart Notes shift some of the thinking earlier.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of trying to assemble meaning for the first time during a scenario, you begin building that meaning while studying, reviewing, or reflecting.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A Smart Note might take a confusing idea and turn it into a short explanation. It might connect a patient sign to a mechanism. It might capture a common mistake from lab. It might explain why one finding matters more than it first appears. It might link a directive to the risk it is protecting against.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The note does not replace practice.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It prepares your thinking for practice.',
-    },
-    {
-      type: 'paragraph',
-      text: 'When a similar situation appears later, you are not starting from loose facts. You have already built a small structure that helps you recognize what matters, what might be happening, and what needs to be checked next.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is the value of Smart Notes in paramedic learning. They help preserve small pieces of understanding so those pieces can be used again.',
-    },
-    {
-      type: 'heading',
-      text: 'A paramedic example',
-    },
-    {
-      type: 'paragraph',
-      text: 'Imagine a student preparing for respiratory scenarios.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Their original notes on asthma are long. They include definitions, airway anatomy, bronchoconstriction, medications, contraindications, and several copied slides. The notes are accurate. They look thorough.',
-    },
-    {
-      type: 'paragraph',
-      text: 'During a scenario, the patient is anxious and breathing quickly. Lung sounds are wheezy. Oxygen saturation is acceptable. After treatment, the wheezing becomes less obvious, but the patient looks more tired and is speaking less.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The student hesitates.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They remember asthma. They remember wheezing. They remember treatment. But they do not immediately recognize that quieter lung sounds may not mean improvement if the patient is tiring.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Later, in debrief, the student says, “I knew the asthma stuff. I just did not put it together.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'A Smart Note would not need to summarize all of asthma.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It might be titled:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Asthma can become quieter when fatigue worsens',
-    },
-    {
-      type: 'paragraph',
-      text: 'The note might explain:',
-    },
-    {
-      type: 'paragraph',
-      text: 'In severe bronchospasm, reduced wheezing is not always improvement. If work of breathing remains high, speech worsens, mental status changes, or air movement decreases, the patient may be tiring. Reassessment after treatment needs to focus on effort, air movement, speech, mental status, and overall trajectory, not just whether wheezing sounds better.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Clinical signals might include:',
-    },
-    {
-      type: 'paragraph',
-      text: 'reduced ability to speak',
-    },
-    {
-      type: 'paragraph',
-      text: 'decreasing air movement',
-    },
-    {
-      type: 'paragraph',
-      text: 'persistent high work of breathing',
-    },
-    {
-      type: 'paragraph',
-      text: 'altered mental status',
-    },
-    {
-      type: 'paragraph',
-      text: 'fatigue after initial treatment',
-    },
-    {
-      type: 'paragraph',
-      text: 'poor or incomplete response to bronchodilator treatment',
-    },
-    {
-      type: 'paragraph',
-      text: 'Common confusion:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Students may relax when wheezing decreases, even though reduced sound can mean less air movement rather than improvement.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Links might include:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Work of Breathing',
-    },
-    {
-      type: 'paragraph',
-      text: 'Air Trapping',
-    },
-    {
-      type: 'paragraph',
-      text: 'Respiratory Fatigue',
-    },
-    {
-      type: 'paragraph',
-      text: 'Reassessment After Intervention',
-    },
-    {
-      type: 'paragraph',
-      text: 'Oxygenation Versus Ventilation',
-    },
-    {
-      type: 'paragraph',
-      text: 'That note is not a full asthma review. It is a small clinical distinction made visible.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That is what makes it reusable.',
-    },
-    {
-      type: 'heading',
-      text: 'One note, one idea',
-    },
-    {
-      type: 'paragraph',
-      text: 'The most important rule is simple:',
-    },
-    {
-      type: 'paragraph',
-      text: 'One Smart Note should hold one idea.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Not one lecture. Not one disease. Not one chapter. One idea.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If a note tries to explain asthma, COPD, pneumonia, heart failure, oxygen administration, bronchodilators, and respiratory failure all at once, it becomes hard to reuse. It may be thorough, but it is not sharp.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A useful note is smaller.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Examples:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Quiet lungs can mean worsening fatigue',
-    },
-    {
-      type: 'paragraph',
-      text: 'Chest pain decisions are guided by risk before certainty',
-    },
-    {
-      type: 'paragraph',
-      text: 'Fever in older adults may not look dramatic early',
-    },
-    {
-      type: 'paragraph',
-      text: 'Reassessment after treatment tells you whether your explanation still fits',
-    },
-    {
-      type: 'paragraph',
-      text: 'Blood pressure can stay normal while compensation is working',
-    },
-    {
-      type: 'paragraph',
-      text: 'Oxygen saturation does not fully describe work of breathing',
-    },
-    {
-      type: 'paragraph',
-      text: 'These are not full topics.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are ideas that can be explained, linked, tested, revised, and reused.',
-    },
-    {
-      type: 'heading',
-      text: 'Write explanations, not transcripts',
-    },
-    {
-      type: 'paragraph',
-      text: 'A Smart Note should be written in your own words.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This matters because explanation is part of the learning.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If you copy a definition, you preserve the wording. If you explain the idea, you expose what you understand and what you do not. That can feel slower, but it gives you better information.',
-    },
-    {
-      type: 'paragraph',
-      text: 'For example, a copied definition might say:',
-    },
-    {
-      type: 'paragraph',
-      text: '“Sepsis is a dysregulated host response to infection.”',
-    },
-    {
-      type: 'paragraph',
-      text: 'That may be accurate, but it may not help much in lab if it stays disconnected from presentation and assessment.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A more useful note might say:',
-    },
-    {
-      type: 'paragraph',
-      text: 'In sepsis, infection can create a body-wide response that affects perfusion, temperature, breathing, mental status, and overall stability. In older adults, this may show up vaguely at first: weakness, confusion, poor intake, fast breathing, soft pressure, or “not acting right.” The risk is waiting for the presentation to become obvious before treating it seriously.',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of note helps you think.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It connects definition, presentation, risk, and action.',
-    },
-    {
-      type: 'heading',
-      text: 'Link by meaning, not by topic',
-    },
-    {
-      type: 'paragraph',
-      text: 'Links are useful when they represent a real relationship.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Do not link notes simply because they live in the same category. Link them because one idea changes how you understand another.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A note on early sepsis might link to:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Altered Mental Status as an Early Warning Sign',
-    },
-    {
-      type: 'paragraph',
-      text: 'Compensation Before Collapse',
-    },
-    {
-      type: 'paragraph',
-      text: 'Perfusion and Mental Status',
-    },
-    {
-      type: 'paragraph',
-      text: 'Vague Presentations in Older Adults',
-    },
-    {
-      type: 'paragraph',
-      text: 'Transport Decisions Under Uncertainty',
-    },
-    {
-      type: 'paragraph',
-      text: 'Those links matter because they shape the same kind of decision.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A link should help future you follow a reasoning trail.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If the link does not change how you think, it probably does not need to be there.',
-    },
-    {
-      type: 'heading',
-      text: 'What a Smart Note usually contains',
-    },
-    {
-      type: 'paragraph',
-      text: 'A Smart Note does not need to be long.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A simple structure is enough:',
-    },
-    {
-      type: 'paragraph',
-      text: 'Claim',
-    },
-    {
-      type: 'paragraph',
-      text: 'Explanation',
-    },
-    {
-      type: 'paragraph',
-      text: 'Clinical signals',
-    },
-    {
-      type: 'paragraph',
-      text: 'Common confusion',
-    },
-    {
-      type: 'paragraph',
-      text: 'Links',
-    },
-    {
-      type: 'paragraph',
-      text: 'The claim is the core idea in one sentence.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The explanation says why it works in your own words.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Clinical signals describe what you would notice in assessment, scenarios, or patient care.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Common confusion names what students often mix up.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Links connect the idea to other notes that shape reasoning.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This gives the note meaning, context, and retrieval hooks without turning it into an essay.',
-    },
-    {
-      type: 'heading',
-      text: 'Using the Smart Note Template',
-    },
-    {
-      type: 'paragraph',
-      text: 'Use the Smart Note Template when you want to turn a concept, scenario error, confusing idea, or repeated feedback point into something reusable.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You do not need it for every note.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Use it when an idea feels important enough to keep developing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Good candidates include:',
-    },
-    {
-      type: 'paragraph',
-      text: 'a recurring scenario mistake',
-    },
-    {
-      type: 'paragraph',
-      text: 'a physiological mechanism that keeps showing up',
-    },
-    {
-      type: 'paragraph',
-      text: 'a directive decision that feels fragile',
-    },
-    {
-      type: 'paragraph',
-      text: 'a pattern you keep missing',
-    },
-    {
-      type: 'paragraph',
-      text: 'a comparison between similar presentations',
-    },
-    {
-      type: 'paragraph',
-      text: 'a feedback point you do not want to lose',
-    },
-    {
-      type: 'paragraph',
-      text: 'a clinical distinction that would change assessment or treatment',
-    },
-    {
-      type: 'paragraph',
-      text: 'The template is not there to make notes look better.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It is there to help you preserve the kind of thinking you want available later.',
-    },
-    {
-      type: 'heading',
-      text: 'What Smart Notes are not',
-    },
-    {
-      type: 'paragraph',
-      text: 'Smart Notes are not full lecture summaries.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not protocol replacements.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not giant condition reviews.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not checklists for real-time care.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not a way to capture everything.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are not meant to become another place where you prove how hard you are working.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This matters because students often overbuild note systems.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They create too many folders, tags, plugins, templates, dashboards, and rules. The system begins to demand attention instead of supporting it.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A Smart Note system should stay small enough to use when school gets busy.',
-    },
-    {
-      type: 'paragraph',
-      text: 'If the system only works when you are motivated, rested, and caught up, it is too fragile.',
-    },
-    {
-      type: 'heading',
-      text: 'A small weekly rhythm',
-    },
-    {
-      type: 'paragraph',
-      text: 'You do not need to create Smart Notes every day.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A small rhythm is better.',
-    },
-    {
-      type: 'paragraph',
-      text: 'During the week, capture rough ideas from lectures, labs, readings, and scenarios. Do not polish them. Just catch what might matter.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Capture things like:',
-    },
-    {
-      type: 'paragraph',
-      text: 'one question you could not answer',
-    },
-    {
-      type: 'paragraph',
-      text: 'one scenario moment that felt important',
-    },
-    {
-      type: 'paragraph',
-      text: 'one distinction you keep mixing up',
-    },
-    {
-      type: 'paragraph',
-      text: 'one explanation that suddenly made sense',
-    },
-    {
-      type: 'paragraph',
-      text: 'one decision point that felt hard',
-    },
-    {
-      type: 'paragraph',
-      text: 'one feedback point that repeated',
-    },
-    {
-      type: 'paragraph',
-      text: 'Then, once or twice a week, process a few of them.',
-    },
-    {
-      type: 'paragraph',
-      text: 'For each captured item, choose one action:',
-    },
-    {
-      type: 'paragraph',
-      text: 'discard it',
-    },
-    {
-      type: 'paragraph',
-      text: 'leave it as a working note',
-    },
-    {
-      type: 'paragraph',
-      text: 'turn it into one Smart Note',
-    },
-    {
-      type: 'paragraph',
-      text: 'You do not need a huge output.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A few useful notes each week will matter more than a large system you cannot maintain. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to.',
-    },
-    {
-      type: 'heading',
-      text: 'How Smart Notes help scenarios',
-    },
-    {
-      type: 'paragraph',
-      text: 'Smart Notes change how you prepare.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Instead of reviewing isolated topics, you review connected reasoning.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Before a respiratory scenario day, you might follow links between:',
-    },
-    {
-      type: 'paragraph',
-      text: 'work of breathing',
-    },
-    {
-      type: 'paragraph',
-      text: 'air trapping',
-    },
-    {
-      type: 'paragraph',
-      text: 'respiratory fatigue',
-    },
-    {
-      type: 'paragraph',
-      text: 'oxygenation versus ventilation',
-    },
-    {
-      type: 'paragraph',
-      text: 'reassessment after treatment',
-    },
-    {
-      type: 'paragraph',
-      text: 'anxiety and air hunger',
-    },
-    {
-      type: 'paragraph',
-      text: 'That kind of review activates a model.',
-    },
-    {
-      type: 'paragraph',
-      text: 'You are not trying to memorize a list from scratch. You are warming up the relationships you have already built.',
-    },
-    {
-      type: 'paragraph',
-      text: 'This can reduce the feeling of blanking because your mind has more structure to return to. You still need to assess the patient in front of you. You still need to think. But you are not asking your brain to assemble everything for the first time under pressure.',
-    },
-    {
-      type: 'heading',
-      text: 'Common traps early on',
-    },
-    {
-      type: 'paragraph',
-      text: 'There are a few traps worth avoiding.',
-    },
-    {
-      type: 'heading',
-      text: 'Trying to capture everything',
-    },
-    {
-      type: 'paragraph',
-      text: 'This creates overload.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Capture less than you think, then spend more attention on the few ideas that actually deserve to become notes.',
-    },
-    {
-      type: 'heading',
-      text: 'Rewriting lecture slides',
-    },
-    {
-      type: 'paragraph',
-      text: 'This feels productive but often changes very little.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Use the lecture slide as a source. Then write the idea in your own words and connect it to assessment, decisions, or common confusion.',
-    },
-    {
-      type: 'heading',
-      text: 'Over-organizing too early',
-    },
-    {
-      type: 'paragraph',
-      text: 'Folders, tags, plugins, dashboards, and aesthetics are tempting.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Start with notes and links. Let structure emerge from use.',
-    },
-    {
-      type: 'heading',
-      text: 'Making notes too broad',
-    },
-    {
-      type: 'paragraph',
-      text: 'A note called “Shock” is probably too large.',
-    },
-    {
-      type: 'paragraph',
-      text: 'A note called “Early shock may show up before hypotension” is more useful.',
-    },
-    {
-      type: 'heading',
-      text: 'Treating notes as proof of effort',
-    },
-    {
-      type: 'paragraph',
-      text: 'Notes are not there to prove that you studied.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They are there to help future you think, assess, decide, and improve.',
-    },
-    {
-      type: 'heading',
-      text: 'Moving forward',
-    },
-    {
-      type: 'paragraph',
-      text: 'Smart Notes are one way to preserve understanding so it can keep developing.',
-    },
-    {
-      type: 'paragraph',
-      text: 'They help you turn scattered learning into small explanations you can return to, connect, revise, and use. They reduce mental strain by doing some of the organizing work before scenarios and OSCEs ask you to perform.',
-    },
-    {
-      type: 'paragraph',
-      text: 'The next section looks at how notes change over time. We will separate capture notes, working notes, and Smart Notes, and look at how ideas mature without forcing you into endless rewriting or perfectionism.',
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: 'Most paramedic students already take notes.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They write during lectures. They highlight slides. They copy definitions, save charts, organize binders, and build folders by topic. Some students have polished notes. Some have messy notes. Some have notes spread across notebooks, apps, handouts, screenshots, and whatever document was open at the time.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The problem is not usually that students have no notes.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The problem is that many notes do not help much when the student has to think.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A note can be accurate and still not help during a scenario. It can be complete and still be hard to use. It can look responsible and still leave the student saying, “I knew that, I just could not put it together fast enough.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is the problem this section is trying to solve.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The last cluster focused on building understanding. This cluster is about keeping that understanding alive long enough to use it, revise it, and connect it to new situations. Smart Notes are one way to do that.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They are not a way to collect more information. They are a way to make important ideas easier to return to, explain, and use.',
+  },
+  {
+    type: 'heading',
+    text: 'What makes a note smart',
+  },
+  {
+    type: 'paragraph',
+    text: 'A Smart Note is not defined by software.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It is not defined by Obsidian, folders, backlinks, tags, plugins, templates, or a nice-looking graph. You can write a Smart Note in an app, a notebook, a document, or a plain text file.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A note is smart when it helps your future self think more clearly.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That means it does more than store information. It explains one idea in your own words. It shows why the idea matters. It connects to other ideas. It gives you something useful when you are preparing for a scenario, reviewing after feedback, or trying to understand why a decision felt hard.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A useful Smart Note usually answers some version of these questions:',
+  },
+  {
+    type: 'list',
+    items: [
+      'What is happening here?',
+      'Why does it matter clinically?',
+      'How would this show up in assessment?',
+      'What mistake could this prevent?',
+      'What does this connect to?',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That is different from copying a lecture slide.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A copied slide preserves someone else’s structure. A Smart Note helps build yours.',
+  },
+  {
+    type: 'heading',
+    text: 'Why regular notes stop helping',
+  },
+  {
+    type: 'paragraph',
+    text: 'Regular notes can be useful.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They preserve what was taught. They help you keep track of details. They give you something to review before a quiz, test, lab, or OSCE. Early in a topic, that may be exactly what you need.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The problem is that many notes are built for recognition, not use.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They work best when you already know what you are looking for. You open the folder, find the topic, reread the section, and recognize the information. In that setting, the note seems helpful because the situation is calm and the label is already attached.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Scenarios do not work that way.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A patient does not arrive as “respiratory pathology, slide twelve.” They arrive with effort, colour, posture, speech, anxiety, silence, family comments, vital signs, changing presentation, and a partner waiting for your next move.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If your notes are mostly lists, your brain still has to assemble the meaning later. If your notes mirror the order of a lecture, your brain still has to reorganize the ideas around the patient. If your notes collect every detail, your brain still has to decide what matters when attention is already busy.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Detailed notes can still fail if they store information without reducing the work of using it.',
+  },
+  {
+    type: 'heading',
+    text: 'What Smart Notes do differently',
+  },
+  {
+    type: 'paragraph',
+    text: 'Smart Notes shift some of the thinking earlier.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Instead of trying to assemble meaning for the first time during a scenario, you begin building that meaning while studying, reviewing, or reflecting.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A Smart Note might take a confusing idea and turn it into a short explanation. It might connect a patient sign to a mechanism. It might capture a common mistake from lab. It might explain why one finding matters more than it first appears. It might link a directive to the risk it is protecting against.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The note does not replace practice.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It prepares your thinking for practice.',
+  },
+  {
+    type: 'paragraph',
+    text: 'When a similar situation appears later, you are not starting from loose facts. You have already built a small structure that helps you recognize what matters, what might be happening, and what needs to be checked next.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is the value of Smart Notes in paramedic learning. They help preserve small pieces of understanding so those pieces can be used again.',
+  },
+  {
+    type: 'heading',
+    text: 'A paramedic example',
+  },
+  {
+    type: 'paragraph',
+    text: 'Imagine a student preparing for respiratory scenarios.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Their original notes on asthma are long. They include definitions, airway anatomy, bronchoconstriction, medications, contraindications, and several copied slides. The notes are accurate. They look thorough.',
+  },
+  {
+    type: 'paragraph',
+    text: 'During a scenario, the patient is anxious and breathing quickly. Lung sounds are wheezy. Oxygen saturation is acceptable. After treatment, the wheezing becomes less obvious, but the patient looks more tired and is speaking less.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The student hesitates.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They remember asthma. They remember wheezing. They remember treatment. But they do not immediately recognize that quieter lung sounds may not mean improvement if the patient is tiring.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Later, in debrief, the student says, “I knew the asthma stuff. I just did not put it together.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'A Smart Note would not need to summarize all of asthma.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It might be titled:',
+  },
+  {
+    type: 'paragraph',
+    text: 'Asthma can become quieter when fatigue worsens',
+  },
+  {
+    type: 'paragraph',
+    text: 'The note might explain:',
+  },
+  {
+    type: 'paragraph',
+    text: 'In severe bronchospasm, reduced wheezing is not always improvement. If work of breathing remains high, speech worsens, mental status changes, or air movement decreases, the patient may be tiring. Reassessment after treatment needs to focus on effort, air movement, speech, mental status, and overall trajectory, not just whether wheezing sounds better.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Clinical signals might include:',
+  },
+  {
+    type: 'list',
+    items: [
+      'reduced ability to speak',
+      'decreasing air movement',
+      'persistent high work of breathing',
+      'altered mental status',
+      'fatigue after initial treatment',
+      'poor or incomplete response to bronchodilator treatment',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'Common confusion:',
+  },
+  {
+    type: 'paragraph',
+    text: 'Students may relax when wheezing decreases, even though reduced sound can mean less air movement rather than improvement.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Links might include:',
+  },
+  {
+    type: 'list',
+    items: [
+      'Work of Breathing',
+      'Air Trapping',
+      'Respiratory Fatigue',
+      'Reassessment After Intervention',
+      'Oxygenation Versus Ventilation',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That note is not a full asthma review. It is a small clinical distinction made visible.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That is what makes it reusable.',
+  },
+  {
+    type: 'heading',
+    text: 'One note, one idea',
+  },
+  {
+    type: 'paragraph',
+    text: 'The most important rule is simple:',
+  },
+  {
+    type: 'paragraph',
+    text: 'One Smart Note should hold one idea.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Not one lecture. Not one disease. Not one chapter. One idea.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If a note tries to explain asthma, COPD, pneumonia, heart failure, oxygen administration, bronchodilators, and respiratory failure all at once, it becomes hard to reuse. It may be thorough, but it is not sharp.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A useful note is smaller.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Examples:',
+  },
+  {
+    type: 'list',
+    items: [
+      'Quiet lungs can mean worsening fatigue',
+      'Chest pain decisions are guided by risk before certainty',
+      'Fever in older adults may not look dramatic early',
+      'Reassessment after treatment tells you whether your explanation still fits',
+      'Blood pressure can stay normal while compensation is working',
+      'Oxygen saturation does not fully describe work of breathing',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'These are not full topics.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They are ideas that can be explained, linked, tested, revised, and reused.',
+  },
+  {
+    type: 'heading',
+    text: 'Write explanations, not transcripts',
+  },
+  {
+    type: 'paragraph',
+    text: 'A Smart Note should be written in your own words.',
+  },
+  {
+    type: 'paragraph',
+    text: 'This matters because explanation is part of the learning.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If you copy a definition, you preserve the wording. If you explain the idea, you expose what you understand and what you do not. That can feel slower, but it gives you better information.',
+  },
+  {
+    type: 'paragraph',
+    text: 'For example, a copied definition might say:',
+  },
+  {
+    type: 'paragraph',
+    text: '“Sepsis is a dysregulated host response to infection.”',
+  },
+  {
+    type: 'paragraph',
+    text: 'That may be accurate, but it may not help much in lab if it stays disconnected from presentation and assessment.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A more useful note might say:',
+  },
+  {
+    type: 'paragraph',
+    text: 'In sepsis, infection can create a body-wide response that affects perfusion, temperature, breathing, mental status, and overall stability. In older adults, this may show up vaguely at first: weakness, confusion, poor intake, fast breathing, soft pressure, or “not acting right.” The risk is waiting for the presentation to become obvious before treating it seriously.',
+  },
+  {
+    type: 'paragraph',
+    text: 'That kind of note helps you think.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It connects definition, presentation, risk, and action.',
+  },
+  {
+    type: 'heading',
+    text: 'Link by meaning, not by topic',
+  },
+  {
+    type: 'paragraph',
+    text: 'Links are useful when they represent a real relationship.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Do not link notes simply because they live in the same category. Link them because one idea changes how you understand another.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A note on early sepsis might link to:',
+  },
+  {
+    type: 'list',
+    items: [
+      'Altered Mental Status as an Early Warning Sign',
+      'Compensation Before Collapse',
+      'Perfusion and Mental Status',
+      'Vague Presentations in Older Adults',
+      'Transport Decisions Under Uncertainty',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'Those links matter because they shape the same kind of decision.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A link should help future you follow a reasoning trail.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If the link does not change how you think, it probably does not need to be there.',
+  },
+  {
+    type: 'heading',
+    text: 'What a Smart Note usually contains',
+  },
+  {
+    type: 'paragraph',
+    text: 'A Smart Note does not need to be long.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A simple structure is enough:',
+  },
+  {
+    type: 'list',
+    items: [
+      'Claim',
+      'Explanation',
+      'Clinical signals',
+      'Common confusion',
+      'Links',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'The claim is the core idea in one sentence.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The explanation says why it works in your own words.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Clinical signals describe what you would notice in assessment, scenarios, or patient care.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Common confusion names what students often mix up.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Links connect the idea to other notes that shape reasoning.',
+  },
+  {
+    type: 'paragraph',
+    text: 'This gives the note meaning, context, and retrieval hooks without turning it into an essay.',
+  },
+  {
+    type: 'heading',
+    text: 'Using the Smart Note Template',
+  },
+  {
+    type: 'paragraph',
+    text: 'Use the Smart Note Template when you want to turn a concept, scenario error, confusing idea, or repeated feedback point into something reusable.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You do not need it for every note.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Use it when an idea feels important enough to keep developing.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Good candidates include:',
+  },
+  {
+    type: 'list',
+    items: [
+      'a recurring scenario mistake',
+      'a physiological mechanism that keeps showing up',
+      'a directive decision that feels fragile',
+      'a pattern you keep missing',
+      'a comparison between similar presentations',
+      'a feedback point you do not want to lose',
+      'a clinical distinction that would change assessment or treatment',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'The template is not there to make notes look better.',
+  },
+  {
+    type: 'paragraph',
+    text: 'It is there to help you preserve the kind of thinking you want available later.',
+  },
+  {
+    type: 'heading',
+    text: 'What Smart Notes are not',
+  },
+  {
+    type: 'list',
+    items: [
+      'Smart Notes are not full lecture summaries.',
+      'They are not protocol replacements.',
+      'They are not giant condition reviews.',
+      'They are not checklists for real-time care.',
+      'They are not a way to capture everything.',
+      'They are not meant to become another place where you prove how hard you are working.',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'This matters because students often overbuild note systems.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They create too many folders, tags, plugins, templates, dashboards, and rules. The system begins to demand attention instead of supporting it.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A Smart Note system should stay small enough to use when school gets busy.',
+  },
+  {
+    type: 'paragraph',
+    text: 'If the system only works when you are motivated, rested, and caught up, it is too fragile.',
+  },
+  {
+    type: 'heading',
+    text: 'A small weekly rhythm',
+  },
+  {
+    type: 'paragraph',
+    text: 'You do not need to create Smart Notes every day.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A small rhythm is better.',
+  },
+  {
+    type: 'paragraph',
+    text: 'During the week, capture rough ideas from lectures, labs, readings, and scenarios. Do not polish them. Just catch what might matter.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Capture things like:',
+  },
+  {
+    type: 'list',
+    items: [
+      'one question you could not answer',
+      'one scenario moment that felt important',
+      'one distinction you keep mixing up',
+      'one explanation that suddenly made sense',
+      'one decision point that felt hard',
+      'one feedback point that repeated',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'Then, once or twice a week, process a few of them.',
+  },
+  {
+    type: 'paragraph',
+    text: 'For each captured item, choose one action:',
+  },
+  {
+    type: 'list',
+    items: [
+      'discard it',
+      'leave it as a working note',
+      'turn it into one Smart Note',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'You do not need a huge output.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A few useful notes each week will matter more than a large system you cannot maintain. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to.',
+  },
+  {
+    type: 'heading',
+    text: 'How Smart Notes help scenarios',
+  },
+  {
+    type: 'paragraph',
+    text: 'Smart Notes change how you prepare.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Instead of reviewing isolated topics, you review connected reasoning.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Before a respiratory scenario day, you might follow links between:',
+  },
+  {
+    type: 'list',
+    items: [
+      'work of breathing',
+      'air trapping',
+      'respiratory fatigue',
+      'oxygenation versus ventilation',
+      'reassessment after treatment',
+      'anxiety and air hunger',
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: 'That kind of review activates a model.',
+  },
+  {
+    type: 'paragraph',
+    text: 'You are not trying to memorize a list from scratch. You are warming up the relationships you have already built.',
+  },
+  {
+    type: 'paragraph',
+    text: 'This can reduce the feeling of blanking because your mind has more structure to return to. You still need to assess the patient in front of you. You still need to think. But you are not asking your brain to assemble everything for the first time under pressure.',
+  },
+  {
+    type: 'heading',
+    text: 'Common traps early on',
+  },
+  {
+    type: 'paragraph',
+    text: 'There are a few traps worth avoiding.',
+  },
+  {
+    type: 'heading',
+    text: 'Trying to capture everything',
+  },
+  {
+    type: 'paragraph',
+    text: 'This creates overload.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Capture less than you think, then spend more attention on the few ideas that actually deserve to become notes.',
+  },
+  {
+    type: 'heading',
+    text: 'Rewriting lecture slides',
+  },
+  {
+    type: 'paragraph',
+    text: 'This feels productive but often changes very little.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Use the lecture slide as a source. Then write the idea in your own words and connect it to assessment, decisions, or common confusion.',
+  },
+  {
+    type: 'heading',
+    text: 'Over-organizing too early',
+  },
+  {
+    type: 'paragraph',
+    text: 'Folders, tags, plugins, dashboards, and aesthetics are tempting.',
+  },
+  {
+    type: 'paragraph',
+    text: 'Start with notes and links. Let structure emerge from use.',
+  },
+  {
+    type: 'heading',
+    text: 'Making notes too broad',
+  },
+  {
+    type: 'paragraph',
+    text: 'A note called “Shock” is probably too large.',
+  },
+  {
+    type: 'paragraph',
+    text: 'A note called “Early shock may show up before hypotension” is more useful.',
+  },
+  {
+    type: 'heading',
+    text: 'Treating notes as proof of effort',
+  },
+  {
+    type: 'paragraph',
+    text: 'Notes are not there to prove that you studied.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They are there to help future you think, assess, decide, and improve.',
+  },
+  {
+    type: 'heading',
+    text: 'Moving forward',
+  },
+  {
+    type: 'paragraph',
+    text: 'Smart Notes are one way to preserve understanding so it can keep developing.',
+  },
+  {
+    type: 'paragraph',
+    text: 'They help you turn scattered learning into small explanations you can return to, connect, revise, and use. They reduce mental strain by doing some of the organizing work before scenarios and OSCEs ask you to perform.',
+  },
+  {
+    type: 'paragraph',
+    text: 'The next section looks at how notes change over time. We will separate capture notes, working notes, and Smart Notes, and look at how ideas mature without forcing you into endless rewriting or perfectionism.',
+  },
+],
   glossaryTerms: [
     'smart-notes',
     'working-notes',
@@ -3867,967 +3742,773 @@ const sectionSeeds: SectionSeed[] = [
     'Help students understand that notes serve different roles at different stages of learning, and that useful understanding matures over time through capture, processing, revision, linking, and use.',
   pageType: 'practical-system',
   body: [
-    {
-      type: 'paragraph',
-      text: `Not every note should be treated like a finished thought.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is where a lot of note systems start to break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete.`,
-    },
-    {
-      type: 'paragraph',
-      text: `After a while, the system starts to feel heavier than the learning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Capturing ideas becomes slower. Processing notes feels like another assignment. Students either stop using the system, or they keep adding to it without developing the ideas that matter most.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Paramedic learning is not clean enough for every note to arrive finished.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Your understanding changes. It deepens, narrows, reorganizes, and sometimes corrects itself. You may hear something in lecture and only half understand it. Then it appears in lab. Then you miss it during a scenario. Then feedback gives it a different shape. Then, a week later, the idea finally clicks because you see how it connects to assessment or decision-making.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A note system has to allow for that.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This section is about letting notes have different jobs at different stages of learning.`,
-    },
-    {
-      type: 'heading',
-      text: `Notes should not feel finished too early`,
-    },
-    {
-      type: 'paragraph',
-      text: `Early learners often assume a good note is a complete note.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Clear. Clean. Organized. Final.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That assumption makes sense, especially if most school notes have been built around tests. You collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A first version of an idea may be useful without being complete.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It may not include the edge case yet. It may not include the mistake you made in scenario. It may not include the directive boundary that suddenly made the concept matter. It may not include the patient presentation that finally showed you why the idea was clinically important.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If notes feel finished too early, they can freeze your first version of understanding.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That version may not be wrong. It may just be too thin.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A useful note does not need to be correct forever. It needs to help you think now, while staying open to revision later.`,
-    },
-    {
-      type: 'heading',
-      text: `Three kinds of notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `For VitalNotes, you only need three practical note types:`,
-    },
-    {
-      type: 'paragraph',
-      text: `capture notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `working notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `Smart Notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `These are not rigid categories. They are stages of development.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Some ideas move through all three stages. Some do not. A quick reminder may stay as a capture note and then get deleted. A messy explanation may stay as a working note for a while. A high-value idea may become a Smart Note because it keeps showing up in scenarios, directives, feedback, or clinical reasoning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The point is not to promote every note.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The point is to notice what kind of work the note is doing.`,
-    },
-    {
-      type: 'heading',
-      text: `Capture notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `Capture notes are fast, messy, and temporary.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They exist to catch something before it disappears.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That might be:`,
-    },
-    {
-      type: 'paragraph',
-      text: `a question from lecture`,
-    },
-    {
-      type: 'paragraph',
-      text: `a phrase an instructor used`,
-    },
-    {
-      type: 'paragraph',
-      text: `a scenario moment that felt important`,
-    },
-    {
-      type: 'paragraph',
-      text: `a repeated feedback point`,
-    },
-    {
-      type: 'paragraph',
-      text: `a patient cue you did not understand`,
-    },
-    {
-      type: 'paragraph',
-      text: `a directive decision that felt uncertain`,
-    },
-    {
-      type: 'paragraph',
-      text: `a comparison you want to revisit`,
-    },
-    {
-      type: 'paragraph',
-      text: `a mistake that might matter later`,
-    },
-    {
-      type: 'paragraph',
-      text: `A capture note does not need structure.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It does not need a good title. It does not need links. It does not need to be written well.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Examples:`,
-    },
-    {
-      type: 'paragraph',
-      text: `patient got quieter after treatment, not sure if better`,
-    },
-    {
-      type: 'paragraph',
-      text: `why does sepsis look vague in elderly patients`,
-    },
-    {
-      type: 'paragraph',
-      text: `reassessment keeps showing up in feedback`,
-    },
-    {
-      type: 'paragraph',
-      text: `chest pain without ECG changes still felt risky`,
-    },
-    {
-      type: 'paragraph',
-      text: `oxygen saturation okay but patient looked bad`,
-    },
-    {
-      type: 'paragraph',
-      text: `confused before vitals looked dramatic`,
-    },
-    {
-      type: 'paragraph',
-      text: `These are not finished thoughts.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They are traces of attention. Something happened, and part of you noticed it might matter.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is enough for capture.`,
-    },
-    {
-      type: 'heading',
-      text: `Working notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `Working notes are where you wrestle with an idea.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They are not raw capture anymore, but they are not stable Smart Notes yet.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A working note might include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `rough explanations`,
-    },
-    {
-      type: 'paragraph',
-      text: `cause and effect chains`,
-    },
-    {
-      type: 'paragraph',
-      text: `small comparison tables`,
-    },
-    {
-      type: 'paragraph',
-      text: `questions you are still sorting out`,
-    },
-    {
-      type: 'paragraph',
-      text: `partial links to related ideas`,
-    },
-    {
-      type: 'paragraph',
-      text: `examples from lab or scenarios`,
-    },
-    {
-      type: 'paragraph',
-      text: `early attempts to explain a mechanism`,
-    },
-    {
-      type: 'paragraph',
-      text: `notes from feedback that need interpretation`,
-    },
-    {
-      type: 'paragraph',
-      text: `This is where a lot of real learning happens.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A working note lets you say, “I think this is what is happening, but I am not fully sure yet.”`,
-    },
-    {
-      type: 'paragraph',
-      text: `That matters because paramedic students often want to jump too quickly from confusion to final answer. Working notes give partial understanding somewhere to live while it becomes clearer.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For example, a working note on respiratory fatigue might include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `wheezing can decrease when air movement worsens`,
-    },
-    {
-      type: 'paragraph',
-      text: `patient may speak less`,
-    },
-    {
-      type: 'paragraph',
-      text: `mental status matters`,
-    },
-    {
-      type: 'paragraph',
-      text: `work of breathing may be more important than SpO₂ alone`,
-    },
-    {
-      type: 'paragraph',
-      text: `reassessment after bronchodilator should include effort, speech, air movement, and fatigue`,
-    },
-    {
-      type: 'paragraph',
-      text: `need to connect this to oxygenation versus ventilation`,
-    },
-    {
-      type: 'paragraph',
-      text: `That note is not polished yet.`,
-    },
-    {
-      type: 'paragraph',
-      text: `But it is doing real work. It is holding the pieces together long enough for the student to return, compare, revise, and eventually understand the pattern more clearly.`,
-    },
-    {
-      type: 'heading',
-      text: `Smart Notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `Smart Notes are more stable.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They explain one idea clearly enough that future you can reuse it.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A Smart Note usually includes:`,
-    },
-    {
-      type: 'paragraph',
-      text: `a clear claim`,
-    },
-    {
-      type: 'paragraph',
-      text: `an explanation in your own words`,
-    },
-    {
-      type: 'paragraph',
-      text: `clinical signals`,
-    },
-    {
-      type: 'paragraph',
-      text: `common confusion`,
-    },
-    {
-      type: 'paragraph',
-      text: `meaningful links`,
-    },
-    {
-      type: 'paragraph',
-      text: `A Smart Note does not have to be perfect. It just has to be stable enough to help later.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For example:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Quiet lungs can mean worsening respiratory fatigue.`,
-    },
-    {
-      type: 'paragraph',
-      text: `In severe bronchospasm or respiratory distress, less wheezing is not always improvement. If the patient is still working hard to breathe, speaking less, becoming tired, or showing altered mental status, reduced sound may mean reduced air movement rather than recovery. Reassessment should focus on effort, speech, air movement, mental status, and trajectory.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That kind of note can help during later study, scenario preparation, and feedback review.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It is small, clear, and tied to patient care.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It does not summarize all of asthma. It preserves one clinical distinction that could change assessment and reassessment.`,
-    },
-    {
-      type: 'heading',
-      text: `Not every note should become a Smart Note`,
-    },
-    {
-      type: 'paragraph',
-      text: `This is important.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If every captured idea becomes a Smart Note, the system will become too heavy.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Some notes are useful only for a day. Some are reminders. Some are questions that get answered quickly. Some are rough thoughts that no longer matter after a better explanation appears. Some are just noise from a busy week.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is normal.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A healthy note system includes deletion. It also includes leaving some notes unfinished.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You do not need to turn every lecture point, lab comment, or textbook paragraph into a permanent note. That would make the system harder to maintain and less useful over time.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Smart Notes should be reserved for ideas that keep mattering.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Good candidates include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `repeated mistakes`,
-    },
-    {
-      type: 'paragraph',
-      text: `high-risk distinctions`,
-    },
-    {
-      type: 'paragraph',
-      text: `mechanisms that explain multiple presentations`,
-    },
-    {
-      type: 'paragraph',
-      text: `directive decisions that feel fragile`,
-    },
-    {
-      type: 'paragraph',
-      text: `assessment cues that change interpretation`,
-    },
-    {
-      type: 'paragraph',
-      text: `feedback that keeps returning`,
-    },
-    {
-      type: 'paragraph',
-      text: `comparisons that prevent confusion`,
-    },
-    {
-      type: 'paragraph',
-      text: `ideas that connect across several topics`,
-    },
-    {
-      type: 'paragraph',
-      text: `The question is not, “Can I make a note out of this?”`,
-    },
-    {
-      type: 'paragraph',
-      text: `The better question is, “Will this help me think later?”`,
-    },
-    {
-      type: 'heading',
-      text: `How ideas mature`,
-    },
-    {
-      type: 'paragraph',
-      text: `An idea often begins as something vague.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You hear it once and only partly understand it.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Then it appears again.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Maybe during lab, you see a patient who does not match the clean textbook version. Maybe during a scenario, you miss a cue. Maybe during feedback, someone points out that your treatment was reasonable but your reassessment was weak. Maybe while studying, you realize two conditions look similar until you compare the mechanism.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Each exposure changes the idea slightly.`,
-    },
-    {
-      type: 'paragraph',
-      text: `At first, your note may say:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Sepsis can look vague.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Later, it might become:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Older adults may show sepsis through weakness, confusion, poor intake, and subtle vital sign changes before the presentation looks dramatic.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Later still, after scenarios and feedback, the note might become:`,
-    },
-    {
-      type: 'paragraph',
-      text: `In older adults, early sepsis may present as vague decline rather than a clear infectious picture. Weakness, confusion, poor intake, fast breathing, soft pressure, warm skin, or family concern may matter more when they appear together. The risk is waiting for obvious fever or hypotension before treating the patient as potentially unstable.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The topic did not change.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The centre of the note changed.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It moved from label, to presentation, to risk and decision-making.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is idea maturation.`,
-    },
-    {
-      type: 'heading',
-      text: `A paramedic example`,
-    },
-    {
-      type: 'paragraph',
-      text: `Imagine a student creates an early note after learning about hypoxia.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The first capture note says:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Hypoxia causes confusion.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is fine as a starting point.`,
-    },
-    {
-      type: 'paragraph',
-      text: `After a respiratory scenario, the student notices something more specific. The patient became more confused and less cooperative before the oxygen saturation changed much. The instructor emphasized mental status and work of breathing during debrief.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The working note becomes:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Mental status can change before oxygen numbers look dramatic. Need to watch confusion, agitation, fatigue, and ability to speak. Oxygen saturation is useful, but it does not tell the whole story.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Later, after more practice, the Smart Note becomes:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Altered mental status can be an early warning sign in respiratory failure.`,
-    },
-    {
-      type: 'paragraph',
-      text: `When breathing is becoming ineffective, the brain may show signs of poor oxygen delivery, rising carbon dioxide, fatigue, or overall physiologic stress before the monitor gives a dramatic number. Confusion, agitation, drowsiness, reduced speech, or poor cooperation should raise concern, especially when paired with increased work of breathing or decreasing air movement.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Now the note is more useful.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It gives the student something to notice in a future scenario. It connects to assessment. It supports reassessment. It helps prevent the common mistake of waiting for one number to make the situation obvious.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The idea matured because the student kept using it.`,
-    },
-    {
-      type: 'heading',
-      text: `When to revise a note`,
-    },
-    {
-      type: 'paragraph',
-      text: `Revision should follow learning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Do not revise a note just because it looks messy.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Revise it when something meaningful has changed.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Good reasons to revise include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `a scenario contradicted your explanation`,
-    },
-    {
-      type: 'paragraph',
-      text: `feedback showed that your note missed an important part`,
-    },
-    {
-      type: 'paragraph',
-      text: `you keep misapplying the idea under pressure`,
-    },
-    {
-      type: 'paragraph',
-      text: `the same confusion appears repeatedly`,
-    },
-    {
-      type: 'paragraph',
-      text: `you can explain the idea more clearly than before`,
-    },
-    {
-      type: 'paragraph',
-      text: `the note is too broad to reuse`,
-    },
-    {
-      type: 'paragraph',
-      text: `the note needs to split into smaller notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `a link would help connect it to a related decision`,
-    },
-    {
-      type: 'paragraph',
-      text: `Those are good reasons because they show the note is interacting with your learning.`,
-    },
-    {
-      type: 'heading',
-      text: `When not to revise a note`,
-    },
-    {
-      type: 'paragraph',
-      text: `Do not revise a note just because:`,
-    },
-    {
-      type: 'paragraph',
-      text: `it feels unfinished`,
-    },
-    {
-      type: 'paragraph',
-      text: `it is not pretty`,
-    },
-    {
-      type: 'paragraph',
-      text: `the wording could be smoother`,
-    },
-    {
-      type: 'paragraph',
-      text: `your folder system feels messy`,
-    },
-    {
-      type: 'paragraph',
-      text: `you are avoiding harder study`,
-    },
-    {
-      type: 'paragraph',
-      text: `you are chasing the feeling of being organized`,
-    },
-    {
-      type: 'paragraph',
-      text: `you found a new template online`,
-    },
-    {
-      type: 'paragraph',
-      text: `you are uncomfortable with imperfection`,
-    },
-    {
-      type: 'paragraph',
-      text: `This is where students can lose a lot of time.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A note system can become a safe place to look busy.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You can spend hours reorganizing, rewriting, renaming, tagging, and adjusting templates while very little understanding changes.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is not note maturation.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is maintenance pretending to be learning.`,
-    },
-    {
-      type: 'heading',
-      text: `Linking as maturation`,
-    },
-    {
-      type: 'paragraph',
-      text: `As understanding deepens, linking becomes more important.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Not every note needs to be rewritten. Sometimes it needs to be connected.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A note on early hypoxia might eventually link to:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Altered Mental Status as an Early Warning Sign`,
-    },
-    {
-      type: 'paragraph',
-      text: `Oxygenation Versus Ventilation`,
-    },
-    {
-      type: 'paragraph',
-      text: `Respiratory Fatigue`,
-    },
-    {
-      type: 'paragraph',
-      text: `Work of Breathing`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reassessment After Intervention`,
-    },
-    {
-      type: 'paragraph',
-      text: `Cognitive Narrowing Under Stress`,
-    },
-    {
-      type: 'paragraph',
-      text: `Those links matter because the ideas influence each other.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They help you see how the same concept behaves across different situations. They let you compare related ideas without merging them into one giant note. They also help you prepare for scenarios by following reasoning trails rather than rereading folders.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A mature note system is not necessarily bigger.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It is usually better connected.`,
-    },
-    {
-      type: 'heading',
-      text: `Splitting and shrinking notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `As ideas mature, some notes need to split.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A note called “Respiratory Distress” may eventually become too large. It might split into:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Work of Breathing`,
-    },
-    {
-      type: 'paragraph',
-      text: `Air Trapping`,
-    },
-    {
-      type: 'paragraph',
-      text: `Respiratory Fatigue`,
-    },
-    {
-      type: 'paragraph',
-      text: `Oxygenation Versus Ventilation`,
-    },
-    {
-      type: 'paragraph',
-      text: `Anxiety and Air Hunger`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reassessment After Bronchodilator Treatment`,
-    },
-    {
-      type: 'paragraph',
-      text: `That does not mean the original note was bad.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It means your understanding became more detailed.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Other notes may shrink.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A long working note may eventually become a few clear sentences because you understand the idea better. The note does not need to hold every detail anymore. It only needs to preserve the part that helps you think.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Mature notes often become shorter, not longer.`,
-    },
-    {
-      type: 'heading',
-      text: `Avoiding perfectionism`,
-    },
-    {
-      type: 'paragraph',
-      text: `A mature note system does not require constant maintenance.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If you find yourself endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is starting to pull attention away from learning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is a warning sign.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The goal is not to build a perfect vault.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The goal is to build a useful thinking system that can survive paramedic school.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Some mess is allowed. Some incompleteness is allowed. Some rough notes can stay rough until they have a reason to change.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If a note helps you think better today, it is good enough for today.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Refinement should come from use, not from the need to make the system feel clean.`,
-    },
-    {
-      type: 'heading',
-      text: `Preparing for retrieval`,
-    },
-    {
-      type: 'paragraph',
-      text: `Mature notes create better material for retrieval practice.`,
-    },
-    {
-      type: 'paragraph',
-      text: `When notes emphasize decisions, contrasts, early signals, common errors, and mechanisms, they can become strong prompts later.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For example, a Smart Note might turn into retrieval questions like:`,
-    },
-    {
-      type: 'paragraph',
-      text: `What are early signs that respiratory fatigue is worsening?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Why can altered mental status matter before SpO₂ changes dramatically?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What makes early sepsis difficult to recognize in older adults?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What would make this treatment inappropriate?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What finding would make me change my mind?`,
-    },
-    {
-      type: 'paragraph',
-      text: `That matters because retrieval should not just ask you to remember isolated facts.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It should help you bring back the kind of understanding you need during scenarios and OSCEs.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Anki, flashcards, or recall drills should strengthen access to understanding you have already started building.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They should not replace the work of understanding.`,
-    },
-    {
-      type: 'heading',
-      text: `A small process for note maturity`,
-    },
-    {
-      type: 'paragraph',
-      text: `Once or twice a week, look at a few notes and ask:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Is this just a capture note?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Does it need to become a working note?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Is there one idea here worth turning into a Smart Note?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Has my understanding changed because of a scenario, feedback, or practice?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Should this note be linked, split, shortened, or left alone?`,
-    },
-    {
-      type: 'paragraph',
-      text: `Then choose one action:`,
-    },
-    {
-      type: 'paragraph',
-      text: `delete it`,
-    },
-    {
-      type: 'paragraph',
-      text: `leave it`,
-    },
-    {
-      type: 'paragraph',
-      text: `process it`,
-    },
-    {
-      type: 'paragraph',
-      text: `link it`,
-    },
-    {
-      type: 'paragraph',
-      text: `split it`,
-    },
-    {
-      type: 'paragraph',
-      text: `revise it`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is enough.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You do not need to overhaul your system.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You are just keeping it alive.`,
-    },
-    {
-      type: 'heading',
-      text: `Moving forward`,
-    },
-    {
-      type: 'paragraph',
-      text: `Your notes do not need to be finished before they can help you.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They need to be able to change as your understanding changes.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Capture notes preserve raw experience. Working notes let you wrestle with partial understanding. Smart Notes stabilize ideas that are ready to be reused. Over time, the system becomes smaller, clearer, and more connected because your thinking has matured.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The next section looks at Obsidian as one possible home for this system. We will keep the setup simple and focus on how to use Obsidian as a place for thinking, not as a project that eats the learning it was supposed to support.`,
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: `Not every note should be treated like a finished thought.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is where a lot of note systems start to break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete.`,
+  },
+  {
+    type: 'paragraph',
+    text: `After a while, the system starts to feel heavier than the learning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Capturing ideas becomes slower. Processing notes feels like another assignment. Students either stop using the system, or they keep adding to it without developing the ideas that matter most.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Paramedic learning is not clean enough for every note to arrive finished.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Your understanding changes. It deepens, narrows, reorganizes, and sometimes corrects itself. You may hear something in lecture and only half understand it. Then it appears in lab. Then you miss it during a scenario. Then feedback gives it a different shape. Then, a week later, the idea finally clicks because you see how it connects to assessment or decision-making.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note system has to allow for that.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This section is about letting notes have different jobs at different stages of learning.`,
+  },
+  {
+    type: 'heading',
+    text: `Notes should not feel finished too early`,
+  },
+  {
+    type: 'paragraph',
+    text: `Early learners often assume a good note is a complete note.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Clear. Clean. Organized. Final.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That assumption makes sense, especially if most school notes have been built around tests. You collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A first version of an idea may be useful without being complete.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It may not include the edge case yet. It may not include the mistake you made in scenario. It may not include the directive boundary that suddenly made the concept matter. It may not include the patient presentation that finally showed you why the idea was clinically important.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If notes feel finished too early, they can freeze your first version of understanding.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That version may not be wrong. It may just be too thin.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A useful note does not need to be correct forever. It needs to help you think now, while staying open to revision later.`,
+  },
+  {
+    type: 'heading',
+    text: `Three kinds of notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `For VitalNotes, you only need three practical note types:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `capture notes`,
+      `working notes`,
+      `Smart Notes`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `These are not rigid categories. They are stages of development.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Some ideas move through all three stages. Some do not. A quick reminder may stay as a capture note and then get deleted. A messy explanation may stay as a working note for a while. A high-value idea may become a Smart Note because it keeps showing up in scenarios, directives, feedback, or clinical reasoning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The point is not to promote every note.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The point is to notice what kind of work the note is doing.`,
+  },
+  {
+    type: 'heading',
+    text: `Capture notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `Capture notes are fast, messy, and temporary.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They exist to catch something before it disappears.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That might be:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `a question from lecture`,
+      `a phrase an instructor used`,
+      `a scenario moment that felt important`,
+      `a repeated feedback point`,
+      `a patient cue you did not understand`,
+      `a directive decision that felt uncertain`,
+      `a comparison you want to revisit`,
+      `a mistake that might matter later`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `A capture note does not need structure.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It does not need a good title. It does not need links. It does not need to be written well.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Examples:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `patient got quieter after treatment, not sure if better`,
+      `why does sepsis look vague in elderly patients`,
+      `reassessment keeps showing up in feedback`,
+      `chest pain without ECG changes still felt risky`,
+      `oxygen saturation okay but patient looked bad`,
+      `confused before vitals looked dramatic`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `These are not finished thoughts.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are traces of attention. Something happened, and part of you noticed it might matter.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is enough for capture.`,
+  },
+  {
+    type: 'heading',
+    text: `Working notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `Working notes are where you wrestle with an idea.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are not raw capture anymore, but they are not stable Smart Notes yet.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A working note might include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `rough explanations`,
+      `cause and effect chains`,
+      `small comparison tables`,
+      `questions you are still sorting out`,
+      `partial links to related ideas`,
+      `examples from lab or scenarios`,
+      `early attempts to explain a mechanism`,
+      `notes from feedback that need interpretation`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `This is where a lot of real learning happens.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A working note lets you say, “I think this is what is happening, but I am not fully sure yet.”`,
+  },
+  {
+    type: 'paragraph',
+    text: `That matters because paramedic students often want to jump too quickly from confusion to final answer. Working notes give partial understanding somewhere to live while it becomes clearer.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For example, a working note on respiratory fatigue might include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `wheezing can decrease when air movement worsens`,
+      `patient may speak less`,
+      `mental status matters`,
+      `work of breathing may be more important than SpO₂ alone`,
+      `reassessment after bronchodilator should include effort, speech, air movement, and fatigue`,
+      `need to connect this to oxygenation versus ventilation`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That note is not polished yet.`,
+  },
+  {
+    type: 'paragraph',
+    text: `But it is doing real work. It is holding the pieces together long enough for the student to return, compare, revise, and eventually understand the pattern more clearly.`,
+  },
+  {
+    type: 'heading',
+    text: `Smart Notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `Smart Notes are more stable.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They explain one idea clearly enough that future you can reuse it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A Smart Note usually includes:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `a clear claim`,
+      `an explanation in your own words`,
+      `clinical signals`,
+      `common confusion`,
+      `meaningful links`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `A Smart Note does not have to be perfect. It just has to be stable enough to help later.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For example:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Quiet lungs can mean worsening respiratory fatigue.`,
+  },
+  {
+    type: 'paragraph',
+    text: `In severe bronchospasm or respiratory distress, less wheezing is not always improvement. If the patient is still working hard to breathe, speaking less, becoming tired, or showing altered mental status, reduced sound may mean reduced air movement rather than recovery. Reassessment should focus on effort, speech, air movement, mental status, and trajectory.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That kind of note can help during later study, scenario preparation, and feedback review.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It is small, clear, and tied to patient care.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It does not summarize all of asthma. It preserves one clinical distinction that could change assessment and reassessment.`,
+  },
+  {
+    type: 'heading',
+    text: `Not every note should become a Smart Note`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is important.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If every captured idea becomes a Smart Note, the system will become too heavy.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Some notes are useful only for a day. Some are reminders. Some are questions that get answered quickly. Some are rough thoughts that no longer matter after a better explanation appears. Some are just noise from a busy week.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is normal.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A healthy note system includes deletion. It also includes leaving some notes unfinished.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You do not need to turn every lecture point, lab comment, or textbook paragraph into a permanent note. That would make the system harder to maintain and less useful over time.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Smart Notes should be reserved for ideas that keep mattering.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Good candidates include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `repeated mistakes`,
+      `high-risk distinctions`,
+      `mechanisms that explain multiple presentations`,
+      `directive decisions that feel fragile`,
+      `assessment cues that change interpretation`,
+      `feedback that keeps returning`,
+      `comparisons that prevent confusion`,
+      `ideas that connect across several topics`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `The question is not, “Can I make a note out of this?”`,
+  },
+  {
+    type: 'paragraph',
+    text: `The better question is, “Will this help me think later?”`,
+  },
+  {
+    type: 'heading',
+    text: `How ideas mature`,
+  },
+  {
+    type: 'paragraph',
+    text: `An idea often begins as something vague.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You hear it once and only partly understand it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Then it appears again.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Maybe during lab, you see a patient who does not match the clean textbook version. Maybe during a scenario, you miss a cue. Maybe during feedback, someone points out that your treatment was reasonable but your reassessment was weak. Maybe while studying, you realize two conditions look similar until you compare the mechanism.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Each exposure changes the idea slightly.`,
+  },
+  {
+    type: 'paragraph',
+    text: `At first, your note may say:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Sepsis can look vague.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Later, it might become:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Older adults may show sepsis through weakness, confusion, poor intake, and subtle vital sign changes before the presentation looks dramatic.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Later still, after scenarios and feedback, the note might become:`,
+  },
+  {
+    type: 'paragraph',
+    text: `In older adults, early sepsis may present as vague decline rather than a clear infectious picture. Weakness, confusion, poor intake, fast breathing, soft pressure, warm skin, or family concern may matter more when they appear together. The risk is waiting for obvious fever or hypotension before treating the patient as potentially unstable.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The topic did not change.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The centre of the note changed.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It moved from label, to presentation, to risk and decision-making.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is idea maturation.`,
+  },
+  {
+    type: 'heading',
+    text: `A paramedic example`,
+  },
+  {
+    type: 'paragraph',
+    text: `Imagine a student creates an early note after learning about hypoxia.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The first capture note says:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Hypoxia causes confusion.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is fine as a starting point.`,
+  },
+  {
+    type: 'paragraph',
+    text: `After a respiratory scenario, the student notices something more specific. The patient became more confused and less cooperative before the oxygen saturation changed much. The instructor emphasized mental status and work of breathing during debrief.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The working note becomes:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Mental status can change before oxygen numbers look dramatic. Need to watch confusion, agitation, fatigue, and ability to speak. Oxygen saturation is useful, but it does not tell the whole story.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Later, after more practice, the Smart Note becomes:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Altered mental status can be an early warning sign in respiratory failure.`,
+  },
+  {
+    type: 'paragraph',
+    text: `When breathing is becoming ineffective, the brain may show signs of poor oxygen delivery, rising carbon dioxide, fatigue, or overall physiologic stress before the monitor gives a dramatic number. Confusion, agitation, drowsiness, reduced speech, or poor cooperation should raise concern, especially when paired with increased work of breathing or decreasing air movement.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Now the note is more useful.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It gives the student something to notice in a future scenario. It connects to assessment. It supports reassessment. It helps prevent the common mistake of waiting for one number to make the situation obvious.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The idea matured because the student kept using it.`,
+  },
+  {
+    type: 'heading',
+    text: `When to revise a note`,
+  },
+  {
+    type: 'paragraph',
+    text: `Revision should follow learning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Do not revise a note just because it looks messy.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Revise it when something meaningful has changed.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Good reasons to revise include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `a scenario contradicted your explanation`,
+      `feedback showed that your note missed an important part`,
+      `you keep misapplying the idea under pressure`,
+      `the same confusion appears repeatedly`,
+      `you can explain the idea more clearly than before`,
+      `the note is too broad to reuse`,
+      `the note needs to split into smaller notes`,
+      `a link would help connect it to a related decision`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Those are good reasons because they show the note is interacting with your learning.`,
+  },
+  {
+    type: 'heading',
+    text: `When not to revise a note`,
+  },
+  {
+    type: 'paragraph',
+    text: `Do not revise a note just because:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `it feels unfinished`,
+      `it is not pretty`,
+      `the wording could be smoother`,
+      `your folder system feels messy`,
+      `you are avoiding harder study`,
+      `you are chasing the feeling of being organized`,
+      `you found a new template online`,
+      `you are uncomfortable with imperfection`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `This is where students can lose a lot of time.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note system can become a safe place to look busy.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You can spend hours reorganizing, rewriting, renaming, tagging, and adjusting templates while very little understanding changes.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is not note maturation.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is maintenance pretending to be learning.`,
+  },
+  {
+    type: 'heading',
+    text: `Linking as maturation`,
+  },
+  {
+    type: 'paragraph',
+    text: `As understanding deepens, linking becomes more important.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Not every note needs to be rewritten. Sometimes it needs to be connected.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note on early hypoxia might eventually link to:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Altered Mental Status as an Early Warning Sign`,
+      `Oxygenation Versus Ventilation`,
+      `Respiratory Fatigue`,
+      `Work of Breathing`,
+      `Reassessment After Intervention`,
+      `Cognitive Narrowing Under Stress`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Those links matter because the ideas influence each other.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They help you see how the same concept behaves across different situations. They let you compare related ideas without merging them into one giant note. They also help you prepare for scenarios by following reasoning trails rather than rereading folders.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A mature note system is not necessarily bigger.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It is usually better connected.`,
+  },
+  {
+    type: 'heading',
+    text: `Splitting and shrinking notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `As ideas mature, some notes need to split.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note called “Respiratory Distress” may eventually become too large. It might split into:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Work of Breathing`,
+      `Air Trapping`,
+      `Respiratory Fatigue`,
+      `Oxygenation Versus Ventilation`,
+      `Anxiety and Air Hunger`,
+      `Reassessment After Bronchodilator Treatment`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That does not mean the original note was bad.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It means your understanding became more detailed.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Other notes may shrink.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A long working note may eventually become a few clear sentences because you understand the idea better. The note does not need to hold every detail anymore. It only needs to preserve the part that helps you think.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Mature notes often become shorter, not longer.`,
+  },
+  {
+    type: 'heading',
+    text: `Avoiding perfectionism`,
+  },
+  {
+    type: 'paragraph',
+    text: `A mature note system does not require constant maintenance.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If you find yourself endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is starting to pull attention away from learning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is a warning sign.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is not to build a perfect vault.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is to build a useful thinking system that can survive paramedic school.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Some mess is allowed. Some incompleteness is allowed. Some rough notes can stay rough until they have a reason to change.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If a note helps you think better today, it is good enough for today.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Refinement should come from use, not from the need to make the system feel clean.`,
+  },
+  {
+    type: 'heading',
+    text: `Preparing for retrieval`,
+  },
+  {
+    type: 'paragraph',
+    text: `Mature notes create better material for retrieval practice.`,
+  },
+  {
+    type: 'paragraph',
+    text: `When notes emphasize decisions, contrasts, early signals, common errors, and mechanisms, they can become strong prompts later.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For example, a Smart Note might turn into retrieval questions like:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What are early signs that respiratory fatigue is worsening?`,
+      `Why can altered mental status matter before SpO₂ changes dramatically?`,
+      `What makes early sepsis difficult to recognize in older adults?`,
+      `What would make this treatment inappropriate?`,
+      `What finding would make me change my mind?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That matters because retrieval should not just ask you to remember isolated facts.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It should help you bring back the kind of understanding you need during scenarios and OSCEs.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Anki, flashcards, or recall drills should strengthen access to understanding you have already started building.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They should not replace the work of understanding.`,
+  },
+  {
+    type: 'heading',
+    text: `A small process for note maturity`,
+  },
+  {
+    type: 'paragraph',
+    text: `Once or twice a week, look at a few notes and ask:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Is this just a capture note?`,
+      `Does it need to become a working note?`,
+      `Is there one idea here worth turning into a Smart Note?`,
+      `Has my understanding changed because of a scenario, feedback, or practice?`,
+      `Should this note be linked, split, shortened, or left alone?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Then choose one action:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `delete it`,
+      `leave it`,
+      `process it`,
+      `link it`,
+      `split it`,
+      `revise it`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That is enough.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You do not need to overhaul your system.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You are just keeping it alive.`,
+  },
+  {
+    type: 'heading',
+    text: `Moving forward`,
+  },
+  {
+    type: 'paragraph',
+    text: `Your notes do not need to be finished before they can help you.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They need to be able to change as your understanding changes.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Capture notes preserve raw experience. Working notes let you wrestle with partial understanding. Smart Notes stabilize ideas that are ready to be reused. Over time, the system becomes smaller, clearer, and more connected because your thinking has matured.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The next section looks at Obsidian as one possible home for this system. We will keep the setup simple and focus on how to use Obsidian as a place for thinking, not as a project that eats the learning it was supposed to support.`,
+  },
+],
   glossaryTerms: [
     'capture-notes',
     'working-notes',
@@ -4859,855 +4540,674 @@ const sectionSeeds: SectionSeed[] = [
     'Help students use Obsidian as a simple, durable thinking space for paramedic learning without turning it into a productivity project or storage vault.',
   pageType: 'practical-system',
   body: [
-    {
-      type: 'paragraph',
-      text: `Obsidian can be useful for paramedic learning, but only if it stays simple enough to use during a real semester.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That part matters.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Eventually, the system asks for more attention than the learning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is not what we want here.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For VitalNotes, Obsidian is not meant to become another project. It is a place where your thinking can live, connect, and change over time. It should help you return to important ideas without asking you to rebuild your understanding every time you sit down to study.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The goal is not to become good at Obsidian.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The goal is to make your learning easier to return to.`,
-    },
-    {
-      type: 'heading',
-      text: `What Obsidian is`,
-    },
-    {
-      type: 'paragraph',
-      text: `Obsidian is a note-taking app that stores your notes as plain text files on your computer.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A group of notes in Obsidian is called a vault. A vault is just a folder. Inside that folder, each note is a simple text file written in Markdown.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You do not need to understand Markdown deeply to use it. For this guide, it is enough to know that you can write normal text, make headings, create lists, and connect notes with double brackets.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A link might look like this:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Respiratory Fatigue`,
-    },
-    {
-      type: 'paragraph',
-      text: `That link can connect one note to another.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This is the main reason Obsidian works well for Smart Notes. It lets you connect ideas without forcing everything into a rigid folder system.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is useful in paramedic learning because ideas rarely stay in one place. Respiratory fatigue connects to work of breathing. Work of breathing connects to reassessment. Reassessment connects to treatment decisions. Treatment decisions connect to directives. Directives connect back to risk, physiology, and patient presentation.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Obsidian gives those relationships somewhere to live.`,
-    },
-    {
-      type: 'heading',
-      text: `What Obsidian is not`,
-    },
-    {
-      type: 'paragraph',
-      text: `Obsidian can do a lot.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is useful, but it can also become a trap.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For this guide, Obsidian is not:`,
-    },
-    {
-      type: 'paragraph',
-      text: `a task manager`,
-    },
-    {
-      type: 'paragraph',
-      text: `a productivity dashboard`,
-    },
-    {
-      type: 'paragraph',
-      text: `a place to store everything`,
-    },
-    {
-      type: 'paragraph',
-      text: `a replacement for studying`,
-    },
-    {
-      type: 'paragraph',
-      text: `a replacement for directives`,
-    },
-    {
-      type: 'paragraph',
-      text: `a flashcard system by itself`,
-    },
-    {
-      type: 'paragraph',
-      text: `a place to rewrite every lecture slide`,
-    },
-    {
-      type: 'paragraph',
-      text: `a project that needs constant maintenance`,
-    },
-    {
-      type: 'paragraph',
-      text: `If Obsidian becomes all of those things, it will probably become too heavy.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You need a place to capture ideas, develop notes, connect related thinking, and return to those notes before scenarios, labs, OSCEs, and studying.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is enough for now.`,
-    },
-    {
-      type: 'heading',
-      text: `The basic vault structure`,
-    },
-    {
-      type: 'paragraph',
-      text: `Start with three spaces:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Inbox`,
-    },
-    {
-      type: 'paragraph',
-      text: `Notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reference`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is enough at the beginning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Do not start by creating a folder for every course, body system, directive, medication, week, lab, and exam. That may feel organized, but it often creates more places for ideas to disappear.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Start smaller.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Let the structure grow from actual use.`,
-    },
-    {
-      type: 'heading',
-      text: `Inbox`,
-    },
-    {
-      type: 'paragraph',
-      text: `The Inbox is for capture.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This is where messy things go before you know what they are.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Use it during lectures, labs, readings, debriefs, and scenario days. Capture quickly. Do not polish. Do not format. Do not worry too much about titles.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Inbox notes might look like this:`,
-    },
-    {
-      type: 'paragraph',
-      text: `patient got quieter after treatment, not sure if better`,
-    },
-    {
-      type: 'paragraph',
-      text: `instructor emphasized reassessment again`,
-    },
-    {
-      type: 'paragraph',
-      text: `why does shock feel subtle early`,
-    },
-    {
-      type: 'paragraph',
-      text: `chest pain without ECG changes still felt risky`,
-    },
-    {
-      type: 'paragraph',
-      text: `confused before sats changed`,
-    },
-    {
-      type: 'paragraph',
-      text: `oxygen saturation okay but patient looked bad`,
-    },
-    {
-      type: 'paragraph',
-      text: `directive decision felt fragile because BP was borderline`,
-    },
-    {
-      type: 'paragraph',
-      text: `These are not finished thoughts.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They are moments worth returning to.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Nothing should live in the Inbox forever. The Inbox is a holding space. Its job is to catch the idea before it disappears, not to become a storage room for everything you did not process.`,
-    },
-    {
-      type: 'heading',
-      text: `Notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `The Notes folder is where thinking happens.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This is where working notes and Smart Notes live.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A working note is still developing. It may contain rough explanations, questions, examples, and partial links.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A Smart Note is more stable. It explains one idea clearly enough that future you can reuse it.`,
-    },
-    {
-      type: 'paragraph',
-      text: `These do not need separate folders at first.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You can keep them together and let the note itself show its stage. A rough note can stay rough while the idea is still forming. A clearer note can become a Smart Note when it is ready.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The Notes folder is for ideas you are thinking with.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That means not everything belongs there. A copied table, a PDF, a lecture slide, or a directive document may be useful, but those things are not automatically your thinking. Your thinking begins when you explain, compare, question, connect, or apply the material.`,
-    },
-    {
-      type: 'heading',
-      text: `Reference`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reference is for material you may need to look up, but are not actively turning into your own thinking yet.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This might include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `copied directive text`,
-    },
-    {
-      type: 'paragraph',
-      text: `medication tables`,
-    },
-    {
-      type: 'paragraph',
-      text: `lecture slides`,
-    },
-    {
-      type: 'paragraph',
-      text: `PDFs`,
-    },
-    {
-      type: 'paragraph',
-      text: `checklists`,
-    },
-    {
-      type: 'paragraph',
-      text: `official resources`,
-    },
-    {
-      type: 'paragraph',
-      text: `copied definitions`,
-    },
-    {
-      type: 'paragraph',
-      text: `lab documents`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reference material is useful. It helps with accuracy. It gives you something to check against.`,
-    },
-    {
-      type: 'paragraph',
-      text: `But reference material is not the same as understanding.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A copied table can support a Smart Note, but it is not a Smart Note by itself. A directive can sit in Reference, but your thinking about the directive should live in Notes. A lecture slide can help you check a detail, but it should not replace your own explanation of why the idea matters.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reference supports thinking.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It should not become a graveyard for files you never return to.`,
-    },
-    {
-      type: 'heading',
-      text: `How ideas move through the system`,
-    },
-    {
-      type: 'paragraph',
-      text: `A simple note system has a simple path.`,
-    },
-    {
-      type: 'paragraph',
-      text: `First, capture.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You write something quickly because it might matter.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Second, process.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You return to the captured note and ask what it is really about.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Third, stabilize.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If the idea matters enough, you turn it into a working note or Smart Note.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For example, an Inbox note might say:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Patient more confused before oxygen saturation changed much.`,
-    },
-    {
-      type: 'paragraph',
-      text: `When processing it, you might ask:`,
-    },
-    {
-      type: 'paragraph',
-      text: `What is this actually about?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What decision does it affect?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What mistake could it prevent?`,
-    },
-    {
-      type: 'paragraph',
-      text: `What does it connect to?`,
-    },
-    {
-      type: 'paragraph',
-      text: `That rough note might eventually become:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Altered mental status can be an early warning sign in respiratory failure`,
-    },
-    {
-      type: 'paragraph',
-      text: `The Smart Note might explain that worsening confusion, agitation, drowsiness, or reduced ability to cooperate can signal poor oxygen delivery, rising carbon dioxide, fatigue, or broader physiologic stress before one dramatic monitor value appears.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Now the note is useful.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It is no longer just a memory from one scenario. It has become a clinical idea you can return to, link, revise, and retrieve.`,
-    },
-    {
-      type: 'heading',
-      text: `How to name notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `Good note titles should communicate meaning.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A title like:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Respiratory Distress`,
-    },
-    {
-      type: 'paragraph',
-      text: `may be too broad.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It names a topic, but it does not tell you what the note is trying to say.`,
-    },
-    {
-      type: 'paragraph',
-      text: `More useful titles might be:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Quiet lungs can mean worsening fatigue`,
-    },
-    {
-      type: 'paragraph',
-      text: `Oxygen saturation does not fully describe work of breathing`,
-    },
-    {
-      type: 'paragraph',
-      text: `Altered mental status can be an early warning sign`,
-    },
-    {
-      type: 'paragraph',
-      text: `Early shock may appear before hypotension`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reassessment after treatment tests whether the explanation still fits`,
-    },
-    {
-      type: 'paragraph',
-      text: `Risk matters before certainty in chest pain`,
-    },
-    {
-      type: 'paragraph',
-      text: `Those titles do more work.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They carry a claim, distinction, or clinical warning. They help future you know why the note exists before you open it.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If a title could be a textbook chapter, it is probably too broad for a Smart Note.`,
-    },
-    {
-      type: 'heading',
-      text: `Linking as reasoning`,
-    },
-    {
-      type: 'paragraph',
-      text: `Links should represent relationships that matter.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Do not link notes only because they belong to the same broad topic. Link them because one idea changes how you understand another.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A note on respiratory fatigue might link to:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Work of Breathing`,
-    },
-    {
-      type: 'paragraph',
-      text: `Air Trapping`,
-    },
-    {
-      type: 'paragraph',
-      text: `Oxygenation Versus Ventilation`,
-    },
-    {
-      type: 'paragraph',
-      text: `Altered Mental Status as an Early Warning Sign`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reassessment After Intervention`,
-    },
-    {
-      type: 'paragraph',
-      text: `Those links are useful because the ideas influence the same decisions.`,
-    },
-    {
-      type: 'paragraph',
-      text: `They help you follow a reasoning trail.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If a link does not help you think differently, compare more clearly, or find a useful connection later, it probably does not need to be there.`,
-    },
-    {
-      type: 'heading',
-      text: `A simple weekly rhythm`,
-    },
-    {
-      type: 'paragraph',
-      text: `You do not need to live inside Obsidian.`,
-    },
-    {
-      type: 'paragraph',
-      text: `During the week, capture rough notes as they appear.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This might happen during:`,
-    },
-    {
-      type: 'paragraph',
-      text: `lectures`,
-    },
-    {
-      type: 'paragraph',
-      text: `labs`,
-    },
-    {
-      type: 'paragraph',
-      text: `readings`,
-    },
-    {
-      type: 'paragraph',
-      text: `scenario debriefs`,
-    },
-    {
-      type: 'paragraph',
-      text: `study sessions`,
-    },
-    {
-      type: 'paragraph',
-      text: `moments where something finally clicks`,
-    },
-    {
-      type: 'paragraph',
-      text: `Then, once or twice a week, process a small number of captured notes.`,
-    },
-    {
-      type: 'paragraph',
-      text: `For each note, choose one action:`,
-    },
-    {
-      type: 'paragraph',
-      text: `delete it`,
-    },
-    {
-      type: 'paragraph',
-      text: `leave it as capture`,
-    },
-    {
-      type: 'paragraph',
-      text: `develop it into a working note`,
-    },
-    {
-      type: 'paragraph',
-      text: `turn it into a Smart Note`,
-    },
-    {
-      type: 'paragraph',
-      text: `link it to something that already exists`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is enough.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You are not trying to process everything. You are trying to keep the important ideas from disappearing.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A useful weekly rhythm might be as small as twenty minutes. Open the Inbox. Pick three notes. Clean one up. Delete one. Link one to something that already matters.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That kind of small maintenance is usually more valuable than a large rebuild you only do when you feel behind.`,
-    },
-    {
-      type: 'heading',
-      text: `Before scenarios or OSCEs`,
-    },
-    {
-      type: 'paragraph',
-      text: `Obsidian can help you prepare by reactivating connected understanding.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Before a respiratory scenario day, you might open one useful note and follow a few links for five or ten minutes.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You might move from:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Work of Breathing`,
-    },
-    {
-      type: 'paragraph',
-      text: `to:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Respiratory Fatigue`,
-    },
-    {
-      type: 'paragraph',
-      text: `to:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Oxygenation Versus Ventilation`,
-    },
-    {
-      type: 'paragraph',
-      text: `to:`,
-    },
-    {
-      type: 'paragraph',
-      text: `Reassessment After Intervention`,
-    },
-    {
-      type: 'paragraph',
-      text: `That kind of review is different from rereading a folder.`,
-    },
-    {
-      type: 'paragraph',
-      text: `You are not trying to memorize everything again. You are warming up relationships that matter.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This can help because scenarios rarely test isolated facts in isolation. They ask you to use connected understanding while the patient is changing, while other tasks compete for attention, and while you still have to decide what matters next.`,
-    },
-    {
-      type: 'heading',
-      text: `What to avoid early`,
-    },
-    {
-      type: 'paragraph',
-      text: `Avoid building the system before you have notes that need a system.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Common traps include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `installing plugins before you know what problem they solve`,
-    },
-    {
-      type: 'paragraph',
-      text: `building dashboards`,
-    },
-    {
-      type: 'paragraph',
-      text: `spending too long choosing themes`,
-    },
-    {
-      type: 'paragraph',
-      text: `making complex folder structures`,
-    },
-    {
-      type: 'paragraph',
-      text: `tagging everything`,
-    },
-    {
-      type: 'paragraph',
-      text: `rewriting notes to make the vault look clean`,
-    },
-    {
-      type: 'paragraph',
-      text: `turning Obsidian into a task manager`,
-    },
-    {
-      type: 'paragraph',
-      text: `using the graph view as proof that learning is happening`,
-    },
-    {
-      type: 'paragraph',
-      text: `These things can feel productive.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Sometimes they are just another way to avoid the harder work of understanding.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Start with writing, linking, and returning to ideas.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The rest can wait.`,
-    },
-    {
-      type: 'heading',
-      text: `When to change the system`,
-    },
-    {
-      type: 'paragraph',
-      text: `Change the system only when the current system stops helping.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Good reasons to adjust include:`,
-    },
-    {
-      type: 'paragraph',
-      text: `finding notes has become difficult`,
-    },
-    {
-      type: 'paragraph',
-      text: `links feel noisy instead of useful`,
-    },
-    {
-      type: 'paragraph',
-      text: `too many notes are stuck in the Inbox`,
-    },
-    {
-      type: 'paragraph',
-      text: `you cannot tell reference material from thinking notes`,
-    },
-    {
-      type: 'paragraph',
-      text: `you keep losing important scenario lessons`,
-    },
-    {
-      type: 'paragraph',
-      text: `writing notes feels burdensome`,
-    },
-    {
-      type: 'paragraph',
-      text: `your structure no longer matches how you use the system`,
-    },
-    {
-      type: 'paragraph',
-      text: `Do not change the system just because it feels imperfect.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Some imperfection is normal.`,
-    },
-    {
-      type: 'paragraph',
-      text: `A note system should evolve from use, not from discomfort with mess.`,
-    },
-    {
-      type: 'heading',
-      text: `What success looks like`,
-    },
-    {
-      type: 'paragraph',
-      text: `A working Obsidian system is usually not impressive from the outside.`,
-    },
-    {
-      type: 'paragraph',
-      text: `It may look plain. It may have a small number of folders. It may have rough notes beside clearer ones. It may not have a beautiful graph or elaborate dashboard.`,
-    },
-    {
-      type: 'paragraph',
-      text: `That is fine.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Success looks more like this:`,
-    },
-    {
-      type: 'paragraph',
-      text: `you can capture important ideas quickly`,
-    },
-    {
-      type: 'paragraph',
-      text: `you can return to them later`,
-    },
-    {
-      type: 'paragraph',
-      text: `some ideas become clearer over time`,
-    },
-    {
-      type: 'paragraph',
-      text: `related ideas begin to connect`,
-    },
-    {
-      type: 'paragraph',
-      text: `scenarios reveal fewer surprises`,
-    },
-    {
-      type: 'paragraph',
-      text: `feedback turns into notes you can actually use`,
-    },
-    {
-      type: 'paragraph',
-      text: `studying feels less like rereading and more like reactivating understanding`,
-    },
-    {
-      type: 'paragraph',
-      text: `If Obsidian helps with that, it is working.`,
-    },
-    {
-      type: 'paragraph',
-      text: `If the system demands attention instead of supporting learning, simplify it.`,
-    },
-    {
-      type: 'heading',
-      text: `Moving forward`,
-    },
-    {
-      type: 'paragraph',
-      text: `Obsidian is only useful if it helps you think.`,
-    },
-    {
-      type: 'paragraph',
-      text: `Used well, it gives your Smart Notes a simple home. It lets ideas move from rough capture to working explanation to reusable understanding. It helps you connect physiology, directives, patient presentations, scenario errors, and clinical reasoning without forcing everything into rigid folders.`,
-    },
-    {
-      type: 'paragraph',
-      text: `This completes the Build Usable Notes cluster.`,
-    },
-    {
-      type: 'paragraph',
-      text: `The next section moves into recall. Once understanding has been built and stored in a usable form, the next question is whether you can bring it back when you need it.`,
-    },
-  ],
+  {
+    type: 'paragraph',
+    text: `Obsidian can be useful for paramedic learning, but only if it stays simple enough to use during a real semester.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That part matters.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Eventually, the system asks for more attention than the learning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is not what we want here.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For VitalNotes, Obsidian is not meant to become another project. It is a place where your thinking can live, connect, and change over time. It should help you return to important ideas without asking you to rebuild your understanding every time you sit down to study.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is not to become good at Obsidian.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The goal is to make your learning easier to return to.`,
+  },
+  {
+    type: 'heading',
+    text: `What Obsidian is`,
+  },
+  {
+    type: 'paragraph',
+    text: `Obsidian is a note-taking app that stores your notes as plain text files on your computer.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A group of notes in Obsidian is called a vault. A vault is just a folder. Inside that folder, each note is a simple text file written in Markdown.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You do not need to understand Markdown deeply to use it. For this guide, it is enough to know that you can write normal text, make headings, create lists, and connect notes with double brackets.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A link might look like this:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Respiratory Fatigue`,
+  },
+  {
+    type: 'paragraph',
+    text: `That link can connect one note to another.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is the main reason Obsidian works well for Smart Notes. It lets you connect ideas without forcing everything into a rigid folder system.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is useful in paramedic learning because ideas rarely stay in one place. Respiratory fatigue connects to work of breathing. Work of breathing connects to reassessment. Reassessment connects to treatment decisions. Treatment decisions connect to directives. Directives connect back to risk, physiology, and patient presentation.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Obsidian gives those relationships somewhere to live.`,
+  },
+  {
+    type: 'heading',
+    text: `What Obsidian is not`,
+  },
+  {
+    type: 'paragraph',
+    text: `Obsidian can do a lot.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is useful, but it can also become a trap.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For this guide, Obsidian is not:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `a task manager`,
+      `a productivity dashboard`,
+      `a place to store everything`,
+      `a replacement for studying`,
+      `a replacement for directives`,
+      `a flashcard system by itself`,
+      `a place to rewrite every lecture slide`,
+      `a project that needs constant maintenance`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `If Obsidian becomes all of those things, it will probably become too heavy.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You need a place to capture ideas, develop notes, connect related thinking, and return to those notes before scenarios, labs, OSCEs, and studying.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is enough for now.`,
+  },
+  {
+    type: 'heading',
+    text: `The basic vault structure`,
+  },
+  {
+    type: 'paragraph',
+    text: `Start with three spaces:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Inbox`,
+      `Notes`,
+      `Reference`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That is enough at the beginning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Do not start by creating a folder for every course, body system, directive, medication, week, lab, and exam. That may feel organized, but it often creates more places for ideas to disappear.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Start smaller.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Let the structure grow from actual use.`,
+  },
+  {
+    type: 'heading',
+    text: `Inbox`,
+  },
+  {
+    type: 'paragraph',
+    text: `The Inbox is for capture.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is where messy things go before you know what they are.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Use it during lectures, labs, readings, debriefs, and scenario days. Capture quickly. Do not polish. Do not format. Do not worry too much about titles.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Inbox notes might look like this:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `patient got quieter after treatment, not sure if better`,
+      `instructor emphasized reassessment again`,
+      `why does shock feel subtle early`,
+      `chest pain without ECG changes still felt risky`,
+      `confused before sats changed`,
+      `oxygen saturation okay but patient looked bad`,
+      `directive decision felt fragile because BP was borderline`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `These are not finished thoughts.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They are moments worth returning to.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Nothing should live in the Inbox forever. The Inbox is a holding space. Its job is to catch the idea before it disappears, not to become a storage room for everything you did not process.`,
+  },
+  {
+    type: 'heading',
+    text: `Notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `The Notes folder is where thinking happens.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This is where working notes and Smart Notes live.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A working note is still developing. It may contain rough explanations, questions, examples, and partial links.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A Smart Note is more stable. It explains one idea clearly enough that future you can reuse it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `These do not need separate folders at first.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You can keep them together and let the note itself show its stage. A rough note can stay rough while the idea is still forming. A clearer note can become a Smart Note when it is ready.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The Notes folder is for ideas you are thinking with.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That means not everything belongs there. A copied table, a PDF, a lecture slide, or a directive document may be useful, but those things are not automatically your thinking. Your thinking begins when you explain, compare, question, connect, or apply the material.`,
+  },
+  {
+    type: 'heading',
+    text: `Reference`,
+  },
+  {
+    type: 'paragraph',
+    text: `Reference is for material you may need to look up, but are not actively turning into your own thinking yet.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This might include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `copied directive text`,
+      `medication tables`,
+      `lecture slides`,
+      `PDFs`,
+      `checklists`,
+      `official resources`,
+      `copied definitions`,
+      `lab documents`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Reference material is useful. It helps with accuracy. It gives you something to check against.`,
+  },
+  {
+    type: 'paragraph',
+    text: `But reference material is not the same as understanding.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A copied table can support a Smart Note, but it is not a Smart Note by itself. A directive can sit in Reference, but your thinking about the directive should live in Notes. A lecture slide can help you check a detail, but it should not replace your own explanation of why the idea matters.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Reference supports thinking.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It should not become a graveyard for files you never return to.`,
+  },
+  {
+    type: 'heading',
+    text: `How ideas move through the system`,
+  },
+  {
+    type: 'paragraph',
+    text: `A simple note system has a simple path.`,
+  },
+  {
+    type: 'paragraph',
+    text: `First, capture.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You write something quickly because it might matter.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Second, process.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You return to the captured note and ask what it is really about.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Third, stabilize.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If the idea matters enough, you turn it into a working note or Smart Note.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For example, an Inbox note might say:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Patient more confused before oxygen saturation changed much.`,
+  },
+  {
+    type: 'paragraph',
+    text: `When processing it, you might ask:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `What is this actually about?`,
+      `What decision does it affect?`,
+      `What mistake could it prevent?`,
+      `What does it connect to?`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That rough note might eventually become:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Altered mental status can be an early warning sign in respiratory failure`,
+  },
+  {
+    type: 'paragraph',
+    text: `The Smart Note might explain that worsening confusion, agitation, drowsiness, or reduced ability to cooperate can signal poor oxygen delivery, rising carbon dioxide, fatigue, or broader physiologic stress before one dramatic monitor value appears.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Now the note is useful.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It is no longer just a memory from one scenario. It has become a clinical idea you can return to, link, revise, and retrieve.`,
+  },
+  {
+    type: 'heading',
+    text: `How to name notes`,
+  },
+  {
+    type: 'paragraph',
+    text: `Good note titles should communicate meaning.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A title like:`,
+  },
+  {
+    type: 'paragraph',
+    text: `Respiratory Distress`,
+  },
+  {
+    type: 'paragraph',
+    text: `may be too broad.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It names a topic, but it does not tell you what the note is trying to say.`,
+  },
+  {
+    type: 'paragraph',
+    text: `More useful titles might be:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Quiet lungs can mean worsening fatigue`,
+      `Oxygen saturation does not fully describe work of breathing`,
+      `Altered mental status can be an early warning sign`,
+      `Early shock may appear before hypotension`,
+      `Reassessment after treatment tests whether the explanation still fits`,
+      `Risk matters before certainty in chest pain`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Those titles do more work.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They carry a claim, distinction, or clinical warning. They help future you know why the note exists before you open it.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If a title could be a textbook chapter, it is probably too broad for a Smart Note.`,
+  },
+  {
+    type: 'heading',
+    text: `Linking as reasoning`,
+  },
+  {
+    type: 'paragraph',
+    text: `Links should represent relationships that matter.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Do not link notes only because they belong to the same broad topic. Link them because one idea changes how you understand another.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note on respiratory fatigue might link to:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Work of Breathing`,
+      `Air Trapping`,
+      `Oxygenation Versus Ventilation`,
+      `Altered Mental Status as an Early Warning Sign`,
+      `Reassessment After Intervention`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Those links are useful because the ideas influence the same decisions.`,
+  },
+  {
+    type: 'paragraph',
+    text: `They help you follow a reasoning trail.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If a link does not help you think differently, compare more clearly, or find a useful connection later, it probably does not need to be there.`,
+  },
+  {
+    type: 'heading',
+    text: `A simple weekly rhythm`,
+  },
+  {
+    type: 'paragraph',
+    text: `You do not need to live inside Obsidian.`,
+  },
+  {
+    type: 'paragraph',
+    text: `During the week, capture rough notes as they appear.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This might happen during:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `lectures`,
+      `labs`,
+      `readings`,
+      `scenario debriefs`,
+      `study sessions`,
+      `moments where something finally clicks`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Then, once or twice a week, process a small number of captured notes.`,
+  },
+  {
+    type: 'paragraph',
+    text: `For each note, choose one action:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `delete it`,
+      `leave it as capture`,
+      `develop it into a working note`,
+      `turn it into a Smart Note`,
+      `link it to something that already exists`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That is enough.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You are not trying to process everything. You are trying to keep the important ideas from disappearing.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A useful weekly rhythm might be as small as twenty minutes. Open the Inbox. Pick three notes. Clean one up. Delete one. Link one to something that already matters.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That kind of small maintenance is usually more valuable than a large rebuild you only do when you feel behind.`,
+  },
+  {
+    type: 'heading',
+    text: `Before scenarios or OSCEs`,
+  },
+  {
+    type: 'paragraph',
+    text: `Obsidian can help you prepare by reactivating connected understanding.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Before a respiratory scenario day, you might open one useful note and follow a few links for five or ten minutes.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You might move from:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Work of Breathing`,
+      `Respiratory Fatigue`,
+      `Oxygenation Versus Ventilation`,
+      `Reassessment After Intervention`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `That kind of review is different from rereading a folder.`,
+  },
+  {
+    type: 'paragraph',
+    text: `You are not trying to memorize everything again. You are warming up relationships that matter.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This can help because scenarios rarely test isolated facts in isolation. They ask you to use connected understanding while the patient is changing, while other tasks compete for attention, and while you still have to decide what matters next.`,
+  },
+  {
+    type: 'heading',
+    text: `What to avoid early`,
+  },
+  {
+    type: 'paragraph',
+    text: `Avoid building the system before you have notes that need a system.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Common traps include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `installing plugins before you know what problem they solve`,
+      `building dashboards`,
+      `spending too long choosing themes`,
+      `making complex folder structures`,
+      `tagging everything`,
+      `rewriting notes to make the vault look clean`,
+      `turning Obsidian into a task manager`,
+      `using the graph view as proof that learning is happening`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `These things can feel productive.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Sometimes they are just another way to avoid the harder work of understanding.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Start with writing, linking, and returning to ideas.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The rest can wait.`,
+  },
+  {
+    type: 'heading',
+    text: `When to change the system`,
+  },
+  {
+    type: 'paragraph',
+    text: `Change the system only when the current system stops helping.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Good reasons to adjust include:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `finding notes has become difficult`,
+      `links feel noisy instead of useful`,
+      `too many notes are stuck in the Inbox`,
+      `you cannot tell reference material from thinking notes`,
+      `you keep losing important scenario lessons`,
+      `writing notes feels burdensome`,
+      `your structure no longer matches how you use the system`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `Do not change the system just because it feels imperfect.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Some imperfection is normal.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note system should evolve from use, not from discomfort with mess.`,
+  },
+  {
+    type: 'heading',
+    text: `What success looks like`,
+  },
+  {
+    type: 'paragraph',
+    text: `A working Obsidian system is usually not impressive from the outside.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It may look plain. It may have a small number of folders. It may have rough notes beside clearer ones. It may not have a beautiful graph or elaborate dashboard.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That is fine.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Success looks more like this:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `you can capture important ideas quickly`,
+      `you can return to them later`,
+      `some ideas become clearer over time`,
+      `related ideas begin to connect`,
+      `scenarios reveal fewer surprises`,
+      `feedback turns into notes you can actually use`,
+      `studying feels less like rereading and more like reactivating understanding`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `If Obsidian helps with that, it is working.`,
+  },
+  {
+    type: 'paragraph',
+    text: `If the system demands attention instead of supporting learning, simplify it.`,
+  },
+  {
+    type: 'heading',
+    text: `Moving forward`,
+  },
+  {
+    type: 'paragraph',
+    text: `Obsidian is only useful if it helps you think.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Used well, it gives your Smart Notes a simple home. It lets ideas move from rough capture to working explanation to reusable understanding. It helps you connect physiology, directives, patient presentations, scenario errors, and clinical reasoning without forcing everything into rigid folders.`,
+  },
+  {
+    type: 'paragraph',
+    text: `This completes the Build Usable Notes cluster.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The next section moves into recall. Once understanding has been built and stored in a usable form, the next question is whether you can bring it back when you need it.`,
+  },
+],
   glossaryTerms: [
     'obsidian',
     'links',
