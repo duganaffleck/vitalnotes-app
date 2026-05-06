@@ -12,7 +12,7 @@ function isGlossaryTerm(term: GlossaryTerm | undefined): term is GlossaryTerm {
   return Boolean(term)
 }
 
-function GlossaryTerms({ glossaryTermIds, onNavigate }: GlossaryTermsProps) {
+function GlossaryTerms({ glossaryTermIds }: GlossaryTermsProps) {
   const [activeTermId, setActiveTermId] = useState<string | null>(null)
 
   const terms = glossaryTermIds
@@ -54,7 +54,6 @@ function GlossaryTerms({ glossaryTermIds, onNavigate }: GlossaryTermsProps) {
           term={activeTerm}
           isOpen={Boolean(activeTerm)}
           onClose={() => setActiveTermId(null)}
-          onOpenGlossary={() => onNavigate('#/glossary')}
         />
       )}
     </aside>

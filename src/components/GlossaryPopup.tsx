@@ -4,15 +4,9 @@ type GlossaryPopupProps = {
   term: GlossaryTerm
   isOpen: boolean
   onClose: () => void
-  onOpenGlossary: () => void
 }
 
-function GlossaryPopup({
-  term,
-  isOpen,
-  onClose,
-  onOpenGlossary,
-}: GlossaryPopupProps) {
+function GlossaryPopup({ term, isOpen, onClose }: GlossaryPopupProps) {
   if (!isOpen) {
     return null
   }
@@ -28,10 +22,6 @@ function GlossaryPopup({
 
       <p>{term.shortDefinition}</p>
       <p className="muted-copy">{term.paramedicRelevance}</p>
-
-      <button className="text-button" onClick={onOpenGlossary}>
-        Open glossary
-      </button>
     </div>
   )
 }
