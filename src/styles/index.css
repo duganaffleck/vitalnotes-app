@@ -207,6 +207,50 @@ li {
 .related-card {
   cursor: pointer;
 }
+.primary-button,
+.secondary-button,
+.text-button,
+.section-nav-button,
+.related-card,
+.drawer-close-button,
+.small-close-button {
+  transition:
+    border-color 150ms ease,
+    background 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.primary-button:hover {
+  background: #34332e;
+  border-color: #34332e;
+}
+
+.secondary-button:hover,
+.section-nav-button:hover,
+.related-card:hover,
+.drawer-close-button:hover,
+.small-close-button:hover {
+  border-color: rgba(32, 32, 29, 0.24);
+  background: #fffaf0;
+  color: #20201d;
+}
+
+.text-button:hover {
+  color: #20201d;
+  text-decoration-thickness: 0.12em;
+}
+
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.text-button:focus-visible,
+.section-nav-button:focus-visible,
+.related-card:focus-visible,
+.drawer-close-button:focus-visible,
+.small-close-button:focus-visible {
+  outline: 3px solid rgba(32, 32, 29, 0.24);
+  outline-offset: 3px;
+}
 
 .primary-button,
 .secondary-button {
