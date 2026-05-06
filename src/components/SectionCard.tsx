@@ -6,18 +6,21 @@ type SectionCardProps = {
 }
 
 function SectionCard({ section, onNavigate }: SectionCardProps) {
+  const sectionHash = `#/section/${section.id}`
+
   return (
-    <article className="section-card">
+    <a
+      className="section-card section-card-link"
+      href={sectionHash}
+      onClick={(event) => {
+        event.preventDefault()
+        onNavigate(sectionHash)
+      }}
+    >
       <p className="cluster-label">{section.cluster}</p>
       <h3>{section.title}</h3>
       <p>{section.subtitle}</p>
-      <button
-        className="text-button"
-        onClick={() => onNavigate(`#/section/${section.id}`)}
-      >
-        Open section
-      </button>
-    </article>
+    </a>
   )
 }
 
