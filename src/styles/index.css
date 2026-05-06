@@ -369,22 +369,6 @@ li {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.tool-chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: flex-end;
-}
-
-.tool-chip {
-  border-radius: 999px;
-  background: #eee5d4;
-  color: #4d493f;
-  font-size: 0.8rem;
-  font-weight: 800;
-  padding: 0.45rem 0.65rem;
-  white-space: nowrap;
-}
 
 .section-header {
   display: grid;
@@ -578,10 +562,9 @@ li {
     flex-direction: column;
   }
 
-  .site-nav,
-  .tool-chip-row {
-    justify-content: flex-start;
-  }
+ .site-nav {
+  justify-content: flex-start;
+}
 
   .three-column-grid,
   .section-grid,

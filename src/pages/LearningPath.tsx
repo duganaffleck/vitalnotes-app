@@ -1,7 +1,6 @@
 import SectionCard from '../components/SectionCard'
 import { orderedLearningPath } from '../content/learningPath'
 import { getSectionById } from '../content/sections'
-import { getToolById } from '../content/tools'
 
 type LearningPathProps = {
   onNavigate: (hash: string) => void
@@ -26,10 +25,6 @@ function LearningPath({ onNavigate }: LearningPathProps) {
             .map((sectionId) => getSectionById(sectionId))
             .filter(Boolean)
 
-          const clusterTools = cluster.relatedTools
-            .map((toolId) => getToolById(toolId))
-            .filter(Boolean)
-
           return (
             <section className="cluster-panel" key={cluster.id}>
               <div className="cluster-panel-header">
@@ -37,18 +32,6 @@ function LearningPath({ onNavigate }: LearningPathProps) {
                   <p className="cluster-label">{cluster.title}</p>
                   <h2>{cluster.purpose}</h2>
                 </div>
-
-                {clusterTools.length > 0 && (
-                  <div className="tool-chip-row">
-                    {clusterTools.map((tool) =>
-                      tool ? (
-                        <span className="tool-chip" key={tool.id}>
-                          {tool.title}
-                        </span>
-                      ) : null,
-                    )}
-                  </div>
-                )}
               </div>
 
               <div className="section-grid">
