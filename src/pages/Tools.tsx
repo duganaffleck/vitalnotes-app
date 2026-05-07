@@ -55,17 +55,6 @@ function Tools({ onNavigate }: ToolsProps) {
                 </div>
               </div>
             )}
-
-            {tool.relatedSections.length > 0 && (
-              <button
-                className="text-button"
-                onClick={() =>
-                  onNavigate(`#/section/${tool.relatedSections[0]}`)
-                }
-              >
-                Open related section
-              </button>
-            )}
           </article>
         ))}
       </div>
