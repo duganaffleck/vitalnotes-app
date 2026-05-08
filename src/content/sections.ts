@@ -11465,9 +11465,9 @@ relatedSections: [
     {
       type: 'list',
       items: [
-        "**Primary risk:** This patient may be tiring, not improving.",
-        "**Structure:** Return to reassessment after intervention.",
-        "**Next action:** Reassess work of breathing, air entry, ability to speak, mental status, and vital signs.",
+        "Primary risk: This patient may be tiring, not improving.",
+        "Structure: Return to reassessment after intervention.",
+        "Next action: Reassess work of breathing, air entry, ability to speak, mental status, and vital signs.",
       ],
     },
     {
@@ -11493,9 +11493,9 @@ relatedSections: [
     {
       type: 'list',
       items: [
-        "**Primary risk:** What does this patient need from me right now?",
-        "**Structure:** Return to patient-centred communication.",
-        "**Next action:** Ask one clear question, explain one next step, or redirect the team.",
+        "Primary risk: What does this patient need from me right now?",
+        "Structure: Return to patient-centred communication.",
+        "Next action: Ask one clear question, explain one next step, or redirect the team.",
       ],
     },
     {
