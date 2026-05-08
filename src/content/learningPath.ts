@@ -71,6 +71,20 @@ export const learningPath: LearningPathCluster[] = [
     relatedTools: ['clinical-recall-prompt-builder'],
     status: 'drafted',
   },
+   {
+    id: 'think-clinically',
+    title: '05 Think Clinically',
+    order: 5,
+    purpose:
+      'Help students reason through incomplete calls, recognize useful patterns, and avoid closing too early.',
+    sections: [
+      'clinical-reasoning',
+      'pattern-recognition',
+      'avoiding-premature-closure',
+    ],
+    relatedTools: [],
+    status: 'drafted',
+  },
 ]
 
 export const orderedLearningPath = [...learningPath].sort(

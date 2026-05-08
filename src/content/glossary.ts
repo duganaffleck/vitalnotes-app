@@ -19,15 +19,20 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Capture notes help students preserve useful learning moments from lectures, labs, and scenarios without trying to polish them immediately.',
     relatedSections: ['types-of-notes-and-idea-maturation'],
   },
-  {
-    id: 'clinical-reasoning',
-    term: 'Clinical reasoning',
-    shortDefinition:
-      'The process of gathering information, forming explanations, managing risk, acting, and revising as conditions change.',
-    paramedicRelevance:
-      'Paramedic decisions often happen before certainty arrives, so reasoning must stay flexible and defensible.',
-    relatedSections: ['start-here-what-vitalnotes-is', 'meaning-before-memorization'],
-  },
+ {
+  id: 'clinical-reasoning',
+  term: 'Clinical reasoning',
+  shortDefinition:
+    'The process of forming, testing, and adjusting an explanation of what is happening with a patient.',
+  paramedicRelevance:
+    'Clinical reasoning helps paramedic students act safely before certainty is available, while staying open to new information.',
+  relatedSections: [
+    'start-here-what-vitalnotes-is',
+    'meaning-before-memorization',
+    'directives-through-purpose',
+    'clinical-reasoning',
+  ],
+},
   {
     id: 'clinical-recall',
     term: 'Clinical recall',
@@ -135,15 +140,20 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Mechanism-based pathophysiology helps students reason through unclear or evolving patient presentations.',
     relatedSections: ['pathophysiology-through-patterns'],
   },
-  {
-    id: 'pattern-recognition',
-    term: 'Pattern recognition',
-    shortDefinition:
-      'The ability to notice familiar constellations of findings and form an early working explanation.',
-    paramedicRelevance:
-      'Pattern recognition can speed care, but students need reasoning checks to avoid premature closure.',
-    relatedSections: ['pathophysiology-through-patterns'],
-  },
+{
+  id: 'pattern-recognition',
+  term: 'Pattern recognition',
+  shortDefinition:
+    'The ability to notice familiar clusters of findings, context, and patient behavior.',
+  paramedicRelevance:
+    'Pattern recognition can help students recognize likely problems sooner, but it still needs to be checked against the patient in front of them.',
+  relatedSections: [
+    'start-here-what-vitalnotes-is',
+    'meaning-before-memorization',
+    'pathophysiology-through-patterns',
+    'pattern-recognition',
+  ],
+},
     {
     id: 'performance-under-pressure',
     term: 'Performance under pressure',
@@ -167,15 +177,21 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Perfusion helps students connect vital signs, skin signs, mental status, compensation, and shock patterns during assessment.',
     relatedSections: ['pathophysiology-through-patterns'],
   },
-  {
-    id: 'reassessment',
-    term: 'Reassessment',
-    shortDefinition:
-      'A deliberate check to see whether the patient, explanation, or plan has changed.',
-    paramedicRelevance:
-      'Reassessment keeps decisions accountable after interventions, transport choices, or new information.',
-    relatedSections: ['directives-through-purpose', 'clinical-recall-without-trivia'],
-  },
+{
+  id: 'reassessment',
+  term: 'Reassessment',
+  shortDefinition:
+    'The process of checking whether the patient, your plan, and your explanation still make sense after time passes or care is provided.',
+  paramedicRelevance:
+    'Reassessment helps students test whether their working explanation still fits as the patient changes or responds to care.',
+  relatedSections: [
+    'cognitive-load',
+    'directives-through-purpose',
+    'clinical-recall-without-trivia',
+    'clinical-reasoning',
+    'avoiding-premature-closure',
+  ],
+},
   {
     id: 'recall',
     term: 'Recall',
@@ -295,6 +311,90 @@ export const glossaryTerms: GlossaryTerm[] = [
       'types-of-notes-and-idea-maturation',
     ],
   },
+  {
+  id: 'working-explanation',
+  term: 'Working explanation',
+  shortDefinition:
+    'Your best current understanding of what is happening, held loosely enough to change as new information appears.',
+  paramedicRelevance:
+    'Working explanations help students act safely without pretending the call is clearer than it is.',
+  relatedSections: ['clinical-reasoning', 'avoiding-premature-closure'],
+},
+{
+  id: 'uncertainty',
+  term: 'Uncertainty',
+  shortDefinition:
+    'A situation where the full answer is not clear yet, but decisions still need to be made.',
+  paramedicRelevance:
+    'Paramedic students often need to manage risk and provide care while assessment, history, and patient response are still developing.',
+  relatedSections: [
+    'directives-through-purpose',
+    'clinical-reasoning',
+    'avoiding-premature-closure',
+  ],
+},
+{
+  id: 'cue',
+  term: 'Cue',
+  shortDefinition:
+    'A piece of information that may point toward a pattern, concern, or change in the patient.',
+  paramedicRelevance:
+    'Cues can include vital signs, patient appearance, scene details, history, behavior, or response to treatment.',
+  relatedSections: ['pattern-recognition', 'avoiding-premature-closure'],
+},
+{
+  id: 'hypothesis',
+  term: 'Hypothesis',
+  shortDefinition:
+    'A possible explanation that still needs to be tested against new information.',
+  paramedicRelevance:
+    'Treating early impressions as hypotheses helps students use pattern recognition without closing the call too early.',
+  relatedSections: ['clinical-reasoning', 'pattern-recognition'],
+},
+{
+  id: 'premature-closure',
+  term: 'Premature closure',
+  shortDefinition:
+    'Settling on an explanation too early and no longer noticing information that should make you reconsider.',
+  paramedicRelevance:
+    'Premature closure can cause students to miss changing vitals, poor treatment response, or details that do not fit the first impression.',
+  relatedSections: ['pattern-recognition', 'avoiding-premature-closure'],
+},
+{
+  id: 'fixation',
+  term: 'Fixation',
+  shortDefinition:
+    'When attention becomes stuck on one explanation, task, or cue.',
+  paramedicRelevance:
+    'Fixation can make students miss broader patient changes, reassessment needs, or information that does not fit their first impression.',
+  relatedSections: [
+    'cognitive-load',
+    'pattern-recognition',
+    'avoiding-premature-closure',
+  ],
+},
+{
+  id: 'disconfirming-cue',
+  term: 'Disconfirming cue',
+  shortDefinition:
+    'A finding that does not fit your current explanation.',
+  paramedicRelevance:
+    'Disconfirming cues help students notice when a working explanation may be wrong, incomplete, or no longer safe to rely on.',
+  relatedSections: ['clinical-reasoning', 'avoiding-premature-closure'],
+},
+{
+  id: 'cognitive-narrowing',
+  term: 'Cognitive narrowing',
+  shortDefinition:
+    'The tendency for attention to become tighter under pressure.',
+  paramedicRelevance:
+    'Cognitive narrowing can help students focus, but it can also make them miss information outside the immediate task or first impression.',
+  relatedSections: [
+    'cognitive-load',
+    'clinical-reasoning',
+    'avoiding-premature-closure',
+  ],
+},
 ]
 
 export const orderedGlossaryTerms = [...glossaryTerms].sort((a, b) =>
