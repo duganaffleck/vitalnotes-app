@@ -166,6 +166,9 @@ export const glossaryTerms: GlossaryTerm[] = [
       'where-to-begin',
       'cognitive-load',
       'why-studying-feels-productive-but-fails-under-pressure',
+      'osce-preparation',
+      'performance-under-pressure',
+      'resetting-when-thinking-narrows',
     ],
   },
   {
@@ -388,11 +391,131 @@ export const glossaryTerms: GlossaryTerm[] = [
   shortDefinition:
     'The tendency for attention to become tighter under pressure.',
   paramedicRelevance:
-    'Cognitive narrowing can help students focus, but it can also make them miss information outside the immediate task or first impression.',
+    'Cognitive narrowing can help students focus, but it can also make them miss information outside the immediate task, first impression, or OSCE pressure point.',
   relatedSections: [
     'cognitive-load',
     'clinical-reasoning',
     'avoiding-premature-closure',
+    'osce-preparation',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
+  ],
+},
+{
+  id: 'scenario-based-learning',
+  term: 'Scenario-based learning',
+  shortDefinition:
+    'Learning through realistic cases or scenarios that require students to apply knowledge, skills, reasoning, communication, and judgment together.',
+  paramedicRelevance:
+    'Scenario-based learning helps students see whether knowledge is usable when a call is moving and several demands compete for attention.',
+  relatedSections: [
+    'scenario-days-as-learning-tools',
+    'common-errors-and-what-they-reveal',
+    'focused-practice-after-feedback',
+  ],
+},
+{
+  id: 'deliberate-practice',
+  term: 'Deliberate practice',
+  shortDefinition:
+    'Focused practice aimed at improving one specific part of performance.',
+  paramedicRelevance:
+    'In paramedic learning, deliberate practice helps students work on a clear target such as reassessment, risk naming, communication, or directive application.',
+  relatedSections: [
+    'scenario-days-as-learning-tools',
+    'common-errors-and-what-they-reveal',
+    'focused-practice-after-feedback',
+  ],
+},
+{
+  id: 'feedback',
+  term: 'Feedback',
+  shortDefinition:
+    'Information about performance that helps identify what to adjust next.',
+  paramedicRelevance:
+    'Feedback becomes useful when it turns into a specific change the student can test in the next scenario or practice attempt.',
+  relatedSections: [
+    'scenario-days-as-learning-tools',
+    'common-errors-and-what-they-reveal',
+    'focused-practice-after-feedback',
+  ],
+},
+{
+  id: 'error-pattern',
+  term: 'Error pattern',
+  shortDefinition:
+    'A repeated type of mistake that shows where learning or reasoning is not yet stable.',
+  paramedicRelevance:
+    'Error patterns help students see whether a problem is about recall, attention, reasoning, reassessment, communication, or decision-making under pressure.',
+  relatedSections: [
+    'common-errors-and-what-they-reveal',
+    'scenario-days-as-learning-tools',
+    'focused-practice-after-feedback',
+  ],
+},
+{
+  id: 'practice-target',
+  term: 'Practice target',
+  shortDefinition:
+    'One specific adjustment a student deliberately carries into the next practice attempt.',
+  paramedicRelevance:
+    'Practice targets keep feedback manageable by focusing improvement on something the student can actually test during a scenario or lab.',
+  relatedSections: [
+    'common-errors-and-what-they-reveal',
+    'focused-practice-after-feedback',
+    'scenario-days-as-learning-tools',
+  ],
+},
+{
+  id: 'focused-practice',
+  term: 'Focused practice',
+  shortDefinition:
+    'Practice organized around one clear improvement target.',
+  paramedicRelevance:
+    'Focused practice helps students avoid trying to fix everything at once after feedback.',
+  relatedSections: [
+    'focused-practice-after-feedback',
+    'common-errors-and-what-they-reveal',
+    'scenario-days-as-learning-tools',
+  ],
+},
+{
+  id: 'evaluation-pressure',
+  term: 'Evaluation pressure',
+  shortDefinition:
+    'The added mental load that appears when performance is being watched, timed, or marked.',
+  paramedicRelevance:
+    'Evaluation pressure can change how students assess, communicate, use directives, and reassess during OSCEs or marked scenarios.',
+  relatedSections: [
+    'osce-preparation',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
+  ],
+},
+{
+  id: 'osce',
+  term: 'OSCE',
+  shortDefinition:
+    'A structured practical assessment where students manage a simulated patient scenario while being observed and evaluated.',
+  paramedicRelevance:
+    'OSCEs test whether students can keep assessment, reasoning, communication, and reassessment usable under evaluation pressure.',
+  relatedSections: [
+    'osce-preparation',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
+  ],
+},
+{
+  id: 'reset',
+  term: 'Reset',
+  shortDefinition:
+    'A brief return to structure when thinking narrows or the call starts to drift.',
+  paramedicRelevance:
+    'A reset helps students return attention to the patient, the main risk, and the next useful action during scenarios or OSCEs.',
+  relatedSections: [
+    'osce-preparation',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
   ],
 },
 ]

@@ -96,10 +96,25 @@ export const learningPath: LearningPathCluster[] = [
       'common-errors-and-what-they-reveal',
       'focused-practice-after-feedback',
     ],
-    relatedTools: ['scenario-day-reset'],
+    relatedTools: [],
+    status: 'drafted',
+  },
+  {
+    id: 'perform-under-pressure',
+    title: '07 Perform Under Pressure',
+    order: 7,
+    purpose:
+      'Help students protect assessment, reasoning, communication, and reassessment when they are observed, timed, evaluated, or under pressure.',
+    sections: [
+      'osce-preparation',
+      'performance-under-pressure',
+      'resetting-when-thinking-narrows',
+    ],
+    relatedTools: ['osce-reset'],
     status: 'drafted',
   },
 ]
+
 export const orderedLearningPath = [...learningPath].sort(
   (a, b) => a.order - b.order,
 )

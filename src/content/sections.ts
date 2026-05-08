@@ -597,11 +597,13 @@ const sectionSeeds: SectionSeed[] = [
     'performance-under-pressure',
   ],
 relatedSections: [
-  'cognitive-load',
-  'meaning-before-memorization',
-  'smart-notes-for-paramedic-students',
-  'retrieval-and-spaced-learning',
-],
+    'cognitive-load',
+    'meaning-before-memorization',
+    'smart-notes-for-paramedic-students',
+    'retrieval-and-spaced-learning',
+    'osce-preparation',
+    'performance-under-pressure',
+  ],
 },
 {
   id: 'cognitive-load',
@@ -941,11 +943,13 @@ relatedSections: [
     'performance-under-pressure',
   ],
 relatedSections: [
-  'why-studying-feels-productive-but-fails-under-pressure',
-  'learning-strain-is-not-always-a-personal-problem',
-  'smart-notes-for-paramedic-students',
-  'scenario-days-as-learning-tools',
-],
+    'why-studying-feels-productive-but-fails-under-pressure',
+    'learning-strain-is-not-always-a-personal-problem',
+    'smart-notes-for-paramedic-students',
+    'scenario-days-as-learning-tools',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
+  ],
 },
 {
   id: 'why-studying-feels-productive-but-fails-under-pressure',
@@ -1269,6 +1273,7 @@ relatedSections: [
     'retrieval-and-spaced-learning',
     'smart-notes-for-paramedic-students',
     'meaning-before-memorization',
+    'performance-under-pressure',
   ],
 },
 {
@@ -1593,11 +1598,12 @@ relatedSections: [
     'transfer',
   ],
 relatedSections: [
-  'cognitive-load',
-  'why-studying-feels-productive-but-fails-under-pressure',
-  'meaning-before-memorization',
-  'retrieval-and-spaced-learning',
-],
+    'cognitive-load',
+    'why-studying-feels-productive-but-fails-under-pressure',
+    'meaning-before-memorization',
+    'retrieval-and-spaced-learning',
+    'performance-under-pressure',
+  ],
 },
  {
   id: 'meaning-before-memorization',
@@ -5505,10 +5511,11 @@ relatedSections: [
     'clinical-recall',
   ],
   relatedSections: [
-  'smart-notes-for-paramedic-students',
-  'types-of-notes-and-idea-maturation',
-  'retrieval-and-spaced-learning',
-],
+    'smart-notes-for-paramedic-students',
+    'types-of-notes-and-idea-maturation',
+    'clinical-recall-without-trivia',
+    'performance-under-pressure',
+  ],
 },
  {
   id: 'clinical-recall-without-trivia',
@@ -6082,11 +6089,13 @@ relatedSections: [
   ],
   relatedTools: ['clinical-recall-prompt-builder'],
 relatedSections: [
-  'retrieval-and-spaced-learning',
-  'meaning-before-memorization',
-  'directives-through-purpose',
-  'anki-for-paramedic-learning',
-],
+    'retrieval-and-spaced-learning',
+    'meaning-before-memorization',
+    'directives-through-purpose',
+    'anki-for-paramedic-learning',
+    'performance-under-pressure',
+    'osce-preparation',
+  ],
 },
 {
   id: 'anki-for-paramedic-learning',
@@ -7274,7 +7283,9 @@ relatedSections: [
     'meaning-before-memorization',
     'pattern-recognition',
     'scenario-days-as-learning-tools',
-'focused-practice-after-feedback',
+    'focused-practice-after-feedback',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
   ],
 },
 {
@@ -7762,7 +7773,9 @@ relatedSections: [
     'clinical-recall-without-trivia',
     'avoiding-premature-closure',
     'scenario-days-as-learning-tools',
-'common-errors-and-what-they-reveal',
+    'common-errors-and-what-they-reveal',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
   ],
 },
 {
@@ -8395,7 +8408,9 @@ relatedSections: [
     'learning-strain-is-not-always-a-personal-problem',
     'directives-through-purpose',
     'scenario-days-as-learning-tools',
-'common-errors-and-what-they-reveal',
+    'common-errors-and-what-they-reveal',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
   ],
 },
 {
@@ -8934,6 +8949,8 @@ relatedSections: [
     'avoiding-premature-closure',
     'common-errors-and-what-they-reveal',
     'focused-practice-after-feedback',
+    'osce-preparation',
+    'performance-under-pressure',
   ],
 },
 {
@@ -9644,6 +9661,7 @@ relatedSections: [
     'clinical-reasoning',
     'avoiding-premature-closure',
     'directives-through-purpose',
+    'resetting-when-thinking-narrows',
   ],
 },
 {
@@ -10557,8 +10575,1059 @@ relatedSections: [
     'common-errors-and-what-they-reveal',
     'clinical-reasoning',
     'avoiding-premature-closure',
+    'osce-preparation',
+    'resetting-when-thinking-narrows',
   ],
 },
+{
+  id: 'osce-preparation',
+  title: "OSCE Preparation",
+  subtitle: "Prepare for evaluation pressure without abandoning patient care.",
+  cluster: '07 Perform Under Pressure',
+  clusterOrder: 7,
+  sectionOrder: 0,
+  studentProblem:
+    "OSCEs make me rush, freeze, over-explain, or lose structure even when I know the material.",
+  sectionPurpose:
+    "Help students prepare for OSCEs by rehearsing stable decision anchors, brief explanations, reassessment habits, and reset points rather than trying to predict every possible station.",
+  pageType: 'practice-support',
+  body: [
+    {
+      type: 'paragraph',
+      text: "OSCEs feel different from regular scenarios, even when the patient presentation is familiar.",
+    },
+    {
+      type: 'paragraph',
+      text: "The equipment may be the same. The assessment structure may be the one you have practised all semester. You may even recognize the call type within the first minute. Still, once the station is timed, observed, and marked, the same thinking can feel harder to reach.",
+    },
+    {
+      type: 'paragraph',
+      text: "Students often notice this as a strange kind of pressure. They rush through an opening assessment, over-explain a simple decision, forget to reassess after treatment, or build the whole call around the first cue that seems familiar. Afterward, it is easy to say, “I knew better.” In many cases, that is true. The issue is that the OSCE changed the conditions under which that knowledge had to be used.",
+    },
+    {
+      type: 'paragraph',
+      text: "OSCE preparation should be built around that reality. You are not preparing to make pressure disappear. You are preparing so that assessment, reasoning, communication, and reassessment remain available while pressure is present.",
+    },
+    {
+      type: 'heading',
+      text: "What an OSCE is really testing",
+    },
+    {
+      type: 'paragraph',
+      text: "An OSCE is not asking you to act like an experienced paramedic who has seen the same call a hundred times. It is asking whether you can provide safe, organized, defensible care within your current level of training while being watched.",
+    },
+    {
+      type: 'paragraph',
+      text: "That includes more than remembering the right content. You need to identify the main risk, gather enough information to support action, communicate clearly, work with your partner, respect directive boundaries, and adjust when the patient or information changes.",
+    },
+    {
+      type: 'paragraph',
+      text: "This is why smoothness can be misleading. A student can look polished while making fragile decisions. Another student can look a bit awkward while still recognizing risk, acting safely, and reassessing well. Instructors can usually tell the difference.",
+    },
+    {
+      type: 'paragraph',
+      text: "Strong OSCE performance tends to include:",
+    },
+    {
+      type: 'list',
+      items: [
+        "early recognition of the main patient risk",
+        "assessment that stays organized without becoming robotic",
+        "interventions chosen for a clear reason",
+        "directive boundaries and contraindications checked when relevant",
+        "reassessment after meaningful actions",
+        "communication that keeps the patient, partner, and evaluator oriented",
+        "willingness to adjust when the situation changes",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "The target is safe patient care under observation. Not perfection. Not speed for its own sake. Not sounding like you know everything.",
+    },
+    {
+      type: 'heading',
+      text: "Why station-by-station preparation can become brittle",
+    },
+    {
+      type: 'paragraph',
+      text: "Many students prepare for OSCEs by trying to predict the stations.",
+    },
+    {
+      type: 'paragraph',
+      text: "Chest pain. Respiratory distress. Seizure. Diabetic emergency. Trauma. Stroke. Overdose.",
+    },
+    {
+      type: 'paragraph',
+      text: "Some of that preparation is reasonable. You need to know common presentations, directive indications, contraindications, equipment, and expected management. Content still matters.",
+    },
+    {
+      type: 'paragraph',
+      text: "The problem begins when preparation becomes too narrow. If you rehearse only one ideal version of a chest pain call, you may feel steady when the station matches that version. If the patient has a borderline blood pressure, gives an unclear medication history, deteriorates after the first intervention, or does not fit the pattern cleanly, that rehearsal may not hold.",
+    },
+    {
+      type: 'paragraph',
+      text: "The station has not changed the rules. It has exposed that the preparation was built around the case instead of the thinking.",
+    },
+    {
+      type: 'paragraph',
+      text: "Better preparation uses common call types, but it does not depend on them being clean. It builds habits that survive variation.",
+    },
+    {
+      type: 'heading',
+      text: "Prepare around anchors, not scripts",
+    },
+    {
+      type: 'paragraph',
+      text: "An anchor is a stable habit that helps you return to patient care when pressure starts pulling attention elsewhere.",
+    },
+    {
+      type: 'paragraph',
+      text: "Anchors are not scripts. They are not full OSCE checklists. They are small, familiar structures that keep the call from becoming a blur.",
+    },
+    {
+      type: 'paragraph',
+      text: "Useful OSCE anchors include:",
+    },
+    {
+      type: 'list',
+      items: [
+        "identify the primary risk early",
+        "complete enough assessment to support action",
+        "choose actions that remain safe if your first impression is wrong",
+        "explain your reasoning briefly when it matters",
+        "reassess after interventions, movement, or deterioration",
+        "ask what does not fit before committing too strongly to a pattern",
+        "return to patient-facing action when you feel stuck",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "These anchors reduce decision churn. You do not have to invent a new approach every time a station feels stressful. You already have a few places to return.",
+    },
+    {
+      type: 'paragraph',
+      text: "For example, if a patient has chest pain and you feel yourself rushing toward treatment, the anchor is not “give everything faster.” The anchor is to identify risk, check the safety boundaries, treat within the directive, and reassess what should change.",
+    },
+    {
+      type: 'paragraph',
+      text: "If a patient has shortness of breath and the pattern seems obvious, the anchor is not “call it asthma and move on.” The anchor is to treat what is present, keep assessing, watch response, and stay alert to anything that does not fit.",
+    },
+    {
+      type: 'paragraph',
+      text: "Structure protects reasoning because it gives your attention somewhere useful to land.",
+    },
+    {
+      type: 'heading',
+      text: "Practise explaining your decisions briefly",
+    },
+    {
+      type: 'paragraph',
+      text: "Students often over-explain during OSCEs because silence feels risky. They want the evaluator to know they know, so they narrate too much, list too many possibilities, or give every detail the same weight.",
+    },
+    {
+      type: 'paragraph',
+      text: "The problem is that over-explaining can slow patient care and make the actual reasoning harder to follow. It can also become a way of performing knowledge instead of using it.",
+    },
+    {
+      type: 'paragraph',
+      text: "A stronger habit is brief explanation. At key points in the station, you should be able to explain your plan in one or two sentences.",
+    },
+    {
+      type: 'paragraph',
+      text: "Examples:",
+    },
+    {
+      type: 'list',
+      items: [
+        "“My main concern is cardiac ischemia, so I am checking contraindications, treating within directive, and watching for changes after nitro.”",
+        "“The patient is compensating right now, but the trend is concerning, so we are moving toward transport while continuing assessment.”",
+        "“The wheeze fits asthma, but I am watching work of breathing and mental status because quieter lungs could mean fatigue.”",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "These explanations are not speeches. They show that your actions are connected to a concern, a risk, and a plan.",
+    },
+    {
+      type: 'paragraph',
+      text: "Practising this before an OSCE helps because you are not trying to invent language while your attention is already full. You are rehearsing the habit of making reasoning visible without turning the station into a lecture.",
+    },
+    {
+      type: 'heading',
+      text: "Reassess what your action was supposed to change",
+    },
+    {
+      type: 'paragraph',
+      text: "Reassessment is one of the first things to weaken under OSCE pressure.",
+    },
+    {
+      type: 'paragraph',
+      text: "A student performs an intervention, then moves on. They obtain history, administer treatment, package the patient, or change position, then continue forward without checking whether the action changed anything meaningful.",
+    },
+    {
+      type: 'paragraph',
+      text: "This is understandable. Under pressure, the mind wants the next step. But reassessment is what keeps the call connected to the patient instead of the checklist.",
+    },
+    {
+      type: 'paragraph',
+      text: "After an intervention, ask what should change if the action helped.",
+    },
+    {
+      type: 'list',
+      items: [
+        "After salbutamol, what happens to work of breathing, air entry, ability to speak, and distress?",
+        "After nitro, what happens to pain, blood pressure, perfusion, and overall appearance?",
+        "After glucose treatment, what happens to mental status and airway protection?",
+        "After oxygen or positioning, what happens to effort, saturation quality, colour, and speech?",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "This does not need to become a long pause. It needs to be deliberate.",
+    },
+    {
+      type: 'paragraph',
+      text: "A strong OSCE student does more than perform the right action. They check whether that action worked, whether the patient is moving in the expected direction, and whether the plan needs to change.",
+    },
+    {
+      type: 'heading',
+      text: "Build a reset before you need one",
+    },
+    {
+      type: 'paragraph',
+      text: "Most students plan the beginning of the station. They review the likely assessments, the common directives, and the treatments they expect to use. Fewer students plan for the moment when their thinking narrows.",
+    },
+    {
+      type: 'paragraph',
+      text: "That moment is predictable. Something unexpected happens. The evaluator asks a question. The patient does not respond the way you expected. You realize you missed a step. Time feels tight.",
+    },
+    {
+      type: 'paragraph',
+      text: "A reset is a brief return to structure when that happens. It is not a full stop, and it is not an excuse to avoid a decision. It is a way to keep a small disruption from taking over the station.",
+    },
+    {
+      type: 'paragraph',
+      text: "A useful reset is short enough to use while the call is still moving:",
+    },
+    {
+      type: 'list',
+      items: [
+        "What is the main patient risk right now?",
+        "What structure do I return to?",
+        "What patient-facing action comes next?",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "This is why [[OSCE Reset]] is likely justified as a small support tool for this cluster. The tool should stay narrow. It should help students recover assessment, reasoning, communication, and reassessment when evaluation pressure causes rushing, freezing, over-talking, or fixation.",
+    },
+    {
+      type: 'paragraph',
+      text: "It should not become a checklist for passing OSCEs.",
+    },
+    {
+      type: 'heading',
+      text: "Before, during, and after the OSCE",
+    },
+    {
+      type: 'paragraph',
+      text: "OSCE preparation can stay simple if each stage has a clear job.",
+    },
+    {
+      type: 'paragraph',
+      text: "Before the OSCE, prepare the anchors:",
+    },
+    {
+      type: 'list',
+      items: [
+        "review common presentations, but do not rehearse only perfect cases",
+        "practise directive boundaries and contraindications in context",
+        "rehearse one or two sentence explanations of key decisions",
+        "practise reassessment after interventions",
+        "decide what reset you will use if you feel yourself rushing or freezing",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "During the OSCE, protect the call:",
+    },
+    {
+      type: 'list',
+      items: [
+        "start with safety and primary threats",
+        "assess enough to support action",
+        "speak your reasoning briefly when it helps",
+        "avoid letting one familiar cue close the case too early",
+        "reassess after meaningful actions",
+        "reset if your thinking narrows",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "After the OSCE, resist the urge to replay the whole station for an hour. That usually builds anxiety more than learning.",
+    },
+    {
+      type: 'paragraph',
+      text: "Instead, identify:",
+    },
+    {
+      type: 'list',
+      items: [
+        "one moment where your structure held",
+        "one moment where your thinking narrowed",
+        "one adjustment to practise next",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "Then let the station end.",
+    },
+    {
+      type: 'paragraph',
+      text: "You will learn more from one accurate adjustment than from a full emotional reconstruction of every moment.",
+    },
+    {
+      type: 'heading',
+      text: "Moving forward",
+    },
+    {
+      type: 'paragraph',
+      text: "OSCE preparation is not a separate personality you put on for evaluation. It is the same learning system from earlier sections, used under tighter conditions.",
+    },
+    {
+      type: 'paragraph',
+      text: "Cognitive load, recall, meaning, clinical reasoning, pattern recognition, feedback, and focused practice all meet here. The next section looks more directly at pressure itself: how it changes access, attention, and decision-making, and why usable structure matters more than trying to feel perfectly calm.",
+    },
+  
+  ],
+  glossaryTerms: ["osce", "evaluation-pressure", "cognitive-narrowing", "structure", "reassessment", "premature-closure", "clinical-reasoning"],
+  relatedTools: ["osce-reset", "clinical-recall-prompt-builder", "directive-meaning-check"],
+  relatedSections: ["focused-practice-after-feedback", "scenario-days-as-learning-tools", "clinical-reasoning", "pattern-recognition", "avoiding-premature-closure", "performance-under-pressure", "resetting-when-thinking-narrows"],
+},
+{
+  id: 'performance-under-pressure',
+  title: "Performance Under Pressure",
+  subtitle: "Pressure changes access, so structure has to hold.",
+  cluster: '07 Perform Under Pressure',
+  clusterOrder: 7,
+  sectionOrder: 1,
+  studentProblem:
+    "I can think clearly in practice, but pressure changes what I notice, remember, and do during OSCEs or difficult scenarios.",
+  sectionPurpose:
+    "Show students how pressure affects access, attention, pattern recognition, and recovery, and why stable structure matters more than trying to feel perfectly calm.",
+  pageType: 'conceptual',
+  body: [
+    {
+      type: 'paragraph',
+      text: "Pressure changes how thinking behaves.",
+    },
+    {
+      type: 'paragraph',
+      text: "It does not only make a scenario feel harder. It changes what you notice, what you remember, how quickly you commit to an explanation, and whether your usual structure remains available when the situation starts to feel crowded.",
+    },
+    {
+      type: 'paragraph',
+      text: "This is why a student can study well, practise seriously, receive accurate feedback, and still feel surprised by their own performance during an OSCE or difficult scenario. They may know the assessment sequence. They may understand the directive. They may be able to explain the pathophysiology afterward. During the actual performance, though, attention narrows and the right knowledge becomes harder to reach at the right time.",
+    },
+    {
+      type: 'paragraph',
+      text: "Afterward, this often gets described as blanking. Sometimes that word fits, but it can be too broad to help. More often, the student did not lose all knowledge. They lost reliable access to the piece of knowledge, structure, or reasoning they needed in that moment.",
+    },
+    {
+      type: 'paragraph',
+      text: "That is a more useful problem to train.",
+    },
+    {
+      type: 'heading',
+      text: "Pressure changes access",
+    },
+    {
+      type: 'paragraph',
+      text: "Quiet study gives you generous conditions. You can pause, reread, compare ideas slowly, check a directive, and trace the reasoning back to the beginning. Those study conditions matter, but they do not fully match the conditions of a moving call.",
+    },
+    {
+      type: 'paragraph',
+      text: "Under pressure, working memory fills quickly. A student may be holding patient information, scene details, time, equipment, partner communication, evaluator presence, and their own internal reaction all at once. There is less space left for careful reasoning.",
+    },
+    {
+      type: 'paragraph',
+      text: "When that space tightens, the mind tends to grab what is most available:",
+    },
+    {
+      type: 'list',
+      items: [
+        "the first familiar pattern",
+        "the most rehearsed action",
+        "the loudest abnormal finding",
+        "the step the student is afraid of missing",
+        "the thing they think the evaluator wants to see",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "Any one of these may be clinically relevant. The risk is that pressure can make the most available cue feel more trustworthy than it deserves.",
+    },
+    {
+      type: 'paragraph',
+      text: "Good performance under pressure depends on keeping access open long enough to assess, act, and revise.",
+    },
+    {
+      type: 'heading',
+      text: "Attention narrows for a reason",
+    },
+    {
+      type: 'paragraph',
+      text: "Attention narrowing is not rare, and it is not always harmful.",
+    },
+    {
+      type: 'paragraph',
+      text: "If the patient has an immediate airway threat, attention should narrow. If perfusion is collapsing, not every detail deserves equal space. Narrowing helps people act when risk is obvious and time matters.",
+    },
+    {
+      type: 'paragraph',
+      text: "The problem is that narrowing can outlast its usefulness.",
+    },
+    {
+      type: 'paragraph',
+      text: "A student may focus so hard on administering a medication correctly that they stop watching whether the patient is getting worse. They may lock onto a respiratory pattern and stop considering perfusion. They may keep gathering history while the transport decision becomes more urgent.",
+    },
+    {
+      type: 'paragraph',
+      text: "The key issue is not that attention narrowed. It is whether the student noticed when the call needed to widen again.",
+    },
+    {
+      type: 'paragraph',
+      text: "That widening can be practised. It starts with recognizing the situations where pressure usually pulls attention too tightly around one cue, one task, or one explanation.",
+    },
+    {
+      type: 'heading',
+      text: "Familiar patterns can become too persuasive",
+    },
+    {
+      type: 'paragraph',
+      text: "Students are often told to be confident, and there is some truth in that advice. Hesitation can delay care. A student who never commits to a working plan will struggle when action is needed.",
+    },
+    {
+      type: 'paragraph',
+      text: "But confidence is not the same as judgment.",
+    },
+    {
+      type: 'paragraph',
+      text: "Under pressure, confidence often attaches to the most familiar explanation. A patient with wheezing becomes asthma. Chest pain becomes ACS. Confusion becomes hypoglycemia. A fall becomes trauma. Those patterns may be correct, but they still need to be tested against the rest of the call.",
+    },
+    {
+      type: 'paragraph',
+      text: "This is how confident errors happen. The student acts with energy, but stops asking whether the information still fits. Later, when the patient does not respond as expected, the call feels like it changed suddenly. In many cases, the mismatched cues were already there, but pressure made them harder to notice.",
+    },
+    {
+      type: 'paragraph',
+      text: "Structure is more reliable than confidence because it does not depend on how certain you feel. It gives you a return point when certainty is too high, too low, or changing quickly.",
+    },
+    {
+      type: 'heading',
+      text: "What structure does under pressure",
+    },
+    {
+      type: 'paragraph',
+      text: "Structure protects thinking by reducing how much you have to invent in the moment.",
+    },
+    {
+      type: 'paragraph',
+      text: "It should not make the call rigid. A good structure makes flexibility safer because it gives you a way to keep checking the patient, the explanation, and the effect of your actions.",
+    },
+    {
+      type: 'paragraph',
+      text: "Useful pressure questions include:",
+    },
+    {
+      type: 'list',
+      items: [
+        "What is the primary risk right now?",
+        "What information supports my current explanation?",
+        "What information does not fit?",
+        "What action keeps the patient safest while I clarify?",
+        "What needs reassessment after this step?",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "These questions keep pattern recognition accountable. They stop assessment from becoming endless information gathering. They bring attention back to the patient rather than the performance.",
+    },
+    {
+      type: 'paragraph',
+      text: "In paramedicine, structure is not a sign that you cannot think independently. It is one of the things that lets you keep thinking when the environment becomes less forgiving.",
+    },
+    {
+      type: 'heading',
+      text: "A paramedic example",
+    },
+    {
+      type: 'paragraph',
+      text: "Consider a student in an OSCE managing chest pain.",
+    },
+    {
+      type: 'paragraph',
+      text: "The patient is pale, anxious, and describing central pressure. The student recognizes possible ischemia quickly, which is appropriate. They obtain initial vitals and prepare to treat under directive.",
+    },
+    {
+      type: 'paragraph',
+      text: "Then the evaluator asks a clarifying question. The student becomes aware of time. They feel behind. Their attention collapses onto getting the medication administered.",
+    },
+    {
+      type: 'paragraph',
+      text: "They move quickly, but they skip a contraindication check. They do not revisit the blood pressure trend. They do not ask about recent erectile dysfunction medication. They administer nitroglycerin because the case feels obvious and the action feels expected.",
+    },
+    {
+      type: 'paragraph',
+      text: "Afterward, the student says, “I panicked.”",
+    },
+    {
+      type: 'paragraph',
+      text: "That may be true emotionally, but it is not precise enough for learning. More accurately, pressure narrowed attention onto speed and task completion. The student did not forget that contraindications matter. They lost access to the safety sequence that keeps the directive usable.",
+    },
+    {
+      type: 'paragraph',
+      text: "The fix is not simply to be calmer next time. The fix is to build a return structure that is likely to show up even when the student feels rushed:",
+    },
+    {
+      type: 'list',
+      items: [
+        "name the risk",
+        "check the boundary",
+        "act within the directive",
+        "reassess what should change",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "That sequence can be trained before the OSCE.",
+    },
+    {
+      type: 'heading',
+      text: "Skilled performance is often quieter than students expect",
+    },
+    {
+      type: 'paragraph',
+      text: "Students sometimes imagine strong performance as fast, polished, and completely smooth. In real clinical learning, strong performance often looks more grounded than that.",
+    },
+    {
+      type: 'paragraph',
+      text: "It may include a short pause. It may include a correction. It may include saying, “I am going to reassess before moving further,” or “This does not fully fit yet, so I am keeping my differential open.”",
+    },
+    {
+      type: 'paragraph',
+      text: "Those moments are not weaknesses if they return attention to patient care. They show that the student is still thinking inside the station rather than simply running a memorized path.",
+    },
+    {
+      type: 'paragraph',
+      text: "A student performing well under pressure does not need to look untouched by stress. They need to keep patient care organized while stress is present. That often looks like:",
+    },
+    {
+      type: 'list',
+      items: [
+        "fewer actions done with clearer purpose",
+        "shorter explanations that connect to risk",
+        "deliberate reassessment after interventions",
+        "willingness to adjust when new information appears",
+        "communication that keeps the patient and partner oriented",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "The goal is to keep pressure from quietly making the decisions for you.",
+    },
+    {
+      type: 'heading',
+      text: "Recovery speed comes before consistency",
+    },
+    {
+      type: 'paragraph',
+      text: "Performance under pressure improves unevenly.",
+    },
+    {
+      type: 'paragraph',
+      text: "This can frustrate students because they expect improvement to look like stable, smooth performance every time. That kind of consistency usually comes later.",
+    },
+    {
+      type: 'paragraph',
+      text: "Early improvement often looks like recovery. You notice fixation sooner. You catch yourself rushing. You return to reassessment after missing it in the last scenario. You realize your explanation is too narrow and widen it before the station ends.",
+    },
+    {
+      type: 'paragraph',
+      text: "The performance may still feel messy, but the learning is real.",
+    },
+    {
+      type: 'paragraph',
+      text: "A student who can recover inside the call is building a more durable skill than a student who only performs well when the station matches what they expected.",
+    },
+    {
+      type: 'paragraph',
+      text: "This is why pressure training should include variation. If practice is too predictable, students learn the script. If practice includes useful variation, students learn how to recover structure.",
+    },
+    {
+      type: 'heading',
+      text: "Training pressure deliberately",
+    },
+    {
+      type: 'paragraph',
+      text: "Pressure tolerance is built through exposure, but exposure alone is not enough. Repeated pressure without structure can simply rehearse the same errors.",
+    },
+    {
+      type: 'paragraph',
+      text: "Useful pressure training should be specific.",
+    },
+    {
+      type: 'paragraph',
+      text: "Examples:",
+    },
+    {
+      type: 'list',
+      items: [
+        "practise explaining one decision in one or two sentences",
+        "run a familiar scenario with one changed cue",
+        "rehearse reassessment after every major intervention",
+        "practise saying what does not fit before committing to a diagnosis",
+        "start a scenario slightly behind time and practise returning to structure",
+        "repeat a difficult decision point until the safe action becomes easier to access",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "These are small training constraints. They create pressure without turning practice into chaos. They also make feedback easier to use because the student knows what they were practising.",
+    },
+    {
+      type: 'heading',
+      text: "The pressure check",
+    },
+    {
+      type: 'paragraph',
+      text: "When pressure rises, a brief check can stabilize thinking.",
+    },
+    {
+      type: 'paragraph',
+      text: "Ask:",
+    },
+    {
+      type: 'paragraph',
+      text: "1. What is the primary risk right now? 2. What action is safe while I clarify? 3. What do I need to reassess after this?",
+    },
+    {
+      type: 'paragraph',
+      text: "This is not a full tool by itself. It is the base for [[Resetting When Thinking Narrows]] and the likely [[OSCE Reset]] tool.",
+    },
+    {
+      type: 'paragraph',
+      text: "The check works because it is short enough to use while the call is still moving. Its purpose is to bring attention back to patient care before pressure turns into rushing, freezing, or fixation.",
+    },
+    {
+      type: 'heading',
+      text: "Moving forward",
+    },
+    {
+      type: 'paragraph',
+      text: "Performance under pressure is not a personality trait. It comes from how memory, meaning, reasoning, structure, and recovery behave when conditions are less ideal.",
+    },
+    {
+      type: 'paragraph',
+      text: "More content will not automatically fix pressure problems. More confidence may not fix them either. Students need structures that stay available when attention narrows.",
+    },
+    {
+      type: 'paragraph',
+      text: "The next section turns that idea into a practical action: how to reset when thinking starts to narrow, without abandoning the patient, the call, or the reasoning already built.",
+    },
+  
+  ],
+  glossaryTerms: ["performance-under-pressure", "evaluation-pressure", "cognitive-narrowing", "structure", "pattern-recognition", "premature-closure", "reassessment"],
+  relatedTools: ["osce-reset"],
+  relatedSections: ["osce-preparation", "cognitive-load", "clinical-recall-without-trivia", "clinical-reasoning", "pattern-recognition", "avoiding-premature-closure", "resetting-when-thinking-narrows"],
+},
+{
+  id: 'resetting-when-thinking-narrows',
+  title: "Resetting When Thinking Narrows",
+  subtitle: "Recover enough structure to keep caring for the patient.",
+  cluster: '07 Perform Under Pressure',
+  clusterOrder: 7,
+  sectionOrder: 2,
+  studentProblem:
+    "I can tell after a scenario or OSCE that my thinking narrowed, but I do not know how to recover while the call is still happening.",
+  sectionPurpose:
+    "Teach a small reset structure that returns attention to primary risk, assessment structure, and the next patient-facing action when pressure causes rushing, freezing, fixation, or over-talking.",
+  pageType: 'tool-supported',
+  body: [
+    {
+      type: 'paragraph',
+      text: "Thinking does not always fail loudly.",
+    },
+    {
+      type: 'paragraph',
+      text: "Sometimes the call just gets smaller. One cue becomes too important. One task starts to feel like the whole plan. One treatment pathway takes over. The patient is still in front of you, but your attention has narrowed around a smaller part of the situation.",
+    },
+    {
+      type: 'paragraph',
+      text: "In scenarios and OSCEs, this can happen quickly. A student may rush to finish a skill, keep asking history questions while the patient is getting worse, talk more because silence feels unsafe, or fixate on a likely diagnosis and stop looking for the finding that does not fit.",
+    },
+    {
+      type: 'paragraph',
+      text: "Afterward, students often say, “I knew better.” They probably did. The problem was not always knowledge. The problem was that pressure narrowed access to structure while the call was still happening.",
+    },
+    {
+      type: 'paragraph',
+      text: "This section is about recovering enough structure to keep caring for the patient before the station is over.",
+    },
+    {
+      type: 'heading',
+      text: "What narrowed thinking can look like",
+    },
+    {
+      type: 'paragraph',
+      text: "Narrowed thinking does not look the same in every student.",
+    },
+    {
+      type: 'paragraph',
+      text: "For one student, it looks like speed. They start moving faster, but their decisions become less connected. They administer a treatment before checking the boundary that makes it safe. They package quickly, but communication becomes thin.",
+    },
+    {
+      type: 'paragraph',
+      text: "For another student, it looks like freezing. They repeat assessment steps, ask similar questions, or stare at the monitor waiting for the call to become clearer.",
+    },
+    {
+      type: 'paragraph',
+      text: "For another, it looks like over-explaining. They know the evaluator is listening, so they start narrating everything they know. The explanation grows while patient care slows.",
+    },
+    {
+      type: 'paragraph',
+      text: "For another, it looks like fixation. The first familiar pattern becomes the whole case. Information that does not fit gets ignored, softened, or explained away.",
+    },
+    {
+      type: 'paragraph',
+      text: "These are common pressure responses. The important question is not why pressure showed up. It is what you return to when pressure starts narrowing the call.",
+    },
+    {
+      type: 'heading',
+      text: "Resetting is clinical, not cosmetic",
+    },
+    {
+      type: 'paragraph',
+      text: "A reset is not a timeout from the call.",
+    },
+    {
+      type: 'paragraph',
+      text: "It is a brief return to structure while care continues. In paramedicine, you usually cannot step away, think for several minutes, and rebuild the plan from the beginning. The patient still needs assessment. Your partner still needs direction. The station clock is still moving.",
+    },
+    {
+      type: 'paragraph',
+      text: "So the reset has to be small. It should bring your attention back to three things:",
+    },
+    {
+      type: 'list',
+      items: [
+        "the main risk right now",
+        "the structure you can return to",
+        "the next patient-facing action",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "A reset does not need to make you feel calm. It needs to make your thinking usable again.",
+    },
+    {
+      type: 'heading',
+      text: "The three-part reset",
+    },
+    {
+      type: 'paragraph',
+      text: "When you notice your thinking narrowing, use three questions.",
+    },
+    {
+      type: 'heading',
+      text: "1. What is the primary risk right now?",
+    },
+    {
+      type: 'paragraph',
+      text: "This question returns attention to the patient instead of the evaluator, the clock, or the mistake you think you just made.",
+    },
+    {
+      type: 'paragraph',
+      text: "Primary risk does not always mean final diagnosis. It means the most important threat you are managing with the information available.",
+    },
+    {
+      type: 'paragraph',
+      text: "Examples:",
+    },
+    {
+      type: 'list',
+      items: [
+        "airway risk",
+        "worsening work of breathing",
+        "poor perfusion",
+        "altered mental status",
+        "possible ischemia",
+        "unsafe scene or unsafe movement",
+        "deterioration after an intervention",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "Narrowed thinking often attaches to tasks. Primary risk brings the call back to purpose.",
+    },
+    {
+      type: 'heading',
+      text: "2. What structure do I return to?",
+    },
+    {
+      type: 'paragraph',
+      text: "This question gives your thinking a track.",
+    },
+    {
+      type: 'paragraph',
+      text: "The structure depends on where you are in the call. You might return to:",
+    },
+    {
+      type: 'list',
+      items: [
+        "primary assessment",
+        "vital signs and trends",
+        "focused history",
+        "contraindication check",
+        "transport decision",
+        "reassessment after treatment",
+        "communication with the patient and partner",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "The structure should be familiar enough that you do not have to invent it under pressure.",
+    },
+    {
+      type: 'paragraph',
+      text: "If you are rushing toward a medication, return to the directive boundary and the reassessment plan. If you are frozen in history-taking, return to primary risk and transport priority. If you are fixated on a diagnosis, return to what does not fit. If you are over-talking, return to the next action the patient needs.",
+    },
+    {
+      type: 'paragraph',
+      text: "This is where preparation matters. You cannot return to a structure you have never practised.",
+    },
+    {
+      type: 'heading',
+      text: "3. What is the next patient-facing action?",
+    },
+    {
+      type: 'paragraph',
+      text: "This question keeps the reset from turning into private rumination.",
+    },
+    {
+      type: 'paragraph',
+      text: "After you name the risk and return to structure, choose the next action. It should be small enough to do now.",
+    },
+    {
+      type: 'paragraph',
+      text: "Examples:",
+    },
+    {
+      type: 'list',
+      items: [
+        "reassess work of breathing after treatment",
+        "recheck blood pressure before continuing with nitro",
+        "ask one focused question that changes management",
+        "tell the partner the transport priority",
+        "explain to the patient what you are doing next",
+        "widen the differential by checking the finding that does not fit",
+        "move toward transport while continuing assessment",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "A reset that ends in a vague intention usually does not change much. A reset that ends in one patient-facing action can change the station.",
+    },
+    {
+      type: 'heading',
+      text: "A paramedic example",
+    },
+    {
+      type: 'paragraph',
+      text: "A student is in an OSCE with a patient complaining of shortness of breath.",
+    },
+    {
+      type: 'paragraph',
+      text: "The patient is anxious, tachypneic, and wheezy. The student recognizes an asthma pattern and begins treatment. At first, this makes sense.",
+    },
+    {
+      type: 'paragraph',
+      text: "Then the patient becomes quieter.",
+    },
+    {
+      type: 'paragraph',
+      text: "The student feels pressure to keep going. They continue explaining the medication and preparing for the next step, but they do not reassess effort, air entry, speech, mental status, or fatigue. Their thinking has narrowed onto the treatment pathway.",
+    },
+    {
+      type: 'paragraph',
+      text: "A reset would sound like this internally:",
+    },
+    {
+      type: 'list',
+      items: [
+        "**Primary risk:** This patient may be tiring, not improving.",
+        "**Structure:** Return to reassessment after intervention.",
+        "**Next action:** Reassess work of breathing, air entry, ability to speak, mental status, and vital signs.",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "That reset does not solve the whole call. It restores direction. Now the student can decide whether the patient is improving, deteriorating, or needing escalation within their scope and setting.",
+    },
+    {
+      type: 'heading',
+      text: "Resetting during communication",
+    },
+    {
+      type: 'paragraph',
+      text: "Thinking can narrow during communication too.",
+    },
+    {
+      type: 'paragraph',
+      text: "A student may focus so heavily on sounding professional that they stop listening. They may give a long explanation while the patient is trying to answer a question. They may talk to the evaluator instead of the patient. They may become so focused on managing their partner that the patient becomes secondary.",
+    },
+    {
+      type: 'paragraph',
+      text: "The same reset still applies:",
+    },
+    {
+      type: 'list',
+      items: [
+        "**Primary risk:** What does this patient need from me right now?",
+        "**Structure:** Return to patient-centred communication.",
+        "**Next action:** Ask one clear question, explain one next step, or redirect the team.",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "Good communication under pressure is not about sounding polished. It is about keeping people oriented.",
+    },
+    {
+      type: 'heading',
+      text: "Resetting after a mistake",
+    },
+    {
+      type: 'paragraph',
+      text: "Students often lose the most structure immediately after they notice an error.",
+    },
+    {
+      type: 'paragraph',
+      text: "They realize they forgot something. They hear themselves phrase something poorly. They notice the evaluator writing. They feel the station slipping, and the mistake becomes the new centre of attention.",
+    },
+    {
+      type: 'paragraph',
+      text: "That shift can be more dangerous than the original error because attention moves away from patient care.",
+    },
+    {
+      type: 'paragraph',
+      text: "A reset after a mistake should be direct:",
+    },
+    {
+      type: 'list',
+      items: [
+        "What is the patient risk now?",
+        "What structure still applies?",
+        "What corrective action is available?",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "For example:",
+    },
+    {
+      type: 'paragraph',
+      text: "> “I did not reassess after that treatment. I am going to reassess now.”",
+    },
+    {
+      type: 'paragraph',
+      text: "That is better than silently spiralling. It shows recovery, returns attention to care, and keeps the station moving.",
+    },
+    {
+      type: 'paragraph',
+      text: "A student does not need a perfect station to demonstrate safe thinking. They need to show that when something strains, they can recover in a clinically appropriate direction.",
+    },
+    {
+      type: 'heading',
+      text: "When not to reset",
+    },
+    {
+      type: 'paragraph',
+      text: "Resetting should not become another task that interrupts care.",
+    },
+    {
+      type: 'paragraph',
+      text: "Do not reset after every minor uncertainty. Do not use a reset to avoid making a decision. Do not turn it into a speech.",
+    },
+    {
+      type: 'paragraph',
+      text: "Use it when you notice a real sign of narrowing:",
+    },
+    {
+      type: 'list',
+      items: [
+        "you are rushing without checking boundaries",
+        "you are frozen and repeating low-value assessment",
+        "you are over-explaining instead of acting",
+        "you are ignoring information that does not fit",
+        "you have lost reassessment after an intervention",
+        "you are thinking more about the evaluator than the patient",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "The reset should be brief because its job is to return you to the call.",
+    },
+    {
+      type: 'heading',
+      text: "Why this belongs before reflection",
+    },
+    {
+      type: 'paragraph',
+      text: "Reflection matters, but reflection happens after performance.",
+    },
+    {
+      type: 'paragraph',
+      text: "This section comes first because some learning has to occur inside the performance itself. Students need a way to recover before the scenario or OSCE becomes only something to analyze later.",
+    },
+    {
+      type: 'paragraph',
+      text: "Afterward, reflection can help identify the pattern:",
+    },
+    {
+      type: 'list',
+      items: [
+        "When did my thinking narrow?",
+        "What did it narrow onto?",
+        "What helped me recover?",
+        "What structure should I practise next?",
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: "During the station, the task is smaller and more immediate.",
+    },
+    {
+      type: 'paragraph',
+      text: "Return to risk. Return to structure. Take the next patient-facing action.",
+    },
+    {
+      type: 'heading',
+      text: "Moving forward",
+    },
+    {
+      type: 'paragraph',
+      text: "Resetting is a small skill, but it changes what students can do while pressure is still present. It gives them a way to recover before the whole call becomes a post-event lesson.",
+    },
+    {
+      type: 'paragraph',
+      text: "The next cluster, [[08 Reflect and Improve]], will look at how to learn from performance once it is over. That work is important, but it works better when the student has already learned to notice narrowing, recover structure, and keep the patient at the centre of the call.",
+    },
+    
+  ],
+  glossaryTerms: ["cognitive-narrowing", "reset", "evaluation-pressure", "structure", "reassessment", "premature-closure"],
+  relatedTools: ["osce-reset"],
+  relatedSections: ["osce-preparation", "performance-under-pressure", "cognitive-load", "clinical-reasoning", "pattern-recognition", "avoiding-premature-closure", "scenario-days-as-learning-tools", "focused-practice-after-feedback"],
+}
 ]
 
 export const sections: Section[] = sectionSeeds.map((section, index) => ({
