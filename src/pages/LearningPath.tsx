@@ -12,11 +12,12 @@ function LearningPath({ onNavigate }: LearningPathProps) {
       <header className="page-header">
         <p className="eyebrow">Learning Path</p>
         <h1>Move through the guide in a steady order.</h1>
-        <p>
-          This path starts with orientation, then moves into why learning feels
-          hard, how understanding forms, how notes support thinking, and how
-          recall becomes more reliable.
-        </p>
+     <p>
+  This path starts with orientation, then moves into why learning feels
+  hard, how understanding forms, how notes support thinking, how recall
+  becomes more reliable, how clinical reasoning develops, and how
+  practice turns feedback into improvement.
+</p>
       </header>
 
       <div className="cluster-list">

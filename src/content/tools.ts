@@ -150,6 +150,49 @@ export const tools: Tool[] = [
     ],
     relatedSections: ['clinical-recall-without-trivia', 'anki-for-paramedic-learning'],
   },
+  {
+  id: 'scenario-day-reset',
+  title: 'Scenario Day Reset',
+  status: 'drafted',
+  toolType: 'reset',
+  purpose:
+    'Help students extract one useful adjustment from a scenario and carry it into the next attempt.',
+  whenToUse:
+    'Use between scenarios or after feedback when you need to turn a rough run into one practical next step.',
+  steps: [
+    'Name the main pattern from the last run.',
+    'Choose one adjustment small enough to carry forward.',
+    'Decide where that adjustment will probably matter next.',
+    'Test it deliberately in the next attempt.',
+    'Check whether the pattern changed, even slightly.',
+  ],
+  fields: [
+  {
+    id: 'pattern',
+    label: 'Pattern',
+    helperText:
+      'What was the main pattern from the last scenario? Look for the shape of the issue, not every mistake.',
+  },
+  {
+    id: 'one-adjustment',
+    label: 'One adjustment',
+    helperText:
+      'What is one specific change you can carry into the next attempt?',
+  },
+  {
+    id: 'next-moment',
+    label: 'Next moment to test it',
+    helperText:
+      'Where will this adjustment probably matter in the next scenario?',
+  },
+],
+  builderStructure: [],
+  relatedSections: [
+    'scenario-days-as-learning-tools',
+    'common-errors-and-what-they-reveal',
+    'focused-practice-after-feedback',
+  ],
+},
 ]
 
 export const activeTools = tools.filter((tool) => tool.status === 'drafted')

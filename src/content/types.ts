@@ -6,8 +6,13 @@ export type PageType =
   | 'conceptual'
   | 'practical-system'
   | 'tool-supported'
+  | 'practice-support'
 
-export type ToolType = 'thinking-check' | 'template' | 'prompt-builder'
+export type ToolType =
+  | 'thinking-check'
+  | 'template'
+  | 'prompt-builder'
+  | 'reset'
 
 export type BodyBlock =
   | {

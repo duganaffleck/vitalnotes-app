@@ -944,6 +944,7 @@ relatedSections: [
   'why-studying-feels-productive-but-fails-under-pressure',
   'learning-strain-is-not-always-a-personal-problem',
   'smart-notes-for-paramedic-students',
+  'scenario-days-as-learning-tools',
 ],
 },
 {
@@ -2941,6 +2942,7 @@ relatedSections: [
     'meaning-before-memorization',
     'pathophysiology-through-patterns',
     'smart-notes-for-paramedic-students',
+    'common-errors-and-what-they-reveal',
   ],
 },
 {
@@ -7271,6 +7273,8 @@ relatedSections: [
     'clinical-recall-without-trivia',
     'meaning-before-memorization',
     'pattern-recognition',
+    'scenario-days-as-learning-tools',
+'focused-practice-after-feedback',
   ],
 },
 {
@@ -7757,6 +7761,8 @@ relatedSections: [
     'meaning-before-memorization',
     'clinical-recall-without-trivia',
     'avoiding-premature-closure',
+    'scenario-days-as-learning-tools',
+'common-errors-and-what-they-reveal',
   ],
 },
 {
@@ -8388,6 +8394,2169 @@ relatedSections: [
     'pattern-recognition',
     'learning-strain-is-not-always-a-personal-problem',
     'directives-through-purpose',
+    'scenario-days-as-learning-tools',
+'common-errors-and-what-they-reveal',
+  ],
+},
+{
+  id: 'scenario-days-as-learning-tools',
+  title: 'Scenario Days as Learning Tools',
+  subtitle: 'What scenario days are actually showing you',
+  cluster: '06 Practice Better',
+  clusterOrder: 6,
+  sectionOrder: 0,
+  studentProblem:
+    'Students often treat scenario days as proof that they are ready or not ready, instead of using them as information about how their learning behaves under pressure.',
+  sectionPurpose:
+    'Reframe scenario days as structured practice days that reveal patterns in recall, reasoning, communication, reassessment, and decision-making.',
+  pageType: 'practice-support',
+ 
+  body: [
+    {
+      type: 'paragraph',
+      text: 'Scenario days feel different from regular learning days.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They are louder, faster, and harder to interpret. The room changes the task. The patient is moving, the instructor is watching, your partner needs information, and the feedback often comes before you have fully settled from the last run. You may finish one scenario feeling steady, then step into the next one and feel scattered almost immediately.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That shift can make the day feel personal.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Students often leave a scenario thinking in broad conclusions. I did well. I did badly. I am improving. I am not ready. I should know this by now. Those reactions make sense. Scenario days are public enough to feel exposed, structured enough to feel evaluative, and realistic enough to touch the nerves that ordinary studying does not reach.',
+    },
+    {
+      type: 'paragraph',
+      text: 'But scenario days become more useful when they are treated differently.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A scenario day is not just a performance day. It is a day where your learning system becomes visible.',
+    },
+    {
+      type: 'heading',
+      text: 'What scenario days actually reveal',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days do not only reveal what you know. They reveal whether what you know is usable when the call is moving.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is a harder test.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student may know reassessment matters, then lose it once treatment starts. They may understand a directive, then hesitate when the patient is borderline. They may recognize a pattern, then close too early. They may gather a decent history, but delay movement because they are waiting for the call to feel clearer.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Those moments are not random. They show how knowledge, attention, confidence, and structure behave under pressure.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This is why scenarios can feel so uncomfortable. They expose the difference between knowing something in a calm setting and using it while assessment, communication, equipment, time, uncertainty, and feedback are all present at once.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That does not make the scenario a failure. It makes the scenario information.',
+    },
+    {
+      type: 'heading',
+      text: 'Why scenario performance can look messy',
+    },
+    {
+      type: 'paragraph',
+      text: 'Students sometimes get discouraged because their performance looks less smooth as training progresses. That can happen even when they are improving.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Early scenarios may feel simpler because there are fewer layers to manage. The student focuses on assessment structure, basic communication, and obvious treatment decisions. As the program advances, more pieces are added: clinical reasoning, directive decisions, reassessment, transport thinking, leadership, patient communication, documentation, and time awareness.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That integration costs attention.',
+    },
+    {
+      type: 'paragraph',
+      text: 'For a while, the student may look less polished because they are trying to carry more of the real task. This is easy to misread. A rougher scenario does not always mean worse learning. Sometimes it means the student is adding new layers that have not settled yet. They may be less smooth, but more aware. Less confident, but more accurate. Less fast, but more honest about uncertainty.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Smoothness is not the only sign of progress.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Sometimes progress looks like noticing the problem sooner. Sometimes it looks like recovering faster. Sometimes it looks like making a different mistake than last time, because the old mistake is starting to shift.',
+    },
+    {
+      type: 'heading',
+      text: 'What instructors are often watching',
+    },
+    {
+      type: 'paragraph',
+      text: 'Instructors are rarely expecting perfect consistency across a scenario day. They are usually watching what changes.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Does the same issue repeat in exactly the same way? Does feedback alter the next attempt? Does the student recognize risk earlier? Does reassessment come back after an intervention? Does communication become clearer when the call becomes uncertain? Can the student recover when the scenario starts to wobble?',
+    },
+    {
+      type: 'paragraph',
+      text: 'A polished single scenario can be misleading. A rough scenario that leads to a better next attempt may show more learning than a clean run where nothing was challenged.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is hard to appreciate when you are the one being watched. A rough scenario still feels rough. But from a learning perspective, the question is not only, “Did that go well?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A better question is:',
+    },
+    {
+      type: 'paragraph',
+      text: 'What did that run show me that I can use in the next one?',
+    },
+    {
+      type: 'heading',
+      text: 'A paramedic example',
+    },
+    {
+      type: 'paragraph',
+      text: 'Consider a student rotating through three scenarios in one lab day.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In the first scenario, the patient is older, weak, and vaguely unwell. The student completes a careful assessment and asks reasonable questions, but the call does not move. They keep looking for the piece of information that will make the situation feel clear enough to act. The patient’s blood pressure trends slightly lower. The student notices it, but does not change the plan.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In debrief, the feedback is not that the student knew nothing. The issue is that the student waited too long to name risk.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student could turn that into a broad conclusion:',
+    },
+    {
+      type: 'paragraph',
+      text: 'I am bad at decision-making.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is too large to carry anywhere.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A more useful adjustment would be:',
+    },
+    {
+      type: 'paragraph',
+      text: 'When an older patient looks unwell and trends worse, I need to name the concern earlier and start moving the call toward transport while continuing assessment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In the second scenario, the student still hesitates. The problem is not magically gone. But this time, they say out loud, “I am concerned this could be worse than it looks.” They keep assessing, but they also begin preparing for transport earlier.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is not a perfect fix. It is a change.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In the third scenario, the student recognizes risk sooner. They still gather information. They still have uncertainty. But they no longer wait for a clean label before choosing a safer direction. They reassess deliberately and communicate the concern more clearly to their partner.',
+    },
+    {
+      type: 'paragraph',
+      text: 'None of the three scenarios were flawless.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The learning is visible across the day.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is what the day is designed to show.',
+    },
+    {
+      type: 'heading',
+      text: 'The value is between scenarios',
+    },
+    {
+      type: 'paragraph',
+      text: 'Students often treat each scenario as its own separate event. The scenario starts, the scenario ends, feedback happens, and the next scenario begins.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Used that way, the day can feel like a set of disconnected judgments. Each run becomes its own emotional event, and the learning may not carry forward.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days become more useful when you think across the day. The value is not only inside one scenario. It is in what carries from one attempt into the next.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If reassessment dropped after the first intervention, the next scenario becomes a chance to bring reassessment back sooner. If you waited too long to name risk, the next scenario becomes a chance to name a working concern earlier. If you fixated on one task, the next scenario becomes a chance to widen your attention deliberately. If communication became scattered, the next scenario becomes a chance to speak more clearly about the plan.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The next scenario is not completely separate from the last one.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It gives you a chance to test one adjustment while the feedback is still close enough to use.',
+    },
+    {
+      type: 'heading',
+      text: 'Extract one adjustment',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days work best when the learning target is small enough to carry.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Trying to fix everything at once usually fails. After a scenario, students often leave with too many lessons:',
+    },
+    {
+      type: 'list',
+      items: [
+        'reassess better',
+        'communicate better',
+        'be more confident',
+        'think more clinically',
+        'move faster',
+        'slow down',
+        'ask better questions',
+        'use directives properly',
+        'do not miss anything',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'That is too much.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The brain cannot carry all of that into the next room.',
+    },
+    {
+      type: 'paragraph',
+      text: 'After each scenario, extract one adjustment. Not a personality judgment. Not a complete improvement plan. One specific shift in thinking or action.',
+    },
+    {
+      type: 'paragraph',
+      text: 'For example:',
+    },
+    {
+      type: 'list',
+      items: [
+        'name a working concern earlier',
+        'reassess after the first intervention',
+        'check whether the patient still fits the first impression',
+        'begin moving toward transport when risk is rising',
+        'widen focus after completing a task',
+        'ask one question that would change the plan',
+        'state the reason for a directive decision out loud',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'One adjustment is small enough to use. That is why it matters.',
+    },
+    {
+      type: 'heading',
+      text: 'What feedback is for on scenario days',
+    },
+    {
+      type: 'paragraph',
+      text: 'Feedback is there to shape the next attempt.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That sounds simple, but it is easy to forget when the feedback lands hard. A student may hear a specific correction and turn it into a much larger story about competence. They replay the moment they froze, the thing they missed, the tone of the feedback, or the part they feel they should have known.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Some of that reaction is human. Scenario days can be uncomfortable. Nobody enjoys having their thinking exposed in real time.',
+    },
+    {
+      type: 'paragraph',
+      text: 'But feedback becomes useful only when it turns into something the student can do differently.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The question after feedback is not:',
+    },
+    {
+      type: 'paragraph',
+      text: 'What does this say about me?',
+    },
+    {
+      type: 'paragraph',
+      text: 'The better question is:',
+    },
+    {
+      type: 'paragraph',
+      text: 'What will I try differently in the next scenario?',
+    },
+    {
+      type: 'paragraph',
+      text: 'That question keeps feedback connected to practice. If feedback does not change the next attempt, it may be accurate but still unused.',
+    },
+    {
+      type: 'heading',
+      text: 'Why over-reflection can get in the way',
+    },
+    {
+      type: 'paragraph',
+      text: 'Some students respond to a difficult scenario by trying to process everything.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They replay the whole call. They list every mistake. They try to turn the scenario into a complete lesson. They ask what it says about their confidence, readiness, knowledge, future performance, and whether they are falling behind.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That can feel responsible. It often creates overload.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A scenario day is not always the right moment for deep reflection. The day is still moving. You may have another scenario coming. You need something portable. You need one adjustment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'There may be time later to review the call more carefully, especially if the scenario revealed a repeated issue. But between scenarios, the goal is smaller.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Ask:',
+    },
+    {
+      type: 'list',
+      items: [
+        'What happened?',
+        'What pattern showed up?',
+        'What will I try next?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'If you can answer those three questions, you probably have enough for the next attempt.',
+    },
+    {
+      type: 'heading',
+      text: 'What scenario days are not',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days are not proof that you belong or do not belong. They are not useful because they feel intense. They are not a place to prove you never make mistakes. They are not a series of unrelated pass or fail moments.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They are controlled practice environments designed to reveal patterns.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That distinction matters.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If you treat every scenario as proof of your ability, you may start protecting yourself from the learning. You may become defensive, discouraged, overly cautious, or focused on looking competent instead of improving.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If you treat each scenario as information, you have a better chance of using what it shows you.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not detached. Not careless. Just steady enough to learn from what happened.',
+    },
+    {
+      type: 'heading',
+      text: 'What a useful scenario day can look like',
+    },
+    {
+      type: 'paragraph',
+      text: 'A useful scenario day does not always feel good. It may feel uneven.',
+    },
+    {
+      type: 'paragraph',
+      text: 'You may leave with a few uncomfortable moments. You may realize that a problem you thought was fixed is still showing up. You may notice that your assessment is strong until treatment starts, or that your communication is clear until uncertainty rises.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is useful information.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A good scenario day might end with one clear learning point:',
+    },
+    {
+      type: 'paragraph',
+      text: 'When I intervene, I need to reassess before mentally moving on.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Or:',
+    },
+    {
+      type: 'paragraph',
+      text: 'When the patient is vague but trending worse, I need to name risk earlier.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Or:',
+    },
+    {
+      type: 'paragraph',
+      text: 'When I feel myself getting stuck, I need to say the working concern out loud.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That may not sound dramatic. It is enough.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Small corrections repeated across scenarios become meaningful changes.',
+    },
+    {
+      type: 'heading',
+      text: 'How this connects to Think Clinically',
+    },
+    {
+      type: 'paragraph',
+      text: 'The Think Clinically cluster gave language for what happens inside a call.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Clinical reasoning is the working explanation you keep adjusting. Pattern recognition helps you notice meaningful clusters sooner. Avoiding premature closure helps you keep early impressions from becoming too fixed.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days are where those ideas get tested.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They show whether your working explanation stays active when the room gets busy. They show whether pattern recognition helps or narrows you. They show whether reassessment returns after action. They show whether feedback changes the next attempt.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is why this cluster comes next.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Practice is not separate from reasoning.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Practice shows whether reasoning is actually available when the room gets busy.',
+    },
+    {
+      type: 'heading',
+      text: 'A simple scenario day reset',
+    },
+    {
+      type: 'paragraph',
+      text: 'Before the next scenario, use a short reset.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Ask:',
+    },
+    {
+      type: 'list',
+      items: [
+        'What was the main pattern in my last run?',
+        'What is the one adjustment I am carrying forward?',
+        'Where in the next scenario will that adjustment probably matter?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'This does not need to take long.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is to prevent feedback from staying vague. You are turning the last run into a usable next step.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Examples:',
+    },
+    {
+      type: 'list',
+      items: [
+        'If the pattern was delayed reassessment, the adjustment is to reassess immediately after the first intervention.',
+        'If the pattern was waiting for certainty, the adjustment is to name a working concern earlier.',
+        'If the pattern was fixation, the adjustment is to widen focus after completing the task.',
+        'If the pattern was scattered communication, the adjustment is to state the plan clearly to the partner.',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'This is not a full reflection tool. It is a reset between attempts.',
+    },
+    {
+      type: 'heading',
+      text: 'Moving forward',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days are practice environments designed to make learning visible.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They show what holds, what drops away, what repeats, and what begins to change. A difficult run may still be useful if it gives you a specific adjustment for the next one.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The next section looks more closely at Common Errors and What They Reveal. We will separate random mistakes from repeated patterns, and look at how common errors can become signals for better practice rather than evidence that a student is failing.',
+    },
+  ],
+  glossaryTerms: [
+    'scenario-based-learning',
+    'deliberate-practice',
+    'feedback',
+    'reassessment',
+    'cognitive-load',
+    'clinical-reasoning',
+    'pattern-recognition',
+    'premature-closure',
+  ],
+  relatedTools: ['scenario-day-reset'],
+  relatedSections: [
+    'cognitive-load',
+    'clinical-reasoning',
+    'pattern-recognition',
+    'avoiding-premature-closure',
+    'common-errors-and-what-they-reveal',
+    'focused-practice-after-feedback',
+  ],
+},
+{
+  id: 'common-errors-and-what-they-reveal',
+  title: 'Common Errors and What They Reveal',
+  subtitle: 'How repeated mistakes show where learning needs support',
+  cluster: '06 Practice Better',
+  clusterOrder: 6,
+  sectionOrder: 1,
+  studentProblem:
+    'Students often treat errors as proof that they are not capable, rather than as information about what part of their learning, reasoning, recall, or practice system needs support.',
+  sectionPurpose:
+    'Show students how to distinguish occasional mistakes from repeated patterns, interpret those patterns, and convert feedback into one useful next practice target.',
+  pageType: 'practice-support',
+  
+  body: [
+    
+    {
+      type: 'paragraph',
+      text: 'After a rough scenario, it is easy for a student to turn one mistake into a much bigger story.',
+    },
+    {
+      type: 'paragraph',
+      text: 'I missed the reassessment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'I froze on the directive.',
+    },
+    {
+      type: 'paragraph',
+      text: 'I got pulled into the wrong diagnosis.',
+    },
+    {
+      type: 'paragraph',
+      text: 'I knew better and still did it wrong.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That last part is usually the hardest. Many scenario mistakes happen in areas students have already studied. They may know the concept when sitting at a desk. They may be able to explain it clearly afterward. They may even recognize the mistake as soon as the scenario ends.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That does not make the error meaningless. It means the problem may not be knowledge alone.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still moving. Scenario days expose that system. They show where understanding is usable and where it is still fragile.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A common error is not something to excuse. It is something to read carefully.',
+    },
+    {
+      type: 'heading',
+      text: 'Occasional mistakes and repeated patterns are different',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not every mistake reveals a deep issue.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Sometimes a student mishears a number, phrases a question awkwardly, forgets a small step once, or gets disrupted by something happening in the room. Those moments still matter, but they do not always tell the whole story.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Repeated errors are different.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the same kind of mistake appears across scenarios, the details may change while the shape stays familiar.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student might:',
+    },
+    {
+      type: 'list',
+      items: [
+        'delay transport while waiting for a clearer diagnosis',
+        'stop reassessing after the first intervention',
+        'focus on a skill and lose the larger patient picture',
+        'treat a directive like a fragile memory test instead of a decision support tool',
+        'lock onto the first familiar pattern and ignore details that do not fit',
+        'gather more and more history without naming the main concern',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'Those patterns are worth paying attention to. They usually show where the learning system needs more support.',
+    },
+    {
+      type: 'heading',
+      text: 'What errors can reveal',
+    },
+    {
+      type: 'paragraph',
+      text: 'A useful error review asks a better question than “What did I do wrong?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'It asks, “What does this error reveal?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Different errors point to different problems.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A missed medication check may reveal that a procedural habit is not yet stable under pressure.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A delayed transport decision may reveal that the student is waiting for certainty before acting on risk.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A weak reassessment may reveal that the student sees treatment as the endpoint, rather than the start of the next assessment cycle.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A premature diagnosis may reveal that pattern recognition is moving faster than verification.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A scattered history may reveal cognitive overload, not laziness or lack of caring.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This distinction matters because each problem needs a different response. Studying harder does not fix every error. Sometimes the student needs retrieval practice. Sometimes they need a clearer mental model. Sometimes they need to rehearse one decision point until it becomes easier to access under pressure. Sometimes they need to simplify how they enter a scenario because their attention is being used up too early.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The error helps show where to look.',
+    },
+    {
+      type: 'heading',
+      text: 'A paramedic example',
+    },
+    {
+      type: 'paragraph',
+      text: 'Consider a student working through a scenario involving an older patient with abdominal pain, nausea, and vague weakness.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student is careful. They complete a primary assessment, ask a detailed history, check medications, and repeat parts of the abdominal exam. Their approach is not careless. They are trying to be thorough and safe.',
+    },
+    {
+      type: 'paragraph',
+      text: 'But the patient looks worse over time.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The blood pressure trends downward. Skin becomes cooler. The patient is increasingly uncomfortable and less able to answer clearly. Nothing has become perfectly obvious, but the overall picture has changed.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student continues gathering information, hoping the scenario will eventually point to a clean answer.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The visible error might be described as delayed transport priority.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The deeper pattern is more specific:',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student is treating uncertainty as a reason to keep assessing, when uncertainty should be changing the plan.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In a case like this, the student does not need a perfect diagnosis before acting. They need to name the risk, adjust urgency, reassess deliberately, and move toward a safer plan. The concern might be abdominal sepsis, internal bleeding, an aneurysm, bowel obstruction, or something else entirely. The point is not to be certain early. The point is to recognize that the patient is no longer behaving like a low-risk assessment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Once that pattern is named, the next practice target becomes clearer.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not:',
+    },
+    {
+      type: 'paragraph',
+      text: '“Be better at abdominal pain.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'More useful:',
+    },
+    {
+      type: 'paragraph',
+      text: '“In the next scenario, if an older patient looks unwell and trends worse, I will name the working concern earlier and decide what action keeps them safest while I clarify.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is something a student can actually carry into the next room.',
+    },
+    {
+      type: 'heading',
+      text: 'Why good students repeat errors',
+    },
+    {
+      type: 'paragraph',
+      text: 'Repeated errors can be frustrating because they often come from reasonable instincts.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A careful student may delay action because they do not want to overreact.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A thorough student may gather too much information because they want to be accurate.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A cautious student may hesitate with directives because they understand that protocol errors matter.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A confident student may commit early because they recognize a familiar pattern and want to move efficiently.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Those instincts are not bad on their own. In fact, they are often part of what makes the student conscientious. The problem is that each instinct can be pushed too far under pressure.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Caution can become delay.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Thoroughness can become overload.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Confidence can become premature closure.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Protocol respect can become paralysis.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Common errors often reveal where balance is not yet stable.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is why feedback can feel uncomfortable. The instructor may not be asking the student to care more. They may be asking the student to use their care differently.',
+    },
+    {
+      type: 'heading',
+      text: 'The difference between correction and learning',
+    },
+    {
+      type: 'paragraph',
+      text: 'Correction tells you what should have happened.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Learning changes what happens next time.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Those are related, but they are not the same.',
+    },
+    {
+      type: 'paragraph',
+      text: 'After a scenario, feedback might sound like this:',
+    },
+    {
+      type: 'list',
+      items: [
+        '“You needed to reassess after the treatment.”',
+        '“You waited too long to make a transport decision.”',
+        '“You closed too early on asthma.”',
+        '“You did not explain the risk clearly enough to the patient.”',
+        '“You knew the directive, but you did not apply it cleanly.”',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'That feedback identifies the issue. It does not automatically create the fix.',
+    },
+    {
+      type: 'paragraph',
+      text: 'To make feedback useful, the student has to translate the correction into a practice target.',
+    },
+    {
+      type: 'paragraph',
+      text: 'For example:',
+    },
+    {
+      type: 'list',
+      items: [
+        '“After any intervention, I will deliberately reassess the finding that made me intervene.”',
+        '“When I notice a worsening trend, I will name transport priority before collecting more detail.”',
+        '“When a presentation looks familiar, I will identify one feature that does not fit.”',
+        '“When a patient hesitates or refuses, I will explain risk in plain language before asking for agreement.”',
+        '“For directives, I will practise the decision point, not just the wording.”',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'This is where feedback starts to become usable. It changes the next attempt.',
+    },
+    {
+      type: 'heading',
+      text: 'Avoiding the error catalogue trap',
+    },
+    {
+      type: 'paragraph',
+      text: 'It can be tempting to make a long list of mistakes and try to fix all of them.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That usually fails.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A long error list creates noise. It makes students feel busy without making practice sharper. It can also create defensive learning, where the student becomes focused on not doing anything wrong instead of thinking clearly and acting safely.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is not to collect every error.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is to identify the pattern that matters most right now.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A useful question after feedback is:',
+    },
+    {
+      type: 'paragraph',
+      text: '“What is the one error pattern most likely to affect my next scenario if I do not address it?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That question narrows attention. It also protects learning from becoming another source of overload.',
+    },
+    {
+      type: 'heading',
+      text: 'How to read an error pattern',
+    },
+    {
+      type: 'paragraph',
+      text: 'When an error repeats, pause long enough to look underneath it.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Ask:',
+    },
+    {
+      type: 'list',
+      items: [
+        'What was the visible mistake?',
+        'Has this happened before in a similar form?',
+        'What was happening to my attention at the time?',
+        'What assumption was guiding me?',
+        'What would I need to practise so this changes next time?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'The answer should lead to a practice target, not a personality judgment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the answer is “I need to be better,” it is too vague.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the answer is “I need to reassess after treatment,” it is closer.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the answer is “After giving a treatment, I will reassess the specific finding that made me give it, then decide whether the patient is improving, unchanged, or worse,” it is useful.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That final version gives the next scenario something to test.',
+    },
+    {
+      type: 'heading',
+      text: 'Common patterns worth noticing',
+    },
+    {
+      type: 'paragraph',
+      text: 'The point of this list is not to memorize more mistakes. It is to recognize the shape of a problem when it appears.',
+    },
+    {
+      type: 'heading',
+      text: 'Waiting for certainty',
+    },
+    {
+      type: 'paragraph',
+      text: 'This pattern shows up when students keep assessing because they want the decision to become obvious.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It often appears in vague abdominal pain, weakness, dizziness, shortness of breath, altered mental status, or early shock. The student may have enough information to act safely, but they keep searching for confirmation.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The practice target is not simply speed.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It is risk naming.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student needs to practise saying, “I do not know exactly what this is yet, but the risk is high enough that my plan needs to change.”',
+    },
+    {
+      type: 'heading',
+      text: 'Losing reassessment',
+    },
+    {
+      type: 'paragraph',
+      text: 'This pattern shows up after an intervention.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student gives oxygen, ventilates, administers a medication, moves the patient, changes position, or completes a skill, then continues forward without checking whether the original problem improved.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This can happen because treatment feels like completion.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In paramedicine, treatment should create the next question.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Did that help?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Did it fail?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Did it create a new concern?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Did the patient change in a way that alters the plan?',
+    },
+    {
+      type: 'paragraph',
+      text: 'The practice target is a simple reassessment loop:',
+    },
+    {
+      type: 'paragraph',
+      text: 'Intervene.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Recheck the reason you intervened.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Adjust.',
+    },
+    {
+      type: 'heading',
+      text: 'Fixating on the first familiar explanation',
+    },
+    {
+      type: 'paragraph',
+      text: 'This pattern appears when a patient resembles something the student has seen before.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Wheezing becomes asthma. Chest pain becomes ACS. Anxiety becomes panic. Weakness becomes “general unwell.” Intoxication becomes the whole explanation.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Sometimes the first pattern is correct. The risk is closing the case before checking what does not fit.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The practice target is verification.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student should practise asking, “What finding would make this pattern unsafe to trust?”',
+    },
+    {
+      type: 'heading',
+      text: 'Treating directives as memory tests',
+    },
+    {
+      type: 'paragraph',
+      text: 'This pattern appears when students know a directive, but freeze when the patient does not fit perfectly.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They search for exact wording instead of thinking about the clinical risk the directive is managing.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This does not mean wording is unimportant. It is important. But wording alone does not create judgment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The practice target is directive meaning.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student should practise asking:',
+    },
+    {
+      type: 'list',
+      items: [
+        'What risk is this directive protecting against?',
+        'What findings matter most?',
+        'What would make this unsafe?',
+        'What reassessment is required after action or withholding?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'This turns the directive from a fragile script into a safer decision frame.',
+    },
+    {
+      type: 'heading',
+      text: 'Letting skills consume the call',
+    },
+    {
+      type: 'paragraph',
+      text: 'This pattern appears when a procedure takes over attention.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student becomes focused on getting a blood pressure, setting up equipment, preparing a medication, placing leads, moving the patient, or performing a skill cleanly. Meanwhile, the broader clinical picture drifts.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The skill may be technically fine. The call may still be poorly managed.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The practice target is maintaining global awareness during tasks.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A useful orientation question is:',
+    },
+    {
+      type: 'paragraph',
+      text: '“What is changing while I am doing this?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That question keeps the patient from disappearing behind the task.',
+    },
+    {
+      type: 'heading',
+      text: 'What instructors are often trying to show you',
+    },
+    {
+      type: 'paragraph',
+      text: 'When instructors point out repeated errors, they are not only commenting on the scenario that just happened.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They are often trying to show a pattern they have seen forming across attempts.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That can feel uncomfortable. It may sound bigger than the student expected because, in a way, it is bigger. It is not only about one missed reassessment or one delayed decision. It is about the shape of the student’s thinking when pressure rises.',
+    },
+    {
+      type: 'paragraph',
+      text: 'An instructor might say:',
+    },
+    {
+      type: 'list',
+      items: [
+        '“You keep waiting too long to name risk.”',
+        '“You are doing good assessments, but you are not changing your plan when the patient changes.”',
+        '“You recognize patterns quickly, but you close too early.”',
+        '“You know the directive, but you are not applying the intent.”',
+        '“Your skills are improving, but your situational awareness drops when you perform them.”',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'This kind of feedback gives students something valuable. It shows the pattern while it is still changeable.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is not to feel good about the feedback. The goal is to make it specific enough to use.',
+    },
+    {
+      type: 'heading',
+      text: 'Turning an error into a practice target',
+    },
+    {
+      type: 'paragraph',
+      text: 'A practice target should be narrow enough that you can carry it into the next scenario.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It should describe what you will notice or do differently.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need to improve clinical reasoning.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Better:',
+    },
+    {
+      type: 'paragraph',
+      text: '“In the next scenario, I will name my working concern earlier, even if I am not certain.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need to stop missing reassessment.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Better:',
+    },
+    {
+      type: 'paragraph',
+      text: '“After each intervention, I will reassess the specific problem that made me intervene.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need to understand directives better.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Better:',
+    },
+    {
+      type: 'paragraph',
+      text: '“When reviewing a directive, I will identify what risk it is protecting against and what findings would make the intervention unsafe.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'This is where improvement becomes practical.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The error reveals the pattern. The pattern helps define the practice target. The practice target shapes the next attempt.',
+    },
+    {
+      type: 'heading',
+      text: 'Moving forward',
+    },
+    {
+      type: 'paragraph',
+      text: 'Common errors matter because they show where learning is not yet stable under pressure.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They are not harmless, and they should not be brushed aside. They are also not proof that a student cannot do this work.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They are information that needs to be handled carefully.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Scenario days reveal the pattern. Feedback helps name it. The next step is to practise the right thing on purpose, without trying to rebuild everything at once.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In the next section, we look at Focused Practice After Feedback and how to turn one identified error pattern into a targeted adjustment that actually changes future performance.',
+    },
+  ],
+  glossaryTerms: [
+    'error-pattern',
+    'cognitive-load',
+    'premature-closure',
+    'reassessment',
+    'feedback',
+    'deliberate-practice',
+    'practice-target',
+  ],
+  relatedTools: ['scenario-day-reset'],
+  relatedSections: [
+    'scenario-days-as-learning-tools',
+    'focused-practice-after-feedback',
+    'clinical-reasoning',
+    'avoiding-premature-closure',
+    'directives-through-purpose',
+  ],
+},
+{
+  id: 'focused-practice-after-feedback',
+  title: 'Focused Practice After Feedback',
+  subtitle: 'Turning feedback into one adjustment you can test',
+  cluster: '06 Practice Better',
+  clusterOrder: 6,
+  sectionOrder: 2,
+  studentProblem:
+    'Students often receive useful feedback but leave with too many corrections, too much emotional noise, or no clear next action.',
+  sectionPurpose:
+    'Help students turn feedback into one focused practice target that can be tested deliberately in the next scenario, lab, or study session.',
+  pageType: 'practice-support',
+  
+  body: [
+   
+    {
+      type: 'paragraph',
+      text: 'Most students do not ignore feedback.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They hear it. They nod. They understand what the instructor is saying. Sometimes they agree with the feedback completely. Then the next scenario starts, the room gets busy again, and the same issue comes back.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That can feel discouraging.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It can also feel confusing, because the feedback seemed clear at the time. The student knew what went wrong. They may have been able to explain it afterward. They may have left the room genuinely intending to fix it.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The missing step is usually not caring.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The missing step is conversion.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Feedback has to be converted into something small enough to practise while the next call is unfolding. Otherwise, it stays as a general correction floating around in the student’s head.',
+    },
+    {
+      type: 'paragraph',
+      text: 'After one scenario, a student might be told to:',
+    },
+    {
+      type: 'list',
+      items: [
+        'reassess sooner',
+        'explain risk more clearly',
+        'make a transport decision earlier',
+        'check contraindications more cleanly',
+        'stop closing too quickly on the first diagnosis',
+        'communicate more effectively with the patient or partner',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'All of that feedback may be accurate.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It is also too much to carry all at once.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The question after feedback is not, “How do I fix everything?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A more useful question is, “What is the next adjustment I can actually test?”',
+    },
+    {
+      type: 'heading',
+      text: 'Feedback is not practice yet',
+    },
+    {
+      type: 'paragraph',
+      text: 'Feedback identifies a gap. Practice changes how the student responds to that gap next time.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Those are connected, but they are not the same thing.',
+    },
+    {
+      type: 'paragraph',
+      text: 'An instructor might say, “You lost reassessment after the first intervention.” That is useful feedback. It names something important. But the student still needs to decide what the feedback means in practical terms.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Do they need to rehearse a reassessment loop?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Do they need to say their reassessment plan out loud?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Do they need to connect each treatment to the finding that justified it?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Do they need to stop thinking of treatment as the end of the decision?',
+    },
+    {
+      type: 'paragraph',
+      text: 'Until feedback becomes a specific adjustment, it is too broad to guide the next attempt.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This is one reason students can understand feedback and still repeat the same error. They are not necessarily resisting the correction. They may simply not have turned it into a practice target.',
+    },
+    {
+      type: 'heading',
+      text: 'One adjustment is usually enough',
+    },
+    {
+      type: 'paragraph',
+      text: 'After a difficult scenario, students often want to fix everything immediately.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That impulse makes sense. Nobody likes leaving a room feeling exposed, slow, or unsafe in their thinking. A student may want to prove that they took the feedback seriously by writing down every issue and promising to work on all of it.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The problem is that scenario performance already carries a high cognitive load.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Adding six new goals into the next scenario usually makes performance more fragile. Attention splits. The student becomes self-conscious. They monitor themselves instead of the patient. They may become so focused on avoiding the last mistake that they stop seeing the call they are currently in.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Focused practice works differently.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It chooses one adjustment and gives it enough room to show up.',
+    },
+    {
+      type: 'paragraph',
+      text: 'One adjustment might be:',
+    },
+    {
+      type: 'list',
+      items: [
+        'naming a working concern earlier',
+        'reassessing after each intervention',
+        'checking what does not fit the first pattern',
+        'explaining risk in plain language',
+        'making a transport decision once risk is recognized',
+        'linking a directive decision to patient findings rather than memory alone',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'This does not mean the rest of the scenario stops mattering. The student still has to manage the patient safely.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It means one part of the performance is being deliberately tested.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is usually enough for one attempt.',
+    },
+    {
+      type: 'heading',
+      text: 'A paramedic example',
+    },
+    {
+      type: 'paragraph',
+      text: 'Consider a student who has just finished a respiratory scenario.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The treatment was reasonable. They recognized distress, initiated care, communicated with their partner, and started preparing for transport. Nothing about the call was careless.',
+    },
+    {
+      type: 'paragraph',
+      text: 'But there was a repeated issue.',
+    },
+    {
+      type: 'paragraph',
+      text: 'After treatment, the student kept moving forward without clearly checking whether the patient had actually improved. They did not return to the work of breathing, speaking ability, lung sounds, mental status, or overall appearance that made them intervene in the first place.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The instructor says, “Your treatment made sense, but you did not close the loop. You need to reassess after you intervene.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student understands the comment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They might write down:',
+    },
+    {
+      type: 'paragraph',
+      text: '“Reassess more.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is not wrong, but it is not quite usable yet.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A better practice target would be:',
+    },
+    {
+      type: 'paragraph',
+      text: '“After any respiratory intervention, I will reassess the finding that made me intervene: work of breathing, speaking ability, lung sounds, SpO₂ trend if reliable, mental status, and patient appearance.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Now the feedback has changed shape.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It is no longer a general reminder. It is a specific behaviour tied to a clinical reason.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In the next scenario, the student does not need to become perfect at every part of respiratory care. They need to test whether they can close the loop after treatment while still managing the rest of the call.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is focused practice.',
+    },
+    {
+      type: 'heading',
+      text: 'What makes a practice target useful',
+    },
+    {
+      type: 'paragraph',
+      text: 'A good practice target is specific enough to test.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It should answer three questions:',
+    },
+    {
+      type: 'list',
+      items: [
+        'What will I notice?',
+        'What will I do differently?',
+        'Where will I test it next?',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'A weak target sounds like this:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need to improve communication.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That may be true, but it is too broad to practise well.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A stronger target sounds like this:',
+    },
+    {
+      type: 'paragraph',
+      text: '“In the next scenario, I will explain my working concern to my partner before moving to treatment or transport.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A weak target:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need better clinical reasoning.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A stronger target:',
+    },
+    {
+      type: 'paragraph',
+      text: '“When I form an early impression, I will name one finding that supports it and one finding that could challenge it.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A weak target:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need to be less nervous with directives.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A stronger target:',
+    },
+    {
+      type: 'paragraph',
+      text: '“When reviewing a directive, I will identify the clinical risk it is protecting against, then practise applying it to one borderline patient example.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is not to make the target sound impressive. The goal is to make it clear enough that the student can actually use it when the next scenario starts.',
+    },
+    {
+      type: 'heading',
+      text: 'Practice targets have to survive pressure',
+    },
+    {
+      type: 'paragraph',
+      text: 'A practice target that only works when the student is calm and unrushed is probably too large.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Good targets are small enough to survive a real lab environment. They have to be usable while the student is managing a patient, hearing new information, talking to a partner, and watching the scene change.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This is why wording matters.',
+    },
+    {
+      type: 'paragraph',
+      text: '“Improve prioritization” is too large.',
+    },
+    {
+      type: 'paragraph',
+      text: '“Name the primary risk before collecting more history” is smaller.',
+    },
+    {
+      type: 'paragraph',
+      text: '“Use better reassessment” is too broad.',
+    },
+    {
+      type: 'paragraph',
+      text: '“After treatment, recheck the finding that justified the treatment” is smaller.',
+    },
+    {
+      type: 'paragraph',
+      text: '“Stop premature closure” is too abstract.',
+    },
+    {
+      type: 'paragraph',
+      text: '“Ask what does not fit before committing to the first explanation” is smaller.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Small does not mean shallow. In paramedicine, small adjustments often change the direction of the whole call because they redirect attention at the moment where thinking usually starts to drift.',
+    },
+    {
+      type: 'heading',
+      text: 'How to extract one adjustment from feedback',
+    },
+    {
+      type: 'paragraph',
+      text: 'After a scenario, feedback can come quickly. Sometimes it is organized. Sometimes several people comment at once. Sometimes the feedback is accurate but hard to absorb because the scenario already felt rough.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student does not need to capture every word.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The job is to extract the adjustment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Use this sequence:',
+    },
+    {
+      type: 'list',
+      items: [
+        'Listen for the repeated pattern.',
+        'Identify the moment where the pattern showed up.',
+        'Translate the feedback into one behaviour.',
+        'Decide where that behaviour will be tested next.',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'For example:',
+    },
+    {
+      type: 'paragraph',
+      text: 'Feedback:',
+    },
+    {
+      type: 'paragraph',
+      text: '“You kept gathering information, but you never really changed your plan.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Pattern:',
+    },
+    {
+      type: 'paragraph',
+      text: 'Waiting for certainty.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Moment:',
+    },
+    {
+      type: 'paragraph',
+      text: 'The patient was trending worse, but assessment continued as if the call were still low risk.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Practice target:',
+    },
+    {
+      type: 'paragraph',
+      text: '“When a patient trends worse, I will name the working concern and decide whether my transport priority needs to change.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'Next test:',
+    },
+    {
+      type: 'paragraph',
+      text: 'The next scenario involving vague symptoms, abnormal vitals, or a patient who changes over time.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is enough.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The student does not need a full essay after every run. They need one usable adjustment.',
+    },
+    {
+      type: 'heading',
+      text: 'Focused practice is not just doing more scenarios',
+    },
+    {
+      type: 'paragraph',
+      text: 'More practice can help, but only if something about the practice changes.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student can repeat the same error many times. They can even become smoother at repeating it. This is why “just do more scenarios” is incomplete advice.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Focused practice means repeating with attention to one specific change.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the issue is premature closure, the student should not simply run more chest pain or respiratory scenarios. They should practise holding an early impression while still checking for what does not fit.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the issue is missed reassessment, the student should not only review treatment steps. They should practise linking every intervention to a follow-up assessment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the issue is directive hesitation, the student should not only reread the directive. They should practise applying the directive to realistic patient presentations, including borderline or changing cases.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The point is not more practice for its own sake.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The point is more precise practice.',
+    },
+    {
+      type: 'heading',
+      text: 'Why focused practice feels awkward at first',
+    },
+    {
+      type: 'paragraph',
+      text: 'Focused practice can make a student feel less smooth for a while.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is normal.',
+    },
+    {
+      type: 'paragraph',
+      text: 'When a student starts paying deliberate attention to one part of performance, the call may feel slower. They may pause more. They may speak their reasoning more carefully. They may feel like they are moving backward because something that used to run on habit is now being examined on purpose.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This does not mean the practice target is wrong.',
+    },
+    {
+      type: 'paragraph',
+      text: 'It means the student has made the weak point visible.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That visibility is uncomfortable, especially when the target involves clinical reasoning, reassessment, communication, or transport decisions. These are not isolated skills. They are woven into the whole call.',
+    },
+    {
+      type: 'paragraph',
+      text: 'At first, the student is learning to notice the moment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Later, they learn to act in the moment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'With enough useful repetition, the adjustment starts to feel less like an added task and more like part of how they practise.',
+    },
+    {
+      type: 'heading',
+      text: 'A second example: premature closure',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student completes a scenario involving shortness of breath.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The patient is wheezy, anxious, and sitting upright. The student quickly identifies asthma and begins treatment. Some of this is reasonable. The presentation does resemble asthma.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The issue is not that the student noticed a pattern.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The issue is that they stopped testing it.',
+    },
+    {
+      type: 'paragraph',
+      text: 'They did not pay enough attention to chest discomfort, poor response to treatment, skin signs, or the possibility that this was not a straightforward asthma exacerbation. They kept trying to make the call fit the first explanation.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Feedback identifies premature closure.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A weak practice response would be:',
+    },
+    {
+      type: 'paragraph',
+      text: '“I need to stop assuming.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is understandable, but it is not very useful.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A stronger practice target would be:',
+    },
+    {
+      type: 'paragraph',
+      text: '“When I recognize a familiar pattern early, I will name one finding that supports it and one finding that would make me reconsider.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That target does not tell the student to ignore pattern recognition. It teaches them to keep it accountable.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In the next respiratory scenario, the student can test that adjustment directly. They can still act on the likely problem, but they must keep checking whether the patient is behaving as expected.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is how focused practice protects clinical reasoning.',
+    },
+    {
+      type: 'heading',
+      text: 'Feedback should change what the student notices',
+    },
+    {
+      type: 'paragraph',
+      text: 'A good practice target often changes attention before it changes action.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This matters.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Students sometimes assume improvement means doing something new. Sometimes it does. But often, improvement begins by noticing the right thing sooner.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student working on reassessment starts noticing what changes after intervention.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student working on transport decisions starts noticing trends earlier.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student working on communication starts noticing when the patient does not understand the risk.',
+    },
+    {
+      type: 'paragraph',
+      text: 'A student working on directive application starts noticing whether the clinical picture actually matches the reason the directive exists.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Attention comes first.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Action follows.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This is why focused practice should not be treated like a checklist. The student is training what to notice, when to notice it, and how to respond once it appears.',
+    },
+    {
+      type: 'heading',
+      text: 'When feedback gives you too much',
+    },
+    {
+      type: 'paragraph',
+      text: 'Sometimes feedback is accurate but too large.',
+    },
+    {
+      type: 'paragraph',
+      text: 'An instructor may identify several issues at once:',
+    },
+    {
+      type: 'list',
+      items: [
+        'assessment was scattered',
+        'history was incomplete',
+        'reassessment was weak',
+        'communication with the partner was unclear',
+        'transport decision was delayed',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'The student may leave feeling like the whole scenario failed.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In that moment, the useful move is to look for the issue underneath several of the comments.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If assessment was scattered, reassessment was weak, and transport was delayed, the deeper issue may be loss of prioritization. The student was doing tasks, but not organizing them around the main clinical risk.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The practice target might become:',
+    },
+    {
+      type: 'paragraph',
+      text: '“After my first set of findings, I will name the main risk and use that to guide what I ask, reassess, or do next.”',
+    },
+    {
+      type: 'paragraph',
+      text: 'That one target may improve several visible behaviours because it addresses the structure underneath them.',
+    },
+    {
+      type: 'paragraph',
+      text: 'This is not ignoring feedback. It is organizing it so it can be practised.',
+    },
+    {
+      type: 'heading',
+      text: 'When to practise outside the scenario',
+    },
+    {
+      type: 'paragraph',
+      text: 'Not every practice target has to begin inside a full scenario.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Some targets can be strengthened in smaller pieces first.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the target is directive decision-making, the student can practise with short patient examples.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the target is risk explanation, the student can rehearse explaining risk in plain language.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the target is reassessment, the student can build quick intervention-reassessment pairs.',
+    },
+    {
+      type: 'paragraph',
+      text: 'If the target is clinical reasoning, the student can compare two similar cases and ask what finding would change the plan.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Smaller practice helps reduce load. It lets the student strengthen one part of performance before adding the full pressure of a scenario.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Then the adjustment still needs to be tested in context.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That second part matters.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Practice outside the scenario prepares the adjustment. Scenario practice tests whether it holds.',
+    },
+    {
+      type: 'heading',
+      text: 'How to know if practice is working',
+    },
+    {
+      type: 'paragraph',
+      text: 'Focused practice is working when the pattern starts to change.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That change may be small at first.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The scenario may still feel uneven. The student may still make mistakes. But something should be different.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Possible signs include:',
+    },
+    {
+      type: 'list',
+      items: [
+        'the student notices the issue sooner',
+        'the student catches the mistake while it is happening',
+        'the student asks a better question at the right moment',
+        'the student adjusts after feedback instead of repeating the same pattern unchanged',
+        'the student can explain what they were trying to improve',
+        'the student recovers faster after losing track',
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'Early improvement often looks like recovery, not perfection.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That matters because students sometimes dismiss progress if the whole scenario still felt messy. But if the repeated error changed shape, learning is happening.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is not to leave every scenario feeling good.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The goal is to leave with evidence that practice is affecting performance.',
+    },
+    {
+      type: 'heading',
+      text: 'What to avoid after feedback',
+    },
+    {
+      type: 'paragraph',
+      text: 'There are a few common traps after feedback.',
+    },
+    {
+      type: 'heading',
+      text: 'Trying to fix everything',
+    },
+    {
+      type: 'paragraph',
+      text: 'This creates overload and usually leads to shallow change.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Choose one adjustment.',
+    },
+    {
+      type: 'heading',
+      text: 'Turning feedback into self-criticism',
+    },
+    {
+      type: 'paragraph',
+      text: 'Self-criticism can feel active, but it rarely improves the next attempt on its own.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Translate the feedback into behaviour.',
+    },
+    {
+      type: 'heading',
+      text: 'Practising only what feels comfortable',
+    },
+    {
+      type: 'paragraph',
+      text: 'Students often repeat what they already do well because it restores confidence.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Spend some time where the pattern is actually weak.',
+    },
+    {
+      type: 'heading',
+      text: 'Treating the next scenario as a chance to prove yourself',
+    },
+    {
+      type: 'paragraph',
+      text: 'The next scenario is not only a performance. It is also a test of the adjustment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The question is not, “Can I be flawless now?”',
+    },
+    {
+      type: 'paragraph',
+      text: 'A better question is, “Can I apply the one thing I said I would practise?”',
+    },
+    {
+      type: 'heading',
+      text: 'A simple feedback-to-practice sequence',
+    },
+    {
+      type: 'paragraph',
+      text: 'Use this after a scenario or lab when feedback feels important but too broad.',
+    },
+    {
+      type: 'paragraph',
+      text: '1. Name the pattern.',
+    },
+    {
+      type: 'paragraph',
+      text: 'What kind of error showed up?',
+    },
+    {
+      type: 'paragraph',
+      text: '2. Choose one adjustment.',
+    },
+    {
+      type: 'paragraph',
+      text: 'What is the smallest useful change?',
+    },
+    {
+      type: 'paragraph',
+      text: '3. Decide where it will show up.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In what kind of scenario, patient, or moment will this matter?',
+    },
+    {
+      type: 'paragraph',
+      text: '4. Test it deliberately.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Carry that adjustment into the next attempt.',
+    },
+    {
+      type: 'paragraph',
+      text: '5. Check whether it changed anything.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Did you notice it sooner, act differently, or recover faster?',
+    },
+    {
+      type: 'paragraph',
+      text: 'This sequence is small on purpose. It is meant to survive real lab days, not become another assignment.',
+    },
+    {
+      type: 'heading',
+      text: 'Moving forward',
+    },
+    {
+      type: 'paragraph',
+      text: 'Feedback is only useful if it changes practice.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That does not mean every correction needs a full reflection, a new system, or a long plan. Most of the time, the next step is smaller than that.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Read the feedback. Find the pattern. Choose one adjustment. Test it.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The adjustment may not fix everything right away. It may feel awkward at first. It may need several attempts before it becomes stable.',
+    },
+    {
+      type: 'paragraph',
+      text: 'That is still productive work.',
+    },
+    {
+      type: 'paragraph',
+      text: 'The Practice Better cluster has now moved through scenario days, common error patterns, and focused practice after feedback. Together, these pages show how practice becomes more useful when students stop treating scenarios as isolated performances and start using them as repeated chances to adjust how they think, decide, and act.',
+    },
+  ],
+  glossaryTerms: [
+    'focused-practice',
+    'practice-target',
+    'feedback',
+    'deliberate-practice',
+    'reassessment',
+    'cognitive-load',
+    'transfer',
+  ],
+  relatedTools: ['scenario-day-reset'],
+  relatedSections: [
+    'scenario-days-as-learning-tools',
+    'common-errors-and-what-they-reveal',
+    'clinical-reasoning',
+    'avoiding-premature-closure',
   ],
 },
 ]

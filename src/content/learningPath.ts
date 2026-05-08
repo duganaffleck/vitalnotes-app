@@ -71,7 +71,7 @@ export const learningPath: LearningPathCluster[] = [
     relatedTools: ['clinical-recall-prompt-builder'],
     status: 'drafted',
   },
-   {
+  {
     id: 'think-clinically',
     title: '05 Think Clinically',
     order: 5,
@@ -85,8 +85,21 @@ export const learningPath: LearningPathCluster[] = [
     relatedTools: [],
     status: 'drafted',
   },
+  {
+    id: 'practice-better',
+    title: '06 Practice Better',
+    order: 6,
+    purpose:
+      'Help students use scenario practice, common error patterns, and feedback to improve deliberately.',
+    sections: [
+      'scenario-days-as-learning-tools',
+      'common-errors-and-what-they-reveal',
+      'focused-practice-after-feedback',
+    ],
+    relatedTools: ['scenario-day-reset'],
+    status: 'drafted',
+  },
 ]
-
 export const orderedLearningPath = [...learningPath].sort(
   (a, b) => a.order - b.order,
 )
