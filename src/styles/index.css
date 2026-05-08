@@ -1738,3 +1738,567 @@ h2 {
 .student-problem p {
   color: #3d4f5f;
 }
+/* ==========================================================================
+   UI Polish Pass 03 - Reader Comfort and Interface Consistency
+   Append this block to the bottom of: src/styles/index.css
+
+   Scope:
+   - visual comfort
+   - spacing and hierarchy
+   - reader rhythm
+   - card consistency
+   - related panel balance
+   - tool drawer readability
+   - glossary support
+   - mobile/narrow-width comfort
+
+   No content, route, tool, architecture, or feature changes.
+   ========================================================================== */
+
+:root {
+  --vn-reader-width: 740px;
+  --vn-reader-wide: 880px;
+  --vn-radius-soft: 1.25rem;
+  --vn-radius-panel: 1.45rem;
+  --vn-shadow-soft: 0 12px 28px rgba(18, 48, 71, 0.065);
+  --vn-shadow-card: 0 16px 38px rgba(18, 48, 71, 0.085);
+  --vn-shadow-hover: 0 18px 42px rgba(18, 48, 71, 0.11);
+}
+
+/* Keep the global frame spacious without making the app feel like a dashboard. */
+.main-content {
+  width: min(1140px, 100%);
+  padding-top: clamp(1rem, 3vw, 2.4rem);
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.page-stack {
+  gap: clamp(1.1rem, 2.5vw, 1.6rem);
+}
+
+/* Header polish: keep the sticky nav useful, but visually quiet. */
+.site-header {
+  padding-block: 0.82rem;
+  background: rgba(248, 251, 252, 0.92);
+  box-shadow: 0 6px 18px rgba(18, 48, 71, 0.04);
+}
+
+.brand-mark {
+  flex: 0 0 auto;
+}
+
+.brand-mark img {
+  display: block;
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+.nav-link {
+  padding: 0.5rem 0.78rem;
+}
+
+/* Hero and page headers should feel finished, not oversized. */
+.hero-card,
+.page-header {
+  border-radius: var(--vn-radius-panel);
+}
+
+.page-header h1,
+.hero-card h1 {
+  max-width: 760px;
+}
+
+.page-header > p,
+.hero-card > p {
+  max-width: var(--vn-reader-width);
+}
+
+/* Reader page comfort. */
+.reader-layout {
+  gap: 0;
+  border-radius: var(--vn-radius-panel);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 252, 253, 0.8));
+}
+
+.section-header {
+  padding-top: clamp(1.55rem, 4vw, 2.7rem);
+  padding-bottom: clamp(1.35rem, 3vw, 2.15rem);
+}
+
+.section-header h1 {
+  max-width: var(--vn-reader-width);
+  margin-bottom: 0.8rem;
+}
+
+.section-subtitle {
+  max-width: var(--vn-reader-width);
+  line-height: 1.65;
+}
+
+/* The student problem should guide orientation, not shout at the reader. */
+.student-problem {
+  max-width: var(--vn-reader-width);
+  padding: 0.95rem 1rem;
+  border-left-width: 3px;
+  background:
+    linear-gradient(135deg, rgba(223, 240, 245, 0.58), rgba(255, 247, 234, 0.54));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
+}
+
+.student-problem p {
+  color: var(--vn-ink-muted);
+  line-height: 1.65;
+}
+
+/* Main reading body. */
+.section-body {
+  width: 100%;
+  max-width: var(--vn-reader-width);
+  margin: 0 auto;
+  gap: 1.12rem;
+  padding-top: clamp(1.6rem, 4vw, 2.65rem);
+  padding-bottom: clamp(1.6rem, 4vw, 2.65rem);
+}
+
+.section-body p {
+  color: var(--vn-ink-muted);
+  font-size: clamp(1.03rem, 1.2vw, 1.08rem);
+  line-height: 1.78;
+}
+
+.section-body h2 {
+  margin-top: 2.05rem;
+  margin-bottom: 0.1rem;
+  font-size: clamp(1.34rem, 2vw, 1.72rem);
+  line-height: 1.18;
+}
+
+.section-body h2:first-child {
+  margin-top: 0;
+}
+
+.section-list {
+  gap: 0.62rem;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.section-list li {
+  line-height: 1.68;
+}
+
+/* Learning path and section card polish. */
+.cluster-list {
+  gap: clamp(1.05rem, 2.5vw, 1.45rem);
+}
+
+.cluster-panel {
+  gap: 1.1rem;
+  border-radius: var(--vn-radius-panel);
+  padding: clamp(1.05rem, 2.8vw, 1.45rem);
+}
+
+.cluster-panel-header h2 {
+  max-width: var(--vn-reader-wide);
+  line-height: 1.22;
+}
+
+.section-grid {
+  gap: 0.95rem;
+}
+
+.section-card,
+.section-card-link {
+  min-height: 100%;
+}
+
+.section-card-link {
+  border-radius: var(--vn-radius-soft);
+  padding: 1.18rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.78));
+}
+
+.section-card-link h3 {
+  margin-bottom: 0.15rem;
+  font-size: 1.08rem;
+  line-height: 1.28;
+}
+
+.section-card-link p {
+  line-height: 1.58;
+}
+
+.section-card-link:hover {
+  background:
+    radial-gradient(circle at 96% 10%, rgba(242, 140, 40, 0.09), transparent 11rem),
+    rgba(255, 255, 255, 0.94);
+}
+
+/* Related panels should be useful but secondary. */
+.related-panel,
+.glossary-term-panel {
+  width: calc(100% - clamp(3rem, 8vw, 6rem));
+  max-width: var(--vn-reader-wide);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: var(--vn-radius-panel);
+}
+
+.related-panel {
+  gap: 0.85rem;
+  background:
+    linear-gradient(180deg, rgba(248, 252, 253, 0.76), rgba(255, 255, 255, 0.68));
+  box-shadow: 0 10px 24px rgba(18, 48, 71, 0.055);
+}
+
+.related-panel h2,
+.glossary-term-panel h2 {
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
+.related-list {
+  gap: 0.72rem;
+}
+
+.related-card {
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.74);
+  padding: 0.88rem;
+}
+
+.related-card strong {
+  line-height: 1.28;
+}
+
+.related-card p {
+  color: var(--vn-muted-text);
+  line-height: 1.55;
+}
+
+/* Section navigation should remain obvious without overpowering related panels. */
+.section-navigation {
+  max-width: var(--vn-reader-wide);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: clamp(1.15rem, 3vw, 1.7rem);
+}
+
+.section-nav-button {
+  border-radius: 1rem;
+  background: rgba(255, 247, 234, 0.74);
+  padding: 0.92rem 1rem;
+}
+
+/* Tools Library and Tool Drawer readability. */
+.tool-panel {
+  border-radius: var(--vn-radius-panel);
+  padding: clamp(1.1rem, 3vw, 1.45rem);
+}
+
+.tool-panel-header,
+.tool-section {
+  max-width: var(--vn-reader-wide);
+}
+
+.tool-section {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.tool-section h3 {
+  margin-bottom: 0;
+}
+
+.tool-section ol {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.field-list {
+  gap: 0.8rem;
+}
+
+.field-card,
+.drawer-field-card {
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.tool-drawer {
+  width: min(500px, 100%);
+  padding: clamp(1.05rem, 3vw, 1.65rem);
+}
+
+.tool-drawer-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(18, 48, 71, 0.09);
+}
+
+.tool-drawer-section {
+  gap: 0.62rem;
+  margin-bottom: 1.22rem;
+}
+
+.tool-drawer-section h3 {
+  font-size: 1rem;
+}
+
+.tool-drawer-section p,
+.tool-drawer-section li {
+  line-height: 1.62;
+}
+
+.drawer-field-list {
+  gap: 0.65rem;
+}
+
+/* Glossary support should feel nearby, not like a second textbook. */
+.glossary-term-panel {
+  background:
+    linear-gradient(135deg, rgba(223, 240, 245, 0.44), rgba(255, 255, 255, 0.66));
+}
+
+.glossary-chip-row {
+  gap: 0.4rem;
+}
+
+.glossary-chip {
+  padding: 0.45rem 0.66rem;
+  font-size: 0.9rem;
+}
+
+.glossary-popup {
+  max-width: var(--vn-reader-width);
+  border-radius: 1.1rem;
+  background: rgba(255, 247, 234, 0.92);
+}
+
+.glossary-popup p {
+  line-height: 1.62;
+}
+
+.glossary-list {
+  gap: 0.9rem;
+}
+
+.glossary-card {
+  border-radius: var(--vn-radius-soft);
+  padding: 1.15rem;
+}
+
+.glossary-card h2 {
+  margin-bottom: 0.45rem;
+  font-size: 1.16rem;
+}
+
+.glossary-card p {
+  line-height: 1.6;
+}
+
+/* Mobile and narrow-width comfort. */
+@media (max-width: 860px) {
+  .site-header {
+    gap: 0.75rem;
+  }
+
+  .main-content {
+    padding-inline: clamp(0.9rem, 4vw, 1.4rem);
+  }
+
+  .section-header,
+  .section-body,
+  .section-navigation {
+    padding-inline: clamp(1.05rem, 4vw, 1.4rem);
+  }
+
+  .related-panel,
+  .glossary-term-panel {
+    width: calc(100% - clamp(2rem, 8vw, 2.8rem));
+  }
+
+  .section-card-link {
+    padding: 1.05rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding-block: 0.72rem;
+  }
+
+  .brand-mark {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.78rem;
+  }
+
+  .brand-mark img {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+
+  .site-nav {
+    gap: 0.32rem;
+  }
+
+  .nav-link {
+    padding: 0.42rem 0.58rem;
+    font-size: 0.92rem;
+  }
+
+  .hero-card,
+  .page-header {
+    padding: 1.25rem;
+  }
+
+  .reader-layout {
+    border-radius: 1.15rem;
+  }
+
+  .section-header {
+    padding-top: 1.25rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .section-body {
+    gap: 1rem;
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+  }
+
+  .section-body p {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .section-body h2 {
+    margin-top: 1.65rem;
+    font-size: 1.28rem;
+  }
+
+  .student-problem {
+    padding: 0.85rem;
+    border-radius: 0.9rem;
+  }
+
+  .related-panel,
+  .glossary-term-panel {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+
+  .section-navigation {
+    gap: 0.68rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .section-nav-button {
+    padding: 0.85rem;
+  }
+
+  .tool-drawer {
+    padding: 1rem;
+  }
+
+  .tool-drawer-header {
+    gap: 0.75rem;
+  }
+
+  .drawer-close-button,
+  .small-close-button {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-nav {
+    width: 100%;
+  }
+
+  .nav-link {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .main-content {
+    padding-inline: 0.75rem;
+  }
+
+  .section-header,
+  .section-body,
+  .section-navigation {
+    padding-inline: 0.95rem;
+  }
+
+  .related-panel,
+  .glossary-term-panel {
+    width: calc(100% - 1.5rem);
+  }
+
+  .glossary-chip {
+    font-size: 0.86rem;
+  }
+}
+
+/* Keep polish gentle for users who prefer less motion. */
+@media (prefers-reduced-motion: reduce) {
+  .primary-button,
+  .secondary-button,
+  .text-button,
+  .section-nav-button,
+  .related-card,
+  .drawer-close-button,
+  .small-close-button,
+  .card-action-button,
+  .glossary-chip,
+  .nav-link,
+  .section-card-link {
+    transition: none;
+  }
+
+  .primary-button:hover,
+  .secondary-button:hover,
+  .section-nav-button:hover,
+  .related-card:hover,
+  .drawer-close-button:hover,
+  .small-close-button:hover,
+  .card-action-button:hover,
+  .section-card-link:hover {
+    transform: none;
+  }
+}
+/* ==========================================================================
+   UI Polish Pass 03 Adjustment
+   Desktop reader alignment should feel grounded, not floating.
+   Keeps mobile behavior unchanged.
+   ========================================================================== */
+
+@media (min-width: 861px) {
+  .reader-layout .section-body {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: var(--vn-reader-width);
+    padding-left: clamp(1.5rem, 4vw, 3rem);
+    padding-right: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .reader-layout .glossary-term-panel,
+  .reader-layout .related-panel {
+    width: auto;
+    max-width: var(--vn-reader-wide);
+    margin-left: clamp(1.5rem, 4vw, 3rem);
+    margin-right: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .reader-layout .section-navigation {
+    width: auto;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: clamp(1.5rem, 4vw, 3rem);
+    padding-right: clamp(1.5rem, 4vw, 3rem);
+  }
+}
