@@ -1,7 +1,7 @@
 import type { GlossaryTerm } from './types'
 
 export const glossaryTerms: GlossaryTerm[] = [
-  {
+{
     id: 'anki',
     term: 'Anki',
     shortDefinition:
@@ -10,7 +10,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Anki can support recall, but it should not become the centre of paramedic learning or replace reasoning.',
     relatedSections: ['anki-for-paramedic-learning', 'clinical-recall-without-trivia'],
   },
-  {
+{
     id: 'capture-notes',
     term: 'Capture notes',
     shortDefinition:
@@ -19,7 +19,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Capture notes help students preserve useful learning moments from lectures, labs, and scenarios without trying to polish them immediately.',
     relatedSections: ['types-of-notes-and-idea-maturation'],
   },
- {
+{
   id: 'clinical-reasoning',
   term: 'Clinical reasoning',
   shortDefinition:
@@ -31,9 +31,11 @@ export const glossaryTerms: GlossaryTerm[] = [
     'meaning-before-memorization',
     'directives-through-purpose',
     'clinical-reasoning',
+    'the-five-whys',
+    'turning-feedback-into-action',
   ],
 },
-  {
+{
     id: 'clinical-recall',
     term: 'Clinical recall',
     shortDefinition:
@@ -42,7 +44,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Clinical recall helps students access knowledge in ways that support assessment, decisions, reassessment, and explanation.',
     relatedSections: ['clinical-recall-without-trivia', 'anki-for-paramedic-learning'],
   },
-  {
+{
     id: 'cognitive-load',
     term: 'Cognitive load',
     shortDefinition:
@@ -55,7 +57,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'smart-notes-for-paramedic-students',
     ],
   },
-  {
+{
     id: 'contraindication',
     term: 'Contraindication',
     shortDefinition:
@@ -64,7 +66,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Understanding contraindications by purpose helps students withhold appropriately instead of treating directives as memorized obstacles.',
     relatedSections: ['directives-through-purpose'],
   },
-  {
+{
     id: 'directive',
     term: 'Directive',
     shortDefinition:
@@ -73,7 +75,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Directives support safe decision-making, especially when information is incomplete or pressure is high.',
     relatedSections: ['directives-through-purpose'],
   },
-    {
+{
     id: 'directive-intent',
     term: 'Directive intent',
     shortDefinition:
@@ -86,7 +88,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'directives-through-purpose',
     ],
   },
-  {
+{
     id: 'learning-path',
     term: 'Learning path',
     shortDefinition:
@@ -95,7 +97,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'The learning path helps students move from orientation, to understanding, to notes, to recall without treating everything as separate advice.',
     relatedSections: ['how-to-use-this-guide', 'where-to-begin'],
   },
-  {
+{
     id: 'links',
     term: 'Links',
     shortDefinition:
@@ -104,7 +106,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Meaningful links help students connect physiology, directives, errors, and scenario decisions.',
     relatedSections: ['obsidian-for-learning-paramedicine'],
   },
-  {
+{
     id: 'meaning',
     term: 'Meaning',
     shortDefinition:
@@ -113,16 +115,21 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Meaning helps students interpret findings, anticipate change, and make decisions without relying only on memorized lists.',
     relatedSections: ['meaning-before-memorization'],
   },
-  {
+{
     id: 'metacognition',
     term: 'Metacognition',
     shortDefinition:
       'Awareness of how your own thinking and learning are behaving.',
     paramedicRelevance:
       'Students use metacognition when they notice overload, fixation, false confidence, or repeated errors before those patterns take over.',
-    relatedSections: ['learning-strain-is-not-always-a-personal-problem'],
+    relatedSections: [
+    'learning-strain-is-not-always-a-personal-problem',
+    'reflection-without-journaling',
+    'the-five-whys',
+    'turning-feedback-into-action',
+  ],
   },
-  {
+{
     id: 'obsidian',
     term: 'Obsidian',
     shortDefinition:
@@ -131,7 +138,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Obsidian can help students build connected notes, but it should remain a simple workspace rather than a productivity project.',
     relatedSections: ['obsidian-for-learning-paramedicine'],
   },
-  {
+{
     id: 'pathophysiology',
     term: 'Pathophysiology',
     shortDefinition:
@@ -154,7 +161,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     'pattern-recognition',
   ],
 },
-    {
+{
     id: 'performance-under-pressure',
     term: 'Performance under pressure',
     shortDefinition:
@@ -162,16 +169,18 @@ export const glossaryTerms: GlossaryTerm[] = [
     paramedicRelevance:
       'Paramedic students need learning systems that hold up during scenarios, OSCEs, and patient care when attention narrows.',
     relatedSections: [
-      'start-here-what-vitalnotes-is',
-      'where-to-begin',
-      'cognitive-load',
-      'why-studying-feels-productive-but-fails-under-pressure',
-      'osce-preparation',
-      'performance-under-pressure',
-      'resetting-when-thinking-narrows',
-    ],
+    'start-here-what-vitalnotes-is',
+    'where-to-begin',
+    'cognitive-load',
+    'why-studying-feels-productive-but-fails-under-pressure',
+    'osce-preparation',
+    'performance-under-pressure',
+    'resetting-when-thinking-narrows',
+    'reflection-without-journaling',
+    'turning-feedback-into-action',
+  ],
   },
-  {
+{
     id: 'perfusion',
     term: 'Perfusion',
     shortDefinition:
@@ -195,7 +204,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     'avoiding-premature-closure',
   ],
 },
-  {
+{
     id: 'recall',
     term: 'Recall',
     shortDefinition:
@@ -204,7 +213,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Recall matters because students need access to knowledge during labs, OSCEs, and calls, not only while reviewing notes.',
     relatedSections: ['retrieval-and-spaced-learning'],
   },
-  {
+{
     id: 'recognition',
     term: 'Recognition',
     shortDefinition:
@@ -213,7 +222,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Recognition can feel like learning, but it does not always mean the student can use the information under pressure.',
     relatedSections: ['why-studying-feels-productive-but-fails-under-pressure'],
   },
-   {
+{
     id: 'reflection',
     term: 'Reflection',
     shortDefinition:
@@ -221,13 +230,16 @@ export const glossaryTerms: GlossaryTerm[] = [
     paramedicRelevance:
       'Reflection helps students learn from scenarios, feedback, mistakes, and pressure without turning every difficulty into a personal failure.',
     relatedSections: [
-      'start-here-what-vitalnotes-is',
-      'how-to-use-this-guide',
-      'where-to-begin',
-      'learning-strain-is-not-always-a-personal-problem',
-    ],
+    'start-here-what-vitalnotes-is',
+    'how-to-use-this-guide',
+    'where-to-begin',
+    'learning-strain-is-not-always-a-personal-problem',
+    'reflection-without-journaling',
+    'the-five-whys',
+    'turning-feedback-into-action',
+  ],
   },
-  {
+{
     id: 'retrieval-practice',
     term: 'Retrieval practice',
     shortDefinition:
@@ -240,7 +252,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'clinical-recall-without-trivia',
     ],
   },
-  {
+{
     id: 'schema',
     term: 'Schema',
     shortDefinition:
@@ -249,7 +261,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Schemas help students group findings and mechanisms so clinical situations feel less like disconnected facts.',
     relatedSections: ['meaning-before-memorization', 'pathophysiology-through-patterns'],
   },
-  {
+{
     id: 'spacing',
     term: 'Spacing',
     shortDefinition:
@@ -258,7 +270,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Spacing helps knowledge remain accessible after delay, distraction, and pressure.',
     relatedSections: ['retrieval-and-spaced-learning', 'anki-for-paramedic-learning'],
   },
-  {
+{
     id: 'smart-notes',
     term: 'Smart Notes',
     shortDefinition:
@@ -272,7 +284,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'obsidian-for-learning-paramedicine',
     ],
   },
-  {
+{
     id: 'structure',
     term: 'Structure',
     shortDefinition:
@@ -281,7 +293,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Structure helps students reduce unnecessary load so they can assess, decide, communicate, and reassess more reliably.',
     relatedSections: ['cognitive-load'],
   },
-  {
+{
     id: 'transfer',
     term: 'Transfer',
     shortDefinition:
@@ -293,7 +305,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'clinical-recall-without-trivia',
     ],
   },
-  {
+{
     id: 'working-memory',
     term: 'Working memory',
     shortDefinition:
@@ -302,7 +314,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Working memory fills quickly during paramedic scenarios, which is why structure, notes, and retrieval practice matter.',
     relatedSections: ['cognitive-load'],
   },
-  {
+{
     id: 'working-notes',
     term: 'Working notes',
     shortDefinition:
@@ -314,7 +326,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       'types-of-notes-and-idea-maturation',
     ],
   },
-  {
+{
   id: 'working-explanation',
   term: 'Working explanation',
   shortDefinition:
@@ -361,7 +373,12 @@ export const glossaryTerms: GlossaryTerm[] = [
     'Settling on an explanation too early and no longer noticing information that should make you reconsider.',
   paramedicRelevance:
     'Premature closure can cause students to miss changing vitals, poor treatment response, or details that do not fit the first impression.',
-  relatedSections: ['pattern-recognition', 'avoiding-premature-closure'],
+  relatedSections: [
+    'pattern-recognition',
+    'avoiding-premature-closure',
+    'the-five-whys',
+    'turning-feedback-into-action',
+  ],
 },
 {
   id: 'fixation',
@@ -399,6 +416,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     'osce-preparation',
     'performance-under-pressure',
     'resetting-when-thinking-narrows',
+    'reflection-without-journaling',
+    'the-five-whys',
   ],
 },
 {
@@ -438,6 +457,9 @@ export const glossaryTerms: GlossaryTerm[] = [
     'scenario-days-as-learning-tools',
     'common-errors-and-what-they-reveal',
     'focused-practice-after-feedback',
+    'reflection-without-journaling',
+    'the-five-whys',
+    'turning-feedback-into-action',
   ],
 },
 {
@@ -451,6 +473,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     'common-errors-and-what-they-reveal',
     'scenario-days-as-learning-tools',
     'focused-practice-after-feedback',
+    'the-five-whys',
+    'turning-feedback-into-action',
   ],
 },
 {
@@ -464,6 +488,9 @@ export const glossaryTerms: GlossaryTerm[] = [
     'common-errors-and-what-they-reveal',
     'focused-practice-after-feedback',
     'scenario-days-as-learning-tools',
+    'reflection-without-journaling',
+    'the-five-whys',
+    'turning-feedback-into-action',
   ],
 },
 {
@@ -516,9 +543,49 @@ export const glossaryTerms: GlossaryTerm[] = [
     'osce-preparation',
     'performance-under-pressure',
     'resetting-when-thinking-narrows',
+    'reflection-without-journaling',
   ],
 },
-]
+{
+  id: 'adjustment',
+  term: 'Adjustment',
+  shortDefinition:
+    'One specific change a student carries into the next attempt.',
+  paramedicRelevance:
+    'Adjustments help students turn feedback, reflection, or error analysis into something they can actually test during a scenario, lab, OSCE, or placement moment.',
+  relatedSections: [
+    'reflection-without-journaling',
+    'the-five-whys',
+    'turning-feedback-into-action',
+    'focused-practice-after-feedback',
+  ],
+},
+{
+  id: 'rumination',
+  term: 'Rumination',
+  shortDefinition:
+    'Replaying a mistake or performance repeatedly without reaching a clear adjustment.',
+  paramedicRelevance:
+    'Rumination can feel responsible after a difficult scenario or OSCE, but it often increases emotional load without improving the next attempt.',
+  relatedSections: [
+    'reflection-without-journaling',
+    'the-five-whys',
+    'turning-feedback-into-action',
+  ],
+},
+{
+  id: 'five-whys',
+  term: 'Five Whys',
+  shortDefinition:
+    'A brief questioning structure used to trace a mistake back to an actionable learning target.',
+  paramedicRelevance:
+    'The Five Whys help students look beneath surface mistakes and find whether the issue involves reasoning, preparation, attention, structure, or understanding.',
+  relatedSections: [
+    'the-five-whys',
+    'common-errors-and-what-they-reveal',
+    'turning-feedback-into-action',
+  ],
+}]
 
 export const orderedGlossaryTerms = [...glossaryTerms].sort((a, b) =>
   a.term.localeCompare(b.term),

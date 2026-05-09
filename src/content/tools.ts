@@ -245,7 +245,176 @@ export const tools: Tool[] = [
     'performance-under-pressure',
     'resetting-when-thinking-narrows',
   ],
-}
+},
+  {
+    id: 'reflection-without-journaling-tool',
+    title: 'Reflection Without Journaling Tool',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Help students extract one useful adjustment from a scenario, OSCE, lab, placement moment, or feedback conversation without writing a full reflection.',
+    whenToUse:
+      'Use after performance or feedback when you need to learn from one meaningful moment without replaying the whole call.',
+    steps: [
+      'Choose one moment where a decision, uncertainty, or feedback point mattered.',
+      'Name what shaped your action in that moment.',
+      'Choose one adjustment you can carry into the next attempt.',
+      'Stop once the adjustment is clear enough to test.',
+    ],
+    fields: [
+      {
+        id: 'one-moment',
+        label: 'One moment',
+        helperText:
+          'What specific moment are you reflecting on? Keep it smaller than the whole call.',
+      },
+      {
+        id: 'what-shaped-it',
+        label: 'What shaped it',
+        helperText:
+          'What were you noticing, assuming, feeling, or prioritizing at the time?',
+      },
+      {
+        id: 'one-adjustment',
+        label: 'One adjustment',
+        helperText:
+          'What is one specific thing you will notice or do differently next time?',
+      },
+    ],
+    builderStructure: [
+      'Moment: What specific point in the performance matters?',
+      'Shape: What attention, assumption, pressure, or structure influenced the action?',
+      'Adjustment: What will I notice or do differently next time?',
+    ],
+    relatedSections: [
+      'reflection-without-journaling',
+      'the-five-whys',
+      'turning-feedback-into-action',
+      'scenario-days-as-learning-tools',
+      'focused-practice-after-feedback',
+      'resetting-when-thinking-narrows',
+    ],
+  },
+  {
+    id: 'five-whys-tool',
+    title: 'Five Whys Tool',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Help students trace a repeated or confusing mistake back to a useful learning target instead of fixing only the surface behaviour.',
+    whenToUse:
+      'Use when feedback feels accurate but hard to act on, or when the same kind of mistake keeps returning in different scenarios.',
+    steps: [
+      'Choose one mistake, delay, or repeated pattern.',
+      'Ask what led to it, using why questions without turning them into self-blame.',
+      'Stop when the answer points to learning, structure, reasoning, preparation, or attention.',
+      'Turn that endpoint into one adjustment for next time.',
+    ],
+    fields: [
+      {
+        id: 'surface-mistake',
+        label: 'Surface mistake',
+        helperText:
+          'What happened on the surface? Name the moment, not your whole performance.',
+      },
+      {
+        id: 'why-chain',
+        label: 'Why chain',
+        helperText:
+          'What led to this? Keep asking until the answer becomes useful rather than judgmental.',
+      },
+      {
+        id: 'learning-target',
+        label: 'Learning target',
+        helperText:
+          'What part of your learning, structure, reasoning, or preparation needs support?',
+      },
+      {
+        id: 'next-adjustment',
+        label: 'Next adjustment',
+        helperText:
+          'What is one specific change you can test in the next attempt?',
+      },
+    ],
+    builderStructure: [
+      'What happened?',
+      'What made that response more likely at the time?',
+      'What assumption, structure, or knowledge gap shaped it?',
+      'What learning target does this point toward?',
+      'What adjustment will I test next?',
+    ],
+    relatedSections: [
+      'the-five-whys',
+      'reflection-without-journaling',
+      'turning-feedback-into-action',
+      'common-errors-and-what-they-reveal',
+      'focused-practice-after-feedback',
+      'avoiding-premature-closure',
+    ],
+  },
+  {
+    id: 'clinical-reasoning-check',
+    title: 'Clinical Reasoning Check',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Help students check whether their current explanation is supported, flexible, and safe enough to guide action.',
+    whenToUse:
+      'Use during study, debrief, scenario preparation, or reflection when you need to review a decision without waiting for perfect certainty.',
+    steps: [
+      'Name what you think is happening right now.',
+      'Identify what supports that explanation.',
+      'Identify what does not fit or still needs checking.',
+      'Choose the safest action while the picture develops.',
+      'Decide what reassessment would make you change course.',
+    ],
+    fields: [
+      {
+        id: 'working-explanation',
+        label: 'Working explanation',
+        helperText:
+          'What do you think is happening right now? Hold it as a working explanation, not a final answer.',
+      },
+      {
+        id: 'supports-it',
+        label: 'What supports it',
+        helperText:
+          'What cues, findings, history, or response patterns support this explanation?',
+      },
+      {
+        id: 'does-not-fit',
+        label: 'What does not fit',
+        helperText:
+          'What finding, cue, or uncertainty should keep your thinking flexible?',
+      },
+      {
+        id: 'safest-action',
+        label: 'Safest action',
+        helperText:
+          'What action is safe and useful while you continue to clarify the problem?',
+      },
+      {
+        id: 'change-course',
+        label: 'Change course cue',
+        helperText:
+          'What reassessment finding or new information would make you revise your explanation or plan?',
+      },
+    ],
+    builderStructure: [
+      'Explain: What do I think is happening right now?',
+      'Support: What information supports that explanation?',
+      'Test: What does not fit or still needs checking?',
+      'Act: What is the safest action while I clarify?',
+      'Reassess: What would make me change course?',
+    ],
+    relatedSections: [
+      'clinical-reasoning',
+      'pattern-recognition',
+      'avoiding-premature-closure',
+      'the-five-whys',
+      'turning-feedback-into-action',
+    ],
+  }
 ]
 
 export const activeTools = tools.filter((tool) => tool.status === 'drafted')

@@ -82,7 +82,7 @@ export const learningPath: LearningPathCluster[] = [
       'pattern-recognition',
       'avoiding-premature-closure',
     ],
-    relatedTools: [],
+    relatedTools: ['clinical-reasoning-check'],
     status: 'drafted',
   },
   {
@@ -96,7 +96,7 @@ export const learningPath: LearningPathCluster[] = [
       'common-errors-and-what-they-reveal',
       'focused-practice-after-feedback',
     ],
-    relatedTools: [],
+    relatedTools: ['scenario-day-reset', 'five-whys-tool'],
     status: 'drafted',
   },
   {
@@ -111,6 +111,24 @@ export const learningPath: LearningPathCluster[] = [
       'resetting-when-thinking-narrows',
     ],
     relatedTools: ['osce-reset'],
+    status: 'drafted',
+  },
+  {
+    id: 'reflect-and-improve',
+    title: '08 Reflect and Improve',
+    order: 8,
+    purpose:
+      'Help students turn scenarios, OSCEs, feedback, mistakes, and difficult performances into specific adjustments without drifting into rumination or vague self-judgment.',
+    sections: [
+      'reflection-without-journaling',
+      'the-five-whys',
+      'turning-feedback-into-action',
+    ],
+    relatedTools: [
+      'reflection-without-journaling-tool',
+      'five-whys-tool',
+      'clinical-reasoning-check',
+    ],
     status: 'drafted',
   },
 ]
