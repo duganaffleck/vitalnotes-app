@@ -8,7 +8,37 @@ Their job is to reduce reading friction.
 
 They should help a student keep moving when a term might otherwise slow them down.
 
-Popups should not carry the main teaching. If a concept is necessary to understand the section, it belongs in the section itself.
+Popups should not carry the main teaching.
+
+If a concept is necessary to understand the section, it belongs in the section itself.
+
+---
+
+## Current Status
+
+The first-slice app includes simple glossary popup support.
+
+The first-slice content migration is complete and pushed.
+
+The app now renders real student-facing content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Current related checkpoint:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+Current glossary cleanup task:
+
+- [[Glossary Term Audit]]
+
+The next glossary task is not broad expansion.
+
+The next task is to confirm that first-slice glossary IDs in `src/content/sections.ts` match entries in `src/content/glossary.ts`.
 
 ---
 
@@ -21,6 +51,8 @@ A good popup helps the student think:
 “I remember what that means. I can keep reading.”
 
 It should not make the student feel like they have opened another lesson.
+
+The writing remains the main experience.
 
 ---
 
@@ -87,6 +119,37 @@ Current core examples include:
 Not every term needs to appear in every section.
 
 Use only the terms that reduce friction in that specific reading context.
+
+---
+
+## First-Slice Glossary Audit Targets
+
+During [[Glossary Term Audit]], check whether these potential first-slice glossary IDs are present, consistent, and useful:
+
+- `reflection`
+- `performance-under-pressure`
+- `directive-intent`
+- `recognition`
+- `spacing`
+- `clinical-recall`
+- `anki`
+- `links`
+- `obsidian`
+- `capture-notes`
+- `working-notes`
+- `transfer`
+- `pathophysiology`
+- `perfusion`
+- `reassessment`
+
+The audit should compare:
+
+- `src/content/sections.ts`
+- `src/content/glossary.ts`
+
+Only first-slice glossary terms should be added or normalized during this pass.
+
+Do not use the audit as an excuse to expand the glossary broadly.
 
 ---
 
@@ -183,9 +246,9 @@ A popup should not become a hidden section.
 
 ## Glossary Page
 
-The full glossary page may contain all approved glossary terms.
+The full [[Glossary]] page may contain all approved glossary terms.
 
-The glossary page should still remain student-facing and plain-language.
+The [[Glossary]] page should still remain student-facing and plain-language.
 
 It should not become:
 
@@ -211,7 +274,9 @@ Possible interaction patterns:
 - click to open side card
 - glossary drawer on mobile
 
-The first version should use the simplest approach that keeps reading smooth.
+The current first-slice app uses simple glossary popup support.
+
+Keep this simple until first-slice reader testing shows a real need for change.
 
 Avoid visual clutter.
 
@@ -221,7 +286,7 @@ If too many terms are marked in a paragraph, the section will start to feel inte
 
 ## Side-Panel or Drawer Behavior
 
-A side-panel or drawer may be useful if inline popups feel cramped, especially on mobile.
+A side-panel or drawer may be useful later if inline popups feel cramped, especially on mobile.
 
 If used, it should:
 
@@ -232,6 +297,8 @@ If used, it should:
 - contain only the selected term unless the student chooses to browse more
 
 Do not make the student navigate away from the section just to understand a term.
+
+Do not redesign glossary behavior before [[Glossary Term Audit]] and first-slice reader testing are complete.
 
 ---
 
@@ -252,6 +319,7 @@ Do not turn every popup into a navigation hub.
 Popup and glossary language should be maintained in:
 
 - [[Glossary and Popup Map]]
+- `src/content/glossary.ts`
 
 Design behavior should stay aligned with:
 
@@ -264,20 +332,79 @@ Tool-related terminology should stay aligned with:
 - [[Tool Library Map]]
 - [[Tool Drawer Design]]
 
+Development tracking should stay aligned with:
+
+- [[Next Build Tasks]]
+- [[Bugs and Fixes]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+---
+
+## Current First-Slice Glossary Scope
+
+The current first-slice glossary should support:
+
+### [[00 Start Here]]
+
+Terms that help students understand the guide structure, learning path, tools, and how to enter through a current problem.
+
+### [[01 Why Learning Feels Hard]]
+
+Terms related to cognitive load, working memory, overload, structure, familiarity, access, productive difficulty, and wasted difficulty.
+
+### [[02 Build Understanding]]
+
+Terms related to meaning, mechanisms, pathophysiology, compensation, perfusion, clinical risk, directive intent, contraindications, and reassessment.
+
+### [[03 Build Usable Notes]]
+
+Terms related to Smart Notes, capture notes, working notes, idea maturation, Obsidian, vaults, markdown, links, and reference material.
+
+### [[04 Build Recall]]
+
+Terms related to retrieval, spacing, recognition, clinical recall, recall prompts, Anki, flashcards, transfer, cues, and reassessment.
+
 ---
 
 ## Current Notes
 
-- Terms from the Start Here cluster have been added to [[Glossary and Popup Map]].
-- Terms from the Why Learning Feels Hard cluster have been added.
-- Terms from the Build Understanding cluster have been added.
-- Terms from the Build Usable Notes cluster have been added.
-- Terms from the Build Recall cluster have been added.
+- Terms from [[00 Start Here]] have been added to [[Glossary and Popup Map]].
+- Terms from [[01 Why Learning Feels Hard]] have been added.
+- Terms from [[02 Build Understanding]] have been added.
+- Terms from [[03 Build Usable Notes]] have been added.
+- Terms from [[04 Build Recall]] have been added.
 - Terms from [[Clinical Recall Prompt Builder]] have been added.
 - The glossary should stay practical and selective.
 - New glossary terms should be added only when they reduce reading friction across multiple sections.
 - Popups should support the app experience, not make it feel more complex.
-- Build Recall terms should support reading flow without making VitalNotes feel like an Anki platform or flashcard app.
+- [[04 Build Recall]] terms should support reading flow without making VitalNotes feel like an Anki platform or flashcard app.
+- [[Glossary Term Audit]] should happen after [[Retro Fix 01 - Bullet List Cleanup]].
+
+---
+
+## App Boundaries
+
+Glossary support should not become:
+
+- a learning science dictionary
+- a textbook
+- a quiz layer
+- a dashboard
+- a hidden lesson system
+- AI explanation support
+- a replacement for section content
+- an excuse to over-mark terms in the reader
+
+Do not add:
+
+- AI glossary generation
+- user-saved glossary notes
+- glossary scoring
+- glossary quizzes
+- spaced repetition inside glossary entries
+- [[Anki Integration]]
+- deck management
+- automated flashcard generation
 
 ---
 
@@ -286,3 +413,15 @@ Tool-related terminology should stay aligned with:
 Popups should reduce cognitive load.
 
 If a popup interrupts the reader more than it helps, it should not be there.
+
+---
+
+## Next Review
+
+Review this file after:
+
+1. [[Retro Fix 01 - Bullet List Cleanup]]
+2. [[Glossary Term Audit]]
+3. first-slice reader-quality testing
+
+Do not expand popup behavior before those are complete.

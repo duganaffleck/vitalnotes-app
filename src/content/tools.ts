@@ -45,6 +45,34 @@ export const tools: Tool[] = [
       },
     ],
     builderStructure: [],
+        example: {
+      context:
+        'A student is reviewing oxygen use after a shortness of breath scenario where the patient was anxious, tachypneic, and sitting upright, but their saturation stayed around 95 percent.',
+      entries: [
+        {
+          label: 'Directive or decision',
+          text: 'Oxygen administration for a patient with shortness of breath.',
+        },
+        {
+          label: 'Clinical risk',
+          text: 'The student is trying to avoid both undertreating true hypoxia and applying oxygen automatically when it is not clearly supporting the patient.',
+        },
+        {
+          label: 'What it supports',
+          text: 'Oxygen should support oxygen delivery when assessment suggests hypoxia, increased work of breathing, poor perfusion, altered mental status, or deterioration.',
+        },
+        {
+          label: 'Boundaries',
+          text: 'A normal saturation with good waveform quality does not end the assessment. The student still needs to consider work of breathing, skin, mental status, trajectory, and whether the patient is improving or tiring.',
+        },
+        {
+          label: 'Reassessment',
+          text: 'After any decision, reassess respiratory effort, SpO2 waveform quality, lung sounds, mental status, skin, positioning, and whether the patient is becoming more or less able to speak.',
+        },
+      ],
+      nextAdjustment:
+        'In the next respiratory scenario, the student will explain oxygen decisions using patient condition and trajectory, not saturation alone.',
+    },
     relatedSections: ['directives-through-purpose'],
   },
   {
@@ -92,6 +120,34 @@ export const tools: Tool[] = [
       },
     ],
     builderStructure: [],
+        example: {
+      context:
+        'A student keeps mixing up wheezing that improves because treatment is working with wheezing that becomes quieter because the patient is tiring.',
+      entries: [
+        {
+          label: 'Claim',
+          text: 'Quieter lung sounds after treatment are only reassuring if the patient also looks and works better.',
+        },
+        {
+          label: 'Explanation',
+          text: 'In obstructive breathing problems, airflow can improve after treatment, but worsening fatigue can also reduce air movement. The sound alone is not enough. The patient’s effort, speech, mental status, and overall trend decide what the change means.',
+        },
+        {
+          label: 'Clinical signals',
+          text: 'Accessory muscle use, ability to speak, posture, mental status, respiratory rate, SpO2 trend, ETCO2 if available, and whether the patient looks relieved or exhausted.',
+        },
+        {
+          label: 'Common confusion',
+          text: 'Students sometimes hear less wheezing and assume improvement before checking whether ventilation is actually better.',
+        },
+        {
+          label: 'Links',
+          text: 'Work of breathing, respiratory fatigue, reassessment after intervention, asthma patterns, pattern recognition safety check.',
+        },
+      ],
+      nextAdjustment:
+        'Before the next respiratory lab, the student will review this note and practise saying what reassessment findings would prove improvement.',
+    },
     relatedSections: [
       'smart-notes-for-paramedic-students',
       'types-of-notes-and-idea-maturation',
@@ -148,6 +204,34 @@ export const tools: Tool[] = [
       'Reassess: What change would tell me the situation is improving or worsening?',
       'Explain: How would I justify this decision clearly?',
     ],
+        example: {
+      context:
+        'A student wants to build a recall prompt from a missed reassessment after salbutamol in a respiratory scenario.',
+      entries: [
+        {
+          label: 'Source idea',
+          text: 'After bronchodilator treatment, improvement must be confirmed through reassessment rather than assumed.',
+        },
+        {
+          label: 'Clinical use',
+          text: 'This should help the student remember what to check after treatment and avoid treating the medication as the end of the decision.',
+        },
+        {
+          label: 'Recall prompt',
+          text: 'After salbutamol in a wheezy shortness of breath call, what reassessment findings would tell me the patient is improving rather than tiring?',
+        },
+        {
+          label: 'Expected answer',
+          text: 'Work of breathing decreases, speech improves, respiratory rate settles, air entry improves, mental status remains clear or improves, SpO2 trend is stable or improving, and the patient appears less exhausted.',
+        },
+        {
+          label: 'Safety check',
+          text: 'This is not trivia. It supports a real reassessment decision during patient care.',
+        },
+      ],
+      nextAdjustment:
+        'The student will build recall prompts around post-treatment decisions, not just medication indications.',
+    },
     relatedSections: ['clinical-recall-without-trivia', 'anki-for-paramedic-learning'],
   },
   {
@@ -187,6 +271,26 @@ export const tools: Tool[] = [
       },
     ],
     builderStructure: [],
+        example: {
+      context:
+        'A student finished a sepsis scenario feeling scattered. They completed many assessment pieces but delayed transport while trying to make the diagnosis feel certain.',
+      entries: [
+        {
+          label: 'Pattern',
+          text: 'The student kept gathering information after enough risk was already present to justify transport and ongoing reassessment.',
+        },
+        {
+          label: 'One adjustment',
+          text: 'Name the working concern earlier: “This patient may be septic or systemically unwell, and the safest plan is early transport with reassessment.”',
+        },
+        {
+          label: 'Next moment to test it',
+          text: 'In the next scenario, the student will name the main risk after the first full set of vitals and initial history, then decide whether assessment is still changing care or only delaying movement.',
+        },
+      ],
+      nextAdjustment:
+        'Carry one phrase into the next room: “What is the safest plan if this is worse than it looks?”',
+    },
     relatedSections: [
       'scenario-days-as-learning-tools',
       'common-errors-and-what-they-reveal',
@@ -240,6 +344,30 @@ export const tools: Tool[] = [
     'Action: What is the next patient-facing action?',
     'Reassess: What should I check after that action?',
   ],
+      example: {
+      context:
+        'During an OSCE chest pain station, a student feels time pressure and starts rushing toward treatment before finishing the safety checks around nitroglycerin.',
+      entries: [
+        {
+          label: 'Primary risk',
+          text: 'Possible cardiac ischemia, with the added risk of unsafe medication use if contraindications or blood pressure trends are missed.',
+        },
+        {
+          label: 'Return structure',
+          text: 'Return to the medication safety structure: indication, vital signs, contraindications, medication check, patient explanation, reassessment plan.',
+        },
+        {
+          label: 'Next patient-facing action',
+          text: 'Pause, confirm blood pressure and relevant contraindications, explain the medication briefly, then proceed only if the decision remains appropriate.',
+        },
+        {
+          label: 'Reassessment',
+          text: 'Recheck pain, blood pressure, patient appearance, symptoms, and whether the working explanation or transport priority has changed.',
+        },
+      ],
+      nextAdjustment:
+        'Practise a short reset phrase before the next OSCE: “Risk, structure, action, reassess.”',
+    },
   relatedSections: [
     'osce-preparation',
     'performance-under-pressure',
@@ -286,6 +414,34 @@ export const tools: Tool[] = [
       'Shape: What attention, assumption, pressure, or structure influenced the action?',
       'Adjustment: What will I notice or do differently next time?',
     ],
+        example: {
+      context:
+        'A student ran a respiratory scenario, gave treatment appropriately, then moved on without reassessing whether the patient was improving.',
+      entries: [
+        {
+          label: 'One moment',
+          text: 'The moment immediately after salbutamol was administered.',
+        },
+        {
+          label: 'What was happening',
+          text: 'The student felt relieved because an appropriate intervention had been completed and started thinking about the next task.',
+        },
+        {
+          label: 'What the student focused on',
+          text: 'Medication completion, equipment cleanup, and moving the scenario forward.',
+        },
+        {
+          label: 'What was missed',
+          text: 'The treatment had not been tested. The student did not reassess work of breathing, speech, lung sounds, mental status, SpO2 trend, or fatigue.',
+        },
+        {
+          label: 'Adjustment',
+          text: 'After every meaningful intervention, pause long enough to ask, “Did this change the patient, or only change what I did?”',
+        },
+      ],
+      nextAdjustment:
+        'In the next scenario, the student will build reassessment into the action itself: treat, look again, then decide.',
+    },
     relatedSections: [
       'reflection-without-journaling',
       'the-five-whys',
@@ -343,6 +499,34 @@ export const tools: Tool[] = [
       'What learning target does this point toward?',
       'What adjustment will I test next?',
     ],
+        example: {
+      context:
+        'A student delayed nitroglycerin in a chest pain scenario because they were waiting for the presentation to feel certain.',
+      entries: [
+        {
+          label: 'Surface mistake',
+          text: 'Nitroglycerin was delayed even though the patient had ongoing chest pain and no clear contraindication after assessment.',
+        },
+        {
+          label: 'Why 1',
+          text: 'The student was unsure the pain was cardiac.',
+        },
+        {
+          label: 'Why 2',
+          text: 'They treated nitroglycerin as something given only after certainty rather than after a safe, indicated decision point.',
+        },
+        {
+          label: 'Why 3',
+          text: 'Their directive review focused on thresholds and permission, not on what risk the directive is helping manage.',
+        },
+        {
+          label: 'Learning target',
+          text: 'Understand nitroglycerin as a risk-managed decision within boundaries, not as a reward for diagnostic certainty.',
+        },
+      ],
+      nextAdjustment:
+        'Before the next cardiac scenario, the student will practise explaining when nitro is indicated, when it is unsafe, and what reassessment should follow.',
+    },
     relatedSections: [
       'the-five-whys',
       'reflection-without-journaling',
@@ -407,6 +591,34 @@ export const tools: Tool[] = [
       'Act: What is the safest action while I clarify?',
       'Reassess: What would make me change course?',
     ],
+        example: {
+      context:
+        'A student locked onto asthma because the patient was wheezy, but missed signs that the patient was becoming fatigued.',
+      entries: [
+        {
+          label: 'Working explanation',
+          text: 'The patient may be having an asthma exacerbation or another obstructive respiratory problem.',
+        },
+        {
+          label: 'What supports it',
+          text: 'Wheezing, shortness of breath, increased work of breathing, history of inhaler use, and anxiety related to breathing difficulty.',
+        },
+        {
+          label: 'What does not fit',
+          text: 'The patient is becoming quieter, speaking less, looking tired, and showing less obvious air movement after the initial presentation.',
+        },
+        {
+          label: 'Safest action',
+          text: 'Continue appropriate respiratory management, reassess ventilation and fatigue closely, prepare for escalation, and avoid assuming quieter lungs mean improvement.',
+        },
+        {
+          label: 'Change course cue',
+          text: 'Worsening mental status, decreasing ability to speak, poor air entry, rising exhaustion, deteriorating vitals, or failure to improve after treatment.',
+        },
+      ],
+      nextAdjustment:
+        'The student will treat the first impression as a working explanation and actively search for signs that it is failing.',
+    },
     relatedSections: [
       'clinical-reasoning',
       'pattern-recognition',

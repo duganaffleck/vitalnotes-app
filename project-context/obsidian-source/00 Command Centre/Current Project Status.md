@@ -1,319 +1,658 @@
 # Current Project Status
 
-## Project Phase
+## Current Phase
 
-Content rebuild is underway.
+VitalNotes is in active app implementation.
 
-The Obsidian vault structure has been reviewed and is functioning as the source of truth for the VitalNotes rebuild.
+The app-readiness checkpoint is complete.
 
-The following clusters are drafted:
+The first vertical slice is approved, migrated, tested, pushed, and live.
+
+[[UI Pass 02 - Shared VitalNotes Brand System]] is complete, shipped, and locked.
+
+[[Slice 02 Migration Decisions - Think Clinically Foundations]] is complete.
+
+Slice 02 - Think Clinically Foundations is complete, migrated, tested, pushed, and live in the app.
+
+The current phase is:
+
+- first vertical slice stable
+- Slice 02 live in the app
+- shared brand system aligned with Scenario Generator
+- relevant Obsidian status files being updated
+- next bounded content direction not yet chosen
+
+The current priority is not feature expansion.
+
+The current priority is closing the Slice 02 documentation loop, then choosing the next bounded project step deliberately.
+
+---
+
+## Current App Status
+
+The app is currently built with:
+
+- Vite
+- React
+- TypeScript
+- VS Code
+- external Windows PowerShell
+- Git
+- GitHub
+
+The app currently runs locally in the browser.
+
+Local development address:
+
+`http://localhost:5173/`
+
+Reliable commands:
+
+- `npm run build`
+- `npm run dev`
+- `node scripts/audit-glossary.cjs`
+- `node scripts/audit-related-links.cjs`
+- `git status`
+- `git add .`
+- `git commit -m "..."`
+- `git push`
+
+External Windows PowerShell is being used because the VS Code integrated terminal has a ConPTY launch issue.
+
+Codex and Copilot are unreliable at this stage, so manual ChatGPT-guided copy/paste implementation remains the current build workflow.
+
+---
+
+## Current Working App Shell
+
+The app currently includes:
+
+- [[Home]] page
+- [[Learning Path]] page
+- [[Section Reader]] page
+- [[Tools Library]] page
+- [[Glossary]] page
+- hash-based navigation
+- previous and next section navigation
+- related sections
+- related tools
+- simple tool drawer
+- glossary term panel and popup
+- first-slice content model
+- Slice 02 content model
+- active tools model
+- glossary model
+- section body list support
+- shared VitalNotes brand styling aligned with Scenario Generator
+
+The section body renderer currently supports:
+
+- heading blocks
+- paragraph blocks
+- placeholder blocks
+- list blocks
+
+The app remains intentionally simple.
+
+It is a calm, content-driven reading interface.
+
+The writing is the main experience.
+
+---
+
+## Content Migration Status
+
+The approved first-slice content migration is complete.
+
+The approved Slice 02 content migration is complete.
+
+The app now renders real student-facing guide content across:
 
 - [[00 Start Here]]
 - [[01 Why Learning Feels Hard]]
 - [[02 Build Understanding]]
 - [[03 Build Usable Notes]]
 - [[04 Build Recall]]
+- [[05 Think Clinically]]
 
-The rebuild is currently in an architecture verification pass after completing the Build Recall cluster and adding [[Clinical Recall Prompt Builder]] as a new active drafted tool.
+First-slice status is recorded in:
 
-After this verification pass, the next step is an app-readiness checkpoint before deciding whether to begin the first app vertical slice.
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+- [[App Build Checkpoint 03 - First Slice Demo Ready]]
 
----
+Slice 02 status is recorded in:
 
-## Current Working Principle
+- [[Slice 02 Migration Decisions - Think Clinically Foundations]]
 
-The Obsidian vault is the source of truth for the VitalNotes rebuild.
+The first-slice reader has completed its demo-readiness cleanup pass.
 
-Any new files, texts, maps, prompts, app plans, or development documents must either fit inside the established vault structure or deliberately build on it with a clear reason.
-
-Content comes before code.
-
-The VS Code app build should not begin until the current content architecture is clean, the drafted clusters are properly tracked, and the first vertical slice has been checked against real sections and active tools.
-
-App planning can begin soon, but only as a grounded extension of the existing Obsidian structure.
+Slice 02 has completed migration, audit, build, smoke test, and push.
 
 ---
 
-## Completed Vault Setup
+## Migrated First-Slice Clusters
 
-The core vault structure has been reviewed and confirmed.
+### [[00 Start Here]]
 
-Key planning files reviewed include:
+- [[Start Here - What VitalNotes Is]]
+- [[How to Use This Guide]]
+- [[Where to Begin]]
 
-- [[MOC - VitalNotes Rebuild]]
-- [[VitalNotes Rebuild Master Map]]
-- [[Student Problem Map]]
-- [[New VitalNotes Learning Path]]
-- [[Old-to-New Section Mapping]]
-- [[Source Material Index]]
-- [[Reading Influence Pool]]
-- [[App Vision]]
-- [[Navigation Model]]
-- [[Section Reader Design]]
-- [[Popup and Glossary Rules]]
-- [[Tool Drawer Design]]
-- [[Content Schema]]
-- [[App Anti-Drift Rules]]
-- [[ChatGPT Content Rewrite Prompt]]
-- [[ChatGPT Section Review Prompt]]
+### [[01 Why Learning Feels Hard]]
 
----
+- [[Cognitive Load]]
+- [[Why Studying Feels Productive But Fails Under Pressure]]
+- [[Learning Strain Is Not Always a Personal Problem]]
 
-## Completed Content Drafts
+### [[02 Build Understanding]]
 
-### 00 Start Here
+- [[Meaning Before Memorization]]
+- [[Pathophysiology Through Patterns]]
+- [[Directives Through Purpose]]
 
-The Start Here cluster is drafted.
+### [[03 Build Usable Notes]]
 
-- [[Start Here - What VitalNotes Is]] - Draft v3
-- [[How to Use This Guide]] - Draft v3
-- [[Where to Begin]] - Draft v2
+- [[Smart Notes for Paramedic Students]]
+- [[Types of Notes and Idea Maturation]]
+- [[Obsidian for Learning Paramedicine]]
 
-This cluster establishes:
+### [[04 Build Recall]]
 
-- what VitalNotes is
-- how students should approach the guide
-- where students can begin based on their current learning problem
+- [[Retrieval and Spaced Learning]]
+- [[Clinical Recall Without Trivia]]
+- [[Anki for Paramedic Learning]]
+
+Build Recall is included in the first vertical slice and has been migrated.
+
+Do not revert to older language that treats [[04 Build Recall]] as excluded, undecided, future-facing, or not yet migrated.
 
 ---
 
-### 01 Why Learning Feels Hard
+## Slice 02 - Think Clinically Foundations
 
-The Why Learning Feels Hard cluster is drafted.
+Status: complete, migrated, tested, pushed, and live in the app
 
-- [[Cognitive Load]] - Draft v2
-- [[Why Studying Feels Productive But Fails Under Pressure]] - Draft v2
-- [[Learning Strain Is Not Always a Personal Problem]] - Draft v2
+Included sections:
 
-This cluster establishes:
+- [[05 Think Clinically/Clinical Reasoning]]
+- [[05 Think Clinically/Pattern Recognition]]
+- [[05 Think Clinically/Avoiding Premature Closure]]
 
-- why capable students can lose access to simple things when assessment, memory, communication, and decision-making compete for attention
-- why familiar study methods can feel productive without creating reliable access under scenario, lab, or OSCE conditions
-- why learning strain needs to be interpreted instead of automatically treated as personal failure
+Updated app files:
 
----
+- `src/content/sections.ts`
+- `src/content/glossary.ts`
+- `src/content/learningPath.ts`
 
-### 02 Build Understanding
+Completed checks:
 
-The Build Understanding cluster is drafted.
+- glossary audit passed
+- related links audit passed
+- build passed
+- Learning Path smoke test passed
+- previous and next navigation passed
+- glossary chip behavior passed
+- related-section cards passed
+- visual scan passed
 
-- [[Meaning Before Memorization]] - Draft v2
-- [[Pathophysiology Through Patterns]] - Draft v2
-- [[Directives Through Purpose]] - Draft v2
+Commit:
 
-This cluster establishes:
+`Add Think Clinically foundations slice`
 
-- why understanding depends on relationships, not just fact volume
-- how pathophysiology becomes usable when students think in mechanisms and patterns
-- how directives become easier and safer to apply when students understand purpose, risk, boundaries, and reassessment
+No new active tools were added during Slice 02 migration.
 
-Tool created from this cluster:
+Planned tools remain parked:
 
-- [[Directive Meaning Check]] - Draft v1
+- [[Tools Library/Clinical Reasoning Check]]
+- [[Tools Library/Pattern Recognition Safety Check]]
 
----
+Current tool decision:
 
-### 03 Build Usable Notes
-
-The Build Usable Notes cluster is drafted.
-
-- [[Smart Notes for Paramedic Students]] - Draft v2
-- [[Types of Notes and Idea Maturation]] - Draft v2
-- [[Obsidian for Learning Paramedicine]] - Draft v2
-
-This cluster establishes:
-
-- why notes should support thinking rather than storage
-- how Smart Notes help students create reusable clinical distinctions and explanations
-- how capture notes, working notes, and Smart Notes support different stages of understanding
-- how Obsidian can function as a simple learning workspace without becoming a productivity project
-
-Tool created from this cluster:
-
-- [[Smart Note Template]] - Draft v1
+- do not activate Slice 02 tools yet
+- consider [[Tools Library/Clinical Reasoning Check]] first if one tool clearly earns activation later
+- keep [[Tools Library/Pattern Recognition Safety Check]] planned unless repeated use justifies it
 
 ---
 
-### 04 Build Recall
+## Active First-Slice Tools
 
-The Build Recall cluster is drafted.
-
-- [[Retrieval and Spaced Learning]] - Draft v2
-- [[Clinical Recall Without Trivia]] - Draft v2
-- [[Anki for Paramedic Learning]] - Draft v2
-
-This cluster establishes:
-
-- why retrieval and spacing matter for access, not just recognition
-- how recall practice should support clinical use instead of isolated trivia
-- how Anki can support spaced retrieval without becoming the learning system
-- how students can shape recall around assessment, decisions, boundaries, reassessment, and communication
-
-Tool created from this cluster:
-
-- [[Clinical Recall Prompt Builder]] - Draft v1
-
----
-
-## Active Drafted Tools
-
-The Tools Library currently has three active drafted tools:
-
-- [[Directive Meaning Check]] - Draft v1
-- [[Smart Note Template]] - Draft v1
-- [[Clinical Recall Prompt Builder]] - Draft v1
-
-These tools are earned by repeated section needs.
-
-They should support existing sections rather than adding extra complexity.
-
-Planned tools should remain planned until their related clusters are drafted and stable.
-
----
-
-## Current Check-In
-
-Status: Build Recall architecture verification pass in progress
-
-### Assessment
-
-The completed clusters are serving their roles.
-
-The Start Here cluster provides orientation, use guidance, and problem-based routing.
-
-The Why Learning Feels Hard cluster explains the early learning problems students experience before introducing deeper systems.
-
-The Build Understanding cluster shifts from interpreting difficulty to building usable understanding.
-
-The Build Usable Notes cluster gives students a practical way to preserve, connect, and mature understanding without turning note-making into a separate productivity burden.
-
-The Build Recall cluster now gives students a way to strengthen access, shape recall clinically, and use Anki without letting flashcards flatten reasoning.
-
-The three active tool pages are earned by repeated section needs:
+Only these tools are currently active:
 
 - [[Directive Meaning Check]]
 - [[Smart Note Template]]
 - [[Clinical Recall Prompt Builder]]
 
-### Watch For
+Supported tool types:
 
-Going forward, avoid:
+- `thinking-check`
+- `template`
+- `prompt-builder`
 
-- repeating “VitalNotes should not become another burden” unless directly relevant
-- over-explaining learning science in student-facing sections
-- treating retrieval as flashcard quantity
-- turning spaced learning into a rigid calendar system
-- making Anki feel like the only way to retrieve
-- creating an Anki-specific tool before a repeated need exists
-- making Obsidian feel mandatory for students
-- allowing Smart Notes content to drift into productivity-system language
-- adding tools before repeated section use proves they are needed
-- letting app metadata make the student-facing prose feel assembled
-- using too many one-line paragraphs or polished landing sentences
+Planned tools should not be treated as live tools yet.
+
+Do not add additional active tools unless explicitly approved.
 
 ---
 
-## Current Assessment
+## Planned Tools
 
-The rebuild remains aligned.
+The following tools remain planned, not active:
 
-Content files are being kept cleaner than planning files.
+- [[Clinical Reasoning Check]]
+- [[Pattern Recognition Safety Check]]
+- [[Scenario Day Reset]]
+- [[OSCE Reset]]
+- [[Five Whys Tool]]
+- [[Reflection Without Journaling Tool]]
 
-Glossary, tool, source-handling, app-planning, and project-management notes are being tracked in their proper vault maps rather than being stuffed into each rebuilt section.
+The most likely next tool candidate is:
 
-The current first app slice is now strong enough to test the guide as an interface.
+- [[Clinical Reasoning Check]]
 
-The available content now covers:
+Do not activate it automatically.
 
-- orientation
-- learning difficulty
-- understanding
-- usable notes
-- recall and access
-
-That is enough real material to test Learning Path navigation, Section Reader design, glossary support, tool drawers, related sections, and previous/next flow without waiting for the entire guide to be rebuilt.
-
----
-
-## Current Next Page
-
-If continuing the content rebuild:
-
-- [[Clinical Reasoning]]
-
-Vault location:
-
-`03 Rebuilt Content/05 Think Clinically/Clinical Reasoning.md`
-
-If moving into app planning:
-
-- complete the app-readiness checkpoint
-- define the first vertical slice
-- create a fresh app-development handoff prompt
+Activation should happen only if a tool clearly adds value beyond the section prose.
 
 ---
 
-## Current Next Action
+## Completed Cleanup and UI Passes
 
-Complete the Build Recall architecture verification pass.
+### [[Retro Fix 01 - Bullet List Cleanup]]
 
-The verification pass should confirm:
+Status: complete
 
-- Build Recall is listed as drafted across control files
-- [[Clinical Recall Prompt Builder]] is listed as an active drafted tool where appropriate
-- first app slice planning includes Build Recall
-- app-readiness checkpoint is the next major step
-- no stale “Build Recall not started” language remains
-- no broken `App Anti-Drift Rules` links remain
-- Anki remains a support for retrieval and spacing, not the centre of the app or learning system
+Flattened bullet-style paragraph runs were cleaned up where appropriate.
 
-After the architecture verification pass is complete:
+Updated app file:
 
-1. Complete an app-readiness checkpoint.
-2. Decide whether to begin the first app vertical slice or continue content drafting into [[Clinical Reasoning]].
-3. If app development begins, create a fresh app-development handoff prompt and move into a new chat.
+- `src/content/sections.ts`
+
+Completed clusters:
+
+- [[03 Build Usable Notes]]
+- [[02 Build Understanding]]
+- [[01 Why Learning Feels Hard]]
+
+Confirmed no changes were needed in:
+
+- [[00 Start Here]]
+
+The first-slice section bodies now use proper list blocks where appropriate.
+
+### [[Glossary Term Audit]]
+
+Status: complete
+
+Created audit script:
+
+- `scripts/audit-glossary.cjs`
+
+The audit checks glossary terms referenced in:
+
+- `src/content/sections.ts`
+
+against glossary entries in:
+
+- `src/content/glossary.ts`
+
+Added missing first-slice glossary entries:
+
+- `directive-intent`
+- `performance-under-pressure`
+- `perfusion`
+- `reflection`
+
+Added or updated Slice 02 glossary support for terms including:
+
+- `clinical-reasoning`
+- `working-explanation`
+- `uncertainty`
+- `reassessment`
+- `pattern-recognition`
+- `cue`
+- `hypothesis`
+- `premature-closure`
+- `fixation`
+- `disconfirming-cue`
+- `cognitive-narrowing`
+
+Most recent audit result:
+
+- no missing glossary entries
+- every referenced glossary term exists
+
+Known unused glossary entries:
+
+- `metacognition`
+- `recall`
+
+Leave these alone for now. They are valid glossary entries, just not referenced in the current app content.
+
+### Related Links Audit
+
+Status: complete
+
+Created audit script:
+
+- `scripts/audit-related-links.cjs`
+
+The audit checks:
+
+- every related section ID exists
+- every related tool ID exists
+- related sections and related tools per section
+
+First-slice fix completed:
+
+- removed `scenario-days-as-learning-tools` from `learning-strain-is-not-always-a-personal-problem`
+- replaced it with `retrieval-and-spaced-learning`
+
+Slice 02 related links were added conservatively.
+
+Most recent audit result:
+
+- no missing related sections
+- no missing related tools
+
+Human related-link review has been completed across the first slice and Slice 02.
+
+### Reader Typography and Spacing Pass
+
+Status: complete
+
+Updated app file:
+
+- `src/styles/index.css`
+
+This was a bounded demo-readiness pass.
+
+Refined:
+
+- section body spacing
+- section heading rhythm
+- section list spacing
+- glossary panel spacing
+- related panel spacing
+- previous / next navigation spacing
+- tool drawer readability
+
+No behavior changes were made.
+
+No content changes were made.
+
+No color redesign was done.
+
+No navigation redesign was done.
+
+No component architecture changes were made.
+
+### [[UI Pass 02 - Shared VitalNotes Brand System]]
+
+Status: complete, shipped, and locked
+
+Updated app files included:
+
+- `src/styles/index.css`
+- `public/vitalnotes-mark.svg`
+- Tools page component
+
+Completed changes:
+
+- strengthened shared colour system
+- aligned typography direction
+- refined page headers and section headers
+- added warmer orange cue styling
+- normalized Home page styling with other pages
+- changed section headers to use a left cue with right-side fade
+- changed student-problem panels to match the same left cue with right-side fade
+- removed the redundant "Open related section" action from the Tools page
+- replaced the temporary VN mark with the shared VitalNotes logo asset
+- preserved the existing app structure, routes, content model, tools, glossary data, and section data
+
+This was primarily a CSS and visual identity pass.
+
+No new features were added.
+
+No content migration was performed during the UI pass.
+
+No navigation redesign was performed.
+
+No app architecture changes were made.
 
 ---
 
-## App-Readiness Direction
+## Current Audit Scripts
 
-The likely first app slice now includes:
+Keep these scripts in the app project:
 
-- Start Here cluster
-- Why Learning Feels Hard cluster
-- Build Understanding cluster
-- Build Usable Notes cluster
-- Build Recall cluster
-- [[Directive Meaning Check]]
-- [[Smart Note Template]]
-- [[Clinical Recall Prompt Builder]]
+- `scripts/audit-glossary.cjs`
+- `scripts/audit-related-links.cjs`
+
+Use them after future content migrations and before commits.
+
+Useful commands:
+
+- `node scripts/audit-glossary.cjs`
+- `node scripts/audit-related-links.cjs`
+- `npm run build`
+- `npm run dev`
+- `git status`
+
+---
+
+## Demo-Readiness Smoke Test
+
+Status: passed
+
+The first-slice smoke test checked:
+
+- global navigation
+- Home page
 - Learning Path page
-- Section Reader
-- Glossary support
-- simple Tools Library
+- Tools page
+- Glossary page
+- active navigation state
+- hash-based navigation
+- section reader pages
 - previous and next navigation
-- problem-based entry through [[Where to Begin]]
+- related section cards
+- related tool drawer
+- glossary chips and popup behavior
+- reader typography and spacing
+- list rendering
+- mobile-ish browser width behavior
 
-The first app slice should remain content-driven, calm, and bounded.
+Representative first-slice reader pages checked:
 
-It should not include accounts, dashboards, quizzes, badges, grading, AI reflection, complex personalization, simulations, Anki integration, deck management, automated flashcard generation, or an Obsidian import pipeline.
+- [[Start Here - What VitalNotes Is]]
+- [[Cognitive Load]]
+- [[Meaning Before Memorization]]
+- [[Smart Notes for Paramedic Students]]
+- [[Retrieval and Spaced Learning]]
+- [[Anki for Paramedic Learning]]
+
+Tools checked:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Glossary page checked, including added entries:
+
+- Directive intent
+- Performance under pressure
+- Perfusion
+- Reflection
+
+Assessment:
+
+- local app appears clean and appropriate for demo purposes
+- live/deployment state appears stable based on review
+- first vertical slice can be treated as demo-ready
 
 ---
 
-## Not Yet
+## Slice 02 Smoke Test
 
-Do not start the VS Code app build until the Build Recall architecture verification pass and app-readiness checkpoint are complete.
+Status: passed
 
-Do not create the GitHub repo yet.
+Slice 02 smoke test checked:
 
-Do not start Vercel deployment yet.
+- [[05 Think Clinically]] appears in Learning Path after [[04 Build Recall]]
+- [[Clinical Reasoning]] appears under [[05 Think Clinically]]
+- [[Pattern Recognition]] appears under [[05 Think Clinically]]
+- [[Avoiding Premature Closure]] appears under [[05 Think Clinically]]
+- previous and next navigation from [[Anki for Paramedic Learning]] to [[Clinical Reasoning]]
+- previous and next navigation from [[Clinical Reasoning]] to [[Pattern Recognition]]
+- previous and next navigation from [[Pattern Recognition]] to [[Avoiding Premature Closure]]
+- [[Avoiding Premature Closure]] ends cleanly
+- glossary chips open correctly where they appear
+- related-section cards look normal
+- lists display properly
+- no wall-of-text rendering
+- no broken spacing
+- new pages visually match the existing section pattern
 
-Do not rewrite random sections out of order.
+One visual issue was found and fixed before committing:
 
-Do not create loose documents outside the vault structure.
+- the three Slice 02 pages initially began with an extra heading immediately after the page header
+- those opening body headings were removed from `src/content/sections.ts`
+- the pages now begin consistently with the page title/header, student problem box, and first paragraph
 
-Do not build app tools until the related sections are drafted and stable.
+---
 
-Do not create an Anki-specific tool yet.
+## Current Known Issues and Deferred Notes
 
-Do not turn VitalNotes into a dashboard, learning management system, habit tracker, protocol reference, flashcard platform, or gamified study app.
+### VS Code integrated terminal ConPTY failure
+
+Status: workaround active
+
+External Windows PowerShell is currently being used for terminal commands.
+
+App functionality is not affected.
+
+Verified working through external PowerShell:
+
+- `npm run build`
+- `npm run dev`
+- Git commands
+
+### Codex and Copilot unreliable
+
+Status: workaround active
+
+Manual implementation through ChatGPT-guided copy/paste is the current critical path.
+
+The app should not depend on Codex or Copilot availability.
+
+### Button versus text-link consistency
+
+Status: partially addressed
+
+UI Pass 01 and [[UI Pass 02 - Shared VitalNotes Brand System]] addressed several redundant action treatments.
+
+Completed cleanup included:
+
+- Learning Path section cards now behave more cleanly
+- redundant open-section affordances were removed where unnecessary
+- the Tools page no longer displays the redundant "Open related section" action
+
+Future UI review may still revisit button versus text-link consistency if a real issue appears.
+
+This does not block the next bounded content slice.
+
+### Possible source filename typo
+
+Status: needs confirmation only if it appears in the actual vault
+
+A copied source file previously appeared as:
+
+- `Where to Being.md`
+
+Expected title:
+
+- `Where to Begin.md`
+
+Confirm whether this typo exists in the real Obsidian vault before renaming anything.
+
+Do not rename files based on memory alone.
+
+---
+
+## App Boundaries
+
+The current app phase does not include:
+
+- accounts
+- dashboards
+- badges
+- streaks
+- scores
+- quizzes
+- simulations
+- instructor dashboards
+- LMS integration
+- AI feedback
+- AI reflection
+- [[Anki Integration]]
+- deck management
+- automated flashcard generation
+- flashcard-platform behavior
+- progress tracking
+- analytics
+- CMS
+- MDX pipeline
+- [[Obsidian Import Pipeline]]
+
+The app remains a calm reading interface.
+
+The writing is the main experience.
+
+---
+
+## Next Planned Slice
+
+No next content migration slice has been chosen yet.
+
+Slice 02 - Think Clinically Foundations is complete and live.
+
+Possible next directions:
+
+- continue into [[06 Practice Better]]
+- pause for a post-Slice 02 review after living with the app
+- update remaining supporting Obsidian status files
+- prepare the next bounded migration slice
+- consider whether [[Clinical Reasoning Check]] has earned activation later
+
+Do not expand into [[06 Practice Better]], [[07 Perform Under Pressure]], or [[08 Reflect and Improve]] until the next bounded slice is explicitly chosen.
+
+Before any future migration, use:
+
+- [[Repeatable Content Migration Checklist]]
+
+Do not jump directly into app expansion.
+
+Do not add new active tools unless explicitly approved.
+
+---
+
+## Current Status Assessment
+
+The project is on track.
+
+The app has moved from planning, to shell implementation, to first-slice content rendering, to first-slice demo readiness, to shared brand alignment, to Slice 02 migration.
+
+The next risk is no longer missing first-slice content, unresolved visual identity, or pending Think Clinically migration.
+
+The next risk is uncontrolled expansion.
+
+Immediate work should remain focused on:
+
+1. finishing Obsidian status updates for Slice 02
+2. deciding whether to pause for review or choose the next bounded slice
+3. using [[Repeatable Content Migration Checklist]] before any future app migration
+4. keeping planned tools parked unless one clearly earns activation
+5. avoiding feature expansion unless explicitly approved
+
+Do not expand scope yet.

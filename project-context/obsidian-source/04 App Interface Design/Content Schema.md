@@ -1,21 +1,67 @@
 # Content Schema
 
-This note defines a possible structure for app content.
+This note defines the current first-slice app content structure for VitalNotes.
 
-This is not final code.  
-It is a planning schema for the VS Code build.
+The schema exists to keep app content separate from layout components while preserving the guide structure maintained in Obsidian.
 
-The goal is to keep app content separate from layout components while preserving the structure already being built in Obsidian.
+Obsidian remains the source of truth.
 
-The first app content model should stay simple.
+The app renders the guide.
 
-Use manual JavaScript objects or JSON-like data first. Do not build a complex Obsidian-to-app Markdown import pipeline until the interface, glossary behavior, section structure, and tool behavior are tested against real content.
+The app does not reinvent the guide.
 
 ---
 
-## Section Object Draft
+## Current Status
 
-```js
+The first app vertical slice has been implemented.
+
+The approved first-slice content migration is complete and pushed.
+
+The app now renders real student-facing content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Current related checkpoint:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+Current cleanup focus:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+- [[Glossary Term Audit]]
+
+---
+
+## Current Content Files
+
+The app currently uses manually maintained TypeScript content files.
+
+Current app content lives in files such as:
+
+- `src/content/sections.ts`
+- `src/content/tools.ts`
+- `src/content/glossary.ts`
+
+This manual TypeScript content model is acceptable for the first vertical slice.
+
+Do not add [[Obsidian Import Pipeline]], MDX, CMS, automated sync, or a complex content import system during first-slice cleanup.
+
+A future content pipeline should only be considered if manual migration becomes a real maintenance problem.
+
+---
+
+## Current Section Object Shape
+
+Each section object should contain enough information to render the section page, support navigation, connect related sections, and expose relevant tools or glossary terms.
+
+Representative structure:
+
+```ts
 {
   id: "cognitive-load",
   title: "Cognitive Load",
@@ -27,14 +73,26 @@ Use manual JavaScript objects or JSON-like data first. Do not build a complex Ob
   sectionPurpose: "Help students understand cognitive load as a normal part of paramedic learning.",
   pageType: "core-concept",
   status: "draft-v2",
-  body: "...",
+  body: [
+    {
+      type: "heading",
+      text: "Why this matters"
+    },
+    {
+      type: "paragraph",
+      text: "Section text here."
+    },
+    {
+      type: "list",
+      items: [
+        "First list item",
+        "Second list item"
+      ]
+    }
+  ],
   glossaryTerms: [
     "cognitive-load",
-    "working-memory",
-    "overload",
-    "structure",
-    "reassessment",
-    "performance-under-pressure"
+    "working-memory"
   ],
   relatedTools: [],
   relatedSections: [
@@ -50,7 +108,7 @@ Use manual JavaScript objects or JSON-like data first. Do not build a complex Ob
 
 ## Section Field Notes
 
-### id
+### `id`
 
 Stable app-facing identifier.
 
@@ -58,61 +116,65 @@ Use lowercase kebab-case.
 
 Example:
 
-```js
+```ts
 "directives-through-purpose"
 ```
 
-### title
+Do not change IDs casually once sections are connected through navigation, glossary terms, or related links.
+
+### `title`
 
 Student-facing section title.
 
-Should match the Obsidian section title unless there is a clear reason to shorten for display.
+This should match the Obsidian section title unless there is a clear display reason to shorten it.
 
-### subtitle
+### `subtitle`
 
 Short purpose or orientation line.
 
-Should help the student understand why the section matters before reading.
+This helps the student understand why the section matters before reading.
 
-### cluster
+### `cluster`
 
 The learning path cluster the section belongs to.
 
-Current clusters:
+Current first-slice clusters:
 
-- Start Here
-- Why Learning Feels Hard
-- Build Understanding
-- Build Usable Notes
-- Build Recall
-- Think Clinically
-- Practice Better
-- Perform Under Pressure
-- Reflect and Improve
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
 
-### clusterOrder and sectionOrder
+Later planned clusters should not be marked as migrated until they are actually built into the app.
+
+### `clusterOrder` and `sectionOrder`
 
 Used for app sorting and previous / next navigation.
 
-These should follow the locked learning path unless deliberately changed in the content architecture.
+These should follow the locked learning path unless deliberately changed in [[New VitalNotes Learning Path]] and [[Decisions]].
 
-### studentProblem
+### `studentProblem`
 
 Plain-language student problem the section addresses.
 
-This helps preserve the VitalNotes structure: sections exist because students experience real friction.
+This preserves the VitalNotes rule that sections exist because students experience real friction.
 
-### sectionPurpose
+### `sectionPurpose`
 
-Internal-facing purpose field.
+Purpose field for clarity and maintenance.
 
-This can help with app planning, review, and future editing. It does not necessarily need to render on the student-facing page.
+This can support review and future editing.
 
-### pageType
+It does not need to become a prominent student-facing course-objective box.
 
-Possible values:
+### `pageType`
 
-```js
+Broad page category.
+
+Possible values may include:
+
+```ts
 "orientation"
 "core-concept"
 "practical-system"
@@ -122,56 +184,151 @@ Possible values:
 "performance"
 ```
 
-Do not overbuild this taxonomy. Add values only if they help the app behave differently.
+Do not overbuild this taxonomy.
 
-### status
+Add values only if the app actually needs different rendering behavior.
 
-Draft status from Obsidian.
+### `status`
+
+Draft or approval status from Obsidian.
 
 Examples:
 
-```js
+```ts
 "draft-v1"
 "draft-v2"
 "draft-v3"
 "approved"
 ```
 
-### body
+Status helps with internal tracking.
+
+It should not dominate the student-facing reader.
+
+### `body`
 
 The student-facing section content.
 
-For the first app slice, this may be stored directly as structured content inside a JavaScript object or as a string. Choose the simplest approach that allows clean rendering.
+The body should contain app-facing content only.
 
-The first app slice should use the App-Ready Section Draft content, not internal planning notes, source-handling notes, review notes, or placeholder scaffolding.
+Do not include:
 
-### glossaryTerms
+- planning notes
+- source-handling notes
+- review notes
+- quality checks
+- placeholder scaffolding
+- internal comments
+- prompt fragments
+
+Those belong in Obsidian control files, not in the app reader.
+
+### `glossaryTerms`
 
 Array of glossary IDs used in the section.
 
 Only include terms that reduce reading friction.
 
-### relatedTools
+Glossary support should follow:
+
+- [[Glossary and Popup Map]]
+- [[Popup and Glossary Rules]]
+- [[Glossary Term Audit]]
+
+### `relatedTools`
 
 Array of active tool IDs connected to the section.
 
-Do not include planned tools unless they already exist as drafted tool pages.
+Only include active drafted tools.
 
-### relatedSections
+Current active first-slice tools:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Do not include planned tools unless they have been explicitly promoted into the active slice.
+
+### `relatedSections`
 
 Array of section IDs that connect conceptually.
 
 This supports non-linear navigation without disrupting the main learning path.
 
-### previous and next
+Do not use related sections as a dumping ground for every possible connection.
+
+Three strong related sections are usually better than eight weak ones.
+
+### `previous` and `next`
 
 Stable IDs for linear navigation through the guide.
 
+These should match the intended learning path.
+
 ---
 
-## Glossary Object Draft
+## Current Section Body Block Types
 
-```js
+The section body renderer currently supports:
+
+- heading blocks
+- paragraph blocks
+- placeholder blocks
+- list blocks
+
+Representative structure:
+
+```ts
+type SectionBodyBlock =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "placeholder"; text: string }
+  | { type: "list"; items: string[] };
+```
+
+---
+
+## List Block Rule
+
+Use a `list` block when source content is clearly functioning as a grouped list.
+
+Use list blocks for:
+
+- grouped examples
+- workflow steps
+- prompt sets
+- repeated questions
+- option sets
+- short grouped distinctions
+- tool-style instructions
+- repeated “do / do not” items
+- visually flattened content that clearly reads as a list
+
+Do not force every short paragraph into a list.
+
+Some VitalNotes paragraphs are intentionally short for rhythm and emphasis.
+
+Current cleanup task:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+
+Primary early targets:
+
+- [[Smart Notes for Paramedic Students]]
+- [[Types of Notes and Idea Maturation]]
+- [[Obsidian for Learning Paramedicine]]
+
+---
+
+## Current Glossary Object Shape
+
+Glossary entries should stay short.
+
+They should support reading flow, not replace section content.
+
+Representative structure:
+
+```ts
 {
   id: "cognitive-load",
   term: "Cognitive Load",
@@ -185,116 +342,53 @@ Stable IDs for linear navigation through the guide.
 }
 ```
 
----
+Use [[Glossary and Popup Map]] as the source for glossary language.
 
-## Glossary Field Notes
+Do not add long definitions to the app schema.
 
-Glossary entries should stay short.
-
-They should support reading flow, not replace section content.
-
-Use the current [[Glossary and Popup Map]] as the source for glossary language.
-
-Do not add long definitions to the app schema. If a term needs a long explanation, it probably belongs in a section or tool.
+If a term needs a long explanation, it belongs in a section or tool.
 
 ---
 
-## Tool Object Draft
+## Glossary Audit Needs
 
-```js
-{
-  id: "directive-meaning-check",
-  title: "Directive Meaning Check",
-  status: "draft-v1",
-  toolType: "thinking-check",
-  purpose: "Help students understand what a directive is protecting, supporting, or preventing.",
-  whenToUse: "Use when learning or applying a directive.",
-  steps: [
-    "What clinical risk is this directive protecting against?",
-    "What physiology is being supported or protected?",
-    "Where are the firm boundaries?",
-    "What would make me withhold, stop, patch, or change course?",
-    "What should I reassess afterward?"
-  ],
-  relatedSections: [
-    "directives-through-purpose",
-    "meaning-before-memorization",
-    "pathophysiology-through-patterns",
-    "clinical-reasoning",
-    "osce-preparation"
-  ]
-}
-```
+Some first-slice glossary IDs may be missing or inconsistent.
 
----
+Potential terms to audit:
 
-## Tool Field Notes
+- `reflection`
+- `performance-under-pressure`
+- `directive-intent`
+- `recognition`
+- `spacing`
+- `clinical-recall`
+- `anki`
+- `links`
+- `obsidian`
+- `capture-notes`
+- `working-notes`
+- `transfer`
+- `pathophysiology`
+- `perfusion`
+- `reassessment`
 
-### id
+Current cleanup task:
 
-Stable app-facing identifier.
+- [[Glossary Term Audit]]
 
-Use lowercase kebab-case.
+The audit should compare `glossaryTerms` values in `src/content/sections.ts` against entries in `src/content/glossary.ts`.
 
-### title
-
-Student-facing tool title.
-
-Should match the Tools Library title.
-
-### status
-
-Tool status from Obsidian.
-
-Only tools with drafted pages should be active in the app.
-
-### toolType
-
-A broad category that helps the interface render the tool simply.
-
-Possible values:
-
-```js
-"thinking-check"
-"template"
-"prompt-builder"
-"reset"
-"reflection"
-```
-
-Do not overbuild tool types. Add only when the interface needs different rendering.
-
-### purpose
-
-What the tool helps the student do.
-
-### whenToUse
-
-A short use-case statement.
-
-### steps, fields, or builderStructure
-
-Use the simplest field that fits the tool.
-
-Examples:
-
-- `steps` for a check or workflow
-- `fields` for a template
-- `builderStructure` for a prompt builder
-
-### relatedSections
-
-Sections where the tool may be relevant.
-
-Do not attach tools everywhere.
+Only first-slice glossary terms should be added or normalized during this pass.
 
 ---
 
-## Active Tool Objects for First Slice
+## Current Tool Object Shape
 
-### Directive Meaning Check
+Tools should stay simple.
 
-```js
+Representative structure:
+
+```ts
 {
   id: "directive-meaning-check",
   title: "Directive Meaning Check",
@@ -317,9 +411,102 @@ Do not attach tools everywhere.
 }
 ```
 
-### Smart Note Template
+---
 
-```js
+## Tool Field Notes
+
+### `id`
+
+Stable app-facing identifier.
+
+Use lowercase kebab-case.
+
+### `title`
+
+Student-facing tool title.
+
+Should match the [[Tools Library]] title.
+
+### `status`
+
+Tool status from Obsidian.
+
+Only tools with drafted pages should be active in the app.
+
+### `toolType`
+
+A broad category that helps the interface render the tool simply.
+
+Current first-slice tool types:
+
+```ts
+"thinking-check"
+"template"
+"prompt-builder"
+```
+
+Do not overbuild tool types.
+
+Add only when the interface needs different rendering.
+
+### `purpose`
+
+What the tool helps the student do.
+
+### `whenToUse`
+
+A short use-case statement.
+
+### `steps`, `fields`, or `builderStructure`
+
+Use the simplest field that fits the tool.
+
+Examples:
+
+- `steps` for a check or workflow
+- `fields` for a template
+- `builderStructure` for a prompt builder
+
+### `relatedSections`
+
+Sections where the tool may be relevant.
+
+Do not attach tools everywhere.
+
+---
+
+## Active Tool Objects for First Slice
+
+Only these tools are active in the first slice.
+
+### [[Directive Meaning Check]]
+
+```ts
+{
+  id: "directive-meaning-check",
+  title: "Directive Meaning Check",
+  status: "draft-v1",
+  toolType: "thinking-check",
+  purpose: "Help students understand what a directive is protecting, supporting, or preventing.",
+  whenToUse: "Use when learning or applying a directive.",
+  steps: [
+    "What clinical risk is this directive protecting against?",
+    "What physiology is being supported or protected?",
+    "Where are the firm boundaries?",
+    "What would make me withhold, stop, patch, or change course?",
+    "What should I reassess afterward?"
+  ],
+  relatedSections: [
+    "directives-through-purpose",
+    "meaning-before-memorization",
+    "pathophysiology-through-patterns"
+  ]
+}
+```
+
+### [[Smart Note Template]]
+
+```ts
 {
   id: "smart-note-template",
   title: "Smart Note Template",
@@ -343,9 +530,9 @@ Do not attach tools everywhere.
 }
 ```
 
-### Clinical Recall Prompt Builder
+### [[Clinical Recall Prompt Builder]]
 
-```js
+```ts
 {
   id: "clinical-recall-prompt-builder",
   title: "Clinical Recall Prompt Builder",
@@ -373,13 +560,19 @@ Do not attach tools everywhere.
 }
 ```
 
-Clinical Recall Prompt Builder may support Anki use, but it should not become Anki integration, deck management, automated flashcard generation, or a flashcard platform inside VitalNotes.
+[[Clinical Recall Prompt Builder]] may support better Anki use, but it must not become [[Anki Integration]], deck management, automated flashcard generation, or a flashcard platform inside VitalNotes.
 
 ---
 
-## Planned Tool Object Example
+## Planned Tool Objects
 
-```js
+Planned tools should remain planning references only.
+
+Do not treat planned tools as live app content.
+
+Example future tool:
+
+```ts
 {
   id: "clinical-reasoning-check",
   title: "Clinical Reasoning Check",
@@ -403,13 +596,17 @@ Clinical Recall Prompt Builder may support Anki use, but it should not become An
 }
 ```
 
-Planned tools should remain in the schema only as planning examples until the related section work earns them.
+Planned tools should remain parked in [[Tool Library Map]] or [[Deferred Ideas]] until the related section work earns them.
 
 ---
 
-## Learning Path Object Draft
+## Current Learning Path Object Shape
 
-```js
+Learning path objects should keep clusters simple.
+
+Representative structure:
+
+```ts
 {
   id: "build-understanding",
   title: "Build Understanding",
@@ -423,19 +620,17 @@ Planned tools should remain in the schema only as planning examples until the re
   relatedTools: [
     "directive-meaning-check"
   ],
-  status: "drafted"
+  status: "migrated-to-first-slice"
 }
 ```
 
 ---
 
-## Current Real Test Sections
+## Migrated First-Slice Sections
 
-Use these drafted sections to test whether the schema is enough before building the app.
+### [[00 Start Here]]
 
-### Start Here Cluster
-
-```js
+```ts
 [
   "start-here-what-vitalnotes-is",
   "how-to-use-this-guide",
@@ -443,9 +638,9 @@ Use these drafted sections to test whether the schema is enough before building 
 ]
 ```
 
-### Why Learning Feels Hard Cluster
+### [[01 Why Learning Feels Hard]]
 
-```js
+```ts
 [
   "cognitive-load",
   "why-studying-feels-productive-but-fails-under-pressure",
@@ -453,9 +648,9 @@ Use these drafted sections to test whether the schema is enough before building 
 ]
 ```
 
-### Build Understanding Cluster
+### [[02 Build Understanding]]
 
-```js
+```ts
 [
   "meaning-before-memorization",
   "pathophysiology-through-patterns",
@@ -465,15 +660,15 @@ Use these drafted sections to test whether the schema is enough before building 
 
 Active tool connected to this cluster:
 
-```js
+```ts
 [
   "directive-meaning-check"
 ]
 ```
 
-### Build Usable Notes Cluster
+### [[03 Build Usable Notes]]
 
-```js
+```ts
 [
   "smart-notes-for-paramedic-students",
   "types-of-notes-and-idea-maturation",
@@ -483,15 +678,15 @@ Active tool connected to this cluster:
 
 Active tool connected to this cluster:
 
-```js
+```ts
 [
   "smart-note-template"
 ]
 ```
 
-### Build Recall Cluster
+### [[04 Build Recall]]
 
-```js
+```ts
 [
   "retrieval-and-spaced-learning",
   "clinical-recall-without-trivia",
@@ -501,7 +696,7 @@ Active tool connected to this cluster:
 
 Active tool connected to this cluster:
 
-```js
+```ts
 [
   "clinical-recall-prompt-builder"
 ]
@@ -509,58 +704,35 @@ Active tool connected to this cluster:
 
 Status:
 
-```js
-"drafted"
+```ts
+"migrated-to-first-slice"
 ```
 
 ---
 
-## Likely First Content Files
+## Current First-Slice Boundary
 
-The first app slice should probably use a simple content structure such as:
+The first vertical slice includes:
 
-```text
-src/content/sections.js
-src/content/glossary.js
-src/content/tools.js
-src/content/learningPath.js
-```
-
-Possible later additions:
-
-```text
-src/content/clusters.js
-src/content/routes.js
-```
-
-Do not add more files until the first slice proves they are needed.
-
----
-
-## Early Recommendation
-
-Start with JavaScript objects or JSON-like data before building a more complex Markdown import pipeline.
-
-Keep the first app slice simple.
-
-The first useful vertical slice should include:
-
-- Start Here cluster
-- Why Learning Feels Hard cluster
-- Build Understanding cluster
-- Build Usable Notes cluster
-- Build Recall cluster
-- Learning Path page
-- Section Reader
-- Glossary support
-- simple Tools Library
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Glossary]]
+- [[Tools Library]]
 - [[Directive Meaning Check]]
 - [[Smart Note Template]]
 - [[Clinical Recall Prompt Builder]]
 - previous and next navigation
 - problem-based entry through [[Where to Begin]]
+- simple tool drawer support
+- simple glossary popup support
+- list block support
 
-The first useful vertical slice should not include:
+The first vertical slice does not include:
 
 - accounts
 - dashboards
@@ -569,27 +741,42 @@ The first useful vertical slice should not include:
 - grading
 - simulations
 - AI reflection
+- AI feedback
 - complex personalization
-- Obsidian import pipeline
-- Anki integration
+- [[Obsidian Import Pipeline]]
+- MDX
+- CMS
+- [[Anki Integration]]
 - deck management
 - automated flashcard generation
 - flashcard-platform behavior
-
-Do not build a complex content import system until the writing structure is stable across several clusters and the first app slice proves the manual content model works.
+- progress tracking
+- analytics
 
 ---
 
 ## Current Notes
 
-- Rebuilt content files should stay clean: App Metadata plus App-Ready Section Draft.
-- The first app slice should extract only app-facing content, not internal planning notes or placeholder scaffolding.
-- Glossary entries belong in [[Glossary and Popup Map]].
-- Tool decisions belong in [[Tool Library Map]].
+- Rebuilt content files should stay clean.
+- App-facing content should remain separate from internal planning notes.
+- Glossary entries belong in [[Glossary and Popup Map]] and `src/content/glossary.ts`.
+- Tool decisions belong in [[Tool Library Map]] and `src/content/tools.ts`.
 - Project decisions belong in [[Decisions]].
 - Open app questions belong in [[Open Questions]].
-- The app schema should be tested against real drafted sections before development begins.
 - Active tools should be included only when drafted and earned by completed sections.
 - Planned tools can remain visible in planning notes, but should not be treated as live app content.
-- The first app slice should use manual JavaScript objects or JSON-like data before any Obsidian-to-app import pipeline is considered.
-- Do not let the content schema imply Anki integration, deck management, automated flashcard generation, or flashcard-platform behavior.
+- The first app slice currently uses manual TypeScript content objects.
+- Do not let the content schema imply [[Anki Integration]], deck management, automated flashcard generation, or flashcard-platform behavior.
+- Do not add new schema fields unless the current reader experience clearly needs them.
+
+---
+
+## Next Review
+
+Review this file after:
+
+1. [[Retro Fix 01 - Bullet List Cleanup]]
+2. [[Glossary Term Audit]]
+3. first-slice reader-quality testing
+
+Do not broaden the content schema before those are complete.

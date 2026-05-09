@@ -22,9 +22,23 @@ function LearningPath({ onNavigate }: LearningPathProps) {
 
       <div className="cluster-list">
         {orderedLearningPath.map((cluster) => {
-          const clusterSections = cluster.sections
-            .map((sectionId) => getSectionById(sectionId))
-            .filter(Boolean)
+       const clusterSections = cluster.sections
+  .map((sectionId) => {
+    const section = getSectionById(sectionId)
+
+    if (!section) {
+      console.warn(
+        `Missing section "${sectionId}" in learning path cluster "${cluster.title}".`,
+      )
+    } else {
+      console.log(
+        `Found section "${sectionId}" for learning path cluster "${cluster.title}".`,
+      )
+    }
+
+    return section
+  })
+  .filter(Boolean)
 
           return (
             <section className="cluster-panel" key={cluster.id}>

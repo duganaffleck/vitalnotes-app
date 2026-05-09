@@ -8,6 +8,76 @@ The interface should support attention.
 
 It should not compete for it.
 
+The writing is the main experience.
+
+---
+
+## Current Status
+
+The first app vertical slice has been implemented.
+
+The approved first-slice content migration is complete and pushed.
+
+The app now renders real student-facing content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Current active tools migrated into the app:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Current app support includes:
+
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- hash-based navigation
+- previous and next section navigation
+- related sections
+- related tools
+- simple tool drawer support
+- simple glossary popup support
+- section body list support
+
+Current related checkpoint:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+Current cleanup focus:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+- [[Glossary Term Audit]]
+
+Broad visual polish is deferred until the first-slice rendering issues are cleaned up.
+
+Do not polish around content-structure problems.
+
+---
+
+## Current Design Priority
+
+The current design priority is presentation fidelity, not visual expansion.
+
+Immediate priorities:
+
+1. make flattened bullet-style content render correctly through list blocks
+2. confirm glossary references behave cleanly
+3. preserve readable section flow
+4. avoid feature expansion
+5. avoid broad redesign before reader-quality testing
+
+The app does not need to look impressive yet.
+
+It needs to feel readable, steady, and faithful to the guide.
+
 ---
 
 ## Desired Feel
@@ -33,6 +103,8 @@ The student should feel like:
 - the page is not demanding too much from them
 - tools are available when useful
 - the app understands the learning pressure of paramedic school
+
+The app should feel organized without feeling managed.
 
 ---
 
@@ -70,7 +142,7 @@ Use:
 - readable spacing
 - clear labels
 - simple navigation
-- subtle progress cues
+- subtle orientation cues
 - calm contrast
 - mobile-friendly layout
 - short interface copy
@@ -109,15 +181,13 @@ Avoid:
 - excessive hover effects
 - interface elements that draw attention away from the section body
 
-The writing is the main experience.
-
 The UI should make the writing easier to stay with.
 
 ---
 
 ## Section Reader Style
 
-The Section Reader should preserve paragraph-level explanation.
+The [[Section Reader]] should preserve paragraph-level explanation.
 
 VitalNotes sections should not be chopped into too many cards, accordions, or tiles.
 
@@ -132,6 +202,43 @@ Cards may be useful for:
 Cards should not replace the main body of the section.
 
 The section body should feel like a calm reading space.
+
+Current body block support includes:
+
+- heading blocks
+- paragraph blocks
+- placeholder blocks
+- list blocks
+
+Because list support was added late in migration, some list-like content may still appear visually flattened.
+
+Current cleanup:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+
+This cleanup should happen before broad typography or layout polish.
+
+---
+
+## List Style
+
+Lists should help structure content without making the section feel mechanical.
+
+Use list styling for:
+
+- grouped examples
+- workflow steps
+- repeated prompts
+- option sets
+- tool-style instructions
+- short grouped distinctions
+- visually flattened content that clearly reads as a list
+
+Lists should have enough spacing to be readable but not so much that they fragment the section.
+
+Do not force every short paragraph into a list.
+
+Some short paragraphs are part of the VitalNotes cadence.
 
 ---
 
@@ -159,11 +266,11 @@ A tool should not feel like:
 - a deck-management system
 - a flashcard app inside the guide
 
-Current active tool examples:
+Current active tools:
 
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
 
 These are enough to test early tool behavior.
 
@@ -174,6 +281,8 @@ They represent three useful tool types:
 - a recall prompt builder
 
 Do not add more tool interaction until these work cleanly.
+
+Do not add new active tools during first-slice cleanup unless explicitly approved.
 
 ---
 
@@ -199,6 +308,12 @@ Avoid:
 - links that pull the student away too aggressively
 
 A glossary popup should help the student keep reading.
+
+Current glossary cleanup:
+
+- [[Glossary Term Audit]]
+
+The glossary should not become a textbook, learning science dictionary, quiz layer, or hidden lesson system.
 
 ---
 
@@ -237,13 +352,12 @@ Interface copy should sound like VitalNotes, not a software company.
 
 Progress cues may be useful, but they should stay subtle.
 
-Possible early options:
+Acceptable early cues:
 
 - cluster label
 - section number within cluster
 - previous and next links
 - simple learning path position
-- completed cluster marker later, only if local progress tracking is added
 
 Avoid:
 
@@ -257,6 +371,8 @@ Avoid:
 Progress should orient the student.
 
 It should not pressure them.
+
+Do not add progress tracking during first-slice cleanup.
 
 ---
 
@@ -274,6 +390,8 @@ Mobile reading should prioritize:
 - minimal navigation friction
 
 Avoid mobile layouts where the student has to fight the interface to keep reading.
+
+A tired student should be able to open a section, read it, use a tool if needed, and continue.
 
 ---
 
@@ -303,6 +421,53 @@ Avoid:
 A paramedic student may be reading this after class, after lab, after work, or before an OSCE.
 
 The design should respect that.
+
+---
+
+## First-Slice Style Boundaries
+
+Do not add during first-slice cleanup:
+
+- broad visual redesign
+- new theme system
+- complex animations
+- dashboards
+- progress tracking
+- accounts
+- quizzes
+- badges
+- scores
+- simulations
+- instructor dashboards
+- LMS integration
+- AI feedback
+- AI reflection
+- [[Anki Integration]]
+- deck management
+- automated flashcard generation
+- flashcard-platform behavior
+- CMS
+- MDX
+- [[Obsidian Import Pipeline]]
+
+Minor visual fixes are acceptable only when readability is blocked.
+
+---
+
+## Relationship to App Design Files
+
+This file should stay aligned with:
+
+- [[Section Reader Design]]
+- [[Tool Drawer Design]]
+- [[Popup and Glossary Rules]]
+- [[Navigation Model]]
+- [[Content Schema]]
+- [[App Anti-Drift Rules]]
+
+Do not use this file to redesign app structure.
+
+Use it to keep the existing app calm, readable, and content-first.
 
 ---
 

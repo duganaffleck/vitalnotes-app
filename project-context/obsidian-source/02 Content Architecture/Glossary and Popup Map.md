@@ -2,9 +2,52 @@
 
 Glossary popups should support reading flow without turning the app into a textbook.
 
-They should be short, plain-language, and student-facing. Their job is to help a student keep reading when a term might otherwise slow them down.
+They should be short, plain-language, and student-facing.
 
-Popups should not carry the main teaching. If a concept is necessary to understand the section, it belongs in the main page. If a term appears repeatedly across the guide and needs a quick reminder, it may belong here.
+Their job is to help a student keep reading when a term might otherwise slow them down.
+
+Popups should not carry the main teaching.
+
+If a concept is necessary to understand the section, it belongs in the main page.
+
+If a term appears repeatedly across the guide and needs a quick reminder, it may belong here.
+
+---
+
+## Current Status
+
+The first app vertical slice has been implemented.
+
+The approved first-slice content migration is complete and pushed.
+
+The app now includes:
+
+- simple glossary popup support
+- a [[Glossary]] page
+- glossary term references in first-slice sections
+- glossary content in `src/content/glossary.ts`
+
+The app now renders real student-facing content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Current related checkpoint:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+Current glossary cleanup task:
+
+- [[Glossary Term Audit]]
+
+The next glossary task is not broad expansion.
+
+The next task is to confirm that first-slice glossary IDs in `src/content/sections.ts` match entries in `src/content/glossary.ts`.
+
+---
 
 ## Popup Rules
 
@@ -18,6 +61,55 @@ Popups should not carry the main teaching. If a concept is necessary to understa
 - Prefer plain language over technical precision when the plain version is enough.
 - Add new terms only when they reduce friction across multiple sections.
 - If a popup starts needing multiple paragraphs, the concept probably needs its own section or tool.
+
+---
+
+## App Glossary Audit Rule
+
+During [[Glossary Term Audit]], compare:
+
+- `src/content/sections.ts`
+- `src/content/glossary.ts`
+
+Check that:
+
+- every first-slice glossary ID used by a section exists in the glossary file
+- glossary IDs are consistently named
+- definitions stay short
+- paramedic relevance is clear
+- glossary terms reduce reading friction
+- popups do not replace section teaching
+- glossary support does not make the reader feel crowded
+
+Only first-slice glossary terms should be added or normalized during this pass.
+
+Do not expand the glossary broadly during first-slice cleanup.
+
+---
+
+## First-Slice Audit Targets
+
+Potential missing or inconsistent first-slice glossary IDs include:
+
+- `reflection`
+- `performance-under-pressure`
+- `directive-intent`
+- `recognition`
+- `spacing`
+- `clinical-recall`
+- `anki`
+- `links`
+- `obsidian`
+- `capture-notes`
+- `working-notes`
+- `transfer`
+- `pathophysiology`
+- `perfusion`
+- `reassessment`
+
+These should be checked during [[Glossary Term Audit]].
+
+---
 
 ## Core Popup Terms
 
@@ -100,6 +192,14 @@ Returning to learning after time has passed instead of cramming everything into 
 
 Paramedic relevance:  
 It helps knowledge survive delay, distraction, and pressure.
+
+### Transfer
+
+Plain-language meaning:  
+Using learning in a new situation, not only recognizing it where it was first studied.
+
+Paramedic relevance:  
+Transfer matters because paramedic students need knowledge to carry into labs, scenarios, OSCEs, and patient care where the cues are never exactly the same.
 
 ### Clinical Recall
 
@@ -445,6 +545,8 @@ The place where reusable VitalNotes templates, checks, and short workflows are c
 Paramedic relevance:  
 The Tools Library helps students return to practical supports without rereading full sections every time.
 
+---
+
 ## Possible Future Popup Terms
 
 These terms may be added if they appear often enough in rebuilt sections.
@@ -481,14 +583,6 @@ Focused practice aimed at improving one specific weakness rather than simply rep
 Reason to track:  
 Likely useful in scenario days, feedback, OSCE preparation, and practice improvement sections.
 
-### Transfer
-
-Possible meaning:  
-The ability to use learning in a new situation, not just recognize it where it was first studied.
-
-Reason to track:  
-Important across the whole guide, especially because VitalNotes is concerned with learning that carries into scenarios and patient care.
-
 ### Problem-Based Entry Point
 
 Possible meaning:  
@@ -496,6 +590,8 @@ A way into the guide based on what the student is currently struggling with rath
 
 Reason to track:  
 Useful for the app interface, but may remain internal unless students see this phrase directly.
+
+---
 
 ## Current Notes
 
@@ -518,11 +614,59 @@ Useful for the app interface, but may remain internal unless students see this p
 - [[Smart Notes]], [[OSCE Preparation]], and [[Performance Under Pressure]] have been confirmed as core popup terms.
 - [[Overload]], [[Structure]], and [[Reassessment]] have been moved into core popup terms after the [[Cognitive Load]] draft.
 - [[Recognition]], [[Familiarity]], and [[Access]] have been added as core popup terms after the [[Why Studying Feels Productive But Fails Under Pressure]] draft.
-- [[Learning Strain]], [[Productive Difficulty]], and [[Wasted Difficulty]] have been moved into core popup terms after completing the [[Why Learning Feels Hard]] cluster.
-- [[Pathophysiology]], [[Mechanism]], [[Compensation]], [[Perfusion]], [[Ventilation]], and [[Oxygen Delivery]] have been added after completing the [[Build Understanding]] cluster.
+- [[Learning Strain]], [[Productive Difficulty]], and [[Wasted Difficulty]] have been moved into core popup terms after completing [[01 Why Learning Feels Hard]].
+- [[Pathophysiology]], [[Mechanism]], [[Compensation]], [[Perfusion]], [[Ventilation]], and [[Oxygen Delivery]] have been added after completing [[02 Build Understanding]].
 - [[Directive Intent]], [[Clinical Risk]], [[Scope]], and [[Contraindication]] have been confirmed or added after completing [[Directives Through Purpose]] and [[Directive Meaning Check]].
-- [[Capture Notes]], [[Working Notes]], [[Idea Maturation]], [[Provisional Explanation]], [[Obsidian]], [[Vault]], [[Markdown]], [[Links]], [[Inbox]], and [[Reference]] have been added after completing the [[Build Usable Notes]] cluster.
-- [[Clinical Recall]], [[Recall Prompt]], [[Clinical Cue]], [[Boundary]], [[Trivia]], [[Anki]], and [[Flashcard]] have been added after completing the [[Build Recall]] cluster and [[Clinical Recall Prompt Builder]].
+- [[Capture Notes]], [[Working Notes]], [[Idea Maturation]], [[Provisional Explanation]], [[Obsidian]], [[Vault]], [[Markdown]], [[Links]], [[Inbox]], and [[Reference]] have been added after completing [[03 Build Usable Notes]].
+- [[Clinical Recall]], [[Recall Prompt]], [[Clinical Cue]], [[Boundary]], [[Trivia]], [[Anki]], and [[Flashcard]] have been added after completing [[04 Build Recall]] and [[Clinical Recall Prompt Builder]].
+- [[Transfer]] has been moved into core popup terms because it supports the first-slice purpose of learning that carries into labs, scenarios, OSCEs, and patient care.
 - [[Spaced Repetition]] remains parked as a possible future term unless app or Anki language requires it.
 - Popup language should stay shorter than section language.
 - If a popup starts needing multiple paragraphs, the concept probably needs its own section or tool.
+
+---
+
+## Relationship to App Files
+
+Glossary architecture should stay aligned with:
+
+- [[Popup and Glossary Rules]]
+- [[Content Schema]]
+- [[Section Reader Design]]
+- [[Navigation Model]]
+
+App implementation should stay aligned with:
+
+- `src/content/glossary.ts`
+- `src/content/sections.ts`
+
+During [[Glossary Term Audit]], do not rewrite every definition.
+
+The audit should check whether the app glossary contains the right first-slice terms and whether term IDs match the section references.
+
+---
+
+## Current No-Go List
+
+Do not use glossary work to add:
+
+- a learning science dictionary
+- long textbook-style definitions
+- citation blocks
+- AI-generated explanation support
+- glossary quizzes
+- spaced repetition inside glossary entries
+- Anki deck behavior
+- [[Anki Integration]]
+- progress tracking
+- dashboards
+- personalized recommendations
+- complex onboarding
+
+---
+
+## Design Rule
+
+Glossary support should reduce cognitive load.
+
+If a popup interrupts the reader more than it helps, it should not be there.

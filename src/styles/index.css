@@ -2302,3 +2302,127 @@ h2 {
     padding-right: clamp(1.5rem, 4vw, 3rem);
   }
 }
+/* ==========================================================================
+   Tools Library Example Button Polish
+   Makes native details/summary examples feel like app buttons.
+   ========================================================================== */
+
+.tool-example {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.tool-example summary {
+  list-style: none;
+}
+
+.tool-example summary::-webkit-details-marker {
+  display: none;
+}
+
+.tool-example-button {
+  width: fit-content;
+  margin-top: 0.25rem;
+  border: 1px solid rgba(13, 139, 139, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--vn-teal-deep);
+  cursor: pointer;
+  font-weight: 800;
+  padding: 0.58rem 0.82rem;
+  text-align: left;
+  transition:
+    border-color 150ms ease,
+    background 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.tool-example-button:hover {
+  border-color: rgba(13, 139, 139, 0.28);
+  background: var(--vn-card-warm);
+  color: var(--vn-teal-deep);
+  box-shadow: 0 10px 22px rgba(18, 48, 71, 0.08);
+  transform: translateY(-1px);
+}
+
+.tool-example-button:focus-visible {
+  outline: 3px solid var(--vn-focus);
+  outline-offset: 3px;
+}
+
+.tool-example-button::after {
+  content: " ↓";
+  font-weight: 800;
+}
+
+.tool-example[open] .tool-example-button::after {
+  content: " ↑";
+}
+
+.tool-example-content {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-example-button {
+    transition: none;
+  }
+
+  .tool-example-button:hover {
+    transform: none;
+  }
+}
+/* ==========================================================================
+   Tools Library Example Button Polish
+   Makes native details/summary examples feel like app buttons.
+   ========================================================================== */
+
+.tool-example {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(18, 48, 71, 0.08);
+}
+
+.tool-example summary {
+  list-style: none;
+}
+
+.tool-example summary::-webkit-details-marker {
+  display: none;
+}
+
+.tool-example-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.tool-example-button::after {
+  content: "↓";
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tool-example[open] .tool-example-button::after {
+  content: "↑";
+}
+
+.tool-example-content {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-example-button:hover {
+    transform: none;
+  }
+}

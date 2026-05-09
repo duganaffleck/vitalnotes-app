@@ -6,16 +6,27 @@ Questions belong here when they matter, but do not need to be solved immediately
 
 The goal is to keep uncertainty visible without letting it derail the current phase.
 
+Do not use this note for active tasks.
+
+Active tasks belong in [[Next Build Tasks]].
+
+Decisions that have already been made belong in [[Decisions]].
+
+Deferred ideas belong in [[Deferred Ideas]].
+
 ---
 
-## Content Questions
+## Current Status
 
-### How many total student-facing sections should the rebuilt VitalNotes guide contain?
+The first app vertical slice has been implemented and pushed.
 
-Current thought:  
-The guide should remain smaller and cleaner than the old version, but not so reduced that important learning problems get flattened.
+The first-slice content migration is complete.
 
-The current path is holding through:
+The first-slice cleanup pass is complete.
+
+The first-slice smoke test has passed.
+
+The app now renders real student-facing content across:
 
 - [[00 Start Here]]
 - [[01 Why Learning Feels Hard]]
@@ -23,201 +34,306 @@ The current path is holding through:
 - [[03 Build Usable Notes]]
 - [[04 Build Recall]]
 
-Status:  
+Completed cleanup passes:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+- [[Glossary Term Audit]]
+- related-link audit
+- reader typography and spacing pass
+- demo-readiness smoke test
+
+The first slice is stable and demo-ready.
+
+Most earlier app-readiness questions are now resolved, implemented, or superseded.
+
+This note should now focus on questions that remain genuinely open after first-slice stabilization.
+
+---
+
+## Current Open Questions
+
+### What should the next bounded app-development pass be?
+
+Current thought:
+
+The next move should not be automatic content expansion.
+
+The first slice is stable, so the next pass should be chosen deliberately.
+
+Possible next bounded passes include:
+
+- deployment verification cleanup, if needed
+- small design consistency pass for button versus text-link affordances
+- future repeatable migration checklist
+- next content-slice planning
+- next content-slice migration
+
+Status:
+
 Open
 
-Review later:  
-After the first full learning path draft is more complete, or after the first app slice reveals whether the current number of sections feels navigable.
+Review soon:
+
+After the Obsidian status update pass is complete.
+
+Related notes:
+
+- [[Next Build Tasks]]
+- [[Deferred Ideas]]
+- [[Decisions]]
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
 
 ---
 
-### Should the next content cluster be drafted before app development?
+### Does deployment need a separate verification pass?
 
-Current thought:  
-Probably not.
+Current thought:
 
-The current first app slice is now strong enough to test with real content:
+The live/deployment state appears stable based on review, but deployment may still deserve its own small verification pass if the app is going to be shown to anyone else.
 
-- Start Here
-- Why Learning Feels Hard
-- Build Understanding
-- Build Usable Notes
-- Build Recall
-- three active tools
+This pass should remain narrow.
 
-Continuing into [[Clinical Reasoning]] is appealing, but it may delay the app interface test longer than needed.
+It would check:
 
-Status:  
-Open for immediate app-readiness checkpoint
+- Vercel build status
+- live URL behavior
+- navigation outside localhost
+- first-slice reader pages
+- tools
+- glossary
+- related links
+- mobile-ish browser width
 
-Review soon:  
-After the Build Recall architecture verification pass is complete.
+Status:
 
----
+Open
 
-## App Interface Questions
+Review soon:
 
-### When should the VS Code app build begin?
-
-Current thought:  
-Soon, but not before the Build Recall architecture verification pass and app-readiness checkpoint are complete.
-
-The app build should begin only after the first vertical slice is checked against real drafted sections and active tool pages.
-
-Status:  
-Open for app-readiness checkpoint
-
-Review soon:  
-After this Build Recall architecture verification pass is complete.
+Before treating the first slice as externally shareable.
 
 ---
 
-### Should the first app version use manual JavaScript objects, JSON-like data, or Markdown import?
+### Should button versus text-link consistency be the next UI pass?
 
-Current thought:  
-Manual JavaScript objects or JSON-like content structures are likely best for the first vertical slice.
+Current thought:
 
-A full Obsidian-to-app Markdown import pipeline should not be built yet. It would add complexity before the interface, content schema, glossary support, and tool behavior have been tested.
+Maybe, but not urgently.
 
-Status:  
-Open for app build phase
+The current app is usable and demo-ready.
 
-Review later:  
-Before app scaffold.
+Later UI review should decide which navigation actions should render as buttons versus text links.
+
+Specific item to revisit:
+
+- Learning Path `Open section` affordance compared with full button treatments
+
+Status:
+
+Deferred, but open for a future design consistency pass
+
+Review later:
+
+Only after the next bounded app-development pass is chosen.
+
+Related note:
+
+- [[Deferred Ideas]]
 
 ---
 
-### How much of Obsidian should be represented in the app?
+### Should there be a repeatable migration checklist before the next content slice?
 
-Current thought:  
+Current thought:
+
+Probably useful.
+
+The first slice revealed a pattern:
+
+- migrate content
+- check list blocks
+- check glossary IDs
+- check related links
+- run build
+- run audit scripts
+- smoke test reader pages
+- update Obsidian status files
+
+A simple checklist could reduce drift during the next slice.
+
+Status:
+
+Open
+
+Review soon:
+
+Before migrating the next content slice.
+
+Possible location:
+
+- [[Next Build Tasks]]
+- [[MOC - Build Prompts]]
+- [[ChatGPT App Development Prompt]]
+- [[ChatGPT Obsidian Update Prompt]]
+
+Do not create this unless it clearly helps the next bounded pass.
+
+---
+
+### How many total student-facing sections should the rebuilt VitalNotes guide contain?
+
+Current thought:
+
+The guide should remain smaller and cleaner than the old version, but not so reduced that important learning problems get flattened.
+
+The current app-tested path now includes:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Status:
+
+Open
+
+Review later:
+
+After the next content clusters begin to reveal whether the overall guide still feels navigable.
+
+Do not change the locked learning path casually.
+
+---
+
+### How much of Obsidian should eventually be represented in the app?
+
+Current thought:
+
 Only the student-facing guide, glossary support, learning path, and active tools should appear in the app.
 
-Obsidian itself should remain the source of truth and an optional student tool, not the visible structure of the app. The app should not expose internal planning files, development notes, mapping documents, source indexes, draft notes, or vault architecture.
+Obsidian remains the source of truth.
 
-Status:  
-Open for app design
+The app should not expose internal planning files, development notes, mapping documents, source indexes, draft notes, or vault architecture.
 
-Review later:  
-When refining [[Content Schema]] and [[Navigation Model]].
+Status:
 
----
+Open for later app design review
 
-### Should glossary popups appear inline or as side-panel cards?
+Review later:
 
-Current thought:  
-Open.
-
-Inline popups may be simpler. Side-panel cards may feel cleaner and less disruptive in a calm reading interface.
-
-Status:  
-Open for app build phase
-
-Review later:  
-When building the first VS Code section reader.
-
----
-
-### Should tools open in drawers, modals, or separate pages?
-
-Current thought:  
-Open.
-
-The current app concept favours tool drawers or separate tool pages, but this should be tested once the first vertical slice exists.
-
-Active tools likely need standalone pages in the Tools Library:
-
-- [[Directive Meaning Check]]
-- [[Smart Note Template]]
-- [[Clinical Recall Prompt Builder]]
-
-Some may also need section-linked access where they directly support a reading section.
-
-Status:  
-Open for app build phase
-
-Review later:  
-When planning the first app vertical slice.
-
----
-
-### Should active tools be tool drawers, standalone pages, or both?
-
-Current thought:  
-Likely both, but not confirmed.
-
-Standalone pages would make the Tools Library useful as a return location. Tool drawers would let students use a tool while reading the connected section without losing context.
-
-Likely first-slice active tools:
-
-- [[Directive Meaning Check]]
-- [[Smart Note Template]]
-- [[Clinical Recall Prompt Builder]]
-
-Likely contextual drawer candidates:
-
-- [[Directive Meaning Check]] with [[Directives Through Purpose]]
-- [[Smart Note Template]] with [[Smart Notes for Paramedic Students]], [[Types of Notes and Idea Maturation]], and possibly [[Obsidian for Learning Paramedicine]]
-- [[Clinical Recall Prompt Builder]] with [[Clinical Recall Without Trivia]] and [[Anki for Paramedic Learning]]
-
-Status:  
-Open for app build phase
-
-Review later:  
-When planning [[Tool Drawer Design]] and the first vertical slice.
-
----
-
-### Should the app track reading progress locally?
-
-Current thought:  
-Not for the earliest version unless it is very simple and low-friction.
-
-Status:  
-Open for app build phase
-
-Review later:  
-After the first app scaffold is running.
-
----
-
-### Should there be an instructor-facing section in version one?
-
-Current thought:  
-Probably not for the first version.
-
-VitalNotes should remain student-facing until the core guide experience is stable. Instructor-facing notes may come later.
-
-Status:  
-Mostly deferred
-
-Review later:  
-After the first app version is usable.
+When refining [[Content Schema]], [[Navigation Model]], and any future content pipeline decisions.
 
 ---
 
 ### Should [[Where to Begin]] become an interactive selector later?
 
-Current thought:  
+Current thought:
+
 Possibly.
 
-For now, it should remain a written routing page. Later, it may translate into simple app navigation cards.
+For now, [[Where to Begin]] remains a written routing page.
 
-Status:  
-Open for app build phase
+Later, it may translate into simple app navigation cards or a low-friction entry selector.
 
-Review later:  
-When designing the first app navigation components.
+Status:
+
+Open for later interface review
+
+Review later:
+
+Only if the written routing page stops feeling sufficient.
+
+Do not build this as part of the current stable first-slice phase.
+
+---
+
+### Should active tools remain both standalone pages and contextual drawers?
+
+Current thought:
+
+The first slice currently supports simple tool drawer access and a [[Tools Library]].
+
+This appears sufficient for the current phase.
+
+Active tools:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Likely contextual relationships:
+
+- [[Directive Meaning Check]] with [[Directives Through Purpose]]
+- [[Smart Note Template]] with [[Smart Notes for Paramedic Students]], [[Types of Notes and Idea Maturation]], and [[Obsidian for Learning Paramedicine]]
+- [[Clinical Recall Prompt Builder]] with [[Clinical Recall Without Trivia]] and [[Anki for Paramedic Learning]]
+
+Status:
+
+Open for later reader testing
+
+Review later:
+
+Only if tool drawers feel too cramped, too hidden, or disruptive to reading.
+
+---
+
+### Should the app track reading progress locally?
+
+Current thought:
+
+Not for the current first slice.
+
+Reading progress should remain deferred unless there is a clear student need and the implementation stays simple, local, and low-friction.
+
+Status:
+
+Deferred, but open for later review
+
+Review later:
+
+Only after the student-facing guide experience is more complete.
+
+Related note:
+
+- [[Deferred Ideas]]
+
+---
+
+### Should there be an instructor-facing section in version one?
+
+Current thought:
+
+Probably not.
+
+VitalNotes should remain student-facing until the core guide experience is stable.
+
+Instructor-facing notes may come later, but they should not be added to the first slice.
+
+Status:
+
+Mostly deferred
+
+Review later:
+
+After the student-facing app experience is usable.
+
+Related note:
+
+- [[Deferred Ideas]]
 
 ---
 
 ### Should Anki-related support ever go beyond guidance and copyable prompts?
 
-Current thought:  
-Probably not in the first app slice.
+Current thought:
+
+Probably not in the first app phase.
 
 The current boundary is that VitalNotes may mention Anki and may support better clinical recall prompt design through [[Clinical Recall Prompt Builder]], but the app should not become an Anki platform.
 
-Do not include in the first slice:
+Do not include:
 
 - Anki integration
 - deck management
@@ -225,43 +341,114 @@ Do not include in the first slice:
 - flashcard-platform behavior
 - Anki-specific tools
 
-Status:  
+Status:
+
 Mostly resolved for first slice, open for later review only if repeated student need appears
 
-Review later:  
-After first app testing, only if students repeatedly need limited copy support or card-quality guidance.
+Review later:
+
+Only if students repeatedly need limited copy support or card-quality guidance.
+
+Related notes:
+
+- [[Anki for Paramedic Learning]]
+- [[Clinical Recall Prompt Builder]]
+- [[Deferred Ideas]]
+- [[Decisions]]
 
 ---
 
-## Workflow Questions
+### Should Obsidian remain the long-term source of truth, or should the app content folder eventually become the source?
 
-### Should Obsidian remain the source of truth, or should the app content folder eventually become the vault?
+Current thought:
 
-Current thought:  
 Obsidian remains the source of truth for now.
 
-The app content folder may eventually mirror or import from the vault, but we should not solve that before the first app slice tests the content schema and reading experience.
+The app content folder currently holds manually migrated first-slice content in `src/content/sections.ts`.
 
-Status:  
-Open for app build phase
+This is acceptable for the first vertical slice.
 
-Review later:  
-Before VS Code app content implementation.
+The app content folder may eventually mirror or import from the vault, but this should not be solved before manual migration becomes a real maintenance burden.
+
+Status:
+
+Open for later workflow review
+
+Review later:
+
+After the next slice shows whether manual migration remains sustainable.
 
 ---
 
-### Should Codex tasks be logged manually in [[Decisions]]?
+### Should a future content pipeline use Markdown, MDX, JSON, or generated TypeScript objects?
 
-Current thought:  
-No, not usually.
+Current thought:
 
-Codex implementation work should likely be tracked in [[Next Build Tasks]], [[Bugs and Fixes]], or a future development log entry. [[Decisions]] should only record major structural or strategic choices.
+Manual TypeScript content objects were appropriate for the first vertical slice.
 
-Status:  
-Mostly resolved
+A full [[Obsidian Import Pipeline]], MDX setup, or CMS should remain deferred.
 
-Review later:  
-When VS Code development begins.
+Status:
+
+Open for later workflow review
+
+Review later:
+
+Only after manual migration becomes either proven sustainable or clearly burdensome.
+
+Related notes:
+
+- [[Deferred Ideas]]
+- [[Decisions]]
+- [[Content Schema]]
+
+---
+
+## Cleanup Questions
+
+### Which files still contain stale pre-stable-first-slice language?
+
+Current thought:
+
+Some vault files may still contain stale language such as:
+
+- app build not started
+- app-readiness checkpoint pending
+- Build Recall not included in the first slice
+- only two active tools
+- content not migrated
+- first slice undecided
+- app production deferred
+- bullet cleanup still active
+- glossary audit still active
+- first-slice reader testing still pending
+- visual polish still waiting for cleanup
+
+Status:
+
+Open during current vault update pass
+
+Review soon:
+
+Continue checking only files that are likely to need updating.
+
+Likely locations:
+
+- [[Project Dashboard]]
+- [[Active Sprint]]
+- [[Section Reader Design]]
+- [[Content Schema]]
+- [[Navigation Model]]
+- [[First Vertical Slice]]
+- [[MOC - Rebuilt Content]]
+- [[MOC - App Interface Design]]
+- [[ChatGPT App Development Prompt]]
+- [[ChatGPT Obsidian Update Prompt]]
+- [[App Continuation Prompt]]
+
+Do not update files just because they exist.
+
+Update only files with stale project-state language or genuinely useful checkpoint information.
 
 ---
 
@@ -269,30 +456,44 @@ When VS Code development begins.
 
 ### How much routing belongs in [[How to Use This Guide]]?
 
-Status:  
+Status:
+
 Resolved
 
-Resolution:  
-General use guidance belongs in [[How to Use This Guide]]. Problem-based routing belongs in [[Where to Begin]].
+Resolution:
+
+General use guidance belongs in [[How to Use This Guide]].
+
+Problem-based routing belongs in [[Where to Begin]].
 
 ---
 
 ### Should Start Here explain the full guide navigation?
 
-Status:  
+Status:
+
 Resolved
 
-Resolution:  
-No. [[Start Here - What VitalNotes Is]] explains purpose. [[How to Use This Guide]] explains general approach. [[Where to Begin]] handles problem-based entry.
+Resolution:
+
+No.
+
+[[Start Here - What VitalNotes Is]] explains purpose.
+
+[[How to Use This Guide]] explains general approach.
+
+[[Where to Begin]] handles problem-based entry.
 
 ---
 
 ### Should the early retrieval problem and later retrieval system be separated?
 
-Status:  
+Status:
+
 Resolved
 
-Resolution:  
+Resolution:
+
 [[Why Studying Feels Productive But Fails Under Pressure]] introduces the problem of familiarity, recognition, and weak access.
 
 [[Retrieval and Spaced Learning]] teaches the fuller retrieval and spacing system.
@@ -303,37 +504,49 @@ This separation is working.
 
 ### Should [[Learning Strain Is Not Always a Personal Problem]] remain as its own section?
 
-Status:  
+Status:
+
 Resolved for now
 
-Resolution:  
-Yes. The section completes the [[Why Learning Feels Hard]] cluster by helping students distinguish useful difficulty from wasted difficulty without treating every struggle as personal failure.
+Resolution:
 
-Revisit later:  
-During the first full app-readiness pass.
+Yes.
+
+The section completes [[01 Why Learning Feels Hard]] by helping students distinguish useful difficulty from wasted difficulty without treating every struggle as personal failure.
+
+Revisit later:
+
+Only if future reader testing shows a functional gap.
 
 ---
 
 ### Should old sections be directly rewritten or only mined for ideas?
 
-Status:  
+Status:
+
 Mostly resolved
 
-Resolution:  
-Old sections should be treated as source material, not fixed structure. Strong ideas, examples, and explanations should be preserved when useful, but the old section order and wording do not need to be protected.
+Resolution:
 
-Related decision:  
+Old sections should be treated as source material, not fixed structure.
+
+Strong ideas, examples, and explanations should be preserved when useful, but the old section order and wording do not need to be protected.
+
+Related decision:
+
 See [[Decisions]].
 
 ---
 
 ### How much should the Build Understanding cluster diagnose learning problems versus teach understanding directly?
 
-Status:  
+Status:
+
 Resolved for now
 
-Resolution:  
-The Build Understanding cluster shifted appropriately from diagnosing difficulty to teaching usable understanding through meaning, mechanisms, pathophysiology patterns, directive purpose, risk, boundaries, and reassessment.
+Resolution:
+
+The [[02 Build Understanding]] cluster shifted appropriately from diagnosing difficulty to teaching usable understanding through meaning, mechanisms, pathophysiology patterns, directive purpose, risk, boundaries, and reassessment.
 
 Related sections:
 
@@ -345,10 +558,12 @@ Related sections:
 
 ### How much of the original Smart Notes material should remain student-facing?
 
-Status:  
+Status:
+
 Resolved for now
 
-Resolution:  
+Resolution:
+
 The core Smart Notes ideas remain student-facing, but the rebuilt cluster is smaller, more practical, and more clearly tied to paramedic learning.
 
 The current split is:
@@ -358,37 +573,45 @@ The current split is:
 - [[Obsidian for Learning Paramedicine]] explains a simple workspace without making Obsidian mandatory.
 - [[Smart Note Template]] provides the reusable tool.
 
-Revisit later:  
-During app-readiness testing, especially around how the Smart Note Template appears in the interface.
+Revisit later:
+
+Only if app tool placement creates friction.
 
 ---
 
 ### Should the first version include Anki?
 
-Status:  
+Status:
+
 Resolved for now
 
-Resolution:  
+Resolution:
+
 Yes, but carefully.
 
-[[Anki for Paramedic Learning]] is included in the Build Recall cluster.
+[[Anki for Paramedic Learning]] is included in [[04 Build Recall]].
 
-The section positions Anki as a support for retrieval and spacing, not as the learning system. It avoids turning VitalNotes into a flashcard-first guide.
+The section positions Anki as a support for retrieval and spacing, not as the learning system.
 
-Revisit later:  
-During app-readiness testing, especially to make sure Anki does not become visually or structurally overemphasized.
+It avoids turning VitalNotes into a flashcard-first guide.
+
+Revisit later:
+
+Only if Anki becomes visually or structurally overemphasized in the app.
 
 ---
 
 ### Should the Build Recall cluster create a new active tool?
 
-Status:  
+Status:
+
 Resolved
 
-Resolution:  
+Resolution:
+
 Yes.
 
-The Build Recall cluster earned [[Clinical Recall Prompt Builder]] as an active drafted tool.
+[[04 Build Recall]] earned [[Clinical Recall Prompt Builder]] as an active drafted tool.
 
 This tool is broader and more useful than [[Recognition vs Access Check]]. It helps students turn facts, Smart Notes, directive details, scenario errors, and confusing concepts into recall prompts that support clinical use.
 
@@ -396,28 +619,33 @@ This tool is broader and more useful than [[Recognition vs Access Check]]. It he
 
 ### Should [[Recognition vs Access Check]] be created?
 
-Status:  
+Status:
+
 Resolved for now
 
-Resolution:  
+Resolution:
+
 No.
 
-The useful pieces of [[Recognition vs Access Check]] have been folded into the Build Recall sections and [[Clinical Recall Prompt Builder]].
+The useful pieces of [[Recognition vs Access Check]] have been folded into [[04 Build Recall]] and [[Clinical Recall Prompt Builder]].
 
-Revisit later:  
+Revisit later:
+
 Only if app testing shows students need a smaller access-check tool separate from clinical recall prompt building.
 
 ---
 
 ### Should the Build Recall cluster lean more toward weekly study rhythm or scenario transfer?
 
-Status:  
+Status:
+
 Resolved for now
 
-Resolution:  
+Resolution:
+
 Scenario transfer should remain central.
 
-The Build Recall cluster teaches retrieval, spacing, clinical recall, and Anki in a way that supports access during labs, scenarios, OSCEs, and patient care.
+[[04 Build Recall]] teaches retrieval, spacing, clinical recall, and Anki in a way that supports access during labs, scenarios, OSCEs, and patient care.
 
 It does not become a generic weekly study schedule.
 
@@ -425,24 +653,187 @@ It does not become a generic weekly study schedule.
 
 ### Should the first app slice begin after Build Usable Notes or after Build Recall?
 
-Status:  
-Resolved for now
+Status:
 
-Resolution:  
-The first app slice should begin after Build Recall.
+Resolved and implemented
 
-Reason:  
-Build Recall gives the first app slice a stronger learning arc:
+Resolution:
+
+The first app slice begins after [[04 Build Recall]].
+
+Reason:
+
+[[04 Build Recall]] gives the first app slice a stronger learning arc:
 
 - understand why learning feels hard
 - build understanding
 - preserve understanding in usable notes
 - practice accessing knowledge through retrieval and clinical recall
 
-This is a better test of the app than stopping after Build Usable Notes.
+This is a better test of the app than stopping after [[03 Build Usable Notes]].
 
-Revisit later:  
-Confirm during the app-readiness checkpoint before VS Code work begins.
+Related checkpoint:
+
+[[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+---
+
+### Should the next content cluster be drafted before app development?
+
+Status:
+
+Resolved
+
+Resolution:
+
+No.
+
+The project moved into app implementation after [[04 Build Recall]], rather than continuing immediately into [[Clinical Reasoning]].
+
+This allowed the first vertical slice to be tested with real content.
+
+---
+
+### When should the VS Code app build begin?
+
+Status:
+
+Resolved and implemented
+
+Resolution:
+
+The app build began after the app-readiness checkpoint.
+
+The first shell exists, the first-slice content migration is complete, and the first slice is now stable and demo-ready.
+
+Related checkpoints:
+
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+---
+
+### Should the first app version use manual JavaScript objects, JSON-like data, or Markdown import?
+
+Status:
+
+Resolved for first slice
+
+Resolution:
+
+The first app slice uses manually migrated TypeScript content objects.
+
+A full [[Obsidian Import Pipeline]], MDX setup, or CMS remains deferred.
+
+Related decision:
+
+[[Decisions]]
+
+---
+
+### Should glossary popups appear inline or as side-panel cards?
+
+Status:
+
+Resolved for first slice
+
+Resolution:
+
+The first app shell includes glossary term panel and popup support.
+
+Revisit later:
+
+Only if reader testing shows that glossary behavior disrupts the calm reading experience.
+
+---
+
+### Should tools open in drawers, modals, or separate pages?
+
+Status:
+
+Resolved for first slice
+
+Resolution:
+
+The first app shell includes simple tool drawer support and a [[Tools Library]] page.
+
+Revisit later:
+
+Only if reader testing shows the tool drawer interrupts reading or does not provide enough space for tool use.
+
+---
+
+### Should Codex tasks be logged manually in [[Decisions]]?
+
+Status:
+
+Mostly resolved
+
+Resolution:
+
+No, not usually.
+
+Codex implementation work should be tracked in [[Next Build Tasks]], [[Bugs and Fixes]], or a future development log entry.
+
+[[Decisions]] should only record major structural or strategic choices.
+
+Codex and Copilot are currently unreliable, so they are not part of the critical path.
+
+---
+
+### Should [[Retro Fix 01 - Bullet List Cleanup]] remain active?
+
+Status:
+
+Resolved
+
+Resolution:
+
+No.
+
+[[Retro Fix 01 - Bullet List Cleanup]] is complete for the first vertical slice.
+
+Run a similar cleanup after future migrations only if the issue reappears.
+
+---
+
+### Should [[Glossary Term Audit]] remain active?
+
+Status:
+
+Resolved
+
+Resolution:
+
+No.
+
+[[Glossary Term Audit]] is complete for the first vertical slice.
+
+The reusable audit script should remain in the app workflow:
+
+- `scripts/audit-glossary.cjs`
+
+Run it after future content migrations and before commits.
+
+---
+
+### Should related links be audited manually only?
+
+Status:
+
+Resolved
+
+Resolution:
+
+No.
+
+A related-link audit script now exists:
+
+- `scripts/audit-related-links.cjs`
+
+The audit should be run after future related-link changes and before commits.
+
+Human review still matters, but the script protects against broken IDs.
 
 ---
 

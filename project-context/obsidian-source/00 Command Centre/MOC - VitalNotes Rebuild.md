@@ -8,88 +8,110 @@ The goal is to preserve the strongest thinking and reorganize it into something 
 
 Obsidian is the source of truth.
 
-Content comes before code.
+The app renders the guide.
+
+The app does not reinvent the guide.
 
 ---
 
 ## Current Project Phase
 
-The content rebuild is underway.
+VitalNotes has moved from content rebuild and app-readiness planning into active app implementation.
 
-Drafted clusters:
+The app-readiness checkpoint is complete.
 
-- [[../03 Rebuilt Content/00 Start Here]]
-- [[../03 Rebuilt Content/01 Why Learning Feels Hard]]
-- [[../03 Rebuilt Content/02 Build Understanding]]
-- [[../03 Rebuilt Content/03 Build Usable Notes]]
-- [[../03 Rebuilt Content/04 Build Recall]]
+The first vertical slice is approved.
 
-Active drafted tools:
+The first working app shell exists.
 
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
+The approved first-slice content migration is complete and pushed.
 
-Current work:
+The app now renders real student-facing content across:
 
-- Build Recall architecture update pass
-- app-readiness checkpoint preparation
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
 
-Next possible phase:
+Active first-slice tools:
 
-- first app vertical slice
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
 
-Possible next content cluster if app development is deferred:
+Current active cleanup:
 
-- [[../03 Rebuilt Content/05 Think Clinically]]
+- [[Retro Fix 01 - Bullet List Cleanup]]
 
-Next possible student-facing section if continuing content:
+Next cleanup:
 
-- [[../03 Rebuilt Content/05 Think Clinically/Clinical Reasoning]]
+- [[Glossary Term Audit]]
 
-Do not start app production until the Build Recall architecture update pass and app-readiness checkpoint are complete.
+Current phase:
+
+- first-slice cleanup
+- reader-quality testing preparation
+- vault alignment
+
+Do not expand app scope yet.
+
+Do not begin the next content cluster unless Dugan explicitly moves the project back into content drafting.
 
 ---
 
 ## Current Focus
 
+Use these files to understand where the project is, what is active, what is parked, and what should happen next:
+
 - [[VitalNotes Rebuild Master Map]]
 - [[Current Project Status]]
 - [[Next Actions]]
 - [[Open Questions]]
-- [[../06 Development Log/Next Build Tasks]]
+- [[Next Build Tasks]]
+- [[Decisions]]
+- [[Bugs and Fixes]]
+- [[Release Notes]]
+- [[Deferred Ideas]]
 
-Use these files to understand where the project is, what is active, what is parked, and what should happen next.
+Current immediate work:
+
+1. complete [[Retro Fix 01 - Bullet List Cleanup]]
+2. complete [[Glossary Term Audit]]
+3. test first-slice reader quality
+4. then decide whether to continue app polish, prepare deployment, or return to drafting [[Clinical Reasoning]]
 
 ---
 
 ## Source Material
 
-- [[../01 Source Library/MOC - Source Library]]
-- [[../01 Source Library/Source Material Index]]
-- [[../01 Source Library/Reading Influence Pool]]
-- [[../01 Source Library/Prior VitalNotes Sections]]
-- [[../01 Source Library/Teaching Observations]]
-- [[../01 Source Library/Scenario Generator Influence]]
-- [[../01 Source Library/Concepts to Preserve]]
+- [[MOC - Source Library]]
+- [[Source Material Index]]
+- [[Reading Influence Pool]]
+- [[Prior VitalNotes Sections]]
+- [[Teaching Observations]]
+- [[Scenario Generator Influence]]
+- [[Concepts to Preserve]]
 
 Source material should be used to preserve strong thinking, examples, tone, and learning architecture.
 
 It should not force the rebuild to preserve old section order, old wording, or old structure.
 
-The reading influence pool should shape the guide quietly. It should not turn student-facing pages into book summaries or academic commentary.
+The reading influence pool should shape the guide quietly.
+
+It should not turn student-facing pages into book summaries or academic commentary.
 
 ---
 
 ## Content Architecture
 
-- [[../02 Content Architecture/MOC - Content Architecture]]
-- [[../02 Content Architecture/New VitalNotes Learning Path]]
-- [[../02 Content Architecture/Student Problem Map]]
-- [[../02 Content Architecture/Page Type Map]]
-- [[../02 Content Architecture/Tool Library Map]]
-- [[../02 Content Architecture/Glossary and Popup Map]]
-- [[../02 Content Architecture/Old-to-New Section Mapping]]
+- [[MOC - Content Architecture]]
+- [[New VitalNotes Learning Path]]
+- [[Student Problem Map]]
+- [[Page Type Map]]
+- [[Tool Library Map]]
+- [[Glossary and Popup Map]]
+- [[Old-to-New Section Mapping]]
 
 These files define the structure of the rebuilt guide.
 
@@ -102,70 +124,136 @@ Use them to protect:
 - glossary selectivity
 - old-to-new continuity
 
-Do not change the learning path or content map without an explicit decision.
+Do not change the learning path or content map without an explicit decision in [[Decisions]].
+
+Do not add new active tools during first-slice cleanup unless explicitly approved.
 
 ---
 
 ## Rebuilt Content
 
-- [[../03 Rebuilt Content/MOC - Rebuilt Content]]
+Completed and migrated first-slice clusters:
 
-Completed drafted clusters:
+### [[00 Start Here]]
 
-### 00 Start Here
+- [[Start Here - What VitalNotes Is]] - Draft v3, migrated to first-slice app
+- [[How to Use This Guide]] - Draft v3, migrated to first-slice app
+- [[Where to Begin]] - Draft v2, migrated to first-slice app
 
-- [[../03 Rebuilt Content/00 Start Here/Start Here - What VitalNotes Is]] - Draft v3
-- [[../03 Rebuilt Content/00 Start Here/How to Use This Guide]] - Draft v3
-- [[../03 Rebuilt Content/00 Start Here/Where to Begin]] - Draft v2
+### [[01 Why Learning Feels Hard]]
 
-### 01 Why Learning Feels Hard
+- [[Cognitive Load]] - Draft v2, migrated to first-slice app
+- [[Why Studying Feels Productive But Fails Under Pressure]] - Draft v2, migrated to first-slice app
+- [[Learning Strain Is Not Always a Personal Problem]] - Draft v2, migrated to first-slice app
 
-- [[../03 Rebuilt Content/01 Why Learning Feels Hard/Cognitive Load]] - Draft v2
-- [[../03 Rebuilt Content/01 Why Learning Feels Hard/Why Studying Feels Productive But Fails Under Pressure]] - Draft v2
-- [[../03 Rebuilt Content/01 Why Learning Feels Hard/Learning Strain Is Not Always a Personal Problem]] - Draft v2
+### [[02 Build Understanding]]
 
-### 02 Build Understanding
+- [[Meaning Before Memorization]] - Draft v2, migrated to first-slice app
+- [[Pathophysiology Through Patterns]] - Draft v2, migrated to first-slice app
+- [[Directives Through Purpose]] - Draft v2, migrated to first-slice app
 
-- [[../03 Rebuilt Content/02 Build Understanding/Meaning Before Memorization]] - Draft v2
-- [[../03 Rebuilt Content/02 Build Understanding/Pathophysiology Through Patterns]] - Draft v2
-- [[../03 Rebuilt Content/02 Build Understanding/Directives Through Purpose]] - Draft v2
+### [[03 Build Usable Notes]]
 
-### 03 Build Usable Notes
+- [[Smart Notes for Paramedic Students]] - Draft v2, migrated to first-slice app
+- [[Types of Notes and Idea Maturation]] - Draft v2, migrated to first-slice app
+- [[Obsidian for Learning Paramedicine]] - Draft v2, migrated to first-slice app
 
-- [[../03 Rebuilt Content/03 Build Usable Notes/Smart Notes for Paramedic Students]] - Draft v2
-- [[../03 Rebuilt Content/03 Build Usable Notes/Types of Notes and Idea Maturation]] - Draft v2
-- [[../03 Rebuilt Content/03 Build Usable Notes/Obsidian for Learning Paramedicine]] - Draft v2
+Cleanup note:
 
-### 04 Build Recall
+[[03 Build Usable Notes]] is an early target for [[Retro Fix 01 - Bullet List Cleanup]] because some app-migrated list-like content may still be flattened into paragraph blocks.
 
-- [[../03 Rebuilt Content/04 Build Recall/Retrieval and Spaced Learning]] - Draft v2
-- [[../03 Rebuilt Content/04 Build Recall/Clinical Recall Without Trivia]] - Draft v2
-- [[../03 Rebuilt Content/04 Build Recall/Anki for Paramedic Learning]] - Draft v2
+### [[04 Build Recall]]
 
-### Tools Library
+- [[Retrieval and Spaced Learning]] - Draft v2, migrated to first-slice app
+- [[Clinical Recall Without Trivia]] - Draft v2, migrated to first-slice app
+- [[Anki for Paramedic Learning]] - Draft v2, migrated to first-slice app
 
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]] - Draft v1
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]] - Draft v1
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]] - Draft v1
+Build Recall is included in the first vertical slice and has been migrated.
 
-Next possible content target:
+Do not revert to older language that treats [[04 Build Recall]] as excluded, undecided, pending, or future-facing.
 
-- [[../03 Rebuilt Content/05 Think Clinically/Clinical Reasoning]]
+---
+
+## Tools Library
+
+Active first-slice tools:
+
+- [[Directive Meaning Check]] - Draft v1, migrated to first-slice app
+- [[Smart Note Template]] - Draft v1, migrated to first-slice app
+- [[Clinical Recall Prompt Builder]] - Draft v1, migrated to first-slice app
+
+Planned tools:
+
+- [[Clinical Reasoning Check]]
+- [[Pattern Recognition Safety Check]]
+- [[Scenario Day Reset]]
+- [[OSCE Reset]]
+- [[Five Whys Tool]]
+- [[Reflection Without Journaling Tool]]
+
+Planned tools should remain planned until their related sections are rebuilt, stable, and clearly earn tool support.
+
+Do not create an Anki-specific active tool.
+
+[[Clinical Recall Prompt Builder]] is the current active tool for shaping recall prompts that may support Anki use without turning VitalNotes into an Anki platform.
+
+---
+
+## Next Possible Content Direction
+
+Next possible content cluster:
+
+- [[05 Think Clinically]]
+
+Next possible student-facing section:
+
+- [[Clinical Reasoning]]
+
+Likely later sections:
+
+- [[Pattern Recognition]]
+- [[Avoiding Premature Closure]]
+
+Likely later tools:
+
+- [[Clinical Reasoning Check]]
+- [[Pattern Recognition Safety Check]]
+
+Do not begin this cluster during first-slice cleanup unless Dugan explicitly chooses to return to content drafting.
+
+The current active work is app reader cleanup.
 
 ---
 
 ## App Interface
 
-- [[../04 App Interface Design/MOC - App Interface Design]]
-- [[../04 App Interface Design/App Vision]]
-- [[../04 App Interface Design/Navigation Model]]
-- [[../04 App Interface Design/Section Reader Design]]
-- [[../04 App Interface Design/Popup and Glossary Rules]]
-- [[../04 App Interface Design/Content Schema]]
-- [[../04 App Interface Design/Tool Drawer Design]]
-- [[../04 App Interface Design/UI Tone and Style]]
+- [[MOC - App Interface Design]]
+- [[App Vision]]
+- [[Navigation Model]]
+- [[Section Reader Design]]
+- [[Popup and Glossary Rules]]
+- [[Content Schema]]
+- [[Tool Drawer Design]]
+- [[UI Tone and Style]]
 
-The app should be a calm, content-driven interface that renders the guide well.
+The app is now implemented as a first vertical slice.
+
+Current app support includes:
+
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- hash-based navigation
+- previous and next section navigation
+- related sections
+- related tools
+- simple tool drawer support
+- simple glossary popup support
+- section body list support
+
+The app should remain a calm, content-driven interface that renders the guide well.
 
 It should not become:
 
@@ -176,45 +264,107 @@ It should not become:
 - a gamified study app
 - an Obsidian tutorial site
 - an Anki platform
+- a flashcard platform
 
-Likely first app slice:
+---
 
-- Home page
-- Learning Path page
-- Section Reader
-- Start Here cluster
-- Why Learning Feels Hard cluster
-- Build Understanding cluster
-- Build Usable Notes cluster
-- Build Recall cluster
-- glossary support
-- simple Tools Library
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
+## First App Slice
+
+Current first app slice:
+
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
 - previous and next navigation
-- problem-based entry through [[../03 Rebuilt Content/00 Start Here/Where to Begin]]
+- related section cards
+- related tool cards
+- simple tool drawer support
+- simple glossary popup support
+- problem-based entry through [[Where to Begin]]
+- section body list support
 
-Reason for including Build Recall:
+Reason for including [[04 Build Recall]]:
 
-- the first slice can test the fuller arc from understanding, to usable notes, to reliable access
+- the first slice tests the fuller arc from understanding, to usable notes, to reliable access
 - it provides enough content variety to test conceptual, practical, and tool-supported sections
 - it allows the app to test three active tools without becoming tool-heavy
-- it tests whether [[../03 Rebuilt Content/04 Build Recall/Anki for Paramedic Learning]] can remain guide-like without making Anki central
+- it tests whether [[Anki for Paramedic Learning]] can remain guide-like without making Anki central
 
-No app production yet.
+Current status:
+
+- implemented
+- migrated
+- pushed
+- in cleanup
+
+---
+
+## Current App Cleanup
+
+### [[Retro Fix 01 - Bullet List Cleanup]]
+
+Purpose:
+
+Update `src/content/sections.ts` so obvious flattened paragraph runs become proper `list` blocks.
+
+Primary early targets:
+
+- [[Smart Notes for Paramedic Students]]
+- [[Types of Notes and Idea Maturation]]
+- [[Obsidian for Learning Paramedicine]]
+
+This pass should preserve approved wording wherever possible.
+
+It should not rewrite sections, change the content map, add tools, or redesign the interface.
+
+### [[Glossary Term Audit]]
+
+Purpose:
+
+Compare glossary IDs in `src/content/sections.ts` against entries in `src/content/glossary.ts`.
+
+Potential audit targets include:
+
+- `reflection`
+- `performance-under-pressure`
+- `directive-intent`
+- `recognition`
+- `spacing`
+- `clinical-recall`
+- `anki`
+- `links`
+- `obsidian`
+- `capture-notes`
+- `working-notes`
+- `transfer`
+- `pathophysiology`
+- `perfusion`
+- `reassessment`
+
+Only first-slice glossary terms should be added or normalized during this pass.
 
 ---
 
 ## Build Support
 
-- [[../05 Build Prompts/MOC - Build Prompts]]
-- [[../05 Build Prompts/App Anti-Drift Rules]]
-- [[../05 Build Prompts/ChatGPT Content Rewrite Prompt]]
-- [[../05 Build Prompts/ChatGPT Section Review Prompt]]
-- [[../05 Build Prompts/Codex App Structure Prompt]]
-- [[../05 Build Prompts/Codex Component Prompt]]
-- [[../05 Build Prompts/Codex Bugfix Prompt]]
+- [[MOC - Build Prompts]]
+- [[App Anti-Drift Rules]]
+- [[ChatGPT Content Rewrite Prompt]]
+- [[ChatGPT Section Review Prompt]]
+- [[ChatGPT Obsidian Update Prompt]]
+- [[Codex App Structure Prompt]]
+- [[Codex Component Prompt]]
+- [[Codex Bugfix Prompt]]
 
 Build prompts should stay bounded.
 
@@ -225,35 +375,79 @@ ChatGPT should support:
 - architecture updates
 - anti-drift checks
 - app planning
+- Obsidian vault maintenance
 
-Codex should later receive:
+Codex should receive:
 
 - small scoped implementation tasks
 - clear file targets
+- current app-state context
+- explicit no-go boundaries
 - no broad product reinvention
 - no content restructuring unless explicitly requested
+
+Codex and Copilot are currently unreliable, so manual ChatGPT-guided copy/paste implementation remains the reliable workflow.
 
 ---
 
 ## Development Log
 
-- [[../06 Development Log/MOC - Development Log]]
-- [[../06 Development Log/Decisions]]
-- [[../06 Development Log/Next Build Tasks]]
-- [[../06 Development Log/Bugs and Fixes]]
-- [[../06 Development Log/Deferred Ideas]]
-- [[../06 Development Log/Feature Ideas]]
-- [[../06 Development Log/Release Notes]]
+- [[MOC - Development Log]]
+- [[Decisions]]
+- [[Next Build Tasks]]
+- [[Bugs and Fixes]]
+- [[Deferred Ideas]]
+- [[Feature Ideas]]
+- [[Release Notes]]
+- [[Open Questions]]
 
 Use the development log to track:
 
 - major decisions
 - active next tasks
 - deferred ideas
-- bugs and fixes once app development begins
-- release notes once versions exist
+- bugs and fixes
+- release notes
+- open questions
+- internal app checkpoints
 
-Do not use [[../06 Development Log/Decisions]] for minor wording changes.
+Do not use [[Decisions]] for minor wording changes.
+
+Do not use [[Bugs and Fixes]] for content drafting issues or architecture debates.
+
+Do not use [[Release Notes]] for routine draft edits.
+
+---
+
+## Current No-Go List
+
+Do not add during first-slice cleanup:
+
+- new student-facing sections
+- new active tools
+- accounts
+- dashboards
+- badges
+- streaks
+- scores
+- quizzes
+- grading
+- simulations
+- instructor dashboards
+- LMS integration
+- AI feedback
+- AI reflection
+- [[Anki Integration]]
+- deck management
+- automated flashcard generation
+- flashcard-platform behavior
+- progress tracking
+- analytics
+- CMS
+- MDX
+- [[Obsidian Import Pipeline]]
+- broad routing overhaul
+- broad visual redesign
 
 ---
 

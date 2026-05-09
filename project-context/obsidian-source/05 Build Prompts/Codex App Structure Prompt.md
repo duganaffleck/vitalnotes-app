@@ -1,17 +1,94 @@
 # Codex App Structure Prompt
 
-Use this later when creating the first VitalNotes app skeleton.
+Use this prompt only for bounded VitalNotes app structure, cleanup, or implementation tasks.
 
-Do not use this prompt until the Build Recall architecture verification pass is complete and the first vertical slice has been explicitly approved.
+Do not use this prompt to redesign VitalNotes, rebuild the app from scratch, rewrite content, invent sections, add features, or change the learning path.
 
-This prompt is for bounded app scaffolding only.
+The first app scaffold already exists.
 
-It is not for redesigning VitalNotes, rewriting content, inventing sections, adding features, or changing the learning path.
+The first-slice content migration is complete.
+
+This prompt now exists to keep future Codex work tightly aligned with the current app and the Obsidian vault.
+
+---
+
+## Current Status
+
+The VitalNotes app has moved beyond initial scaffolding.
+
+The first app vertical slice has been implemented.
+
+The approved first-slice content migration is complete and pushed.
+
+The app now renders real student-facing content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Current active tools migrated into the app:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Current app support includes:
+
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- hash-based navigation
+- previous and next section navigation
+- related sections
+- related tools
+- simple tool drawer support
+- simple glossary popup support
+- section body list support
+
+Current related checkpoint:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+Current cleanup focus:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+- [[Glossary Term Audit]]
+
+---
+
+## When To Use This Prompt
+
+Use this prompt when asking Codex to perform a bounded task in the existing VitalNotes app.
+
+Appropriate uses:
+
+- clean up app content structure
+- update `src/content/sections.ts`
+- fix list block formatting
+- audit glossary IDs
+- normalize first-slice glossary terms
+- make a small reader-support fix
+- fix a specific app bug
+- preserve existing app behavior while making a narrow improvement
+
+Do not use this prompt for broad app expansion.
+
+Do not use this prompt for content drafting.
+
+Do not use this prompt for architecture invention.
+
+---
+
+## Codex Prompt
 
 ```text
 # Codex App Structure Prompt
 
-You are helping build the VitalNotes app in VS Code.
+You are helping maintain and clean up the existing VitalNotes app in VS Code.
 
 VitalNotes is a student-facing learning guide for paramedic students.
 
@@ -21,7 +98,13 @@ The app is not a game, course platform, quiz app, protocol reference, productivi
 
 It is a calm, guided app-style reading interface.
 
-Your task is to create the initial app scaffold only.
+The app already exists.
+
+The first vertical slice has already been implemented.
+
+The first-slice content migration is complete.
+
+Your task is to complete the specific bounded task requested below.
 
 Do not reinvent the project.
 
@@ -33,11 +116,15 @@ Do not create new student-facing content unless explicitly instructed.
 
 Do not add features beyond the requested scope.
 
+Do not refactor unrelated files.
+
+Do not redesign the app.
+
 ## Source of Truth
 
 The Obsidian vault is the project source of truth.
 
-Before building or changing app structure, follow the relevant vault notes:
+Before changing app structure, content objects, glossary entries, tool behavior, or navigation, preserve the relevant vault notes:
 
 - `00 Command Centre/MOC - VitalNotes Rebuild.md`
 - `00 Command Centre/VitalNotes Rebuild Master Map.md`
@@ -48,43 +135,60 @@ Before building or changing app structure, follow the relevant vault notes:
 - `02 Content Architecture/Page Type Map.md`
 - `02 Content Architecture/Tool Library Map.md`
 - `02 Content Architecture/Glossary and Popup Map.md`
+- `02 Content Architecture/Old-to-New Section Mapping.md`
 - `04 App Interface Design/App Vision.md`
 - `04 App Interface Design/Navigation Model.md`
+- `04 App Interface Design/Content Schema.md`
 - `04 App Interface Design/Section Reader Design.md`
 - `04 App Interface Design/Popup and Glossary Rules.md`
 - `04 App Interface Design/Tool Drawer Design.md`
-- `04 App Interface Design/Content Schema.md`
 - `04 App Interface Design/UI Tone and Style.md`
 - `05 Build Prompts/App Anti-Drift Rules.md`
+- `06 Development Log/Next Build Tasks.md`
+- `06 Development Log/Bugs and Fixes.md`
+- `06 Development Log/Release Notes.md`
 
-Use those notes to preserve the educational model, app direction, and content boundaries.
+Use those notes to preserve the educational model, app direction, content boundaries, and current cleanup priorities.
 
-## Build Goal
+## Current App State
 
-Create the initial VitalNotes app scaffold.
+The app is a Vite, React, and TypeScript project.
 
-Use a simple React structure suitable for a Vite project unless otherwise specified.
-
-The app should support the first vertical slice:
+The current first slice includes:
 
 - Home page
 - Learning Path page
 - Section Reader page
 - Tools Library page
 - Glossary page
+- hash-based navigation
 - previous and next section navigation
-- basic related sections support
+- related sections
+- related tools
 - simple glossary popup support
 - simple tool drawer support
-- problem-based entry through Where to Begin
+- section body list support
 
-Do not include instructor-facing pages in the first scaffold unless explicitly requested later.
+Current content files include:
 
-Do not build authentication, dashboards, tracking, quizzes, badges, AI features, simulations, Anki integration, deck management, automated flashcard generation, or flashcard-platform behavior.
+- `src/content/sections.ts`
+- `src/content/glossary.ts`
+- `src/content/tools.ts`
 
-## First Vertical Slice Content
+The section body renderer currently supports:
 
-The first scaffold should be able to hold these drafted clusters:
+- heading blocks
+- paragraph blocks
+- placeholder blocks
+- list blocks
+
+Do not replace the current app structure unless explicitly instructed.
+
+Preserve existing behavior.
+
+## Current First-Slice Content
+
+The app currently contains the approved first-slice clusters.
 
 ### 00 Start Here
 
@@ -122,9 +226,79 @@ Active tools:
 - Smart Note Template
 - Clinical Recall Prompt Builder
 
-It is acceptable to use placeholder body text at scaffold stage only if the real content has not yet been provided.
+Do not add new clusters, sections, or tools unless explicitly instructed.
 
-Do not invent full section text.
+## Current Active Cleanup Tasks
+
+### Retro Fix 01 - Bullet List Cleanup
+
+Some earlier migrated sections contain bullet-style content that currently renders as separate paragraph blocks.
+
+The app now supports list blocks.
+
+If the requested task is this cleanup, update `src/content/sections.ts` so obvious flattened paragraph runs become proper list blocks.
+
+Use the existing structure:
+
+{
+  type: 'list',
+  items: string[]
+}
+
+Begin with:
+
+- Smart Notes for Paramedic Students
+- Types of Notes and Idea Maturation
+- Obsidian for Learning Paramedicine
+
+Then continue only as instructed.
+
+Rules for this cleanup:
+
+- preserve approved wording wherever possible
+- do not rewrite sections
+- do not change titles
+- do not change IDs
+- do not change cluster order
+- do not add new sections
+- do not add new tools
+- do not redesign typography
+- do not alter the learning path
+- do not add new app features
+
+### Glossary Term Audit
+
+If the requested task is glossary cleanup, compare glossary IDs in `src/content/sections.ts` against entries in `src/content/glossary.ts`.
+
+Potential first-slice audit targets include:
+
+- reflection
+- performance-under-pressure
+- directive-intent
+- recognition
+- spacing
+- clinical-recall
+- anki
+- links
+- obsidian
+- capture-notes
+- working-notes
+- transfer
+- pathophysiology
+- perfusion
+- reassessment
+
+Rules for this cleanup:
+
+- add or normalize only first-slice glossary terms
+- keep definitions short
+- keep definitions student-facing
+- keep definitions paramedic-relevant
+- do not turn the glossary into a textbook
+- do not add glossary quizzes
+- do not add AI explanation support
+- do not add Anki deck behavior
+- do not expand glossary behavior beyond the requested task
 
 ## Core Rules
 
@@ -132,8 +306,8 @@ Do not invent full section text.
 - Keep the writing central.
 - Keep content separate from components.
 - Do not hard-code section text inside layout components.
-- Use manual JavaScript objects or JSON-like content first.
-- Do not build a complex Obsidian-to-app import pipeline yet.
+- Preserve the existing TypeScript content files.
+- Do not build a complex Obsidian-to-app import pipeline.
 - Do not add authentication.
 - Do not add a database.
 - Do not add student tracking.
@@ -149,53 +323,13 @@ Do not invent full section text.
 - Do not add Anki integration, deck management, or automated flashcard generation.
 - Preserve clean app-style reading flow.
 - Do not make unrelated file changes.
-- Do not restructure the project beyond the requested scaffold.
-
-## Suggested File Structure
-
-Use this as the initial structure unless the existing project already has a structure that should be preserved.
-
-```text
-src/
-  App.jsx
-  main.jsx
-
-  content/
-    sections.js
-    glossary.js
-    tools.js
-    learningPath.js
-
-  components/
-    Layout.jsx
-    Header.jsx
-    Navigation.jsx
-    SectionHeader.jsx
-    SectionBody.jsx
-    SectionNavigation.jsx
-    SectionCard.jsx
-    GlossaryPopup.jsx
-    ToolDrawer.jsx
-    ToolsLibrary.jsx
-
-  pages/
-    Home.jsx
-    LearningPath.jsx
-    SectionPage.jsx
-    Tools.jsx
-    Glossary.jsx
-
-  styles/
-    index.css
-```
-
-Do not add extra folders unless needed for the first scaffold.
+- Do not restructure the project beyond the requested task.
 
 ## Content Object Requirements
 
-Create simple content objects aligned with the Obsidian schema.
+Section objects should remain aligned with the Obsidian schema.
 
-Each section object should support:
+Each section object may support:
 
 - id
 - title
@@ -214,7 +348,7 @@ Each section object should support:
 - previous
 - next
 
-Each glossary object should support:
+Each glossary object may support:
 
 - id
 - term
@@ -222,7 +356,7 @@ Each glossary object should support:
 - paramedicRelevance
 - relatedSections
 
-Each tool object should support:
+Each tool object may support:
 
 - id
 - title
@@ -233,72 +367,35 @@ Each tool object should support:
 - steps, fields, or builderStructure
 - relatedSections
 
-Each learning path object should support:
-
-- id
-- title
-- order
-- purpose
-- sections
-- relatedTools
-- status
-
 Do not overbuild the schema.
 
-Add fields only if the first slice clearly needs them.
+Add fields only if the current task clearly requires them.
 
-## Page Requirements
-
-### Home Page
-
-Should briefly orient the student.
-
-Should point toward:
-
-- Learning Path
-- Where to Begin
-- Tools Library
-
-Should not become a long landing page.
-
-### Learning Path Page
-
-Should display clusters in order.
-
-Each cluster should show:
-
-- title
-- purpose
-- section links
-- status if useful
-- active related tools if useful
-
-Keep it calm and easy to scan.
-
-### Section Page
-
-Should render one section at a time.
-
-It should show:
-
-- cluster label
-- title
-- subtitle
-- student problem
-- body
-- related tools if active
-- related sections if useful
-- previous and next navigation
+## Section Body Rules
 
 The section body should preserve readable paragraph flow.
 
 Do not chop every paragraph into cards.
 
-### Tools Page
+Use list blocks only when content clearly functions as a list.
 
-Should show active tools only.
+Use list blocks for:
 
-For the first slice, include:
+- grouped examples
+- workflow steps
+- repeated prompts
+- option sets
+- tool-style instructions
+- short grouped distinctions
+- visually flattened content that clearly reads as a list
+
+Do not force every short paragraph into a list.
+
+Some VitalNotes paragraphs are intentionally short for rhythm and emphasis.
+
+## Tool Rules
+
+The first-slice app should show active tools only:
 
 - Directive Meaning Check
 - Smart Note Template
@@ -308,64 +405,18 @@ Planned tools should not appear as live tools.
 
 Possible future tools should not appear as live tools.
 
-### Glossary Page
+Do not add:
 
-Should list approved glossary terms.
+- Clinical Reasoning Check
+- Pattern Recognition Safety Check
+- Scenario Day Reset
+- OSCE Reset
+- Five Whys Tool
+- Reflection Without Journaling Tool
 
-Definitions should be short, plain-language, and paramedic-relevant.
-
-Do not turn the glossary into a textbook.
-
-## Component Requirements
-
-### Layout
-
-Provides consistent page shell.
-
-Should include simple navigation and calm spacing.
-
-### SectionHeader
-
-Displays:
-
-- cluster label
-- title
-- subtitle
-- student problem
-
-### SectionBody
-
-Displays section content.
-
-Should prioritize readability.
-
-### SectionNavigation
-
-Displays previous and next links.
-
-### GlossaryPopup
-
-Provides short definitions without pulling students away from the section.
-
-Keep behavior simple.
-
-### ToolDrawer
-
-Displays an active tool when connected to a section.
-
-Should be easy to open, close, and ignore.
-
-Should support these first-slice tool types:
-
-- thinking check
-- template
-- prompt builder
+unless explicitly instructed after their related sections are rebuilt and stable.
 
 ToolDrawer should not create Anki integration, deck management, automated flashcard generation, saved card workflows, or flashcard-platform behavior.
-
-### ToolsLibrary
-
-Displays active tools in one place.
 
 ## Style Requirements
 
@@ -419,30 +470,89 @@ Avoid:
 
 ## Acceptance Criteria
 
-The scaffold is acceptable if:
+The task is acceptable if:
 
-- The app runs without errors.
-- The file structure is simple and clear.
-- Content is separated from components.
-- The Learning Path renders clusters and sections.
-- A Section Page can render one section from content data.
-- Previous and next navigation works from content data.
-- The Tools page displays active tools only.
-- The Glossary page displays glossary entries.
-- Glossary popup behavior is simple and non-disruptive.
-- Tool drawer behavior is simple and optional.
-- Styling is calm, readable, and mobile-friendly.
-- Build Recall is included in the first-slice content structure.
-- Clinical Recall Prompt Builder is included as an active tool.
-- No authentication, dashboards, quizzes, badges, tracking, AI features, simulations, Anki integration, deck management, automated flashcard generation, or flashcard-platform behavior are added.
-- No content map changes are made.
-- No unrelated files are modified.
+- the requested task is completed and only the requested task is completed
+- the app runs without errors
+- `npm run build` passes
+- content remains separated from components
+- the Learning Path still renders clusters and sections
+- Section Pages still render from content data
+- previous and next navigation still works from content data
+- the Tools page still displays active tools only
+- the Glossary page still displays glossary entries
+- glossary popup behavior remains simple and non-disruptive
+- tool drawer behavior remains simple and optional
+- styling remains calm, readable, and mobile-friendly
+- Build Recall remains included in the first-slice content structure
+- Clinical Recall Prompt Builder remains included as an active tool
+- no authentication, dashboards, quizzes, badges, tracking, AI features, simulations, Anki integration, deck management, automated flashcard generation, or flashcard-platform behavior are added
+- no content map changes are made
+- no unrelated files are modified
+
+## Required Response Format
+
+After completing the task, report:
+
+1. Files changed
+2. What changed
+3. What did not change
+4. How to test
+5. Any risks or follow-up
+
+Do not summarize unrelated files.
+
+Do not suggest new features.
+
+Do not broaden scope.
 
 ## Final Reminder
 
-Build the smallest useful scaffold.
+Make the smallest safe change.
 
-Do not make the app impressive yet.
+Keep VitalNotes clear, calm, readable, and faithful to the Obsidian structure.
 
-Make it clear, calm, readable, and faithful to the Obsidian structure.
+If the task starts requiring broader redesign, stop and report the boundary instead of continuing.
 ```
+
+---
+
+## Current No-Go List
+
+Do not ask Codex to add during first-slice cleanup:
+
+- new student-facing sections
+- new active tools
+- accounts
+- dashboards
+- badges
+- streaks
+- scores
+- quizzes
+- grading
+- simulations
+- instructor dashboards
+- LMS integration
+- AI feedback
+- AI reflection
+- [[Anki Integration]]
+- deck management
+- automated flashcard generation
+- flashcard-platform behavior
+- progress tracking
+- analytics
+- CMS
+- MDX
+- [[Obsidian Import Pipeline]]
+- broad routing overhaul
+- broad visual redesign
+
+---
+
+## Prompt Rule
+
+Codex should implement the structure already defined in the vault.
+
+It should not reinterpret the project.
+
+If Codex or Copilot are unreliable, use manual ChatGPT-guided copy/paste implementation instead.

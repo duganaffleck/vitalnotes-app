@@ -74,6 +74,30 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
             </ul>
           </div>
         )}
+
+        <details className="tool-drawer-section tool-example">
+          <summary className="card-action-button tool-example-button">
+            View example
+          </summary>
+
+          <div className="tool-example-content">
+            <p>{tool.example.context}</p>
+
+            <div className="drawer-field-list">
+              {tool.example.entries.map((entry) => (
+                <div className="drawer-field-card" key={`${tool.id}-${entry.label}`}>
+                  <strong>{entry.label}</strong>
+                  <p>{entry.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="drawer-field-card">
+              <strong>Next adjustment</strong>
+              <p>{tool.example.nextAdjustment}</p>
+            </div>
+          </div>
+        </details>
       </aside>
     </div>
   )

@@ -12,316 +12,499 @@ Feature ideas should stay separate from active build tasks.
 
 ## Current Boundary
 
-Current phase:
+The first app vertical slice has been implemented.
 
-- content rebuild
-- Build Recall architecture verification pass
-- app-readiness planning
+The approved first-slice content migration is complete and pushed.
 
-Current drafted clusters:
+The app now renders real student-facing content across:
 
-- [[../03 Rebuilt Content/00 Start Here]]
-- [[../03 Rebuilt Content/01 Why Learning Feels Hard]]
-- [[../03 Rebuilt Content/02 Build Understanding]]
-- [[../03 Rebuilt Content/03 Build Usable Notes]]
-- [[../03 Rebuilt Content/04 Build Recall]]
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
 
-Current active tools:
+Current active tools migrated into the app:
 
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
 
-Next project move:
+Current app support includes:
 
-- complete the Build Recall architecture verification pass
-- complete the app-readiness checkpoint
-- decide whether to begin the first app vertical slice or continue into [[../03 Rebuilt Content/05 Think Clinically/Clinical Reasoning]]
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- hash-based navigation
+- previous and next section navigation
+- related sections
+- related tools
+- simple tool drawer support
+- simple glossary popup support
+- section body list support
 
-Do not convert feature ideas into build tasks until the architecture verification pass is complete and the first app slice is explicitly defined.
+Current active cleanup:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+
+Next cleanup:
+
+- [[Glossary Term Audit]]
+
+Do not convert feature ideas into build tasks during first-slice cleanup.
+
+The current work is presentation fidelity, glossary consistency, and reader-quality testing.
 
 ---
 
-## Likely First-Slice Features
+## Implemented First-Slice Features
 
-These features are likely appropriate for the first app slice because they directly support the reading experience.
+These features are no longer just ideas.
 
-### Learning Path Page
+They exist in the first app slice and should now be tested, cleaned up, or preserved rather than reimagined.
 
-Purpose:  
+### [[Learning Path]]
+
+Purpose:
+
 Help students see the guide structure and move through clusters without feeling lost.
 
-Why it may matter:  
-VitalNotes is no longer just a blog. Students need a clear route through the guide.
+Current status:
 
-Status:  
-Likely first-slice feature
+- implemented
+- first-slice content migrated
+- needs reader-quality testing
+
+Guardrail:
+
+Do not turn the learning path into a dashboard, progress tracker, or course shell.
 
 ---
 
-### Section Reader
+### [[Section Reader]]
 
-Purpose:  
+Purpose:
+
 Display one student-facing section in a calm, readable, navigable format.
 
-Why it may matter:  
-The Section Reader is the core app experience.
+Current status:
 
-Status:  
-Likely first-slice feature
+- implemented
+- renders real first-slice content
+- supports heading, paragraph, placeholder, and list body blocks
+
+Current cleanup:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+
+Guardrail:
+
+Do not chop the main section body into excessive cards, accordions, or widgets.
+
+The writing remains the main experience.
 
 ---
 
 ### Previous and Next Navigation
 
-Purpose:  
-Help students move through the intended learning path without needing to think about navigation.
+Purpose:
 
-Why it may matter:  
-This keeps the guide flowing and reduces friction.
+Help students move through the intended learning path without needing to think too much about navigation.
 
-Status:  
-Likely first-slice feature
+Current status:
+
+- implemented
+- active across the first-slice section sequence
+
+Guardrail:
+
+Do not overhaul routing during first-slice cleanup.
+
+Hash-based navigation is acceptable for now.
 
 ---
 
 ### Glossary Popups
 
-Purpose:  
+Purpose:
+
 Give short plain-language support for key terms without pulling students away from the section.
 
-Why it may matter:  
-Terms like cognitive load, retrieval, clinical recall, directive intent, mechanism, Smart Notes, and Anki may benefit from brief reminders.
+Current status:
 
-Status:  
-Likely first-slice feature
+- implemented as simple glossary popup support
+- needs [[Glossary Term Audit]]
 
-Guardrail:  
-Do not define every term. Popups should reduce friction, not interrupt reading.
+Guardrail:
+
+Do not define every term.
+
+Popups should reduce friction, not interrupt reading.
+
+Do not turn the glossary into a textbook, quiz layer, AI explanation layer, or hidden lesson system.
 
 ---
 
-### Simple Tools Library
+### [[Tools Library]]
 
-Purpose:  
+Purpose:
+
 Collect active reusable tools in one place.
 
-Why it may matter:  
-Students should be able to return to tools without rereading full sections.
+Current status:
 
-Status:  
-Likely first-slice feature
+- implemented
+- shows active first-slice tools
 
-Initial active tools:
+Current active tools:
 
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
 
-Guardrail:  
-Show active drafted tools only. Planned tools should remain invisible to students until drafted and earned.
+Guardrail:
+
+Show active drafted tools only.
+
+Planned tools should remain invisible to students until drafted, stable, and earned.
+
+Do not turn the [[Tools Library]] into a tool catalogue.
 
 ---
 
 ### Tool Drawers
 
-Purpose:  
+Purpose:
+
 Provide contextual access to active tools from relevant sections.
 
-Why it may matter:  
-A tool drawer may let students use a tool while staying close to the section that introduced it.
+Current status:
 
-Status:  
-Likely first-slice test feature
+- implemented as simple tool drawer support
+- needs reader-quality testing
 
-Likely first-slice tool drawer tests:
+Current first-slice tool drawer relationships:
 
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]] with [[../03 Rebuilt Content/02 Build Understanding/Directives Through Purpose]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]] with [[../03 Rebuilt Content/03 Build Usable Notes/Smart Notes for Paramedic Students]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]] with [[../03 Rebuilt Content/04 Build Recall/Clinical Recall Without Trivia]] and [[../03 Rebuilt Content/04 Build Recall/Anki for Paramedic Learning]]
+- [[Directive Meaning Check]] with [[Directives Through Purpose]]
+- [[Smart Note Template]] with [[Smart Notes for Paramedic Students]]
+- [[Clinical Recall Prompt Builder]] with [[Clinical Recall Without Trivia]] and [[Anki for Paramedic Learning]]
 
-Guardrail:  
-Only use drawers for active drafted tools. Do not show planned tools as live features.
+Guardrail:
 
-Do not let tool drawers become assignments, dashboards, Anki integrations, deck managers, or flashcard-platform features.
+Only use drawers for active drafted tools.
+
+Do not show planned tools as live features.
+
+Do not let tool drawers become assignments, dashboards, [[Anki Integration]], deck managers, automated card generators, or flashcard-platform features.
 
 ---
 
 ### Problem-Based Start Page
 
-Purpose:  
+Purpose:
+
 Help students enter the guide through the problem they recognize.
 
-Why it may matter:  
-This supports [[../03 Rebuilt Content/00 Start Here/Where to Begin]] and keeps navigation student-centered.
+Current status:
 
-Status:  
-Likely first-slice or early feature
+- implemented through [[Where to Begin]]
+- currently written as a routing page, not an interactive selector
 
-Guardrail:  
-Do not turn this into a quiz or diagnostic tool.
+Guardrail:
+
+Do not turn this into a quiz, diagnostic tool, AI recommendation engine, or complex onboarding flow.
 
 ---
 
 ## Possible Early Features
 
-These may be useful after the first reading flow is tested.
+These may be useful after first-slice cleanup and reader-quality testing.
+
+Do not build them during the current cleanup phase.
 
 ### Local Save Position
 
-Purpose:  
+Purpose:
+
 Remember where a student left off.
 
-Why it may matter:  
+Why it may matter:
+
 Students may read in short sessions between class, lab, work, or OSCE preparation.
 
-Status:  
+Status:
+
 Possible early feature
 
-Guardrail:  
-Keep it simple. Do not turn it into progress tracking or an account system.
+Guardrail:
+
+Keep it simple.
+
+Do not turn it into progress tracking, accounts, dashboards, streaks, or a compliance system.
 
 ---
 
-### Section Progress Tracking
+### Section Progress Cue
 
-Purpose:  
+Purpose:
+
 Show students where they are in the guide.
 
-Why it may matter:  
+Why it may matter:
+
 A light progress cue may improve orientation.
 
-Status:  
+Status:
+
 Possible early feature
 
-Guardrail:  
-Avoid badges, streaks, percentages everywhere, or dashboard pressure.
+Guardrail:
+
+Avoid badges, streaks, percentages everywhere, performance scores, or dashboard pressure.
+
+Progress should orient the student.
+
+It should not pressure them.
 
 ---
 
 ### Printable Tools
 
-Purpose:  
+Purpose:
+
 Allow students to print or save core tools.
 
-Why it may matter:  
-Tools like [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]], [[../03 Rebuilt Content/Tools Library/Smart Note Template]], and [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]] may be useful outside the app.
+Why it may matter:
 
-Status:  
+Tools like [[Directive Meaning Check]], [[Smart Note Template]], and [[Clinical Recall Prompt Builder]] may be useful outside the app.
+
+Status:
+
 Possible later feature
 
-Guardrail:  
-Do not build before the tools are stable.
+Guardrail:
+
+Do not build before the tools are stable and first-slice reader testing is complete.
+
+Keep printable tools simple.
+
+Do not create workbook bloat.
 
 ---
 
-### Markdown Export for Smart Notes
+### Markdown Export for [[Smart Note Template]]
 
-Purpose:  
-Let students copy or export the Smart Note Template in Markdown.
+Purpose:
 
-Why it may matter:  
+Let students copy or export the [[Smart Note Template]] in Markdown.
+
+Why it may matter:
+
 This could support students using Obsidian or another plain-text note system.
 
-Status:  
+Status:
+
 Possible later feature
 
-Guardrail:  
+Guardrail:
+
 Do not make Obsidian feel mandatory.
+
+Do not turn VitalNotes into an Obsidian tutorial or productivity system.
 
 ---
 
-### Copyable Clinical Recall Prompts
+### Copyable [[Clinical Recall Prompt Builder]]
 
-Purpose:  
-Let students copy the [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]] structure for use in notes, Anki, whiteboard recall, or study sessions.
+Purpose:
 
-Why it may matter:  
+Let students copy the [[Clinical Recall Prompt Builder]] structure for use in notes, Anki, whiteboard recall, or study sessions.
+
+Why it may matter:
+
 This may help students use the prompt builder without turning the app into a flashcard platform.
 
-Status:  
+Status:
+
 Possible later feature
 
-Guardrail:  
-Do not build Anki integration, deck management, automated card generation, or flashcard-platform behavior. The feature should remain simple copy support only.
+Guardrail:
+
+Do not build [[Anki Integration]], deck management, automated card generation, or flashcard-platform behavior.
+
+The feature should remain simple copy support only.
+
+---
+
+### Interactive [[Where to Begin]] Selector
+
+Purpose:
+
+Let students choose a current learning problem and receive a suggested starting section.
+
+Why it may matter:
+
+This could make problem-based entry easier if the written [[Where to Begin]] page is not enough.
+
+Status:
+
+Possible later feature
+
+Guardrail:
+
+Do not build before first-slice reader testing.
+
+Do not turn this into:
+
+- a quiz
+- a diagnostic tool
+- an AI recommendation engine
+- a complex onboarding flow
+- a personalized learning path system
+
+For now, the written [[Where to Begin]] page is enough.
+
+---
+
+### Glossary Drawer or Side Panel
+
+Purpose:
+
+Provide glossary definitions in a slightly more spacious format than a small popup, especially on mobile.
+
+Why it may matter:
+
+Some glossary terms may be easier to read in a drawer if popups feel cramped.
+
+Status:
+
+Possible later feature
+
+Guardrail:
+
+Do not build before [[Glossary Term Audit]] and reader-quality testing.
+
+Do not make glossary behavior more complex unless the current popup model creates a real reading problem.
 
 ---
 
 ## Later or Deferred Features
 
-These may be valuable later, but should not be part of the first app slice.
+These may be valuable later, but should not be part of first-slice cleanup.
 
 ### Instructor-Facing Notes
 
-Purpose:  
+Purpose:
+
 Provide educators with companion notes, teaching rationale, or implementation guidance.
 
-Status:  
+Status:
+
 Deferred
 
-Reason:  
+Reason:
+
 VitalNotes should remain student-facing until the guide experience is stable.
 
 ---
 
 ### Scenario Generator Bridge
 
-Purpose:  
+Purpose:
+
 Eventually connect Scenario Generator outputs to VitalNotes-linked learning or reflection prompts.
 
-Status:  
+Status:
+
 Deferred
 
-Reason:  
+Reason:
+
 This may be powerful later, but it risks pulling VitalNotes toward scenario software too early.
 
 ---
 
 ### AI-Guided Reflection
 
-Purpose:  
+Purpose:
+
 Help students reflect on scenario performance through guided prompts.
 
-Status:  
+Status:
+
 Deferred
 
-Reason:  
-Potentially useful, but too complex for the first version and could shift VitalNotes away from calm student-guided learning.
+Reason:
+
+Potentially useful, but too complex for the current version and could shift VitalNotes away from calm student-guided learning.
 
 ---
 
 ### Downloadable PDF Version
 
-Purpose:  
+Purpose:
+
 Allow students to read or print the guide offline.
 
-Status:  
+Status:
+
 Possible later feature
 
-Reason:  
+Reason:
+
 Useful, but not necessary before the app reading experience works.
 
 ---
 
 ### Anki Card Quality Check
 
-Purpose:  
+Purpose:
+
 Help students review whether their Anki cards are too vague, too long, too shallow, or disconnected from clinical use.
 
-Status:  
+Status:
+
 Possible later feature
 
-Reason:  
-This may become useful later, but the current active need is already handled more broadly by [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]].
+Reason:
 
-Guardrail:  
-Do not build this unless a repeated student need appears. Do not let it become deck management, Anki setup advice, automated flashcard generation, or a flashcard productivity system.
+This may become useful later, but the current active need is already handled more broadly by [[Clinical Recall Prompt Builder]].
+
+Guardrail:
+
+Do not build this unless a repeated student need appears.
+
+Do not let it become deck management, Anki setup advice, automated flashcard generation, or a flashcard productivity system.
 
 ---
 
-## Rejected for First Slice
+### Search
 
-Do not include these in the first app slice:
+Purpose:
+
+Allow students to find sections, tools, or glossary terms quickly.
+
+Status:
+
+Possible later feature
+
+Reason:
+
+Search may become useful once the guide grows beyond the first slice.
+
+Guardrail:
+
+Do not build search before the first-slice reader experience is stable.
+
+Do not use search to compensate for unclear navigation.
+
+---
+
+## Rejected for Current Phase
+
+Do not include these during first-slice cleanup:
 
 - accounts
 - dashboards
@@ -334,11 +517,14 @@ Do not include these in the first app slice:
 - instructor analytics
 - full simulation cases
 - AI-generated feedback
+- AI reflection
 - LMS integration
 - complex personalization
 - database-backed progress tracking
-- Obsidian import pipeline
-- Anki integration
+- [[Obsidian Import Pipeline]]
+- MDX
+- CMS
+- [[Anki Integration]]
 - deck management
 - automated flashcard generation
 - flashcard-platform behavior
@@ -360,6 +546,24 @@ A feature may move from idea to active task only if it clearly helps with at lea
 - paramedic relevance
 
 A feature should remain parked if it mainly makes the app feel bigger, more impressive, more interactive, or more complex.
+
+---
+
+## Current Review Conditions
+
+Do not promote feature ideas until after:
+
+1. [[Retro Fix 01 - Bullet List Cleanup]]
+2. [[Glossary Term Audit]]
+3. first-slice reader-quality testing
+
+After that, review whether the app needs:
+
+- small visual polish
+- deployment preparation
+- local save position
+- simple copy support for tools
+- continued content drafting with [[Clinical Reasoning]]
 
 ---
 

@@ -1,219 +1,416 @@
-# Next Actions
+# Next Build Tasks
 
-Use this note to identify the current next move without reopening the whole project plan.
+## Immediate Priority
 
-For full status, use:
+The first vertical slice is stable and demo-ready.
 
-- [[Current Project Status]]
-- [[../06 Development Log/Next Build Tasks]]
-- [[Open Questions]]
+The immediate goal is no longer migration, bullet cleanup, glossary cleanup, or first-slice reader spacing.
 
----
+Those passes are complete.
 
-## Current Phase
+The current priority is to preserve the stable first slice while choosing the next bounded app-development step.
 
-Build Recall architecture verification pass.
-
-The rebuild has now completed five drafted clusters and three active tool pages.
-
-Completed drafted clusters:
-
-- [[../03 Rebuilt Content/00 Start Here]]
-- [[../03 Rebuilt Content/01 Why Learning Feels Hard]]
-- [[../03 Rebuilt Content/02 Build Understanding]]
-- [[../03 Rebuilt Content/03 Build Usable Notes]]
-- [[../03 Rebuilt Content/04 Build Recall]]
-
-Active drafted tools:
-
-- [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
-
-The current job is to verify the Obsidian control files one by one so the vault is accurate before moving into the app-readiness checkpoint.
-
-This pass should stay bounded.
-
-Do not reopen the whole project structure unless a real conflict appears.
+Do not expand scope yet.
 
 ---
 
-## Immediate
+## Current First-Slice Status
 
-- [x] Review [[VitalNotes Rebuild Master Map]]
-- [x] Review [[../02 Content Architecture/New VitalNotes Learning Path]]
-- [x] Refine [[../02 Content Architecture/Student Problem Map]]
-- [x] Refine [[../02 Content Architecture/Old-to-New Section Mapping]]
-- [x] Decide the first content cluster to rebuild
-- [x] Draft [[../03 Rebuilt Content/00 Start Here/Start Here - What VitalNotes Is]]
-- [x] Draft [[../03 Rebuilt Content/00 Start Here/How to Use This Guide]]
-- [x] Draft [[../03 Rebuilt Content/00 Start Here/Where to Begin]]
-- [x] Draft [[../03 Rebuilt Content/01 Why Learning Feels Hard/Cognitive Load]]
-- [x] Draft [[../03 Rebuilt Content/01 Why Learning Feels Hard/Why Studying Feels Productive But Fails Under Pressure]]
-- [x] Draft [[../03 Rebuilt Content/01 Why Learning Feels Hard/Learning Strain Is Not Always a Personal Problem]]
-- [x] Draft [[../03 Rebuilt Content/02 Build Understanding/Meaning Before Memorization]]
-- [x] Draft [[../03 Rebuilt Content/02 Build Understanding/Pathophysiology Through Patterns]]
-- [x] Draft [[../03 Rebuilt Content/02 Build Understanding/Directives Through Purpose]]
-- [x] Draft [[../03 Rebuilt Content/03 Build Usable Notes/Smart Notes for Paramedic Students]]
-- [x] Draft [[../03 Rebuilt Content/03 Build Usable Notes/Types of Notes and Idea Maturation]]
-- [x] Draft [[../03 Rebuilt Content/03 Build Usable Notes/Obsidian for Learning Paramedicine]]
-- [x] Draft [[../03 Rebuilt Content/04 Build Recall/Retrieval and Spaced Learning]]
-- [x] Draft [[../03 Rebuilt Content/04 Build Recall/Clinical Recall Without Trivia]]
-- [x] Draft [[../03 Rebuilt Content/04 Build Recall/Anki for Paramedic Learning]]
-- [x] Create [[../03 Rebuilt Content/Tools Library/Directive Meaning Check]]
-- [x] Create [[../03 Rebuilt Content/Tools Library/Smart Note Template]]
-- [x] Create [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
-- [x] Complete Build Recall architecture verification pass
-- [ ] Complete app-readiness checkpoint
-- [ ] Decide whether to begin first app vertical slice or continue into [[../03 Rebuilt Content/05 Think Clinically/Clinical Reasoning]]
+The approved first-slice content migration is complete and pushed.
+
+The app now renders real student-facing guide content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Build Recall is included in the first vertical slice and has been migrated.
+
+Do not revert to older language that treats [[04 Build Recall]] as pending, excluded, undecided, or future-facing.
+
+The first-slice demo-readiness smoke test has passed.
+
+The first slice can now be treated as a stable foundation for future work.
 
 ---
 
-## Current Architecture Verification Pass
+## Completed First-Slice Cleanup Passes
 
-Status: In progress
+### [[Retro Fix 01 - Bullet List Cleanup]]
 
-Purpose:
+Status: complete
 
-Verify that the Obsidian control files accurately reflect:
+Flattened bullet-style paragraph runs were cleaned up where appropriate.
 
-- completed Build Recall cluster
-- [[../03 Rebuilt Content/Tools Library/Clinical Recall Prompt Builder]]
-- three active drafted tools
-- first app slice including Build Recall
-- app-readiness checkpoint as the next major project step
-- no stale “Build Recall not started” language
-- no broken `App Anti-Drift Rules` links
-- no accidental Anki platform drift
+Updated app file:
 
-### Files confirmed current so far
+- `src/content/sections.ts`
 
-- [[../03 Rebuilt Content/MOC - Rebuilt Content]]
-- [[MOC - VitalNotes Rebuild]]
+Completed clusters:
 
-### Files currently being checked
+- [[03 Build Usable Notes]]
+- [[02 Build Understanding]]
+- [[01 Why Learning Feels Hard]]
 
-- [[Next Actions]]
+Confirmed no list cleanup was needed in:
 
-### Files to continue checking
+- [[00 Start Here]]
 
-- [[Current Project Status]]
-- [[VitalNotes Rebuild Master Map]]
-- [[../06 Development Log/Next Build Tasks]]
-- [[../02 Content Architecture/MOC - Content Architecture]]
-- [[../02 Content Architecture/New VitalNotes Learning Path]]
-- [[../02 Content Architecture/Student Problem Map]]
-- [[../02 Content Architecture/Page Type Map]]
-- [[../02 Content Architecture/Tool Library Map]]
-- [[../02 Content Architecture/Glossary and Popup Map]]
-- [[../02 Content Architecture/Old-to-New Section Mapping]]
-- [[../04 App Interface Design/MOC - App Interface Design]]
-- [[../04 App Interface Design/App Vision]]
-- [[../04 App Interface Design/Navigation Model]]
-- [[../04 App Interface Design/Section Reader Design]]
-- [[../04 App Interface Design/Tool Drawer Design]]
-- [[../04 App Interface Design/Popup and Glossary Rules]]
-- [[../04 App Interface Design/UI Tone and Style]]
-- [[../05 Build Prompts/MOC - Build Prompts]]
-- [[../05 Build Prompts/App Anti-Drift Rules]]
-- [[../05 Build Prompts/ChatGPT Content Rewrite Prompt]]
-- [[../05 Build Prompts/ChatGPT Section Review Prompt]]
-- [[../05 Build Prompts/Codex App Structure Prompt]]
-- [[../05 Build Prompts/Codex Component Prompt]]
-- [[../05 Build Prompts/Codex Bugfix Prompt]]
-- [[../06 Development Log/MOC - Development Log]]
-- [[../06 Development Log/Decisions]]
-- [[../06 Development Log/Feature Ideas]]
-- [[../06 Development Log/Deferred Ideas]]
-- [[../06 Development Log/Release Notes]]
-- [[../06 Development Log/Bugs and Fixes]]
+The first-slice section bodies now use proper list blocks where appropriate.
 
-Optional later check:
+### [[Glossary Term Audit]]
 
-- [[../01 Source Library/Source Material Index]]
-- [[../01 Source Library/Reading Influence Pool]]
+Status: complete
 
-These source files do not need heavy rewriting unless they contain broken links, stale active-status language, or missing Build Recall references that affect app-readiness.
+Created audit script:
+
+- `scripts/audit-glossary.cjs`
+
+The audit checks glossary terms referenced in:
+
+- `src/content/sections.ts`
+
+against glossary entries in:
+
+- `src/content/glossary.ts`
+
+Added missing first-slice glossary entries:
+
+- `directive-intent`
+- `performance-under-pressure`
+- `perfusion`
+- `reflection`
+
+Final audit result:
+
+- no missing glossary entries
+- every referenced glossary term exists
+
+Known unused glossary entries:
+
+- `metacognition`
+- `recall`
+
+Leave these alone for now. They are valid glossary entries, just not referenced in the current first slice.
+
+### Related Links Audit
+
+Status: complete
+
+Created audit script:
+
+- `scripts/audit-related-links.cjs`
+
+The audit checks:
+
+- every related section ID exists
+- every related tool ID exists
+- related sections and related tools per section
+
+Fixed one broken future-facing related section reference:
+
+- removed `scenario-days-as-learning-tools` from `learning-strain-is-not-always-a-personal-problem`
+- replaced it with `retrieval-and-spaced-learning`
+
+Final audit result:
+
+- no missing related sections
+- no missing related tools
+
+Human related-link review was completed across the first slice.
+
+### Reader Typography and Spacing Pass
+
+Status: complete
+
+Updated app file:
+
+- `src/styles/index.css`
+
+This was a bounded demo-readiness pass.
+
+Refined:
+
+- section body spacing
+- section heading rhythm
+- section list spacing
+- glossary panel spacing
+- related panel spacing
+- previous / next navigation spacing
+- tool drawer readability
+
+No behavior changes were made.
+
+No content changes were made.
+
+No color redesign was done.
+
+No navigation redesign was done.
+
+No component architecture changes were made.
+
+### Demo-Readiness Smoke Test
+
+Status: complete
+
+Checked:
+
+- global navigation
+- Home page
+- Learning Path page
+- Tools page
+- Glossary page
+- active navigation state
+- hash-based navigation
+- section reader pages
+- previous and next navigation
+- related section cards
+- related tool drawer
+- glossary chips and popup behavior
+- reader typography and spacing
+- list rendering
+- mobile-ish browser width behavior
+
+Representative reader pages checked:
+
+- [[Start Here - What VitalNotes Is]]
+- [[Cognitive Load]]
+- [[Meaning Before Memorization]]
+- [[Smart Notes for Paramedic Students]]
+- [[Retrieval and Spaced Learning]]
+- [[Anki for Paramedic Learning]]
+
+Tools checked:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Glossary page checked, including added entries:
+
+- Directive intent
+- Performance under pressure
+- Perfusion
+- Reflection
+
+Assessment:
+
+- local app appears clean and appropriate for demo purposes
+- live/deployment state appears stable based on review
+- first vertical slice can be treated as demo-ready
 
 ---
 
-## Next Project Move
+## Current First-Slice Content
 
-After this verification pass is complete, run an app-readiness checkpoint.
+### [[00 Start Here]]
 
-The checkpoint should answer:
+- [[Start Here - What VitalNotes Is]]
+- [[How to Use This Guide]]
+- [[Where to Begin]]
 
-- Is the first app slice now content-rich enough?
-- Are the active tools clear enough?
-- Are glossary and tool drawer behaviours clear enough for a first build?
-- Is the app scope bounded?
-- Should development begin in a fresh chat with a strong handoff prompt?
+### [[01 Why Learning Feels Hard]]
 
-Current recommendation:
+- [[Cognitive Load]]
+- [[Why Studying Feels Productive But Fails Under Pressure]]
+- [[Learning Strain Is Not Always a Personal Problem]]
 
-Begin the first app vertical slice after the verification pass and app-readiness checkpoint.
+### [[02 Build Understanding]]
 
-Reason:
+- [[Meaning Before Memorization]]
+- [[Pathophysiology Through Patterns]]
+- [[Directives Through Purpose]]
 
-The available content now supports a strong first app arc:
+### [[03 Build Usable Notes]]
 
-- orientation
-- why learning feels hard
-- building understanding
-- building usable notes
-- building recall
+- [[Smart Notes for Paramedic Students]]
+- [[Types of Notes and Idea Maturation]]
+- [[Obsidian for Learning Paramedicine]]
 
-This is enough real content to test the VitalNotes interface without waiting for the whole guide to be rebuilt.
+### [[04 Build Recall]]
 
----
-
-## Possible Next Content Target
-
-If the decision is to continue content before app development, the next section is:
-
-- [[../03 Rebuilt Content/05 Think Clinically/Clinical Reasoning]]
-
-Vault location:
-
-`03 Rebuilt Content/05 Think Clinically/Clinical Reasoning.md`
-
-Use:
-
-- [[../05 Build Prompts/ChatGPT Content Rewrite Prompt]]
-- [[../05 Build Prompts/ChatGPT Section Review Prompt]]
-- [[../07 Templates/Template - Rebuilt Section]]
+- [[Retrieval and Spaced Learning]]
+- [[Clinical Recall Without Trivia]]
+- [[Anki for Paramedic Learning]]
 
 ---
 
-## Before Coding
+## Active First-Slice Tools
 
-Do not start coding yet.
+Only these tools are active:
 
-Before coding, use:
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
 
-- [[../04 App Interface Design/App Vision]]
-- [[../04 App Interface Design/Navigation Model]]
-- [[../04 App Interface Design/Content Schema]]
-- [[../04 App Interface Design/Section Reader Design]]
-- [[../04 App Interface Design/Tool Drawer Design]]
-- [[../05 Build Prompts/App Anti-Drift Rules]]
-- [[../05 Build Prompts/Codex App Structure Prompt]]
+Supported tool types:
 
-Coding should begin only after:
+- `thinking-check`
+- `template`
+- `prompt-builder`
 
-- architecture verification pass is complete
-- app-readiness checkpoint is complete
-- first vertical slice is explicitly approved
-- real content is ready to test the interface
-- app scope is bounded
+Do not add more tools unless explicitly approved.
+
+Planned tools should not be treated as live tools yet.
 
 ---
 
-## Parking Lot
+## Current Useful Commands
 
-Add non-urgent ideas to:
+Use these commands after future app changes:
 
-- [[../06 Development Log/Feature Ideas]]
-- [[../06 Development Log/Deferred Ideas]]
+- `npm run build`
+- `npm run dev`
+- `node scripts/audit-glossary.cjs`
+- `node scripts/audit-related-links.cjs`
+- `git status`
 
-Do not let parked ideas interrupt the current architecture verification pass or the app-readiness checkpoint.
+Local address:
+
+- `http://localhost:5173/`
+
+External Windows PowerShell remains the reliable terminal path because the VS Code integrated terminal previously had a ConPTY launch issue.
+
+---
+
+## Next Appropriate Actions
+
+The next useful move is not more content yet.
+
+The next useful move is to choose one bounded app-development pass.
+
+Appropriate next actions, in order:
+
+1. Confirm deployment status and verify Vercel build if needed.
+2. Finish updating only the Obsidian files that need the new first-slice stable status.
+3. Decide the next bounded app-development pass.
+4. Only then consider the next content slice.
+
+Possible next bounded app-development passes include:
+
+- deployment verification cleanup, if needed
+- small design consistency pass for button versus text-link affordances
+- future repeatable migration checklist
+- next content-slice planning
+- next content-slice migration
+
+Do not begin the next content slice automatically.
+
+---
+
+## Deferred Design Task
+
+### Button versus text-link consistency
+
+Status: deferred
+
+Later UI review should decide which navigation actions should render as buttons versus text links.
+
+Specific item to revisit:
+
+- Learning Path `Open section` affordance compared with full button treatments
+
+Do not handle this as part of first-slice demo readiness.
+
+This belongs in a later design consistency pass.
+
+---
+
+## Hold For Now
+
+Do not prioritize:
+
+- broad visual redesign
+- new features
+- app routing overhaul
+- [[Obsidian Import Pipeline]]
+- MDX
+- [[Anki Integration]]
+- quizzes
+- dashboards
+- accounts
+- progress tracking
+- analytics
+- AI feedback
+- AI reflection
+- instructor tools
+- LMS integration
+- CMS
+
+The app is still a calm reading interface.
+
+The writing is the main experience.
+
+---
+
+## Current Known Constraints
+
+### VS Code integrated terminal ConPTY failure
+
+Status: workaround active
+
+External Windows PowerShell is currently being used for terminal commands.
+
+App functionality is not affected.
+
+Verified working through external PowerShell:
+
+- `npm run build`
+- `npm run dev`
+- Git commands
+
+### Codex and Copilot unreliable
+
+Status: workaround active
+
+Manual implementation through ChatGPT-guided copy/paste remains the current critical path.
+
+The app should not depend on Codex or Copilot availability.
+
+### Possible source filename typo
+
+Status: needs confirmation only if it appears in the actual vault
+
+A copied source file previously appeared as:
+
+- `Where to Being.md`
+
+Expected title:
+
+- [[Where to Begin]]
+
+Confirm whether this typo exists in the real Obsidian vault before renaming anything.
+
+Do not rename files based on memory alone.
+
+---
+
+## Build Rhythm From Here
+
+Use small controlled passes.
+
+For each future app pass:
+
+1. define the bounded issue
+2. update only the necessary app content or support file
+3. run local build
+4. run glossary and related-link audits when content or links change
+5. check affected reader sections
+6. commit once stable
+7. document meaningful fixes in the appropriate vault file only when needed
+
+The app should stay boring and reliable.
+
+That is the point.
+
+---
+
+## Current Rule
+
+Do not expand scope yet.
+
+The first slice is stable.
+
+The next useful move is choosing the next bounded step deliberately.

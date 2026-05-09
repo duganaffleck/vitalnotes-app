@@ -2,7 +2,9 @@
 
 Use this note to record major project decisions once they are made.
 
-This file should not track every wording change. It is for decisions that affect structure, workflow, content architecture, app direction, or future development.
+This file should not track every wording change.
+
+It is for decisions that affect structure, workflow, content architecture, app direction, or future development.
 
 ---
 
@@ -55,7 +57,7 @@ This affects:
 - [[Section Reader Design]]
 - [[Content Schema]]
 - [[New VitalNotes Learning Path]]
-- future VS Code app build
+- future app development
 
 #### Revisit?
 
@@ -87,7 +89,7 @@ This affects:
 - [[MOC - Content Architecture]]
 - [[MOC - App Interface Design]]
 - [[MOC - Build Prompts]]
-- future VS Code development
+- future app development
 
 #### Revisit?
 
@@ -115,11 +117,11 @@ This affects:
 
 - [[Start Here - What VitalNotes Is]]
 - [[How to Use This Guide]]
-- Start Here content cluster
+- [[00 Start Here]]
 
 #### Revisit?
 
-Only if the Start Here cluster becomes too fragmented.
+Only if the [[00 Start Here]] cluster becomes too fragmented.
 
 ---
 
@@ -162,7 +164,9 @@ Status: Active
 
 #### Reason
 
-This keeps [[Start Here - What VitalNotes Is]] focused on purpose and [[How to Use This Guide]] focused on general use. It also supports the future app interface by giving the guide a clear problem-based navigation page.
+This keeps [[Start Here - What VitalNotes Is]] focused on purpose and [[How to Use This Guide]] focused on general use.
+
+It also supports the app interface by giving the guide a clear problem-based navigation page.
 
 #### Impact
 
@@ -175,7 +179,7 @@ This affects:
 
 #### Revisit?
 
-When building the app interface, this may become a set of navigation cards or a simple entry selector.
+This may eventually become a set of navigation cards or a simple entry selector.
 
 ---
 
@@ -189,7 +193,9 @@ Status: Active
 
 #### Reason
 
-It gives students language for why capable people lose access to simple steps under scenario, lab, or OSCE pressure. This sets up later sections on studying, retrieval, notes, meaning, clinical reasoning, and performance.
+It gives students language for why capable people lose access to simple steps under scenario, lab, or OSCE pressure.
+
+This sets up later sections on studying, retrieval, notes, meaning, clinical reasoning, and performance.
 
 #### Impact
 
@@ -202,7 +208,9 @@ This affects:
 
 #### Revisit?
 
-Unlikely. This section is functioning well as the first foundation page.
+Unlikely.
+
+This section is functioning well as the first foundation page.
 
 ---
 
@@ -220,7 +228,9 @@ Status: Active
 
 This prevents the early foundation section from becoming too technical or duplicating the later recall section.
 
-The early section should help students understand why studying can feel productive but fail under pressure. The later section should teach how to practice retrieval and spacing deliberately.
+The early section should help students understand why studying can feel productive but fail under pressure.
+
+The later section should teach how to practice retrieval and spacing deliberately.
 
 #### Impact
 
@@ -235,35 +245,35 @@ This affects:
 
 #### Revisit?
 
-Review during Build Recall and later app-readiness checks to make sure the sections remain distinct.
+Review during future reader testing to make sure the sections remain distinct.
 
 ---
 
 ### 2026-05-03 - First two content clusters are drafted
 
-Status: Active
+Status: Complete
 
 #### Decision
 
-The first six rebuilt sections are complete enough to move forward without rewriting them now.
+The first six rebuilt sections were complete enough to move forward without rewriting them at that stage.
 
-The rebuild will proceed into [[Meaning Before Memorization]] rather than polishing the opening clusters further.
+The rebuild proceeded into [[Meaning Before Memorization]] rather than polishing the opening clusters further.
 
 #### Reason
 
-The Start Here cluster and Why Learning Feels Hard cluster are serving their roles.
+The [[00 Start Here]] cluster and [[01 Why Learning Feels Hard]] cluster were serving their roles.
 
-The Start Here cluster orients the student, explains how to approach the guide, and provides problem-based routing.
+The [[00 Start Here]] cluster orients the student, explains how to approach the guide, and provides problem-based routing.
 
-The Why Learning Feels Hard cluster explains why capable students struggle before introducing deeper tools or systems.
+The [[01 Why Learning Feels Hard]] cluster explains why capable students struggle before introducing deeper tools or systems.
 
-Further revision now would likely become premature polishing rather than useful structural improvement.
+Further revision at that stage would likely have become premature polishing rather than useful structural improvement.
 
 #### Impact
 
-This affects:
+This affected:
 
-- [[MOC - Rebuilt Content]]
+- [[MOC - VitalNotes Rebuild]]
 - [[Current Project Status]]
 - [[Next Build Tasks]]
 - [[Meaning Before Memorization]]
@@ -271,17 +281,17 @@ This affects:
 
 #### Revisit?
 
-Revisit during the first full app-readiness pass.
+Revisit only if reader testing reveals a functional gap.
 
 ---
 
 ### 2026-05-05 - Build Understanding cluster is drafted
 
-Status: Active
+Status: Complete
 
 #### Decision
 
-The Build Understanding cluster is complete enough to move forward without rewriting it now.
+The [[02 Build Understanding]] cluster was complete enough to move forward without rewriting it at that stage.
 
 Completed sections:
 
@@ -297,9 +307,9 @@ It shifts the rebuild from explaining why learning feels hard into showing stude
 
 #### Impact
 
-This affects:
+This affected:
 
-- [[MOC - Rebuilt Content]]
+- [[MOC - Content Architecture]]
 - [[Current Project Status]]
 - [[Next Build Tasks]]
 - [[Glossary and Popup Map]]
@@ -310,7 +320,7 @@ This affects:
 
 #### Revisit?
 
-Revisit during the first full app-readiness pass or if the Build Recall cluster reveals a continuity gap.
+Revisit only if reader testing or later content reveals a continuity gap.
 
 ---
 
@@ -320,7 +330,7 @@ Status: Active
 
 #### Decision
 
-[[Directive Meaning Check]] is now an active drafted tool page.
+[[Directive Meaning Check]] is an active drafted tool page.
 
 Status:
 
@@ -341,22 +351,22 @@ This affects:
 - [[Glossary and Popup Map]]
 - [[Directives Through Purpose]]
 - [[Clinical Reasoning]]
-- future app tool placement
-- future Tools Library design
+- app tool placement
+- [[Tool Drawer Design]]
 
 #### Revisit?
 
-Revisit when [[Clinical Reasoning]], [[OSCE Preparation]], or app tool drawers are being planned.
+Revisit when [[Clinical Reasoning]], [[OSCE Preparation]], or app tool drawers are being tested.
 
 ---
 
 ### 2026-05-05 - Build Usable Notes cluster is drafted
 
-Status: Active
+Status: Complete
 
 #### Decision
 
-The Build Usable Notes cluster is complete enough to move forward without rewriting it now.
+The [[03 Build Usable Notes]] cluster was complete enough to move forward without rewriting it at that stage.
 
 Completed sections:
 
@@ -372,9 +382,9 @@ It shows students how to turn understanding into usable notes, how different not
 
 #### Impact
 
-This affects:
+This affected:
 
-- [[MOC - Rebuilt Content]]
+- [[MOC - Content Architecture]]
 - [[Current Project Status]]
 - [[Next Build Tasks]]
 - [[Glossary and Popup Map]]
@@ -385,7 +395,7 @@ This affects:
 
 #### Revisit?
 
-Revisit during the first full app-readiness pass or if [[Anki for Paramedic Learning]] needs clearer boundaries between notes and retrieval.
+Revisit during reader testing or if [[Anki for Paramedic Learning]] needs clearer boundaries between notes and retrieval.
 
 ---
 
@@ -395,7 +405,7 @@ Status: Active
 
 #### Decision
 
-[[Smart Note Template]] is now an active drafted tool page.
+[[Smart Note Template]] is an active drafted tool page.
 
 Status:
 
@@ -404,7 +414,7 @@ Status:
 
 #### Reason
 
-The Build Usable Notes cluster repeatedly uses the same structure for turning concepts, scenario errors, confusing ideas, and feedback points into reusable thinking notes.
+The [[03 Build Usable Notes]] cluster repeatedly uses the same structure for turning concepts, scenario errors, confusing ideas, and feedback points into reusable thinking notes.
 
 The tool gives students a stable template without forcing them into a heavy note-making system.
 
@@ -417,12 +427,12 @@ This affects:
 - [[Smart Notes for Paramedic Students]]
 - [[Types of Notes and Idea Maturation]]
 - [[Obsidian for Learning Paramedicine]]
-- future app tool placement
-- future Tools Library design
+- app tool placement
+- [[Tool Drawer Design]]
 
 #### Revisit?
 
-Revisit when planning the first app vertical slice, especially when deciding whether tools appear as standalone pages, section drawers, or both.
+Revisit during first-slice reader testing, especially when deciding whether tools appear as standalone pages, section drawers, or both.
 
 ---
 
@@ -432,19 +442,19 @@ Status: Complete
 
 #### Decision
 
-Before drafting [[Retrieval and Spaced Learning]], the project would complete an architecture update pass across the necessary Obsidian control files.
+Before drafting [[Retrieval and Spaced Learning]], the project completed an architecture update pass across the necessary Obsidian control files.
 
 #### Reason
 
-The Build Understanding and Build Usable Notes clusters added enough new structure, glossary terms, mapping decisions, and active tools that the vault needed to be brought current before the next content cluster began.
+The [[02 Build Understanding]] and [[03 Build Usable Notes]] clusters added enough new structure, glossary terms, mapping decisions, and active tools that the vault needed to be brought current before the next content cluster began.
 
-This protected continuity and prevented the rebuild from drifting as it entered the Build Recall cluster.
+This protected continuity and prevented the rebuild from drifting as it entered the [[04 Build Recall]] cluster.
 
 #### Impact
 
 This affected:
 
-- [[MOC - Rebuilt Content]]
+- [[MOC - Content Architecture]]
 - [[Next Build Tasks]]
 - [[Current Project Status]]
 - [[Glossary and Popup Map]]
@@ -459,29 +469,29 @@ This affected:
 
 #### Revisit?
 
-Complete. Continue using bounded architecture verification or update passes after major content progress.
+Complete.
+
+Continue using bounded architecture verification or update passes after major content progress.
 
 ---
 
 ### 2026-05-05 - App build remains deferred until content architecture is clean
 
-Status: Active
+Status: Superseded
 
 #### Decision
 
-The VS Code app build remains deferred.
-
-App planning can be clarified lightly, but app production should not begin until the current architecture verification pass is complete and the first vertical slice is checked against real drafted content.
+The VS Code app build was deferred until the architecture verification pass was complete and the first vertical slice was checked against real drafted content.
 
 #### Reason
 
 VitalNotes is being rebuilt from content outward.
 
-Starting the app too early risks turning the project into interface brainstorming before the guide structure, section roles, glossary support, and tool behavior are stable.
+Starting the app too early risked turning the project into interface brainstorming before the guide structure, section roles, glossary support, and tool behavior were stable.
 
 #### Impact
 
-This affects:
+This affected:
 
 - [[App Vision]]
 - [[Navigation Model]]
@@ -489,21 +499,26 @@ This affects:
 - [[Section Reader Design]]
 - [[Tool Drawer Design]]
 - [[Next Build Tasks]]
-- future VS Code development
+- app-development handoff planning
 
 #### Revisit?
 
-Revisit after the Build Recall architecture verification pass and app-readiness checkpoint.
+Superseded by:
+
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+The app build has now begun, the first shell exists, and the first-slice content migration is complete.
 
 ---
 
 ### 2026-05-05 - Build Recall cluster is drafted
 
-Status: Active
+Status: Complete
 
 #### Decision
 
-The Build Recall cluster is complete enough to move forward without rewriting it now.
+The [[04 Build Recall]] cluster was complete enough to move forward without rewriting it at that stage.
 
 Completed sections:
 
@@ -515,13 +530,15 @@ Completed sections:
 
 The cluster is serving its role in the guide arc.
 
-It shifts the rebuild from building and storing understanding toward accessing knowledge reliably. It explains retrieval and spacing, defines clinical recall as something different from isolated trivia, and positions Anki as a support for spaced retrieval rather than the centre of the learning system.
+It shifts the rebuild from building and storing understanding toward accessing knowledge reliably.
+
+It explains retrieval and spacing, defines clinical recall as something different from isolated trivia, and positions Anki as a support for spaced retrieval rather than the centre of the learning system.
 
 #### Impact
 
-This affects:
+This affected:
 
-- [[MOC - Rebuilt Content]]
+- [[MOC - Content Architecture]]
 - [[Current Project Status]]
 - [[Next Build Tasks]]
 - [[Glossary and Popup Map]]
@@ -533,7 +550,7 @@ This affects:
 
 #### Revisit?
 
-Revisit during the first app-readiness pass, especially to check whether the Build Recall sections feel distinct enough in the Section Reader and whether tool placement is appropriate.
+Revisit during reader testing, especially to check whether the Build Recall sections feel distinct enough in the [[Section Reader]] and whether tool placement is appropriate.
 
 ---
 
@@ -543,7 +560,7 @@ Status: Active
 
 #### Decision
 
-[[Clinical Recall Prompt Builder]] is now an active drafted tool page.
+[[Clinical Recall Prompt Builder]] is an active drafted tool page.
 
 Status:
 
@@ -552,7 +569,7 @@ Status:
 
 #### Reason
 
-The Build Recall cluster repeatedly created the same student need: students need help turning facts, Smart Notes, directive details, scenario errors, and confusing concepts into recall prompts that support clinical use.
+The [[04 Build Recall]] cluster repeatedly created the same student need: students need help turning facts, Smart Notes, directive details, scenario errors, and confusing concepts into recall prompts that support clinical use.
 
 The tool helps students shape recall around:
 
@@ -573,12 +590,12 @@ This affects:
 - [[Clinical Recall Without Trivia]]
 - [[Anki for Paramedic Learning]]
 - [[Smart Notes for Paramedic Students]]
-- future app tool placement
-- future Tools Library design
+- app tool placement
+- [[Tool Drawer Design]]
 
 #### Revisit?
 
-Revisit during app tool-drawer planning.
+Revisit during app tool-drawer testing.
 
 Do not create an Anki-specific tool unless a repeated need appears later.
 
@@ -592,15 +609,17 @@ Status: Active
 
 [[Recognition vs Access Check]] should not be created as a separate active tool right now.
 
-Its useful pieces are folded into the Build Recall sections and the broader [[Clinical Recall Prompt Builder]].
+Its useful pieces are folded into the [[04 Build Recall]] sections and the broader [[Clinical Recall Prompt Builder]].
 
 #### Reason
 
-After drafting the full Build Recall cluster, the repeated need became clearer.
+After drafting the full [[04 Build Recall]] cluster, the repeated need became clearer.
 
-The issue is not only whether students can recognize or retrieve material. The more useful student-facing process is helping them turn knowledge into recall prompts that support clinical use.
+The issue is not only whether students can recognize or retrieve material.
 
-A separate Recognition vs Access tool would likely be narrower and partly redundant.
+The more useful student-facing process is helping them turn knowledge into recall prompts that support clinical use.
+
+A separate [[Recognition vs Access Check]] would likely be narrower and partly redundant.
 
 #### Impact
 
@@ -611,7 +630,7 @@ This affects:
 - [[Clinical Recall Without Trivia]]
 - [[Anki for Paramedic Learning]]
 - [[Clinical Recall Prompt Builder]]
-- future Tools Library design
+- future [[Tools Library]] design
 
 #### Revisit?
 
@@ -629,7 +648,7 @@ VitalNotes may explain how Anki can support retrieval and spacing, but the guide
 
 The first app slice should not include:
 
-- Anki integration
+- [[Anki Integration]]
 - deck management
 - automated flashcard generation
 - flashcard-platform behavior
@@ -637,9 +656,11 @@ The first app slice should not include:
 
 #### Reason
 
-The Build Recall cluster established that the real learning need is clinical recall, not flashcard productivity.
+The [[04 Build Recall]] cluster established that the real learning need is clinical recall, not flashcard productivity.
 
-Anki can be useful, but only when prompts are shaped around assessment, decisions, boundaries, reassessment, communication, and transfer. If the app begins supporting Anki workflows directly, VitalNotes risks becoming a flashcard platform instead of a student-facing paramedic learning guide.
+Anki can be useful, but only when prompts are shaped around assessment, decisions, boundaries, reassessment, communication, and transfer.
+
+If the app begins supporting Anki workflows directly, VitalNotes risks becoming a flashcard platform instead of a student-facing paramedic learning guide.
 
 #### Impact
 
@@ -656,41 +677,43 @@ This affects:
 - [[Tool Drawer Design]]
 - [[UI Tone and Style]]
 - [[App Anti-Drift Rules]]
-- future VS Code app prompts
+- future app prompts
 
 #### Revisit?
 
-Revisit only after the first app slice is built and tested, and only if students repeatedly need limited copy support for prompts. Even then, avoid deck management or automated flashcard generation unless the project direction is explicitly changed.
+Revisit only after the first app slice is built and tested, and only if students repeatedly need limited copy support for prompts.
+
+Even then, avoid deck management or automated flashcard generation unless the project direction is explicitly changed.
 
 ---
 
 ### 2026-05-05 - First app slice should include Build Recall
 
-Status: Active
+Status: Implemented
 
 #### Decision
 
-The first app vertical slice should include the Build Recall cluster rather than stopping after Build Usable Notes.
+The first app vertical slice should include the [[04 Build Recall]] cluster rather than stopping after [[03 Build Usable Notes]].
 
-Likely first app slice includes:
+The first app slice includes:
 
-- Start Here cluster
-- Why Learning Feels Hard cluster
-- Build Understanding cluster
-- Build Usable Notes cluster
-- Build Recall cluster
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
 - [[Directive Meaning Check]]
 - [[Smart Note Template]]
 - [[Clinical Recall Prompt Builder]]
-- Learning Path page
-- Section Reader
-- Glossary support
-- simple Tools Library
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Glossary]]
+- [[Tools Library]]
 - previous and next navigation
 
 #### Reason
 
-Including Build Recall gives the first app slice a fuller learning arc:
+Including [[04 Build Recall]] gives the first app slice a fuller learning arc:
 
 - orientation
 - why learning feels hard
@@ -710,33 +733,37 @@ This affects:
 - [[Section Reader Design]]
 - [[Tool Drawer Design]]
 - [[Next Build Tasks]]
-- future app-development handoff prompt
+- [[Codex App Structure Prompt]]
 
 #### Revisit?
 
-Revisit during the app-readiness checkpoint before starting VS Code work.
+Implemented in [[App Build Checkpoint 02 - First Slice Content Migration Complete]].
+
+Revisit only if first-slice testing shows the slice is too large or confusing for the reader experience.
 
 ---
 
 ### 2026-05-05 - Complete Build Recall architecture verification before app-readiness checkpoint
 
-Status: Active
+Status: Complete
 
 #### Decision
 
-Before moving into app development, the project will complete a bounded Build Recall architecture verification pass.
+Before moving into app development, the project completed a bounded [[04 Build Recall]] architecture verification pass.
 
 #### Reason
 
-The Build Recall cluster added three completed sections and one new active tool. The vault needs to accurately reflect those changes before the app process begins.
+The [[04 Build Recall]] cluster added three completed sections and one new active tool.
 
-This protects continuity and ensures the app-development prompt is based on the current source of truth.
+The vault needed to accurately reflect those changes before the app process began.
+
+This protected continuity and ensured the app-development prompt was based on the current source of truth.
 
 #### Impact
 
-This affects:
+This affected:
 
-- [[MOC - Rebuilt Content]]
+- [[MOC - Content Architecture]]
 - [[Next Build Tasks]]
 - [[Current Project Status]]
 - [[Glossary and Popup Map]]
@@ -757,4 +784,569 @@ This affects:
 
 #### Revisit?
 
-This is the active workflow decision for the current phase. Once complete, proceed to the app-readiness checkpoint.
+Complete.
+
+Superseded by the app-readiness checkpoint and app implementation checkpoints.
+
+---
+
+### 2026-05-06 - Continue manual content migration for the first slice
+
+Status: Implemented for first slice
+
+#### Decision
+
+For the first vertical slice, approved Obsidian drafts were migrated manually into TypeScript content objects.
+
+#### Reason
+
+Manual migration was the best choice for the first slice because it:
+
+- kept the app simple
+- avoided premature MDX work
+- avoided premature [[Obsidian Import Pipeline]] work
+- made the content structure explicit
+- reduced the risk of app bloat
+- preserved Obsidian as the source of truth
+- allowed the app reader to be tested with real content sooner
+
+The goal of the first slice was to prove the reader experience, not to build a publishing pipeline.
+
+#### Impact
+
+This affected:
+
+- [[Content Schema]]
+- [[Section Reader Design]]
+- [[Next Build Tasks]]
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+#### Revisit?
+
+Revisit after the first slice has completed cleanup and reader-quality testing.
+
+A future import or content pipeline should only be considered if manual migration becomes a real maintenance problem.
+
+---
+
+### 2026-05-06 - Keep hash-based navigation for the first slice
+
+Status: Active
+
+#### Decision
+
+The first working app shell will continue using hash-based navigation for the first slice.
+
+#### Reason
+
+Hash-based navigation is acceptable at this stage because it:
+
+- requires no additional routing dependency
+- works for local first-slice testing
+- keeps implementation simple
+- supports the current [[Home]], [[Learning Path]], [[Section Reader]], [[Tools Library]], and [[Glossary]] pages
+- avoids routing complexity before the content model is fully tested
+
+The current priority is content fit and reading flow, not routing architecture.
+
+#### Impact
+
+This affects:
+
+- [[Navigation Model]]
+- [[Section Reader Design]]
+- [[Next Build Tasks]]
+
+#### Revisit?
+
+Revisit after the first slice has completed reader-quality testing.
+
+A routing change should only happen if the app’s structure, deployment needs, or navigation requirements make hash-based navigation insufficient.
+
+---
+
+### 2026-05-06 - Keep visual polish bounded and tied to readability
+
+Status: Active
+
+#### Decision
+
+Broad visual redesign remains deferred.
+
+A bounded reader typography and spacing pass has been completed for demo readiness, but future visual changes should stay small, local, and tied to readability or consistency issues found during actual use.
+
+#### Reason
+
+The app’s purpose is still to render the VitalNotes guide clearly and calmly.
+
+The first-slice spacing pass improved:
+
+- section body spacing
+- section heading rhythm
+- section list spacing
+- glossary panel spacing
+- related panel spacing
+- previous / next navigation spacing
+- tool drawer readability
+
+This was appropriate because real content had been migrated and readability could be judged honestly.
+
+Further polish should not become redesign.
+
+#### Impact
+
+This affects:
+
+- [[Section Reader Design]]
+- [[Tool Drawer Design]]
+- [[Popup and Glossary Rules]]
+- [[Next Build Tasks]]
+- [[Current Project Status]]
+- future app cleanup passes
+
+#### Revisit?
+
+Revisit only when a specific readability, navigation, or consistency issue appears.
+
+Do not begin broad visual redesign without a clear reason.
+
+---
+
+### 2026-05-06 - First-slice content migration is complete and pushed
+
+Status: Active
+
+#### Decision
+
+The approved first vertical slice content has been migrated into the app content model and pushed.
+
+The migrated clusters are:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+#### Reason
+
+The first slice now has enough real content to test the actual reading experience, navigation model, related sections, related tools, glossary popups, and content density.
+
+This moves the project from app-shell validation into reader-quality testing and cleanup.
+
+#### Impact
+
+This affects:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+- [[Next Build Tasks]]
+- [[Current Project Status]]
+- [[Release Notes]]
+- [[Section Reader Design]]
+- [[Content Schema]]
+- [[MOC - Content Architecture]]
+- [[New VitalNotes Learning Path]]
+
+#### Revisit?
+
+Do not reopen first-slice scope unless reader testing shows a functional problem.
+
+The next work is cleanup, not expansion.
+
+---
+
+### 2026-05-06 - Bullet list cleanup completed before broader visual polish
+
+Status: Complete
+
+#### Decision
+
+[[Retro Fix 01 - Bullet List Cleanup]] has been completed for the first vertical slice.
+
+The cleanup updated `src/content/sections.ts` so obvious flattened paragraph runs became proper `list` blocks where appropriate.
+
+#### Reason
+
+The section body renderer supports `list` blocks, but list support was added late in migration.
+
+Several earlier migrated sections had list-like content rendered as separate paragraph blocks.
+
+This was a presentation fidelity issue and needed to be fixed before judging reader spacing and typography.
+
+#### Impact
+
+This affected:
+
+- [[Next Build Tasks]]
+- [[Current Project Status]]
+- [[Section Reader Design]]
+- [[Content Schema]]
+- [[Smart Notes for Paramedic Students]]
+- [[Types of Notes and Idea Maturation]]
+- [[Obsidian for Learning Paramedicine]]
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+#### Revisit?
+
+Complete.
+
+Run a similar cleanup after future content migrations if list support problems appear again.
+
+---
+
+### 2026-05-06 - Glossary audit completed for first slice
+
+Status: Complete
+
+#### Decision
+
+[[Glossary Term Audit]] has been completed for the first vertical slice.
+
+The audit now compares first-slice section glossary IDs in `src/content/sections.ts` against glossary entries in `src/content/glossary.ts`.
+
+A reusable audit script was created:
+
+- `scripts/audit-glossary.cjs`
+
+#### Reason
+
+Some glossary IDs were referenced in sections before their matching glossary entries existed.
+
+The audit made glossary support safer and more repeatable.
+
+Added first-slice glossary entries:
+
+- `directive-intent`
+- `performance-under-pressure`
+- `perfusion`
+- `reflection`
+
+Final audit result:
+
+- no missing glossary entries
+- every referenced glossary term exists
+
+Known unused glossary entries:
+
+- `metacognition`
+- `recall`
+
+These should remain for now. They are valid glossary entries, just not referenced in the current first slice.
+
+#### Impact
+
+This affects:
+
+- [[Glossary]]
+- [[Glossary and Popup Map]]
+- [[Popup and Glossary Rules]]
+- [[Content Schema]]
+- [[Section Reader Design]]
+- [[Next Build Tasks]]
+- [[Current Project Status]]
+- future first-slice and next-slice audits
+
+#### Revisit?
+
+Run the glossary audit after future content migrations and before committing content changes.
+
+Do not expand the glossary beyond actual app-reader needs.
+
+---
+
+### 2026-05-06 - Keep first-slice tools limited to three active tools
+
+Status: Active
+
+#### Decision
+
+Only three tools are active in the first vertical slice:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+No other tools should be promoted into the active first slice unless explicitly approved.
+
+#### Reason
+
+The first slice needs enough tool support to test the interface without turning the app into a tool catalogue.
+
+The active tools each directly support a major section cluster:
+
+- [[Directive Meaning Check]] supports [[Directives Through Purpose]]
+- [[Smart Note Template]] supports [[Smart Notes for Paramedic Students]]
+- [[Clinical Recall Prompt Builder]] supports [[Clinical Recall Without Trivia]] and [[Anki for Paramedic Learning]]
+
+Adding more tools now would increase complexity before the reader experience has been tested.
+
+#### Impact
+
+This affects:
+
+- [[Tool Library Map]]
+- [[Tool Drawer Design]]
+- [[Tools Library]]
+- [[Content Schema]]
+- [[Next Build Tasks]]
+
+#### Revisit?
+
+Revisit after first-slice reader testing.
+
+Potential future tools may be tracked in [[Deferred Ideas]], but should not be listed as active.
+
+---
+
+### 2026-05-06 - Create a separate ChatGPT Obsidian Update Prompt
+
+Status: Active
+
+#### Decision
+
+Create [[ChatGPT Obsidian Update Prompt]] as a separate build prompt for vault maintenance.
+
+[[ChatGPT Content Rewrite Prompt]] should remain focused on drafting and revising student-facing VitalNotes sections.
+
+#### Reason
+
+Vault maintenance is a different task from section drafting.
+
+The Obsidian update workflow needs different rules:
+
+- update actual files that exist
+- do not invent files
+- work one file at a time
+- choose Replace, Append, Create, or No action
+- use `[[Obsidian links]]`
+- remove stale project-state language
+- preserve architecture
+- avoid changing the learning path
+- avoid expanding app scope
+
+Keeping this as a separate prompt prevents content-rewrite rules from drifting into architecture and development-log updates.
+
+#### Impact
+
+This affects:
+
+- [[MOC - Build Prompts]]
+- [[ChatGPT Obsidian Update Prompt]]
+- [[ChatGPT Content Rewrite Prompt]]
+- [[App Anti-Drift Rules]]
+- future vault update passes
+- fresh chat continuation prompts
+
+#### Revisit?
+
+Update [[ChatGPT Obsidian Update Prompt]] whenever the project phase changes significantly.
+
+Examples:
+
+- after [[Retro Fix 01 - Bullet List Cleanup]] is complete
+- after [[Glossary Term Audit]] is complete
+- after first-slice reader-quality testing
+- after deployment preparation begins
+- after a new content cluster is drafted
+
+---
+
+### 2026-05-06 - Manual ChatGPT-guided copy/paste remains the reliable app workflow for now
+
+Status: Active
+
+#### Decision
+
+Manual ChatGPT-guided copy/paste implementation remains the reliable workflow for the current first-slice app cleanup phase.
+
+Codex and Copilot should not be treated as part of the critical path yet.
+
+#### Reason
+
+Codex, ChatGPT extension behavior, and GitHub Copilot Chat were unreliable or unavailable during early implementation.
+
+The app can still be built, tested, committed, and pushed through the current workflow using VS Code and external Windows PowerShell.
+
+The priority is controlled, visible changes over tool-assisted speed.
+
+#### Impact
+
+This affects:
+
+- [[Next Build Tasks]]
+- [[Bugs and Fixes]]
+- [[Codex App Structure Prompt]]
+- [[Codex Bugfix Prompt]]
+- [[App Anti-Drift Rules]]
+- [[MOC - Build Prompts]]
+- future app cleanup prompts
+
+#### Revisit?
+
+Revisit after the first slice is stable enough that tool-assisted implementation does not create drift or hidden changes.
+
+Codex may be used later only for bounded tasks with clear file targets, acceptance criteria, and anti-drift rules.
+
+---
+
+---
+
+### 2026-05-06 - Related-link audit added to the app workflow
+
+Status: Active
+
+#### Decision
+
+A related-link audit is now part of the app workflow.
+
+A reusable audit script was created:
+
+- `scripts/audit-related-links.cjs`
+
+The audit checks:
+
+- every related section ID exists
+- every related tool ID exists
+- related sections and related tools per section
+
+#### Reason
+
+Related links are part of the first-slice reader experience.
+
+Broken related links would weaken navigation, confuse the learning path, and create drift between the app and the approved content structure.
+
+During the first-slice cleanup pass, one future-facing related section reference was removed:
+
+- `scenario-days-as-learning-tools`
+
+It was replaced in `learning-strain-is-not-always-a-personal-problem` with:
+
+- `retrieval-and-spaced-learning`
+
+#### Impact
+
+This affects:
+
+- [[Section Reader Design]]
+- [[Content Schema]]
+- [[Navigation Model]]
+- [[Next Build Tasks]]
+- [[Current Project Status]]
+- future content-slice migration passes
+
+#### Revisit?
+
+Keep this script in the workflow.
+
+Run it after future related-link changes and before committing app content updates.
+
+---
+
+### 2026-05-06 - First vertical slice is stable and demo-ready
+
+Status: Active
+
+#### Decision
+
+The first VitalNotes app vertical slice is stable and demo-ready.
+
+The first slice includes:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Glossary]]
+- [[Tools Library]]
+- previous and next navigation
+- related sections
+- related tools
+- glossary term support
+- tool drawer support
+
+#### Reason
+
+The first slice has completed:
+
+- content migration
+- bullet list cleanup
+- glossary audit
+- related-link audit
+- reader typography and spacing pass
+- local smoke testing
+- live stability review based on current deployment review
+
+The app now proves that real VitalNotes content can live inside a calm reader interface without expanding into dashboards, quizzes, simulations, AI feedback, Anki integration, or other unapproved features.
+
+#### Impact
+
+This affects:
+
+- [[Current Project Status]]
+- [[Next Build Tasks]]
+- [[App Build Checkpoint 01 - First Slice Shell]]
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+- [[MOC - App Interface Design]]
+- [[MOC - Content Architecture]]
+- future app-development prompts
+
+#### Revisit?
+
+Revisit only if a functional problem appears during further testing.
+
+Do not reopen first-slice scope casually.
+
+The next app work should be chosen as a bounded pass.
+
+---
+
+### 2026-05-06 - Choose bounded app passes before expanding content
+
+Status: Active
+
+#### Decision
+
+After the first vertical slice became stable, the project should not automatically move into the next content slice.
+
+The next move should be chosen deliberately as a bounded app-development pass.
+
+Appropriate next actions include:
+
+- deployment verification cleanup, if needed
+- small design consistency pass for button versus text-link affordances
+- future repeatable migration checklist
+- next content-slice planning
+- next content-slice migration
+
+#### Reason
+
+The main risk after first-slice stability is uncontrolled expansion.
+
+The app should stay boring and reliable.
+
+New content, new interface behavior, or new tools should not be added until the current stable state is protected and the next pass is clearly defined.
+
+#### Impact
+
+This affects:
+
+- [[Next Build Tasks]]
+- [[Current Project Status]]
+- [[App Anti-Drift Rules]]
+- [[MOC - App Interface Design]]
+- [[MOC - Build Prompts]]
+- future continuation prompts
+
+#### Revisit?
+
+Revisit after the next bounded app pass is chosen and completed.
+
+Do not treat this as permission to expand scope.

@@ -1,10 +1,62 @@
 # App Anti-Drift Rules
 
-Use this note before major planning, prompting, coding, or app-development decisions.
+Use this note before major planning, prompting, coding, cleanup, or app-development decisions.
 
 The purpose of this file is to keep VitalNotes from becoming larger, louder, more generic, or more app-first than it needs to be.
 
-This version is especially for build prompts. Use it when preparing ChatGPT or Codex tasks.
+This version is especially for build prompts, ChatGPT continuation prompts, Codex tasks, and app cleanup passes.
+
+Use it when preparing work in VS Code, ChatGPT, Codex, or Obsidian.
+
+---
+
+## Current Status
+
+The first app vertical slice has been implemented.
+
+The approved first-slice content migration is complete and pushed.
+
+The app now renders real student-facing content across:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+
+Current active tools migrated into the app:
+
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+
+Current app support includes:
+
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- hash-based navigation
+- previous and next section navigation
+- related sections
+- related tools
+- simple tool drawer support
+- simple glossary popup support
+- section body list support
+
+Current related checkpoint:
+
+- [[App Build Checkpoint 02 - First Slice Content Migration Complete]]
+
+Current cleanup focus:
+
+- [[Retro Fix 01 - Bullet List Cleanup]]
+- [[Glossary Term Audit]]
+
+The current phase is not app expansion.
+
+The current phase is first-slice cleanup and reader-quality testing.
 
 ---
 
@@ -43,71 +95,124 @@ This version is especially for build prompts. Use it when preparing ChatGPT or C
 ## Core Development Rules
 
 1. Obsidian remains the source of truth.
-2. Map before rewriting.
-3. Rewrite before coding.
-4. Complete architecture verification before expanding.
-5. Build one vertical slice before expanding.
-6. Keep content separate from components.
-7. Add interaction only when it improves learning flow.
-8. Keep the app useful before making it impressive.
-9. Codex gets bounded tasks only.
-10. Student problems drive structure.
-11. The paramedic context must stay central.
-12. Tools appear only when earned by repeated content need.
-13. The app renders the guide. It does not reinvent the guide.
-14. Prompts must preserve the current content map unless explicitly instructed otherwise.
-15. Do not use coding prompts to quietly redesign the educational system.
-16. Do not let Anki become visually or structurally central.
-17. Do not create an Anki-specific tool unless a repeated student need appears later.
+2. The app renders the guide. It does not reinvent the guide.
+3. Preserve the current content map unless explicitly instructed otherwise.
+4. Keep content separate from components.
+5. Keep app-facing content separate from internal planning notes.
+6. Add interaction only when it improves learning flow.
+7. Keep the app useful before making it impressive.
+8. Build and clean up one bounded slice before expanding.
+9. Student problems drive structure.
+10. The paramedic context must stay central.
+11. Tools appear only when earned by repeated content need.
+12. Prompts must not quietly redesign the educational system.
+13. Coding work must not solve problems the content has not created yet.
+14. Do not let Anki become visually or structurally central.
+15. Do not create an Anki-specific tool unless a repeated student need appears later.
+16. Do not add new active tools during first-slice cleanup unless explicitly approved.
+17. Do not add new student-facing sections during first-slice cleanup unless explicitly approved.
+18. Do not broaden visual polish before presentation fidelity issues are fixed.
 
 ---
 
 ## Current Build Boundary
 
-Do not start VS Code app production yet.
+The app build has begun.
 
-The current phase is still:
+The first-slice app exists.
 
-- content rebuild
-- Build Recall architecture verification pass
-- app-readiness checking
-- first-slice definition
+The first-slice content migration is complete.
 
-The app build should begin only after the Build Recall architecture verification pass is complete and the first vertical slice is checked against real drafted sections.
+The current boundary is first-slice cleanup.
 
-Current drafted clusters:
+Immediate active work:
+
+1. complete [[Retro Fix 01 - Bullet List Cleanup]]
+2. complete [[Glossary Term Audit]]
+3. complete first-slice reader-quality testing
+4. only then decide whether to continue app polish, prepare deployment, or return to drafting [[Clinical Reasoning]]
+
+Do not treat this phase as permission to add features.
+
+The first-slice app should remain bounded to:
+
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
+- [[Directive Meaning Check]]
+- [[Smart Note Template]]
+- [[Clinical Recall Prompt Builder]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- previous and next navigation
+- problem-based entry through [[Where to Begin]]
+- simple glossary popup support
+- simple tool drawer support
+- list block support
+
+Do not expand beyond this without an explicit decision in [[Decisions]].
+
+---
+
+## Current Migrated Clusters
+
+### [[00 Start Here]]
 
 - [[Start Here - What VitalNotes Is]]
 - [[How to Use This Guide]]
 - [[Where to Begin]]
+
+### [[01 Why Learning Feels Hard]]
+
 - [[Cognitive Load]]
 - [[Why Studying Feels Productive But Fails Under Pressure]]
 - [[Learning Strain Is Not Always a Personal Problem]]
+
+### [[02 Build Understanding]]
+
 - [[Meaning Before Memorization]]
 - [[Pathophysiology Through Patterns]]
 - [[Directives Through Purpose]]
+
+### [[03 Build Usable Notes]]
+
 - [[Smart Notes for Paramedic Students]]
 - [[Types of Notes and Idea Maturation]]
 - [[Obsidian for Learning Paramedicine]]
+
+### [[04 Build Recall]]
+
 - [[Retrieval and Spaced Learning]]
 - [[Clinical Recall Without Trivia]]
 - [[Anki for Paramedic Learning]]
 
-Current active tools:
+Build Recall is included in the first vertical slice and has been migrated.
+
+Do not revert to older language that treats [[04 Build Recall]] as pending, excluded, undecided, or future-facing.
+
+---
+
+## Current Active Tools
+
+Only these tools are active in the first app slice:
 
 - [[Directive Meaning Check]]
 - [[Smart Note Template]]
 - [[Clinical Recall Prompt Builder]]
 
-Next possible content target if content drafting continues:
+Planned tools should not be treated as live app features until the relevant sections are drafted, stable, and clearly earn them.
 
-- [[Clinical Reasoning]]
+Possible future tools should remain parked in [[Tool Library Map]] or [[Deferred Ideas]].
 
-Current recommended next phase:
+Do not create tools to make the app feel interactive.
 
-- complete app-readiness checkpoint
-- define first app vertical slice
-- move app development into a fresh chat with a strong handoff prompt
+A tool should reduce friction, not add homework.
+
+[[Clinical Recall Prompt Builder]] should remain a recall-shaping tool, not an Anki deck-management system.
 
 ---
 
@@ -163,6 +268,57 @@ The student should see a calm guide, not the workshop behind it.
 
 ---
 
+## Current Cleanup Rules
+
+### [[Retro Fix 01 - Bullet List Cleanup]]
+
+This cleanup should:
+
+- update `src/content/sections.ts`
+- convert obvious flattened paragraph runs into proper `list` blocks
+- preserve approved wording wherever possible
+- begin with [[Smart Notes for Paramedic Students]]
+- continue through [[Types of Notes and Idea Maturation]]
+- review [[Obsidian for Learning Paramedicine]]
+- continue through first-slice sections where needed
+- run `npm run build`
+- check affected sections in the browser
+- commit once stable
+
+This cleanup should not:
+
+- rewrite sections
+- change section titles
+- change cluster order
+- add new sections
+- add new tools
+- redesign typography broadly
+- alter the learning path
+- add new app features
+
+### [[Glossary Term Audit]]
+
+This cleanup should:
+
+- compare glossary IDs in `src/content/sections.ts` against `src/content/glossary.ts`
+- add or normalize only first-slice glossary terms
+- keep definitions short and student-facing
+- preserve paramedic relevance
+- test glossary popup behavior
+- run `npm run build`
+- commit once stable
+
+This cleanup should not:
+
+- turn the glossary into a textbook
+- add long learning science definitions
+- add glossary quizzes
+- create Anki glossary behavior
+- add AI explanation support
+- broaden the glossary beyond first-slice needs
+
+---
+
 ## Tool Rules
 
 A tool should exist only when it gives students a structure they can return to more than once.
@@ -183,6 +339,16 @@ A tool should reduce friction, not add homework.
 
 The [[Clinical Recall Prompt Builder]] should remain a recall-shaping tool, not an Anki deck-management system.
 
+Do not add:
+
+- saved tool responses
+- tool scoring
+- tool completion states
+- tool dashboards
+- AI-generated tool feedback
+- automatic exports
+- Anki deck behavior
+
 ---
 
 ## Glossary Rules
@@ -199,31 +365,37 @@ If a popup needs several paragraphs, the idea probably belongs in a section or t
 
 Use [[Glossary and Popup Map]] as the source of truth for glossary language.
 
+Use [[Popup and Glossary Rules]] for behavior guidance.
+
+Complete [[Glossary Term Audit]] before expanding glossary behavior.
+
 ---
 
 ## First Vertical Slice Rules
 
-The first vertical slice should test the reading experience before the app expands.
+The first vertical slice tests the reading experience before the app expands.
 
-Likely first slice:
+Current first slice:
 
-- Home page
-- Learning Path page
-- Section Reader
-- Start Here cluster
-- Why Learning Feels Hard cluster
-- Build Understanding cluster
-- Build Usable Notes cluster
-- Build Recall cluster
+- [[Home]]
+- [[Learning Path]]
+- [[Section Reader]]
+- [[Tools Library]]
+- [[Glossary]]
+- [[00 Start Here]]
+- [[01 Why Learning Feels Hard]]
+- [[02 Build Understanding]]
+- [[03 Build Usable Notes]]
+- [[04 Build Recall]]
 - glossary support
-- simple Tools Library
+- simple tool drawer support
 - [[Directive Meaning Check]]
 - [[Smart Note Template]]
 - [[Clinical Recall Prompt Builder]]
 - previous and next navigation
 - problem-based entry through [[Where to Begin]]
 
-Reason for including Build Recall:
+Reason for including [[04 Build Recall]]:
 
 - the app can test the fuller arc from understanding, to usable notes, to reliable access
 - retrieval and spacing clarify how glossary support, related sections, and tool drawers should behave
@@ -241,8 +413,8 @@ The first slice should not include:
 - simulations
 - complex personalization
 - AI-guided reflection
-- Obsidian import pipeline
-- Anki integration
+- [[Obsidian Import Pipeline]]
+- [[Anki Integration]]
 - deck management
 - automated flashcard generation
 - flashcard-platform behavior
@@ -259,7 +431,7 @@ When using ChatGPT for VitalNotes, prompts should clearly state:
 - what should be preserved
 - what should not be changed
 - whether the output is student-facing or architecture-facing
-- whether the task is drafting, review, mapping, or app planning
+- whether the task is drafting, review, mapping, app planning, cleanup, or coding support
 - whether tools or glossary terms should be considered
 - the required output format
 
@@ -273,6 +445,9 @@ Good prompt language:
 - “Return the full file in clean Markdown.”
 - “Review for AI slop, drift, repetition, and tone.”
 - “Do not create new tools unless the section clearly earns one.”
+- “Do not add features.”
+- “Use the existing app structure.”
+- “Keep this as a bounded cleanup pass.”
 
 Bad prompt language:
 
@@ -282,6 +457,8 @@ Bad prompt language:
 - “Add whatever seems useful.”
 - “Turn this into an app plan.”
 - “Create a new structure.”
+- “Add some interactive features.”
+- “Polish everything.”
 
 ---
 
@@ -313,50 +490,61 @@ Do not ask Codex to:
 - refactor unrelated files
 - change the educational model
 - replace the Obsidian structure
-- add Anki integration
+- add [[Anki Integration]]
 - add deck management
 - add automated flashcard generation
+- add flashcard-platform behavior
 
 Codex should implement the structure already defined in the vault.
 
 It should not reinterpret the project.
 
+If Codex or Copilot are unreliable, use manual ChatGPT-guided copy/paste implementation.
+
 ---
 
-## Coding Rules for Later
+## Coding Rules
 
-When VS Code work begins:
+Current workflow:
 
-- start with simple manual content objects or JSON-like data
-- avoid complex Markdown import at first
+- use VS Code
+- use external Windows PowerShell
+- use manual ChatGPT-guided copy/paste implementation
+- keep tasks bounded
+- run builds before committing
+- document meaningful fixes in [[Bugs and Fixes]]
+- document meaningful internal app checkpoints in [[Release Notes]]
+
+Reliable commands:
+
+- `npm run build`
+- `npm run dev`
+- `git add .`
+- `git commit -m "..."`
+- `git push`
+
+Local development address:
+
+`http://localhost:5173/`
+
+Current content files:
+
+- `src/content/sections.ts`
+- `src/content/glossary.ts`
+- `src/content/tools.ts`
+
+Current app development rules:
+
 - keep components small
 - keep content files readable
 - keep styling calm
-- build only the first vertical slice
+- keep hash-based navigation for first-slice cleanup
 - test with real sections, not placeholder content
 - do not create architecture in code that contradicts the Obsidian structure
-- do not add Anki integration, deck management, automated flashcard generation, or flashcard-platform behavior
+- do not add [[Anki Integration]], deck management, automated flashcard generation, or flashcard-platform behavior
 - log major structural decisions in [[Decisions]]
 - track build tasks in [[Next Build Tasks]]
-
-Likely early files:
-
-- `src/content/sections.js`
-- `src/content/glossary.js`
-- `src/content/tools.js`
-- `src/content/learningPath.js`
-
-Likely early components:
-
-- `Layout`
-- `LearningPath`
-- `SectionPage`
-- `SectionHeader`
-- `SectionBody`
-- `SectionNavigation`
-- `GlossaryPopup`
-- `ToolDrawer`
-- `ToolsLibrary`
+- track real bugs and fixes in [[Bugs and Fixes]]
 
 Do not add more structure until the first slice proves it is needed.
 
@@ -390,12 +578,46 @@ Also reassess if:
 - learning science starts being announced instead of used
 - prompts invite broad invention instead of bounded execution
 - coding work starts solving problems the content has not created yet
+- cleanup turns into redesign
+- visual polish starts before presentation fidelity issues are fixed
+
+---
+
+## Current No-Go List
+
+Do not add during first-slice cleanup:
+
+- new student-facing sections
+- new active tools
+- accounts
+- dashboards
+- badges
+- streaks
+- scores
+- quizzes
+- grading
+- simulations
+- instructor dashboards
+- LMS integration
+- AI feedback
+- AI reflection
+- [[Anki Integration]]
+- deck management
+- automated flashcard generation
+- flashcard-platform behavior
+- progress tracking
+- analytics
+- CMS
+- MDX
+- [[Obsidian Import Pipeline]]
+- broad routing overhaul
+- broad visual redesign
 
 ---
 
 ## Final Check Before Any Major Decision
 
-Before rewriting, planning, coding, prompting, or adding features, ask:
+Before rewriting, planning, coding, prompting, cleanup, or adding features, ask:
 
 - Does this help paramedic students learn, reason, practice, recall, or reflect better?
 - Does this fit the current content map?
@@ -405,5 +627,8 @@ Before rewriting, planning, coding, prompting, or adding features, ask:
 - Is this needed now, or is it interesting but premature?
 - Would this make VitalNotes clearer, or just larger?
 - Would this make a future Codex task more bounded or more vague?
+- Does this preserve the first-slice boundary?
+- Does this avoid Anki platform drift?
+- Does this avoid turning cleanup into redesign?
 
 If the answer is unclear, park the idea rather than building around it.

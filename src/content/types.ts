@@ -57,6 +57,17 @@ export type ToolField = {
   helperText: string
 }
 
+export type ToolExampleEntry = {
+  label: string
+  text: string
+}
+
+export type ToolExample = {
+  context: string
+  entries: ToolExampleEntry[]
+  nextAdjustment: string
+}
+
 export type Tool = {
   id: string
   title: string
@@ -67,6 +78,7 @@ export type Tool = {
   steps: string[]
   fields: ToolField[]
   builderStructure: string[]
+  example: ToolExample
   relatedSections: string[]
 }
 
