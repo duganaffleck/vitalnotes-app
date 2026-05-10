@@ -6808,7 +6808,7 @@ relatedSections: [
   clusterOrder: 5,
   sectionOrder: 0,
   studentProblem:
-    'Students are often told to think clinically, but are rarely shown what that means while a call is still unfolding.',
+    'I am told to think clinically, but I am not always sure what that means while a call is still unfolding.',
   sectionPurpose:
     'Describe clinical reasoning as the work of staying oriented, managing risk, and adjusting decisions while information is still incomplete.',
   pageType: 'conceptual',
@@ -7314,7 +7314,7 @@ relatedSections: [
   clusterOrder: 5,
   sectionOrder: 1,
   studentProblem:
-    'Students often either imitate experienced clinicians too quickly or distrust their own early impressions because pattern recognition feels too much like guessing.',
+    'I either trust my first impression too quickly, or I distrust it because it feels too much like guessing.',
   sectionPurpose:
     'Show how early recognition can help students orient sooner while still checking the pattern against the patient.',
   pageType: 'conceptual',
@@ -7809,7 +7809,7 @@ relatedSections: [
   clusterOrder: 5,
   sectionOrder: 2,
   studentProblem:
-    'Students often form a reasonable early impression, then unknowingly filter the rest of the call through that first explanation.',
+    'I sometimes form a reasonable early impression, then start filtering the rest of the call through it without realizing.',
   sectionPurpose:
     'Describe premature closure as an understandable reasoning trap and show how to keep an early explanation open to correction.',
   pageType: 'conceptual',
@@ -8450,7 +8450,7 @@ relatedSections: [
   clusterOrder: 6,
   sectionOrder: 0,
   studentProblem:
-    'Students often treat scenario days as proof that they are ready or not ready, instead of using them as information about how their learning behaves under pressure.',
+    'I sometimes treat scenario days as proof that I am ready or not ready, instead of using them to notice what changes under pressure.',
   sectionPurpose:
     'Treat scenario days as practice days that reveal patterns in recall, reasoning, communication, reassessment, and decision-making.',
   pageType: 'practice-support',
@@ -8997,7 +8997,7 @@ relatedSections: [
   clusterOrder: 6,
   sectionOrder: 1,
   studentProblem:
-    'Students often treat errors as proof that they are not capable, rather than as information about what part of their learning, reasoning, recall, or practice system needs support.',
+    'I sometimes treat repeated mistakes as proof that I am not capable, instead of asking what part of the call needs more practice.',
   sectionPurpose:
     'Distinguish occasional mistakes from repeated patterns so feedback can become one specific practice target.',
   pageType: 'practice-support',
@@ -9716,7 +9716,7 @@ relatedSections: [
   clusterOrder: 6,
   sectionOrder: 2,
   studentProblem:
-    'Students often receive useful feedback but leave with too many corrections, too much emotional noise, or no clear next action.',
+    'I receive feedback, but I often leave with too many corrections, too much noise, or no clear next action.',
   sectionPurpose:
     'Turn feedback into one focused practice target that can be tested in the next scenario, lab, or study session.',
   pageType: 'practice-support',
