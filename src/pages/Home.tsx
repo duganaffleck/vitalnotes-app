@@ -9,11 +9,10 @@ function Home({ onNavigate }: HomeProps) {
     <section className="page-stack">
       <div className="hero-card">
         <p className="eyebrow">VitalNotes</p>
-        <h1>Learning paramedicine with structure, not noise.</h1>
+        <h1>A guide for studying paramedicine when more review is not enough.</h1>
         <p>
-          VitalNotes is a student-facing guide for learning how to learn
-          paramedicine. It focuses on understanding, recall, notes, reasoning,
-          scenarios, and performance under pressure.
+          VitalNotes helps paramedic students build the kind of learning that
+          holds up in lab, scenarios, OSCEs, and early clinical practice.
         </p>
 
         <div className="hero-actions">
@@ -34,26 +33,26 @@ function Home({ onNavigate }: HomeProps) {
 
       <div className="three-column-grid">
         <article className="info-card">
-          <h2>Start with the problem you recognize.</h2>
+          <h2>Start where things are breaking down.</h2>
           <p>
-            If studying feels productive but does not hold up in scenarios, begin
-            with the learning path rather than adding more content.
+            If review feels familiar but scenarios still feel messy, begin with
+            the learning path before adding more material.
           </p>
         </article>
 
         <article className="info-card">
-          <h2>Use tools when they help thinking.</h2>
+          <h2>Use a tool when you need a next step.</h2>
           <p>
-            The tools are optional supports. They clarify decisions, notes, and
-            recall. They are not another system to maintain.
+            The tools are small aids for notes, recall, decisions, practice, and
+            feedback. They are not extra homework.
           </p>
         </article>
 
         <article className="info-card">
-          <h2>Keep the guide close to practice.</h2>
+          <h2>Keep it close to the call.</h2>
           <p>
-            The goal is learning that transfers into labs, OSCEs, scenarios, and
-            real patient care.
+            The goal is learning that shows up when you are assessing,
+            deciding, communicating, and reassessing.
           </p>
         </article>
       </div>
