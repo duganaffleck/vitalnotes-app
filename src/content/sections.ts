@@ -56,7 +56,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'This is a guide for learning paramedicine in a way that holds up better when things are moving. It does not replace class, lab, placement, instructors, feedback, repetition, or the basic responsibility of doing the work. Those things still matter. The goal here is to make the work clearer, so effort has somewhere useful to go.',
+      text: 'This is a guide for learning paramedicine in a way that holds up better when things are moving. It does not replace class, lab, placement, instructors, feedback, repetition, or the basic responsibility of doing the work. Those things still matter. The goal here is to make the work clearer, so students can see what their effort is actually doing.',
     },
     {
       type: 'heading',
@@ -80,11 +80,11 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'That is the important part. The knowledge may have been there, but it was not accessible enough, connected enough, or stable enough in the moment. If every problem like that is treated as a simple knowledge problem, the answer always becomes more studying. More rereading. More rewriting. More time at the desk. Sometimes that helps, but sometimes it just adds more material to a system that already has too little structure.',
+      text: 'That is the important part. The knowledge may have been there, but it was not accessible, connected, or steady enough in the moment. If every problem like that is treated as a simple knowledge problem, the answer always becomes more studying. More rereading. More rewriting. More time at the desk. Sometimes that helps, but sometimes it just adds more material without changing how the student is preparing to use it.',
     },
     {
       type: 'paragraph',
-      text: 'VitalNotes starts from the assumption that learning problems deserve a more careful look before we prescribe more effort.',
+      text: 'VitalNotes starts by looking at what kind of problem the student is actually facing before the answer becomes more effort.',
     },
     {
       type: 'heading',
@@ -108,7 +108,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'The guide is interested in that usable layer. The place where studying, thinking, and performance meet.',
+      text: 'That is where VitalNotes spends most of its time: the point where studying has to become action.',
     },
     {
       type: 'heading',
@@ -120,15 +120,15 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'But there is a difference between useful difficulty and wasted difficulty.',
+      text: 'But not every hard thing is helping.',
     },
     {
       type: 'paragraph',
-      text: 'Useful difficulty makes you more capable. It helps you notice patterns, recover from mistakes, explain your decisions, and adjust the next time. Wasted difficulty burns time and confidence without changing much. Rereading the same notes without testing recall, rewriting slides into cleaner pages, memorizing directives without understanding their purpose, finishing a scenario with ten vague lessons and no clear next step, or calling every mistake a confidence problem can all feel responsible while still failing to move learning forward.',
+      text: 'Some difficulty builds ability. It helps you notice patterns, recover from mistakes, explain your decisions, and adjust the next time. Other difficulty mostly burns time and confidence. Rereading the same notes without testing recall, rewriting slides into cleaner pages, memorizing directives without understanding their purpose, finishing a scenario with ten vague lessons and no clear next step, or calling every mistake a confidence problem can all feel responsible while still leaving the real issue untouched.',
     },
     {
       type: 'paragraph',
-      text: 'VitalNotes is not against hard work. It is against work that has no direction.',
+      text: 'VitalNotes does not argue against hard work. It argues for knowing what the work is meant to change.',
     },
     {
       type: 'heading',
@@ -156,11 +156,11 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'Paramedicine asks learning to travel. It starts in class, but it cannot stay there. It has to move into labs, scenarios, OSCEs, placement, and eventually real patient care. It has to be available when you are tired, watched, interrupted, uncertain, or wrong about your first impression.',
+      text: 'In paramedicine, learning has to leave the classroom. It has to move into labs, scenarios, OSCEs, placement, and eventually real patient care. It has to be available when you are tired, watched, interrupted, uncertain, or wrong about your first impression.',
     },
     {
       type: 'paragraph',
-      text: 'That kind of learning takes some structure. It depends on how you study, how you retrieve, how you organize ideas, how you practice, how you respond to feedback, and how you recover when thinking narrows.',
+      text: 'That kind of learning needs more than exposure to content. It depends on how you study, how you retrieve, how you organize ideas, how you practice, how you respond to feedback, and how you recover when thinking narrows.',
     },
     {
       type: 'paragraph',
@@ -201,11 +201,11 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'That may sound strange, but it is important. Paramedic students already have enough material pressing on them: lectures, labs, directives, skills, scenarios, OSCEs, placement expectations, and feedback that can be hard to sort through afterward. VitalNotes only helps if it gives some shape to that work. If it becomes another thing you feel behind on, then we have built the wrong thing.',
+      text: 'That may sound strange, but it is important. Paramedic students already have enough material pressing on them: lectures, labs, directives, skills, scenarios, OSCEs, placement expectations, and feedback that can be hard to sort through afterward. VitalNotes only helps if it gives some shape to that work. If it becomes another thing you feel behind on, then it is not doing its job.',
     },
     {
       type: 'paragraph',
-      text: 'You do not need to read every section before it becomes useful. You do not need to build every tool. You do not need to turn this into a new productivity system. The first goal is much smaller than that: understand one part of your learning more clearly, then make one useful adjustment.',
+      text: 'You do not need to read every section before it helps. You do not need to build every tool. You do not need to turn this into a new productivity system. The first goal is smaller than that: understand one part of what is going wrong, then make one adjustment you can actually use this week.',
     },
     {
       type: 'paragraph',
@@ -237,7 +237,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'Most students will probably use both approaches at different times, and that is fine. Reading in order gives you the structure. Entering through a problem gives you help where the friction is highest.',
+      text: 'Most students will probably use both approaches at different times, and that is fine. Reading in order gives you the full arc. Entering through a problem gives you help where the friction is highest.',
     },
     {
       type: 'heading',
@@ -257,7 +257,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'If a section gives you three useful ideas, resist the urge to turn all three into tasks for tomorrow. Choose the one that actually connects to a problem you are seeing in your learning. A small adjustment that gets used is better than a complete system that collapses by next week.',
+      text: 'If a section gives you three useful ideas, resist the urge to turn all three into tasks for tomorrow. Choose the one that actually connects to a problem you are seeing in your learning. A small adjustment that gets used is better than a large plan that collapses by next week.',
     },
     {
       type: 'paragraph',
@@ -289,11 +289,11 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'What part of my learning does this explain?',
+      text: 'Where have I seen this show up in studying, lab, scenarios, or feedback?',
     },
     {
       type: 'paragraph',
-      text: 'That question keeps the guide practical. It moves the section from something you read into something you can use. You are not trying to collect insights. You are trying to understand what needs to change in how you study, practice, think, or reflect.',
+      text: 'That question keeps the guide close to the work. You are not trying to collect insights. You are trying to recognize what needs to change in how you study, practice, decide, or reflect.',
     },
     {
       type: 'heading',
@@ -301,11 +301,11 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'Some sections will have tools, templates, or short workflows attached to them. These are meant to support the reading, not interrupt it.',
+      text: 'Some sections will have tools, templates, or short workflows attached to them. These are meant to sit beside the reading, not interrupt it.',
     },
     {
       type: 'paragraph',
-      text: 'A tool should give you a small structure you can return to. For example, a Smart Note template may help you turn a confusing concept into something usable. A reflection tool may help you take one lesson from a scenario without replaying the entire call. A clinical reasoning check may help you pause when you are waiting too long for certainty.',
+      text: 'A tool should give you one small move you can return to. For example, a Smart Note template may help you turn a confusing concept into a clearer explanation. A reflection tool may help you take one lesson from a scenario without replaying the entire call. A clinical reasoning check may help you pause when you are waiting too long for certainty.',
     },
     {
       type: 'paragraph',
@@ -325,7 +325,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'That can happen quietly. You read too many sections in one sitting. You collect tools without using them. You decide that this is the week you are going to rebuild your entire study life. For a few days, that can feel productive. Then the normal pressure of the program returns, and the system collapses under its own weight.',
+      text: 'That can happen quietly. You read too many sections in one sitting. You collect tools without using them. You decide that this is the week you are going to rebuild your entire study life. For a few days, that can feel productive. Then the normal pressure of the program returns, and the plan collapses under its own weight.',
     },
     {
       type: 'paragraph',
@@ -333,7 +333,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'One section might change how you review before scenarios. One reflection structure might help you leave lab with a clearer next step. One explanation might help you stop treating every mistake as proof that you are behind. That is enough usefulness for a guide like this.',
+      text: 'One section might change how you review before scenarios. One reflection structure might help you leave lab with a clearer next step. One explanation might help you stop treating every mistake as proof that you are behind. That is enough.',
     },
     {
       type: 'heading',
@@ -395,7 +395,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'You do not need to diagnose your whole learning system before you begin. You just need to notice where the friction is highest right now, then choose the closest doorway into the guide.',
+      text: 'You do not need to figure out every weakness before you begin. You just need to notice where the friction is highest right now, then choose the closest doorway into the guide.',
     },
     {
       type: 'heading',
@@ -427,7 +427,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'During a scenario, the issue is rarely whether the information exists somewhere. The issue is whether it has been organized in a way that supports recognition, explanation, and decision-making.',
+      text: 'During a scenario, the issue is rarely whether the information exists somewhere. The issue is whether your notes have helped you recognize, explain, and act on it.',
     },
     {
       type: 'paragraph',
@@ -479,7 +479,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'Repeated mistakes can feel discouraging, especially when they happen in front of instructors or classmates. But repeated errors are often information. They show where your learning system is predictable under pressure.',
+      text: 'Repeated mistakes can feel discouraging, especially when they happen in front of instructors or classmates. But repeated errors are often information. They show where your preparation reliably breaks down once pressure is added.',
     },
     {
       type: 'paragraph',
@@ -487,11 +487,11 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'Scenario work becomes more useful when you stop treating each run as a separate judgment and start looking for patterns.',
+      text: 'Scenario work improves when you stop treating each run as a separate judgment and start looking for patterns.',
     },
     {
       type: 'paragraph',
-      text: 'After that, Common Errors and What They Reveal and The Five Whys can help you turn feedback into something smaller and more usable.',
+      text: 'After that, Common Errors and What They Reveal and The Five Whys can help you turn feedback into a next step small enough to act on.',
     },
     {
       type: 'heading',
@@ -539,7 +539,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'Improvement in paramedic school does not always feel smooth. Sometimes it looks messy because you are adding new layers: communication, prioritization, directives, reassessment, transport thinking, and clinical reasoning. You may feel less polished for a while because your learning is reorganizing.',
+      text: 'Improvement in paramedic school does not always feel smooth. Sometimes it looks messy because you are adding new layers: communication, prioritization, directives, reassessment, transport thinking, and clinical reasoning. You may feel less polished for a while because those pieces are starting to interact in more demanding ways.',
     },
     {
       type: 'paragraph',
@@ -571,7 +571,7 @@ const sectionSeeds: SectionSeed[] = [
     },
     {
       type: 'paragraph',
-      text: 'That is usually better than trying to fix the whole system at once.',
+      text: 'That is usually better than trying to fix everything at once.',
     },
     {
       type: 'heading',
