@@ -2966,7 +2966,7 @@ relatedSections: [
   studentProblem:
     'My notes are organized, detailed, or complete, but they do not help me think clearly during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Introduce Smart Notes as a way to turn scattered learning into explanations and connections students can return to during study, lab, and scenario preparation.',
+    'Use Smart Notes to turn scattered learning into explanations and connections students can return to during study, lab, and scenario preparation.',
   pageType: 'tool-supported',
   body: [
   {
@@ -7316,7 +7316,7 @@ relatedSections: [
   studentProblem:
     'I either trust my first impression too quickly, or I distrust it because it feels too much like guessing.',
   sectionPurpose:
-    'Show how early recognition can help students orient sooner while still checking the pattern against the patient.',
+    'Describe early recognition as a useful starting point that still needs to be checked against the patient.',
   pageType: 'conceptual',
   body: [
   
@@ -9716,7 +9716,7 @@ relatedSections: [
   clusterOrder: 6,
   sectionOrder: 2,
   studentProblem:
-    'I receive feedback, but I often leave with too many corrections, too much noise, or no clear next action.',
+    'I receive feedback, but I often leave with too many corrections and no clear next action.',
   sectionPurpose:
     'Turn feedback into one focused practice target that can be tested in the next scenario, lab, or study session.',
   pageType: 'practice-support',
