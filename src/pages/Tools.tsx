@@ -11,31 +11,31 @@ const toolGroups: ToolGroup[] = [
   {
     title: 'Understanding',
     purpose:
-      'Tools for making concepts, directives, and notes easier to think with later.',
+      'For directives, notes, and concepts that still feel a bit fuzzy after class or lab.',
     toolIds: ['directive-meaning-check', 'smart-note-template'],
   },
   {
     title: 'Recall',
     purpose:
-      'Tools for strengthening access to clinically useful knowledge without turning recall into trivia.',
+      'For knowledge that needs to show up during scenarios, not just look familiar during review.',
     toolIds: ['clinical-recall-prompt-builder'],
   },
   {
     title: 'Clinical thinking',
     purpose:
-      'Tools for keeping reasoning flexible when early impressions feel convincing.',
+      'For checking your first impression before it quietly becomes the only explanation.',
     toolIds: ['clinical-reasoning-check'],
   },
   {
     title: 'Practice and performance',
     purpose:
-      'Tools for using scenarios and OSCEs as places to adjust thinking, not just display performance.',
+      'For scenario days and OSCE prep, especially when feedback needs to turn into one clear adjustment.',
     toolIds: ['scenario-day-reset', 'osce-reset'],
   },
   {
     title: 'Reflection and improvement',
     purpose:
-      'Tools for turning feedback, errors, and difficult moments into one practical adjustment.',
+      'For rough scenarios, repeated mistakes, and feedback that needs to become one clear change.',
     toolIds: ['reflection-without-journaling-tool', 'five-whys-tool'],
   },
 ]
@@ -124,11 +124,12 @@ function Tools() {
     <section className="page-stack">
       <header className="page-header">
         <p className="eyebrow">Tools Library</p>
-        <h1>Use tools only when they clarify thinking.</h1>
+        <h1>Use a tool when you need a next step.</h1>
         <p>
-          These tools are optional supports. Use them when a section gives you a
-          problem you want to work through more deliberately, or when a lab,
-          scenario, OSCE, or feedback point needs a clearer next step.
+          These are small working aids for moments when reading is not quite
+          enough. Use them after a section, a lab, a scenario, an OSCE station,
+          or a feedback point when you need to turn an idea into something you
+          can try.
         </p>
       </header>
 
