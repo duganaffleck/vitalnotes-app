@@ -76,8 +76,8 @@ function App() {
       {route.page === 'section' && currentSection && (
         <SectionPage section={currentSection} onNavigate={navigateTo} />
       )}
-      {route.page === 'tools' && <Tools onNavigate={navigateTo} />}
-      {route.page === 'glossary' && <Glossary onNavigate={navigateTo} />}
+      {route.page === 'tools' && <Tools />}
+      {route.page === 'glossary' && <Glossary />}
     </Layout>
   )
 }

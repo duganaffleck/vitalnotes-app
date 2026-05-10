@@ -42,10 +42,7 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
 
         <SectionBody body={section.body} />
 
-        <GlossaryTerms
-          glossaryTermIds={section.glossaryTerms}
-          onNavigate={onNavigate}
-        />
+        <GlossaryTerms glossaryTermIds={section.glossaryTerms} />
 
         {relatedTools.length > 0 && (
           <aside className="related-panel">

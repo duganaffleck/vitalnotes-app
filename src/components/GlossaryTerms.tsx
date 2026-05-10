@@ -5,7 +5,6 @@ import type { GlossaryTerm } from '../content/types'
 
 type GlossaryTermsProps = {
   glossaryTermIds: string[]
-  onNavigate: (hash: string) => void
 }
 
 function isGlossaryTerm(term: GlossaryTerm | undefined): term is GlossaryTerm {

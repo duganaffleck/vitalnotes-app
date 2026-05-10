@@ -1,10 +1,6 @@
 import { activeTools } from '../content/tools'
 import type { Tool } from '../content/types'
 
-type ToolsProps = {
-  onNavigate: (hash: string) => void
-}
-
 type ToolGroup = {
   title: string
   purpose: string
@@ -121,7 +117,7 @@ function renderTool(tool: Tool) {
   )
 }
 
-function Tools({ onNavigate: _onNavigate }: ToolsProps) {
+function Tools() {
   const toolsById = new Map(activeTools.map((tool) => [tool.id, tool]))
 
   return (

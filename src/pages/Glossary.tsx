@@ -1,10 +1,6 @@
 import { orderedGlossaryTerms } from '../content/glossary'
 
-type GlossaryProps = {
-  onNavigate: (hash: string) => void
-}
-
-function Glossary(_props: GlossaryProps) {
+function Glossary() {
   return (
     <section className="page-stack">
       <header className="page-header">
