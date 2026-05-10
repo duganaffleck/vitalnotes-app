@@ -27,7 +27,7 @@ const sectionSeeds: SectionSeed[] = [
   studentProblem:
     'I am trying to get through paramedic school, but I do not always understand why studying, labs, scenarios, and OSCEs feel so difficult.',
   sectionPurpose:
-    'Introduce VitalNotes as a student-facing learning guide that helps paramedic students understand how learning behaves in this field and how to build better systems for studying, reasoning, practicing, reflecting, and performing.',
+    'Orient the reader to VitalNotes as a practical guide for studying, reasoning, practicing, reflecting, and performing in paramedic school.',
   pageType: 'orientation',
   body: [
     {
@@ -192,7 +192,7 @@ const sectionSeeds: SectionSeed[] = [
   studentProblem:
     'I want help with my learning, but I do not want this guide to become another thing I feel behind on.',
   sectionPurpose:
-    'Show students how to move through VitalNotes in a practical, flexible way, either by following the learning path or entering through the problem they are currently experiencing.',
+    'Explain how to use VitalNotes without turning it into another task, including when to follow the path and when to enter through a specific problem.',
   pageType: 'orientation',
   body: [
     {
@@ -378,7 +378,7 @@ const sectionSeeds: SectionSeed[] = [
   studentProblem:
     'I know I want to improve how I learn, but I am not sure where to start or which part of VitalNotes applies to my current problem.',
   sectionPurpose:
-    'Help students choose a starting point in VitalNotes based on the learning problem they are actually experiencing, while still allowing them to follow the guide in order if they prefer.',
+    'Give readers a practical way to choose where to begin based on the problem they are seeing in their own learning.',
   pageType: 'entry-point',
   body: [
     {
@@ -618,7 +618,7 @@ relatedSections: [
   studentProblem:
     'I know the material, but I lose track of simple things during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Help students understand cognitive load as a normal part of paramedic learning, especially when assessment, communication, memory, decision-making, and procedures are all competing for attention.',
+    'Explain cognitive load as a normal pressure in paramedic learning, especially when assessment, communication, memory, decisions, and procedures compete for attention.',
   pageType: 'conceptual',
   body: [
   {
@@ -964,7 +964,7 @@ relatedSections: [
   studentProblem:
     'I spend time studying and feel like I understand the material, but it does not come back reliably during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Help students understand why familiar study methods can feel productive without building the kind of access needed under pressure, and prepare them for the later section on retrieval and spaced learning.',
+    'Show why familiar study methods can feel productive without building reliable access during scenarios, labs, or OSCEs.',
   pageType: 'conceptual',
   body: [
   {
@@ -1289,7 +1289,7 @@ relatedSections: [
   studentProblem:
     'I am struggling, falling behind, or feeling strained by paramedic school, and I am not sure whether that means I am doing something wrong.',
   sectionPurpose:
-    'Help students interpret learning strain more carefully by distinguishing useful difficulty from wasted difficulty, without turning every struggle into a personal failure or pretending every hard moment is automatically productive.',
+    'Separate useful difficulty from wasted difficulty so students can respond to strain without turning every hard moment into a personal failure.',
   pageType: 'conceptual',
  body: [
   {
@@ -1620,7 +1620,7 @@ relatedSections: [
   studentProblem:
     'I know a lot of facts, signs, symptoms, and lists, but I still struggle to understand what they mean together during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Help students understand that useful knowledge in paramedicine comes from connecting facts through meaning, mechanism, and consequence, not simply memorizing more isolated information.',
+    'Show how paramedic knowledge becomes more usable when facts are connected through meaning, mechanism, consequence, and patient care.',
   pageType: 'conceptual',
  body: [
   {
@@ -1985,7 +1985,7 @@ relatedSections: [
   studentProblem:
     'Pathophysiology feels separate from patient care, and I struggle to use it during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Help students use pathophysiology as a way to understand patterns in patient presentation, rather than treating it as a disconnected body of facts or disease labels.',
+    'Connect pathophysiology to patient presentation so mechanisms can guide assessment, anticipation, and reassessment.',
   pageType: 'conceptual',
   body: [
   {
@@ -2445,7 +2445,7 @@ relatedSections: [
   studentProblem:
     'Directives feel heavy, fragile, or intimidating, and I struggle to apply them confidently when patients do not fit the clean version I studied.',
   sectionPurpose:
-    'Help students understand directives as safety structures built around clinical purpose, risk, physiology, and boundaries, rather than treating them as disconnected rules to memorize.',
+    'Frame directives as risk-managed clinical decisions built around purpose, physiology, boundaries, and reassessment.',
   pageType: 'tool-supported',
   body: [
   {
@@ -2966,7 +2966,7 @@ relatedSections: [
   studentProblem:
     'My notes are organized, detailed, or complete, but they do not help me think clearly during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Introduce Smart Notes as a practical way for paramedic students to turn scattered learning into reusable explanations, connections, and clinical reasoning supports.',
+    'Introduce Smart Notes as a way to turn scattered learning into explanations and connections students can return to during study, lab, and scenario preparation.',
   pageType: 'tool-supported',
   body: [
   {
@@ -3658,7 +3658,7 @@ relatedSections: [
   studentProblem:
     'I do not know what kind of notes I should be writing, and I feel pressure to make every note complete, polished, or permanent right away.',
   sectionPurpose:
-    'Help students understand that notes serve different roles at different stages of learning, and that useful understanding matures over time through capture, processing, revision, linking, and use.',
+    'Show how notes can serve different jobs at different stages, from rough capture to more stable explanations that can be revised and reused.',
   pageType: 'practical-system',
   body: [
   {
@@ -4454,7 +4454,7 @@ relatedSections: [
   studentProblem:
     'I want a place to keep and connect my learning, but note apps, folders, plugins, and organization systems quickly become overwhelming.',
   sectionPurpose:
-    'Help students use Obsidian as a simple, durable thinking space for paramedic learning without turning it into a productivity project or storage vault.',
+    'Keep Obsidian simple: a place to keep, connect, and return to important ideas without making the app itself the project.',
   pageType: 'practical-system',
   body: [
   {
@@ -5151,7 +5151,7 @@ relatedSections: [
   studentProblem:
     'I study and recognize the material when I see it, but I struggle to bring it back during scenarios, labs, or OSCEs.',
   sectionPurpose:
-    'Explain why access matters more than recognition and how spaced retrieval helps learning become more reliable under paramedic training pressure.',
+    'Explain why recognizing material is not enough, and how spaced retrieval helps knowledge become easier to reach when training pressure rises.',
   pageType: 'conceptual',
   body: [
     {
@@ -5533,7 +5533,7 @@ relatedSections: [
   studentProblem:
     'I can remember isolated facts, but I do not always know how to use them during assessment, decisions, or scenarios.',
   sectionPurpose:
-    'Show how recall practice should support clinical use rather than becoming disconnected trivia.',
+    'Keep recall practice tied to assessment, decisions, reassessment, explanation, and patient care.',
   pageType: 'tool-supported',
   body: [
     {
@@ -6118,7 +6118,7 @@ relatedSections: [
   studentProblem:
     'I want to use flashcards to remember paramedic content, but I do not want to waste time memorizing isolated facts that do not help me in scenarios or patient care.',
   sectionPurpose:
-    'Explain how to use Anki as a retrieval and spacing tool while keeping clinical reasoning, assessment, directive use, and reassessment central.',
+    'Use Anki as a small retrieval and spacing tool while keeping clinical reasoning, assessment, directive use, and reassessment central.',
   pageType: 'tool-supported',
   body: [
     {
@@ -6810,7 +6810,7 @@ relatedSections: [
   studentProblem:
     'Students are often told to think clinically, but are rarely shown what that means while a call is still unfolding.',
   sectionPurpose:
-    'Explain clinical reasoning as a practical process for staying oriented, managing risk, and adjusting decisions when information is incomplete.',
+    'Describe clinical reasoning as the work of staying oriented, managing risk, and adjusting decisions while information is still incomplete.',
   pageType: 'conceptual',
   body: [
   
@@ -7316,7 +7316,7 @@ relatedSections: [
   studentProblem:
     'Students often either imitate experienced clinicians too quickly or distrust their own early impressions because pattern recognition feels too much like guessing.',
   sectionPurpose:
-    'Explain how pattern recognition develops, why it matters, and how students can use early recognition without letting it replace reasoning.',
+    'Show how early recognition can help students orient sooner while still checking the pattern against the patient.',
   pageType: 'conceptual',
   body: [
   
@@ -7811,7 +7811,7 @@ relatedSections: [
   studentProblem:
     'Students often form a reasonable early impression, then unknowingly filter the rest of the call through that first explanation.',
   sectionPurpose:
-    'Explain premature closure as an understandable reasoning error and show students how to keep an early explanation flexible without becoming passive or indecisive.',
+    'Describe premature closure as an understandable reasoning trap and show how to keep an early explanation open to correction.',
   pageType: 'conceptual',
   body: [
   
@@ -8452,7 +8452,7 @@ relatedSections: [
   studentProblem:
     'Students often treat scenario days as proof that they are ready or not ready, instead of using them as information about how their learning behaves under pressure.',
   sectionPurpose:
-    'Reframe scenario days as structured practice days that reveal patterns in recall, reasoning, communication, reassessment, and decision-making.',
+    'Treat scenario days as practice days that reveal patterns in recall, reasoning, communication, reassessment, and decision-making.',
   pageType: 'practice-support',
  
   body: [
@@ -8999,7 +8999,7 @@ relatedSections: [
   studentProblem:
     'Students often treat errors as proof that they are not capable, rather than as information about what part of their learning, reasoning, recall, or practice system needs support.',
   sectionPurpose:
-    'Show students how to distinguish occasional mistakes from repeated patterns, interpret those patterns, and convert feedback into one useful next practice target.',
+    'Distinguish occasional mistakes from repeated patterns so feedback can become one specific practice target.',
   pageType: 'practice-support',
   
   body: [
@@ -9718,7 +9718,7 @@ relatedSections: [
   studentProblem:
     'Students often receive useful feedback but leave with too many corrections, too much emotional noise, or no clear next action.',
   sectionPurpose:
-    'Help students turn feedback into one focused practice target that can be tested deliberately in the next scenario, lab, or study session.',
+    'Turn feedback into one focused practice target that can be tested in the next scenario, lab, or study session.',
   pageType: 'practice-support',
   
   body: [
@@ -10640,7 +10640,7 @@ relatedSections: [
   studentProblem:
     "OSCEs make me rush, freeze, over-explain, or lose structure even when I know the material.",
   sectionPurpose:
-    "Help students prepare for OSCEs by rehearsing stable decision anchors, brief explanations, reassessment habits, and reset points rather than trying to predict every possible station.",
+    "Prepare for OSCEs by rehearsing decision anchors, brief explanations, reassessment habits, and reset points instead of trying to predict every station.",
   pageType: 'practice-support',
   body: [
     {
@@ -10975,7 +10975,7 @@ relatedSections: [
   studentProblem:
     "I can think clearly in practice, but pressure changes what I notice, remember, and do during OSCEs or difficult scenarios.",
   sectionPurpose:
-    "Show students how pressure affects access, attention, pattern recognition, and recovery, and why stable structure matters more than trying to feel perfectly calm.",
+    "Explain how pressure affects access, attention, pattern recognition, and recovery, and why stable structure matters more than trying to feel calm.",
   pageType: 'conceptual',
   body: [
     {
@@ -11325,7 +11325,7 @@ relatedSections: [
   studentProblem:
     "I can tell after a scenario or OSCE that my thinking narrowed, but I do not know how to recover while the call is still happening.",
   sectionPurpose:
-    "Teach a small reset structure that returns attention to primary risk, assessment structure, and the next patient-facing action when pressure causes rushing, freezing, fixation, or over-talking.",
+    "Offer a small reset that returns attention to primary risk, assessment structure, and the next patient-facing action when pressure causes rushing, freezing, fixation, or over-talking.",
   pageType: 'tool-supported',
   body: [
     {
@@ -11726,7 +11726,7 @@ relatedSections: [
   studentProblem:
     'I am told to reflect after scenarios and OSCEs, but reflection often becomes vague, heavy, or turns into replaying the whole call.',
   sectionPurpose:
-    'Help students use brief, focused reflection to identify one meaningful moment, understand what shaped it, and carry one useful adjustment into the next attempt.',
+    'Use brief reflection to identify one meaningful moment, understand what shaped it, and carry one adjustment into the next attempt.',
   pageType: 'tool-supported',
   body: [
     
@@ -11898,7 +11898,7 @@ relatedSections: [
   studentProblem:
     'I received feedback or made a mistake, but I do not know what the real issue was. I keep fixing the surface behaviour instead of the pattern underneath.',
   sectionPurpose:
-    'Help students use the Five Whys as a brief error-analysis structure for tracing a meaningful mistake back to something actionable in their learning, reasoning, preparation, or call structure.',
+    'Use the Five Whys to trace a meaningful mistake back to something actionable in learning, reasoning, preparation, or call structure.',
   pageType: 'tool-supported',
   body: [
     { type: 'paragraph', text: 'Mistakes do not teach automatically.' },
@@ -12146,7 +12146,7 @@ relatedSections: [
   studentProblem:
     'I understand feedback after the fact, but I do not always carry it into the next scenario, OSCE, lab, study session, or placement moment.',
   sectionPurpose:
-    'Help students convert reflection, feedback, or error analysis into one specific adjustment that can be tested later without trying to fix everything at once.',
+    'Turn reflection, feedback, or error analysis into one specific adjustment that can be tested later without trying to fix everything at once.',
   pageType: 'practice-support',
   body: [
     
