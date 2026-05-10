@@ -6,7 +6,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '00 Start Here',
     order: 0,
     purpose:
-      'Orient students to what VitalNotes is, how to use it, and where to begin.',
+      'Begin with what VitalNotes is for, how the guide is arranged, and where to start.',
     sections: [
       'start-here-what-vitalnotes-is',
       'how-to-use-this-guide',
@@ -20,7 +20,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '01 Why Learning Feels Hard',
     order: 1,
     purpose:
-      'Help students understand why capable learners lose access under pressure.',
+      'Look at why studying can feel familiar but still become difficult in lab, scenarios, or OSCEs.',
     sections: [
       'cognitive-load',
       'why-studying-feels-productive-but-fails-under-pressure',
@@ -34,7 +34,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '02 Build Understanding',
     order: 2,
     purpose:
-      'Show how facts become clinically usable through meaning, patterns, and directive purpose.',
+      'Work on connecting facts, physiology, and directives so they make more sense during patient assessment.',
     sections: [
       'meaning-before-memorization',
       'pathophysiology-through-patterns',
@@ -48,7 +48,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '03 Build Usable Notes',
     order: 3,
     purpose:
-      'Help students build notes that support thinking, connection, and later recall.',
+      'Build notes that explain what matters and give you something useful to return to after class or lab.',
     sections: [
       'smart-notes-for-paramedic-students',
       'types-of-notes-and-idea-maturation',
@@ -62,7 +62,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '04 Build Recall',
     order: 4,
     purpose:
-      'Teach students how to strengthen access to knowledge without turning recall into trivia.',
+      'Practise recall in a way that connects to calls, not just definitions or isolated facts.',
     sections: [
       'retrieval-and-spaced-learning',
       'clinical-recall-without-trivia',
@@ -76,7 +76,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '05 Think Clinically',
     order: 5,
     purpose:
-      'Help students reason through incomplete calls, recognize useful patterns, and avoid closing too early.',
+      'Use incomplete information more carefully, especially when an early impression feels convincing.',
     sections: [
       'clinical-reasoning',
       'pattern-recognition',
@@ -90,7 +90,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '06 Practice Better',
     order: 6,
     purpose:
-      'Help students use scenario practice, common error patterns, and feedback to improve deliberately.',
+      'Use scenarios, common errors, and feedback to choose a smaller and clearer adjustment for next time.',
     sections: [
       'scenario-days-as-learning-tools',
       'common-errors-and-what-they-reveal',
@@ -104,7 +104,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '07 Perform Under Pressure',
     order: 7,
     purpose:
-      'Help students protect assessment, reasoning, communication, and reassessment when they are observed, timed, evaluated, or under pressure.',
+      'Prepare for the moments when being watched, timed, or evaluated makes familiar skills harder to access.',
     sections: [
       'osce-preparation',
       'performance-under-pressure',
@@ -118,7 +118,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '08 Reflect and Improve',
     order: 8,
     purpose:
-      'Help students turn scenarios, OSCEs, feedback, mistakes, and difficult performances into specific adjustments without drifting into rumination or vague self-judgment.',
+      'Use feedback and difficult performances without turning every mistake into a long personal debrief.',
     sections: [
       'reflection-without-journaling',
       'the-five-whys',
