@@ -11,23 +11,23 @@ function LearningPath({ onNavigate }: LearningPathProps) {
     <section className="page-stack">
       <header className="page-header">
         <p className="eyebrow">Learning Path</p>
-        <h1>Move through the guide in a steady order.</h1>
-     <p>
-  This path starts with orientation, then moves into why learning feels
-  hard, how understanding forms, how notes support thinking, how recall
-  becomes more reliable, how clinical reasoning develops, and how
-  practice turns feedback into improvement.
-</p>
+        <h1>Start with the first problem, then build from there.</h1>
+        <p>
+          The guide begins with why studying can feel solid until lab gets
+          messy. From there, it moves into understanding, notes, recall,
+          clinical reasoning, scenario practice, OSCE pressure, and what to do
+          with feedback afterward.
+        </p>
       </header>
 
       <div className="cluster-list">
         {orderedLearningPath.map((cluster) => {
-       const clusterSections = cluster.sections
-  .map((sectionId) => {
-    const section = getSectionById(sectionId)
-return section
-  })
-  .filter(Boolean)
+          const clusterSections = cluster.sections
+            .map((sectionId) => {
+              const section = getSectionById(sectionId)
+              return section
+            })
+            .filter(Boolean)
 
           return (
             <section className="cluster-panel" key={cluster.id}>
