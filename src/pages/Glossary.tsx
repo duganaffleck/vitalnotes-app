@@ -5,10 +5,11 @@ function Glossary() {
     <section className="page-stack">
       <header className="page-header">
         <p className="eyebrow">Glossary</p>
-        <h1>Short definitions for terms used in the guide.</h1>
+        <h1>Plain-language terms from the guide.</h1>
         <p>
-          These definitions are meant to support reading. They are intentionally
-          brief, plain-language, and connected to paramedic learning.
+          Use this page when a word keeps slowing you down. The definitions stay
+          short and connected to paramedic learning, so you can get back to the
+          section without turning the glossary into another reading task.
         </p>
       </header>
 
