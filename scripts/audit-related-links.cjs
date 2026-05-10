@@ -7,25 +7,109 @@ const toolsPath = path.join(__dirname, "..", "src", "content", "tools.ts");
 const sectionsSource = fs.readFileSync(sectionsPath, "utf8");
 const toolsSource = fs.readFileSync(toolsPath, "utf8");
 
-function findTopLevelObjectsById(source) {
-  const starts = [];
-  const startRegex = /^\s*\{\s*(?:\r?\n\s*)?id:\s*['"`]([^'"`]+)['"`]/gm;
+function findArrayStart(source, constName) {
+  const declarationRegex = new RegExp(`(?:export\\s+)?const\\s+${constName}\\b`);
+  const declarationMatch = declarationRegex.exec(source);
 
-  let match;
-  while ((match = startRegex.exec(source)) !== null) {
-    starts.push({
-      index: match.index,
-      id: match[1],
-    });
+  if (!declarationMatch) {
+    throw new Error(`Could not find const ${constName}.`);
   }
 
-  return starts.map((start, index) => {
-    const nextStart = starts[index + 1]?.index ?? source.length;
-    return {
-      id: start.id,
-      block: source.slice(start.index, nextStart),
-    };
-  });
+  const equalsIndex = source.indexOf("=", declarationMatch.index);
+
+  if (equalsIndex === -1) {
+    throw new Error(`Could not find assignment for ${constName}.`);
+  }
+
+  const firstBracket = source.indexOf("[", equalsIndex);
+
+  if (firstBracket === -1) {
+    throw new Error(`Could not find array start for ${constName}.`);
+  }
+
+  return firstBracket;
+}
+
+function extractTopLevelArray(source, constName) {
+  const firstBracket = findArrayStart(source, constName);
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+
+  for (let i = firstBracket; i < source.length; i += 1) {
+    const char = source[i];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === quote) {
+        quote = null;
+      }
+
+      continue;
+    }
+
+    if (char === "'" || char === '"' || char === "`") {
+      quote = char;
+      continue;
+    }
+
+    if (char === "[") depth += 1;
+    if (char === "]") depth -= 1;
+
+    if (depth === 0) {
+      return source.slice(firstBracket + 1, i);
+    }
+  }
+
+  throw new Error(`Could not find array end for ${constName}.`);
+}
+
+function splitTopLevelObjects(arraySource) {
+  const objects = [];
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+  let objectStart = -1;
+
+  for (let i = 0; i < arraySource.length; i += 1) {
+    const char = arraySource[i];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === quote) {
+        quote = null;
+      }
+
+      continue;
+    }
+
+    if (char === "'" || char === '"' || char === "`") {
+      quote = char;
+      continue;
+    }
+
+    if (char === "{") {
+      if (depth === 0) objectStart = i;
+      depth += 1;
+    }
+
+    if (char === "}") {
+      depth -= 1;
+
+      if (depth === 0 && objectStart !== -1) {
+        objects.push(arraySource.slice(objectStart, i + 1));
+        objectStart = -1;
+      }
+    }
+  }
+
+  return objects;
 }
 
 function extractProperty(objectBlock, propertyName) {
@@ -36,15 +120,36 @@ function extractProperty(objectBlock, propertyName) {
 
 function extractStringArray(objectBlock, propertyName) {
   const propertyIndex = objectBlock.indexOf(`${propertyName}:`);
+
   if (propertyIndex === -1) return [];
 
   const firstBracket = objectBlock.indexOf("[", propertyIndex);
+
   if (firstBracket === -1) return [];
 
   let depth = 0;
+  let quote = null;
+  let escaped = false;
 
   for (let i = firstBracket; i < objectBlock.length; i += 1) {
     const char = objectBlock[i];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === quote) {
+        quote = null;
+      }
+
+      continue;
+    }
+
+    if (char === "'" || char === '"' || char === "`") {
+      quote = char;
+      continue;
+    }
 
     if (char === "[") depth += 1;
     if (char === "]") depth -= 1;
@@ -55,6 +160,7 @@ function extractStringArray(objectBlock, propertyName) {
       const itemRegex = /['"`]([^'"`]+)['"`]/g;
 
       let match;
+
       while ((match = itemRegex.exec(arrayContent)) !== null) {
         items.push(match[1]);
       }
@@ -66,17 +172,19 @@ function extractStringArray(objectBlock, propertyName) {
   return [];
 }
 
-const sectionRows = findTopLevelObjectsById(sectionsSource).map((object) => ({
-  id: object.id,
-  title: extractProperty(object.block, "title"),
-  relatedSections: extractStringArray(object.block, "relatedSections"),
-  relatedTools: extractStringArray(object.block, "relatedTools"),
-}));
+function getRows(source, constName) {
+  return splitTopLevelObjects(extractTopLevelArray(source, constName)).map(
+    (block) => ({
+      id: extractProperty(block, "id"),
+      title: extractProperty(block, "title"),
+      relatedSections: extractStringArray(block, "relatedSections"),
+      relatedTools: extractStringArray(block, "relatedTools"),
+    }),
+  );
+}
 
-const toolRows = findTopLevelObjectsById(toolsSource).map((object) => ({
-  id: object.id,
-  title: extractProperty(object.block, "title"),
-}));
+const sectionRows = getRows(sectionsSource, "sectionSeeds");
+const toolRows = getRows(toolsSource, "tools");
 
 const sectionIds = new Set(sectionRows.map((section) => section.id));
 const toolIds = new Set(toolRows.map((tool) => tool.id));
@@ -120,7 +228,7 @@ if (missingRelatedSections.length === 0) {
 } else {
   for (const item of missingRelatedSections) {
     console.log(
-      `- ${item.sectionId} references missing section: ${item.missingId}`
+      `- ${item.sectionId} references missing section: ${item.missingId}`,
     );
   }
 }
@@ -145,12 +253,12 @@ for (const row of sectionRows) {
   console.log(
     `  relatedSections: ${
       row.relatedSections.length ? row.relatedSections.join(", ") : "none"
-    }`
+    }`,
   );
   console.log(
     `  relatedTools: ${
       row.relatedTools.length ? row.relatedTools.join(", ") : "none"
-    }`
+    }`,
   );
 }
 
