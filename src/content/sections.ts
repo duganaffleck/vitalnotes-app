@@ -872,7 +872,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'A good learning system does not remove challenge. It reduces unnecessary strain so the real challenge can be handled better.',
+    text: 'Good preparation does not remove challenge. It reduces unnecessary strain so the real challenge can be handled better.',
   },
   {
     type: 'heading',
@@ -1318,7 +1318,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'That distinction matters because students often respond to all strain the same way. They push harder, study longer, blame confidence, or decide they are falling behind. Sometimes more effort is needed. Sometimes rest is needed. Sometimes a better system is needed.',
+    text: 'That distinction matters because students often respond to all strain the same way. They push harder, study longer, blame confidence, or decide they are falling behind. Sometimes more effort is needed. Sometimes rest is needed. Sometimes the way you are approaching the work needs to change.',
   },
   {
     type: 'paragraph',
@@ -1379,7 +1379,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'That kind of difficulty can be useful because it asks the learning system to do something real.',
+    text: 'That kind of difficulty can help because it asks you to do something real with the material.',
   },
   {
     type: 'paragraph',
@@ -1518,7 +1518,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'Once students realize not all strain is personal, they can swing too far in the other direction. Every hard scenario starts to feel unfair. Every uncomfortable piece of feedback feels like too much. Every difficult study session feels like proof that the system is wrong.',
+    text: 'Once students realize not all strain is personal, they can swing too far in the other direction. Every hard scenario starts to feel unfair. Every uncomfortable piece of feedback feels like too much. Every difficult study session feels like proof that the course, the lab, or the method is the problem.',
   },
   {
     type: 'paragraph',
@@ -1534,7 +1534,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'The goal is to make discomfort useful where possible, and reduce the parts that are only adding noise.',
+    text: 'The goal is to learn from discomfort where it is doing real work, and reduce the parts that are only adding noise.',
   },
   {
     type: 'paragraph',
@@ -1562,7 +1562,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'You do not need to rebuild your whole study system every time something feels hard. In fact, that can become another form of wasted difficulty. Choose one change that would make the next attempt clearer.',
+    text: 'You do not need to rebuild the whole way you study every time something feels hard. In fact, that can become another form of wasted difficulty. Choose one change that would make the next attempt clearer.',
   },
   {
     type: 'list',
@@ -1649,7 +1649,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'The first part of VitalNotes looked at why learning can feel unstable. Now we start looking at how knowledge becomes more usable. That starts with meaning.',
+    text: 'The first part of VitalNotes looked at why learning can feel unstable. Now we start looking at how knowledge starts to hold together. That starts with meaning.',
   },
   {
     type: 'heading',
@@ -1665,7 +1665,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'A fact becomes more useful when it is connected to a process, a consequence, or a decision. A symptom becomes more useful when you understand what might be producing it. A vital sign becomes more useful when you can ask whether it fits with the patient’s story. A directive becomes more useful when you understand what risk it is trying to manage.',
+    text: 'A fact matters more when it is connected to a process, a consequence, or a decision. A symptom becomes easier to interpret when you understand what might be producing it. A vital sign carries more weight when you can ask whether it fits with the patient’s story. A directive becomes clearer when you understand what risk it is trying to manage.',
   },
   {
     type: 'paragraph',
@@ -1785,7 +1785,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'It makes the information easier to work with.',
+    text: 'It makes the information easier to handle in the moment.',
   },
   {
     type: 'paragraph',
@@ -1809,7 +1809,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'A few questions are especially useful:',
+    text: 'A few questions are worth returning to:',
   },
   {
     type: 'list',
@@ -1888,7 +1888,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'The word stayed the same, but the student’s understanding of the word became deeper and more useful.',
+    text: 'The word stayed the same, but the student’s understanding became deeper and more connected to patient care.',
   },
   {
     type: 'paragraph',
@@ -1942,7 +1942,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'That is how facts start becoming usable.',
+    text: 'That is how facts start becoming part of clinical judgment.',
   },
   {
     type: 'heading',
@@ -2166,7 +2166,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A useful clinical pattern includes behaviour over time. It includes what is changing, what is not changing, what improves after treatment, what worsens despite treatment, and what does not fit the initial impression.`,
+    text: `A strong clinical pattern includes behaviour over time. It includes what is changing, what is not changing, what improves after treatment, what worsens despite treatment, and what does not fit the initial impression.`,
   },
   {
     type: 'paragraph',
@@ -2190,7 +2190,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `One of the most useful physiological ideas for students is compensation.`,
+    text: `One physiological idea students should return to often is compensation.`,
   },
   {
     type: 'paragraph',
@@ -2214,7 +2214,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `This is where physiology becomes clinically useful.`,
+    text: `This is where physiology starts to shape clinical decisions.`,
   },
   {
     type: 'paragraph',
@@ -2331,7 +2331,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `That turns the topic into a usable explanation.`,
+    text: `That turns the topic into an explanation you can actually work with.`,
   },
   {
     type: 'paragraph',
@@ -2383,7 +2383,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A student with useful physiological understanding can explain why a finding matters. They can anticipate what may happen next. They can notice when a familiar pattern is drifting. They can explain why reassessment matters after treatment. They can recognize when something does not fit and adjust their thinking.`,
+    text: `A student with solid physiological understanding can explain why a finding matters. They can anticipate what may happen next. They can notice when a familiar pattern is drifting. They can explain why reassessment matters after treatment. They can recognize when something does not fit and adjust their thinking.`,
   },
   {
     type: 'paragraph',
@@ -2403,7 +2403,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `Usable understanding of how systems fail, compensate, and recover.`,
+    text: `A practical understanding of how body systems fail, compensate, and recover.`,
   },
   {
     type: 'heading',
@@ -2691,7 +2691,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `It is more useful to see boundaries as part of the meaning.`,
+    text: `It is better to see boundaries as part of the meaning.`,
   },
   {
     type: 'paragraph',
@@ -2821,7 +2821,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `That is where understanding starts to become usable.`,
+    text: `That is where understanding starts to guide care.`,
   },
   {
     type: 'heading',
@@ -2890,7 +2890,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `You do not need to use it for every directive every time. It is most useful when a directive feels fragile, confusing, or hard to explain.`,
+    text: `You do not need to use it for every directive every time. It helps most when a directive feels fragile, confusing, or hard to explain.`,
   },
   {
     type: 'heading',
@@ -3019,11 +3019,11 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'That means it does more than store information. It explains one idea in your own words. It shows why the idea matters. It connects to other ideas. It gives you something useful when you are preparing for a scenario, reviewing after feedback, or trying to understand why a decision felt hard.',
+    text: 'That means it does more than store information. It explains one idea in your own words. It shows why the idea matters. It connects to other ideas. It gives you something to return to when you are preparing for a scenario, reviewing after feedback, or trying to understand why a decision felt hard.',
   },
   {
     type: 'paragraph',
-    text: 'A useful Smart Note usually answers some version of these questions:',
+    text: 'A good Smart Note usually answers some version of these questions:',
   },
   {
     type: 'list',
@@ -3202,7 +3202,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'That is what makes it reusable.',
+    text: 'That is what lets the note come back later and still make sense.',
   },
   {
     type: 'heading',
@@ -3226,7 +3226,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'A useful note is smaller.',
+    text: 'A better note is smaller.',
   },
   {
     type: 'paragraph',
@@ -3281,7 +3281,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'A more useful note might say:',
+    text: 'A stronger note might say:',
   },
   {
     type: 'paragraph',
@@ -3301,7 +3301,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'Links are useful when they represent a real relationship.',
+    text: 'Links matter when they represent a real relationship.',
   },
   {
     type: 'paragraph',
@@ -3385,7 +3385,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'Use the Smart Note Template when you want to turn a concept, scenario error, confusing idea, or repeated feedback point into something reusable.',
+    text: 'Use the Smart Note Template when you want to turn a concept, scenario error, confusing idea, or repeated feedback point into a note you can return to later.',
   },
   {
     type: 'paragraph',
@@ -3436,19 +3436,19 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'This matters because students often overbuild note systems.',
+    text: 'This matters because students often overbuild their notes.',
   },
   {
     type: 'paragraph',
-    text: 'They create too many folders, tags, plugins, templates, dashboards, and rules. The system begins to demand attention instead of supporting it.',
+    text: 'They create too many folders, tags, plugins, templates, dashboards, and rules. The notes begin to demand attention instead of reducing it.',
   },
   {
     type: 'paragraph',
-    text: 'A Smart Note system should stay small enough to use when school gets busy.',
+    text: 'Smart Notes should stay small enough to use when school gets busy.',
   },
   {
     type: 'paragraph',
-    text: 'If the system only works when you are motivated, rested, and caught up, it is too fragile.',
+    text: 'If your notes only work when you are motivated, rested, and caught up, they are too fragile.',
   },
   {
     type: 'heading',
@@ -3503,7 +3503,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: 'A few useful notes each week will matter more than a large system you cannot maintain. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to.',
+    text: 'A few strong notes each week will matter more than a large setup you cannot maintain. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to.',
   },
   {
     type: 'heading',
@@ -3667,7 +3667,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `That is where a lot of note systems start to break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete.`,
+    text: `That is where a lot of student notes start to break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A decent note gets rewritten again and again because it still does not feel complete.`,
   },
   {
     type: 'paragraph',
@@ -3687,7 +3687,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A note system has to allow for that.`,
+    text: `Your notes have to allow for that.`,
   },
   {
     type: 'paragraph',
@@ -3707,7 +3707,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `That assumption makes sense, especially if most school notes have been built around tests. You collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing.`,
+    text: `That assumption makes sense, especially if most school notes have been built around tests. You collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to help you work through ideas that are still developing.`,
   },
   {
     type: 'paragraph',
@@ -3965,7 +3965,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A healthy note system includes deletion. It also includes leaving some notes unfinished.`,
+    text: `Healthy notes include deletion. They also include leaving some ideas unfinished for now.`,
   },
   {
     type: 'paragraph',
@@ -4184,7 +4184,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A note system can become a safe place to look busy.`,
+    text: `Notes can become a safe place to look busy.`,
   },
   {
     type: 'paragraph',
@@ -4235,7 +4235,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A mature note system is not necessarily bigger.`,
+    text: `Mature notes are not necessarily bigger.`,
   },
   {
     type: 'paragraph',
@@ -4290,11 +4290,11 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A mature note system does not require constant maintenance.`,
+    text: `Mature notes do not require constant maintenance.`,
   },
   {
     type: 'paragraph',
-    text: `If you find yourself endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is starting to pull attention away from learning.`,
+    text: `If you find yourself endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the notes are starting to pull attention away from learning.`,
   },
   {
     type: 'paragraph',
@@ -4306,7 +4306,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `The goal is to build a useful thinking system that can survive paramedic school.`,
+    text: `The goal is to build notes that help your thinking hold up through paramedic school.`,
   },
   {
     type: 'paragraph',
@@ -4421,7 +4421,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `Capture notes preserve raw experience. Working notes let you wrestle with partial understanding. Smart Notes stabilize ideas that are ready to be reused. Over time, the system becomes smaller, clearer, and more connected because your thinking has matured.`,
+    text: `Capture notes preserve raw experience. Working notes let you wrestle with partial understanding. Smart Notes stabilize ideas that are ready to be reused. Over time, your notes become smaller, clearer, and more connected because your thinking has matured.`,
   },
   {
     type: 'paragraph',
@@ -4467,7 +4467,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet.`,
+    text: `A lot of students start notes with good intentions. At first, it feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet.`,
   },
   {
     type: 'paragraph',
@@ -4733,7 +4733,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A simple note system has a simple path.`,
+    text: `A simple note setup has a simple path.`,
   },
   {
     type: 'paragraph',
@@ -5062,7 +5062,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A note system should evolve from use, not from discomfort with mess.`,
+    text: `Your notes should evolve from use, not from discomfort with mess.`,
   },
   {
     type: 'heading',
@@ -5070,7 +5070,7 @@ relatedSections: [
   },
   {
     type: 'paragraph',
-    text: `A working Obsidian system is usually not impressive from the outside.`,
+    text: `Working well in Obsidian is usually not impressive from the outside.`,
   },
   {
     type: 'paragraph',
@@ -5967,7 +5967,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: `These prompts are not always wrong. Some simple cards are useful. The issue is proportion. If most of the system is trivia-style recall, then the student may improve at answering isolated questions without improving access during patient care.`,
+      text: `These prompts are not always wrong. Some simple cards help. The issue is proportion. If most of the deck is trivia-style recall, then the student may improve at answering isolated questions without improving access during patient care.`,
     },
     {
       type: 'paragraph',
@@ -6019,7 +6019,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: `A practical system can stay simple.`,
+      text: `A practical deck can stay simple.`,
     },
     {
       type: 'paragraph',
@@ -6082,7 +6082,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: `Anki can be useful, but it can also make weak recall habits feel efficient. If the prompts are too shallow, the app will help you repeat shallow thinking more consistently.`,
+      text: `Anki can help, but it can also make weak recall habits feel efficient. If the prompts are too shallow, the app will help you repeat shallow thinking more consistently.`,
     },
   ],
   glossaryTerms: [
@@ -6123,7 +6123,7 @@ relatedSections: [
   body: [
     {
       type: 'heading',
-      text: `Anki is useful, but it is not the learning system`,
+      text: `Anki helps recall, but it does not decide what matters`,
     },
     {
       type: 'paragraph',
@@ -6236,7 +6236,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: `Anki should strengthen access to useful knowledge.`,
+      text: `Anki should strengthen access to knowledge that matters in practice.`,
     },
     {
       type: 'paragraph',
@@ -6423,7 +6423,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: `A useful paramedic deck usually needs a mix:`,
+      text: `A good paramedic deck usually needs a mix:`,
     },
     {
       type: 'list',
@@ -6758,7 +6758,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: `That is enough to make Anki useful.`,
+      text: `That is enough for Anki to earn its place.`,
     },
     {
       type: 'heading',
@@ -7222,7 +7222,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: 'Clinical reasoning depends on the systems you have already been building.',
+      text: 'Clinical reasoning depends on the habits you have already been building.',
     },
     {
       type: 'paragraph',
@@ -7246,7 +7246,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: 'When these systems begin working together, reasoning becomes steadier.',
+      text: 'When those habits begin working together, reasoning becomes steadier.',
     },
     {
       type: 'paragraph',
@@ -8478,7 +8478,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: 'A scenario day is not just a performance day. It is a day where your learning system becomes visible.',
+      text: 'A scenario day is not just a performance day. It is a day where the way you have been learning becomes visible.',
     },
     {
       type: 'heading',
@@ -9034,7 +9034,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: 'In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still moving. Scenario days expose that system. They show where understanding is usable and where it is still fragile.',
+      text: 'In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still moving. Scenario days expose those habits. They show where understanding holds and where it is still fragile.',
     },
     {
       type: 'paragraph',
@@ -9077,7 +9077,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: 'Those patterns are worth paying attention to. They usually show where the learning system needs more support.',
+      text: 'Those patterns are worth paying attention to. They usually show where preparation needs a different kind of support.',
     },
     {
       type: 'heading',
@@ -10870,7 +10870,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-     text: "This is why the OSCE Reset tool is likely justified as a small support tool for this cluster. The tool should stay narrow. It should help students recover assessment, reasoning, communication, and reassessment when evaluation pressure causes rushing, freezing, over-talking, or fixation.",
+     text: "This is why the OSCE Reset tool belongs in this cluster. It should stay narrow. Its job is to help students recover assessment, reasoning, communication, and reassessment when evaluation pressure causes rushing, freezing, over-talking, or fixation.",
     },
     {
       type: 'paragraph',
@@ -10943,7 +10943,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: "OSCE preparation is not a separate personality you put on for evaluation. It is the same learning system from earlier sections, used under tighter conditions.",
+      text: "OSCE preparation is not a separate personality you put on for evaluation. It uses the same habits from earlier sections, under tighter conditions.",
     },
     {
       type: 'paragraph',
