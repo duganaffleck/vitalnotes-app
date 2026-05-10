@@ -20,7 +20,7 @@ const sectionSeeds: SectionSeed[] = [
  {
   id: 'start-here-what-vitalnotes-is',
   title: 'Start Here - What VitalNotes Is',
-  subtitle: 'A guide for learning paramedicine with more structure and less noise.',
+  subtitle: 'A guide for studying paramedicine when more review is not enough.',
   cluster: '00 Start Here',
   clusterOrder: 0,
   sectionOrder: 0,
@@ -185,7 +185,7 @@ const sectionSeeds: SectionSeed[] = [
  {
   id: 'how-to-use-this-guide',
   title: 'How to Use This Guide',
-  subtitle: 'A light orientation for moving through the learning path.',
+  subtitle: 'A short orientation before you start.',
   cluster: '00 Start Here',
   clusterOrder: 0,
   sectionOrder: 1,
@@ -1282,7 +1282,7 @@ relatedSections: [
 {
   id: 'learning-strain-is-not-always-a-personal-problem',
   title: 'Learning Strain Is Not Always a Personal Problem',
-  subtitle: 'Difficulty can come from the system, not the student.',
+  subtitle: 'Difficulty is not always a sign you are doing something wrong.',
   cluster: '01 Why Learning Feels Hard',
   clusterOrder: 1,
   sectionOrder: 2,
@@ -1613,7 +1613,7 @@ relatedSections: [
  {
   id: 'meaning-before-memorization',
   title: 'Meaning Before Memorization',
-  subtitle: 'Facts become usable when they are connected.',
+  subtitle: 'Facts matter more when they connect to the patient.',
   cluster: '02 Build Understanding',
   clusterOrder: 2,
   sectionOrder: 0,
@@ -2959,7 +2959,7 @@ relatedSections: [
 {
   id: 'smart-notes-for-paramedic-students',
   title: 'Smart Notes for Paramedic Students',
-  subtitle: 'Notes should support thinking, not just store information.',
+  subtitle: 'Notes should help you explain, connect, and return to important ideas.',
   cluster: '03 Build Usable Notes',
   clusterOrder: 3,
   sectionOrder: 0,
@@ -8992,7 +8992,7 @@ relatedSections: [
 {
   id: 'common-errors-and-what-they-reveal',
   title: 'Common Errors and What They Reveal',
-  subtitle: 'How repeated mistakes show where learning needs support',
+  subtitle: 'How repeated mistakes point to what needs practice.',
   cluster: '06 Practice Better',
   clusterOrder: 6,
   sectionOrder: 1,
@@ -10968,7 +10968,7 @@ relatedSections: [
 {
   id: 'performance-under-pressure',
   title: "Performance Under Pressure",
-  subtitle: "Pressure changes access, so structure has to hold.",
+  subtitle: "Pressure changes what is easy to reach.",
   cluster: '07 Perform Under Pressure',
   clusterOrder: 7,
   sectionOrder: 1,
@@ -11318,7 +11318,7 @@ relatedSections: [
 {
   id: 'resetting-when-thinking-narrows',
   title: "Resetting When Thinking Narrows",
-  subtitle: "Recover enough structure to keep caring for the patient.",
+  subtitle: "Get back to the patient when your thinking narrows.",
   cluster: '07 Perform Under Pressure',
   clusterOrder: 7,
   sectionOrder: 2,
@@ -12139,7 +12139,7 @@ relatedSections: [
 {
   id: 'turning-feedback-into-action',
   title: 'Turning Feedback Into Action',
-  subtitle: 'Carry one useful adjustment into the next attempt.',
+  subtitle: 'Carry one adjustment into the next attempt.',
   cluster: '08 Reflect and Improve',
   clusterOrder: 8,
   sectionOrder: 2,
