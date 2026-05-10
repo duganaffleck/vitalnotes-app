@@ -1,10 +1,10 @@
 # VitalNotes App Agent Instructions
 
-This repository is for the first vertical slice of the VitalNotes app.
+This repository contains the VitalNotes app.
 
 VitalNotes is a student-facing learning guide for paramedic students. It teaches students how to learn paramedicine, not how to memorize more content.
 
-The app must remain calm, readable, deliberate, and content-driven.
+The app must remain calm, readable, deliberate, practical, and content-driven.
 
 ## Source of Truth
 
@@ -21,35 +21,46 @@ Do not invent sections, clusters, tools, glossary terms, or app features.
 
 If a needed source file is missing, ask for that exact file.
 
-## First Slice Scope
+## Current App Scope
 
-The first slice includes:
+The app currently includes:
 
 - Home page
 - Learning Path page
 - Section Reader page
 - Tools Library page
 - Glossary page
-- previous and next navigation
+- previous and next section navigation
 - related sections
-- simple glossary support
-- simple tool support
+- related tools
+- glossary support
+- tool drawer support
+- expandable tool examples
 
-The content included is:
+Current completed learning path clusters:
 
 - 00 Start Here
 - 01 Why Learning Feels Hard
 - 02 Build Understanding
 - 03 Build Usable Notes
 - 04 Build Recall
+- 05 Think Clinically
+- 06 Practice Better
+- 07 Perform Under Pressure
+- 08 Reflect and Improve
 
-The only active tools are:
+Current active tools:
 
 - Directive Meaning Check
 - Smart Note Template
 - Clinical Recall Prompt Builder
+- Scenario Day Reset
+- OSCE Reset
+- Reflection Without Journaling Tool
+- Five Whys Tool
+- Clinical Reasoning Check
 
-## Do Not Build Yet
+## Do Not Add Without Explicit Approval
 
 Do not add:
 
@@ -81,7 +92,7 @@ The app does not reinvent the guide.
 
 Writing is the main experience.
 
-Use simple React components and simple JavaScript content files.
+Use simple React components and simple TypeScript content files.
 
 Do not overbuild.
 
@@ -128,13 +139,16 @@ Keep content separate from components.
 
 Use:
 
-- src/content/sections.js
-- src/content/learningPath.js
-- src/content/tools.js
-- src/content/glossary.js
+- src/content/sections.ts
+- src/content/learningPath.ts
+- src/content/tools.ts
+- src/content/glossary.ts
+- src/content/types.ts
 
 Use simple, readable React components.
 
 Preserve the approved learning path.
 
-Do not rename approved sections or tools.
+Do not rename approved sections, clusters, tools, or glossary terms without explicit approval.
+
+Keep related links useful and restrained in the app. Deeper linking belongs in Obsidian.
