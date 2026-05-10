@@ -7,9 +7,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'thinking-check',
     purpose:
-      'Help students understand what a directive is protecting, supporting, or preventing.',
+      'Use a directive as more than a rule to memorize. Look at what it is trying to protect, support, or prevent.',
     whenToUse:
-      'Use this when a directive feels heavy or unclear, especially around purpose, risk, boundaries, withholding, stopping, patching, or reassessment.',
+      'Use this when a directive feels heavy, unclear, or easy to apply mechanically, especially around risk, withholding, stopping, patching, or reassessment.',
     steps: [
       'Name the directive or directive decision.',
       'Identify the clinical risk the directive is managing.',
@@ -81,9 +81,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'template',
     purpose:
-      'Help students turn a concept, scenario error, confusing idea, or repeated feedback point into one reusable thinking note.',
+      'Turn one concept, scenario error, confusing idea, or repeated feedback point into a note you can actually use again.',
     whenToUse:
-      'Use this when an idea needs to become clearer, more connected, and easier to return to later.',
+      'Use this when an idea keeps showing up in class, lab, feedback, or scenarios, and you need to make better sense of it.',
     steps: [
       'Choose one idea, not a whole topic.',
       'Write the core claim in your own words.',
@@ -160,9 +160,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'prompt-builder',
     purpose:
-      'Help students turn facts, notes, scenario errors, directive details, and confusing concepts into recall prompts that support clinical use.',
+      'Turn facts, notes, scenario errors, directive details, and confusing concepts into recall prompts that still point back to patient care.',
     whenToUse:
-      'Use this when knowledge needs to help you notice, decide, avoid harm, reassess, or explain something during a call, lab, scenario, or OSCE.',
+      'Use this when something needs to be remembered in a way that helps you notice, decide, reassess, avoid harm, or explain your reasoning.',
     steps: [
       'Start with the clinical use, not the fact.',
       'Decide whether the prompt should support noticing, deciding, withholding, reassessing, or explaining.',
@@ -240,9 +240,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'reset',
     purpose:
-      'Help students extract one useful adjustment from a scenario and carry it into the next attempt.',
+      'Take one useful adjustment from a scenario and carry it into the next attempt.',
     whenToUse:
-      'Use between scenarios or after feedback when you need to turn a rough run into one practical next step.',
+      'Use this between scenarios or after feedback when the last run felt rough and you need one practical thing to try next.',
     steps: [
       'Name the main pattern from the last run.',
       'Choose one adjustment small enough to carry forward.',
@@ -303,9 +303,9 @@ export const tools: Tool[] = [
   status: 'drafted',
   toolType: 'reset',
   purpose:
-    'Help students recover structure during an OSCE when pressure causes rushing, freezing, fixation, over-explaining, or loss of reassessment.',
+    'Return to patient care during an OSCE when pressure causes rushing, freezing, fixation, over-explaining, or missed reassessment.',
   whenToUse:
-    'Use during OSCE preparation or inside a station when thinking narrows and you need to return attention to patient care.',
+    'Use this during OSCE preparation or inside a station when your attention narrows and you need to get back to the patient in front of you.',
   steps: [
     'Name the primary risk right now.',
     'Return to the structure that fits this point in the call.',
@@ -380,9 +380,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'thinking-check',
     purpose:
-      'Help students extract one useful adjustment from a scenario, OSCE, lab, placement moment, or feedback conversation without writing a full reflection.',
+      'Pull one useful adjustment from a scenario, OSCE, lab, placement moment, or feedback conversation without writing a full reflection.',
     whenToUse:
-      'Use after performance or feedback when you need to learn from one meaningful moment without replaying the whole call.',
+      'Use this after performance or feedback when one moment matters, but replaying the whole call would not help.',
     steps: [
       'Choose one moment where a decision, uncertainty, or feedback point mattered.',
       'Name what shaped your action in that moment.',
@@ -457,9 +457,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'thinking-check',
     purpose:
-      'Help students trace a repeated or confusing mistake back to a useful learning target instead of fixing only the surface behaviour.',
+      'Trace a repeated or confusing mistake back to something useful to practise, instead of only fixing the surface behaviour.',
     whenToUse:
-      'Use when feedback feels accurate but hard to act on, or when the same kind of mistake keeps returning in different scenarios.',
+      'Use this when feedback sounds right but you are not sure what to do with it, or when the same kind of mistake keeps returning.',
     steps: [
       'Choose one mistake, delay, or repeated pattern.',
       'Ask what led to it, using why questions without turning them into self-blame.',
@@ -542,9 +542,9 @@ export const tools: Tool[] = [
     status: 'drafted',
     toolType: 'thinking-check',
     purpose:
-      'Help students check whether their current explanation is supported, flexible, and safe enough to guide action.',
+      'Check whether your current explanation is supported, flexible, and safe enough to guide what you do next.',
     whenToUse:
-      'Use during study, debrief, scenario preparation, or reflection when you need to review a decision without waiting for perfect certainty.',
+      'Use this during study, debrief, scenario preparation, or reflection when you need to review a decision before everything feels certain.',
     steps: [
       'Name what you think is happening right now.',
       'Identify what supports that explanation.',
