@@ -25,18 +25,7 @@ function LearningPath({ onNavigate }: LearningPathProps) {
        const clusterSections = cluster.sections
   .map((sectionId) => {
     const section = getSectionById(sectionId)
-
-    if (!section) {
-      console.warn(
-        `Missing section "${sectionId}" in learning path cluster "${cluster.title}".`,
-      )
-    } else {
-      console.log(
-        `Found section "${sectionId}" for learning path cluster "${cluster.title}".`,
-      )
-    }
-
-    return section
+return section
   })
   .filter(Boolean)
 
