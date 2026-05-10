@@ -52,6 +52,8 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
                 <button
                   className="related-card"
                   key={tool.id}
+                  type="button"
+                  aria-label={`Open tool: ${tool.title}`}
                   onClick={() => setSelectedTool(tool)}
                 >
                   <span>{tool.toolType}</span>
@@ -71,6 +73,8 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
                 <button
                   className="related-card"
                   key={relatedSection.id}
+                  type="button"
+                  aria-label={`Open section: ${relatedSection.title}`}
                   onClick={() =>
                     onNavigate(`#/section/${relatedSection.id}`)
                   }

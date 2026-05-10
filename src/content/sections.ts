@@ -10531,46 +10531,16 @@ relatedSections: [
       type: 'paragraph',
       text: 'Use this after a scenario or lab when feedback feels important but too broad.',
     },
-    {
-      type: 'paragraph',
-      text: '1. Name the pattern.',
-    },
-    {
-      type: 'paragraph',
-      text: 'What kind of error showed up?',
-    },
-    {
-      type: 'paragraph',
-      text: '2. Choose one adjustment.',
-    },
-    {
-      type: 'paragraph',
-      text: 'What is the smallest useful change?',
-    },
-    {
-      type: 'paragraph',
-      text: '3. Decide where it will show up.',
-    },
-    {
-      type: 'paragraph',
-      text: 'In what kind of scenario, patient, or moment will this matter?',
-    },
-    {
-      type: 'paragraph',
-      text: '4. Test it deliberately.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Carry that adjustment into the next attempt.',
-    },
-    {
-      type: 'paragraph',
-      text: '5. Check whether it changed anything.',
-    },
-    {
-      type: 'paragraph',
-      text: 'Did you notice it sooner, act differently, or recover faster?',
-    },
+  {
+  type: 'list',
+  items: [
+    'Step 1: Name the pattern. What kind of error showed up?',
+    'Step 2: Choose one adjustment. What is the smallest useful change?',
+    'Step 3: Decide where it will show up. In what kind of scenario, patient, or moment will this matter?',
+    'Step 4: Test it deliberately. Carry that adjustment into the next attempt.',
+    'Step 5: Check whether it changed anything. Did you notice it sooner, act differently, or recover faster?',
+  ],
+},
     {
       type: 'paragraph',
       text: 'This sequence is small on purpose. It is meant to survive real lab days, not become another assignment.',
@@ -11268,10 +11238,14 @@ relatedSections: [
       type: 'paragraph',
       text: "Ask:",
     },
-    {
-      type: 'paragraph',
-      text: "1. What is the primary risk right now? 2. What action is safe while I clarify? 3. What do I need to reassess after this?",
-    },
+{
+  type: 'list',
+  items: [
+    "What is the primary risk right now?",
+    "What action is safe while I clarify?",
+    "What do I need to reassess after this?",
+  ],
+},
     {
       type: 'paragraph',
       text: "This is not a full tool by itself. It is the base for Resetting When Thinking Narrows and the OSCE Reset tool.",
@@ -11610,7 +11584,7 @@ relatedSections: [
     },
     {
       type: 'paragraph',
-      text: "> “I did not reassess after that treatment. I am going to reassess now.”",
+      text: "“I did not reassess after that treatment. I am going to reassess now.”",
     },
     {
       type: 'paragraph',
@@ -12062,43 +12036,18 @@ relatedSections: [
     { type: 'paragraph', text: 'Used together, they keep post-scenario learning contained. The student does not need to process the entire call. They choose one meaningful moment, trace it far enough to find the learning target, then carry one adjustment into the next attempt.' },
     { type: 'paragraph', text: 'That is enough for most situations.' },
     { type: 'paragraph', text: 'More analysis is not always better. Once the useful adjustment is clear, continuing to dig can turn reflection back into rumination.' },
-    { type: 'heading', text: 'A simple way to use the Five Whys' },
-    { type: 'paragraph', text: 'Use this only when the mistake is worth a closer look.' },
-    {
-      type: 'list',
-      items: [
-        'Choose one moment.',
-      ],
-    },
-    { type: 'paragraph', text: 'Pick the moment where a decision, hesitation, fixation, or missed reassessment mattered. Do not analyze the whole call.' },
-    {
-      type: 'list',
-      items: [
-        'Describe what happened plainly.',
-      ],
-    },
-    { type: 'paragraph', text: 'Use one sentence. Avoid drama. Avoid self-judgment.' },
-    {
-      type: 'list',
-      items: [
-        'Ask what led to it.',
-      ],
-    },
-    { type: 'paragraph', text: 'Start with the visible behaviour, then keep asking what made that behaviour more likely.' },
-    {
-      type: 'list',
-      items: [
-        'Stop when the answer becomes actionable.',
-      ],
-    },
-    { type: 'paragraph', text: 'You are looking for a learning target, not a perfect explanation.' },
-    {
-      type: 'list',
-      items: [
-        'Convert the endpoint into one adjustment.',
-      ],
-    },
-    { type: 'paragraph', text: 'The adjustment should be specific enough to use in the next scenario, lab, OSCE, or placement shift.' },
+   { type: 'heading', text: 'A simple way to use the Five Whys' },
+{ type: 'paragraph', text: 'Use this only when the mistake is worth a closer look.' },
+{
+  type: 'list',
+  items: [
+    'Choose one moment. Pick the moment where a decision, hesitation, fixation, or missed reassessment mattered. Do not analyze the whole call.',
+    'Describe what happened plainly. Use one sentence. Avoid drama. Avoid self-judgment.',
+    'Ask what led to it. Start with the visible behaviour, then keep asking what made that behaviour more likely.',
+    'Stop when the answer becomes actionable. You are looking for a learning target, not a perfect explanation.',
+    'Convert the endpoint into one adjustment. The adjustment should be specific enough to use in the next scenario, lab, OSCE, or placement shift.',
+  ],
+},
     { type: 'heading', text: 'What not to do with the Five Whys' },
     { type: 'paragraph', text: 'Do not use them to prove that you failed.' },
     { type: 'paragraph', text: 'Do not use them to explain every small imperfection.' },
@@ -12342,42 +12291,17 @@ relatedSections: [
     },
     { type: 'paragraph', text: 'That question lowers the emotional load without lowering the standard. The student still needs to act. They still need to improve. They still need to take feedback seriously. But the next attempt becomes a place to practise a specific change, not a verdict on whether they have become a different student overnight.' },
     { type: 'heading', text: 'A simple feedback-to-action sequence' },
-    { type: 'paragraph', text: 'Use this when feedback feels important but too broad.' },
-    {
-      type: 'list',
-      items: [
-        'Name the moment.',
-      ],
-    },
-    { type: 'paragraph', text: 'Choose one point in the scenario, OSCE, lab, or placement shift where something important happened.' },
-    {
-      type: 'list',
-      items: [
-        'Name the pattern.',
-      ],
-    },
-    { type: 'paragraph', text: 'Was the issue hesitation, fixation, weak reassessment, unclear communication, fragile directive use, delayed risk recognition, or something else?' },
-    {
-      type: 'list',
-      items: [
-        'Choose one adjustment.',
-      ],
-    },
-    { type: 'paragraph', text: 'Make it specific enough to answer: what will I notice, what will I do, and when will I do it?' },
-    {
-      type: 'list',
-      items: [
-        'Test it in the next attempt.',
-      ],
-    },
-    { type: 'paragraph', text: 'Carry the adjustment into a scenario, lab, study session, OSCE preparation, or placement moment where it might realistically appear.' },
-    {
-      type: 'list',
-      items: [
-        'Check whether anything changed.',
-      ],
-    },
-    { type: 'paragraph', text: 'Look for earlier noticing, faster recovery, clearer communication, better reassessment, or a smaller version of the same error.' },
+{ type: 'paragraph', text: 'Use this when feedback feels important but too broad.' },
+{
+  type: 'list',
+  items: [
+    'Name the moment. Choose one point in the scenario, OSCE, lab, or placement shift where something important happened.',
+    'Name the pattern. Was the issue hesitation, fixation, weak reassessment, unclear communication, fragile directive use, delayed risk recognition, or something else?',
+    'Choose one adjustment. Make it specific enough to answer: what will I notice, what will I do, and when will I do it?',
+    'Test it in the next attempt. Carry the adjustment into a scenario, lab, study session, OSCE preparation, or placement moment where it might realistically appear.',
+    'Check whether anything changed. Look for earlier noticing, faster recovery, clearer communication, better reassessment, or a smaller version of the same error.',
+  ],
+},
     { type: 'paragraph', text: 'That is enough structure for most situations.' },
     { type: 'paragraph', text: 'If the issue keeps repeating unchanged, return to The Five Whys and look for a deeper layer.' },
     { type: 'heading', text: 'How this closes the cluster' },

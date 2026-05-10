@@ -8,6 +8,7 @@ const navItems = [
   { label: 'Learning Path', page: 'learning-path', hash: '#/learning-path' },
   { label: 'Tools', page: 'tools', hash: '#/tools' },
   { label: 'Glossary', page: 'glossary', hash: '#/glossary' },
+  { label: 'About', page: 'about', hash: '#/about' },
 ]
 
 function Navigation({ currentPage, onNavigate }: NavigationProps) {
@@ -16,7 +17,9 @@ function Navigation({ currentPage, onNavigate }: NavigationProps) {
       {navItems.map((item) => (
         <button
           key={item.page}
+          type="button"
           className={currentPage === item.page ? 'nav-link active' : 'nav-link'}
+          aria-current={currentPage === item.page ? 'page' : undefined}
           onClick={() => onNavigate(item.hash)}
         >
           {item.label}

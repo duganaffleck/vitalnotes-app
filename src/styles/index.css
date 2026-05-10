@@ -1883,3 +1883,268 @@ h2 {
     transform: none;
   }
 }
+/* ===========================================================================
+   About page
+   Keeps the project origin human without turning it into a personal brand page.
+   ========================================================================== */
+
+.about-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-panel {
+  display: grid;
+  gap: 0.85rem;
+  border: 1px solid var(--vn-border-soft);
+  border-radius: var(--vn-radius-panel, 1.45rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 252, 253, 0.74));
+  box-shadow: var(--vn-shadow-soft);
+  padding: clamp(1.15rem, 3vw, 1.55rem);
+}
+
+.about-panel-primary {
+  background:
+    radial-gradient(circle at 96% 8%, rgba(242, 140, 40, 0.12), transparent 14rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 253, 0.76));
+}
+
+.about-panel h2 {
+  max-width: var(--vn-reader-wide, 880px);
+  margin-bottom: 0;
+  font-size: clamp(1.25rem, 2vw, 1.72rem);
+}
+
+.about-panel p {
+  max-width: var(--vn-reader-wide, 880px);
+  margin-bottom: 0;
+  color: var(--vn-ink-muted);
+  line-height: 1.72;
+}
+
+.about-list {
+  display: grid;
+  gap: 0.55rem;
+  max-width: var(--vn-reader-wide, 880px);
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+.about-list li {
+  color: var(--vn-ink-muted);
+  line-height: 1.65;
+}
+/* ==========================================================================
+   Recovery pass: Scenario Generator button + warm small headers
+   Restores styling that was lost during the About page update.
+   ========================================================================== */
+
+/* Scenario Generator related-project card and button */
+.external-resource-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border: 1px solid var(--vn-border-soft);
+  border-radius: var(--vn-radius-panel, 1.45rem);
+  background:
+    radial-gradient(circle at 96% 12%, rgba(242, 140, 40, 0.1), transparent 14rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(248, 252, 253, 0.72));
+  box-shadow: var(--vn-shadow-soft);
+  padding: clamp(1.1rem, 3vw, 1.45rem);
+}
+
+.external-resource-card h2 {
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.external-resource-card p:last-child {
+  max-width: var(--vn-reader-wide, 880px);
+  margin-bottom: 0;
+}
+
+.external-resource-button {
+  flex: 0 0 auto;
+  border: 1px solid var(--vn-teal-deep);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
+  color: var(--vn-button-text);
+  box-shadow: 0 8px 16px rgba(10, 110, 114, 0.18);
+  font-weight: 800;
+  padding: 0.85rem 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    border-color 150ms ease,
+    background 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.external-resource-button:hover {
+  background:
+    linear-gradient(135deg, var(--vn-teal-deep), var(--vn-ink-soft));
+  border-color: var(--vn-teal-deep);
+  box-shadow: 0 10px 22px rgba(10, 110, 114, 0.24);
+  color: var(--vn-button-text);
+  transform: translateY(-1px);
+}
+
+.external-resource-button:focus-visible {
+  outline: 3px solid var(--vn-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .external-resource-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .external-resource-button {
+    width: 100%;
+  }
+}
+
+/* Warm orange small headers across the app */
+.eyebrow,
+.cluster-label,
+.tool-type,
+.student-problem span,
+.related-card span,
+.section-nav-button span {
+  color: var(--vn-orange-deep);
+}
+
+/* Learning Path open-section affordance */
+.section-card-action {
+  width: fit-content;
+  margin-top: 0.25rem;
+  color: var(--vn-orange-deep);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-card-link:hover .section-card-action,
+.section-card-link:focus-visible .section-card-action {
+  color: var(--vn-teal-deep);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .external-resource-button {
+    transition: none;
+  }
+
+  .external-resource-button:hover {
+    transform: none;
+  }
+}
+/* ===========================================================================
+   About page heading recovery
+   Matches About page subheadings to the warm section-heading treatment used
+   across the reader.
+   ========================================================================== */
+
+.about-panel h2 {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  padding: 0.62rem 1.25rem 0.68rem 1.05rem;
+  border: none;
+  border-left: 6px solid rgba(242, 140, 40, 0.88);
+  border-radius: 0.95rem 0 0 0.95rem;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 247, 214, 0.96) 0%,
+      rgba(255, 247, 214, 0.72) 48%,
+      rgba(255, 247, 214, 0.28) 76%,
+      rgba(255, 247, 214, 0) 100%
+    );
+  box-shadow: none;
+  color: var(--vn-heading-text);
+  font-family: var(--vn-font-body);
+  font-size: clamp(1.34rem, 2vw, 1.72rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  isolation: auto;
+}
+
+.about-panel h2::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: min(100%, 22rem);
+  border-radius: 0.95rem 0 0 0.95rem;
+  background:
+    radial-gradient(circle at 0% 50%, rgba(242, 140, 40, 0.16), transparent 12rem);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.about-panel h2::after {
+  content: none;
+}
+/* ==========================================================================
+   Page eyebrow accent
+   Adds a warmer orange cue to the main page subheaders:
+   VitalNotes, Learning Path, Tools Library, Glossary, About VitalNotes.
+   ========================================================================== */
+
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+  padding: 0.42rem 0.72rem 0.42rem 0.6rem;
+  border: 1px solid rgba(242, 140, 40, 0.24);
+  border-left: 4px solid rgba(242, 140, 40, 0.88);
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 247, 214, 0.92),
+      rgba(255, 255, 255, 0.72)
+    );
+  color: var(--vn-orange-deep);
+  box-shadow: 0 6px 14px rgba(18, 48, 71, 0.045);
+}
+/* ==========================================================================
+   Page eyebrow colour
+   Keeps main page subheaders warm without adding extra visual treatment.
+   ========================================================================== */
+
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  color: var(--vn-orange-deep);
+}
+/* ==========================================================================
+   Page eyebrow reset
+   Keeps main page subheaders as regular orange text only.
+   ========================================================================== */
+
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: block;
+  width: auto;
+  gap: 0;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  border: 0;
+  border-left: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--vn-orange-deep);
+}

@@ -17,6 +17,8 @@ function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
       {previousSection ? (
         <button
           className="section-nav-button"
+          type="button"
+          aria-label={`Go to previous section: ${previousSection.title}`}
           onClick={() => onNavigate(`#/section/${previousSection.id}`)}
         >
           <span>Previous</span>
@@ -29,6 +31,8 @@ function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
       {nextSection ? (
         <button
           className="section-nav-button align-right"
+          type="button"
+          aria-label={`Go to next section: ${nextSection.title}`}
           onClick={() => onNavigate(`#/section/${nextSection.id}`)}
         >
           <span>Next in the guide</span>
@@ -37,6 +41,8 @@ function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
       ) : (
         <button
           className="section-nav-button align-right"
+          type="button"
+          aria-label="Return to Learning Path"
           onClick={() => onNavigate('#/learning-path')}
         >
           <span>Return to</span>

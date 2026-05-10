@@ -5,10 +5,11 @@ import LearningPath from './pages/LearningPath'
 import SectionPage from './pages/SectionPage'
 import Tools from './pages/Tools'
 import Glossary from './pages/Glossary'
+import About from './pages/About'
 import { firstSection, getSectionById } from './content/sections'
 
 type AppRoute = {
-  page: 'home' | 'learning-path' | 'section' | 'tools' | 'glossary'
+  page: 'home' | 'learning-path' | 'section' | 'tools' | 'glossary' | 'about'
   sectionId?: string
 }
 
@@ -29,6 +30,10 @@ function parseHash(): AppRoute {
 
   if (hash === '/glossary') {
     return { page: 'glossary' }
+  }
+
+  if (hash === '/about') {
+    return { page: 'about' }
   }
 
   if (hash.startsWith('/section/')) {
@@ -78,6 +83,7 @@ function App() {
       )}
       {route.page === 'tools' && <Tools />}
       {route.page === 'glossary' && <Glossary />}
+      {route.page === 'about' && <About />}
     </Layout>
   )
 }
