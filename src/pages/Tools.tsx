@@ -90,12 +90,16 @@ function renderTool(tool: Tool) {
         </div>
       )}
 
-      <details className="tool-section tool-example">
-        <summary className="card-action-button tool-example-button">
+      <details className="tool-section tool-example" key={`${tool.id}-example`}>
+        <summary
+          className="card-action-button tool-example-button"
+          aria-label={`View ${tool.title} example`}
+        >
           View example
         </summary>
 
         <div className="tool-example-content">
+          <h3>Example in practice</h3>
           <p>{tool.example.context}</p>
 
           <div className="field-list">

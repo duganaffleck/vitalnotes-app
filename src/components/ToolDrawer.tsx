@@ -24,7 +24,11 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
             <h2>{tool.title}</h2>
           </div>
 
-          <button className="drawer-close-button" onClick={onClose}>
+          <button
+            className="drawer-close-button"
+            type="button"
+            onClick={onClose}
+          >
             Close
           </button>
         </div>
@@ -75,12 +79,19 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
           </div>
         )}
 
-        <details className="tool-drawer-section tool-example">
-          <summary className="card-action-button tool-example-button">
+        <details
+          className="tool-drawer-section tool-example"
+          key={`${tool.id}-drawer-example`}
+        >
+          <summary
+            className="card-action-button tool-example-button"
+            aria-label={`View ${tool.title} example`}
+          >
             View example
           </summary>
 
           <div className="tool-example-content">
+            <h3>Example in practice</h3>
             <p>{tool.example.context}</p>
 
             <div className="drawer-field-list">

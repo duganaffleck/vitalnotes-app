@@ -45,7 +45,7 @@ export const tools: Tool[] = [
       },
     ],
     builderStructure: [],
-        example: {
+    example: {
       context:
         'A student is reviewing oxygen use after a shortness of breath scenario where the patient was anxious, tachypneic, and sitting upright, but their saturation stayed around 95 percent.',
       entries: [
@@ -120,7 +120,7 @@ export const tools: Tool[] = [
       },
     ],
     builderStructure: [],
-        example: {
+    example: {
       context:
         'A student keeps mixing up wheezing that improves because treatment is working with wheezing that becomes quieter because the patient is tiring.',
       entries: [
@@ -204,7 +204,7 @@ export const tools: Tool[] = [
       'Reassess: What change would tell me the situation is improving or worsening?',
       'Explain: How would I justify this decision clearly?',
     ],
-        example: {
+    example: {
       context:
         'A student wants to build a recall prompt from a missed reassessment after salbutamol in a respiratory scenario.',
       entries: [
@@ -271,7 +271,7 @@ export const tools: Tool[] = [
       },
     ],
     builderStructure: [],
-        example: {
+    example: {
       context:
         'A student finished a sepsis scenario feeling scattered. They completed many assessment pieces but delayed transport while trying to make the diagnosis feel certain.',
       entries: [
@@ -298,53 +298,53 @@ export const tools: Tool[] = [
     ],
   },
   {
-  id: 'osce-reset',
-  title: 'OSCE Reset',
-  status: 'drafted',
-  toolType: 'reset',
-  purpose:
-    'Return to patient care during an OSCE when pressure causes rushing, freezing, fixation, over-explaining, or missed reassessment.',
-  whenToUse:
-    'Use this during OSCE preparation or inside a station when your attention narrows and you need to get back to the patient in front of you.',
-  steps: [
-    'Name the primary risk right now.',
-    'Return to the structure that fits this point in the call.',
-    'Choose the next patient-facing action.',
-    'Reassess what should change after that action.',
-  ],
-  fields: [
-    {
-      id: 'primary-risk',
-      label: 'Primary risk',
-      helperText:
-        'What is the main patient risk right now? This does not need to be the final diagnosis.',
-    },
-    {
-      id: 'return-structure',
-      label: 'Return structure',
-      helperText:
-        'What structure should you return to: primary assessment, vitals, history, directive boundary, transport decision, communication, or reassessment?',
-    },
-    {
-      id: 'next-action',
-      label: 'Next patient-facing action',
-      helperText:
-        'What is the next small action that moves patient care forward?',
-    },
-    {
-      id: 'reassessment',
-      label: 'Reassessment',
-      helperText:
-        'After that action, what should you check to see whether the patient, plan, or explanation has changed?',
-    },
-  ],
-  builderStructure: [
-    'Risk: What is the main patient risk right now?',
-    'Structure: What part of the call do I return to?',
-    'Action: What is the next patient-facing action?',
-    'Reassess: What should I check after that action?',
-  ],
-      example: {
+    id: 'osce-reset',
+    title: 'OSCE Reset',
+    status: 'drafted',
+    toolType: 'reset',
+    purpose:
+      'Return to patient care during an OSCE when pressure causes rushing, freezing, fixation, over-explaining, or missed reassessment.',
+    whenToUse:
+      'Use this during OSCE preparation or inside a station when your attention narrows and you need to get back to the patient in front of you.',
+    steps: [
+      'Name the primary risk right now.',
+      'Return to the structure that fits this point in the call.',
+      'Choose the next patient-facing action.',
+      'Reassess what should change after that action.',
+    ],
+    fields: [
+      {
+        id: 'primary-risk',
+        label: 'Primary risk',
+        helperText:
+          'What is the main patient risk right now? This does not need to be the final diagnosis.',
+      },
+      {
+        id: 'return-structure',
+        label: 'Return structure',
+        helperText:
+          'What structure should you return to: primary assessment, vitals, history, directive boundary, transport decision, communication, or reassessment?',
+      },
+      {
+        id: 'next-action',
+        label: 'Next patient-facing action',
+        helperText:
+          'What is the next small action that moves patient care forward?',
+      },
+      {
+        id: 'reassessment',
+        label: 'Reassessment',
+        helperText:
+          'After that action, what should you check to see whether the patient, plan, or explanation has changed?',
+      },
+    ],
+    builderStructure: [
+      'Risk: What is the main patient risk right now?',
+      'Structure: What part of the call do I return to?',
+      'Action: What is the next patient-facing action?',
+      'Reassess: What should I check after that action?',
+    ],
+    example: {
       context:
         'During an OSCE chest pain station, a student feels time pressure and starts rushing toward treatment before finishing the safety checks around nitroglycerin.',
       entries: [
@@ -368,12 +368,12 @@ export const tools: Tool[] = [
       nextAdjustment:
         'Practise a short reset phrase before the next OSCE: “Risk, structure, action, reassess.”',
     },
-  relatedSections: [
-    'osce-preparation',
-    'performance-under-pressure',
-    'resetting-when-thinking-narrows',
-  ],
-},
+    relatedSections: [
+      'osce-preparation',
+      'performance-under-pressure',
+      'resetting-when-thinking-narrows',
+    ],
+  },
   {
     id: 'reflection-without-journaling-tool',
     title: 'Reflection Without Journaling Tool',
@@ -414,7 +414,7 @@ export const tools: Tool[] = [
       'Shape: What attention, assumption, pressure, or structure influenced the action?',
       'Adjustment: What will I notice or do differently next time?',
     ],
-        example: {
+    example: {
       context:
         'A student ran a respiratory scenario, gave treatment appropriately, then moved on without reassessing whether the patient was improving.',
       entries: [
@@ -499,7 +499,7 @@ export const tools: Tool[] = [
       'What learning target does this point toward?',
       'What adjustment will I test next?',
     ],
-        example: {
+    example: {
       context:
         'A student delayed nitroglycerin in a chest pain scenario because they were waiting for the presentation to feel certain.',
       entries: [
@@ -591,7 +591,7 @@ export const tools: Tool[] = [
       'Act: What is the safest action while I clarify?',
       'Reassess: What would make me change course?',
     ],
-        example: {
+    example: {
       context:
         'A student locked onto asthma because the patient was wheezy, but missed signs that the patient was becoming fatigued.',
       entries: [
