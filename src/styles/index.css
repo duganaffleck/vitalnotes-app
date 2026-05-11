@@ -2235,3 +2235,52 @@ h2 {
 .external-resource-card p {
   max-width: 100%;
 }
+/* ==========================================================================
+   Phase 4 section bottom alignment
+   Aligns glossary, related tools, related sections, and previous/next cards
+   inside section reader pages without changing section body text.
+   ========================================================================== */
+
+.reader-layout .glossary-term-panel,
+.reader-layout .related-panel,
+.reader-layout .section-navigation {
+  width: auto;
+  max-width: var(--vn-reader-wide, 880px);
+  margin-left: clamp(1.5rem, 4vw, 3rem);
+  margin-right: clamp(1.5rem, 4vw, 3rem);
+}
+
+.reader-layout .glossary-term-panel,
+.reader-layout .related-panel {
+  padding: clamp(1rem, 3vw, 1.35rem);
+}
+
+.reader-layout .section-navigation {
+  padding: clamp(1rem, 3vw, 1.35rem) 0 clamp(1.5rem, 4vw, 3rem);
+}
+
+.reader-layout .related-list,
+.reader-layout .section-navigation {
+  gap: 0.85rem;
+}
+
+.reader-layout .related-card,
+.reader-layout .section-nav-button {
+  min-height: 100%;
+}
+
+@media (max-width: 860px) {
+  .reader-layout .glossary-term-panel,
+  .reader-layout .related-panel,
+  .reader-layout .section-navigation {
+    width: auto;
+    max-width: none;
+    margin-left: clamp(1rem, 4vw, 1.4rem);
+    margin-right: clamp(1rem, 4vw, 1.4rem);
+  }
+
+  .reader-layout .section-navigation {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
