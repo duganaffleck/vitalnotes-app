@@ -30,13 +30,6 @@ function Home({ onNavigate }: HomeProps) {
           >
             Start at the beginning
           </button>
-          <button
-            type="button"
-            className="secondary-button"
-            onClick={() => onNavigate('#/about')}
-          >
-            Why VitalNotes exists
-          </button>
         </div>
       </div>
 
