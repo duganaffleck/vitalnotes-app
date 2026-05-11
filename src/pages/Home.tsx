@@ -17,16 +17,25 @@ function Home({ onNavigate }: HomeProps) {
 
         <div className="hero-actions">
           <button
+            type="button"
             className="primary-button"
             onClick={() => onNavigate('#/learning-path')}
           >
             Open the Learning Path
           </button>
           <button
+            type="button"
             className="secondary-button"
             onClick={() => onNavigate(`#/section/${firstSection.id}`)}
           >
             Start at the beginning
+          </button>
+          <button
+            type="button"
+            className="secondary-button"
+            onClick={() => onNavigate('#/about')}
+          >
+            Why VitalNotes exists
           </button>
         </div>
       </div>

@@ -88,6 +88,32 @@ function About() {
             into labs, scenarios, OSCE preparation, and feedback.
           </p>
         </article>
+
+        <aside
+          className="external-resource-card"
+          aria-labelledby="feedback-title"
+        >
+          <div>
+            <p className="eyebrow">Feedback</p>
+            <h2 id="feedback-title">Help improve VitalNotes</h2>
+            <p>
+              If something felt useful, unclear, too long, too vague, or worth
+              expanding, you can send a note here. Please avoid including
+              patient details or identifying information from real calls,
+              placements, or clinical settings.
+            </p>
+          </div>
+
+          <a
+            className="external-resource-button"
+            href="https://forms.gle/GVBVGx8VMQkemgPNA"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Send feedback about VitalNotes in a new tab"
+          >
+            Send feedback
+          </a>
+        </aside>
       </div>
     </section>
   )

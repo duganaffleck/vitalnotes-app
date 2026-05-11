@@ -15,6 +15,8 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
     <div className="drawer-backdrop" role="presentation" onClick={onClose}>
       <aside
         className="tool-drawer"
+        role="dialog"
+        aria-modal="true"
         aria-label={`${tool.title} tool drawer`}
         onClick={(event) => event.stopPropagation()}
       >
