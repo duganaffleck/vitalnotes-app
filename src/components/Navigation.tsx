@@ -11,7 +11,7 @@ const navItems = [
   {
     label: 'Scenario Generator',
     page: 'scenario-generator',
-    hash: 'https://scenario-generator-ten.vercel.app/',
+    hash: '#/scenario-generator',
   },
   { label: 'About', page: 'about', hash: '#/about' },
 ]
@@ -25,14 +25,7 @@ function Navigation({ currentPage, onNavigate }: NavigationProps) {
           type="button"
           className={currentPage === item.page ? 'nav-link active' : 'nav-link'}
           aria-current={currentPage === item.page ? 'page' : undefined}
-          onClick={() => {
-            if (item.hash.startsWith('http')) {
-              window.open(item.hash, '_blank', 'noopener,noreferrer')
-              return
-            }
-
-            onNavigate(item.hash)
-          }}
+          onClick={() => onNavigate(item.hash)}
         >
           {item.label}
         </button>

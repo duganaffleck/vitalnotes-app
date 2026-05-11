@@ -5,11 +5,19 @@ import LearningPath from './pages/LearningPath'
 import SectionPage from './pages/SectionPage'
 import Tools from './pages/Tools'
 import Glossary from './pages/Glossary'
+import ScenarioGenerator from './pages/ScenarioGenerator'
 import About from './pages/About'
 import { firstSection, getSectionById } from './content/sections'
 
 type AppRoute = {
-  page: 'home' | 'learning-path' | 'section' | 'tools' | 'glossary' | 'about'
+  page:
+    | 'home'
+    | 'learning-path'
+    | 'section'
+    | 'tools'
+    | 'glossary'
+    | 'scenario-generator'
+    | 'about'
   sectionId?: string
 }
 
@@ -30,6 +38,10 @@ function parseHash(): AppRoute {
 
   if (hash === '/glossary') {
     return { page: 'glossary' }
+  }
+
+  if (hash === '/scenario-generator') {
+    return { page: 'scenario-generator' }
   }
 
   if (hash === '/about') {
@@ -83,6 +95,7 @@ function App() {
       )}
       {route.page === 'tools' && <Tools />}
       {route.page === 'glossary' && <Glossary />}
+      {route.page === 'scenario-generator' && <ScenarioGenerator />}
       {route.page === 'about' && <About />}
     </Layout>
   )

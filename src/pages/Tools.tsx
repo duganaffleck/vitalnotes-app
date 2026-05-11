@@ -163,28 +163,6 @@ function Tools() {
         })}
       </div>
 
-      <aside className="external-resource-card" aria-labelledby="scenario-generator-title">
-        <div>
-          <p className="eyebrow">Related project</p>
-          <h2 id="scenario-generator-title">Scenario Generator</h2>
-          <p>
-            Use this companion app when you need a paramedic scenario to practise
-            assessment, clinical reasoning, communication, documentation, or
-            feedback. Keep VitalNotes as the guide for how to learn from the work;
-            use Scenario Generator when you need another case to work through.
-          </p>
-        </div>
-
-        <a
-          className="external-resource-button"
-          href="https://scenario-generator-ten.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Open Scenario Generator in a new tab"
-        >
-          Open Scenario Generator
-        </a>
-      </aside>
     </section>
   )
 }
