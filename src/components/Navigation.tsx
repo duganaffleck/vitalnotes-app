@@ -8,6 +8,11 @@ const navItems = [
   { label: 'Learning Path', page: 'learning-path', hash: '#/learning-path' },
   { label: 'Tools', page: 'tools', hash: '#/tools' },
   { label: 'Glossary', page: 'glossary', hash: '#/glossary' },
+  {
+    label: 'Scenario Generator',
+    page: 'scenario-generator',
+    hash: 'https://scenario-generator-ten.vercel.app/',
+  },
   { label: 'About', page: 'about', hash: '#/about' },
 ]
 
@@ -20,7 +25,14 @@ function Navigation({ currentPage, onNavigate }: NavigationProps) {
           type="button"
           className={currentPage === item.page ? 'nav-link active' : 'nav-link'}
           aria-current={currentPage === item.page ? 'page' : undefined}
-          onClick={() => onNavigate(item.hash)}
+          onClick={() => {
+            if (item.hash.startsWith('http')) {
+              window.open(item.hash, '_blank', 'noopener,noreferrer')
+              return
+            }
+
+            onNavigate(item.hash)
+          }}
         >
           {item.label}
         </button>
