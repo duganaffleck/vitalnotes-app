@@ -2148,3 +2148,11 @@ h2 {
   box-shadow: none;
   color: var(--vn-orange-deep);
 }
+/* Phase 4 polish: keep tool section list spacing consistent */
+.tool-section ol,
+.tool-section ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
