@@ -2156,3 +2156,82 @@ h2 {
   margin: 0;
   padding-left: 1.25rem;
 }
+/* ==========================================================================
+   Phase 4 alignment: top-level informational pages
+   Keeps About and Scenario Generator cards aligned with other app pages,
+   while preserving comfortable text width inside each card.
+   ========================================================================== */
+
+.about-layout {
+  width: 100%;
+  max-width: none;
+}
+
+.about-panel,
+.external-resource-card {
+  width: 100%;
+}
+
+.about-panel > p,
+.about-panel > ul,
+.external-resource-card p {
+  max-width: var(--vn-reader-wide, 880px);
+}
+/* ==========================================================================
+   Phase 4 alignment override: top-level informational pages
+   Keeps About and Scenario Generator cards full-width while keeping text
+   at the same comfortable reader width as the rest of the app.
+   ========================================================================== */
+
+.about-layout {
+  width: 100%;
+  max-width: none;
+}
+
+.about-panel,
+.external-resource-card {
+  width: 100%;
+}
+
+.about-panel > p,
+.about-panel > ul,
+.external-resource-card p {
+  max-width: var(--vn-reader-width, 740px);
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.about-list {
+  max-width: var(--vn-reader-width, 740px);
+}
+
+.external-resource-card > div {
+  max-width: var(--vn-reader-width, 740px);
+}
+/* ==========================================================================
+   Phase 4 final alignment: About and Scenario Generator text rail
+   Keeps cards full-width while matching section body reading width.
+   ========================================================================== */
+
+.about-layout {
+  width: 100%;
+  max-width: none;
+}
+
+.about-panel,
+.external-resource-card {
+  width: 100%;
+}
+
+.about-panel > p,
+.about-list,
+.external-resource-card > div {
+  width: min(100%, var(--vn-reader-width, 740px));
+  max-width: var(--vn-reader-width, 740px);
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.external-resource-card p {
+  max-width: 100%;
+}
