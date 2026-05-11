@@ -2284,3 +2284,94 @@ h2 {
     padding-right: 0;
   }
 }
+/* ==========================================================================
+   Support footer
+   Adds a quiet Ko-fi support link across the shared site footer.
+   ========================================================================== */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(18, 48, 71, 0.1);
+  background: rgba(248, 251, 252, 0.76);
+  backdrop-filter: blur(10px);
+}
+
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1140px, 100%);
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+}
+
+.site-footer-support-text {
+  max-width: 720px;
+  margin: 0;
+  color: var(--vn-muted-text);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.site-footer-support-link {
+  flex: 0 0 auto;
+  border: 1px solid rgba(13, 139, 139, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--vn-teal-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 0.58rem 0.82rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    border-color 150ms ease,
+    background 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.site-footer-support-link:hover {
+  border-color: rgba(242, 140, 40, 0.36);
+  background: var(--vn-card-warm);
+  color: var(--vn-orange-deep);
+  box-shadow: 0 8px 18px rgba(18, 48, 71, 0.06);
+  transform: translateY(-1px);
+}
+
+.site-footer-support-link:focus-visible {
+  outline: 3px solid var(--vn-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .site-footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-footer-support-link {
+    width: fit-content;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer-support-link {
+    transition: none;
+  }
+
+  .site-footer-support-link:hover {
+    transform: none;
+  }
+}
