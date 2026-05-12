@@ -63,9 +63,10 @@ export type ToolExampleEntry = {
 }
 
 export type ToolExample = {
+  title?: string
   context: string
   entries: ToolExampleEntry[]
-  nextAdjustment: string
+  nextAdjustment?: string
 }
 
 export type Tool = {
@@ -75,10 +76,15 @@ export type Tool = {
   toolType: ToolType
   purpose: string
   whenToUse: string
+  whenNotToUse?: string[]
   steps: string[]
   fields: ToolField[]
   builderStructure: string[]
-  example: ToolExample
+  shortVersion?: string[]
+  commonMistakes?: string[]
+  example?: ToolExample
+  examples?: ToolExample[]
+  relatedTools?: string[]
   relatedSections: string[]
 }
 

@@ -1,5 +1,5 @@
 import { activeTools } from '../content/tools'
-import type { Tool } from '../content/types'
+import type { Tool, ToolExample } from '../content/types'
 
 type ToolGroup = {
   title: string
@@ -40,6 +40,78 @@ const toolGroups: ToolGroup[] = [
   },
 ]
 
+function getToolExamples(tool: Tool): ToolExample[] {
+  if (tool.examples && tool.examples.length > 0) {
+    return tool.examples
+  }
+
+  return tool.example ? [tool.example] : []
+}
+
+function renderToolList(title: string, items: string[]) {
+  if (items.length === 0) {
+    return null
+  }
+
+  return (
+    <div className="tool-section">
+      <h3>{title}</h3>
+      <ul>
+        {items.map((item, index) => (
+          <li key={`${title}-${index}`}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function renderExamples(tool: Tool) {
+  const examples = getToolExamples(tool)
+
+  if (examples.length === 0) {
+    return null
+  }
+
+  return (
+    <details className="tool-section tool-example" key={`${tool.id}-example`}>
+      <summary
+        className="card-action-button tool-example-button"
+        aria-label={`View ${tool.title} example${examples.length > 1 ? 's' : ''}`}
+      >
+        {examples.length > 1 ? 'View examples' : 'View example'}
+      </summary>
+
+      <div className="tool-example-content">
+        {examples.map((example, exampleIndex) => (
+          <div className="tool-example-item" key={`${tool.id}-example-${exampleIndex}`}>
+            <h3>{example.title ?? 'Example in practice'}</h3>
+            <p>{example.context}</p>
+
+            <div className="field-list">
+              {example.entries.map((entry) => (
+                <div
+                  className="field-card"
+                  key={`${tool.id}-${exampleIndex}-${entry.label}`}
+                >
+                  <strong>{entry.label}</strong>
+                  <p>{entry.text}</p>
+                </div>
+              ))}
+            </div>
+
+            {example.nextAdjustment && (
+              <div className="field-card">
+                <strong>Next adjustment</strong>
+                <p>{example.nextAdjustment}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </details>
+  )
+}
+
 function renderTool(tool: Tool) {
   return (
     <article className="tool-panel" key={tool.id}>
@@ -79,44 +151,18 @@ function renderTool(tool: Tool) {
         </div>
       )}
 
-      {tool.builderStructure.length > 0 && (
-        <div className="tool-section">
-          <h3>Prompt structure</h3>
-          <ul>
-            {tool.builderStructure.map((item, index) => (
-              <li key={`${tool.id}-builder-${index}`}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {tool.builderStructure.length > 0 &&
+        renderToolList('Prompt structure', tool.builderStructure)}
 
-      <details className="tool-section tool-example" key={`${tool.id}-example`}>
-        <summary
-          className="card-action-button tool-example-button"
-          aria-label={`View ${tool.title} example`}
-        >
-          View example
-        </summary>
+      {tool.shortVersion && renderToolList('Short version', tool.shortVersion)}
 
-        <div className="tool-example-content">
-          <h3>Example in practice</h3>
-          <p>{tool.example.context}</p>
+      {tool.whenNotToUse &&
+        renderToolList('Do not use this when', tool.whenNotToUse)}
 
-          <div className="field-list">
-            {tool.example.entries.map((entry) => (
-              <div className="field-card" key={`${tool.id}-${entry.label}`}>
-                <strong>{entry.label}</strong>
-                <p>{entry.text}</p>
-              </div>
-            ))}
-          </div>
+      {tool.commonMistakes &&
+        renderToolList('Common mistakes', tool.commonMistakes)}
 
-          <div className="field-card">
-            <strong>Next adjustment</strong>
-            <p>{tool.example.nextAdjustment}</p>
-          </div>
-        </div>
-      </details>
+      {renderExamples(tool)}
     </article>
   )
 }
@@ -162,7 +208,6 @@ function Tools() {
           )
         })}
       </div>
-
     </section>
   )
 }

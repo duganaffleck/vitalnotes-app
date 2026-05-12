@@ -42,53 +42,55 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
 
         <SectionBody body={section.body} />
 
-        <GlossaryTerms glossaryTermIds={section.glossaryTerms} />
+        <div className="reader-support-stack">
+          <SectionNavigation section={section} onNavigate={onNavigate} />
 
-        {relatedTools.length > 0 && (
-          <aside className="related-panel">
-            <h2>Related tools</h2>
-            <div className="related-list">
-              {relatedTools.map((tool) => (
-                <button
-                  className="related-card"
-                  key={tool.id}
-                  type="button"
-                  aria-label={`Open tool: ${tool.title}`}
-                  onClick={() => setSelectedTool(tool)}
-                >
-                  <span>{tool.toolType}</span>
-                  <strong>{tool.title}</strong>
-                  <p>{tool.purpose}</p>
-                </button>
-              ))}
-            </div>
-          </aside>
-        )}
+          <GlossaryTerms glossaryTermIds={section.glossaryTerms} />
 
-        {relatedSections.length > 0 && (
-          <aside className="related-panel">
-            <h2>Related sections</h2>
-            <div className="related-list">
-              {relatedSections.map((relatedSection) => (
-                <button
-                  className="related-card"
-                  key={relatedSection.id}
-                  type="button"
-                  aria-label={`Open section: ${relatedSection.title}`}
-                  onClick={() =>
-                    onNavigate(`#/section/${relatedSection.id}`)
-                  }
-                >
-                  <span>{relatedSection.cluster}</span>
-                  <strong>{relatedSection.title}</strong>
-                  <p>{relatedSection.subtitle}</p>
-                </button>
-              ))}
-            </div>
-          </aside>
-        )}
+          {relatedTools.length > 0 && (
+            <aside className="related-panel related-panel--tools">
+              <h2>Related tools</h2>
+              <div className="related-list">
+                {relatedTools.map((tool) => (
+                  <button
+                    className="related-card related-card--tool"
+                    key={tool.id}
+                    type="button"
+                    aria-label={`Open tool: ${tool.title}`}
+                    onClick={() => setSelectedTool(tool)}
+                  >
+                    <span>{tool.toolType}</span>
+                    <strong>{tool.title}</strong>
+                    <p>{tool.purpose}</p>
+                  </button>
+                ))}
+              </div>
+            </aside>
+          )}
 
-        <SectionNavigation section={section} onNavigate={onNavigate} />
+          {relatedSections.length > 0 && (
+            <aside className="related-panel related-panel--sections">
+              <h2>Related sections</h2>
+              <div className="related-list">
+                {relatedSections.map((relatedSection) => (
+                  <button
+                    className="related-card related-card--section"
+                    key={relatedSection.id}
+                    type="button"
+                    aria-label={`Open section: ${relatedSection.title}`}
+                    onClick={() =>
+                      onNavigate(`#/section/${relatedSection.id}`)
+                    }
+                  >
+                    <span>{relatedSection.cluster}</span>
+                    <strong>{relatedSection.title}</strong>
+                    <p>{relatedSection.subtitle}</p>
+                  </button>
+                ))}
+              </div>
+            </aside>
+          )}
+        </div>
       </article>
 
       <ToolDrawer
