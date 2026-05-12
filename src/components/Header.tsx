@@ -12,13 +12,14 @@ function Header({ currentPage, onNavigate }: HeaderProps) {
         type="button"
         className="brand-button"
         onClick={() => onNavigate('#/')}
+        aria-label="Go to VitalNotes home"
       >
         <span className="brand-mark" aria-hidden="true">
           <img src="/vitalnotes-mark.svg" alt="" />
         </span>
         <span>
           <strong>VitalNotes</strong>
-          <small>Learning paramedicine with structure</small>
+          <small>For the gap between studying and performing.</small>
         </span>
       </button>
 

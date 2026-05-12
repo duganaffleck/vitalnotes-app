@@ -1,42 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@600;700&display=swap");
 
 :root {
-  --vn-ink: #123047;
-  --vn-ink-soft: #1f496f;
-  --vn-ink-muted: #35556a;
-  --vn-teal: #0d8b8b;
-  --vn-teal-deep: #0a6e72;
-  --vn-orange: #f28c28;
-  --vn-paper: #f8f5ef;
+  /* Core colour system */
+  --vn-ink: #1f2933;
+  --vn-ink-soft: #334155;
+  --vn-ink-muted: #475569;
+  --vn-heading-text: #17212b;
+  --vn-muted-text: #64707d;
+  --vn-soft-text: #4b5d6a;
+
+  --vn-paper: #f7f3ea;
   --vn-paper-warm: #fff7ea;
-  --vn-shell: #edf4f6;
-  --vn-shell-soft: #f4f8f9;
-  --vn-sky: #dff0f5;
-  --vn-card-bg: rgba(255, 255, 255, 0.78);
-  --vn-card-bg-strong: rgba(255, 255, 255, 0.92);
+  --vn-shell: #f3efe7;
+  --vn-shell-soft: #fbfaf6;
+  --vn-card-bg: rgba(255, 255, 255, 0.82);
+  --vn-card-bg-strong: rgba(255, 255, 255, 0.94);
   --vn-card-warm: rgba(255, 247, 234, 0.88);
-  --vn-border: #c7d9df;
-  --vn-border-soft: rgba(18, 48, 71, 0.13);
-  --vn-border-strong: rgba(18, 48, 71, 0.22);
-  --vn-muted-text: #526676;
-  --vn-soft-text: #3f5f72;
-  --vn-heading-text: #123047;
-  --vn-accent-soft: rgba(13, 139, 139, 0.11);
-  --vn-accent-soft-strong: rgba(13, 139, 139, 0.18);
+
+  --vn-border: #ded6c8;
+  --vn-border-soft: rgba(31, 41, 51, 0.12);
+  --vn-border-strong: rgba(31, 41, 51, 0.2);
+
+  --vn-orange: #f28c28;
+  --vn-orange-deep: #c96f16;
+  --vn-orange-soft: rgba(242, 140, 40, 0.15);
+  --vn-orange-glow: rgba(242, 140, 40, 0.22);
+
+  --vn-teal: #287c7a;
+  --vn-teal-deep: #1f6564;
+  --vn-accent-soft: rgba(242, 140, 40, 0.12);
+  --vn-accent-soft-strong: rgba(242, 140, 40, 0.18);
   --vn-warm-accent-soft: rgba(242, 140, 40, 0.12);
-  --vn-focus: rgba(13, 139, 139, 0.28);
-  --vn-shadow-soft: 0 14px 34px rgba(18, 48, 71, 0.08);
-  --vn-shadow-card: 0 18px 42px rgba(18, 48, 71, 0.1);
-  --vn-shadow-hover: 0 22px 52px rgba(18, 48, 71, 0.13);
-  --vn-button-start: #0d8b8b;
-  --vn-button-end: #0a6e72;
+  --vn-focus: rgba(242, 140, 40, 0.34);
+
+  --vn-shadow-soft: 0 12px 28px rgba(31, 41, 51, 0.065);
+  --vn-shadow-card: 0 16px 38px rgba(31, 41, 51, 0.085);
+  --vn-shadow-hover: 0 18px 42px rgba(31, 41, 51, 0.11);
+
+  --vn-button-start: #d97706;
+  --vn-button-end: #b85f0d;
   --vn-button-text: #ffffff;
+
   --vn-page-bg:
-    radial-gradient(circle at 12% 12%, rgba(13, 139, 139, 0.13), transparent 34rem),
-    radial-gradient(circle at 88% 6%, rgba(242, 140, 40, 0.11), transparent 28rem),
-    linear-gradient(180deg, #edf4f6 0%, #f8f5ef 58%, #f1f6f8 100%);
+    radial-gradient(circle at 12% 10%, rgba(242, 140, 40, 0.12), transparent 30rem),
+    radial-gradient(circle at 88% 4%, rgba(40, 124, 122, 0.08), transparent 28rem),
+    linear-gradient(180deg, #fbfaf6 0%, #f7f3ea 58%, #f2eee6 100%);
+
   --vn-font-heading: "Spectral", Georgia, serif;
   --vn-font-body: "Manrope", "Segoe UI", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --vn-reader-width: 740px;
+  --vn-reader-wide: 880px;
+  --vn-radius-soft: 1.1rem;
+  --vn-radius-panel: 1.45rem;
 
   font-family: var(--vn-font-body);
   color: var(--vn-ink);
@@ -61,14 +77,29 @@ body {
   background: var(--vn-page-bg);
 }
 
-button {
+button,
+a {
   font: inherit;
 }
 
-.app-shell {
-  min-height: 100vh;
+button {
+  color: inherit;
 }
 
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: min(1140px, 100%);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2.4rem) clamp(1rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem);
+}
+
+/* Header and navigation */
 .site-header {
   position: sticky;
   top: 0;
@@ -77,11 +108,11 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 1rem clamp(1rem, 4vw, 3rem);
-  border-bottom: 1px solid rgba(199, 217, 223, 0.82);
-  background: rgba(248, 251, 252, 0.9);
+  padding: 0.82rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid rgba(31, 41, 51, 0.1);
+  background: rgba(251, 250, 246, 0.92);
   backdrop-filter: blur(18px);
-  box-shadow: 0 8px 24px rgba(18, 48, 71, 0.045);
+  box-shadow: 0 6px 18px rgba(31, 41, 51, 0.04);
 }
 
 .brand-button {
@@ -96,17 +127,37 @@ button {
 }
 
 .brand-mark {
+  position: relative;
   display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
+  flex: 0 0 auto;
+  width: 2.35rem;
+  height: 2.35rem;
   place-items: center;
-  border: 1px solid rgba(13, 139, 139, 0.22);
-  border-radius: 0.9rem;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(223, 240, 245, 0.94));
-  color: var(--vn-teal-deep);
+  overflow: hidden;
+  border: 1px solid rgba(242, 140, 40, 0.28);
+  border-radius: 0.8rem;
+  background: #ffffff;
+  color: var(--vn-heading-text);
   font-weight: 800;
-  box-shadow: 0 8px 18px rgba(18, 48, 71, 0.08);
+  box-shadow: 0 8px 18px rgba(31, 41, 51, 0.08);
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  right: 0.32rem;
+  bottom: 0.32rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+}
+
+.brand-mark img {
+  display: block;
+  width: 1.45rem;
+  height: 1.45rem;
+  object-fit: contain;
 }
 
 .brand-button strong {
@@ -135,28 +186,32 @@ button {
   background: transparent;
   color: var(--vn-soft-text);
   cursor: pointer;
-  padding: 0.55rem 0.85rem;
+  padding: 0.5rem 0.78rem;
   font-weight: 700;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+  border-color: rgba(242, 140, 40, 0.24);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--vn-orange-deep);
+  box-shadow: 0 8px 18px rgba(31, 41, 51, 0.055);
+}
+
 .nav-link.active {
-  border-color: rgba(13, 139, 139, 0.22);
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--vn-teal-deep);
-  box-shadow: 0 8px 18px rgba(18, 48, 71, 0.06);
+  border-color: rgba(242, 140, 40, 0.42);
+  background: linear-gradient(135deg, rgba(242, 140, 40, 0.15), rgba(255, 255, 255, 0.82));
+  color: var(--vn-heading-text);
+  box-shadow:
+    inset 0 -2px 0 rgba(242, 140, 40, 0.72),
+    0 8px 18px rgba(31, 41, 51, 0.055);
 }
 
-.main-content {
-  width: min(1120px, 100%);
-  margin: 0 auto;
-  padding: clamp(1.25rem, 4vw, 3rem);
-}
-
+/* Shared layout */
 .page-stack,
-.reader-layout {
+.reader-layout,
+.about-layout {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1.1rem, 2.5vw, 1.6rem);
 }
 
 .hero-card,
@@ -166,9 +221,11 @@ button {
 .section-card,
 .related-panel,
 .tool-panel,
-.glossary-card {
+.glossary-card,
+.about-panel,
+.external-resource-card {
   border: 1px solid var(--vn-border-soft);
-  border-radius: 1.5rem;
+  border-radius: var(--vn-radius-panel);
   background: var(--vn-card-bg);
   box-shadow: var(--vn-shadow-soft);
 }
@@ -176,33 +233,18 @@ button {
 .hero-card,
 .page-header {
   padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at 94% 10%, rgba(242, 140, 40, 0.14), transparent 16rem),
+    radial-gradient(circle at 2% 0%, rgba(40, 124, 122, 0.08), transparent 18rem),
+    rgba(255, 255, 255, 0.82);
 }
 
 .hero-card {
   display: grid;
   gap: 1.25rem;
-  background:
-    radial-gradient(circle at 96% 10%, rgba(242, 140, 40, 0.12), transparent 18rem),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(237, 244, 246, 0.78));
 }
 
-.page-header {
-  background:
-    radial-gradient(circle at 92% 10%, rgba(13, 139, 139, 0.1), transparent 17rem),
-    rgba(255, 255, 255, 0.78);
-}
-
-.eyebrow,
-.cluster-label,
-.tool-type {
-  margin: 0 0 0.5rem;
-  color: var(--vn-teal-deep);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
+/* Typography */
 h1,
 h2,
 h3,
@@ -213,29 +255,29 @@ p {
 h1,
 h2 {
   color: var(--vn-heading-text);
-  font-family: var(--vn-font-heading);
+  font-family: var(--vn-font-body);
+  font-weight: 800;
+  letter-spacing: -0.035em;
 }
 
 h1 {
   max-width: 800px;
   margin-bottom: 1rem;
-  font-size: clamp(2.2rem, 5vw, 4.25rem);
-  line-height: 1.02;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.15rem, 5vw, 4rem);
+  line-height: 1.04;
 }
 
 h2 {
   margin-bottom: 0.75rem;
-  font-size: clamp(1.38rem, 3vw, 2.18rem);
-  line-height: 1.12;
-  letter-spacing: -0.025em;
+  font-size: clamp(1.38rem, 3vw, 2.05rem);
+  line-height: 1.14;
 }
 
 h3 {
   margin-bottom: 0.65rem;
   color: var(--vn-heading-text);
-  font-size: 1.1rem;
-  line-height: 1.2;
+  font-size: 1.08rem;
+  line-height: 1.24;
 }
 
 p,
@@ -245,14 +287,31 @@ li {
   line-height: 1.7;
 }
 
+.eyebrow,
+.cluster-label,
+.tool-type {
+  margin: 0 0 0.5rem;
+  color: var(--vn-orange-deep);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .hero-card > p,
 .page-header > p,
 .section-subtitle {
-  max-width: 720px;
+  max-width: var(--vn-reader-width);
   color: var(--vn-muted-text);
-  font-size: 1.12rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
 }
 
+.muted-copy {
+  color: var(--vn-muted-text);
+}
+
+/* Buttons and interactive states */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -264,21 +323,14 @@ li {
 .text-button,
 .card-action-button,
 .section-nav-button,
-.related-card {
-  cursor: pointer;
-}
-
-.primary-button,
-.secondary-button,
-.text-button,
-.section-nav-button,
 .related-card,
 .drawer-close-button,
 .small-close-button,
-.card-action-button,
 .glossary-chip,
 .nav-link,
-.section-card-link {
+.section-card-link,
+.external-resource-button,
+.site-footer-support-link {
   transition:
     border-color 150ms ease,
     background 150ms ease,
@@ -287,46 +339,16 @@ li {
     transform 150ms ease;
 }
 
-.primary-button:hover {
-  background:
-    linear-gradient(135deg, var(--vn-teal-deep), var(--vn-ink-soft));
-  border-color: var(--vn-teal-deep);
-  box-shadow: 0 10px 22px rgba(10, 110, 114, 0.24);
-  transform: translateY(-1px);
-}
-
-.secondary-button:hover,
-.section-nav-button:hover,
-.related-card:hover,
-.drawer-close-button:hover,
-.small-close-button:hover,
-.card-action-button:hover {
-  border-color: rgba(13, 139, 139, 0.28);
-  background: var(--vn-card-warm);
-  color: var(--vn-teal-deep);
-  box-shadow: 0 10px 22px rgba(18, 48, 71, 0.08);
-  transform: translateY(-1px);
-}
-
-.text-button:hover {
-  color: var(--vn-teal-deep);
-  text-decoration-thickness: 0.12em;
-}
-
-.primary-button:focus-visible,
-.secondary-button:focus-visible,
-.text-button:focus-visible,
-.section-nav-button:focus-visible,
-.related-card:focus-visible,
-.drawer-close-button:focus-visible,
-.small-close-button:focus-visible,
-.card-action-button:focus-visible,
-.glossary-chip:focus-visible,
-.nav-link:focus-visible,
-.section-card-link:focus-visible,
-.brand-button:focus-visible {
-  outline: 3px solid var(--vn-focus);
-  outline-offset: 3px;
+.primary-button,
+.secondary-button,
+.text-button,
+.card-action-button,
+.section-nav-button,
+.related-card,
+.glossary-chip,
+.nav-link,
+.section-card-link {
+  cursor: pointer;
 }
 
 .primary-button,
@@ -336,18 +358,43 @@ li {
   font-weight: 800;
 }
 
-.primary-button {
-  border: 1px solid var(--vn-teal-deep);
-  background:
-    linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
+.primary-button,
+.external-resource-button {
+  border: 1px solid var(--vn-button-end);
+  background: linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
   color: var(--vn-button-text);
-  box-shadow: 0 8px 16px rgba(10, 110, 114, 0.18);
+  box-shadow: 0 8px 16px rgba(185, 95, 13, 0.18);
 }
 
-.secondary-button {
-  border: 1px solid rgba(13, 139, 139, 0.2);
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--vn-teal-deep);
+.primary-button:hover,
+.external-resource-button:hover {
+  border-color: var(--vn-orange-deep);
+  background: linear-gradient(135deg, var(--vn-orange-deep), #98480f);
+  color: var(--vn-button-text);
+  box-shadow: 0 10px 22px rgba(185, 95, 13, 0.24);
+  transform: translateY(-1px);
+}
+
+.secondary-button,
+.card-action-button,
+.drawer-close-button,
+.small-close-button {
+  border: 1px solid rgba(242, 140, 40, 0.22);
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--vn-orange-deep);
+}
+
+.secondary-button:hover,
+.section-nav-button:hover,
+.related-card:hover,
+.drawer-close-button:hover,
+.small-close-button:hover,
+.card-action-button:hover {
+  border-color: rgba(242, 140, 40, 0.36);
+  background: var(--vn-card-warm);
+  color: var(--vn-orange-deep);
+  box-shadow: 0 10px 22px rgba(31, 41, 51, 0.08);
+  transform: translateY(-1px);
 }
 
 .text-button {
@@ -361,18 +408,39 @@ li {
   text-underline-offset: 0.25rem;
 }
 
+.text-button:hover {
+  color: var(--vn-orange-deep);
+  text-decoration-thickness: 0.12em;
+}
+
 .card-action-button {
   width: fit-content;
   margin-top: 0.25rem;
-  border: 1px solid rgba(13, 139, 139, 0.18);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--vn-teal-deep);
   font-weight: 800;
   padding: 0.58rem 0.82rem;
   text-align: left;
 }
 
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.text-button:focus-visible,
+.section-nav-button:focus-visible,
+.related-card:focus-visible,
+.drawer-close-button:focus-visible,
+.small-close-button:focus-visible,
+.card-action-button:focus-visible,
+.glossary-chip:focus-visible,
+.nav-link:focus-visible,
+.section-card-link:focus-visible,
+.brand-button:focus-visible,
+.external-resource-button:focus-visible,
+.site-footer-support-link:focus-visible {
+  outline: 3px solid var(--vn-focus);
+  outline-offset: 3px;
+}
+
+/* Grids and cards */
 .three-column-grid,
 .section-grid,
 .related-list,
@@ -383,54 +451,41 @@ li {
   gap: 1rem;
 }
 
-.three-column-grid {
+.three-column-grid,
+.section-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.related-list,
+.field-list,
+.glossary-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .info-card,
 .section-card,
 .glossary-card {
-  padding: 1.25rem;
+  padding: 1.2rem;
 }
 
 .info-card,
 .section-card,
 .glossary-card,
 .tool-panel,
-.cluster-panel {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 252, 253, 0.76));
-}
-
-.section-card-link {
-  display: grid;
-  gap: 0.45rem;
-  color: inherit;
-  text-decoration: none;
-}
-
-.section-card-link:hover {
-  border-color: rgba(13, 139, 139, 0.24);
-  background:
-    radial-gradient(circle at 96% 12%, rgba(242, 140, 40, 0.11), transparent 13rem),
-    rgba(255, 255, 255, 0.92);
-  box-shadow: var(--vn-shadow-hover);
-  transform: translateY(-1px);
-}
-
-.section-card-link p:last-child {
-  margin-bottom: 0;
+.cluster-panel,
+.about-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(251, 250, 246, 0.78));
 }
 
 .cluster-list {
   display: grid;
-  gap: 1.25rem;
+  gap: clamp(1.05rem, 2.5vw, 1.45rem);
 }
 
 .cluster-panel {
   display: grid;
-  gap: 1.25rem;
-  padding: 1.25rem;
+  gap: 1.1rem;
+  padding: clamp(1.05rem, 2.8vw, 1.45rem);
 }
 
 .cluster-panel-header {
@@ -440,1002 +495,9 @@ li {
 }
 
 .cluster-panel-header h2 {
-  max-width: 760px;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
-}
-
-.section-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.section-header {
-  display: grid;
-  gap: 1rem;
-  padding: clamp(1.5rem, 4vw, 3rem);
-  border-bottom: 1px solid var(--vn-border-soft);
-  background:
-    radial-gradient(circle at 96% 0%, rgba(13, 139, 139, 0.1), transparent 16rem),
-    rgba(255, 255, 255, 0.3);
-}
-
-.reader-layout {
-  overflow: hidden;
-  border: 1px solid var(--vn-border-soft);
-  border-radius: 1.5rem;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: var(--vn-shadow-card);
-}
-
-.student-problem {
-  max-width: 760px;
-  padding: 1rem;
-  border-left: 4px solid rgba(13, 139, 139, 0.42);
-  border-radius: 1rem;
-  background:
-    linear-gradient(135deg, rgba(223, 240, 245, 0.74), rgba(255, 247, 234, 0.62));
-}
-
-.student-problem span {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: var(--vn-teal-deep);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.student-problem p {
-  margin-bottom: 0;
-}
-
-.section-body {
-  display: grid;
-  gap: 1.05rem;
-  max-width: 760px;
-  padding: clamp(1.5rem, 4vw, 3rem);
-}
-
-.section-body h2 {
-  margin-top: 1.35rem;
-  margin-bottom: 0.15rem;
-}
-
-.section-body h2:first-child {
-  margin-top: 0;
-}
-
-.section-body p {
-  margin-bottom: 0;
-  color: var(--vn-ink-muted);
-  font-size: 1.08rem;
-  line-height: 1.76;
-}
-
-.placeholder-copy {
-  border: 1px dashed rgba(13, 139, 139, 0.34);
-  border-radius: 1rem;
-  background: rgba(223, 240, 245, 0.44);
-  padding: 1rem;
-}
-
-.related-panel {
-  display: grid;
-  gap: 0.9rem;
-  margin: 0 clamp(1.5rem, 4vw, 3rem);
-  padding: clamp(1rem, 3vw, 1.35rem);
-  background:
-    linear-gradient(180deg, rgba(248, 252, 253, 0.88), rgba(255, 255, 255, 0.72));
-}
-
-.related-panel h2 {
-  font-size: 1.12rem;
-}
-
-.related-list {
-  gap: 0.85rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.related-card {
-  display: grid;
-  gap: 0.42rem;
-  border: 1px solid rgba(13, 139, 139, 0.16);
-  border-radius: 1rem;
-  background: var(--vn-card-warm);
-  color: inherit;
-  padding: 0.95rem;
-  text-align: left;
-}
-
-.related-card span {
-  color: var(--vn-teal-deep);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.related-card p {
-  margin-bottom: 0;
-}
-
-.section-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.85rem;
-  padding: clamp(1.25rem, 3vw, 2.25rem) clamp(1.5rem, 4vw, 3rem)
-    clamp(1.5rem, 4vw, 3rem);
-}
-
-.section-nav-button {
-  display: grid;
-  gap: 0.32rem;
-  border: 1px solid rgba(13, 139, 139, 0.16);
-  border-radius: 1rem;
-  background: var(--vn-card-warm);
-  color: inherit;
-  padding: 0.95rem;
-  text-align: left;
-}
-
-.section-nav-button span {
-  color: var(--vn-teal-deep);
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.tool-list {
-  grid-template-columns: 1fr;
-}
-
-.tool-panel {
-  display: grid;
-  gap: 1.25rem;
-  padding: 1.25rem;
-}
-
-.tool-panel-header {
-  max-width: 760px;
-}
-
-.tool-section {
-  max-width: 820px;
-}
-
-.tool-section ol {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-.field-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.field-card {
-  border: 1px solid rgba(13, 139, 139, 0.16);
-  border-radius: 1rem;
-  background: rgba(255, 247, 234, 0.82);
-  padding: 1rem;
-}
-
-.field-card p {
-  margin-bottom: 0;
-}
-
-.glossary-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.glossary-card h2 {
-  font-size: 1.25rem;
-}
-
-.muted-copy {
-  color: var(--vn-muted-text);
-}
-
-.drawer-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 40;
-  display: flex;
-  justify-content: flex-end;
-  background: rgba(18, 48, 71, 0.34);
-  backdrop-filter: blur(5px);
-}
-
-.tool-drawer {
-  width: min(520px, 100%);
-  height: 100vh;
-  overflow-y: auto;
-  border-left: 1px solid rgba(13, 139, 139, 0.2);
-  background:
-    radial-gradient(circle at 100% 0%, rgba(13, 139, 139, 0.1), transparent 16rem),
-    var(--vn-paper-warm);
-  box-shadow: -24px 0 64px rgba(18, 48, 71, 0.24);
-  padding: clamp(1.15rem, 3vw, 1.85rem);
-}
-
-.tool-drawer-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.tool-drawer-header h2 {
-  margin-bottom: 0;
-}
-
-.drawer-close-button {
-  border: 1px solid rgba(13, 139, 139, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--vn-teal-deep);
-  cursor: pointer;
-  font-weight: 800;
-  padding: 0.55rem 0.85rem;
-}
-
-.tool-drawer-section {
-  display: grid;
-  gap: 0.7rem;
-  margin-bottom: 1.35rem;
-}
-
-.tool-drawer-section h3 {
-  margin-bottom: 0;
-}
-
-.tool-drawer-section p,
-.tool-drawer-section li {
-  margin-bottom: 0;
-}
-
-.tool-drawer-section ol,
-.tool-drawer-section ul {
-  display: grid;
-  gap: 0.6rem;
-  margin: 0;
-  padding-left: 1.3rem;
-}
-
-.drawer-field-list {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.drawer-field-card {
-  border: 1px solid rgba(13, 139, 139, 0.16);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.68);
-  padding: 0.9rem;
-}
-
-.drawer-field-card p {
-  margin-bottom: 0;
-}
-
-.glossary-term-panel {
-  display: grid;
-  gap: 0.85rem;
-  margin: 0 clamp(1.5rem, 4vw, 3rem);
-  padding: clamp(1rem, 3vw, 1.35rem);
-  border: 1px solid rgba(13, 139, 139, 0.16);
-  border-radius: 1.5rem;
-  background:
-    linear-gradient(135deg, rgba(223, 240, 245, 0.58), rgba(255, 255, 255, 0.72));
-}
-
-.glossary-term-panel h2 {
-  margin-bottom: 0;
-  font-size: 1.12rem;
-}
-
-.glossary-chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.glossary-chip {
-  border: 1px solid rgba(13, 139, 139, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
-  color: var(--vn-soft-text);
-  cursor: pointer;
-  font-size: 0.94rem;
-  font-weight: 800;
-  padding: 0.5rem 0.72rem;
-}
-
-.glossary-chip:hover,
-.glossary-chip.active {
-  border-color: rgba(13, 139, 139, 0.34);
-  background: var(--vn-card-warm);
-  color: var(--vn-teal-deep);
-  box-shadow: 0 8px 18px rgba(18, 48, 71, 0.06);
-}
-
-.glossary-popup {
-  display: grid;
-  gap: 0.7rem;
-  max-width: 680px;
-  border: 1px solid rgba(13, 139, 139, 0.18);
-  border-radius: 1.25rem;
-  background: var(--vn-paper-warm);
-  padding: 0.95rem;
-  box-shadow: 0 12px 28px rgba(18, 48, 71, 0.08);
-}
-
-.glossary-popup-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.glossary-popup-header h3 {
-  margin-bottom: 0;
-}
-
-.small-close-button {
-  border: 1px solid rgba(13, 139, 139, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--vn-teal-deep);
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 800;
-  padding: 0.4rem 0.65rem;
-}
-
-.glossary-popup p {
-  margin-bottom: 0;
-}
-
-.section-list {
-  display: grid;
-  gap: 0.55rem;
-  margin: 0.1rem 0 0.15rem;
-  padding-left: 1.45rem;
-}
-
-.section-list li {
-  padding-left: 0.2rem;
-  color: var(--vn-ink-muted);
-  line-height: 1.65;
-}
-
-.section-body .section-list + h2 {
-  margin-top: 1.4rem;
-}
-
-@media (max-width: 860px) {
-  .site-header,
-  .cluster-panel-header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .site-nav {
-    justify-content: flex-start;
-  }
-
-  .three-column-grid,
-  .section-grid,
-  .related-list,
-  .field-list,
-  .glossary-list {
-    grid-template-columns: 1fr;
-  }
-
-  .section-navigation {
-    grid-template-columns: 1fr;
-  }
-
-  .align-right {
-    text-align: left;
-  }
-}
-
-@media (max-width: 640px) {
-  .drawer-backdrop {
-    justify-content: stretch;
-  }
-
-  .tool-drawer {
-    width: 100%;
-  }
-
-  .tool-drawer-header,
-  .glossary-popup-header {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 520px) {
-  .brand-button small {
-    display: none;
-  }
-
-  .main-content {
-    padding: 1rem;
-  }
-
-  .site-header {
-    padding: 0.85rem 1rem;
-  }
-
-  .nav-link {
-    padding: 0.45rem 0.65rem;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 13vw, 3rem);
-  }
-
-  .section-body p {
-    font-size: 1.02rem;
-  }
-}
-/* === UI Pass 02 refinement: shared brand accents and heading correction === */
-
-:root {
-  --vn-orange-deep: #d97706;
-  --vn-orange-soft: rgba(242, 140, 40, 0.16);
-  --vn-orange-glow: rgba(242, 140, 40, 0.24);
-  --vn-blue-accent: #2a7ba2;
-}
-
-/* Keep most app headings modern and aligned with the tool interface. */
-h1,
-h2 {
-  font-family: var(--vn-font-body);
-  font-weight: 800;
-  letter-spacing: -0.035em;
-}
-
-/* Use Spectral only where the guide benefits from a more editorial feel. */
-.hero-card h1 {
-  font-family: var(--vn-font-heading);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-
-.hero-card {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 94% 12%, rgba(242, 140, 40, 0.2), transparent 18rem),
-    radial-gradient(circle at 4% 6%, rgba(13, 139, 139, 0.12), transparent 18rem),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(237, 244, 246, 0.8));
-}
-
-.hero-card::after {
-  content: "";
-  position: absolute;
-  right: clamp(1.25rem, 4vw, 3rem);
-  bottom: 0;
-  width: min(240px, 35%);
-  height: 4px;
-  border-radius: 999px 999px 0 0;
-  background: linear-gradient(90deg, var(--vn-teal), var(--vn-orange));
-  opacity: 0.9;
-}
-
-.brand-mark {
-  position: relative;
-  border-color: rgba(242, 140, 40, 0.38);
-  background:
-    radial-gradient(circle at 72% 22%, rgba(242, 140, 40, 0.24), transparent 1.05rem),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(223, 240, 245, 0.94));
-  color: var(--vn-ink);
-}
-
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  right: 0.35rem;
-  bottom: 0.35rem;
-  width: 0.42rem;
-  height: 0.42rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-}
-
-.nav-link:hover {
-  border-color: rgba(13, 139, 139, 0.24);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(223, 240, 245, 0.58));
-  color: var(--vn-teal-deep);
-}
-
-.nav-link.active {
-  border-color: rgba(242, 140, 40, 0.42);
-  background:
-    linear-gradient(135deg, rgba(242, 140, 40, 0.16), rgba(255, 255, 255, 0.82));
-  color: var(--vn-ink);
-  box-shadow:
-    inset 0 -2px 0 rgba(242, 140, 40, 0.75),
-    0 8px 18px rgba(18, 48, 71, 0.06);
-}
-
-/* Let small labels carry more brand colour without making the prose loud. */
-.eyebrow {
-  color: var(--vn-orange-deep);
-}
-
-.cluster-label,
-.tool-type {
-  color: var(--vn-teal-deep);
-}
-
-/* Make the student-problem panel feel more like a guide cue. */
-.student-problem {
-  border-left-color: rgba(242, 140, 40, 0.82);
-  background:
-    radial-gradient(circle at 96% 0%, rgba(242, 140, 40, 0.14), transparent 10rem),
-    linear-gradient(135deg, rgba(255, 247, 234, 0.88), rgba(223, 240, 245, 0.58));
-}
-
-.student-problem span {
-  color: var(--vn-orange-deep);
-}
-
-/* Add warmer signposting to cards without making every card orange. */
-.related-card span,
-.section-nav-button span {
-  color: var(--vn-orange-deep);
-}
-
-.related-card:hover,
-.section-nav-button:hover {
-  border-color: rgba(242, 140, 40, 0.34);
-  background:
-    radial-gradient(circle at 96% 12%, rgba(242, 140, 40, 0.12), transparent 9rem),
-    var(--vn-card-warm);
-}
-
-/* Give glossary interactions a little more brand character. */
-.glossary-chip.active {
-  border-color: rgba(242, 140, 40, 0.42);
-  background:
-    linear-gradient(135deg, rgba(242, 140, 40, 0.16), rgba(255, 255, 255, 0.84));
-  color: var(--vn-ink);
-}
-
-.glossary-popup {
-  border-color: rgba(242, 140, 40, 0.26);
-  background:
-    radial-gradient(circle at 100% 0%, rgba(242, 140, 40, 0.1), transparent 10rem),
-    var(--vn-paper-warm);
-}
-
-/* Keep section reader headings less decorative and easier to scan. */
-.section-body h2,
-.related-panel h2,
-.glossary-term-panel h2,
-.tool-drawer-header h2 {
-  font-family: var(--vn-font-body);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-}
-
-/* Add one restrained orange cue inside the reader rhythm. */
-.section-body h2 {
-  position: relative;
-}
-
-.section-body h2::before {
-  content: "";
-  display: inline-block;
-  width: 0.42rem;
-  height: 0.42rem;
-  margin-right: 0.45rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  transform: translateY(-0.12rem);
-}
-/* === Replace tiny orange heading dot with a more present accent bar === */
-
-.section-body h2 {
-  position: relative;
-  padding-left: 1rem;
-  border-left: none;
-}
-
-.section-body h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.32em;
-  width: 0.38rem;
-  height: 1.05rem;
-  border-radius: 999px;
-  background: linear-gradient(180deg, var(--vn-orange), var(--vn-orange-deep));
-  box-shadow: 0 0 0 1px rgba(242, 140, 40, 0.08);
-}
-/* === Section heading accent: full-height orange bar with subtle fade === */
-
-.section-body h2 {
-  position: relative;
-  isolation: isolate;
-  padding-left: 1rem;
-  border-left: none;
-}
-
-.section-body h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.08em;
-  bottom: 0.08em;
-  width: 0.38rem;
-  border-radius: 999px;
-  background: linear-gradient(180deg, var(--vn-orange), var(--vn-orange-deep));
-  opacity: 0.95;
-  z-index: -1;
-}
-
-.section-body h2::after {
-  content: "";
-  position: absolute;
-  left: 0.15rem;
-  top: -0.18rem;
-  bottom: -0.18rem;
-  width: min(18rem, 78%);
-  border-radius: 0.65rem;
-  background: linear-gradient(
-    90deg,
-    rgba(242, 140, 40, 0.14),
-    rgba(242, 140, 40, 0.07) 42%,
-    rgba(242, 140, 40, 0) 100%
-  );
-  z-index: -2;
-  pointer-events: none;
-}
-
-/* === Section heading treatment: student-problem style cue headers === */
-
-.section-body h2 {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  padding: 0.62rem 1rem 0.68rem 1.05rem;
-  border: 1px solid rgba(234, 179, 8, 0.34);
-  border-left: 6px solid rgba(242, 140, 40, 0.86);
-  border-radius: 0.95rem;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(242, 140, 40, 0.14), transparent 9rem),
-    linear-gradient(135deg, rgba(255, 247, 214, 0.92), rgba(255, 255, 255, 0.74));
-  box-shadow: 0 8px 18px rgba(18, 48, 71, 0.055);
-  color: var(--vn-heading-text);
-  isolation: auto;
-}
-
-/* Fully remove the previous dot/bar/fade treatment. */
-.section-body h2::before,
-.section-body h2::after {
-  content: none;
-}
-/* === Section heading treatment: left cue with right-side fade === */
-
-.section-body h2 {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  padding: 0.62rem 1.25rem 0.68rem 1.05rem;
-  border: none;
-  border-left: 6px solid rgba(242, 140, 40, 0.88);
-  border-radius: 0.95rem 0 0 0.95rem;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 247, 214, 0.96) 0%,
-      rgba(255, 247, 214, 0.72) 48%,
-      rgba(255, 247, 214, 0.28) 76%,
-      rgba(255, 247, 214, 0) 100%
-    );
-  box-shadow: none;
-  color: var(--vn-heading-text);
-  isolation: auto;
-}
-
-.section-body h2::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: min(100%, 22rem);
-  border-radius: 0.95rem 0 0 0.95rem;
-  background:
-    radial-gradient(circle at 0% 50%, rgba(242, 140, 40, 0.16), transparent 12rem);
-  pointer-events: none;
-  z-index: -1;
-}
-
-.section-body h2::after {
-  content: none;
-}
-
-/* === Home page normalization: align hero/header styling with the rest of the app === */
-
-.hero-card,
-.page-header {
-  border-color: rgba(13, 139, 139, 0.18);
-  background:
-    radial-gradient(circle at 94% 10%, rgba(242, 140, 40, 0.16), transparent 16rem),
-    radial-gradient(circle at 2% 0%, rgba(13, 139, 139, 0.12), transparent 18rem),
-    rgba(255, 255, 255, 0.82);
-}
-
-/* Remove the special homepage underline treatment so Home feels consistent. */
-.hero-card::after {
-  content: none;
-}
-
-/* Keep Home and internal page headers in the same typography system. */
-.hero-card h1,
-.page-header h1 {
-  font-family: var(--vn-font-body);
-  font-weight: 800;
-  letter-spacing: -0.035em;
-  color: var(--vn-heading-text);
-}
-
-/* Keep homepage supporting text aligned with other page intros. */
-.hero-card > p,
-.page-header > p {
-  color: var(--vn-muted-text);
-}
-
-/* Make homepage cards feel like the rest of the app cards. */
-.hero-card .primary-button,
-.hero-card .secondary-button {
-  margin-top: 0.25rem;
-}
-/* === Shared VitalNotes brand mark === */
-
-.brand-mark {
-  display: grid;
-  width: 2.6rem;
-  height: 2.6rem;
-  place-items: center;
-  border: 1px solid rgba(226, 240, 244, 0.38);
-  border-radius: 0.85rem;
-  background: #ffffff;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
-  overflow: hidden;
-}
-
-.brand-mark::after {
-  content: none;
-}
-
-.brand-mark img {
-  display: block;
-  width: 2.15rem;
-  height: 2.15rem;
-  object-fit: contain;
-}
-/* === Student problem treatment: left cue with right-side fade === */
-
-.student-problem {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  border-left: 6px solid rgba(242, 140, 40, 0.88);
-  border-radius: 0.95rem 0 0 0.95rem;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 247, 214, 0.96) 0%,
-      rgba(255, 247, 214, 0.76) 48%,
-      rgba(255, 247, 214, 0.32) 76%,
-      rgba(255, 247, 214, 0) 100%
-    );
-  box-shadow: none;
-}
-
-.student-problem::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: min(100%, 28rem);
-  border-radius: 0.95rem 0 0 0.95rem;
-  background:
-    radial-gradient(circle at 0% 50%, rgba(242, 140, 40, 0.16), transparent 14rem);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.student-problem span,
-.student-problem p {
-  position: relative;
-  z-index: 1;
-}
-
-.student-problem span {
-  color: var(--vn-orange-deep);
-}
-
-.student-problem p {
-  color: #3d4f5f;
-}
-/* ==========================================================================
-   UI Polish Pass 03 - Reader Comfort and Interface Consistency
-   Append this block to the bottom of: src/styles/index.css
-
-   Scope:
-   - visual comfort
-   - spacing and hierarchy
-   - reader rhythm
-   - card consistency
-   - related panel balance
-   - tool drawer readability
-   - glossary support
-   - mobile/narrow-width comfort
-
-   No content, route, tool, architecture, or feature changes.
-   ========================================================================== */
-
-:root {
-  --vn-reader-width: 740px;
-  --vn-reader-wide: 880px;
-  --vn-radius-soft: 1.25rem;
-  --vn-radius-panel: 1.45rem;
-  --vn-shadow-soft: 0 12px 28px rgba(18, 48, 71, 0.065);
-  --vn-shadow-card: 0 16px 38px rgba(18, 48, 71, 0.085);
-  --vn-shadow-hover: 0 18px 42px rgba(18, 48, 71, 0.11);
-}
-
-/* Keep the global frame spacious without making the app feel like a dashboard. */
-.main-content {
-  width: min(1140px, 100%);
-  padding-top: clamp(1rem, 3vw, 2.4rem);
-  padding-bottom: clamp(2rem, 5vw, 4rem);
-}
-
-.page-stack {
-  gap: clamp(1.1rem, 2.5vw, 1.6rem);
-}
-
-/* Header polish: keep the sticky nav useful, but visually quiet. */
-.site-header {
-  padding-block: 0.82rem;
-  background: rgba(248, 251, 252, 0.92);
-  box-shadow: 0 6px 18px rgba(18, 48, 71, 0.04);
-}
-
-.brand-mark {
-  flex: 0 0 auto;
-}
-
-.brand-mark img {
-  display: block;
-  width: 1.55rem;
-  height: 1.55rem;
-}
-
-.nav-link {
-  padding: 0.5rem 0.78rem;
-}
-
-/* Hero and page headers should feel finished, not oversized. */
-.hero-card,
-.page-header {
-  border-radius: var(--vn-radius-panel);
-}
-
-.page-header h1,
-.hero-card h1 {
-  max-width: 760px;
-}
-
-.page-header > p,
-.hero-card > p {
-  max-width: var(--vn-reader-width);
-}
-
-/* Reader page comfort. */
-.reader-layout {
-  gap: 0;
-  border-radius: var(--vn-radius-panel);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 252, 253, 0.8));
-}
-
-.section-header {
-  padding-top: clamp(1.55rem, 4vw, 2.7rem);
-  padding-bottom: clamp(1.35rem, 3vw, 2.15rem);
-}
-
-.section-header h1 {
-  max-width: var(--vn-reader-width);
-  margin-bottom: 0.8rem;
-}
-
-.section-subtitle {
-  max-width: var(--vn-reader-width);
-  line-height: 1.65;
-}
-
-/* The student problem should guide orientation, not shout at the reader. */
-.student-problem {
-  max-width: var(--vn-reader-width);
-  padding: 0.95rem 1rem;
-  border-left-width: 3px;
-  background:
-    linear-gradient(135deg, rgba(223, 240, 245, 0.58), rgba(255, 247, 234, 0.54));
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
-}
-
-.student-problem p {
-  color: var(--vn-ink-muted);
-  line-height: 1.65;
-}
-
-/* Main reading body. */
-.section-body {
-  width: 100%;
-  max-width: var(--vn-reader-width);
-  margin: 0 auto;
-  gap: 1.12rem;
-  padding-top: clamp(1.6rem, 4vw, 2.65rem);
-  padding-bottom: clamp(1.6rem, 4vw, 2.65rem);
-}
-
-.section-body p {
-  color: var(--vn-ink-muted);
-  font-size: clamp(1.03rem, 1.2vw, 1.08rem);
-  line-height: 1.78;
-}
-
-.section-body h2 {
-  margin-top: 2.05rem;
-  margin-bottom: 0.1rem;
-  font-size: clamp(1.34rem, 2vw, 1.72rem);
-  line-height: 1.18;
-}
-
-.section-body h2:first-child {
-  margin-top: 0;
-}
-
-.section-list {
-  gap: 0.62rem;
-  margin: 0.15rem 0 0.25rem;
-}
-
-.section-list li {
-  line-height: 1.68;
-}
-
-/* Learning path and section card polish. */
-.cluster-list {
-  gap: clamp(1.05rem, 2.5vw, 1.45rem);
-}
-
-.cluster-panel {
-  gap: 1.1rem;
-  border-radius: var(--vn-radius-panel);
-  padding: clamp(1.05rem, 2.8vw, 1.45rem);
-}
-
-.cluster-panel-header h2 {
   max-width: var(--vn-reader-wide);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
   line-height: 1.22;
-}
-
-.section-grid {
-  gap: 0.95rem;
 }
 
 .section-card,
@@ -1444,10 +506,13 @@ h2 {
 }
 
 .section-card-link {
+  display: grid;
+  gap: 0.45rem;
   border-radius: var(--vn-radius-soft);
-  padding: 1.18rem;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.78));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(251, 250, 246, 0.78));
+  color: inherit;
+  padding: 1.16rem;
+  text-decoration: none;
 }
 
 .section-card-link h3 {
@@ -1456,36 +521,178 @@ h2 {
   line-height: 1.28;
 }
 
-.section-card-link p {
+.section-card-link p,
+.section-card-link p:last-child {
+  margin-bottom: 0;
   line-height: 1.58;
 }
 
 .section-card-link:hover {
+  border-color: rgba(242, 140, 40, 0.28);
   background:
     radial-gradient(circle at 96% 10%, rgba(242, 140, 40, 0.09), transparent 11rem),
     rgba(255, 255, 255, 0.94);
+  box-shadow: var(--vn-shadow-hover);
+  transform: translateY(-1px);
 }
 
-/* Related panels should be useful but secondary. */
+.section-card-action {
+  width: fit-content;
+  margin-top: 0.25rem;
+  color: var(--vn-orange-deep);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-card-link:hover .section-card-action,
+.section-card-link:focus-visible .section-card-action {
+  color: var(--vn-teal-deep);
+}
+
+/* Section reader */
+.reader-layout {
+  gap: 0;
+  overflow: hidden;
+  border-radius: var(--vn-radius-panel);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(251, 250, 246, 0.8));
+  box-shadow: var(--vn-shadow-card);
+}
+
+.section-header {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.55rem, 4vw, 2.7rem) clamp(1.5rem, 4vw, 3rem) clamp(1.35rem, 3vw, 2.15rem);
+  border-bottom: 1px solid var(--vn-border-soft);
+  background:
+    radial-gradient(circle at 96% 0%, rgba(242, 140, 40, 0.11), transparent 16rem),
+    rgba(255, 255, 255, 0.28);
+}
+
+.section-header h1 {
+  max-width: var(--vn-reader-width);
+  margin-bottom: 0.8rem;
+}
+
+.section-body {
+  display: grid;
+  width: 100%;
+  max-width: var(--vn-reader-width);
+  gap: 1.12rem;
+  padding: clamp(1.6rem, 4vw, 2.65rem) clamp(1.5rem, 4vw, 3rem);
+}
+
+.section-body p {
+  margin-bottom: 0;
+  color: var(--vn-ink-muted);
+  font-size: clamp(1.03rem, 1.2vw, 1.08rem);
+  line-height: 1.78;
+}
+
+.section-body h2 {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 2.05rem;
+  margin-bottom: 0.1rem;
+  padding: 0.62rem 1.25rem 0.68rem 1.05rem;
+  border: none;
+  border-left: 5px solid rgba(242, 140, 40, 0.88);
+  border-radius: 0.95rem 0 0 0.95rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 214, 0.94) 0%,
+    rgba(255, 247, 214, 0.66) 50%,
+    rgba(255, 247, 214, 0.22) 78%,
+    rgba(255, 247, 214, 0) 100%
+  );
+  color: var(--vn-heading-text);
+  font-family: var(--vn-font-body);
+  font-size: clamp(1.34rem, 2vw, 1.72rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+}
+
+.section-body h2:first-child {
+  margin-top: 0;
+}
+
+.section-body h2::before,
+.section-body h2::after {
+  content: none;
+}
+
+.section-list {
+  display: grid;
+  gap: 0.62rem;
+  margin: 0.15rem 0 0.25rem;
+  padding-left: 1.45rem;
+}
+
+.section-list li {
+  padding-left: 0.2rem;
+  color: var(--vn-ink-muted);
+  line-height: 1.68;
+}
+
+.section-body .section-list + h2 {
+  margin-top: 1.4rem;
+}
+
+.placeholder-copy {
+  border: 1px dashed rgba(242, 140, 40, 0.34);
+  border-radius: 1rem;
+  background: rgba(255, 247, 234, 0.6);
+  padding: 1rem;
+}
+
+.student-problem {
+  position: relative;
+  max-width: var(--vn-reader-width);
+  overflow: hidden;
+  border: none;
+  border-left: 3px solid rgba(242, 140, 40, 0.82);
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, rgba(255, 247, 234, 0.78), rgba(255, 255, 255, 0.54));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
+  padding: 0.95rem 1rem;
+}
+
+.student-problem span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--vn-orange-deep);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.student-problem p {
+  margin-bottom: 0;
+  color: var(--vn-ink-muted);
+  line-height: 1.65;
+}
+
+/* Glossary and related panels */
 .related-panel,
 .glossary-term-panel {
-  width: calc(100% - clamp(3rem, 8vw, 6rem));
-  max-width: var(--vn-reader-wide);
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: var(--vn-radius-panel);
-}
-
-.related-panel {
+  display: grid;
   gap: 0.85rem;
-  background:
-    linear-gradient(180deg, rgba(248, 252, 253, 0.76), rgba(255, 255, 255, 0.68));
-  box-shadow: 0 10px 24px rgba(18, 48, 71, 0.055);
+  border-radius: var(--vn-radius-panel);
+  background: linear-gradient(180deg, rgba(251, 250, 246, 0.76), rgba(255, 255, 255, 0.68));
+  padding: clamp(1rem, 3vw, 1.35rem);
+  box-shadow: 0 10px 24px rgba(31, 41, 51, 0.055);
 }
 
 .related-panel h2,
 .glossary-term-panel h2 {
+  margin-bottom: 0;
+  font-family: var(--vn-font-body);
   font-size: 1.05rem;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 
@@ -1494,37 +701,78 @@ h2 {
 }
 
 .related-card {
+  display: grid;
+  gap: 0.42rem;
+  border: 1px solid rgba(242, 140, 40, 0.18);
   border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.74);
+  color: inherit;
   padding: 0.88rem;
+  text-align: left;
 }
 
-.related-card strong {
-  line-height: 1.28;
+.related-card span,
+.section-nav-button span {
+  color: var(--vn-orange-deep);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.related-card p {
+.related-card p,
+.related-card p:last-child {
+  margin-bottom: 0;
   color: var(--vn-muted-text);
   line-height: 1.55;
 }
 
-/* Section navigation should remain obvious without overpowering related panels. */
 .section-navigation {
-  max-width: var(--vn-reader-wide);
-  width: 100%;
-  margin: 0 auto;
-  padding-top: clamp(1.15rem, 3vw, 1.7rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  padding: clamp(1rem, 3vw, 1.35rem) clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 4vw, 3rem);
 }
 
 .section-nav-button {
+  display: grid;
+  min-height: 100%;
+  gap: 0.32rem;
+  border: 1px solid rgba(242, 140, 40, 0.18);
   border-radius: 1rem;
   background: rgba(255, 247, 234, 0.74);
+  color: inherit;
   padding: 0.92rem 1rem;
+  text-align: left;
 }
 
-/* Tools Library and Tool Drawer readability. */
+.align-right {
+  text-align: right;
+}
+
+/* Reader bottom alignment */
+.reader-layout .glossary-term-panel,
+.reader-layout .related-panel,
+.reader-layout .section-navigation {
+  width: auto;
+  max-width: var(--vn-reader-wide);
+  margin-left: clamp(1.5rem, 4vw, 3rem);
+  margin-right: clamp(1.5rem, 4vw, 3rem);
+}
+
+.reader-layout .section-navigation {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Tools */
+.tool-list {
+  grid-template-columns: 1fr;
+}
+
 .tool-panel {
-  border-radius: var(--vn-radius-panel);
+  display: grid;
+  gap: 1.25rem;
   padding: clamp(1.1rem, 3vw, 1.45rem);
 }
 
@@ -1542,9 +790,12 @@ h2 {
   margin-bottom: 0;
 }
 
-.tool-section ol {
+.tool-section ol,
+.tool-section ul {
   display: grid;
   gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.25rem;
 }
 
 .field-list {
@@ -1553,61 +804,195 @@ h2 {
 
 .field-card,
 .drawer-field-card {
+  border: 1px solid rgba(242, 140, 40, 0.16);
   border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.72);
+  padding: 1rem;
+}
+
+.field-card p,
+.drawer-field-card p {
+  margin-bottom: 0;
+}
+
+.tool-example {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+.tool-example summary {
+  list-style: none;
+}
+
+.tool-example summary::-webkit-details-marker {
+  display: none;
+}
+
+.tool-example-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.tool-example-button::after {
+  content: "↓";
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tool-example[open] .tool-example-button::after {
+  content: "↑";
+}
+
+.tool-example-content {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.15rem;
+}
+
+/* Tool drawer */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(31, 41, 51, 0.34);
+  backdrop-filter: blur(5px);
 }
 
 .tool-drawer {
   width: min(500px, 100%);
+  height: 100vh;
+  overflow-y: auto;
+  border-left: 1px solid rgba(242, 140, 40, 0.2);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(242, 140, 40, 0.1), transparent 16rem),
+    var(--vn-paper-warm);
+  box-shadow: -24px 0 64px rgba(31, 41, 51, 0.24);
   padding: clamp(1.05rem, 3vw, 1.65rem);
 }
 
 .tool-drawer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 1.25rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(18, 48, 71, 0.09);
+  border-bottom: 1px solid rgba(31, 41, 51, 0.09);
+}
+
+.tool-drawer-header h2 {
+  margin-bottom: 0;
+  font-family: var(--vn-font-body);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.drawer-close-button,
+.small-close-button {
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.drawer-close-button {
+  padding: 0.55rem 0.85rem;
+}
+
+.small-close-button {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.65rem;
 }
 
 .tool-drawer-section {
+  display: grid;
   gap: 0.62rem;
   margin-bottom: 1.22rem;
 }
 
 .tool-drawer-section h3 {
+  margin-bottom: 0;
   font-size: 1rem;
 }
 
 .tool-drawer-section p,
 .tool-drawer-section li {
+  margin-bottom: 0;
   line-height: 1.62;
 }
 
+.tool-drawer-section ol,
+.tool-drawer-section ul {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
 .drawer-field-list {
+  display: grid;
   gap: 0.65rem;
 }
 
-/* Glossary support should feel nearby, not like a second textbook. */
-.glossary-term-panel {
-  background:
-    linear-gradient(135deg, rgba(223, 240, 245, 0.44), rgba(255, 255, 255, 0.66));
-}
-
+/* Glossary */
 .glossary-chip-row {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
 }
 
 .glossary-chip {
-  padding: 0.45rem 0.66rem;
+  border: 1px solid rgba(242, 140, 40, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--vn-soft-text);
+  cursor: pointer;
   font-size: 0.9rem;
+  font-weight: 800;
+  padding: 0.45rem 0.66rem;
+}
+
+.glossary-chip:hover,
+.glossary-chip.active {
+  border-color: rgba(242, 140, 40, 0.42);
+  background: linear-gradient(135deg, rgba(242, 140, 40, 0.16), rgba(255, 255, 255, 0.84));
+  color: var(--vn-heading-text);
+  box-shadow: 0 8px 18px rgba(31, 41, 51, 0.055);
 }
 
 .glossary-popup {
+  display: grid;
   max-width: var(--vn-reader-width);
+  gap: 0.7rem;
+  border: 1px solid rgba(242, 140, 40, 0.24);
   border-radius: 1.1rem;
-  background: rgba(255, 247, 234, 0.92);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(242, 140, 40, 0.1), transparent 10rem),
+    rgba(255, 247, 234, 0.92);
+  padding: 0.95rem;
+  box-shadow: 0 12px 28px rgba(31, 41, 51, 0.08);
+}
+
+.glossary-popup-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.glossary-popup-header h3 {
+  margin-bottom: 0;
 }
 
 .glossary-popup p {
+  margin-bottom: 0;
   line-height: 1.62;
 }
 
@@ -1629,14 +1014,198 @@ h2 {
   line-height: 1.6;
 }
 
-/* Mobile and narrow-width comfort. */
+/* About and related project pages */
+.about-layout {
+  width: 100%;
+  max-width: none;
+}
+
+.about-panel {
+  display: grid;
+  gap: 0.85rem;
+  width: 100%;
+  padding: clamp(1.15rem, 3vw, 1.55rem);
+}
+
+.about-panel-primary {
+  background:
+    radial-gradient(circle at 96% 8%, rgba(242, 140, 40, 0.12), transparent 14rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(251, 250, 246, 0.76));
+}
+
+.about-panel h2 {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  padding: 0.62rem 1.25rem 0.68rem 1.05rem;
+  border: none;
+  border-left: 5px solid rgba(242, 140, 40, 0.88);
+  border-radius: 0.95rem 0 0 0.95rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 214, 0.94) 0%,
+    rgba(255, 247, 214, 0.66) 50%,
+    rgba(255, 247, 214, 0.22) 78%,
+    rgba(255, 247, 214, 0) 100%
+  );
+  color: var(--vn-heading-text);
+  font-family: var(--vn-font-body);
+  font-size: clamp(1.34rem, 2vw, 1.72rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+}
+
+.about-panel h2::before,
+.about-panel h2::after {
+  content: none;
+}
+
+.about-panel p,
+.about-list,
+.external-resource-card > div {
+  width: min(100%, var(--vn-reader-width));
+  max-width: var(--vn-reader-width);
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.about-panel p {
+  margin-bottom: 0;
+  color: var(--vn-ink-muted);
+  line-height: 1.72;
+}
+
+.about-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.35rem;
+}
+
+.about-list li {
+  color: var(--vn-ink-muted);
+  line-height: 1.65;
+}
+
+.external-resource-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+  background:
+    radial-gradient(circle at 96% 12%, rgba(242, 140, 40, 0.1), transparent 14rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(251, 250, 246, 0.72));
+  padding: clamp(1.1rem, 3vw, 1.45rem);
+}
+
+.external-resource-card h2 {
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.external-resource-card p,
+.external-resource-card p:last-child {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.external-resource-button {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  font-weight: 800;
+  padding: 0.85rem 1.1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(31, 41, 51, 0.1);
+  background: rgba(251, 250, 246, 0.76);
+  backdrop-filter: blur(10px);
+}
+
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1140px, 100%);
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+}
+
+.site-footer-support-text {
+  max-width: 720px;
+  margin: 0;
+  color: var(--vn-muted-text);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.site-footer-support-link {
+  flex: 0 0 auto;
+  border: 1px solid rgba(242, 140, 40, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--vn-orange-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 0.58rem 0.82rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-footer-support-link:hover {
+  border-color: rgba(242, 140, 40, 0.36);
+  background: var(--vn-card-warm);
+  color: var(--vn-orange-deep);
+  box-shadow: 0 8px 18px rgba(31, 41, 51, 0.055);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (min-width: 861px) {
+  .reader-layout .section-body {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 860px) {
-  .site-header {
-    gap: 0.75rem;
+  .site-header,
+  .cluster-panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
   }
 
   .main-content {
     padding-inline: clamp(0.9rem, 4vw, 1.4rem);
+  }
+
+  .three-column-grid,
+  .section-grid,
+  .related-list,
+  .field-list,
+  .glossary-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .align-right {
+    text-align: left;
   }
 
   .section-header,
@@ -1645,9 +1214,18 @@ h2 {
     padding-inline: clamp(1.05rem, 4vw, 1.4rem);
   }
 
-  .related-panel,
-  .glossary-term-panel {
-    width: calc(100% - clamp(2rem, 8vw, 2.8rem));
+  .reader-layout .glossary-term-panel,
+  .reader-layout .related-panel,
+  .reader-layout .section-navigation {
+    width: auto;
+    max-width: none;
+    margin-left: clamp(1rem, 4vw, 1.4rem);
+    margin-right: clamp(1rem, 4vw, 1.4rem);
+  }
+
+  .reader-layout .section-navigation {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .section-card-link {
@@ -1655,15 +1233,44 @@ h2 {
   }
 }
 
+@media (max-width: 760px) {
+  .external-resource-card,
+  .site-footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .external-resource-button {
+    width: 100%;
+  }
+
+  .site-footer-support-link {
+    width: fit-content;
+  }
+}
+
 @media (max-width: 640px) {
+  .drawer-backdrop {
+    justify-content: stretch;
+  }
+
+  .tool-drawer {
+    width: 100%;
+  }
+
+  .tool-drawer-header,
+  .glossary-popup-header {
+    flex-direction: column;
+  }
+
   .site-header {
     padding-block: 0.72rem;
   }
 
   .brand-mark {
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 0.78rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.74rem;
   }
 
   .brand-mark img {
@@ -1712,22 +1319,6 @@ h2 {
 
   .student-problem {
     padding: 0.85rem;
-    border-radius: 0.9rem;
-  }
-
-  .related-panel,
-  .glossary-term-panel {
-    width: calc(100% - 2rem);
-    padding: 1rem;
-  }
-
-  .section-navigation {
-    gap: 0.68rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .section-nav-button {
-    padding: 0.85rem;
   }
 
   .tool-drawer {
@@ -1741,6 +1332,24 @@ h2 {
   .drawer-close-button,
   .small-close-button {
     width: fit-content;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-button small {
+    display: none;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .site-header {
+    padding-inline: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 13vw, 3rem);
   }
 }
 
@@ -1764,9 +1373,11 @@ h2 {
     padding-inline: 0.95rem;
   }
 
-  .related-panel,
-  .glossary-term-panel {
-    width: calc(100% - 1.5rem);
+  .reader-layout .glossary-term-panel,
+  .reader-layout .related-panel,
+  .reader-layout .section-navigation {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .glossary-chip {
@@ -1774,7 +1385,6 @@ h2 {
   }
 }
 
-/* Keep polish gentle for users who prefer less motion. */
 @media (prefers-reduced-motion: reduce) {
   .primary-button,
   .secondary-button,
@@ -1786,7 +1396,9 @@ h2 {
   .card-action-button,
   .glossary-chip,
   .nav-link,
-  .section-card-link {
+  .section-card-link,
+  .external-resource-button,
+  .site-footer-support-link {
     transition: none;
   }
 
@@ -1797,581 +1409,1706 @@ h2 {
   .drawer-close-button:hover,
   .small-close-button:hover,
   .card-action-button:hover,
-  .section-card-link:hover {
+  .section-card-link:hover,
+  .external-resource-button:hover,
+  .site-footer-support-link:hover {
     transform: none;
   }
 }
+
 /* ==========================================================================
-   UI Polish Pass 03 Adjustment
-   Desktop reader alignment should feel grounded, not floating.
-   Keeps mobile behavior unchanged.
+   UI Brand Balance Pass 01 - Teal Support Colour
+   Restores teal as the clinical/support accent while keeping orange as the
+   primary VitalNotes identity cue.
    ========================================================================== */
 
-@media (min-width: 861px) {
-  .reader-layout .section-body {
-    margin-left: 0;
-    margin-right: auto;
-    max-width: var(--vn-reader-width);
-    padding-left: clamp(1.5rem, 4vw, 3rem);
-    padding-right: clamp(1.5rem, 4vw, 3rem);
-  }
+:root {
+  --vn-teal: #287c7a;
+  --vn-teal-deep: #1f6564;
+  --vn-teal-soft: rgba(40, 124, 122, 0.12);
+  --vn-teal-soft-strong: rgba(40, 124, 122, 0.18);
+  --vn-focus: rgba(40, 124, 122, 0.32);
 
-  .reader-layout .glossary-term-panel,
-  .reader-layout .related-panel {
-    width: auto;
-    max-width: var(--vn-reader-wide);
-    margin-left: clamp(1.5rem, 4vw, 3rem);
-    margin-right: clamp(1.5rem, 4vw, 3rem);
-  }
+  /* Teal carries primary actions. Orange remains the cue/identity accent. */
+  --vn-button-start: #287c7a;
+  --vn-button-end: #1f6564;
 
-  .reader-layout .section-navigation {
-    width: auto;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: clamp(1.5rem, 4vw, 3rem);
-    padding-right: clamp(1.5rem, 4vw, 3rem);
-  }
-}
-/* ==========================================================================
-   Tools Library Example Button Polish
-   Makes native details/summary examples feel like app buttons.
-   ========================================================================== */
-
-.tool-example {
-  display: grid;
-  gap: 0.85rem;
-  padding-top: 0.35rem;
-  border-top: 1px solid rgba(18, 48, 71, 0.08);
+  --vn-page-bg:
+    radial-gradient(circle at 12% 10%, rgba(242, 140, 40, 0.11), transparent 30rem),
+    radial-gradient(circle at 88% 4%, rgba(40, 124, 122, 0.13), transparent 28rem),
+    linear-gradient(180deg, #fbfaf6 0%, #f7f3ea 58%, #f2eee6 100%);
 }
 
-.tool-example summary {
-  list-style: none;
+body {
+  background: var(--vn-page-bg);
 }
 
-.tool-example summary::-webkit-details-marker {
-  display: none;
-}
-
-.tool-example-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.tool-example-button::after {
-  content: "↓";
-  font-weight: 800;
-  line-height: 1;
-}
-
-.tool-example[open] .tool-example-button::after {
-  content: "↑";
-}
-
-.tool-example-content {
-  display: grid;
-  gap: 0.85rem;
-  padding-top: 0.15rem;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .tool-example-button:hover {
-    transform: none;
-  }
-}
-/* ===========================================================================
-   About page
-   Keeps the project origin human without turning it into a personal brand page.
-   ========================================================================== */
-
-.about-layout {
-  display: grid;
-  gap: 1rem;
-}
-
-.about-panel {
-  display: grid;
-  gap: 0.85rem;
-  border: 1px solid var(--vn-border-soft);
-  border-radius: var(--vn-radius-panel, 1.45rem);
+/* Teal belongs in navigation and action states. */
+.nav-link:hover,
+.nav-link:focus-visible {
+  border-color: rgba(40, 124, 122, 0.28);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 252, 253, 0.74));
-  box-shadow: var(--vn-shadow-soft);
-  padding: clamp(1.15rem, 3vw, 1.55rem);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(221, 239, 237, 0.62));
+  color: var(--vn-teal-deep);
 }
 
-.about-panel-primary {
+.nav-link.active {
+  border-color: rgba(40, 124, 122, 0.32);
   background:
-    radial-gradient(circle at 96% 8%, rgba(242, 140, 40, 0.12), transparent 14rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 253, 0.76));
+    linear-gradient(135deg, rgba(221, 239, 237, 0.72), rgba(255, 255, 255, 0.82));
+  color: var(--vn-teal-deep);
+  box-shadow:
+    inset 0 -2px 0 rgba(40, 124, 122, 0.78),
+    0 8px 18px rgba(31, 41, 51, 0.06);
 }
 
-.about-panel h2 {
-  max-width: var(--vn-reader-wide, 880px);
-  margin-bottom: 0;
-  font-size: clamp(1.25rem, 2vw, 1.72rem);
-}
-
-.about-panel p {
-  max-width: var(--vn-reader-wide, 880px);
-  margin-bottom: 0;
-  color: var(--vn-ink-muted);
-  line-height: 1.72;
-}
-
-.about-list {
-  display: grid;
-  gap: 0.55rem;
-  max-width: var(--vn-reader-wide, 880px);
-  margin: 0;
-  padding-left: 1.35rem;
-}
-
-.about-list li {
-  color: var(--vn-ink-muted);
-  line-height: 1.65;
-}
-/* ==========================================================================
-   Recovery pass: Scenario Generator button + warm small headers
-   Restores styling that was lost during the About page update.
-   ========================================================================== */
-
-/* Scenario Generator related-project card and button */
-.external-resource-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
-  border: 1px solid var(--vn-border-soft);
-  border-radius: var(--vn-radius-panel, 1.45rem);
-  background:
-    radial-gradient(circle at 96% 12%, rgba(242, 140, 40, 0.1), transparent 14rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(248, 252, 253, 0.72));
-  box-shadow: var(--vn-shadow-soft);
-  padding: clamp(1.1rem, 3vw, 1.45rem);
-}
-
-.external-resource-card h2 {
-  margin-bottom: 0.55rem;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
-}
-
-.external-resource-card p:last-child {
-  max-width: var(--vn-reader-wide, 880px);
-  margin-bottom: 0;
-}
-
+.primary-button,
 .external-resource-button {
-  flex: 0 0 auto;
-  border: 1px solid var(--vn-teal-deep);
-  border-radius: 999px;
+  border-color: var(--vn-teal-deep);
   background:
     linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
-  color: var(--vn-button-text);
-  box-shadow: 0 8px 16px rgba(10, 110, 114, 0.18);
-  font-weight: 800;
-  padding: 0.85rem 1.1rem;
-  text-align: center;
-  text-decoration: none;
-  transition:
-    border-color 150ms ease,
-    background 150ms ease,
-    color 150ms ease,
-    box-shadow 150ms ease,
-    transform 150ms ease;
+  box-shadow: 0 8px 16px rgba(31, 101, 100, 0.18);
 }
 
+.primary-button:hover,
 .external-resource-button:hover {
+  border-color: var(--vn-teal-deep);
   background:
     linear-gradient(135deg, var(--vn-teal-deep), var(--vn-ink-soft));
-  border-color: var(--vn-teal-deep);
-  box-shadow: 0 10px 22px rgba(10, 110, 114, 0.24);
-  color: var(--vn-button-text);
-  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(31, 101, 100, 0.24);
 }
 
-.external-resource-button:focus-visible {
-  outline: 3px solid var(--vn-focus);
-  outline-offset: 3px;
+.secondary-button,
+.card-action-button,
+.drawer-close-button,
+.small-close-button,
+.site-footer-support-link {
+  border-color: rgba(40, 124, 122, 0.22);
+  color: var(--vn-teal-deep);
 }
 
-@media (max-width: 760px) {
-  .external-resource-card {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .external-resource-button {
-    width: 100%;
-  }
+.secondary-button:hover,
+.card-action-button:hover,
+.drawer-close-button:hover,
+.small-close-button:hover,
+.site-footer-support-link:hover {
+  border-color: rgba(40, 124, 122, 0.34);
+  background:
+    linear-gradient(135deg, rgba(221, 239, 237, 0.66), rgba(255, 255, 255, 0.82));
+  color: var(--vn-teal-deep);
 }
 
-/* Warm orange small headers across the app */
-.eyebrow,
-.cluster-label,
-.tool-type,
-.student-problem span,
-.related-card span,
-.section-nav-button span {
+/* Teal should show up as structure, not decoration. */
+.hero-card,
+.page-header {
+  border-color: rgba(40, 124, 122, 0.16);
+  background:
+    radial-gradient(circle at 94% 10%, rgba(242, 140, 40, 0.14), transparent 16rem),
+    radial-gradient(circle at 2% 0%, rgba(40, 124, 122, 0.14), transparent 18rem),
+    rgba(255, 255, 255, 0.84);
+}
+
+.cluster-panel,
+.tool-panel,
+.about-panel,
+.external-resource-card,
+.reader-layout,
+.related-panel,
+.glossary-term-panel {
+  border-color: rgba(40, 124, 122, 0.14);
+}
+
+.cluster-panel,
+.tool-panel,
+.about-panel,
+.external-resource-card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.06), transparent 13rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.76));
+}
+
+.section-card-link:hover,
+.related-card:hover,
+.section-nav-button:hover {
+  border-color: rgba(40, 124, 122, 0.24);
+  background:
+    radial-gradient(circle at 96% 10%, rgba(40, 124, 122, 0.08), transparent 11rem),
+    rgba(255, 255, 255, 0.94);
+}
+
+.section-card-link:hover .section-card-action,
+.section-card-link:focus-visible .section-card-action,
+.text-button:hover {
+  color: var(--vn-teal-deep);
+}
+
+/* Tool drawer gets a little more clinical colour because it is a functional workspace. */
+.tool-drawer {
+  border-left-color: rgba(40, 124, 122, 0.22);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.12), transparent 16rem),
+    var(--vn-paper-warm);
+}
+
+.tool-drawer-header {
+  border-bottom-color: rgba(40, 124, 122, 0.14);
+}
+
+.field-card,
+.drawer-field-card {
+  border-color: rgba(40, 124, 122, 0.16);
+}
+
+.glossary-chip:hover {
+  border-color: rgba(40, 124, 122, 0.32);
+  background:
+    linear-gradient(135deg, rgba(221, 239, 237, 0.66), rgba(255, 255, 255, 0.82));
+  color: var(--vn-teal-deep);
+}
+
+.glossary-chip.active {
+  border-color: rgba(242, 140, 40, 0.42);
+  background:
+    linear-gradient(135deg, rgba(255, 247, 214, 0.88), rgba(255, 255, 255, 0.82));
   color: var(--vn-orange-deep);
 }
+/* ==========================================================================
+   Learning Path Map rollback
+   Removes leftover path-map numbering, rails, and markers from the previous
+   Learning Path visual experiment.
+   Safe to append at the bottom of src/styles/index.css.
+   ========================================================================== */
 
-/* Learning Path open-section affordance */
-.section-card-action {
+.learning-path-map::before,
+.path-cluster::before,
+.path-section-item::before,
+.path-section-item::after {
+  content: none !important;
+  display: none !important;
+}
+
+.learning-path-map {
+  display: contents !important;
+}
+
+.path-cluster {
+  padding-left: clamp(1.05rem, 2.8vw, 1.45rem) !important;
+}
+
+.path-cluster-header {
+  align-items: initial !important;
+}
+
+.path-step-marker,
+.path-cluster-title {
+  display: none !important;
+}
+
+.path-section-item .section-card-link {
+  padding-right: 1.16rem !important;
+}
+
+@media (max-width: 860px) {
+  .path-section-item .section-card-link {
+    padding-right: 1.05rem !important;
+  }
+}
+/* ==========================================================================
+   Homepage Brand Splash Pass - Option A/B
+   Adds a subtle orange accent line and small orange VitalNotes dot to the
+   existing homepage hero without changing content or layout.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  right: clamp(1.25rem, 4vw, 3rem);
+  bottom: 0;
+  width: min(18rem, 42%);
+  height: 4px;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(
+    90deg,
+    rgba(242, 140, 40, 0.95),
+    rgba(242, 140, 40, 0.72),
+    rgba(40, 124, 122, 0.55)
+  );
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.hero-card > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   width: fit-content;
-  margin-top: 0.25rem;
-  color: var(--vn-orange-deep);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+}
+
+.hero-card > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+@media (max-width: 640px) {
+  .hero-card::after {
+    right: 1.25rem;
+    width: min(12rem, 52%);
+  }
+}
+/* ==========================================================================
+   Homepage Brand Splash Preview - Option D
+   Adds a small field-note corner tab to the homepage hero.
+   Optional experiment: append after Option A/B only if you want to preview it.
+   Remove this block if it feels too decorative.
+   ========================================================================== */
+
+.hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(2.6rem, 7vw, 4rem);
+  height: clamp(2.6rem, 7vw, 4rem);
+  border-bottom-left-radius: 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(242, 140, 40, 0.92) 0%,
+      rgba(242, 140, 40, 0.72) 48%,
+      rgba(255, 247, 234, 0.58) 49%,
+      rgba(255, 247, 234, 0.1) 100%
+    );
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-bottom-left-radius: 0.8rem;
+  }
+}
+/* ==========================================================================
+   Global VitalNotes page-corner and dot pass
+   Keeps the orange identity mark, removes the homepage orange underline,
+   and adds a subtle folded-page corner to main page headers.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+/* Remove the previous homepage orange underline from the A/B experiment. */
+.hero-card::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Main page surfaces get a small folded-corner mark. */
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(2.4rem, 5vw, 3.7rem);
+  height: clamp(2.4rem, 5vw, 3.7rem);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 247, 234, 0.12) 0%,
+      rgba(255, 247, 234, 0.38) 42%,
+      rgba(242, 140, 40, 0.58) 43%,
+      rgba(242, 140, 40, 0.86) 100%
+    );
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  opacity: 0.74;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Keep content above the folded corner layer. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Orange identity dot on top-level page labels. */
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+}
+
+.hero-card > .eyebrow::before,
+.page-header > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+/* Section reader pages do not use the same eyebrow, so the title gets a quiet dot. */
+.section-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin-right: 0.58rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
+  transform: translateY(-0.28rem);
+}
+
+/* Mobile: keep the fold visible but restrained. */
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 2.55rem;
+    height: 2.55rem;
+    opacity: 0.66;
+  }
+
+  .section-header h1::before {
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-right: 0.45rem;
+    transform: translateY(-0.2rem);
+  }
+}
+/* ==========================================================================
+   Folded corner angle refinement
+   Adjusts the global page-corner mark so it reads more like a dog-eared page.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  width: clamp(2.5rem, 5vw, 3.85rem);
+  height: clamp(2.5rem, 5vw, 3.85rem);
+  clip-path: polygon(100% 0, 100% 100%, 18% 0);
+  transform: rotate(-8deg) translate(0.18rem, -0.08rem);
+  transform-origin: 100% 0%;
+  background:
+    linear-gradient(
+      128deg,
+      rgba(255, 247, 234, 0.1) 0%,
+      rgba(255, 247, 234, 0.42) 40%,
+      rgba(242, 140, 40, 0.62) 41%,
+      rgba(242, 140, 40, 0.88) 100%
+    );
+  opacity: 0.74;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 2.65rem;
+    height: 2.65rem;
+    transform: rotate(-8deg) translate(0.12rem, -0.06rem);
+  }
+}
+/* ==========================================================================
+   Folded corner angle refinement 02
+   Rotates the page-corner fold farther left so it reads more like a true
+   dog-eared page corner.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  width: clamp(2.75rem, 5.4vw, 4.15rem);
+  height: clamp(2.75rem, 5.4vw, 4.15rem);
+  clip-path: polygon(100% 0, 100% 100%, 12% 0);
+  transform: rotate(-38deg) translate(0.72rem, -0.44rem);
+  transform-origin: 100% 0%;
+  background:
+    linear-gradient(
+      118deg,
+      rgba(255, 247, 234, 0.12) 0%,
+      rgba(255, 247, 234, 0.44) 38%,
+      rgba(242, 140, 40, 0.62) 39%,
+      rgba(242, 140, 40, 0.88) 100%
+    );
+  opacity: 0.76;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 2.8rem;
+    height: 2.8rem;
+    transform: rotate(-38deg) translate(0.5rem, -0.32rem);
+  }
+}
+/* ==========================================================================
+   Folded corner refinement 03 - workbook feel
+   Makes the page-corner fold larger and more intentional, so it reads more
+   like a workbook or field notebook page corner.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  width: clamp(3.35rem, 6.6vw, 5rem);
+  height: clamp(3.35rem, 6.6vw, 5rem);
+  clip-path: polygon(100% 0, 100% 100%, 8% 0);
+  transform: rotate(-38deg) translate(0.92rem, -0.62rem);
+  transform-origin: 100% 0%;
+  background:
+    linear-gradient(
+      118deg,
+      rgba(255, 247, 234, 0.16) 0%,
+      rgba(255, 247, 234, 0.5) 34%,
+      rgba(242, 140, 40, 0.68) 35%,
+      rgba(242, 140, 40, 0.9) 100%
+    );
+  opacity: 0.8;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.08));
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.25rem;
+    height: 3.25rem;
+    transform: rotate(-38deg) translate(0.68rem, -0.46rem);
+    opacity: 0.74;
+  }
+}
+/* ==========================================================================
+   Folded corner refinement 04 - larger true triangle
+   Keeps the approved angle, enlarges the fold, and restores a clean triangular
+   dog-ear shape so it reads more like a folded workbook page corner.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  width: clamp(3.9rem, 7.4vw, 5.7rem);
+  height: clamp(3.9rem, 7.4vw, 5.7rem);
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  transform: rotate(-38deg) translate(1.1rem, -0.78rem);
+  transform-origin: 100% 0%;
+  background:
+    linear-gradient(
+      118deg,
+      rgba(255, 247, 234, 0.14) 0%,
+      rgba(255, 247, 234, 0.48) 33%,
+      rgba(242, 140, 40, 0.72) 34%,
+      rgba(242, 140, 40, 0.92) 100%
+    );
+  opacity: 0.82;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.55rem;
+    height: 3.55rem;
+    transform: rotate(-38deg) translate(0.76rem, -0.55rem);
+    opacity: 0.76;
+  }
+}
+/* ==========================================================================
+   Folded corner refinement 05 - original triangle shape, angled geometry
+   Restores the clean original triangular fold shape while keeping the newer
+   larger workbook feel. This avoids rotating the whole pseudo-element, which
+   can make the fold look square or tab-like.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  width: clamp(4rem, 7.6vw, 5.85rem);
+  height: clamp(4rem, 7.6vw, 5.85rem);
+  transform: none;
+  transform-origin: initial;
+
+  /* Clean dog-ear triangle anchored to the top-right corner. */
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 247, 234, 0.1) 0%,
+      rgba(255, 247, 234, 0.34) 36%,
+      rgba(242, 140, 40, 0.68) 37%,
+      rgba(242, 140, 40, 0.9) 100%
+    );
+
+  opacity: 0.82;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
+}
+
+/* Add the angled fold line inside the triangle, without changing the triangle shape. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: clamp(1.85rem, 3.6vw, 2.85rem);
+  right: clamp(0.34rem, 0.85vw, 0.58rem);
+  width: clamp(4.2rem, 7.8vw, 6rem);
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(255, 247, 234, 0.72);
+  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.06);
+  transform: rotate(-42deg);
+  transform-origin: right center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Keep the homepage orange underline removed from the earlier experiment. */
+.hero-card::after {
+  background: rgba(255, 247, 234, 0.72) !important;
+  display: block !important;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+
+  .hero-card::after,
+  .page-header::after,
+  .section-header::after {
+    top: 1.72rem;
+    right: 0.28rem;
+    width: 3.9rem;
+  }
+}
+/* ==========================================================================
+   Folded corner refinement 06 - point down-left from top-right
+   Keeps the clean triangular dog-ear, but changes the triangle orientation so
+   the visible point travels about 45 degrees down-left from the top-right
+   corner, like a folded workbook page.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  width: clamp(4rem, 7.6vw, 5.85rem);
+  height: clamp(4rem, 7.6vw, 5.85rem);
+  transform: none;
+  transform-origin: initial;
+
+  /*
+    Triangle is anchored to the top-right corner.
+    The inner point now sits down-left, rather than straight left.
+  */
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+
+  background:
+    linear-gradient(
+      225deg,
+      rgba(255, 247, 234, 0.1) 0%,
+      rgba(255, 247, 234, 0.36) 34%,
+      rgba(242, 140, 40, 0.68) 35%,
+      rgba(242, 140, 40, 0.9) 100%
+    );
+
+  opacity: 0.82;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
+}
+
+/* Fold crease now runs from the top-right corner down-left into the page. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: clamp(0.35rem, 0.8vw, 0.55rem);
+  right: clamp(0.35rem, 0.8vw, 0.55rem);
+  width: clamp(4.1rem, 7.6vw, 5.8rem);
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(255, 247, 234, 0.76);
+  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.06);
+  transform: rotate(-45deg);
+  transform-origin: right center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+
+  .hero-card::after,
+  .page-header::after,
+  .section-header::after {
+    top: 0.32rem;
+    right: 0.32rem;
+    width: 3.65rem;
+  }
+}
+/* ==========================================================================
+   Folded corner correction - anchored dog-ear
+   Restores a simple top-right triangular dog-ear attached to the card corner.
+   The fold crease runs from the top-right corner diagonally down-left.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The visible folded page corner: attached to the top and right edges. */
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(4rem, 7.4vw, 5.6rem);
+  height: clamp(4rem, 7.4vw, 5.6rem);
+
+  /* Original-style top-right triangle, no rotation, no floating. */
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+
+  transform: none !important;
+  transform-origin: initial !important;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 247, 234, 0.18) 0%,
+      rgba(255, 247, 234, 0.46) 34%,
+      rgba(242, 140, 40, 0.7) 35%,
+      rgba(242, 140, 40, 0.92) 100%
+    );
+  opacity: 0.82;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* The crease: starts near the top-right corner and travels down-left. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: 0.46rem;
+  right: 0.46rem;
+  width: clamp(3.85rem, 7vw, 5.35rem);
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(255, 247, 234, 0.78);
+  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.08);
+  transform: rotate(-45deg) !important;
+  transform-origin: right center !important;
+  pointer-events: none;
+  z-index: 2;
+  display: block !important;
+}
+
+/* Keep header content above the corner mark. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.55rem;
+    height: 3.55rem;
+  }
+
+  .hero-card::after,
+  .page-header::after,
+  .section-header::after {
+    top: 0.38rem;
+    right: 0.38rem;
+    width: 3.35rem;
+  }
+}
+/* ==========================================================================
+   Folded corner correction 02 - no crease line, rotated triangle
+   Removes the white fold line, keeps the triangle shape, and rotates the
+   attached dog-ear corner left by about 30 degrees.
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove the white crease line and any earlier homepage underline use of ::after. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Keep a true triangular dog-ear, rotated left but anchored to the top-right. */
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(4rem, 7.4vw, 5.6rem);
+  height: clamp(4rem, 7.4vw, 5.6rem);
+
+  /* True triangle shape. */
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+
+  /* Rotate left while keeping the corner attached. */
+  transform: rotate(-30deg) translate(0.72rem, -0.32rem) !important;
+  transform-origin: 100% 0% !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 247, 234, 0.16) 0%,
+      rgba(255, 247, 234, 0.42) 34%,
+      rgba(242, 140, 40, 0.72) 35%,
+      rgba(242, 140, 40, 0.92) 100%
+    );
+  opacity: 0.82;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Keep header content above the fold. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.55rem;
+    height: 3.55rem;
+    transform: rotate(-30deg) translate(0.48rem, -0.2rem) !important;
+  }
+}
+/* ==========================================================================
+   Fresh folded-page corner system
+   Replaces the earlier corner experiments with a clean, anchored dog-ear fold.
+
+   Intent:
+   - true triangle from the top-right corner
+   - visually folded over at roughly a 45-degree angle
+   - large enough to read as a workbook/page corner
+   - no rotated floating tab
+   - no homepage underline
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove old underline / crease / experimental after-elements. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Clean dog-eared page fold: attached to the top-right corner. */
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  /* Fairly visible workbook-sized fold. */
+  width: clamp(4.4rem, 8vw, 6.25rem);
+  height: clamp(4.4rem, 8vw, 6.25rem);
+
+  /*
+    True top-right triangle.
+    The diagonal edge runs at roughly 45 degrees from the top edge
+    down toward the right edge, like a page folded over.
+  */
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+
+  transform: none !important;
+  transform-origin: initial !important;
+
+  /*
+    The light area reads as the underside of the folded page.
+    The orange edge keeps the VitalNotes identity cue.
+  */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 250, 240, 0.98) 0%,
+      rgba(255, 247, 234, 0.94) 42%,
+      rgba(242, 140, 40, 0.82) 43%,
+      rgba(242, 140, 40, 0.94) 100%
+    );
+
+  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
+  opacity: 0.94;
+  filter: drop-shadow(-3px 4px 4px rgba(31, 41, 51, 0.11));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/*
+  Subtle diagonal fold edge.
+  This is not a white line. It is a soft shadow along the fold so the shape
+  reads as paper folded over rather than a decorative triangle.
+*/
+.hero-card .eyebrow::after,
+.page-header .eyebrow::after {
+  content: none !important;
+}
+
+.hero-card::marker,
+.page-header::marker,
+.section-header::marker {
+  content: none;
+}
+
+/* Keep all header content above the folded corner. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Add a tiny inner paper-shadow using an inset box shadow on supporting browsers. */
+@supports (clip-path: polygon(100% 0, 0 0, 100% 100%)) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    box-shadow:
+      inset 2px -2px 0 rgba(255, 255, 255, 0.28),
+      inset -10px 10px 18px rgba(185, 95, 13, 0.08);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.8rem;
+    height: 3.8rem;
+    opacity: 0.9;
+  }
+}
+/* ==========================================================================
+   VitalNotes corner mark reset - clean orange dog-ear
+   Simplifies the folded-corner idea into a clear orange page-corner allusion.
+
+   Intent:
+   - pure orange triangle
+   - attached to the top-right corner
+   - no crease line
+   - no fake paper underside
+   - no floating / abstract rotation
+   - reads as workbook/page-corner branding without trying to be realistic
+
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove all previous fold-line, underline, and paper-flap experiments. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Clean orange corner mark. */
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: clamp(4rem, 7.2vw, 5.6rem);
+  height: clamp(4rem, 7.2vw, 5.6rem);
+
+  /* True top-right dog-ear triangle. */
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(242, 140, 40, 0.94) 0%,
+      rgba(242, 140, 40, 0.88) 58%,
+      rgba(201, 111, 22, 0.92) 100%
+    ) !important;
+
+  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
+  opacity: 0.92;
+  transform: none !important;
+  transform-origin: initial !important;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.08));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Keep page content above the corner mark. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Preserve the orange identity dot on top-level page labels. */
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+}
+
+.hero-card > .eyebrow::before,
+.page-header > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+/* Section reader pages do not use the same eyebrow, so title gets a quiet dot. */
+.section-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin-right: 0.58rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
+  transform: translateY(-0.28rem);
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.45rem;
+    height: 3.45rem;
+    opacity: 0.88;
+  }
+
+  .section-header h1::before {
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-right: 0.45rem;
+    transform: translateY(-0.2rem);
+  }
+}
+/* ==========================================================================
+   Dog-ear cutout with orange underside - Option 2
+   Simulates the top-right card corner being folded away.
+
+   What it does:
+   - visually trims the top-right corner by covering it with page-background colour
+   - adds a small orange underside/edge beneath the cutout
+   - keeps the orange dot identity cue
+   - removes solid orange wedge / fake-paper / crease-line experiments
+   - applies consistently to Home, page headers, and section reader headers
+
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Orange underside: sits slightly under and inward from the cut-away corner. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block !important;
+
+  width: clamp(4.65rem, 8vw, 6.25rem);
+  height: clamp(4.65rem, 8vw, 6.25rem);
+
+  /*
+    Top-right dog-ear triangle.
+    This is the underside/edge that peeks out from below the background cutout.
+  */
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(242, 140, 40, 0.96) 0%,
+      rgba(242, 140, 40, 0.9) 60%,
+      rgba(201, 111, 22, 0.95) 100%
+    ) !important;
+
+  opacity: 0.94;
+  transform: translate(-0.42rem, 0.42rem) !important;
+  transform-origin: 100% 0% !important;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.09));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/*
+  Cutout layer: covers the top-right card corner with the page background.
+  This makes the card look like its corner has been folded away.
+*/
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: clamp(4.35rem, 7.4vw, 5.9rem);
+  height: clamp(4.35rem, 7.4vw, 5.9rem);
+
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+
+  /*
+    Use the surrounding page colour rather than paper-white.
+    This is what creates the actual cut-away illusion.
+  */
+  background:
+    linear-gradient(
+      180deg,
+      rgba(251, 250, 246, 0.98) 0%,
+      rgba(247, 243, 234, 0.98) 100%
+    ) !important;
+
+  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
+  opacity: 1;
+  transform: none !important;
+  transform-origin: initial !important;
+  box-shadow:
+    -2px 2px 3px rgba(31, 41, 51, 0.045),
+    inset 1px -1px 0 rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Keep page content above the corner treatment. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Preserve the orange identity dot on top-level page labels. */
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+}
+
+.hero-card > .eyebrow::before,
+.page-header > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+/* Section reader pages do not use the same eyebrow, so title gets a quiet dot. */
+.section-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin-right: 0.58rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
+  transform: translateY(-0.28rem);
+}
+
+@media (max-width: 640px) {
+  .hero-card::after,
+  .page-header::after,
+  .section-header::after {
+    width: 3.85rem;
+    height: 3.85rem;
+    transform: translate(-0.32rem, 0.32rem) !important;
+  }
+
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.55rem;
+    height: 3.55rem;
+  }
+
+  .section-header h1::before {
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-right: 0.45rem;
+    transform: translateY(-0.2rem);
+  }
+}
+/* ==========================================================================
+   Dog-ear cutout correction 02 - visible orange fold edge
+   Fixes the faint-white-triangle issue by using one strong corner mark:
+   page-colour triangle with a clear orange diagonal fold edge.
+
+   Intent:
+   - top-right card corner reads as folded/cut away
+   - orange is visibly present as the fold edge
+   - no floating triangle
+   - no hidden underside layer
+   - keeps the design as an allusion, not a literal notebook simulation
+
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove previous underside layer and any earlier underline/crease experiments. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+/*
+  Single visible dog-ear mark:
+  - most of the triangle matches the surrounding page background
+  - the diagonal edge carries the orange brand colour
+*/
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: clamp(4.35rem, 7.8vw, 6rem);
+  height: clamp(4.35rem, 7.8vw, 6rem);
+
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(251, 250, 246, 0.98) 0%,
+      rgba(247, 243, 234, 0.98) 58%,
+      rgba(242, 140, 40, 0.95) 59%,
+      rgba(242, 140, 40, 0.95) 70%,
+      rgba(201, 111, 22, 0.9) 100%
+    ) !important;
+
+  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
+  opacity: 1;
+  transform: none !important;
+  transform-origin: initial !important;
+  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.08));
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Keep page content above the mark. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Preserve the orange identity dot on top-level page labels. */
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+}
+
+.hero-card > .eyebrow::before,
+.page-header > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+/* Section reader pages do not use the same eyebrow, so title gets a quiet dot. */
+.section-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin-right: 0.58rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
+  transform: translateY(-0.28rem);
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+
+  .section-header h1::before {
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-right: 0.45rem;
+    transform: translateY(-0.2rem);
+  }
+}
+/* ==========================================================================
+   VitalNotes corner placeholder
+   Simple orange triangle in the top-right corner of main page cards.
+
+   This is a temporary visual placeholder for a future interactive page-corner:
+   - hover folds over
+   - click moves to next page
+   - reverse corner on previous-page navigation where appropriate
+
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove previous fold/cutout/crease experiments. */
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Simple orange placeholder triangle. */
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(2.2rem, 4.5vw, 3.25rem);
+  height: clamp(2.2rem, 4.5vw, 3.25rem);
+  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
+  background: var(--vn-orange) !important;
+  opacity: 0.9;
+  transform: none !important;
+  transform-origin: initial !important;
+  filter: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Keep content above the placeholder mark. */
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Keep the orange identity dot on page labels. */
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+}
+
+.hero-card > .eyebrow::before,
+.page-header > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+/* Section reader pages do not use the same eyebrow, so title keeps a quiet dot. */
+.section-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin-right: 0.58rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
+  transform: translateY(-0.28rem);
+}
+
+@media (max-width: 640px) {
+  .hero-card::before,
+  .page-header::before,
+  .section-header::before {
+    width: 2.35rem;
+    height: 2.35rem;
+    opacity: 0.86;
+  }
+
+  .section-header h1::before {
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-right: 0.45rem;
+    transform: translateY(-0.2rem);
+  }
+}
+/* ==========================================================================
+   VitalNotes colour rebalance pass
+   Purpose:
+   - reduce orange overload in Learning Path
+   - make teal carry more functional/action weight
+   - give Tools and Glossary more calm colour distinction
+   - keep orange as brand/cue colour, not the default for every affordance
+
+   Safe to append to the bottom of src/styles/index.css.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Learning Path: make action/navigation affordances teal
+   -------------------------------------------------------------------------- */
+
+.section-card-action {
+  color: var(--vn-teal-deep) !important;
 }
 
 .section-card-link:hover .section-card-action,
 .section-card-link:focus-visible .section-card-action {
+  color: var(--vn-orange-deep) !important;
+}
+
+.section-card-link:hover {
+  border-color: rgba(40, 124, 122, 0.28) !important;
+  background:
+    radial-gradient(circle at 96% 10%, rgba(40, 124, 122, 0.08), transparent 11rem),
+    rgba(255, 255, 255, 0.94) !important;
+}
+
+.section-card-link:focus-visible {
+  outline-color: var(--vn-focus);
+}
+
+/* Keep cluster labels warm, but slightly quieter. */
+.cluster-label {
+  color: rgba(201, 111, 22, 0.9);
+}
+
+/* --------------------------------------------------------------------------
+   Tools: teal should feel like the working/functional colour
+   -------------------------------------------------------------------------- */
+
+.tool-panel {
+  border-color: rgba(40, 124, 122, 0.18) !important;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.07), transparent 13rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.76)) !important;
+}
+
+.tool-panel .tool-type {
+  color: var(--vn-teal-deep) !important;
+}
+
+.tool-section h3 {
   color: var(--vn-teal-deep);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .external-resource-button {
-    transition: none;
-  }
-
-  .external-resource-button:hover {
-    transform: none;
-  }
+.tool-example {
+  border-top-color: rgba(40, 124, 122, 0.14) !important;
 }
-/* ===========================================================================
-   About page heading recovery
-   Matches About page subheadings to the warm section-heading treatment used
-   across the reader.
-   ========================================================================== */
 
-.about-panel h2 {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  padding: 0.62rem 1.25rem 0.68rem 1.05rem;
-  border: none;
-  border-left: 6px solid rgba(242, 140, 40, 0.88);
-  border-radius: 0.95rem 0 0 0.95rem;
+.tool-example-button,
+.tool-panel .card-action-button {
+  border-color: rgba(40, 124, 122, 0.24) !important;
   background:
-    linear-gradient(
-      90deg,
-      rgba(255, 247, 214, 0.96) 0%,
-      rgba(255, 247, 214, 0.72) 48%,
-      rgba(255, 247, 214, 0.28) 76%,
-      rgba(255, 247, 214, 0) 100%
-    );
-  box-shadow: none;
-  color: var(--vn-heading-text);
-  font-family: var(--vn-font-body);
-  font-size: clamp(1.34rem, 2vw, 1.72rem);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 1.18;
-  isolation: auto;
+    linear-gradient(135deg, rgba(221, 239, 237, 0.68), rgba(255, 255, 255, 0.84)) !important;
+  color: var(--vn-teal-deep) !important;
 }
 
-.about-panel h2::before {
+.tool-example-button:hover,
+.tool-panel .card-action-button:hover {
+  border-color: rgba(40, 124, 122, 0.38) !important;
+  background:
+    linear-gradient(135deg, rgba(40, 124, 122, 0.13), rgba(255, 255, 255, 0.86)) !important;
+  color: var(--vn-teal-deep) !important;
+}
+
+.field-card,
+.drawer-field-card {
+  border-color: rgba(40, 124, 122, 0.18) !important;
+}
+
+.tool-drawer {
+  border-left-color: rgba(40, 124, 122, 0.26) !important;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.13), transparent 16rem),
+    var(--vn-paper-warm) !important;
+}
+
+.drawer-close-button {
+  border-color: rgba(40, 124, 122, 0.24) !important;
+  color: var(--vn-teal-deep) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Glossary: add calm colour distinction without making it busy
+   -------------------------------------------------------------------------- */
+
+.glossary-list {
+  gap: 0.95rem;
+}
+
+.glossary-card {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(40, 124, 122, 0.16) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 253, 0.78)) !important;
+}
+
+.glossary-card::before {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
-  width: min(100%, 22rem);
-  border-radius: 0.95rem 0 0 0.95rem;
-  background:
-    radial-gradient(circle at 0% 50%, rgba(242, 140, 40, 0.16), transparent 12rem);
+  width: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 124, 122, 0.72),
+    rgba(242, 140, 40, 0.48)
+  );
   pointer-events: none;
-  z-index: -1;
 }
 
-.about-panel h2::after {
-  content: none;
-}
-/* ==========================================================================
-   Page eyebrow accent
-   Adds a warmer orange cue to the main page subheaders:
-   VitalNotes, Learning Path, Tools Library, Glossary, About VitalNotes.
-   ========================================================================== */
-
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  gap: 0.45rem;
-  margin-bottom: 0.75rem;
-  padding: 0.42rem 0.72rem 0.42rem 0.6rem;
-  border: 1px solid rgba(242, 140, 40, 0.24);
-  border-left: 4px solid rgba(242, 140, 40, 0.88);
-  border-radius: 999px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 247, 214, 0.92),
-      rgba(255, 255, 255, 0.72)
-    );
-  color: var(--vn-orange-deep);
-  box-shadow: 0 6px 14px rgba(18, 48, 71, 0.045);
-}
-/* ==========================================================================
-   Page eyebrow colour
-   Keeps main page subheaders warm without adding extra visual treatment.
-   ========================================================================== */
-
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  color: var(--vn-orange-deep);
-}
-/* ==========================================================================
-   Page eyebrow reset
-   Keeps main page subheaders as regular orange text only.
-   ========================================================================== */
-
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: block;
-  width: auto;
-  gap: 0;
-  margin: 0 0 0.5rem;
-  padding: 0;
-  border: 0;
-  border-left: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-  color: var(--vn-orange-deep);
-}
-/* Phase 4 polish: keep tool section list spacing consistent */
-.tool-section ol,
-.tool-section ul {
-  display: grid;
-  gap: 0.55rem;
-  margin: 0;
-  padding-left: 1.25rem;
-}
-/* ==========================================================================
-   Phase 4 alignment: top-level informational pages
-   Keeps About and Scenario Generator cards aligned with other app pages,
-   while preserving comfortable text width inside each card.
-   ========================================================================== */
-
-.about-layout {
-  width: 100%;
-  max-width: none;
-}
-
-.about-panel,
-.external-resource-card {
-  width: 100%;
-}
-
-.about-panel > p,
-.about-panel > ul,
-.external-resource-card p {
-  max-width: var(--vn-reader-wide, 880px);
-}
-/* ==========================================================================
-   Phase 4 alignment override: top-level informational pages
-   Keeps About and Scenario Generator cards full-width while keeping text
-   at the same comfortable reader width as the rest of the app.
-   ========================================================================== */
-
-.about-layout {
-  width: 100%;
-  max-width: none;
-}
-
-.about-panel,
-.external-resource-card {
-  width: 100%;
-}
-
-.about-panel > p,
-.about-panel > ul,
-.external-resource-card p {
-  max-width: var(--vn-reader-width, 740px);
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.about-list {
-  max-width: var(--vn-reader-width, 740px);
-}
-
-.external-resource-card > div {
-  max-width: var(--vn-reader-width, 740px);
-}
-/* ==========================================================================
-   Phase 4 final alignment: About and Scenario Generator text rail
-   Keeps cards full-width while matching section body reading width.
-   ========================================================================== */
-
-.about-layout {
-  width: 100%;
-  max-width: none;
-}
-
-.about-panel,
-.external-resource-card {
-  width: 100%;
-}
-
-.about-panel > p,
-.about-list,
-.external-resource-card > div {
-  width: min(100%, var(--vn-reader-width, 740px));
-  max-width: var(--vn-reader-width, 740px);
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.external-resource-card p {
-  max-width: 100%;
-}
-/* ==========================================================================
-   Phase 4 section bottom alignment
-   Aligns glossary, related tools, related sections, and previous/next cards
-   inside section reader pages without changing section body text.
-   ========================================================================== */
-
-.reader-layout .glossary-term-panel,
-.reader-layout .related-panel,
-.reader-layout .section-navigation {
-  width: auto;
-  max-width: var(--vn-reader-wide, 880px);
-  margin-left: clamp(1.5rem, 4vw, 3rem);
-  margin-right: clamp(1.5rem, 4vw, 3rem);
-}
-
-.reader-layout .glossary-term-panel,
-.reader-layout .related-panel {
-  padding: clamp(1rem, 3vw, 1.35rem);
-}
-
-.reader-layout .section-navigation {
-  padding: clamp(1rem, 3vw, 1.35rem) 0 clamp(1.5rem, 4vw, 3rem);
-}
-
-.reader-layout .related-list,
-.reader-layout .section-navigation {
-  gap: 0.85rem;
-}
-
-.reader-layout .related-card,
-.reader-layout .section-nav-button {
-  min-height: 100%;
-}
-
-@media (max-width: 860px) {
-  .reader-layout .glossary-term-panel,
-  .reader-layout .related-panel,
-  .reader-layout .section-navigation {
-    width: auto;
-    max-width: none;
-    margin-left: clamp(1rem, 4vw, 1.4rem);
-    margin-right: clamp(1rem, 4vw, 1.4rem);
-  }
-
-  .reader-layout .section-navigation {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-/* ==========================================================================
-   Support footer
-   Adds a quiet Ko-fi support link across the shared site footer.
-   ========================================================================== */
-
-.app-shell {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.main-content {
-  flex: 1;
-}
-
-.site-footer {
-  border-top: 1px solid rgba(18, 48, 71, 0.1);
-  background: rgba(248, 251, 252, 0.76);
-  backdrop-filter: blur(10px);
-}
-
-.site-footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  width: min(1140px, 100%);
-  margin: 0 auto;
-  padding: 1rem clamp(1rem, 4vw, 3rem);
-}
-
-.site-footer-support-text {
-  max-width: 720px;
-  margin: 0;
-  color: var(--vn-muted-text);
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-
-.site-footer-support-link {
-  flex: 0 0 auto;
-  border: 1px solid rgba(13, 139, 139, 0.22);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
+.glossary-card h2 {
   color: var(--vn-teal-deep);
-  font-size: 0.9rem;
-  font-weight: 800;
-  padding: 0.58rem 0.82rem;
-  text-align: center;
-  text-decoration: none;
-  transition:
-    border-color 150ms ease,
-    background 150ms ease,
-    color 150ms ease,
-    box-shadow 150ms ease,
-    transform 150ms ease;
 }
 
-.site-footer-support-link:hover {
-  border-color: rgba(242, 140, 40, 0.36);
-  background: var(--vn-card-warm);
-  color: var(--vn-orange-deep);
-  box-shadow: 0 8px 18px rgba(18, 48, 71, 0.06);
-  transform: translateY(-1px);
+.glossary-chip {
+  border-color: rgba(40, 124, 122, 0.2) !important;
+  background: rgba(255, 255, 255, 0.78) !important;
+  color: var(--vn-teal-deep) !important;
 }
 
-.site-footer-support-link:focus-visible {
-  outline: 3px solid var(--vn-focus);
-  outline-offset: 3px;
+.glossary-chip:hover {
+  border-color: rgba(40, 124, 122, 0.34) !important;
+  background:
+    linear-gradient(135deg, rgba(221, 239, 237, 0.72), rgba(255, 255, 255, 0.84)) !important;
+  color: var(--vn-teal-deep) !important;
 }
 
-@media (max-width: 760px) {
-  .site-footer-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .site-footer-support-link {
-    width: fit-content;
-  }
+.glossary-chip.active {
+  border-color: rgba(242, 140, 40, 0.42) !important;
+  background:
+    linear-gradient(135deg, rgba(255, 247, 214, 0.88), rgba(255, 255, 255, 0.84)) !important;
+  color: var(--vn-orange-deep) !important;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .site-footer-support-link {
-    transition: none;
-  }
+.glossary-popup {
+  border-color: rgba(40, 124, 122, 0.22) !important;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.09), transparent 10rem),
+    rgba(255, 247, 234, 0.92) !important;
+}
 
-  .site-footer-support-link:hover {
-    transform: none;
-  }
+.glossary-term-panel {
+  border-color: rgba(40, 124, 122, 0.18) !important;
+  background:
+    linear-gradient(135deg, rgba(221, 239, 237, 0.44), rgba(255, 255, 255, 0.7)) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Related/section navigation: keep orange as cue, teal as interaction
+   -------------------------------------------------------------------------- */
+
+.related-card:hover,
+.section-nav-button:hover {
+  border-color: rgba(40, 124, 122, 0.3) !important;
+  background:
+    radial-gradient(circle at 96% 12%, rgba(40, 124, 122, 0.09), transparent 9rem),
+    rgba(255, 255, 255, 0.88) !important;
+}
+
+.related-card:hover span,
+.section-nav-button:hover span {
+  color: var(--vn-teal-deep) !important;
+}
+/* ==========================================================================
+   Glossary card reset
+   Restores glossary cards to a simple, readable card style.
+
+   Use this after the final colour-balance pass if the Glossary page still
+   feels over-designed.
+   ========================================================================== */
+
+.glossary-list {
+  gap: 0.9rem !important;
+}
+
+.glossary-card {
+  position: static !important;
+  overflow: visible !important;
+  border: 1px solid var(--vn-border-soft) !important;
+  border-radius: var(--vn-radius-soft) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.88),
+    rgba(251, 250, 246, 0.78)
+  ) !important;
+  box-shadow: var(--vn-shadow-soft) !important;
+  padding: 1.15rem !important;
+}
+
+.glossary-card::before,
+.glossary-card::after {
+  content: none !important;
+  display: none !important;
+}
+
+.glossary-card h2 {
+  margin-bottom: 0.45rem !important;
+  color: var(--vn-heading-text) !important;
+  font-size: 1.16rem !important;
+}
+
+.glossary-card p {
+  color: var(--vn-soft-text) !important;
+  line-height: 1.6 !important;
+}
+
+/* Keep glossary chips usable, but quieter. */
+.glossary-chip {
+  border-color: rgba(31, 41, 51, 0.12) !important;
+  background: rgba(255, 255, 255, 0.76) !important;
+  color: var(--vn-soft-text) !important;
+}
+
+.glossary-chip:hover {
+  border-color: rgba(40, 124, 122, 0.24) !important;
+  background: rgba(255, 255, 255, 0.88) !important;
+  color: var(--vn-teal-deep) !important;
+}
+
+.glossary-chip.active {
+  border-color: rgba(242, 140, 40, 0.34) !important;
+  background: rgba(255, 247, 234, 0.86) !important;
+  color: var(--vn-orange-deep) !important;
 }

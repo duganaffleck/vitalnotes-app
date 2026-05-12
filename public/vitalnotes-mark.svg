@@ -1,21 +1,8 @@
-<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="128" y1="88" x2="896" y2="936" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#123047"/>
-      <stop offset="1" stop-color="#0D8B8B"/>
-    </linearGradient>
-    <linearGradient id="pulse" x1="250" y1="492" x2="744" y2="492" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#F7F4EE"/>
-      <stop offset="1" stop-color="#DDEFF2"/>
-    </linearGradient>
-    <filter id="shadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0C2231" flood-opacity="0.34"/>
-    </filter>
-  </defs>
-
-  <rect x="88" y="88" width="848" height="848" rx="180" fill="url(#bg)" filter="url(#shadow)"/>
-  <rect x="262" y="248" width="32" height="528" rx="16" fill="#F7F4EE" fill-opacity="0.9"/>
-
-  <path d="M250 518H390L448 406L510 638L574 462L620 518H744" stroke="url(#pulse)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="574" cy="462" r="24" fill="#F28C28"/>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VitalNotes mark">
+  <rect x="28" y="28" width="200" height="200" rx="52" fill="#FFFDF8"/>
+  <rect x="28" y="28" width="200" height="200" rx="52" stroke="#D8E5E8" stroke-width="10"/>
+  <path d="M75 92L105 166L132 92H153L114 190H95L55 92H75Z" fill="#17384F"/>
+  <path d="M151 190V92H171L202 148V92H222V190H202L171 134V190H151Z" fill="#17384F"/>
+  <circle cx="190" cy="68" r="18" fill="#F28C28"/>
+  <path d="M66 207H190" stroke="#0D8B8B" stroke-width="10" stroke-linecap="round"/>
 </svg>

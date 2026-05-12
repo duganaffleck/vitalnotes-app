@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VitalNotes social preview">
+  <rect width="1200" height="630" fill="#F8F5EF"/>
+  <circle cx="1040" cy="92" r="260" fill="#F28C28" fill-opacity="0.12"/>
+  <circle cx="120" cy="90" r="250" fill="#0D8B8B" fill-opacity="0.10"/>
+  <rect x="92" y="78" width="1016" height="474" rx="42" fill="#FFFFFF" fill-opacity="0.86" stroke="#D8E5E8" stroke-width="2"/>
+  <g transform="translate(142 128)">
+    <rect x="0" y="0" width="92" height="92" rx="24" fill="#FFFDF8" stroke="#D8E5E8" stroke-width="5"/>
+    <text x="46" y="59" text-anchor="middle" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" fill="#17384F">VN</text>
+    <circle cx="69" cy="22" r="8" fill="#F28C28"/>
+    <path d="M25 74H67" stroke="#0D8B8B" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="142" y="270" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-3" fill="#17384F">VitalNotes</text>
+  <text x="146" y="330" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#D97706">For the gap between studying and performing.</text>
+  <text x="146" y="396" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="29" font-weight="500" fill="#3F5F72">A practical learning guide for paramedic students.</text>
+  <g transform="translate(720 160)">
+    <rect x="0" y="0" width="290" height="70" rx="18" fill="#FFF7EA" stroke="#E8DCC8"/>
+    <circle cx="36" cy="35" r="10" fill="#F28C28"/>
+    <text x="62" y="44" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#17384F">Memory</text>
+    <rect x="42" y="100" width="290" height="70" rx="18" fill="#F4F8F9" stroke="#D8E5E8"/>
+    <circle cx="78" cy="135" r="10" fill="#0D8B8B"/>
+    <text x="104" y="144" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#17384F">Meaning</text>
+    <rect x="0" y="200" width="290" height="70" rx="18" fill="#FFF7EA" stroke="#E8DCC8"/>
+    <circle cx="36" cy="235" r="10" fill="#F28C28"/>
+    <text x="62" y="244" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#17384F">Performance</text>
+    <path d="M288 70C319 91 326 108 332 128" stroke="#0D8B8B" stroke-width="5" stroke-linecap="round" stroke-opacity="0.55"/>
+    <path d="M42 170C16 188 9 207 7 220" stroke="#0D8B8B" stroke-width="5" stroke-linecap="round" stroke-opacity="0.55"/>
+  </g>
+</svg>
