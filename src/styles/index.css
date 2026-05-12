@@ -1417,9 +1417,13 @@ li {
 }
 
 /* ==========================================================================
-   UI Brand Balance Pass 01 - Teal Support Colour
-   Restores teal as the clinical/support accent while keeping orange as the
-   primary VitalNotes identity cue.
+   VitalNotes approved visual identity consolidation
+   Current approved state:
+   - orange is identity/cue
+   - teal carries functional/action weight
+   - small orange corner triangle is only a placeholder
+   - glossary cards stay simple and readable
+   - no fold experiments, learning-path rails, card cue dots, or homepage underline
    ========================================================================== */
 
 :root {
@@ -1429,7 +1433,6 @@ li {
   --vn-teal-soft-strong: rgba(40, 124, 122, 0.18);
   --vn-focus: rgba(40, 124, 122, 0.32);
 
-  /* Teal carries primary actions. Orange remains the cue/identity accent. */
   --vn-button-start: #287c7a;
   --vn-button-end: #1f6564;
 
@@ -1443,7 +1446,14 @@ body {
   background: var(--vn-page-bg);
 }
 
-/* Teal belongs in navigation and action states. */
+/* Header / brand balance */
+.brand-mark {
+  border-color: rgba(242, 140, 40, 0.3);
+  background:
+    radial-gradient(circle at 72% 22%, rgba(242, 140, 40, 0.18), transparent 1.05rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(221, 239, 237, 0.64));
+}
+
 .nav-link:hover,
 .nav-link:focus-visible {
   border-color: rgba(40, 124, 122, 0.28);
@@ -1462,19 +1472,18 @@ body {
     0 8px 18px rgba(31, 41, 51, 0.06);
 }
 
+/* Primary actions use teal. Orange remains a cue/accent colour. */
 .primary-button,
 .external-resource-button {
   border-color: var(--vn-teal-deep);
-  background:
-    linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
+  background: linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
   box-shadow: 0 8px 16px rgba(31, 101, 100, 0.18);
 }
 
 .primary-button:hover,
 .external-resource-button:hover {
   border-color: var(--vn-teal-deep);
-  background:
-    linear-gradient(135deg, var(--vn-teal-deep), var(--vn-ink-soft));
+  background: linear-gradient(135deg, var(--vn-teal-deep), var(--vn-ink-soft));
   box-shadow: 0 10px 22px rgba(31, 101, 100, 0.24);
 }
 
@@ -1498,7 +1507,14 @@ body {
   color: var(--vn-teal-deep);
 }
 
-/* Teal should show up as structure, not decoration. */
+/* Page header identity */
+.hero-card,
+.page-header,
+.section-header {
+  position: relative;
+  overflow: hidden;
+}
+
 .hero-card,
 .page-header {
   border-color: rgba(40, 124, 122, 0.16);
@@ -1508,6 +1524,69 @@ body {
     rgba(255, 255, 255, 0.84);
 }
 
+.hero-card::after,
+.page-header::after,
+.section-header::after {
+  content: none;
+}
+
+/* Temporary corner placeholder for future interactive page-corner navigation. */
+.hero-card::before,
+.page-header::before,
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(2.2rem, 4.5vw, 3.25rem);
+  height: clamp(2.2rem, 4.5vw, 3.25rem);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background: var(--vn-orange);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-card > *,
+.page-header > *,
+.section-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-card > .eyebrow,
+.page-header > .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+}
+
+.hero-card > .eyebrow::before,
+.page-header > .eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
+  transform: translateY(-0.02rem);
+}
+
+.section-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  margin-right: 0.58rem;
+  border-radius: 999px;
+  background: var(--vn-orange);
+  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
+  transform: translateY(-0.28rem);
+}
+
+/* Learning Path and section cards */
 .cluster-panel,
 .tool-panel,
 .about-panel,
@@ -1527,26 +1606,89 @@ body {
     linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.76));
 }
 
+.cluster-label {
+  color: rgba(201, 111, 22, 0.9);
+}
+
+.section-card-link {
+  border: 1px solid transparent;
+}
+
+.section-card-link::before,
+.section-card-link::after {
+  content: none;
+  display: none;
+}
+
+.section-card-link h3 {
+  padding-left: 0;
+}
+
+.section-card-action {
+  color: var(--vn-teal-deep);
+}
+
+.section-card-action::after {
+  content: none;
+  display: none;
+}
+
 .section-card-link:hover,
-.related-card:hover,
-.section-nav-button:hover {
-  border-color: rgba(40, 124, 122, 0.24);
+.section-card-link:focus-visible {
+  border-color: rgba(40, 124, 122, 0.28);
   background:
     radial-gradient(circle at 96% 10%, rgba(40, 124, 122, 0.08), transparent 11rem),
     rgba(255, 255, 255, 0.94);
 }
 
 .section-card-link:hover .section-card-action,
-.section-card-link:focus-visible .section-card-action,
-.text-button:hover {
+.section-card-link:focus-visible .section-card-action {
+  color: var(--vn-orange-deep);
+}
+
+/* Tools: teal is the functional colour. */
+.tool-type,
+.tool-panel .tool-type,
+.tool-section h3 {
   color: var(--vn-teal-deep);
 }
 
-/* Tool drawer gets a little more clinical colour because it is a functional workspace. */
-.tool-drawer {
-  border-left-color: rgba(40, 124, 122, 0.22);
+.tool-panel {
+  border-color: rgba(40, 124, 122, 0.18);
   background:
-    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.12), transparent 16rem),
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.07), transparent 13rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.76));
+}
+
+.tool-example {
+  border-top-color: rgba(40, 124, 122, 0.14);
+}
+
+.tool-example-button,
+.tool-panel .card-action-button {
+  border-color: rgba(40, 124, 122, 0.24);
+  background:
+    linear-gradient(135deg, rgba(221, 239, 237, 0.68), rgba(255, 255, 255, 0.84));
+  color: var(--vn-teal-deep);
+}
+
+.tool-example-button:hover,
+.tool-panel .card-action-button:hover {
+  border-color: rgba(40, 124, 122, 0.38);
+  background:
+    linear-gradient(135deg, rgba(40, 124, 122, 0.13), rgba(255, 255, 255, 0.86));
+  color: var(--vn-teal-deep);
+}
+
+.field-card,
+.drawer-field-card {
+  border-color: rgba(40, 124, 122, 0.18);
+}
+
+.tool-drawer {
+  border-left-color: rgba(40, 124, 122, 0.26);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.13), transparent 16rem),
     var(--vn-paper-warm);
 }
 
@@ -1554,1309 +1696,90 @@ body {
   border-bottom-color: rgba(40, 124, 122, 0.14);
 }
 
-.field-card,
-.drawer-field-card {
-  border-color: rgba(40, 124, 122, 0.16);
+/* Glossary: simple readable cards, quiet chips. */
+.glossary-list {
+  gap: 0.9rem;
+}
+
+.glossary-card {
+  position: static;
+  overflow: visible;
+  border: 1px solid var(--vn-border-soft);
+  border-radius: var(--vn-radius-soft);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.88),
+    rgba(251, 250, 246, 0.78)
+  );
+  box-shadow: var(--vn-shadow-soft);
+  padding: 1.15rem;
+}
+
+.glossary-card::before,
+.glossary-card::after {
+  content: none;
+  display: none;
+}
+
+.glossary-card h2 {
+  margin-bottom: 0.45rem;
+  color: var(--vn-heading-text);
+  font-size: 1.16rem;
+}
+
+.glossary-card p {
+  color: var(--vn-soft-text);
+  line-height: 1.6;
+}
+
+.glossary-chip {
+  border-color: rgba(31, 41, 51, 0.12);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--vn-soft-text);
 }
 
 .glossary-chip:hover {
-  border-color: rgba(40, 124, 122, 0.32);
-  background:
-    linear-gradient(135deg, rgba(221, 239, 237, 0.66), rgba(255, 255, 255, 0.82));
+  border-color: rgba(40, 124, 122, 0.24);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--vn-teal-deep);
 }
 
 .glossary-chip.active {
-  border-color: rgba(242, 140, 40, 0.42);
-  background:
-    linear-gradient(135deg, rgba(255, 247, 214, 0.88), rgba(255, 255, 255, 0.82));
+  border-color: rgba(242, 140, 40, 0.34);
+  background: rgba(255, 247, 234, 0.86);
   color: var(--vn-orange-deep);
 }
-/* ==========================================================================
-   Learning Path Map rollback
-   Removes leftover path-map numbering, rails, and markers from the previous
-   Learning Path visual experiment.
-   Safe to append at the bottom of src/styles/index.css.
-   ========================================================================== */
 
-.learning-path-map::before,
-.path-cluster::before,
-.path-section-item::before,
-.path-section-item::after {
-  content: none !important;
-  display: none !important;
-}
-
-.learning-path-map {
-  display: contents !important;
-}
-
-.path-cluster {
-  padding-left: clamp(1.05rem, 2.8vw, 1.45rem) !important;
-}
-
-.path-cluster-header {
-  align-items: initial !important;
-}
-
-.path-step-marker,
-.path-cluster-title {
-  display: none !important;
-}
-
-.path-section-item .section-card-link {
-  padding-right: 1.16rem !important;
-}
-
-@media (max-width: 860px) {
-  .path-section-item .section-card-link {
-    padding-right: 1.05rem !important;
-  }
-}
-/* ==========================================================================
-   Homepage Brand Splash Pass - Option A/B
-   Adds a subtle orange accent line and small orange VitalNotes dot to the
-   existing homepage hero without changing content or layout.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-card::after {
-  content: "";
-  position: absolute;
-  right: clamp(1.25rem, 4vw, 3rem);
-  bottom: 0;
-  width: min(18rem, 42%);
-  height: 4px;
-  border-radius: 999px 999px 0 0;
-  background: linear-gradient(
-    90deg,
-    rgba(242, 140, 40, 0.95),
-    rgba(242, 140, 40, 0.72),
-    rgba(40, 124, 122, 0.55)
-  );
-  opacity: 0.95;
-  pointer-events: none;
-}
-
-.hero-card > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  width: fit-content;
-}
-
-.hero-card > .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 0.48rem;
-  height: 0.48rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
-  transform: translateY(-0.02rem);
-}
-
-@media (max-width: 640px) {
-  .hero-card::after {
-    right: 1.25rem;
-    width: min(12rem, 52%);
-  }
-}
-/* ==========================================================================
-   Homepage Brand Splash Preview - Option D
-   Adds a small field-note corner tab to the homepage hero.
-   Optional experiment: append after Option A/B only if you want to preview it.
-   Remove this block if it feels too decorative.
-   ========================================================================== */
-
-.hero-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: clamp(2.6rem, 7vw, 4rem);
-  height: clamp(2.6rem, 7vw, 4rem);
-  border-bottom-left-radius: 1rem;
+.glossary-popup {
+  border-color: rgba(40, 124, 122, 0.18);
   background:
-    linear-gradient(
-      135deg,
-      rgba(242, 140, 40, 0.92) 0%,
-      rgba(242, 140, 40, 0.72) 48%,
-      rgba(255, 247, 234, 0.58) 49%,
-      rgba(255, 247, 234, 0.1) 100%
-    );
-  opacity: 0.78;
-  pointer-events: none;
+    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.07), transparent 10rem),
+    rgba(255, 247, 234, 0.9);
 }
 
-@media (max-width: 640px) {
-  .hero-card::before {
-    width: 2.7rem;
-    height: 2.7rem;
-    border-bottom-left-radius: 0.8rem;
-  }
-}
-/* ==========================================================================
-   Global VitalNotes page-corner and dot pass
-   Keeps the orange identity mark, removes the homepage orange underline,
-   and adds a subtle folded-page corner to main page headers.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-/* Remove the previous homepage orange underline from the A/B experiment. */
-.hero-card::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Main page surfaces get a small folded-corner mark. */
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: clamp(2.4rem, 5vw, 3.7rem);
-  height: clamp(2.4rem, 5vw, 3.7rem);
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 247, 234, 0.12) 0%,
-      rgba(255, 247, 234, 0.38) 42%,
-      rgba(242, 140, 40, 0.58) 43%,
-      rgba(242, 140, 40, 0.86) 100%
-    );
-  clip-path: polygon(100% 0, 100% 100%, 0 0);
-  opacity: 0.74;
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Keep content above the folded corner layer. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 2;
-}
-
-/* Orange identity dot on top-level page labels. */
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  width: fit-content;
-}
-
-.hero-card > .eyebrow::before,
-.page-header > .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 0.48rem;
-  height: 0.48rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
-  transform: translateY(-0.02rem);
-}
-
-/* Section reader pages do not use the same eyebrow, so the title gets a quiet dot. */
-.section-header h1::before {
-  content: "";
-  display: inline-block;
-  width: 0.52rem;
-  height: 0.52rem;
-  margin-right: 0.58rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
-  transform: translateY(-0.28rem);
-}
-
-/* Mobile: keep the fold visible but restrained. */
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 2.55rem;
-    height: 2.55rem;
-    opacity: 0.66;
-  }
-
-  .section-header h1::before {
-    width: 0.46rem;
-    height: 0.46rem;
-    margin-right: 0.45rem;
-    transform: translateY(-0.2rem);
-  }
-}
-/* ==========================================================================
-   Folded corner angle refinement
-   Adjusts the global page-corner mark so it reads more like a dog-eared page.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  width: clamp(2.5rem, 5vw, 3.85rem);
-  height: clamp(2.5rem, 5vw, 3.85rem);
-  clip-path: polygon(100% 0, 100% 100%, 18% 0);
-  transform: rotate(-8deg) translate(0.18rem, -0.08rem);
-  transform-origin: 100% 0%;
-  background:
-    linear-gradient(
-      128deg,
-      rgba(255, 247, 234, 0.1) 0%,
-      rgba(255, 247, 234, 0.42) 40%,
-      rgba(242, 140, 40, 0.62) 41%,
-      rgba(242, 140, 40, 0.88) 100%
-    );
-  opacity: 0.74;
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 2.65rem;
-    height: 2.65rem;
-    transform: rotate(-8deg) translate(0.12rem, -0.06rem);
-  }
-}
-/* ==========================================================================
-   Folded corner angle refinement 02
-   Rotates the page-corner fold farther left so it reads more like a true
-   dog-eared page corner.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  width: clamp(2.75rem, 5.4vw, 4.15rem);
-  height: clamp(2.75rem, 5.4vw, 4.15rem);
-  clip-path: polygon(100% 0, 100% 100%, 12% 0);
-  transform: rotate(-38deg) translate(0.72rem, -0.44rem);
-  transform-origin: 100% 0%;
-  background:
-    linear-gradient(
-      118deg,
-      rgba(255, 247, 234, 0.12) 0%,
-      rgba(255, 247, 234, 0.44) 38%,
-      rgba(242, 140, 40, 0.62) 39%,
-      rgba(242, 140, 40, 0.88) 100%
-    );
-  opacity: 0.76;
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 2.8rem;
-    height: 2.8rem;
-    transform: rotate(-38deg) translate(0.5rem, -0.32rem);
-  }
-}
-/* ==========================================================================
-   Folded corner refinement 03 - workbook feel
-   Makes the page-corner fold larger and more intentional, so it reads more
-   like a workbook or field notebook page corner.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  width: clamp(3.35rem, 6.6vw, 5rem);
-  height: clamp(3.35rem, 6.6vw, 5rem);
-  clip-path: polygon(100% 0, 100% 100%, 8% 0);
-  transform: rotate(-38deg) translate(0.92rem, -0.62rem);
-  transform-origin: 100% 0%;
-  background:
-    linear-gradient(
-      118deg,
-      rgba(255, 247, 234, 0.16) 0%,
-      rgba(255, 247, 234, 0.5) 34%,
-      rgba(242, 140, 40, 0.68) 35%,
-      rgba(242, 140, 40, 0.9) 100%
-    );
-  opacity: 0.8;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.08));
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.25rem;
-    height: 3.25rem;
-    transform: rotate(-38deg) translate(0.68rem, -0.46rem);
-    opacity: 0.74;
-  }
-}
-/* ==========================================================================
-   Folded corner refinement 04 - larger true triangle
-   Keeps the approved angle, enlarges the fold, and restores a clean triangular
-   dog-ear shape so it reads more like a folded workbook page corner.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  width: clamp(3.9rem, 7.4vw, 5.7rem);
-  height: clamp(3.9rem, 7.4vw, 5.7rem);
-  clip-path: polygon(100% 0, 100% 100%, 0 0);
-  transform: rotate(-38deg) translate(1.1rem, -0.78rem);
-  transform-origin: 100% 0%;
-  background:
-    linear-gradient(
-      118deg,
-      rgba(255, 247, 234, 0.14) 0%,
-      rgba(255, 247, 234, 0.48) 33%,
-      rgba(242, 140, 40, 0.72) 34%,
-      rgba(242, 140, 40, 0.92) 100%
-    );
-  opacity: 0.82;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.55rem;
-    height: 3.55rem;
-    transform: rotate(-38deg) translate(0.76rem, -0.55rem);
-    opacity: 0.76;
-  }
-}
-/* ==========================================================================
-   Folded corner refinement 05 - original triangle shape, angled geometry
-   Restores the clean original triangular fold shape while keeping the newer
-   larger workbook feel. This avoids rotating the whole pseudo-element, which
-   can make the fold look square or tab-like.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  width: clamp(4rem, 7.6vw, 5.85rem);
-  height: clamp(4rem, 7.6vw, 5.85rem);
-  transform: none;
-  transform-origin: initial;
-
-  /* Clean dog-ear triangle anchored to the top-right corner. */
-  clip-path: polygon(100% 0, 100% 100%, 0 0);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 247, 234, 0.1) 0%,
-      rgba(255, 247, 234, 0.34) 36%,
-      rgba(242, 140, 40, 0.68) 37%,
-      rgba(242, 140, 40, 0.9) 100%
-    );
-
-  opacity: 0.82;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
-}
-
-/* Add the angled fold line inside the triangle, without changing the triangle shape. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: "";
-  position: absolute;
-  top: clamp(1.85rem, 3.6vw, 2.85rem);
-  right: clamp(0.34rem, 0.85vw, 0.58rem);
-  width: clamp(4.2rem, 7.8vw, 6rem);
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(255, 247, 234, 0.72);
-  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.06);
-  transform: rotate(-42deg);
-  transform-origin: right center;
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Keep the homepage orange underline removed from the earlier experiment. */
-.hero-card::after {
-  background: rgba(255, 247, 234, 0.72) !important;
-  display: block !important;
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.7rem;
-    height: 3.7rem;
-  }
-
-  .hero-card::after,
-  .page-header::after,
-  .section-header::after {
-    top: 1.72rem;
-    right: 0.28rem;
-    width: 3.9rem;
-  }
-}
-/* ==========================================================================
-   Folded corner refinement 06 - point down-left from top-right
-   Keeps the clean triangular dog-ear, but changes the triangle orientation so
-   the visible point travels about 45 degrees down-left from the top-right
-   corner, like a folded workbook page.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  width: clamp(4rem, 7.6vw, 5.85rem);
-  height: clamp(4rem, 7.6vw, 5.85rem);
-  transform: none;
-  transform-origin: initial;
-
-  /*
-    Triangle is anchored to the top-right corner.
-    The inner point now sits down-left, rather than straight left.
-  */
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-
-  background:
-    linear-gradient(
-      225deg,
-      rgba(255, 247, 234, 0.1) 0%,
-      rgba(255, 247, 234, 0.36) 34%,
-      rgba(242, 140, 40, 0.68) 35%,
-      rgba(242, 140, 40, 0.9) 100%
-    );
-
-  opacity: 0.82;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
-}
-
-/* Fold crease now runs from the top-right corner down-left into the page. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: "";
-  position: absolute;
-  top: clamp(0.35rem, 0.8vw, 0.55rem);
-  right: clamp(0.35rem, 0.8vw, 0.55rem);
-  width: clamp(4.1rem, 7.6vw, 5.8rem);
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(255, 247, 234, 0.76);
-  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.06);
-  transform: rotate(-45deg);
-  transform-origin: right center;
-  pointer-events: none;
-  z-index: 2;
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.7rem;
-    height: 3.7rem;
-  }
-
-  .hero-card::after,
-  .page-header::after,
-  .section-header::after {
-    top: 0.32rem;
-    right: 0.32rem;
-    width: 3.65rem;
-  }
-}
-/* ==========================================================================
-   Folded corner correction - anchored dog-ear
-   Restores a simple top-right triangular dog-ear attached to the card corner.
-   The fold crease runs from the top-right corner diagonally down-left.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* The visible folded page corner: attached to the top and right edges. */
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: clamp(4rem, 7.4vw, 5.6rem);
-  height: clamp(4rem, 7.4vw, 5.6rem);
-
-  /* Original-style top-right triangle, no rotation, no floating. */
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
-
-  transform: none !important;
-  transform-origin: initial !important;
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 247, 234, 0.18) 0%,
-      rgba(255, 247, 234, 0.46) 34%,
-      rgba(242, 140, 40, 0.7) 35%,
-      rgba(242, 140, 40, 0.92) 100%
-    );
-  opacity: 0.82;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* The crease: starts near the top-right corner and travels down-left. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: "";
-  position: absolute;
-  top: 0.46rem;
-  right: 0.46rem;
-  width: clamp(3.85rem, 7vw, 5.35rem);
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(255, 247, 234, 0.78);
-  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.08);
-  transform: rotate(-45deg) !important;
-  transform-origin: right center !important;
-  pointer-events: none;
-  z-index: 2;
-  display: block !important;
-}
-
-/* Keep header content above the corner mark. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.55rem;
-    height: 3.55rem;
-  }
-
-  .hero-card::after,
-  .page-header::after,
-  .section-header::after {
-    top: 0.38rem;
-    right: 0.38rem;
-    width: 3.35rem;
-  }
-}
-/* ==========================================================================
-   Folded corner correction 02 - no crease line, rotated triangle
-   Removes the white fold line, keeps the triangle shape, and rotates the
-   attached dog-ear corner left by about 30 degrees.
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Remove the white crease line and any earlier homepage underline use of ::after. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Keep a true triangular dog-ear, rotated left but anchored to the top-right. */
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: clamp(4rem, 7.4vw, 5.6rem);
-  height: clamp(4rem, 7.4vw, 5.6rem);
-
-  /* True triangle shape. */
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-
-  /* Rotate left while keeping the corner attached. */
-  transform: rotate(-30deg) translate(0.72rem, -0.32rem) !important;
-  transform-origin: 100% 0% !important;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 247, 234, 0.16) 0%,
-      rgba(255, 247, 234, 0.42) 34%,
-      rgba(242, 140, 40, 0.72) 35%,
-      rgba(242, 140, 40, 0.92) 100%
-    );
-  opacity: 0.82;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.075));
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Keep header content above the fold. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.55rem;
-    height: 3.55rem;
-    transform: rotate(-30deg) translate(0.48rem, -0.2rem) !important;
-  }
-}
-/* ==========================================================================
-   Fresh folded-page corner system
-   Replaces the earlier corner experiments with a clean, anchored dog-ear fold.
-
-   Intent:
-   - true triangle from the top-right corner
-   - visually folded over at roughly a 45-degree angle
-   - large enough to read as a workbook/page corner
-   - no rotated floating tab
-   - no homepage underline
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Remove old underline / crease / experimental after-elements. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Clean dog-eared page fold: attached to the top-right corner. */
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  /* Fairly visible workbook-sized fold. */
-  width: clamp(4.4rem, 8vw, 6.25rem);
-  height: clamp(4.4rem, 8vw, 6.25rem);
-
-  /*
-    True top-right triangle.
-    The diagonal edge runs at roughly 45 degrees from the top edge
-    down toward the right edge, like a page folded over.
-  */
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-
-  transform: none !important;
-  transform-origin: initial !important;
-
-  /*
-    The light area reads as the underside of the folded page.
-    The orange edge keeps the VitalNotes identity cue.
-  */
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 250, 240, 0.98) 0%,
-      rgba(255, 247, 234, 0.94) 42%,
-      rgba(242, 140, 40, 0.82) 43%,
-      rgba(242, 140, 40, 0.94) 100%
-    );
-
-  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
-  opacity: 0.94;
-  filter: drop-shadow(-3px 4px 4px rgba(31, 41, 51, 0.11));
-  pointer-events: none;
-  z-index: 1;
-}
-
-/*
-  Subtle diagonal fold edge.
-  This is not a white line. It is a soft shadow along the fold so the shape
-  reads as paper folded over rather than a decorative triangle.
-*/
-.hero-card .eyebrow::after,
-.page-header .eyebrow::after {
-  content: none !important;
-}
-
-.hero-card::marker,
-.page-header::marker,
-.section-header::marker {
+/* Reader bottom cards */
+.related-card::before,
+.related-card::after,
+.section-nav-button::before,
+.section-nav-button::after {
   content: none;
+  display: none;
 }
 
-/* Keep all header content above the folded corner. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
-}
-
-/* Add a tiny inner paper-shadow using an inset box shadow on supporting browsers. */
-@supports (clip-path: polygon(100% 0, 0 0, 100% 100%)) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    box-shadow:
-      inset 2px -2px 0 rgba(255, 255, 255, 0.28),
-      inset -10px 10px 18px rgba(185, 95, 13, 0.08);
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.8rem;
-    height: 3.8rem;
-    opacity: 0.9;
-  }
-}
-/* ==========================================================================
-   VitalNotes corner mark reset - clean orange dog-ear
-   Simplifies the folded-corner idea into a clear orange page-corner allusion.
-
-   Intent:
-   - pure orange triangle
-   - attached to the top-right corner
-   - no crease line
-   - no fake paper underside
-   - no floating / abstract rotation
-   - reads as workbook/page-corner branding without trying to be realistic
-
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Remove all previous fold-line, underline, and paper-flap experiments. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Clean orange corner mark. */
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: clamp(4rem, 7.2vw, 5.6rem);
-  height: clamp(4rem, 7.2vw, 5.6rem);
-
-  /* True top-right dog-ear triangle. */
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-
+.related-card:hover,
+.section-nav-button:hover {
+  border-color: rgba(40, 124, 122, 0.3);
   background:
-    linear-gradient(
-      135deg,
-      rgba(242, 140, 40, 0.94) 0%,
-      rgba(242, 140, 40, 0.88) 58%,
-      rgba(201, 111, 22, 0.92) 100%
-    ) !important;
-
-  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
-  opacity: 0.92;
-  transform: none !important;
-  transform-origin: initial !important;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.08));
-  pointer-events: none;
-  z-index: 1;
+    radial-gradient(circle at 96% 12%, rgba(40, 124, 122, 0.09), transparent 9rem),
+    rgba(255, 255, 255, 0.88);
 }
 
-/* Keep page content above the corner mark. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
+.related-card:hover span,
+.section-nav-button:hover span {
+  color: var(--vn-teal-deep);
 }
 
-/* Preserve the orange identity dot on top-level page labels. */
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  width: fit-content;
-}
-
-.hero-card > .eyebrow::before,
-.page-header > .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 0.48rem;
-  height: 0.48rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
-  transform: translateY(-0.02rem);
-}
-
-/* Section reader pages do not use the same eyebrow, so title gets a quiet dot. */
-.section-header h1::before {
-  content: "";
-  display: inline-block;
-  width: 0.52rem;
-  height: 0.52rem;
-  margin-right: 0.58rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
-  transform: translateY(-0.28rem);
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.45rem;
-    height: 3.45rem;
-    opacity: 0.88;
-  }
-
-  .section-header h1::before {
-    width: 0.46rem;
-    height: 0.46rem;
-    margin-right: 0.45rem;
-    transform: translateY(-0.2rem);
-  }
-}
-/* ==========================================================================
-   Dog-ear cutout with orange underside - Option 2
-   Simulates the top-right card corner being folded away.
-
-   What it does:
-   - visually trims the top-right corner by covering it with page-background colour
-   - adds a small orange underside/edge beneath the cutout
-   - keeps the orange dot identity cue
-   - removes solid orange wedge / fake-paper / crease-line experiments
-   - applies consistently to Home, page headers, and section reader headers
-
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Orange underside: sits slightly under and inward from the cut-away corner. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block !important;
-
-  width: clamp(4.65rem, 8vw, 6.25rem);
-  height: clamp(4.65rem, 8vw, 6.25rem);
-
-  /*
-    Top-right dog-ear triangle.
-    This is the underside/edge that peeks out from below the background cutout.
-  */
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(242, 140, 40, 0.96) 0%,
-      rgba(242, 140, 40, 0.9) 60%,
-      rgba(201, 111, 22, 0.95) 100%
-    ) !important;
-
-  opacity: 0.94;
-  transform: translate(-0.42rem, 0.42rem) !important;
-  transform-origin: 100% 0% !important;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.09));
-  pointer-events: none;
-  z-index: 1;
-}
-
-/*
-  Cutout layer: covers the top-right card corner with the page background.
-  This makes the card look like its corner has been folded away.
-*/
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: clamp(4.35rem, 7.4vw, 5.9rem);
-  height: clamp(4.35rem, 7.4vw, 5.9rem);
-
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-
-  /*
-    Use the surrounding page colour rather than paper-white.
-    This is what creates the actual cut-away illusion.
-  */
-  background:
-    linear-gradient(
-      180deg,
-      rgba(251, 250, 246, 0.98) 0%,
-      rgba(247, 243, 234, 0.98) 100%
-    ) !important;
-
-  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
-  opacity: 1;
-  transform: none !important;
-  transform-origin: initial !important;
-  box-shadow:
-    -2px 2px 3px rgba(31, 41, 51, 0.045),
-    inset 1px -1px 0 rgba(255, 255, 255, 0.45);
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Keep page content above the corner treatment. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
-}
-
-/* Preserve the orange identity dot on top-level page labels. */
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  width: fit-content;
-}
-
-.hero-card > .eyebrow::before,
-.page-header > .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 0.48rem;
-  height: 0.48rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
-  transform: translateY(-0.02rem);
-}
-
-/* Section reader pages do not use the same eyebrow, so title gets a quiet dot. */
-.section-header h1::before {
-  content: "";
-  display: inline-block;
-  width: 0.52rem;
-  height: 0.52rem;
-  margin-right: 0.58rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
-  transform: translateY(-0.28rem);
-}
-
-@media (max-width: 640px) {
-  .hero-card::after,
-  .page-header::after,
-  .section-header::after {
-    width: 3.85rem;
-    height: 3.85rem;
-    transform: translate(-0.32rem, 0.32rem) !important;
-  }
-
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.55rem;
-    height: 3.55rem;
-  }
-
-  .section-header h1::before {
-    width: 0.46rem;
-    height: 0.46rem;
-    margin-right: 0.45rem;
-    transform: translateY(-0.2rem);
-  }
-}
-/* ==========================================================================
-   Dog-ear cutout correction 02 - visible orange fold edge
-   Fixes the faint-white-triangle issue by using one strong corner mark:
-   page-colour triangle with a clear orange diagonal fold edge.
-
-   Intent:
-   - top-right card corner reads as folded/cut away
-   - orange is visibly present as the fold edge
-   - no floating triangle
-   - no hidden underside layer
-   - keeps the design as an allusion, not a literal notebook simulation
-
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Remove previous underside layer and any earlier underline/crease experiments. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: none !important;
-  display: none !important;
-}
-
-/*
-  Single visible dog-ear mark:
-  - most of the triangle matches the surrounding page background
-  - the diagonal edge carries the orange brand colour
-*/
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: clamp(4.35rem, 7.8vw, 6rem);
-  height: clamp(4.35rem, 7.8vw, 6rem);
-
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(251, 250, 246, 0.98) 0%,
-      rgba(247, 243, 234, 0.98) 58%,
-      rgba(242, 140, 40, 0.95) 59%,
-      rgba(242, 140, 40, 0.95) 70%,
-      rgba(201, 111, 22, 0.9) 100%
-    ) !important;
-
-  border-top-right-radius: var(--vn-radius-panel, 1.45rem);
-  opacity: 1;
-  transform: none !important;
-  transform-origin: initial !important;
-  filter: drop-shadow(-2px 3px 3px rgba(31, 41, 51, 0.08));
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Keep page content above the mark. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
-}
-
-/* Preserve the orange identity dot on top-level page labels. */
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  width: fit-content;
-}
-
-.hero-card > .eyebrow::before,
-.page-header > .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 0.48rem;
-  height: 0.48rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
-  transform: translateY(-0.02rem);
-}
-
-/* Section reader pages do not use the same eyebrow, so title gets a quiet dot. */
-.section-header h1::before {
-  content: "";
-  display: inline-block;
-  width: 0.52rem;
-  height: 0.52rem;
-  margin-right: 0.58rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
-  transform: translateY(-0.28rem);
-}
-
-@media (max-width: 640px) {
-  .hero-card::before,
-  .page-header::before,
-  .section-header::before {
-    width: 3.7rem;
-    height: 3.7rem;
-  }
-
-  .section-header h1::before {
-    width: 0.46rem;
-    height: 0.46rem;
-    margin-right: 0.45rem;
-    transform: translateY(-0.2rem);
-  }
-}
-/* ==========================================================================
-   VitalNotes corner placeholder
-   Simple orange triangle in the top-right corner of main page cards.
-
-   This is a temporary visual placeholder for a future interactive page-corner:
-   - hover folds over
-   - click moves to next page
-   - reverse corner on previous-page navigation where appropriate
-
-   Safe to append to the bottom of src/styles/index.css.
-   ========================================================================== */
-
-.hero-card,
-.page-header,
-.section-header {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Remove previous fold/cutout/crease experiments. */
-.hero-card::after,
-.page-header::after,
-.section-header::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Simple orange placeholder triangle. */
-.hero-card::before,
-.page-header::before,
-.section-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: clamp(2.2rem, 4.5vw, 3.25rem);
-  height: clamp(2.2rem, 4.5vw, 3.25rem);
-  clip-path: polygon(100% 0, 0 0, 100% 100%) !important;
-  background: var(--vn-orange) !important;
-  opacity: 0.9;
-  transform: none !important;
-  transform-origin: initial !important;
-  filter: none;
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Keep content above the placeholder mark. */
-.hero-card > *,
-.page-header > *,
-.section-header > * {
-  position: relative;
-  z-index: 3;
-}
-
-/* Keep the orange identity dot on page labels. */
-.hero-card > .eyebrow,
-.page-header > .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  width: fit-content;
-}
-
-.hero-card > .eyebrow::before,
-.page-header > .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 0.48rem;
-  height: 0.48rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.13);
-  transform: translateY(-0.02rem);
-}
-
-/* Section reader pages do not use the same eyebrow, so title keeps a quiet dot. */
-.section-header h1::before {
-  content: "";
-  display: inline-block;
-  width: 0.52rem;
-  height: 0.52rem;
-  margin-right: 0.58rem;
-  border-radius: 999px;
-  background: var(--vn-orange);
-  box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.12);
-  transform: translateY(-0.28rem);
-}
-
+/* Mobile refinements for approved identity elements. */
 @media (max-width: 640px) {
   .hero-card::before,
   .page-header::before,
@@ -2872,244 +1795,19 @@ body {
     margin-right: 0.45rem;
     transform: translateY(-0.2rem);
   }
+
+  .section-card-link h3 {
+    padding-left: 0;
+  }
 }
 /* ==========================================================================
-   VitalNotes colour rebalance pass
-   Purpose:
-   - reduce orange overload in Learning Path
-   - make teal carry more functional/action weight
-   - give Tools and Glossary more calm colour distinction
-   - keep orange as brand/cue colour, not the default for every affordance
-
-   Safe to append to the bottom of src/styles/index.css.
+   Section title dot removal
+   Removes the orange dot beside individual section page titles while keeping
+   the orange dot beside top-level page labels.
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   Learning Path: make action/navigation affordances teal
-   -------------------------------------------------------------------------- */
-
-.section-card-action {
-  color: var(--vn-teal-deep) !important;
-}
-
-.section-card-link:hover .section-card-action,
-.section-card-link:focus-visible .section-card-action {
-  color: var(--vn-orange-deep) !important;
-}
-
-.section-card-link:hover {
-  border-color: rgba(40, 124, 122, 0.28) !important;
-  background:
-    radial-gradient(circle at 96% 10%, rgba(40, 124, 122, 0.08), transparent 11rem),
-    rgba(255, 255, 255, 0.94) !important;
-}
-
-.section-card-link:focus-visible {
-  outline-color: var(--vn-focus);
-}
-
-/* Keep cluster labels warm, but slightly quieter. */
-.cluster-label {
-  color: rgba(201, 111, 22, 0.9);
-}
-
-/* --------------------------------------------------------------------------
-   Tools: teal should feel like the working/functional colour
-   -------------------------------------------------------------------------- */
-
-.tool-panel {
-  border-color: rgba(40, 124, 122, 0.18) !important;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.07), transparent 13rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 253, 0.76)) !important;
-}
-
-.tool-panel .tool-type {
-  color: var(--vn-teal-deep) !important;
-}
-
-.tool-section h3 {
-  color: var(--vn-teal-deep);
-}
-
-.tool-example {
-  border-top-color: rgba(40, 124, 122, 0.14) !important;
-}
-
-.tool-example-button,
-.tool-panel .card-action-button {
-  border-color: rgba(40, 124, 122, 0.24) !important;
-  background:
-    linear-gradient(135deg, rgba(221, 239, 237, 0.68), rgba(255, 255, 255, 0.84)) !important;
-  color: var(--vn-teal-deep) !important;
-}
-
-.tool-example-button:hover,
-.tool-panel .card-action-button:hover {
-  border-color: rgba(40, 124, 122, 0.38) !important;
-  background:
-    linear-gradient(135deg, rgba(40, 124, 122, 0.13), rgba(255, 255, 255, 0.86)) !important;
-  color: var(--vn-teal-deep) !important;
-}
-
-.field-card,
-.drawer-field-card {
-  border-color: rgba(40, 124, 122, 0.18) !important;
-}
-
-.tool-drawer {
-  border-left-color: rgba(40, 124, 122, 0.26) !important;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.13), transparent 16rem),
-    var(--vn-paper-warm) !important;
-}
-
-.drawer-close-button {
-  border-color: rgba(40, 124, 122, 0.24) !important;
-  color: var(--vn-teal-deep) !important;
-}
-
-/* --------------------------------------------------------------------------
-   Glossary: add calm colour distinction without making it busy
-   -------------------------------------------------------------------------- */
-
-.glossary-list {
-  gap: 0.95rem;
-}
-
-.glossary-card {
-  position: relative;
-  overflow: hidden;
-  border-color: rgba(40, 124, 122, 0.16) !important;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 253, 0.78)) !important;
-}
-
-.glossary-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 4px;
-  background: linear-gradient(
-    180deg,
-    rgba(40, 124, 122, 0.72),
-    rgba(242, 140, 40, 0.48)
-  );
-  pointer-events: none;
-}
-
-.glossary-card h2 {
-  color: var(--vn-teal-deep);
-}
-
-.glossary-chip {
-  border-color: rgba(40, 124, 122, 0.2) !important;
-  background: rgba(255, 255, 255, 0.78) !important;
-  color: var(--vn-teal-deep) !important;
-}
-
-.glossary-chip:hover {
-  border-color: rgba(40, 124, 122, 0.34) !important;
-  background:
-    linear-gradient(135deg, rgba(221, 239, 237, 0.72), rgba(255, 255, 255, 0.84)) !important;
-  color: var(--vn-teal-deep) !important;
-}
-
-.glossary-chip.active {
-  border-color: rgba(242, 140, 40, 0.42) !important;
-  background:
-    linear-gradient(135deg, rgba(255, 247, 214, 0.88), rgba(255, 255, 255, 0.84)) !important;
-  color: var(--vn-orange-deep) !important;
-}
-
-.glossary-popup {
-  border-color: rgba(40, 124, 122, 0.22) !important;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(40, 124, 122, 0.09), transparent 10rem),
-    rgba(255, 247, 234, 0.92) !important;
-}
-
-.glossary-term-panel {
-  border-color: rgba(40, 124, 122, 0.18) !important;
-  background:
-    linear-gradient(135deg, rgba(221, 239, 237, 0.44), rgba(255, 255, 255, 0.7)) !important;
-}
-
-/* --------------------------------------------------------------------------
-   Related/section navigation: keep orange as cue, teal as interaction
-   -------------------------------------------------------------------------- */
-
-.related-card:hover,
-.section-nav-button:hover {
-  border-color: rgba(40, 124, 122, 0.3) !important;
-  background:
-    radial-gradient(circle at 96% 12%, rgba(40, 124, 122, 0.09), transparent 9rem),
-    rgba(255, 255, 255, 0.88) !important;
-}
-
-.related-card:hover span,
-.section-nav-button:hover span {
-  color: var(--vn-teal-deep) !important;
-}
-/* ==========================================================================
-   Glossary card reset
-   Restores glossary cards to a simple, readable card style.
-
-   Use this after the final colour-balance pass if the Glossary page still
-   feels over-designed.
-   ========================================================================== */
-
-.glossary-list {
-  gap: 0.9rem !important;
-}
-
-.glossary-card {
-  position: static !important;
-  overflow: visible !important;
-  border: 1px solid var(--vn-border-soft) !important;
-  border-radius: var(--vn-radius-soft) !important;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.88),
-    rgba(251, 250, 246, 0.78)
-  ) !important;
-  box-shadow: var(--vn-shadow-soft) !important;
-  padding: 1.15rem !important;
-}
-
-.glossary-card::before,
-.glossary-card::after {
+.section-header h1::before {
   content: none !important;
   display: none !important;
+  margin-right: 0 !important;
 }
-
-.glossary-card h2 {
-  margin-bottom: 0.45rem !important;
-  color: var(--vn-heading-text) !important;
-  font-size: 1.16rem !important;
-}
-
-.glossary-card p {
-  color: var(--vn-soft-text) !important;
-  line-height: 1.6 !important;
-}
-
-/* Keep glossary chips usable, but quieter. */
-.glossary-chip {
-  border-color: rgba(31, 41, 51, 0.12) !important;
-  background: rgba(255, 255, 255, 0.76) !important;
-  color: var(--vn-soft-text) !important;
-}
-
-.glossary-chip:hover {
-  border-color: rgba(40, 124, 122, 0.24) !important;
-  background: rgba(255, 255, 255, 0.88) !important;
-  color: var(--vn-teal-deep) !important;
-}
-
-.glossary-chip.active {
-  border-color: rgba(242, 140, 40, 0.34) !important;
-  background: rgba(255, 247, 234, 0.86) !important;
-  color: var(--vn-orange-deep) !important;
-}
-
