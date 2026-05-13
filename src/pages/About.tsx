@@ -35,9 +35,9 @@ function About() {
         <article className="about-panel">
           <h2>Who I am</h2>
           <p>
-            VitalNotes is written by a working paramedic and paramedic
-            instructor who spends a lot of time watching students learn in labs,
-            scenarios, OSCEs, and clinical practice preparation.
+            I am a working paramedic and paramedic instructor. I spend a lot of
+            time watching students learn in labs, scenarios, OSCEs, and clinical
+            practice preparation.
           </p>
           <p>
             That matters because this guide is not written from a distance. It
