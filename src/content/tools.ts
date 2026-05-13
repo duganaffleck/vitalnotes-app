@@ -2,829 +2,1007 @@ import type { Tool } from './types'
 
 export const tools: Tool[] = [
   {
-    id: "directive-meaning-check",
-    title: "Directive Meaning Check",
-    status: "drafted",
-    toolType: "thinking-check",
-    purpose: "Use this when a directive feels like wording you are trying to survive instead of a decision structure you understand. The goal is to understand what the directive is protecting, supporting, or preventing while still respecting the actual standard.",
-    whenToUse: "Use this when a directive feels hard to remember, intimidating during scenarios or OSCEs, easy to recite but hard to explain, or fragile when the patient does not fit the clean version you studied.",
+    id: 'directive-meaning-check',
+    title: 'Directive Meaning Check',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Use this when a directive feels like wording you are trying to survive instead of a decision structure you understand. The goal is to understand what the directive is protecting, supporting, or preventing while still respecting the actual standard.',
+    whenToUse:
+      'Use this when a directive feels hard to remember, intimidating during scenarios or OSCEs, easy to recite but hard to explain, or fragile when the patient does not fit the clean version you studied.',
     whenNotToUse: [
-      "Do not use this as a replacement for the directive itself.",
-      "Do not use it to loosen indications, contraindications, dose, route, patch points, reassessment expectations, or documentation requirements.",
-      "Do not turn it into a quiz or a rewritten copy of the whole directive."
+      'Do not use this as a replacement for the directive itself.',
+      'Do not use it to loosen indications, contraindications, dose, route, patch points, reassessment expectations, or documentation requirements.',
+      'Do not turn it into a quiz or a rewritten copy of the whole directive.',
     ],
+    fieldIntro:
+      'Use these fields to connect the directive to risk, boundaries, and reassessment.',
     steps: [
-      "Choose one directive or one part of a directive.",
-      "Name the clinical risk underneath the directive.",
-      "Identify what physiology or patient problem the directive supports or protects.",
-      "List the firm boundaries that are not flexible.",
-      "Name what would make you withhold, stop, patch, reassess, or change course.",
-      "Decide what must be reassessed afterward."
+      'Choose one directive, medication, intervention, or decision point.',
+      'Name the clinical risk underneath it.',
+      'Identify what physiology or patient problem the directive supports or protects.',
+      'Name the boundaries and ask why each one exists.',
+      'Identify what would make you withhold, stop, patch, reassess, or change course.',
+      'Decide what must be reassessed afterward.',
     ],
     fields: [
       {
-        id: "directive",
-        label: "Directive or decision",
-        helperText: "Name the directive, medication, intervention, or decision point you are reviewing."
+        id: 'directive',
+        label: 'Directive or decision',
+        helperText:
+          'Name the directive, medication, intervention, or decision point you are reviewing.',
       },
       {
-        id: "clinical-risk",
-        label: "Clinical risk",
-        helperText: "What patient risk is this directive built around, such as worsening oxygenation, poor perfusion, untreated pain, medication harm, or missed deterioration?"
+        id: 'clinical-risk',
+        label: 'Clinical risk',
+        helperText:
+          'What patient risk is this directive built around, such as poor perfusion, untreated pain, medication harm, missed deterioration, or unsafe delay?',
       },
       {
-        id: "physiology",
-        label: "Physiology or patient problem",
-        helperText: "What body process, symptom, or clinical priority is being supported, protected, or kept from worsening?"
+        id: 'physiology',
+        label: 'Physiology or patient problem',
+        helperText:
+          'What body process, symptom, or clinical priority is being supported, protected, or kept from worsening?',
       },
       {
-        id: "firm-boundaries",
-        label: "Firm boundaries",
-        helperText: "List the indications, contraindications, dose, route, age limits, vital sign limits, assessments, patch points, maximums, and documentation requirements that matter."
+        id: 'firm-boundaries',
+        label: 'Firm boundaries',
+        helperText:
+          'Name the boundaries that are not flexible, then ask what each one is protecting against. Focus on why the boundary exists, not on rewriting the whole directive.',
       },
       {
-        id: "withhold-change",
-        label: "Withhold, stop, patch, or change course",
-        helperText: "What finding, missing information, change after treatment, or safety concern would make you pause or alter the plan?"
+        id: 'withhold-change',
+        label: 'Withhold, stop, patch, or change course',
+        helperText:
+          'What finding, missing information, change after treatment, or safety concern would make you pause or alter the plan?',
       },
       {
-        id: "reassessment",
-        label: "Reassessment",
-        helperText: "What should you reassess after acting, and what change would show whether the decision is still appropriate?"
-      }
+        id: 'reassessment',
+        label: 'Reassessment',
+        helperText:
+          'What should you reassess after acting, and what change would show whether the decision is still appropriate?',
+      },
     ],
     examples: [
       {
-        title: "Oxygen Administration",
-        context: "A student has memorized oxygen as a number-based decision, but needs to understand what oxygen is meant to support during a shortness of breath call.",
+        title: 'Nitroglycerin hesitation',
+        context:
+          'A student knows the cardiac ischemia symptom relief directive wording, but hesitates because the 12-lead ECG is not diagnostic and the patient does not feel like a clean textbook case.',
         entries: [
           {
-            label: "Clinical risk",
-            text: "The patient may not be oxygenating adequately, or may be at risk of worsening oxygenation based on their presentation."
+            label: 'Directive or decision',
+            text: 'Nitroglycerin for a patient with ongoing ischemic-sounding chest discomfort after the required assessment and contraindication screen.',
           },
           {
-            label: "Physiology",
-            text: "Oxygen supports oxygen delivery when oxygenation is inadequate or threatened."
+            label: 'Clinical risk',
+            text: 'The risk is untreated cardiac-related pain and avoidable delay while the student waits for diagnostic certainty that may not arrive in the field.',
           },
           {
-            label: "Firm boundaries",
-            text: "The student must consider the directive, patient presentation, oxygen saturation, reliability of the reading, work of breathing, mental status, skin signs, and response to care."
+            label: 'Physiology or patient problem',
+            text: 'Nitroglycerin is being considered to support symptom relief and reduce cardiac workload when the presentation and directive criteria fit. The decision still depends on blood pressure, contraindications, patient presentation, and reassessment.',
           },
           {
-            label: "Withhold, change, or reassess",
-            text: "Oxygen should not be applied automatically just because a patient says they are short of breath. The student should ask whether oxygen is indicated, whether the reading is reliable, and whether the overall presentation suggests risk."
+            label: 'Firm boundaries',
+            text: 'The blood pressure threshold, contraindication screen, dose limits, route, timing, and patch requirements are not loose suggestions. Each boundary exists because the treatment can create harm if the patient cannot tolerate it or if key information is missing. The blood pressure threshold exists specifically because nitroglycerin reduces preload, and a patient who is already volume-dependent or hemodynamically marginal may not tolerate that reduction safely.',
           },
           {
-            label: "Reassessment",
-            text: "After oxygen is applied or adjusted, reassess oxygen saturation, work of breathing, respiratory rate, mental status, skin signs, patient comfort, and whether the patient is improving, worsening, or unchanged."
-          }
+            label: 'Withhold, stop, patch, or change course',
+            text: 'Recent PDE-5 inhibitor use, hypotension, concerning vital sign trends, a failed contraindication screen, unclear eligibility, worsening status after treatment, or reaching a patch point would change the plan.',
+          },
+          {
+            label: 'Reassessment',
+            text: 'Reassess pain, blood pressure, heart rate, mental status, perfusion, side effects, and whether the working concern still fits. The point is not to chase certainty. The point is to understand whether the treatment is supporting the patient problem in front of you.',
+          },
         ],
-        nextAdjustment: "Write one short note: this directive protects against, supports, has firm boundaries around, requires withholding or changing course if, and must be reassessed by checking."
-      }
-    ],
-    relatedSections: [
-      "directives-through-purpose",
-      "pathophysiology-through-patterns",
-      "clinical-reasoning",
-      "osce-preparation",
-      "performance-under-pressure"
-    ]
-  },
-  {
-    id: "smart-note-template",
-    title: "Smart Note Template",
-    status: "drafted",
-    toolType: "template",
-    purpose: "Turn one concept, scenario error, confusing idea, or repeated feedback point into a small reusable note that helps future you understand, connect, retrieve, and use one idea.",
-    whenToUse: "Use this when an idea is worth keeping because it keeps showing up in class, lab, feedback, directives, scenarios, or reassessment decisions.",
-    whenNotToUse: [
-      "Do not use this to capture everything from a lecture.",
-      "Do not use it as a full condition summary.",
-      "Do not use it when the note would only copy a definition without changing how you think."
-    ],
-    steps: [
-      "Choose one idea, not a whole topic.",
-      "Write the core claim in one clear sentence.",
-      "Explain the idea in your own words.",
-      "List the clinical signals that would make the idea visible in assessment, scenarios, or reassessment.",
-      "Name the common confusion or trap the note is meant to prevent.",
-      "Link only to ideas that change how you understand or use this idea."
-    ],
-    fields: [
-      {
-        id: "claim",
-        label: "Claim",
-        helperText: "The core idea in one clear sentence. It should be small enough to reuse later."
       },
-      {
-        id: "explanation",
-        label: "Explanation",
-        helperText: "Explain what is happening, why it matters, what mechanism or decision it connects to, and how it could change what you do next time."
-      },
-      {
-        id: "clinical-signals",
-        label: "Clinical signals",
-        helperText: "What would you see, hear, ask, reassess, or notice in a patient, scenario, or lab?"
-      },
-      {
-        id: "common-confusion",
-        label: "Common confusion",
-        helperText: "What mistake, mix-up, or trap is this note meant to prevent?"
-      },
-      {
-        id: "links",
-        label: "Links",
-        helperText: "Connect this note to a few related mechanisms, directives, scenario errors, reassessment habits, or clinical reasoning patterns."
-      }
-    ],
-    examples: [
-      {
-        title: "Respiratory Fatigue",
-        context: "A student keeps hearing less wheezing after treatment and wants to avoid assuming improvement too early.",
-        entries: [
-          {
-            label: "Claim",
-            text: "Quiet lungs can mean worsening respiratory fatigue."
-          },
-          {
-            label: "Explanation",
-            text: "In severe bronchospasm or respiratory distress, less wheezing is not always improvement. If the patient is working hard to breathe and then becomes quieter, more tired, less able to speak, or more altered, the issue may be reduced air movement rather than recovery."
-          },
-          {
-            label: "Clinical signals",
-            text: "Decreasing ability to speak, persistent or worsening work of breathing, reduced air movement, fatigue after initial treatment, altered mental status, poor response to bronchodilator treatment, or declining respiratory effectiveness despite less obvious wheeze."
-          },
-          {
-            label: "Common confusion",
-            text: "Students may hear less wheezing and assume the patient is improving. The safer question is whether air movement, effort, speech, mental status, and overall trajectory are improving together."
-          },
-          {
-            label: "Links",
-            text: "Work of breathing, air trapping, oxygenation versus ventilation, respiratory fatigue, reassessment after intervention."
-          }
-        ],
-        nextAdjustment: "Before the next respiratory scenario, review the note and practise saying what reassessment findings would prove improvement."
-      },
-      {
-        title: "Directive Decision",
-        context: "A student wants a note that makes contraindications feel clinically meaningful rather than like isolated checklist wording.",
-        entries: [
-          {
-            label: "Claim",
-            text: "A contraindication usually points to a risk, not just a rule."
-          },
-          {
-            label: "Explanation",
-            text: "Contraindications are not random barriers. They usually exist because a treatment could harm the patient or make the situation worse under certain conditions. Understanding the risk behind the contraindication makes the directive easier to remember and safer to apply."
-          },
-          {
-            label: "Clinical signals",
-            text: "Borderline vital signs, incomplete history, medication use that changes eligibility, patient condition changing after treatment, uncertainty about whether the directive still fits, or a need for reassessment, withholding, patching, or changing course."
-          },
-          {
-            label: "Common confusion",
-            text: "Students may treat contraindications as checklist items to recite rather than risks to understand. This can lead to either unsafe treatment or unnecessary hesitation."
-          },
-          {
-            label: "Links",
-            text: "Directive meaning, clinical risk, medication safety, reassessment after treatment, OSCE reasoning."
-          }
-        ],
-        nextAdjustment: "After a scenario or directive review, turn one confusing decision into a short Smart Note instead of rewriting the full directive."
-      }
     ],
     commonMistakes: [
-      "Turning the note into a lecture summary.",
-      "Capturing every detail instead of one reusable idea.",
-      "Linking by topic instead of meaning.",
-      "Writing notes to look complete instead of to support future decisions."
+      'Rewriting the full directive instead of identifying the risk and intent underneath it.',
+      'Treating boundaries as wording to memorize rather than safety limits to understand.',
+      'Using “I know the directive” as a substitute for reassessing whether the decision still fits the patient.',
+    ],
+    toolPointers: [
+      'If this exposes a boundary you keep forgetting, turn it into a Clinical Recall Prompt Builder card.',
+      'If the hesitation keeps appearing across scenarios, take the pattern to the Five Whys Tool.',
     ],
     relatedSections: [
-      "smart-notes-for-paramedic-students",
-      "types-of-notes-and-idea-maturation",
-      "obsidian-for-learning-paramedicine",
-      "clinical-recall-without-trivia"
-    ]
+      'directives-through-purpose',
+      'pathophysiology-through-patterns',
+      'clinical-reasoning',
+      'osce-preparation',
+      'performance-under-pressure',
+    ],
+    relatedTools: ['clinical-recall-prompt-builder', 'five-whys-tool'],
   },
   {
-    id: "clinical-recall-prompt-builder",
-    title: "Clinical Recall Prompt Builder",
-    status: "drafted",
-    toolType: "prompt-builder",
-    purpose: "Turn facts, notes, scenario errors, directive details, and confusing concepts into recall prompts that support clinical use rather than trivia.",
-    whenToUse: "Use this when something needs to become easier to reach during patient assessment, decision-making, reassessment, communication, or OSCE performance.",
+    id: 'smart-note-template',
+    title: 'Smart Note Template',
+    status: 'drafted',
+    toolType: 'template',
+    purpose:
+      'Turn one concept, scenario error, confusing idea, or repeated feedback point into a small reusable note that helps future you understand, connect, retrieve, and use one idea.',
+    whenToUse:
+      'Use this when an idea is worth keeping because it keeps showing up in class, lab, feedback, directives, scenarios, or reassessment decisions.',
     whenNotToUse: [
-      "Do not use it for every detail.",
-      "Do not turn every scenario into cards.",
-      "Do not make prompts so large that one question tries to hold an entire condition.",
-      "Do not let Anki or any platform become the point of the work."
+      'Do not use this to capture everything from a lecture.',
+      'Do not use it as a full condition summary.',
+      'Do not use it when the note would only copy a definition without changing how you think.',
     ],
+    fieldIntro:
+      'Use these fields to turn one idea into a reusable note.',
     steps: [
-      "Name the fact, concept, scenario error, directive detail, or Smart Note you are trying to remember.",
-      "Ask what clinical job this knowledge does.",
-      "Make one basic fact prompt.",
-      "Make one clinical cue prompt.",
-      "Make one decision or boundary prompt.",
-      "Make one reassessment prompt.",
-      "Optionally, make one communication prompt."
+      'Choose one idea, not a whole topic.',
+      'Write the core claim in one clear sentence.',
+      'Explain the idea in your own words.',
+      'List the clinical signals that would make the idea visible in assessment, scenarios, or reassessment.',
+      'Name the common confusion or trap the note is meant to prevent.',
+      'Link only to ideas that change how you understand or use this idea.',
     ],
     fields: [
       {
-        id: "source-idea",
-        label: "What am I trying to remember?",
-        helperText: "Name the fact, concept, scenario error, directive detail, or Smart Note. Keep it small."
+        id: 'claim',
+        label: 'Claim',
+        helperText:
+          'The core idea in one clear sentence. It should be small enough to reuse later.',
       },
       {
-        id: "clinical-job",
-        label: "Clinical job",
-        helperText: "What should this help you notice, decide, avoid, reassess, explain, compare, recognize, or change?"
+        id: 'explanation',
+        label: 'Explanation',
+        helperText:
+          'Explain what is happening, why it matters, what mechanism or decision it connects to, and how it could change what you do next time.',
       },
       {
-        id: "basic-fact",
-        label: "Basic fact prompt",
-        helperText: "Start with the clean recall detail. Basic fact prompts are not bad, but they should not be the whole system."
+        id: 'clinical-signals',
+        label: 'Clinical signals',
+        helperText:
+          'What would you see, hear, ask, reassess, or notice in a patient, scenario, or lab?',
       },
       {
-        id: "clinical-cue",
-        label: "Clinical cue prompt",
-        helperText: "Connect the idea to what you might see, hear, ask, or notice in assessment."
+        id: 'common-confusion',
+        label: 'Common confusion',
+        helperText: 'What mistake, mix-up, or trap is this note meant to prevent?',
       },
       {
-        id: "decision-boundary",
-        label: "Decision or boundary prompt",
-        helperText: "Connect the idea to action, withholding, caution, scope, or a safety boundary."
+        id: 'links',
+        label: 'Links',
+        helperText:
+          'Connect this note to a few related mechanisms, directives, scenario errors, reassessment habits, or clinical reasoning patterns.',
+      },
+    ],
+    examples: [
+      {
+        title: 'Directive decision',
+        context:
+          'A student wants a note that makes contraindications feel clinically meaningful rather than like isolated checklist wording.',
+        entries: [
+          {
+            label: 'Claim',
+            text: 'A contraindication usually points to a patient risk, not just a rule.',
+          },
+          {
+            label: 'Explanation',
+            text: 'Contraindications are not random barriers. They usually exist because a treatment could harm the patient or make the situation worse under certain conditions. Understanding the risk behind the contraindication makes the directive easier to remember and safer to apply.',
+          },
+          {
+            label: 'Clinical signals',
+            text: 'Borderline vital signs, incomplete medication history, a condition that changes eligibility, patient status changing after treatment, or uncertainty about whether the directive still fits.',
+          },
+          {
+            label: 'Common confusion',
+            text: 'Students may treat contraindications as checklist items to recite rather than risks to understand. This can create unsafe treatment or unnecessary hesitation.',
+          },
+          {
+            label: 'Links',
+            text: 'Directive meaning, medication safety, risk management, reassessment after treatment, OSCE reasoning.',
+          },
+        ],
       },
       {
-        id: "reassessment",
-        label: "Reassessment prompt",
-        helperText: "Ask what should be checked again after time, treatment, or new information."
+        title: 'Abdominal pain and risk management',
+        context:
+          'A student wants to remember why an older abdominal pain patient can require early conservative action even when the diagnosis is unclear.',
+        entries: [
+          {
+            label: 'Claim',
+            text: 'An older patient becoming quieter during assessment is a trajectory signal, not background noise.',
+          },
+          {
+            label: 'Explanation',
+            text: 'Older patients can deteriorate before the presentation becomes obvious. Vague pain, subtle vital sign drift, increasing quietness, medication history, and a poor-looking patient should shift the plan toward early transport, reassessment, and conservative risk management.',
+          },
+          {
+            label: 'Clinical signals',
+            text: 'Persistent or poorly localized pain, nausea, diaphoresis, pallor, borderline or trending blood pressure, increasing quietness, anticoagulant use, or pain that feels worse than the exam explains.',
+          },
+          {
+            label: 'Common confusion',
+            text: 'Students may keep assessing because they want the diagnosis to become clearer before acting. The safer question is what plan protects the patient if this is worse than it looks.',
+          },
+          {
+            label: 'Links',
+            text: 'Risk under uncertainty, transport decisions, subtle deterioration, reassessment, cognitive load during vague presentations.',
+          },
+        ],
       },
-      {
-        id: "communication",
-        label: "Communication prompt",
-        helperText: "Optional. Ask how you would explain the reasoning to a partner, preceptor, instructor, patient, or receiving staff."
-      }
     ],
     commonMistakes: [
-      "Making every prompt too large.",
-      "Skipping basic facts entirely.",
-      "Making prompts that only work because the wording is familiar.",
-      "Turning every scenario into cards.",
-      "Forgetting reassessment."
+      'Writing a note about a whole topic instead of one idea.',
+      'Writing a claim so broad that it becomes advice instead of a reusable idea.',
+      'Copying a definition instead of explaining the idea in your own words.',
+      'Adding so many links that none of them clarify your thinking.',
+      'Polishing the note instead of using it to make a future decision easier.',
     ],
-    examples: [
-      {
-        title: "Nitroglycerin",
-        context: "A student knows nitroglycerin exists in chest pain care, but wants recall prompts that support safe decision-making rather than only dose memorization.",
-        entries: [
-          {
-            label: "What am I trying to remember?",
-            text: "Nitroglycerin safety and decision-making."
-          },
-          {
-            label: "Clinical job",
-            text: "Help me decide whether nitro is appropriate, what could make it unsafe, and what I need to reassess afterward."
-          },
-          {
-            label: "Basic fact prompt",
-            text: "What major contraindications or safety checks must be considered before nitroglycerin?"
-          },
-          {
-            label: "Clinical cue prompt",
-            text: "What features of a chest pain call make ischemic pain more concerning even before diagnostic certainty?"
-          },
-          {
-            label: "Decision or boundary prompt",
-            text: "What findings or history would make nitroglycerin unsafe or require me to withhold, stop, patch, or change course?"
-          },
-          {
-            label: "Reassessment prompt",
-            text: "After nitroglycerin, what should I reassess to judge effect and safety?"
-          },
-          {
-            label: "Communication prompt",
-            text: "How would I explain why nitroglycerin is being considered even when the ECG is not diagnostic yet?"
-          }
-        ],
-        nextAdjustment: "Build prompts that test both recall and safe use, especially boundaries and reassessment."
-      },
-      {
-        title: "Respiratory Fatigue",
-        context: "A student missed signs that a respiratory patient was tiring after initial treatment.",
-        entries: [
-          {
-            label: "What am I trying to remember?",
-            text: "Signs that a respiratory patient is tiring."
-          },
-          {
-            label: "Clinical job",
-            text: "Help me notice deterioration when the presentation becomes quieter rather than more dramatic."
-          },
-          {
-            label: "Basic fact prompt",
-            text: "What are signs of respiratory fatigue?"
-          },
-          {
-            label: "Clinical cue prompt",
-            text: "What makes quieter lung sounds concerning in severe respiratory distress?"
-          },
-          {
-            label: "Decision or boundary prompt",
-            text: "What findings would make me escalate care rather than assume improvement?"
-          },
-          {
-            label: "Reassessment prompt",
-            text: "After treatment, what should I reassess to decide whether ventilation is actually improving?"
-          },
-          {
-            label: "Communication prompt",
-            text: "How would I explain to my partner that the patient may be tiring despite less obvious wheezing?"
-          }
-        ],
-        nextAdjustment: "Use recall prompts that train noticing, not only definitions."
-      },
-      {
-        title: "Poor Perfusion",
-        context: "A student wants perfusion knowledge to show up earlier during assessment, before the patient becomes obviously unstable.",
-        entries: [
-          {
-            label: "What am I trying to remember?",
-            text: "Early signs of poor perfusion."
-          },
-          {
-            label: "Clinical job",
-            text: "Help me recognize risk before blood pressure drops or the presentation becomes obvious."
-          },
-          {
-            label: "Basic fact prompt",
-            text: "What are signs of poor perfusion?"
-          },
-          {
-            label: "Clinical cue prompt",
-            text: "What patient presentation details might suggest poor perfusion before hypotension appears?"
-          },
-          {
-            label: "Decision or boundary prompt",
-            text: "What findings would make this patient higher priority even if one vital sign still looks acceptable?"
-          },
-          {
-            label: "Reassessment prompt",
-            text: "What changes in mental status, skin, pulse quality, blood pressure trend, or patient appearance would suggest worsening perfusion?"
-          },
-          {
-            label: "Communication prompt",
-            text: "How would I explain a conservative transport decision when the patient is not dramatically unstable yet?"
-          }
-        ],
-        nextAdjustment: "Connect recall to early recognition and conservative decision-making."
-      }
+    toolPointers: [
+      'Once a note feels stable, turn its key cue or boundary into a Clinical Recall Prompt Builder card.',
+      'If the note came from an error that keeps repeating, use the Five Whys Tool to find the deeper learning target.',
     ],
     relatedSections: [
-      "clinical-recall-without-trivia",
-      "anki-for-paramedic-learning",
-      "retrieval-and-spaced-learning",
-      "smart-notes-for-paramedic-students"
-    ]
+      'smart-notes-for-paramedic-students',
+      'understanding-before-memorizing',
+      'retrieval-practice',
+      'cognitive-load',
+    ],
+    relatedTools: ['clinical-recall-prompt-builder', 'five-whys-tool'],
   },
   {
-    id: "scenario-day-reset",
-    title: "Scenario Day Reset",
-    status: "drafted",
-    toolType: "reset",
-    purpose: "Leave a scenario with one practical adjustment for the next attempt instead of carrying the whole call forward.",
-    whenToUse: "Use this immediately after a scenario when you need to turn feedback, frustration, or a visible performance pattern into one thing to try next.",
+    id: 'clinical-recall-prompt-builder',
+    title: 'Clinical Recall Prompt Builder',
+    status: 'drafted',
+    toolType: 'prompt-builder',
+    purpose:
+      'Build recall prompts that test whether knowledge can be accessed and used clinically, not just recognized while reading notes.',
+    whenToUse:
+      'Use this when you want to turn a directive, Smart Note, medication, pathophysiology idea, or scenario error into retrieval practice that supports decisions under pressure.',
     whenNotToUse: [
-      "Do not use this as a full reflection worksheet.",
-      "Do not use it as an OSCE checklist.",
-      "Do not use it as a grading rubric, scenario evaluation form, AI feedback tool, instructor dashboard, or journaling system."
+      'Do not use this to make trivia cards that never touch patient care.',
+      'Do not make prompts so broad that you cannot answer them clearly.',
+      'Do not use recall practice as a replacement for scenarios, labs, or feedback.',
     ],
+    fieldIntro:
+      'Use these fields to build prompts that test access, not familiarity.',
     steps: [
-      "Name the main pattern that showed up.",
-      "Choose one adjustment small enough to carry into the next room.",
-      "Name the next moment where you will test it."
+      'Choose one idea that must be available under pressure.',
+      'Name the clinical job that knowledge is supposed to perform.',
+      'Write one prompt for the basic fact or threshold if needed.',
+      'Write one prompt for the clinical cue that should trigger the idea.',
+      'Write one prompt for the decision boundary or safety limit.',
+      'Write one prompt for reassessment after action.',
+      'Add a communication prompt if you need to explain the reasoning aloud.',
     ],
     fields: [
       {
-        id: "pattern",
-        label: "Pattern",
-        helperText: "What kept showing up? Choose one performance pattern, such as delayed reassessment, hesitation around risk, fixation, over-talking, or transport lag."
+        id: 'source-idea',
+        label: 'Source idea',
+        helperText:
+          'What directive, note, medication, concept, or scenario error are you turning into recall practice?',
       },
       {
-        id: "one-adjustment",
-        label: "One adjustment",
-        helperText: "What is one specific thing you will do differently in the next scenario?"
+        id: 'clinical-job',
+        label: 'Clinical job',
+        helperText:
+          'What should this knowledge help you do, such as recognize risk, choose treatment, withhold treatment, reassess, or explain a decision?',
       },
       {
-        id: "next-moment",
-        label: "Next moment to test it",
-        helperText: "Where in the next scenario will you watch for this pattern and try the adjustment?"
-      }
+        id: 'basic-fact',
+        label: 'Basic fact prompt',
+        helperText:
+          'What fact, threshold, sequence, or definition must be recalled accurately?',
+      },
+      {
+        id: 'clinical-cue',
+        label: 'Clinical cue prompt',
+        helperText:
+          'What patient finding, history detail, vital sign trend, scene cue, or reassessment finding should bring this idea to mind?',
+      },
+      {
+        id: 'decision-boundary',
+        label: 'Decision boundary prompt',
+        helperText:
+          'What would make you withhold, change, escalate, patch, or reconsider?',
+      },
+      {
+        id: 'reassessment',
+        label: 'Reassessment prompt',
+        helperText:
+          'After acting, what must you check to know whether the patient is improving, worsening, or unchanged?',
+      },
+      {
+        id: 'communication',
+        label: 'Communication prompt',
+        helperText:
+          'How would you explain the decision in one or two sentences to an instructor, partner, preceptor, or yourself?',
+      },
     ],
     examples: [
       {
-        title: "Delayed transport after a detailed assessment",
-        context: "A student finished a scenario with good assessment details but delayed the transport decision because they were still looking for a clearer diagnosis.",
+        title: 'Nitroglycerin',
+        context:
+          'A student wants recall practice that tests both directive accuracy and safe use during a chest pain scenario.',
         entries: [
           {
-            label: "Pattern",
-            text: "I kept gathering more information even after enough risk was present to start moving."
+            label: 'Source idea',
+            text: 'Cardiac ischemia symptom relief and nitroglycerin decision-making.',
           },
           {
-            label: "One adjustment",
-            text: "Once I identify a high-risk concern, I will name it out loud and start transport planning while continuing assessment."
+            label: 'Clinical job',
+            text: 'Recall when nitroglycerin is appropriate, what must be checked first, and what must be reassessed after each dose.',
           },
           {
-            label: "Next moment to test it",
-            text: "In the next scenario, as soon as I see risk building without diagnostic certainty, I will say, “This may be worse than it looks. Let’s start moving while we keep assessing.”"
-          }
+            label: 'Basic fact prompt',
+            text: 'What are the required conditions, dose, route, maximums, and patch points for nitroglycerin under the current directive?',
+          },
+          {
+            label: 'Clinical cue prompt',
+            text: 'What patient presentation makes ischemic chest discomfort a reasonable working concern even if the ECG is not diagnostic?',
+          },
+          {
+            label: 'Decision boundary prompt',
+            text: 'What findings or history would make nitroglycerin unsafe, require withholding, or require patching?',
+          },
+          {
+            label: 'Reassessment prompt',
+            text: 'After nitroglycerin, what do I reassess before considering another dose or changing the plan?',
+          },
+          {
+            label: 'Communication prompt',
+            text: 'How would I explain why I gave, withheld, or stopped nitroglycerin without sounding like I was only reciting a checklist?',
+          },
         ],
-        nextAdjustment: "Carry one adjustment forward. Do not try to fix the entire scenario at once."
-      }
-    ],
-    relatedSections: [
-      "scenario-days-as-learning-tools",
-      "common-errors-and-what-they-reveal",
-      "focused-practice-after-feedback"
-    ],
-    relatedTools: [
-      "reflection-without-journaling-tool",
-      "five-whys-tool"
-    ]
-  },
-  {
-    id: "osce-reset",
-    title: "OSCE Reset",
-    status: "drafted",
-    toolType: "reset",
-    purpose: "Re-orient quickly during OSCE preparation or after a station by returning to risk, structure, and the next action.",
-    whenToUse: "Use this before an OSCE station, during practice when your thinking narrows, or after a station when you need a simple way to recover structure without replaying everything.",
-    whenNotToUse: [
-      "Do not use this to memorize a script.",
-      "Do not use it as a full OSCE checklist.",
-      "Do not use it to chase flawless performance or reprocess every detail afterward."
-    ],
-    steps: [
-      "Name the primary risk right now.",
-      "Return to the assessment or decision structure that protects you from drifting.",
-      "Choose the next safe action, reassessment, or communication step."
-    ],
-    fields: [
-      {
-        id: "risk",
-        label: "Risk",
-        helperText: "What is the primary patient risk or performance risk right now?"
       },
       {
-        id: "structure",
-        label: "Structure",
-        helperText: "What stable structure should you return to, such as primary survey, focused assessment, contraindication screen, reassessment, or transport decision?"
+        title: 'Altered LOC after glucose treatment',
+        context:
+          'A student wants recall practice that prevents “treatment given” from becoming the end of thinking during a hypoglycemia scenario.',
+        entries: [
+          {
+            label: 'Source idea',
+            text: 'Hypoglycemia treatment, reassessment, and ongoing altered mental status.',
+          },
+          {
+            label: 'Clinical job',
+            text: 'Treat glucose administration as a reassessment point, not a conclusion. The job is confirming response, identifying airway risk, and recognizing when the problem is not resolved.',
+          },
+          {
+            label: 'Basic fact prompt',
+            text: 'What treatment options, routes, and safety conditions apply for hypoglycemia in this patient?',
+          },
+          {
+            label: 'Clinical cue prompt',
+            text: 'What changes in mental status, airway protection, behaviour, or vital signs should I expect if the treatment is working?',
+          },
+          {
+            label: 'Decision boundary prompt',
+            text: 'What would make me escalate, reassess the diagnosis, manage airway risk, or prepare for transport rather than assuming the problem is solved?',
+          },
+          {
+            label: 'Reassessment prompt',
+            text: 'What do I recheck after treatment: level of consciousness, BGL, airway, oral intake safety, vitals, trend, and whether the story still fits?',
+          },
+          {
+            label: 'Communication prompt',
+            text: 'How would I explain why a patient who has received glucose still needs careful reassessment and monitoring?',
+          },
+        ],
       },
       {
-        id: "next-action",
-        label: "Next action",
-        helperText: "What is the next safe step that keeps the station moving without abandoning reasoning?"
-      }
+        title: 'Poor perfusion',
+        context:
+          'A student wants to connect recall of shock concepts to early recognition and conservative decision-making.',
+        entries: [
+          {
+            label: 'Source idea',
+            text: 'Early poor perfusion and shock pattern recognition.',
+          },
+          {
+            label: 'Clinical job',
+            text: 'Notice early risk before the patient becomes obviously unstable.',
+          },
+          {
+            label: 'Basic fact prompt',
+            text: 'What are common early signs that perfusion may be inadequate even before blood pressure collapses?',
+          },
+          {
+            label: 'Clinical cue prompt',
+            text: 'What skin, mental status, pulse quality, capillary refill, respiratory, and trend findings should make poor perfusion more likely?',
+          },
+          {
+            label: 'Decision boundary prompt',
+            text: 'What would make me prioritize early transport, request support, or reassess more frequently even without diagnostic certainty?',
+          },
+          {
+            label: 'Reassessment prompt',
+            text: 'What trend would tell me the patient is compensating, failing, or responding to care?',
+          },
+          {
+            label: 'Communication prompt',
+            text: 'How would I explain that I am managing risk and trajectory, not waiting for one dramatic vital sign?',
+          },
+        ],
+      },
     ],
     commonMistakes: [
-      "Trying to restart the whole station mentally.",
-      "Performing confidence instead of returning to structure.",
-      "Using the reset as a script instead of a way to protect thinking."
+      'Leaving out the patient cue that should trigger the knowledge.',
+      'Testing what is easy to write instead of what is hard to access under pressure.',
+      'Forgetting to include reassessment prompts after treatment decisions.',
+      'Making prompts so large that they become mini-essays instead of retrieval practice.',
     ],
-    examples: [
-      {
-        title: "Chest Pain Station",
-        context: "A student feels pressure during a chest pain OSCE and starts rushing toward treatment.",
-        entries: [
-          {
-            label: "Situation",
-            text: "The patient has chest pain and the student feels time pressure while preparing for symptom relief."
-          },
-          {
-            label: "Risk",
-            text: "The primary risk is ischemia and avoidable deterioration, but medication harm is also possible if safety checks are skipped."
-          },
-          {
-            label: "Structure",
-            text: "Return to focused cardiac assessment, vital signs, contraindication screening, directive boundaries, and reassessment plan."
-          },
-          {
-            label: "Next action",
-            text: "Slow down enough to confirm safety, explain the decision, treat if appropriate, and reassess pain, blood pressure, symptoms, and overall status."
-          }
-        ],
-        nextAdjustment: "Use the reset to protect safe sequencing under evaluation pressure."
-      },
-      {
-        title: "Respiratory Station",
-        context: "A student becomes fixated on the first intervention and loses the bigger assessment picture.",
-        entries: [
-          {
-            label: "Situation",
-            text: "The patient is short of breath and the student is worried about doing the treatment sequence correctly."
-          },
-          {
-            label: "Risk",
-            text: "The patient may be tiring, deteriorating, or not responding to the assumed problem."
-          },
-          {
-            label: "Structure",
-            text: "Return to airway, breathing effectiveness, oxygenation, work of breathing, mental status, lung sounds, vital trends, and response to treatment."
-          },
-          {
-            label: "Next action",
-            text: "Reassess whether the patient is actually improving, communicate concern if they are not, and prepare to escalate or transport appropriately."
-          }
-        ],
-        nextAdjustment: "When pressure rises, return to the patient problem before adding more actions."
-      }
+    toolPointers: [
+      'Use this after Smart Note Template when a note has become clear enough to practise retrieving.',
+      'Use this after Directive Meaning Check when a boundary or reassessment point needs to become automatic.',
     ],
     relatedSections: [
-      "osce-preparation",
-      "performance-under-pressure",
-      "resetting-when-thinking-narrows"
+      'retrieval-practice',
+      'spaced-learning',
+      'smart-notes-for-paramedic-students',
+      'osce-preparation',
     ],
-    relatedTools: [
-      "scenario-day-reset",
-      "reflection-without-journaling-tool",
-      "clinical-reasoning-check"
-    ]
+    relatedTools: ['smart-note-template', 'directive-meaning-check'],
   },
   {
-    id: "reflection-without-journaling-tool",
-    title: "Reflection Without Journaling Tool",
-    status: "drafted",
-    toolType: "thinking-check",
-    purpose: "Turn one meaningful performance moment into one next adjustment without writing a full journal entry or replaying the whole call.",
-    whenToUse: "Use this after a scenario, OSCE, lab, clinical day, or feedback conversation when one moment should shape what you notice or do next time.",
+    id: 'clinical-reasoning-check',
+    title: 'Clinical Reasoning Check',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Use this when you need to check how your thinking behaved during a scenario, OSCE, lab, placement moment, or feedback point.',
+    whenToUse:
+      'Use this after a call or scenario when your first explanation, decision, or plan may have become too narrow, too rigid, or hard to explain.',
     whenNotToUse: [
-      "Do not use this to process every detail of the call.",
-      "Do not use it when you need formal documentation or a required reflective assignment.",
-      "Do not use it as a way to punish yourself after a difficult performance."
+      'Do not use this when the issue was simply a missed fact or skill step.',
+      'Do not use it when you already know the specific practice target.',
+      'Do not use it to diagnose the patient perfectly after the fact.',
+      'Do not let it become a way to replay the entire call.',
     ],
+    fieldIntro:
+      'Use these fields to check whether your working explanation stayed flexible.',
     steps: [
-      "Choose one moment that mattered.",
-      "Name what was happening at that moment.",
-      "Identify what shaped your response.",
-      "Decide what you would notice next time.",
-      "Choose one adjustment small enough to use."
+      'Name your working explanation at the time.',
+      'Identify what information supported it.',
+      'Identify what did not fit or needed more attention.',
+      'Ask whether your thinking changed when the patient changed.',
+      'Decide what cue, question, or reassessment would help next time.',
     ],
     fields: [
       {
-        id: "one-moment",
-        label: "One moment",
-        helperText: "Choose a point where a decision mattered, uncertainty appeared, or feedback landed."
+        id: 'working-explanation',
+        label: 'Working explanation',
+        helperText:
+          'What did you think was happening at the time? This does not need to be a final diagnosis. It can be a working concern, risk, or likely pattern.',
       },
       {
-        id: "what-was-happening",
-        label: "What was happening?",
-        helperText: "Describe the patient, task, pressure, cue, or decision without retelling the whole call."
+        id: 'supporting-cues',
+        label: 'Supporting cues',
+        helperText:
+          'What information made that explanation reasonable? Include presentation, history, vitals, scene details, response to treatment, or directive context.',
       },
       {
-        id: "what-shaped-response",
-        label: "What shaped my response?",
-        helperText: "Name the cue, assumption, habit, uncertainty, knowledge gap, or pressure response that influenced what you did."
+        id: 'did-not-fit',
+        label: 'What did not fit?',
+        helperText:
+          'What information was missing, conflicting, changing, or easy to ignore? Look for the cue that should have made you slow down, widen your thinking, reassess, or ask a different question.',
       },
       {
-        id: "notice-next-time",
-        label: "What would I notice next time?",
-        helperText: "Choose the cue, change, or question you want to catch earlier."
+        id: 'reasoning-response',
+        label: 'Reasoning response',
+        helperText:
+          'Did your thinking change as new information appeared? If not, what kept the first explanation in place?',
       },
       {
-        id: "one-adjustment",
-        label: "One adjustment",
-        helperText: "Decide what you will do differently in the next similar moment."
-      }
+        id: 'next-reasoning-cue',
+        label: 'Next reasoning cue',
+        helperText:
+          'What would you watch for, ask, or reassess next time? Choose one cue or question that would keep your working explanation flexible.',
+      },
     ],
     examples: [
       {
-        title: "Missed reassessment after treatment",
-        context: "A student gave a treatment during a respiratory scenario but did not reassess clearly afterward.",
+        title: 'Vague weakness with missed neurologic shift',
+        context:
+          'A student treated a vague weakness call as low acuity because the initial vitals were not dramatic, then missed that the patient’s speech and coordination were changing.',
         entries: [
           {
-            label: "Scenario moment",
-            text: "After the first respiratory treatment, I moved on to other tasks and did not deliberately reassess whether the patient was improving."
+            label: 'Working explanation',
+            text: 'I thought this was general weakness, dehydration, or fatigue because the patient looked stable and the first set of vitals did not push me toward a high-risk problem.',
           },
           {
-            label: "What was happening?",
-            text: "The patient still looked short of breath, but I was focused on completing the next expected steps and keeping the scenario moving."
+            label: 'Supporting cues',
+            text: 'The patient was awake, talking, not in obvious distress, and had vague symptoms without a clear complaint at first.',
           },
           {
-            label: "What shaped my response?",
-            text: "I treated the intervention as the end of that part of the call instead of using it as a question that needed reassessment."
+            label: 'What did not fit?',
+            text: 'The patient became slower to answer, had subtle word-finding trouble, and seemed less coordinated during movement. Those changes should have widened my thinking toward neurologic risk.',
           },
           {
-            label: "What would I notice next time?",
-            text: "After any treatment, I need to check whether the patient’s work of breathing, speech, mental status, vital signs, and overall appearance are changing in the right direction."
+            label: 'Reasoning response',
+            text: 'My thinking did not shift quickly enough because the first impression stayed in control. I kept looking for confirmation that the call was low acuity instead of treating the change as new information.',
           },
           {
-            label: "One adjustment",
-            text: "After each intervention, I will say out loud what I am reassessing and what would make me continue, change, or escalate care."
-          }
+            label: 'Next reasoning cue',
+            text: 'When a vague patient changes during the call, I will treat that change as evidence. I will reassess speech, face, arms, gait or coordination, glucose, vitals, and time course rather than staying with the first label.',
+          },
         ],
-        nextAdjustment: "Stop once the adjustment is clear. More reflection is not automatically better reflection."
-      }
+      },
+      {
+        title: 'Chest pain with a non-diagnostic ECG update',
+        context:
+          'A student stayed with the first plan after a repeat ECG and symptom update made the case less clean, but more concerning.',
+        entries: [
+          {
+            label: 'Working explanation',
+            text: 'I thought the chest pain was likely anxiety or non-specific discomfort because the first ECG was not diagnostic and the patient was talking normally.',
+          },
+          {
+            label: 'Supporting cues',
+            text: 'The patient was alert, the first ECG did not show a clear STEMI pattern, and the pain description was not dramatic at first.',
+          },
+          {
+            label: 'What did not fit?',
+            text: 'The patient became more diaphoretic, the pain persisted, nausea increased, and the repeat ECG still did not reassure me. Non-diagnostic did not mean low risk.',
+          },
+          {
+            label: 'Reasoning response',
+            text: 'I treated the ECG as the main decision-maker instead of integrating symptoms, trend, appearance, risk factors, and reassessment.',
+          },
+          {
+            label: 'Next reasoning cue',
+            text: 'When the repeat ECG does not reassure me and the patient is still symptomatic, I will explicitly ask: has my working concern changed, and does the current plan reflect what I am actually worried about?',
+          },
+        ],
+      },
+    ],
+    commonMistakes: [
+      'Using the tool to prove your first impression was right.',
+      'Writing a perfect retrospective diagnosis instead of checking how your reasoning moved.',
+      'Ignoring the cue that did not fit because it feels small after the scenario is over.',
+      'Trying to fix the whole call instead of choosing one reasoning cue for next time.',
+    ],
+    toolPointers: [
+      'If this reveals a repeated thinking pattern, take it to the Five Whys Tool.',
+      'If you are still between scenario attempts, use Scenario Day Reset to choose one next-room adjustment.',
     ],
     relatedSections: [
-      "reflection-without-journaling",
-      "turning-feedback-into-action",
-      "the-five-whys",
-      "scenario-days-as-learning-tools"
+      'clinical-reasoning',
+      'pattern-recognition',
+      'avoiding-premature-closure',
+      'the-five-whys',
+      'reflection-without-journaling',
+      'turning-feedback-into-action',
+      'resetting-when-thinking-narrows',
     ],
-    relatedTools: [
-      "scenario-day-reset",
-      "osce-reset",
-      "five-whys-tool",
-      "clinical-reasoning-check"
-    ]
+    relatedTools: ['five-whys-tool', 'reflection-without-journaling-tool', 'scenario-day-reset'],
   },
   {
-    id: "five-whys-tool",
-    title: "Five Whys Tool",
-    status: "drafted",
-    toolType: "thinking-check",
-    purpose: "Trace a mistake, hesitation, or repeated feedback point back to something you can actually work on.",
-    whenToUse: "Use this after a scenario, OSCE, lab, or feedback conversation when the surface mistake is clear but the learning target is not.",
+    id: 'scenario-day-reset',
+    title: 'Scenario Day Reset',
+    status: 'drafted',
+    toolType: 'reset',
+    purpose:
+      'Use this between scenario attempts when you need to turn feedback into one clear adjustment before the next room.',
+    whenToUse:
+      'Use this during scenario days, lab rotations, or repeated practice when the goal is to carry one small change into the next attempt instead of trying to fix everything.',
     whenNotToUse: [
-      "Do not use this after every performance.",
-      "Do not use it to interrogate yourself or assign blame.",
-      "Do not keep going after the answer has become actionable.",
-      "Do not use it when the next practice target is already obvious."
+      'Do not use this to process the entire scenario in detail.',
+      'Do not use it when you are finished for the day and need deeper reflection instead.',
+      'Do not choose more than one adjustment unless an instructor specifically asks you to.',
     ],
+    fieldIntro:
+      'Use these fields to choose one adjustment for the next attempt.',
     steps: [
-      "Name the visible problem.",
-      "Ask why it happened in that moment.",
-      "Keep asking what shaped the response.",
-      "Stop when the answer points to a learning, reasoning, structure, or preparation issue.",
-      "Turn that answer into one practice target."
+      'Name the pattern that showed up.',
+      'Choose one adjustment for the next attempt.',
+      'Name the moment where you will test that adjustment.',
+      'Leave the rest of the feedback for later.',
     ],
     fields: [
       {
-        id: "visible-problem",
-        label: "Visible problem",
-        helperText: "Name the behaviour, not your worth. For example: delayed transport, missed reassessment, over-focused on one cue, waited for certainty, or skipped contraindication screening."
+        id: 'pattern',
+        label: 'Pattern that showed up',
+        helperText:
+          'What repeated issue appeared, such as delayed transport, missed reassessment, fixation, over-talking, rushed treatment, or waiting for certainty?',
       },
       {
-        id: "why-1",
-        label: "Why 1",
-        helperText: "Why did that happen in the moment? Use the conditions of the call, not hindsight."
+        id: 'one-adjustment',
+        label: 'One adjustment',
+        helperText:
+          'What is the single change you will carry into the next room? Make it small, observable, and possible under pressure.',
       },
       {
-        id: "why-2",
-        label: "Why 2",
-        helperText: "What made that response feel reasonable or available at the time? Look for cognitive load, uncertainty, habit, weak structure, unclear directive purpose, or fixation."
+        id: 'next-moment',
+        label: 'Where I will test it',
+        helperText:
+          'Name the moment in the next scenario where this adjustment should appear.',
       },
-      {
-        id: "why-3",
-        label: "Why 3",
-        helperText: "What was underneath that? Was this a knowledge gap, retrieval gap, reasoning issue, pressure response, or practice design problem?"
-      },
-      {
-        id: "why-4-5",
-        label: "Why 4 or 5, if needed",
-        helperText: "What part of the learning system needs support? Stop when the answer becomes actionable. You do not need exactly five whys."
-      },
-      {
-        id: "practice-target",
-        label: "Practice target",
-        helperText: "What is one thing to practise, notice, or structure differently next time? The target should be small enough to carry into the next attempt."
-      }
     ],
     examples: [
       {
-        title: "Delayed nitroglycerin",
-        context: "A student delayed nitroglycerin in a chest pain scenario and needs to find the learning target underneath the surface mistake.",
+        title: 'Delayed transport after a detailed assessment',
+        context:
+          'A student completed a careful assessment but delayed transport because they wanted a clearer diagnosis before committing to a plan.',
         entries: [
           {
-            label: "Visible problem",
-            text: "I delayed nitroglycerin in a chest pain scenario."
+            label: 'Pattern that showed up',
+            text: 'I kept gathering information after I already had enough risk to justify transport.',
           },
           {
-            label: "Why 1",
-            text: "I was not sure the pain was ischemic because the 12-lead was not diagnostic."
+            label: 'One adjustment',
+            text: 'Once I identify a high-risk concern, I will state the concern and begin moving toward transport while continuing assessment.',
           },
           {
-            label: "Why 2",
-            text: "I treated nitro as something I should only give once the diagnosis felt more certain."
+            label: 'Where I will test it',
+            text: 'After the first full set of vitals and focused history, I will say whether this patient needs early transport and why.',
           },
-          {
-            label: "Why 3",
-            text: "I understood the directive mostly through indications and thresholds, not through the risk it is managing."
-          },
-          {
-            label: "Why 4",
-            text: "My study focused on whether nitro was allowed, not on what patient problem it supports or what reassessment should follow."
-          },
-          {
-            label: "Practice target",
-            text: "When reviewing cardiac symptom relief, connect each treatment to the clinical risk, contraindication screen, and reassessment point, not just the dose and threshold."
-          }
         ],
-        nextAdjustment: "Use this when the adjustment is not obvious because the surface error is hiding the real learning target."
-      }
+      },
+      {
+        title: 'Fixation on the obvious injury',
+        context:
+          'A student focused heavily on a visible wrist deformity and lost track of a pale, quiet patient with a concerning mechanism.',
+        entries: [
+          {
+            label: 'Pattern that showed up',
+            text: 'I let the obvious injury become the whole call and did not keep checking global status.',
+          },
+          {
+            label: 'One adjustment',
+            text: 'I will treat visible injuries as one part of the picture and deliberately return to skin, mentation, vitals, pain, mechanism, and transport priority.',
+          },
+          {
+            label: 'Where I will test it',
+            text: 'After managing the first visible problem, I will pause and ask what else could hurt this patient if I miss it.',
+          },
+        ],
+      },
+    ],
+    commonMistakes: [
+      'Choosing three or four adjustments and carrying none of them well.',
+      'Turning the reset into a full debrief.',
+      'Choosing a vague adjustment such as “be better” or “stay calmer.”',
+      'Forgetting to name where the adjustment will show up in the next attempt.',
+    ],
+    toolPointers: [
+      'Finished for the day? Use Reflection Without Journaling Tool instead.',
+      'If the same pattern keeps returning across attempts, use the Five Whys Tool later.',
     ],
     relatedSections: [
-      "the-five-whys",
-      "reflection-without-journaling",
-      "turning-feedback-into-action",
-      "common-errors-and-what-they-reveal",
-      "focused-practice-after-feedback"
+      'scenario-days-as-learning-tools',
+      'turning-feedback-into-action',
+      'resetting-when-thinking-narrows',
     ],
-    relatedTools: [
-      "reflection-without-journaling-tool",
-      "clinical-reasoning-check"
-    ]
+    relatedTools: ['reflection-without-journaling-tool', 'five-whys-tool'],
   },
   {
-    id: "clinical-reasoning-check",
-    title: "Clinical Reasoning Check",
-    status: "drafted",
-    toolType: "thinking-check",
-    purpose: "Use this when you need to check how your thinking behaved during a scenario, OSCE, lab, placement moment, or feedback point.",
-    whenToUse: "Use this after a call or scenario when your first explanation, decision, or plan may have become too narrow, too rigid, or hard to explain.",
+    id: 'osce-reset',
+    title: 'OSCE Reset',
+    status: 'drafted',
+    toolType: 'reset',
+    purpose:
+      'Use this before or during OSCE preparation when evaluation pressure starts pulling you away from safe structure and clear reasoning.',
+    whenToUse:
+      'Use this when you are preparing for OSCEs, recovering from a rough station, or noticing that pressure makes you rush, freeze, over-explain, or perform confidence instead of returning to structure.',
     whenNotToUse: [
-      "Do not use this when the issue was simply a missed fact or skill step.",
-      "Do not use it when you already know the specific practice target.",
-      "Do not use it to diagnose the patient perfectly after the fact.",
-      "Do not let it become a way to replay the entire call."
+      'Do not use this as a script to memorize for every station.',
+      'Do not use it to ignore feedback about knowledge or skill gaps.',
+      'Do not use it to look polished while skipping assessment, contraindication checks, reassessment, or transport decisions.',
     ],
+    fieldIntro:
+      'Use these fields to return attention to patient risk, structure, and the next safe action.',
     steps: [
-      "Name your working explanation at the time.",
-      "Identify what information supported it.",
-      "Identify what did not fit or needed more attention.",
-      "Ask whether your thinking changed when the patient changed.",
-      "Decide what cue, question, or reassessment would help next time."
+      'Name the primary risk right now.',
+      'Return to a trusted structure.',
+      'Choose the next safest action.',
     ],
     fields: [
       {
-        id: "working-explanation",
-        label: "Working explanation",
-        helperText: "What did you think was happening at the time? This does not need to be a final diagnosis. It can be a working concern, risk, or likely pattern."
+        id: 'risk',
+        label: 'Primary risk right now',
+        helperText:
+          'What could harm the patient if you miss it or delay too long?',
       },
       {
-        id: "supporting-cues",
-        label: "Supporting cues",
-        helperText: "What information made that explanation reasonable? Include presentation, history, vitals, scene details, response to treatment, or directive context."
+        id: 'structure',
+        label: 'Structure to return to',
+        helperText:
+          'What assessment, directive, prioritization, or reassessment structure keeps you safe when pressure rises?',
       },
       {
-        id: "did-not-fit",
-        label: "What did not fit?",
-        helperText: "What information was missing, conflicting, changing, or easy to ignore? Look for the cue that should have made you slow down, widen your thinking, reassess, or ask a different question."
+        id: 'next-action',
+        label: 'Next safest action',
+        helperText:
+          'What action keeps the patient safe while you continue to clarify the situation? Include what you will reassess after acting and how you would explain the decision simply if asked.',
       },
-      {
-        id: "reasoning-response",
-        label: "Reasoning response",
-        helperText: "Did your thinking change as new information appeared? If not, what kept the first explanation in place?"
-      },
-      {
-        id: "next-reasoning-cue",
-        label: "Next reasoning cue",
-        helperText: "What would you watch for, ask, or reassess next time? Choose one cue or question that would keep your working explanation flexible."
-      }
     ],
     examples: [
       {
-        title: "Respiratory first impression",
-        context: "A student locked onto asthma because the patient was wheezy and anxious, but missed signs that the patient was becoming fatigued.",
+        title: 'Chest pain station',
+        context:
+          'A student feels time pressure during a chest pain OSCE and starts rushing toward treatment without clearly protecting the decision sequence.',
         entries: [
           {
-            label: "Working explanation",
-            text: "I thought the shortness of breath was asthma because the patient was wheezy and anxious."
+            label: 'Primary risk right now',
+            text: 'Possible cardiac ischemia with potential deterioration, plus medication harm if I rush past contraindication screening or vital sign reassessment.',
           },
           {
-            label: "Supporting cues",
-            text: "They had a history of asthma, wheezing, increased work of breathing, and seemed to improve slightly after the first treatment."
+            label: 'Structure to return to',
+            text: 'Primary assessment, focused chest pain history, vitals, 12-lead acquisition, contraindication screen, directive boundaries, treatment, and reassessment.',
           },
           {
-            label: "What did not fit?",
-            text: "They became quieter, more tired, and spoke less. I treated quieter lung sounds as improvement instead of considering worsening air movement or fatigue."
+            label: 'Next safest action',
+            text: 'State the working concern, complete the required checks, treat if appropriate, and reassess pain, blood pressure, perfusion, and patient status after each intervention.',
           },
-          {
-            label: "Reasoning response",
-            text: "My thinking did not change enough after the reassessment. I stayed with the original asthma-improving explanation."
-          },
-          {
-            label: "Next reasoning cue",
-            text: "After respiratory treatment, check whether quietness means improvement or fatigue by reassessing air entry, work of breathing, speech, mental status, and vital signs."
-          }
         ],
-        nextAdjustment: "Treat the first impression as a working explanation and actively search for signs that it is failing."
-      }
+      },
+      {
+        title: 'Obvious injury station',
+        context:
+          'A student becomes focused on a visible fracture during an OSCE and starts performing tasks quickly while missing the broader patient picture.',
+        entries: [
+          {
+            label: 'Primary risk right now',
+            text: 'The visible injury matters, but the larger risk is missing shock, mechanism-related injuries, pain severity, or transport priority while trying to look busy and confident.',
+          },
+          {
+            label: 'Structure to return to',
+            text: 'Scene safety, primary survey, global appearance, mechanism, focused exam, pain management considerations, reassessment, packaging, and transport decision.',
+          },
+          {
+            label: 'Next safest action',
+            text: 'Acknowledge the injury, check global status and vitals, manage pain and immobilization appropriately, and keep reassessing whether the patient is becoming quieter, paler, or less stable.',
+          },
+        ],
+      },
+    ],
+    commonMistakes: [
+      'Performing confidence instead of returning to structure.',
+      'Narrating everything you know instead of prioritizing what matters now.',
+      'Rushing to treatment before the decision is protected.',
+      'Freezing because the station does not match the version you rehearsed.',
+      'Forgetting that reassessment is part of the intervention, not an optional ending.',
+    ],
+    toolPointers: [
+      'If a rough OSCE station leaves one clear adjustment, use Reflection Without Journaling Tool after the station.',
+      'If the same OSCE error keeps returning, use the Five Whys Tool to find the deeper pattern.',
     ],
     relatedSections: [
-      "clinical-reasoning",
-      "pattern-recognition",
-      "avoiding-premature-closure",
-      "the-five-whys",
-      "reflection-without-journaling",
-      "turning-feedback-into-action",
-      "resetting-when-thinking-narrows"
+      'osce-preparation',
+      'performance-under-pressure',
+      'resetting-when-thinking-narrows',
+      'clinical-reasoning',
     ],
-    relatedTools: [
-      "five-whys-tool",
-      "reflection-without-journaling-tool",
-      "osce-reset"
-    ]
-  }
+    relatedTools: ['reflection-without-journaling-tool', 'five-whys-tool'],
+  },
+  {
+    id: 'reflection-without-journaling-tool',
+    title: 'Reflection Without Journaling Tool',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Use this when you need to learn from one moment without writing a long journal entry or replaying the whole scenario.',
+    whenToUse:
+      'Use this after a lab, scenario, OSCE, feedback point, or placement moment when you need one clear adjustment and do not need a full written reflection.',
+    whenNotToUse: [
+      'Do not use this to process a whole call in detail.',
+      'Do not use it while you are still between scenario attempts and need a fast reset instead.',
+      'Do not use it to judge your personality, confidence, or worth.',
+    ],
+    fieldIntro:
+      'Use these fields to extract one useful adjustment without replaying the whole scenario.',
+    steps: [
+      'Choose one moment that mattered.',
+      'Name what was happening at the time.',
+      'Explain what shaped your response.',
+      'Decide what you would notice next time.',
+      'Choose one adjustment.',
+    ],
+    fields: [
+      {
+        id: 'one-moment',
+        label: 'One moment',
+        helperText:
+          'Choose one decision, hesitation, reassessment point, communication moment, or shift in patient status. Do not review the whole call.',
+      },
+      {
+        id: 'what-was-happening',
+        label: 'What was happening?',
+        helperText:
+          'What was going on in the patient, scene, team, or evaluation environment at that point?',
+      },
+      {
+        id: 'what-shaped-response',
+        label: 'What shaped my response?',
+        helperText:
+          'Explain the mechanism, not just the label. A surface answer names the outcome, such as “I was overloaded.” A useful answer explains what made that response happen, such as “I had no structure to return to after the first intervention, so I moved to the next task instead of reassessing.”',
+      },
+      {
+        id: 'notice-next-time',
+        label: 'What would I notice next time?',
+        helperText:
+          'What cue, change, feeling, question, or patient response would alert you earlier?',
+      },
+      {
+        id: 'one-adjustment',
+        label: 'One adjustment',
+        helperText:
+          'What is one small change you can carry into a future scenario, lab, OSCE, or placement moment?',
+      },
+    ],
+    examples: [
+      {
+        title: 'Abdominal pain with a quieter patient',
+        context:
+          'A student finished a scenario feeling uneasy because the patient became quieter and paler while the student kept gathering more history.',
+        entries: [
+          {
+            label: 'One moment',
+            text: 'The patient became quieter, paler, and less engaged while I continued asking history questions about abdominal pain.',
+          },
+          {
+            label: 'What was happening?',
+            text: 'The patient was older, had persistent vague abdominal pain, nausea, and subtle blood pressure drift. The presentation was unclear, but the overall trajectory was becoming more concerning.',
+          },
+          {
+            label: 'What shaped my response?',
+            text: 'I had no decision rule for when vague presentations require action before the picture clears. I kept assessing because gathering more information felt like the safe choice, and nothing in my preparation had made early conservative action feel equally safe.',
+          },
+          {
+            label: 'What would I notice next time?',
+            text: 'A patient becoming quieter, paler, less interactive, or more uncomfortable during assessment should make me pause and reassess global status, vitals, transport priority, and risk.',
+          },
+          {
+            label: 'One adjustment',
+            text: 'When a vague patient starts looking worse, I will say the risk out loud and decide whether early transport or escalation is safer than continuing to search for a clean diagnosis.',
+          },
+        ],
+      },
+    ],
+    commonMistakes: [
+      'Choosing the whole scenario instead of one moment.',
+      'Writing what sounds reflective instead of what changes the next attempt.',
+      'Stopping at a label such as “overloaded” without explaining what created the overload.',
+      'Continuing to replay the event after the adjustment is already clear.',
+    ],
+    toolPointers: [
+      'Still between scenario attempts? Use Scenario Day Reset instead.',
+      'If the same issue has appeared more than once, use the Five Whys Tool to find the deeper learning target.',
+    ],
+    relatedSections: [
+      'reflection-without-journaling',
+      'turning-feedback-into-action',
+      'the-five-whys',
+      'scenario-days-as-learning-tools',
+    ],
+    relatedTools: ['scenario-day-reset', 'five-whys-tool', 'clinical-reasoning-check'],
+  },
+  {
+    id: 'five-whys-tool',
+    title: 'Five Whys Tool',
+    status: 'drafted',
+    toolType: 'thinking-check',
+    purpose:
+      'Trace a mistake, hesitation, or repeated feedback point back to something you can actually work on.',
+    whenToUse:
+      'Use this after a scenario, OSCE, lab, or feedback conversation when the surface mistake is clear but the learning target is not.',
+    whenNotToUse: [
+      'Do not use this after every performance.',
+      'Do not use it to interrogate yourself or assign blame.',
+      'Do not keep going after the answer has become actionable.',
+      'Do not use it when the next practice target is already obvious.',
+    ],
+    fieldIntro:
+      'Use these fields to find what you can actually practise.',
+    steps: [
+      'Name the visible problem.',
+      'Ask why it happened in that moment.',
+      'Keep asking what shaped the response until the answer becomes actionable.',
+      'Stop when the answer points to a learning, reasoning, structure, or preparation issue.',
+      'Turn that answer into one practice target.',
+    ],
+    fields: [
+      {
+        id: 'visible-problem',
+        label: 'Visible problem',
+        helperText:
+          'Name the behaviour, not your worth. For example: delayed transport, missed reassessment, over-focused on one cue, waited for certainty, or skipped contraindication screening.',
+      },
+      {
+        id: 'first-why',
+        label: 'First why',
+        helperText:
+          'Why did that happen in the moment? Use the conditions of the call, not hindsight.',
+      },
+      {
+        id: 'keep-going',
+        label: 'Keep going until actionable',
+        helperText:
+          'Ask what shaped the response beneath the surface answer. Look for uncertainty, cognitive load, weak structure, unclear directive purpose, retrieval gaps, fixation, or practice design. You do not need exactly five whys.',
+      },
+      {
+        id: 'actionable-stop',
+        label: 'Where I should stop',
+        helperText:
+          'Stop when the answer points to something you can practise, clarify, retrieve, rehearse, or structure differently.',
+      },
+      {
+        id: 'practice-target',
+        label: 'Practice target',
+        helperText:
+          'What is one thing to practise, notice, or structure differently next time? The target should be small enough to carry into the next attempt.',
+      },
+    ],
+    examples: [
+      {
+        title: 'Delayed nitroglycerin',
+        context:
+          'A student delayed nitroglycerin in a chest pain scenario and needs to find the learning target underneath the surface mistake.',
+        entries: [
+          {
+            label: 'Visible problem',
+            text: 'I delayed nitroglycerin in a chest pain scenario.',
+          },
+          {
+            label: 'First why',
+            text: 'I was not sure the pain was ischemic because the 12-lead was not diagnostic.',
+          },
+          {
+            label: 'Keep going until actionable',
+            text: 'I treated nitroglycerin as something I should only give once the diagnosis felt more certain. Underneath that, I understood the directive mostly through indications and thresholds, not through the risk it is managing.',
+          },
+          {
+            label: 'Where I should stop',
+            text: 'The useful stop point is directive meaning. I need to connect the treatment to clinical risk, contraindication screening, and reassessment, not just memorize when it is allowed.',
+          },
+          {
+            label: 'Practice target',
+            text: 'When reviewing cardiac symptom relief, connect each treatment to the clinical risk, contraindication screen, and reassessment point.',
+          },
+        ],
+      },
+      {
+        title: 'Missed reassessment after glucose treatment',
+        context:
+          'A student gave treatment for hypoglycemia, then moved on without checking whether the patient’s mental status and overall condition actually improved.',
+        entries: [
+          {
+            label: 'Visible problem',
+            text: 'I missed reassessment after glucose treatment.',
+          },
+          {
+            label: 'First why',
+            text: 'I felt like the main problem had been addressed once treatment was given.',
+          },
+          {
+            label: 'Keep going until actionable',
+            text: 'I was thinking of treatment as completion rather than as a question that needs an answer. I also did not have a built-in post-treatment reassessment phrase or habit to return to under pressure.',
+          },
+          {
+            label: 'Where I should stop',
+            text: 'The useful stop point is reassessment structure. I do not need a bigger lesson about trying harder. I need a reliable post-intervention check.',
+          },
+          {
+            label: 'Practice target',
+            text: 'After each intervention in practice, say what I expect to change and what I will reassess before moving on.',
+          },
+        ],
+      },
+    ],
+    commonMistakes: [
+      'Forcing exactly five whys when the useful answer appeared earlier.',
+      'Turning the process into self-criticism.',
+      'Stopping at “I forgot” instead of asking what made forgetting likely.',
+      'Creating a practice target that is too vague to test.',
+    ],
+    toolPointers: [
+      'Use this when Reflection Without Journaling gives you an adjustment that still does not seem to stick.',
+      'If the issue was mostly a narrowed first impression, use Clinical Reasoning Check first.',
+    ],
+    relatedSections: [
+      'the-five-whys',
+      'reflection-without-journaling',
+      'turning-feedback-into-action',
+      'common-errors-and-what-they-reveal',
+      'focused-practice-after-feedback',
+    ],
+    relatedTools: ['reflection-without-journaling-tool', 'clinical-reasoning-check'],
+  },
 ]
 
 export const activeTools = tools.filter((tool) => tool.status === 'drafted')

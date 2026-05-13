@@ -66,7 +66,6 @@ export type ToolExample = {
   title?: string
   context: string
   entries: ToolExampleEntry[]
-  nextAdjustment?: string
 }
 
 export type Tool = {
@@ -77,12 +76,13 @@ export type Tool = {
   purpose: string
   whenToUse: string
   whenNotToUse?: string[]
+  fieldIntro?: string
   steps: string[]
   fields: ToolField[]
   commonMistakes?: string[]
-  example?: ToolExample
   examples?: ToolExample[]
   relatedTools?: string[]
+  toolPointers?: string[]
   relatedSections: string[]
 }
 

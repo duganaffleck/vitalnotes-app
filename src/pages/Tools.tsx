@@ -11,41 +11,37 @@ const toolGroups: ToolGroup[] = [
   {
     title: 'Understanding',
     purpose:
-      'For directives, notes, and concepts that still feel a bit fuzzy after class or lab.',
+      'Start here when a directive or concept feels unclear, or when an idea is becoming clear enough to keep and develop.',
     toolIds: ['directive-meaning-check', 'smart-note-template'],
   },
   {
     title: 'Recall',
     purpose:
-      'For knowledge that needs to show up during scenarios, not just look familiar during review.',
+      'Use this when knowledge needs to show up during scenarios, not just look familiar during review.',
     toolIds: ['clinical-recall-prompt-builder'],
   },
   {
     title: 'Clinical thinking',
     purpose:
-      'For checking your first impression before it quietly becomes the only explanation.',
+      'Use this when your first impression may have become too narrow, too confident, or hard to update.',
     toolIds: ['clinical-reasoning-check'],
   },
   {
     title: 'Practice and performance',
     purpose:
-      'For scenario days and OSCE prep, especially when feedback needs to turn into one clear adjustment.',
+      'Use these during scenario days and OSCE prep, especially when feedback needs to become one clear adjustment.',
     toolIds: ['scenario-day-reset', 'osce-reset'],
   },
   {
     title: 'Reflection and improvement',
     purpose:
-      'For rough scenarios, repeated mistakes, and feedback that needs to become one clear change.',
+      'Use these after rough scenarios, repeated mistakes, and feedback that needs to become one clear change.',
     toolIds: ['reflection-without-journaling-tool', 'five-whys-tool'],
   },
 ]
 
 function getToolExamples(tool: Tool): ToolExample[] {
-  if (tool.examples && tool.examples.length > 0) {
-    return tool.examples
-  }
-
-  return tool.example ? [tool.example] : []
+  return tool.examples ?? []
 }
 
 function renderToolList(title: string, items: string[]) {
@@ -62,6 +58,31 @@ function renderToolList(title: string, items: string[]) {
         ))}
       </ul>
     </div>
+  )
+}
+
+function renderStepReference(tool: Tool) {
+  if (tool.steps.length === 0) {
+    return null
+  }
+
+  return (
+    <details className="tool-section tool-example" key={`${tool.id}-steps`}>
+      <summary
+        className="card-action-button tool-example-button"
+        aria-label={`View quick reference steps for ${tool.title}`}
+      >
+        View quick reference steps
+      </summary>
+
+      <div className="tool-example-content">
+        <ol>
+          {tool.steps.map((step, index) => (
+            <li key={`${tool.id}-step-${index}`}>{step}</li>
+          ))}
+        </ol>
+      </div>
+    </details>
   )
 }
 
@@ -98,13 +119,6 @@ function renderExamples(tool: Tool) {
                 </div>
               ))}
             </div>
-
-            {example.nextAdjustment && (
-              <div className="field-card">
-                <strong>Next adjustment</strong>
-                <p>{example.nextAdjustment}</p>
-              </div>
-            )}
           </div>
         ))}
       </div>
@@ -126,20 +140,12 @@ function renderTool(tool: Tool) {
         <p>{tool.whenToUse}</p>
       </div>
 
-      {tool.steps.length > 0 && (
-        <div className="tool-section">
-          <h3>Steps</h3>
-          <ol>
-            {tool.steps.map((step) => (
-              <li key={step}>{step}</li>
-            ))}
-          </ol>
-        </div>
-      )}
+      {renderStepReference(tool)}
 
       {tool.fields.length > 0 && (
         <div className="tool-section">
           <h3>Fields</h3>
+          <p>{tool.fieldIntro ?? 'Use these fields as your working version.'}</p>
           <div className="field-list">
             {tool.fields.map((field) => (
               <div className="field-card" key={field.id}>
@@ -151,13 +157,16 @@ function renderTool(tool: Tool) {
         </div>
       )}
 
+      {renderExamples(tool)}
+
       {tool.whenNotToUse &&
         renderToolList('Do not use this when', tool.whenNotToUse)}
 
       {tool.commonMistakes &&
         renderToolList('Common mistakes', tool.commonMistakes)}
 
-      {renderExamples(tool)}
+      {tool.toolPointers &&
+        renderToolList('Possible next step', tool.toolPointers)}
     </article>
   )
 }
@@ -172,9 +181,9 @@ function Tools() {
         <h1>Use a tool when you need a next step.</h1>
         <p>
           These are small working aids for moments when reading is not quite
-          enough. Use them after a section, a lab, a scenario, an OSCE station,
-          or a feedback point when you need to turn an idea into something you
-          can try.
+          enough. Start with Understanding when something feels unclear, then
+          move toward Recall, Clinical thinking, Practice and performance, or
+          Reflection and improvement depending on the problem in front of you.
         </p>
       </header>
 

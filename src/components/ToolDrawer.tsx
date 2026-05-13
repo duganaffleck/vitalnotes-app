@@ -7,11 +7,7 @@ type ToolDrawerProps = {
 }
 
 function getToolExamples(tool: Tool): ToolExample[] {
-  if (tool.examples && tool.examples.length > 0) {
-    return tool.examples
-  }
-
-  return tool.example ? [tool.example] : []
+  return tool.examples ?? []
 }
 
 function renderToolList(title: string, items: string[]) {
@@ -73,19 +69,31 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
         </div>
 
         {tool.steps.length > 0 && (
-          <div className="tool-drawer-section">
-            <h3>Steps</h3>
-            <ol>
-              {tool.steps.map((step, index) => (
-                <li key={`${tool.id}-step-${index}`}>{step}</li>
-              ))}
-            </ol>
-          </div>
+          <details
+            className="tool-drawer-section tool-example"
+            key={`${tool.id}-drawer-steps`}
+          >
+            <summary
+              className="card-action-button tool-example-button"
+              aria-label={`View quick reference steps for ${tool.title}`}
+            >
+              View quick reference steps
+            </summary>
+
+            <div className="tool-example-content">
+              <ol>
+                {tool.steps.map((step, index) => (
+                  <li key={`${tool.id}-step-${index}`}>{step}</li>
+                ))}
+              </ol>
+            </div>
+          </details>
         )}
 
         {tool.fields.length > 0 && (
           <div className="tool-drawer-section">
             <h3>Fields</h3>
+            <p>{tool.fieldIntro ?? 'Use these fields as your working version.'}</p>
             <div className="drawer-field-list">
               {tool.fields.map((field) => (
                 <div className="drawer-field-card" key={field.id}>
@@ -96,12 +104,6 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
             </div>
           </div>
         )}
-
-        {tool.whenNotToUse &&
-          renderToolList('Do not use this when', tool.whenNotToUse)}
-
-        {tool.commonMistakes &&
-          renderToolList('Common mistakes', tool.commonMistakes)}
 
         {examples.length > 0 && (
           <details
@@ -135,18 +137,20 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
                       </div>
                     ))}
                   </div>
-
-                  {example.nextAdjustment && (
-                    <div className="drawer-field-card">
-                      <strong>Next adjustment</strong>
-                      <p>{example.nextAdjustment}</p>
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
           </details>
         )}
+
+        {tool.whenNotToUse &&
+          renderToolList('Do not use this when', tool.whenNotToUse)}
+
+        {tool.commonMistakes &&
+          renderToolList('Common mistakes', tool.commonMistakes)}
+
+        {tool.toolPointers &&
+          renderToolList('Possible next step', tool.toolPointers)}
       </aside>
     </div>
   )
