@@ -79,8 +79,6 @@ export type Tool = {
   whenNotToUse?: string[]
   steps: string[]
   fields: ToolField[]
-  builderStructure: string[]
-  shortVersion?: string[]
   commonMistakes?: string[]
   example?: ToolExample
   examples?: ToolExample[]

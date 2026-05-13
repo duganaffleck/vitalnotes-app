@@ -97,11 +97,6 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
           </div>
         )}
 
-        {tool.builderStructure.length > 0 &&
-          renderToolList('Prompt structure', tool.builderStructure)}
-
-        {tool.shortVersion && renderToolList('Short version', tool.shortVersion)}
-
         {tool.whenNotToUse &&
           renderToolList('Do not use this when', tool.whenNotToUse)}
 

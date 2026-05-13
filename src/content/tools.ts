@@ -53,20 +53,6 @@ export const tools: Tool[] = [
         helperText: "What should you reassess after acting, and what change would show whether the decision is still appropriate?"
       }
     ],
-    builderStructure: [
-      "What risk is this directive built around?",
-      "What physiology or patient problem is being supported?",
-      "What are the firm boundaries?",
-      "What would make this unsafe or inappropriate?",
-      "What needs to be reassessed afterward?"
-    ],
-    shortVersion: [
-      "What risk is this directive built around?",
-      "What physiology or patient problem is being supported?",
-      "What are the firm boundaries?",
-      "What would make this unsafe or inappropriate?",
-      "What needs to be reassessed afterward?"
-    ],
     examples: [
       {
         title: "Oxygen Administration",
@@ -150,20 +136,6 @@ export const tools: Tool[] = [
         label: "Links",
         helperText: "Connect this note to a few related mechanisms, directives, scenario errors, reassessment habits, or clinical reasoning patterns."
       }
-    ],
-    builderStructure: [
-      "Claim: the core idea in one sentence.",
-      "Explanation: why it matters, in your own words.",
-      "Clinical signals: how it might show up in assessment or care.",
-      "Common confusion: the trap this note prevents.",
-      "Links: related ideas that change how you understand or use it."
-    ],
-    shortVersion: [
-      "Claim:",
-      "Explanation:",
-      "Clinical signals:",
-      "Common confusion:",
-      "Links:"
     ],
     examples: [
       {
@@ -292,22 +264,6 @@ export const tools: Tool[] = [
         label: "Communication prompt",
         helperText: "Optional. Ask how you would explain the reasoning to a partner, preceptor, instructor, patient, or receiving staff."
       }
-    ],
-    builderStructure: [
-      "Notice: What finding or pattern should I recognize?",
-      "Decide: What action or priority does this knowledge support?",
-      "Withhold: What boundary, contraindication, or risk should stop me?",
-      "Reassess: What change would tell me the situation is improving or worsening?",
-      "Explain: How would I justify this decision clearly?"
-    ],
-    shortVersion: [
-      "What am I trying to remember?",
-      "What clinical job does this knowledge do?",
-      "What is the basic fact prompt?",
-      "What clinical cue prompt would help me notice it?",
-      "What decision or boundary prompt would make it safer?",
-      "What reassessment prompt keeps it connected to the patient?",
-      "What communication prompt would help me explain it?"
     ],
     commonMistakes: [
       "Making every prompt too large.",
@@ -464,16 +420,6 @@ export const tools: Tool[] = [
         helperText: "Where in the next scenario will you watch for this pattern and try the adjustment?"
       }
     ],
-    builderStructure: [
-      "Pattern: What happened more than once or mattered most?",
-      "One adjustment: What will I change next time?",
-      "Next moment to test it: Where will I apply the adjustment?"
-    ],
-    shortVersion: [
-      "What pattern showed up?",
-      "What is one adjustment?",
-      "Where will I test it next?"
-    ],
     examples: [
       {
         title: "Delayed transport after a detailed assessment",
@@ -538,16 +484,6 @@ export const tools: Tool[] = [
         label: "Next action",
         helperText: "What is the next safe step that keeps the station moving without abandoning reasoning?"
       }
-    ],
-    builderStructure: [
-      "Risk: What matters most right now?",
-      "Structure: What framework keeps me oriented?",
-      "Next action: What safe step comes next?"
-    ],
-    shortVersion: [
-      "Risk.",
-      "Structure.",
-      "Next action."
     ],
     commonMistakes: [
       "Trying to restart the whole station mentally.",
@@ -659,20 +595,6 @@ export const tools: Tool[] = [
         helperText: "Decide what you will do differently in the next similar moment."
       }
     ],
-    builderStructure: [
-      "One moment: Which moment mattered?",
-      "What was happening: What was the situation?",
-      "What shaped my response: What influenced my action?",
-      "What would I notice next time: What cue matters?",
-      "One adjustment: What will I do differently?"
-    ],
-    shortVersion: [
-      "Choose one moment.",
-      "Name what was happening.",
-      "Name what shaped your response.",
-      "Name what you would notice next time.",
-      "Choose one adjustment."
-    ],
     examples: [
       {
         title: "Missed reassessment after treatment",
@@ -767,20 +689,6 @@ export const tools: Tool[] = [
         helperText: "What is one thing to practise, notice, or structure differently next time? The target should be small enough to carry into the next attempt."
       }
     ],
-    builderStructure: [
-      "What happened?",
-      "Why did it happen that way?",
-      "What made that response reasonable at the time?",
-      "What assumption or structure shaped the decision?",
-      "What would change my thinking next time?"
-    ],
-    shortVersion: [
-      "Name the visible problem.",
-      "Ask why it happened in that moment.",
-      "Ask what made that response reasonable or available.",
-      "Ask what learning, reasoning, structure, or preparation issue sits underneath.",
-      "Turn it into one practice target."
-    ],
     examples: [
       {
         title: "Delayed nitroglycerin",
@@ -872,20 +780,6 @@ export const tools: Tool[] = [
         label: "Next reasoning cue",
         helperText: "What would you watch for, ask, or reassess next time? Choose one cue or question that would keep your working explanation flexible."
       }
-    ],
-    builderStructure: [
-      "What did I think was happening?",
-      "What information supported that?",
-      "What did not fit?",
-      "Did I change my thinking when the patient changed?",
-      "What would I watch for next time?"
-    ],
-    shortVersion: [
-      "What did I think was happening?",
-      "What supported that explanation?",
-      "What did not fit?",
-      "Did my thinking change when the patient changed?",
-      "What cue, question, or reassessment would help next time?"
     ],
     examples: [
       {
