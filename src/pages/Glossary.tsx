@@ -1,7 +1,13 @@
 import { useMemo, useState } from 'react'
 import { orderedGlossaryTerms } from '../content/glossary'
+import { getSectionById } from '../content/sections'
+import type { Section } from '../content/types'
 
-function Glossary() {
+type GlossaryProps = {
+  onNavigate?: (hash: string) => void
+}
+
+function Glossary({ onNavigate }: GlossaryProps) {
   const [query, setQuery] = useState('')
   const normalizedQuery = query.trim().toLowerCase()
 
@@ -61,13 +67,40 @@ function Glossary() {
 
       <div className="glossary-list">
         {filteredTerms.length > 0 ? (
-          filteredTerms.map((term) => (
-            <article className="glossary-card" key={term.id}>
-              <h2>{term.term}</h2>
-              <p>{term.shortDefinition}</p>
-              <p className="muted-copy">{term.paramedicRelevance}</p>
-            </article>
-          ))
+          filteredTerms.map((term) => {
+            const relatedSections = term.relatedSections
+              .map((sectionId) => getSectionById(sectionId))
+              .filter((section): section is Section => Boolean(section))
+              .slice(0, 2)
+
+            return (
+              <article className="glossary-card" key={term.id}>
+                <h2>{term.term}</h2>
+                <p>{term.shortDefinition}</p>
+                <p className="muted-copy">{term.paramedicRelevance}</p>
+
+                {relatedSections.length > 0 && (
+                  <div className="glossary-card-links">
+                    <p className="glossary-card-links-label">Read more in</p>
+                    <div className="glossary-card-link-list">
+                      {relatedSections.map((section) => (
+                        <button
+                          className="card-action-button glossary-card-link"
+                          key={`${term.id}-${section.id}`}
+                          type="button"
+                          onClick={() =>
+                            onNavigate?.(`#/section/${section.id}`)
+                          }
+                        >
+                          {section.title}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </article>
+            )
+          })
         ) : (
           <article className="glossary-card glossary-card--empty">
             <h2>No matching terms yet.</h2>

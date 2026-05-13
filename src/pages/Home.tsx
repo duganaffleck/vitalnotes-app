@@ -42,11 +42,19 @@ function Home({ onNavigate }: HomeProps) {
         </article>
 
         <article className="info-card">
-          <h2>Use a tool when you need a next step.</h2>
+          <h2>If you need a next step.</h2>
           <p>
-            The tools are small aids for notes, recall, decisions, practice, and
-            feedback. They are not extra homework.
+            Use the Tools page when a section makes sense, but you need a small
+            structure for notes, recall, clinical reasoning, practice, or
+            feedback.
           </p>
+          <button
+            type="button"
+            className="card-action-button"
+            onClick={() => onNavigate('#/tools')}
+          >
+            Open Tools
+          </button>
         </article>
 
         <article className="info-card">

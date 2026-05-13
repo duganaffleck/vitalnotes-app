@@ -100,7 +100,7 @@ function App() {
         <SectionPage section={currentSection} onNavigate={navigateTo} />
       )}
       {route.page === 'tools' && <Tools />}
-      {route.page === 'glossary' && <Glossary />}
+      {route.page === 'glossary' && <Glossary onNavigate={navigateTo} />}
       {route.page === 'scenario-generator' && <ScenarioGenerator />}
       {route.page === 'resources' && <Resources onNavigate={navigateTo} />}
       {route.page === 'about' && <About />}

@@ -2091,3 +2091,78 @@ body {
     width: fit-content;
   }
 }
+
+/* VitalNotes v27 glossary related links start */
+
+.glossary-card-links {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.95rem;
+  padding-top: 0.82rem;
+  border-top: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+.glossary-card-links-label {
+  margin-bottom: 0;
+  color: var(--vn-orange-deep);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.glossary-card-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.glossary-card-link {
+  margin-top: 0;
+  padding: 0.5rem 0.72rem;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 720px) {
+  .glossary-card-link-list {
+    display: grid;
+  }
+
+  .glossary-card-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* VitalNotes v27 glossary related links end */
+
+
+/* v28 learning path purpose emphasis */
+.learning-path-cluster {
+  gap: clamp(1.15rem, 2.4vw, 1.55rem);
+}
+
+.learning-path-cluster-header {
+  align-items: flex-start;
+}
+
+.learning-path-cluster-purpose {
+  max-width: var(--vn-reader-wide);
+  margin-bottom: 0;
+  color: var(--vn-heading-text);
+  font-size: clamp(1.34rem, 2.25vw, 1.88rem);
+  line-height: 1.2;
+}
+
+.learning-path-cluster .cluster-label {
+  margin-bottom: 0.62rem;
+}
+
+@media (max-width: 720px) {
+  .learning-path-cluster-purpose {
+    font-size: clamp(1.22rem, 6vw, 1.55rem);
+    line-height: 1.24;
+  }
+}

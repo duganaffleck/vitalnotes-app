@@ -8,7 +8,7 @@ type LearningPathProps = {
 
 function LearningPath({ onNavigate }: LearningPathProps) {
   return (
-    <section className="page-stack">
+    <section className="page-stack learning-path-page">
       <header className="page-header">
         <p className="eyebrow">Learning Path</p>
         <h1>Start with the first problem, then build from there.</h1>
@@ -30,11 +30,11 @@ function LearningPath({ onNavigate }: LearningPathProps) {
             .filter(Boolean)
 
           return (
-            <section className="cluster-panel" key={cluster.id}>
-              <div className="cluster-panel-header">
+            <section className="cluster-panel learning-path-cluster" key={cluster.id}>
+              <div className="cluster-panel-header learning-path-cluster-header">
                 <div>
                   <p className="cluster-label">{cluster.title}</p>
-                  <h2>{cluster.purpose}</h2>
+                  <h2 className="learning-path-cluster-purpose">{cluster.purpose}</h2>
                 </div>
               </div>
 

@@ -351,7 +351,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section will help you choose a starting point based on the problem you are actually experiencing right now."
+            "text": "Use the next page to choose a starting point based on the problem you are actually experiencing right now."
         },
        
     ],
@@ -870,7 +870,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section looks at one of the most common reasons students get caught by this: studying can feel productive even when it is not preparing the brain to retrieve and use knowledge in motion."
+            "text": "That is where the guide turns next: why studying can feel productive even when it is not preparing the brain to retrieve and use knowledge in motion."
         },
        
     ],
@@ -1175,7 +1175,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section looks at why learning strain should not always be treated as a personal problem, and how to tell the difference between useful difficulty and wasted effort."
+            "text": "That leads into a second kind of pressure students often misread: learning strain that is real, but not always personal failure."
         },
        
     ],
@@ -1885,7 +1885,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section builds on this by looking at pathophysiology through patterns. We will stay with the same idea, but move closer to the body itself: how mechanisms create the patterns students need to recognize in scenarios and patient care."
+            "text": "That same idea becomes more concrete when we move closer to the body itself: how mechanisms create the patterns students need to recognize in scenarios and patient care."
         },
       
     ],
@@ -2341,7 +2341,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section keeps that same idea but applies it to directives. We will look at how directives carry purpose, risk, and decision boundaries, and why understanding what a directive is protecting makes it easier to apply safely."
+            "text": "The same logic applies to directives. They carry purpose, risk, and decision boundaries, which is why understanding what a directive is protecting makes it easier to apply safely."
         },
      
     ],
@@ -2855,7 +2855,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "From here, the guide turns toward notes. The next section looks at how to build Smart Notes that help you keep, develop, and reuse the kind of understanding we have been building here."
+            "text": "From here, the guide turns toward notes: how to build Smart Notes that help you keep, develop, and reuse the kind of understanding we have been building here."
         },
        
     ],
@@ -3553,7 +3553,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section looks at how notes change over time. We will separate capture notes, working notes, and Smart Notes, and look at how ideas mature without forcing you into endless rewriting or perfectionism."
+            "text": "From there, notes need room to change. The guide now separates capture notes, working notes, and Smart Notes, and looks at how ideas mature without forcing you into endless rewriting or perfectionism."
         },
      
     
@@ -4353,7 +4353,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section looks at Obsidian as one possible home for this system. We will keep the setup simple and focus on how to use Obsidian as a place for thinking, not as a project that eats the learning it was supposed to support."
+            "text": "This closes the Build Usable Notes cluster. From here, the guide turns toward recall: whether the ideas you have built can come back when the notes are closed and the scenario is moving."
         },
       
     ],
@@ -5065,7 +5065,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "The next section moves into recall. Once understanding has been built and stored in a usable form, the next question is whether you can bring it back when you need it."
+            "text": "If you are following the main guide, the next core step is recall: whether the understanding you have built can come back when you need it."
         },
      
     ],
@@ -6732,7 +6732,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "That shift matters. Remembering information is not the same as knowing what to do with it. In the next section, we begin looking more directly at how students keep a working explanation of the call while information is incomplete, changing, and sometimes misleading."
+            "text": "That shift matters. Remembering information is not the same as knowing what to do with it. From there, the guide moves into how students keep a working explanation of the call while information is incomplete, changing, and sometimes misleading."
         },
        
     ],
@@ -7240,7 +7240,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
                 "type": "paragraph",
-                "text": "In the next section, we will look at Pattern Recognition, and how experience changes what stands out first. Pattern recognition can make reasoning faster, but it also carries risk when familiarity becomes too convincing too early."
+                "text": "Pattern recognition is the next piece: how experience changes what stands out first, and why fast recognition still needs to stay accountable to the patient in front of you."
         },
         {
                 "type": "paragraph",
@@ -7761,7 +7761,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
                 "type": "paragraph",
-                "text": "In the next section, we will look directly at Avoiding Premature Closure, where a reasonable early impression becomes too fixed. This is the point where pattern recognition can either support clinical reasoning or quietly shut it down."
+                "text": "That is why the guide turns directly to premature closure, where a reasonable early impression becomes too fixed and pattern recognition can either support clinical reasoning or quietly shut it down."
         }
 ],
     glossaryTerms: [
@@ -8701,7 +8701,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
                 "type": "paragraph",
-                "text": "In the next section, we look at Focused Practice After Feedback and how to turn one identified error pattern into a targeted adjustment that actually changes future performance."
+                "text": "Focused Practice After Feedback takes that next step: turning one identified error pattern into a targeted adjustment that actually changes future performance."
         }
 ],
     glossaryTerms: [
@@ -9720,6 +9720,10 @@ const sectionSeeds: SectionSeed[] = [
         text: "Anchors reduce decision churn. They give you a place to return when the station starts pulling your attention in different directions.",
       },
       {
+        type: "paragraph",
+        text: "A student preparing for a cardiac chest pain station may rehearse the typical picture: central pressure, diaphoresis, ECG changes, and nitroglycerin within directive. That rehearsal is useful, but it becomes brittle if the station presents a patient with borderline blood pressure, an unclear ECG, and a medication history the student was not expecting. The anchor holds. The script breaks. Students who prepare around thinking rather than cases adjust faster.",
+      },
+      {
         type: "heading",
         text: "During the OSCE",
       },
@@ -9745,7 +9749,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "OSCE preparation is about protecting the thinking you have already built so it remains accessible under evaluation. The next sections look more directly at what pressure does to thinking and how to reset when attention narrows.",
+        text: "OSCE preparation is about protecting the thinking you have already built so it remains accessible under evaluation. From here, the guide looks more directly at what pressure does to thinking and how to reset when attention narrows.",
       },
     ],
     glossaryTerms: [
@@ -9824,6 +9828,10 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "Under stress, confidence often attaches to the most familiar response. That is why confident errors happen. A student may move quickly through a chest pain call and still skip the sequence that protects nitroglycerin use. They did not forget the directive. They lost access to the structure that keeps the directive safe.",
+      },
+      {
+        type: "paragraph",
+        text: "Afterward, the student may describe the moment as panicking or blanking. That may be true emotionally, but it is not precise enough for learning. The more useful explanation is narrower: pressure pulled attention toward speed and performance appearance, and away from the sequence that makes nitroglycerin safe. That gives the student something specific to practise.",
       },
       {
         type: "paragraph",
@@ -9985,6 +9993,10 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "This is not a dramatic pause. It can happen silently while you reposition, delegate, repeat vitals, or summarize to your partner. The point is to widen attention before the call drifts too far.",
+      },
+      {
+        type: "paragraph",
+        text: "In practice, this can be brief and silent. A student managing a quieter respiratory patient might pause while repositioning and think: the main risk right now is fatigue, not asthma progression. I am going to reassess air entry and effort before the next step. That is a reset. It takes a few seconds and brings the call back to the patient.",
       },
       {
         type: "heading",
@@ -10449,7 +10461,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
                 "type": "paragraph",
-                "text": "The next section goes one layer deeper. Some mistakes are confusing because the surface issue is not the real issue. The Five Whys gives students a way to trace a repeated or unclear mistake back to the learning structure underneath it, without turning the process into overthinking."
+                "text": "Some mistakes need one layer deeper. The Five Whys gives students a way to trace a repeated or unclear mistake back to the learning structure underneath it, without turning the process into overthinking."
         }
 ],
     glossaryTerms: [
@@ -11041,7 +11053,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
                 "type": "paragraph",
-                "text": "The next section, Turning Feedback Into Action, will take that endpoint and make it usable. Once you know what needs to change, the next task is carrying one adjustment into the next attempt without trying to fix everything at once."
+                "text": "Once that endpoint is clear, the remaining work is making it usable: carrying one adjustment into the next attempt without trying to fix everything at once."
         }
 ],
     glossaryTerms: [
