@@ -174,7 +174,7 @@ const sectionSeeds: SectionSeed[] = [
         "reflection",
         "performance-under-pressure",
         "directive-intent",
-        "pattern-recognition"
+        "pattern-recognition",
     ],
     relatedSections: [
         "how-to-use-this-guide",
@@ -356,10 +356,9 @@ const sectionSeeds: SectionSeed[] = [
        
     ],
     glossaryTerms: [
-        "learning-path",
         "cognitive-load",
         "retrieval-practice",
-        "reflection"
+        "reflection",
     ],
     relatedSections: [
         "start-here-what-vitalnotes-is",
@@ -592,7 +591,7 @@ const sectionSeeds: SectionSeed[] = [
         "directive-intent",
         "clinical-reasoning",
         "reflection",
-        "performance-under-pressure"
+        "performance-under-pressure",
     ],
     relatedSections: [
         "cognitive-load",
@@ -884,7 +883,7 @@ const sectionSeeds: SectionSeed[] = [
         "working-memory",
         "structure",
         "reassessment",
-        "performance-under-pressure"
+        "performance-under-pressure",
     ],
     relatedSections: [
         "why-studying-feels-productive-but-fails-under-pressure",
@@ -1194,7 +1193,7 @@ const sectionSeeds: SectionSeed[] = [
         "cognitive-load",
         "working-memory",
         "spacing",
-        "performance-under-pressure"
+        "performance-under-pressure",
     ],
     relatedSections: [
         "cognitive-load",
@@ -1550,7 +1549,7 @@ const sectionSeeds: SectionSeed[] = [
         "cognitive-load",
         "retrieval-practice",
         "reflection",
-        "transfer"
+        "transfer",
     ],
     relatedSections: [
         "cognitive-load",
@@ -1911,7 +1910,7 @@ const sectionSeeds: SectionSeed[] = [
         "schema",
         "clinical-reasoning",
         "pattern-recognition",
-        "transfer"
+        "transfer",
     ],
     relatedSections: [
         "learning-strain-is-not-always-a-personal-problem",
@@ -2371,7 +2370,7 @@ const sectionSeeds: SectionSeed[] = [
         "pattern-recognition",
         "clinical-reasoning",
         "perfusion",
-        "reassessment"
+        "reassessment",
     ],
     relatedSections: [
         "meaning-before-memorization",
@@ -2889,7 +2888,7 @@ const sectionSeeds: SectionSeed[] = [
         "contraindication",
         "reassessment",
         "clinical-reasoning",
-        "cognitive-load"
+        "cognitive-load",
     ],
     relatedTools: [
         "directive-meaning-check"
@@ -3594,8 +3593,7 @@ const sectionSeeds: SectionSeed[] = [
         "schema",
         "cognitive-load",
         "retrieval-practice",
-        "links",
-        "clinical-reasoning"
+        "clinical-reasoning",
     ],
     relatedTools: [
         "smart-note-template"
@@ -4390,10 +4388,9 @@ const sectionSeeds: SectionSeed[] = [
         "capture-notes",
         "working-notes",
         "smart-notes",
-        "links",
         "retrieval-practice",
         "clinical-reasoning",
-        "cognitive-load"
+        "cognitive-load",
     ],
     relatedTools: [
         "smart-note-template"
@@ -5104,13 +5101,11 @@ const sectionSeeds: SectionSeed[] = [
      
     ],
     glossaryTerms: [
-        "obsidian",
-        "links",
         "smart-notes",
         "working-notes",
         "capture-notes",
         "cognitive-load",
-        "retrieval-practice"
+        "retrieval-practice",
     ],
     relatedTools: [
         "smart-note-template"
@@ -5489,7 +5484,7 @@ const sectionSeeds: SectionSeed[] = [
         "recognition",
         "cognitive-load",
         "smart-notes",
-        "clinical-recall"
+        "clinical-recall",
     ],
     relatedSections: [
         "smart-notes-for-paramedic-students",
@@ -6063,7 +6058,7 @@ const sectionSeeds: SectionSeed[] = [
         "directive",
         "reassessment",
         "clinical-reasoning",
-        "smart-notes"
+        "smart-notes",
     ],
     relatedTools: [
         "clinical-recall-prompt-builder",
@@ -6759,13 +6754,12 @@ const sectionSeeds: SectionSeed[] = [
        
     ],
     glossaryTerms: [
-        "anki",
         "retrieval-practice",
         "spacing",
         "clinical-recall",
         "smart-notes",
         "directive",
-        "reassessment"
+        "reassessment",
     ],
     relatedTools: [
         "clinical-recall-prompt-builder"
@@ -7279,7 +7273,7 @@ const sectionSeeds: SectionSeed[] = [
         "working-explanation",
         "uncertainty",
         "reassessment",
-        "premature-closure"
+        "premature-closure",
     ],
     relatedTools: [
         "clinical-reasoning-check"
@@ -7800,7 +7794,7 @@ const sectionSeeds: SectionSeed[] = [
         "cue",
         "hypothesis",
         "premature-closure",
-        "reassessment"
+        "reassessment",
     ],
     relatedTools: [
         "clinical-reasoning-check"
@@ -8436,7 +8430,7 @@ const sectionSeeds: SectionSeed[] = [
         "disconfirming-cue",
         "cognitive-narrowing",
         "reassessment",
-        "working-explanation"
+        "working-explanation",
     ],
     relatedTools: [
         "clinical-reasoning-check"
@@ -8977,7 +8971,7 @@ const sectionSeeds: SectionSeed[] = [
         "cognitive-load",
         "clinical-reasoning",
         "pattern-recognition",
-        "premature-closure"
+        "premature-closure",
     ],
     relatedTools: [
         "scenario-day-reset",
@@ -9649,7 +9643,7 @@ const sectionSeeds: SectionSeed[] = [
         "reassessment",
         "feedback",
         "deliberate-practice",
-        "practice-target"
+        "practice-target",
     ],
     relatedTools: [
         "scenario-day-reset",
@@ -10566,7 +10560,7 @@ const sectionSeeds: SectionSeed[] = [
         "deliberate-practice",
         "reassessment",
         "cognitive-load",
-        "transfer"
+        "transfer",
     ],
     relatedTools: [
         "scenario-day-reset",
@@ -10910,7 +10904,7 @@ const sectionSeeds: SectionSeed[] = [
         "structure",
         "reassessment",
         "premature-closure",
-        "clinical-reasoning"
+        "clinical-reasoning",
     ],
     relatedTools: [
         "osce-reset",
@@ -11270,7 +11264,7 @@ const sectionSeeds: SectionSeed[] = [
         "structure",
         "pattern-recognition",
         "premature-closure",
-        "reassessment"
+        "reassessment",
     ],
     relatedTools: [
         "osce-reset",
@@ -11674,7 +11668,7 @@ const sectionSeeds: SectionSeed[] = [
         "evaluation-pressure",
         "structure",
         "reassessment",
-        "premature-closure"
+        "premature-closure",
     ],
     relatedTools: [
         "osce-reset",
@@ -12105,7 +12099,7 @@ const sectionSeeds: SectionSeed[] = [
         "practice-target",
         "cognitive-load",
         "transfer",
-        "adjustment"
+        "adjustment",
     ],
     relatedTools: [
         "reflection-without-journaling-tool"
@@ -12701,7 +12695,7 @@ const sectionSeeds: SectionSeed[] = [
         "error-pattern",
         "feedback",
         "practice-target",
-        "adjustment"
+        "adjustment",
     ],
     relatedTools: [
         "five-whys-tool",
@@ -13260,7 +13254,7 @@ const sectionSeeds: SectionSeed[] = [
         "reflection",
         "metacognition",
         "transfer",
-        "deliberate-practice"
+        "deliberate-practice",
     ],
     relatedTools: [
         "reflection-without-journaling-tool",
