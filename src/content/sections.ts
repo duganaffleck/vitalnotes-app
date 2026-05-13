@@ -2341,6 +2341,10 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
+            "text": "The patterns are not shortcuts. They are the underlying structure that makes clinical information easier to hold and harder to forget."
+        },
+        {
+            "type": "paragraph",
             "text": "The same logic applies to directives. They carry purpose, risk, and decision boundaries, which is why understanding what a directive is protecting makes it easier to apply safely."
         },
      
@@ -4350,6 +4354,10 @@ const sectionSeeds: SectionSeed[] = [
         {
             "type": "paragraph",
             "text": "Capture notes preserve raw experience. Working notes let you wrestle with partial understanding. Smart Notes stabilize ideas that are ready to be reused. Over time, the system becomes smaller, clearer, and more connected because your thinking has matured."
+        },
+        {
+            "type": "paragraph",
+            "text": "Notes do not need to be finished to be useful. They need to be honest about where your understanding actually is."
         },
         {
             "type": "paragraph",
@@ -6713,10 +6721,6 @@ const sectionSeeds: SectionSeed[] = [
         {
             "type": "paragraph",
             "text": "That is enough to make Anki useful."
-        },
-        {
-            "type": "heading",
-            "text": "What this sets up next"
         },
         {
             "type": "paragraph",
