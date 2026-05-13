@@ -12,7 +12,6 @@
 .resource-section-panel,
 .resource-feature-panel,
 .resource-sources-panel {
-  max-width: var(--vn-reader-wide);
   width: 100%;
 }
 
@@ -24,11 +23,23 @@
   gap: clamp(1rem, 2vw, 1.35rem);
 }
 
+.resource-intro-panel,
+.resource-bridge-panel,
+.resource-section-panel,
+.resource-feature-panel,
+.resource-sources-panel {
+  justify-self: stretch;
+}
+
 .resource-reading-copy,
 .resource-content-flow,
 .resource-folder-details,
 .resource-folder-content,
-.resource-standards-row {
+.resource-standards-row,
+.resource-bridge-panel > .cluster-panel-header > div,
+.resource-section-heading > div,
+.resource-feature-panel > .cluster-panel-header > div,
+.resource-sources-panel > .cluster-panel-header > div {
   max-width: var(--vn-reader-width);
 }
 
@@ -187,7 +198,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.95rem;
-  max-width: var(--vn-reader-wide);
+  width: 100%;
 }
 
 .resource-source-block {
@@ -230,6 +241,14 @@
   color: var(--vn-ink-muted);
   font-weight: 750;
   line-height: 1.36;
+}
+
+.resource-source-block small {
+  color: var(--vn-muted-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.5;
 }
 
 .resource-source-block small {
