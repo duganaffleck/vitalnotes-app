@@ -6087,10 +6087,11 @@ const sectionSeeds: SectionSeed[] = [
     pageType: "tool-supported",
     body: [
    
-        {
-            "type": "paragraph",
-            "text": "Anki can help paramedic students."
-        },
+      {
+  type: "paragraph",
+  text: "Anki can help paramedic students."
+},
+
         {
             "type": "paragraph",
             "text": "Used well, it gives you a structured way to practice retrieval over time. It brings material back after a delay. It makes you answer before looking. During busy weeks, when lectures, labs, scenarios, work, and life are all competing for attention, that can be genuinely useful."
@@ -6119,6 +6120,14 @@ const sectionSeeds: SectionSeed[] = [
             "type": "paragraph",
             "text": "The better question is, “What kind of recall am I training?”"
         },
+        {
+  type: "heading",
+  text: "What Anki is"
+},
+{
+  type: "paragraph",
+  text: "Anki is a flashcard app that uses spaced repetition to bring cards back for review over time. In this guide, it is introduced as a way to practise recall for selected paramedic knowledge so important details are easier to access during labs, scenarios, and OSCEs. Used carefully, it supports the learning system you are already building rather than replacing understanding or clinical reasoning."
+},
         {
             "type": "heading",
             "text": "What Anki is good for"
