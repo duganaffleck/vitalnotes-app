@@ -52,7 +52,6 @@ export const learningPath: LearningPathCluster[] = [
     sections: [
       'smart-notes-for-paramedic-students',
       'types-of-notes-and-idea-maturation',
-      'obsidian-for-learning-paramedicine',
     ],
     relatedTools: ['smart-note-template'],
     status: 'drafted',
@@ -66,7 +65,6 @@ export const learningPath: LearningPathCluster[] = [
     sections: [
       'retrieval-and-spaced-learning',
       'clinical-recall-without-trivia',
-      'anki-for-paramedic-learning',
     ],
     relatedTools: ['clinical-recall-prompt-builder'],
     status: 'drafted',

@@ -65,6 +65,7 @@ export const resourceSections: ResourceSection[] = [
     id: 'obsidian',
     title: 'Obsidian',
     intro: [
+      'Smart Notes for Paramedic Students treats notes as thinking tools rather than storage. Obsidian is one place to build that system. You do not need it, but if you want a digital setup that supports linked thinking and idea maturation, this page gives you a starting point.',
       'Obsidian is a note-taking app for building connected understanding. In VitalNotes, it is used as a thinking space, not a filing cabinet.',
       'You do not need to build a perfect vault before it becomes useful. The first goal is simple: create a place where your own explanations can grow, connect, and become easier to return to before labs, scenarios, and OSCEs.',
     ],
@@ -141,6 +142,7 @@ export const resourceSections: ResourceSection[] = [
     id: 'anki',
     title: 'Anki',
     intro: [
+      'Retrieval and Spaced Learning explains why recall practice works differently from review. Anki is one way to build that practice. Clinical Recall Without Trivia gives the paramedic framing. Anki gives you the repetition system.',
       'Anki is a flashcard app for spaced retrieval. In VitalNotes, it is used to strengthen access to material you have already started to understand.',
       'Used well, Anki helps important details come back more reliably over time. Used poorly, it becomes a pile of cards that feels productive while quietly avoiding the harder work of understanding.',
     ],
@@ -266,20 +268,35 @@ export const obsidianFolderStructure = `/Inbox        rough notes, questions, qu
 /Reference    PDFs, standards, copied material, lecture documents
 /Scenarios    scenario reflections and performance notes`
 
-export const scenarioGeneratorCard: ResourceCard = {
-  id: 'scenario-generator',
-  title: 'Scenario Generator',
-  body: [
-    'The Scenario Generator is a companion simulation tool for paramedic instructors and students.',
-    'It builds Ontario PCP-level scenarios with realistic presentations, case progression, directive awareness, learning objectives, and GRS-based evaluation support. It belongs beside VitalNotes because it helps move learning from reading into practice.',
-  ],
-  link: {
-    label: 'Open Scenario Generator',
-    href: 'https://scenario-generator-ten.vercel.app/',
-    external: true,
+export const relatedSystemCards: ResourceCard[] = [
+  {
+    id: 'scenario-generator',
+    title: 'Scenario Generator',
+    body: [
+      'The Scenario Generator is a companion simulation tool for paramedic instructors and students.',
+      'It builds Ontario PCP-level scenarios with realistic presentations, case progression, directive awareness, learning objectives, and GRS-based evaluation support. It belongs beside VitalNotes because it helps move learning from reading into practice.',
+    ],
+    link: {
+      label: 'Open Scenario Generator',
+      href: 'https://scenario-generator-ten.vercel.app/',
+      external: true,
+    },
+    accent: 'orange',
   },
-  accent: 'orange',
-}
+  {
+    id: 'glossary',
+    title: 'Glossary',
+    body: [
+      'The glossary is a support page for terms that appear throughout the guide.',
+      'You do not need to browse it like a study list. Use it when a word keeps slowing you down, or when a section points you toward a term that needs a quick plain-language definition.',
+    ],
+    link: {
+      label: 'View Glossary',
+      href: '#/glossary',
+    },
+    accent: 'orange',
+  },
+]
 
 export const sourceCategories: SourceCategory[] = [
   {

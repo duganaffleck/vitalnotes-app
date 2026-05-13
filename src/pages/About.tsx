@@ -61,6 +61,22 @@ function About() {
           </ul>
         </article>
 
+        <article className="about-panel about-start-panel">
+          <div>
+            <p className="eyebrow">Start here</p>
+            <h2>Begin with the Learning Path</h2>
+            <p>
+              The Learning Path is the clearest way into VitalNotes. Start there
+              if you are new to the guide, then branch into Tools, Resources, or
+              the Glossary when a section gives you a reason to.
+            </p>
+          </div>
+
+          <a className="card-action-button" href="#/learning-path">
+            Open the Learning Path
+          </a>
+        </article>
+
         <article className="about-panel">
           <h2>What VitalNotes does</h2>
           <p>
@@ -79,8 +95,8 @@ function About() {
         <article className="about-panel">
           <h2>What this guide does not replace</h2>
           <p>
-            VitalNotes does not replace your program, instructors, standards,
-            medical directives, textbooks, lab practice, or clinical judgment.
+            VitalNotes sits beside your program, instructors, standards, medical
+            directives, textbooks, lab practice, and clinical judgment.
           </p>
           <p>
             Use it alongside those things. Read the sections that match the

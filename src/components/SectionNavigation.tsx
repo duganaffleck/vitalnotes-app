@@ -6,11 +6,28 @@ type SectionNavigationProps = {
   onNavigate: (hash: string) => void
 }
 
+const supportOnlySectionIds = new Set([
+  'obsidian-for-learning-paramedicine',
+  'anki-for-paramedic-learning',
+])
+
+function getNavigableSection(
+  sectionId: string | undefined,
+  direction: 'previous' | 'next',
+): Section | undefined {
+  let candidate = sectionId ? getSectionById(sectionId) : undefined
+
+  while (candidate && supportOnlySectionIds.has(candidate.id)) {
+    const nextId = direction === 'previous' ? candidate.previous : candidate.next
+    candidate = nextId ? getSectionById(nextId) : undefined
+  }
+
+  return candidate
+}
+
 function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
-  const previousSection = section.previous
-    ? getSectionById(section.previous)
-    : undefined
-  const nextSection = section.next ? getSectionById(section.next) : undefined
+  const previousSection = getNavigableSection(section.previous, 'previous')
+  const nextSection = getNavigableSection(section.next, 'next')
 
   return (
     <nav className="section-navigation" aria-label="Section navigation">

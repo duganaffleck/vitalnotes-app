@@ -20,7 +20,7 @@ function SectionCard({ section, onNavigate }: SectionCardProps) {
       <p className="cluster-label">{section.cluster}</p>
       <h3>{section.title}</h3>
       <p>{section.subtitle}</p>
-      <span className="section-card-action">Open section</span>
+      <span className="section-card-action">Read this section</span>
     </a>
   )
 }

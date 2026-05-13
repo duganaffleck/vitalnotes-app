@@ -1,5 +1,3 @@
-import { firstSection } from '../content/sections'
-
 type HomeProps = {
   onNavigate: (hash: string) => void
 }
@@ -23,23 +21,24 @@ function Home({ onNavigate }: HomeProps) {
           >
             Open the Learning Path
           </button>
-          <button
-            type="button"
-            className="secondary-button"
-            onClick={() => onNavigate(`#/section/${firstSection.id}`)}
-          >
-            Start at the beginning
-          </button>
         </div>
       </div>
 
       <div className="three-column-grid">
         <article className="info-card">
-          <h2>Start where things are breaking down.</h2>
+          <h2>If scenarios keep falling apart.</h2>
           <p>
-            If review feels familiar but scenarios still feel messy, begin with
-            the learning path before adding more material.
+            Start with cognitive load. It explains why knowledge can feel
+            familiar during review and still become hard to use when the room
+            gets noisy.
           </p>
+          <button
+            type="button"
+            className="card-action-button"
+            onClick={() => onNavigate('#/section/cognitive-load')}
+          >
+            Read Cognitive Load
+          </button>
         </article>
 
         <article className="info-card">
@@ -51,11 +50,18 @@ function Home({ onNavigate }: HomeProps) {
         </article>
 
         <article className="info-card">
-          <h2>Keep it close to the call.</h2>
+          <h2>If feedback keeps replaying.</h2>
           <p>
-            The goal is learning that shows up when you are assessing,
-            deciding, communicating, and reassessing.
+            Start with a small reflection structure before a rough scenario
+            turns into a whole-day replay.
           </p>
+          <button
+            type="button"
+            className="card-action-button"
+            onClick={() => onNavigate('#/section/reflection-without-journaling')}
+          >
+            Read Reflection Without Journaling
+          </button>
         </article>
       </div>
     </section>

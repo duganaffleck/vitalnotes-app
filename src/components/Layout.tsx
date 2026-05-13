@@ -16,7 +16,9 @@ function Layout({ currentPage, onNavigate, children }: LayoutProps) {
       <footer className="site-footer">
         <div className="site-footer-inner">
           <p className="site-footer-support-text">
-            VitalNotes is free for students. If it has helped you study, teach, or think through paramedicine more clearly, you can support future maintenance and tools.
+            VitalNotes is free for students. If it has helped you study,
+            teach, or think through paramedicine more clearly, you can support
+            future maintenance and tools.
           </p>
 
           <a

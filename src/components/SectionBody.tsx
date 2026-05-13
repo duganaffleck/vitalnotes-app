@@ -4,6 +4,20 @@ type SectionBodyProps = {
   body: BodyBlock[]
 }
 
+function getListClassName(body: BodyBlock[], index: number, itemCount: number) {
+  const previousBlock = body[index - 1]
+  const nextBlock = body[index + 1]
+
+  return [
+    'section-list',
+    itemCount >= 4 ? 'section-list--dense' : '',
+    previousBlock?.type === 'list' ? 'section-list--after-list' : '',
+    nextBlock?.type === 'list' ? 'section-list--before-list' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+}
+
 function SectionBody({ body }: SectionBodyProps) {
   return (
     <div className="section-body">
@@ -14,7 +28,10 @@ function SectionBody({ body }: SectionBodyProps) {
 
         if (block.type === 'list') {
           return (
-            <ul className="section-list" key={`${block.type}-${index}`}>
+            <ul
+              className={getListClassName(body, index, block.items.length)}
+              key={`${block.type}-${index}`}
+            >
               {block.items.map((item, itemIndex) => (
                 <li key={`${block.type}-${index}-${itemIndex}`}>{item}</li>
               ))}

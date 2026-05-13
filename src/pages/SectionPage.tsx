@@ -28,7 +28,7 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
     .map((toolId) => getToolById(toolId))
     .filter(isTool)
 
-  const maxVisibleRelatedSections = 5
+  const maxVisibleRelatedSections = 3
 
   const relatedSections = section.relatedSections
     .map((sectionId) => getSectionById(sectionId))

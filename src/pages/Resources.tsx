@@ -3,7 +3,7 @@ import {
   resourceSections,
   resourcesBridgeCard,
   resourcesIntro,
-  scenarioGeneratorCard,
+  relatedSystemCards,
   sourceCategories,
   standardsLink,
   type ResourceCard,
@@ -152,14 +152,26 @@ function Resources({ onNavigate }: ResourcesProps) {
       <section className="cluster-panel resource-feature-panel">
         <div className="cluster-panel-header">
           <div>
-            <h2>Related VitalNotes System</h2>
-            <h3>{scenarioGeneratorCard.title}</h3>
-            {scenarioGeneratorCard.body?.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <h2>More places to go from here</h2>
+            <p>
+              These sit outside the main reading path. Use them when you need scenario practice or a quick definition, not as extra required steps.
+            </p>
           </div>
         </div>
-        <ResourceAction link={scenarioGeneratorCard.link} />
+
+        <div className="resource-system-grid">
+          {relatedSystemCards.map((card) => (
+            <article className="resource-system-card" key={card.id}>
+              <h3>{card.title}</h3>
+              <div className="resource-system-card-body">
+                {card.body?.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+              <ResourceAction link={card.link} />
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="cluster-panel resource-sources-panel">

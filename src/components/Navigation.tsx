@@ -7,12 +7,6 @@ const navItems = [
   { label: 'Home', page: 'home', hash: '#/' },
   { label: 'Learning Path', page: 'learning-path', hash: '#/learning-path' },
   { label: 'Tools', page: 'tools', hash: '#/tools' },
-  {
-    label: 'Scenario Generator',
-    page: 'scenario-generator',
-    hash: '#/scenario-generator',
-  },
-  { label: 'Glossary', page: 'glossary', hash: '#/glossary' },
   { label: 'Resources', page: 'resources', hash: '#/resources' },
   { label: 'About', page: 'about', hash: '#/about' },
 ]
