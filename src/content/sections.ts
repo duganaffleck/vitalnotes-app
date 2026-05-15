@@ -28,144 +28,130 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Orient the reader to VitalNotes as a practical guide for studying, reasoning, practicing, reflecting, and performing in paramedic school.",
     pageType: "orientation",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Paramedic school is hard, but not always in the way students expect."
-        },
-        {
-            "type": "paragraph",
-            "text": "Most students know there will be a lot to learn. The workload is obvious enough from the beginning: medications, directives, anatomy, physiology, assessments, scenarios, OSCEs, documentation, placement expectations, and everything else that gets layered on as the program moves forward. Nobody really enters the field thinking it will be light."
-        },
-        {
-            "type": "paragraph",
-            "text": "What tends to catch students off guard is not just the amount of information. It is how unreliable that information can feel once it has to be used."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student can understand something while studying and still struggle to reach it during a scenario. They can explain a directive on paper, then hesitate when the patient in front of them does not fit the clean version they had in mind. They can perform well one week and then feel strangely behind the next, even though they did not suddenly become less capable."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is usually where the frustration lives. It is not only the mistake itself. It is not knowing what the mistake means. Was it a knowledge gap? Was it nerves? Was it poor preparation? Was it just a bad day? Or was something else happening in the way the student was trying to learn, organize, and use the material?"
-        },
-        {
-            "type": "paragraph",
-            "text": "VitalNotes is built for that space."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is a guide for learning paramedicine in a way that holds up better when things are moving. It does not replace class, lab, placement, instructors, feedback, repetition, or the basic responsibility of doing the work. Those things still matter. The goal here is to make the work clearer, so effort has somewhere useful to go."
-        },
-        {
-            "type": "heading",
-            "text": "The problem this guide is trying to solve"
-        },
-        {
-            "type": "paragraph",
-            "text": "A common student experience looks something like this: you study the content, review the slides, make notes, go over the directive, and feel reasonably prepared. Then the scenario starts, and the room changes the task."
-        },
-        {
-            "type": "paragraph",
-            "text": "Now the patient is talking. Your partner needs information. The instructor is watching. You are trying to remember what comes next while also listening, assessing, deciding, communicating, and keeping the call moving. A few minutes later, something gets missed. Maybe it is a reassessment. Maybe it is a contraindication. Maybe it is a blood glucose. Maybe it is the fact that the patient is getting tired rather than improving."
-        },
-        {
-            "type": "paragraph",
-            "text": "Afterward, in debrief, students often say some version of, “I knew that.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "And often, they did."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is the important part. The knowledge may have been there, but it was not accessible enough, connected enough, or stable enough in the moment. If every problem like that is treated as a simple knowledge problem, the answer always becomes more studying. More rereading. More rewriting. More time at the desk. Sometimes that helps, but sometimes it just adds more material to a system that already has too little structure."
-        },
-        {
-            "type": "paragraph",
-            "text": "VitalNotes starts from the assumption that learning problems deserve a more careful look before we prescribe more effort."
-        },
-        {
-            "type": "heading",
-            "text": "What VitalNotes focuses on"
-        },
-        {
-            "type": "paragraph",
-            "text": "VitalNotes is about the learning behind the performance. Not in a generic study-skills way, and not in the abstract language students often hear when people talk about “learning how to learn.” The focus here is paramedicine, because paramedicine creates a specific kind of learning problem."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are not only learning information. You are learning how to act while information is incomplete. You are not only learning directives. You are learning how to understand what those directives are protecting when a patient is borderline, evolving, or messy. You are not only learning assessment structure. You are learning how to assess without letting assessment become a hiding place from decision-making."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is why this guide spends time on cognitive load, retrieval, meaning, Smart Notes, directives, clinical reasoning, pattern recognition, scenario days, OSCE preparation, pressure, and reflection. Those ideas can sound academic if they are handled poorly. Here, they are meant to be practical."
-        },
-        {
-            "type": "paragraph",
-            "text": "Cognitive load is the moment your brain is trying to hold too much and something important falls away. Retrieval is whether you can bring knowledge back when the notes are closed and the scenario is moving. Meaning is the difference between knowing a list of findings and understanding what those findings are starting to suggest. Clinical reasoning is the process of building a working explanation and being willing to change it when the patient gives you a reason to. Reflection is taking something useful from performance without turning the whole call into a personal trial."
-        },
-        {
-            "type": "paragraph",
-            "text": "The guide is interested in that usable layer. The place where studying, thinking, and performance meet."
-        },
-        {
-            "type": "heading",
-            "text": "What this guide is not"
-        },
-        {
-            "type": "paragraph",
-            "text": "This guide is not here to make paramedic school easy. Some difficulty belongs in the process. The work matters too much to pretend otherwise."
-        },
-        {
-            "type": "paragraph",
-            "text": "But there is a difference between useful difficulty and wasted difficulty."
-        },
-        {
-            "type": "paragraph",
-            "text": "Useful difficulty makes you more capable. It helps you notice patterns, recover from mistakes, explain your decisions, and adjust the next time. Wasted difficulty burns time and confidence without changing much. Rereading the same notes without testing recall, rewriting slides into cleaner pages, memorizing directives without understanding their purpose, finishing a scenario with ten vague lessons and no clear next step, or calling every mistake a confidence problem can all feel responsible while still failing to move learning forward."
-        },
-        {
-            "type": "paragraph",
-            "text": "VitalNotes is not against hard work. It is against work that has no direction."
-        },
-        {
-            "type": "heading",
-            "text": "How to approach it"
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to figure out the whole guide right away."
-        },
-        {
-            "type": "paragraph",
-            "text": "VitalNotes can be read in order, but it can also be entered through the problem you are actually having. Some students will arrive here because scenarios keep falling apart. Some will come because OSCEs make them rush. Some will come because their notes are large, organized, and still not very useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is fine."
-        },
-        {
-            "type": "paragraph",
-            "text": "The next page will show you how to move through the guide without turning it into another thing you feel behind on."
-        },
-        {
-            "type": "heading",
-            "text": "What this guide is working on"
-        },
-        {
-            "type": "paragraph",
-            "text": "VitalNotes is working on the layer around the content: how you study, retrieve, organize, practice, respond to feedback, and recover when thinking narrows."
-        },
-        {
-            "type": "paragraph",
-            "text": "Those habits determine whether what you learn in class is still available when the patient is in front of you."
-        },
-        {
-            "type": "paragraph",
-            "text": "The rest of the guide helps you build that layer one piece at a time."
-        },
-       
-    
+      {
+        type: "paragraph",
+        text: "Paramedic school is hard, but not always in the way students expect.",
+      },
+      {
+        type: "paragraph",
+        text: "Most students know there will be a lot to learn. The workload is obvious from the beginning: medications, directives, anatomy, physiology, assessments, scenarios, OSCEs, documentation, placement expectations, and everything that gets layered on as the program moves forward. Nobody enters thinking it will be light.",
+      },
+      {
+        type: "paragraph",
+        text: "What catches students off guard is not the amount of information. It is how unreliable that information can feel once it has to be used.",
+      },
+      {
+        type: "paragraph",
+        text: "A student can review the chest pain directive the night before lab and still freeze when the patient says the pain started three days ago, not this morning. They can explain asthma confidently at a desk and still miss that quieter lung sounds in a tiring patient is a warning sign, not improvement. They can run a scenario well on Tuesday and feel completely behind by Thursday without anything obvious having changed.",
+      },
+      {
+        type: "paragraph",
+        text: "That is usually where the frustration lives. Not only the mistake itself, but not knowing what the mistake means. Was it a knowledge gap? Was it nerves? Was it poor preparation? Or was something happening in the way the student was learning, organizing, and trying to use the material under pressure?",
+      },
+      {
+        type: "paragraph",
+        text: "VitalNotes is built for that gap.",
+      },
+      {
+        type: "paragraph",
+        text: "This is a guide for learning paramedicine in a way that holds up better when things are moving. It does not replace class, lab, placement, instructors, feedback, repetition, or the basic responsibility of doing the work. The goal is to make the work clearer, so effort has somewhere useful to go.",
+      },
+      {
+        type: "heading",
+        text: "The problem this guide is trying to solve",
+      },
+      {
+        type: "paragraph",
+        text: "A common student experience looks something like this: you study the content, review the slides, make notes, go over the directive, and feel reasonably prepared. Then the scenario starts and the room changes the task.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient is talking. Your partner needs information. The instructor is watching. You are trying to remember what comes next while also listening, assessing, deciding, communicating, and keeping the call moving. A few minutes later, something gets missed. Maybe it is a reassessment. Maybe it is a contraindication. Maybe it is a blood glucose. Maybe it is the fact that the patient is getting tired rather than improving.",
+      },
+      {
+        type: "paragraph",
+        text: "Afterward, in debrief, students often say some version of, \"I knew that.\" And often, they did.",
+      },
+      {
+        type: "paragraph",
+        text: "That is the important part. The knowledge was there, but it was not accessible enough, connected enough, or stable enough in the moment. If every problem like that gets treated as a simple knowledge problem, the answer always becomes more studying. More rereading. More rewriting. More time at the desk. Sometimes that helps. Sometimes it just adds more material to a system that already has too little structure.",
+      },
+      {
+        type: "paragraph",
+        text: "Learning problems deserve a more careful look before adding more effort.",
+      },
+      {
+        type: "heading",
+        text: "What VitalNotes focuses on",
+      },
+      {
+        type: "paragraph",
+        text: "VitalNotes is about the learning behind the performance. Not generic study skills, and not the abstract language students often hear about \"learning how to learn.\" The focus is paramedicine, because paramedicine creates a specific kind of learning problem.",
+      },
+      {
+        type: "paragraph",
+        text: "You are not only learning information. You are learning how to act while information is incomplete. You are not only learning directives. You are learning what those directives are protecting when a patient is borderline, evolving, or messy. You are not only learning assessment structure. You are learning how to assess without letting assessment become a hiding place from decision-making.",
+      },
+      {
+        type: "paragraph",
+        text: "That is why this guide spends time on cognitive load, retrieval, meaning, Smart Notes, directives, clinical reasoning, pattern recognition, scenario days, OSCE preparation, pressure, and reflection. Those ideas can sound academic. Here, they are meant to be practical.",
+      },
+      {
+        type: "paragraph",
+        text: "Cognitive load is what happens when you are managing airway, monitoring vitals, tracking directive thresholds, and communicating with a family member at the same time, and something slips. Not because you forgot it. Because your working memory ran out of space. Retrieval is whether you can bring knowledge back when the notes are closed, the scenario is moving, and nothing is prompting you. Meaning is the difference between knowing that sepsis can present with tachycardia and fever, and understanding why an older adult with vague weakness, soft blood pressure, and a faster respiratory rate might be the same clinical problem in a different shape. Clinical reasoning is the process of building a working explanation while information is still arriving, and staying willing to change it when the patient stops fitting the story you were carrying. Reflection is taking one useful thing from a performance without turning the whole call into a personal trial.",
+      },
+      {
+        type: "paragraph",
+        text: "That is the layer this guide works on: where studying, thinking, and performance meet.",
+      },
+      {
+        type: "heading",
+        text: "What this guide is not",
+      },
+      {
+        type: "paragraph",
+        text: "This guide is not here to make paramedic school easy. Some difficulty belongs in the process.",
+      },
+      {
+        type: "paragraph",
+        text: "But there is a difference between useful difficulty and wasted difficulty.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful difficulty makes you more capable. It helps you notice patterns, recover from mistakes, explain your decisions, and adjust the next time. Wasted difficulty burns time and confidence without changing much. Rereading the same notes without testing recall, rewriting slides into cleaner pages, memorizing directives without understanding their purpose, finishing a scenario with ten vague lessons and no clear next step, or calling every mistake a confidence problem can all feel responsible while still failing to move learning forward.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide is for students who are working hard and want the work to land somewhere.",
+      },
+      {
+        type: "heading",
+        text: "How to approach it",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to figure out the whole guide right away.",
+      },
+      {
+        type: "paragraph",
+        text: "VitalNotes can be read in order, but it can also be entered through the problem you are actually having. Some students will arrive here because scenarios keep falling apart. Some will come because OSCEs make them rush. Some will come because their notes are large, organized, and still not very useful.",
+      },
+      {
+        type: "paragraph",
+        text: "The next page will show you how to move through the guide without turning it into another thing you feel behind on.",
+      },
+      {
+        type: "heading",
+        text: "What this guide is working on",
+      },
+      {
+        type: "paragraph",
+        text: "VitalNotes works on the layer around the content: how you study, retrieve, organize, practice, respond to feedback, and recover when thinking narrows. Build that layer and what you learn in class has a better chance of being available when you need it.",
+      },
+      {
+        type: "paragraph",
+        text: "The rest of the guide builds it one piece at a time.",
+      },
     ],
     glossaryTerms: [
         "cognitive-load",
@@ -193,167 +179,134 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Explain how to use VitalNotes without turning it into another task, including when to follow the path and when to enter through a specific problem.",
     pageType: "orientation",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Use this guide lightly at first."
-        },
-        {
-            "type": "paragraph",
-            "text": "That may sound strange, but it's important. Paramedic students already have enough material pressing on them: lectures, labs, directives, skills, scenarios, OSCEs, placement expectations, and feedback that can be hard to sort through afterward. VitalNotes only helps if it gives some shape to that work. If it becomes another thing you feel behind on, then we have built the wrong thing."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to read every section before it becomes useful. You do not need to build every tool. You do not need to turn this into a new productivity system. The first goal is much smaller than that: understand one part of your learning more clearly, then make one useful adjustment."
-        },
-        {
-            "type": "paragraph",
-            "text": "For most students, that is enough to begin."
-        },
-        {
-            "type": "heading",
-            "text": "Two ways through the guide"
-        },
-        {
-            "type": "paragraph",
-            "text": "There are two basic ways to use VitalNotes."
-        },
-        {
-            "type": "paragraph",
-            "text": "The first is to move through it in order. This works well if you want the full arc of the guide. The early sections explain why learning can feel unstable in paramedic school. They look at cognitive load, memory, meaning, and how knowledge behaves when pressure increases. Later sections move closer to clinical reasoning, scenarios, OSCEs, reflection, and tools."
-        },
-        {
-            "type": "paragraph",
-            "text": "That order matters because the guide is trying to build a foundation before asking you to change your habits. If you understand why something is happening, the practical advice later tends to make more sense."
-        },
-        {
-            "type": "paragraph",
-            "text": "The second way is to enter through the problem you are actually having. This is often the more realistic option."
-        },
-        {
-            "type": "paragraph",
-            "text": "If scenarios keep falling apart, you may not need a full tour of the guide right away. You may need to understand cognitive load, retrieval, and how scenario days expose thinking under pressure. If your notes are organized but not useful, you may need Smart Notes and the sections on building understanding. If OSCEs make you rush, you may need the performance and pressure sections sooner."
-        },
-        {
-            "type": "paragraph",
-            "text": "Most students will probably use both approaches at different times, and that is fine. Reading in order gives you the structure. Entering through a problem gives you help where the friction is highest."
-        },
-        {
-            "type": "heading",
-            "text": "Do not treat every section the same way"
-        },
-        {
-            "type": "paragraph",
-            "text": "Some sections are meant to orient you. They explain what is happening underneath your learning. These sections are worth reading carefully, but they do not always require you to do something immediately."
-        },
-        {
-            "type": "paragraph",
-            "text": "Other sections are more practical. They may introduce a workflow, a tool, or a way to approach feedback, notes, retrieval, or reflection. Those sections are meant to be used, but still not all at once."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is easy to turn good advice into too much advice."
-        },
-        {
-            "type": "paragraph",
-            "text": "If a section gives you three useful ideas, resist the urge to turn all three into tasks for tomorrow. Choose the one that actually connects to a problem you are seeing in your learning. A small adjustment that gets used is better than a complete system that collapses by next week."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is especially true in paramedic school, where busy weeks are normal and motivation is not always steady."
-        },
-        {
-            "type": "heading",
-            "text": "What to do when something feels familiar"
-        },
-        {
-            "type": "paragraph",
-            "text": "As you read, some sections may describe something you have already experienced."
-        },
-        {
-            "type": "paragraph",
-            "text": "You may recognize the feeling of knowing something but not being able to retrieve it during a scenario. You may recognize the habit of rereading notes because it feels productive. You may recognize the way directives can start to feel like traps instead of supports. You may recognize the urge to replay a bad scenario long after it has ended."
-        },
-        {
-            "type": "paragraph",
-            "text": "When that happens, slow down a little."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not dramatically. Just enough to ask what the section is helping you name."
-        },
-        {
-            "type": "paragraph",
-            "text": "A useful question is:"
-        },
-        {
-            "type": "paragraph",
-            "text": "What part of my learning does this explain?"
-        },
-        {
-            "type": "paragraph",
-            "text": "That question keeps the guide practical. It moves the section from something you read into something you can use. You are not trying to collect insights. You are trying to understand what needs to change in how you study, practice, think, or reflect."
-        },
-        {
-            "type": "heading",
-            "text": "How to use tools and popups"
-        },
-        {
-            "type": "paragraph",
-            "text": "Some sections will have tools, templates, or short workflows attached to them. These are meant to support the reading, not interrupt it."
-        },
-        {
-            "type": "paragraph",
-            "text": "A tool should give you a small structure you can return to. For example, a Smart Note template may help you turn a confusing concept into something usable. A reflection tool may help you take one lesson from a scenario without replaying the entire call. A clinical reasoning check may help you pause when you are waiting too long for certainty."
-        },
-        {
-            "type": "paragraph",
-            "text": "Use tools when they solve a problem you actually have. Leave them alone when they do not."
-        },
-        {
-            "type": "paragraph",
-            "text": "The same goes for glossary popups. If a term is familiar, keep reading. If a term is getting in the way, open the popup, get the plain-language explanation, and continue. The glossary is there to reduce friction, not to send you down another rabbit hole."
-        },
-        {
-            "type": "heading",
-            "text": "How not to use this guide"
-        },
-        {
-            "type": "paragraph",
-            "text": "The guide becomes less useful when it turns into another project to manage."
-        },
-        {
-            "type": "paragraph",
-            "text": "That can happen quietly. You read too many sections in one sitting. You collect tools without using them. You decide that this is the week you are going to rebuild your entire study life. For a few days, that can feel productive. Then the normal pressure of the program returns, and the system collapses under its own weight."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is better to use one piece well than to collect five pieces you never return to."
-        },
-        {
-            "type": "paragraph",
-            "text": "One section might change how you review before scenarios. One reflection structure might help you leave lab with a clearer next step. One explanation might help you stop treating every mistake as proof that you are behind. That is enough usefulness for a guide like this."
-        },
-        {
-            "type": "heading",
-            "text": "A simple way to move forward"
-        },
-        {
-            "type": "paragraph",
-            "text": "If you are not sure where to begin, start with the first few sections in order."
-        },
-        {
-            "type": "paragraph",
-            "text": "Read the opening material, then move into cognitive load. That will give you language for why learning can feel harder in labs and scenarios than it does while studying. From there, you can move into notes, retrieval, meaning, and the sections that connect learning to performance."
-        },
-        {
-            "type": "paragraph",
-            "text": "If you already know what is bothering you, use the next page instead."
-        },
-        {
-            "type": "paragraph",
-            "text": "Use the next page to choose a starting point based on the problem you are actually experiencing right now."
-        },
-       
+      {
+        type: "paragraph",
+        text: "Start with one section, not the whole guide.",
+      },
+      {
+        type: "paragraph",
+        text: "Paramedic students already have enough pressing on them: lectures, labs, directives, skills, scenarios, OSCEs, placement expectations, and feedback that can be hard to sort through afterward. VitalNotes only helps if it gives some shape to that work. If it becomes another thing you feel behind on, it is not doing its job.",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to read every section before it becomes useful. You do not need to build every tool. The first goal is smaller than that: understand one part of your learning more clearly, then make one useful adjustment.",
+      },
+      {
+        type: "heading",
+        text: "Two ways through the guide",
+      },
+      {
+        type: "paragraph",
+        text: "There are two basic ways to use VitalNotes.",
+      },
+      {
+        type: "paragraph",
+        text: "The first is to move through it in order. This works well if you want the full arc. The early sections explain why learning can feel unstable in paramedic school, looking at cognitive load, memory, meaning, and how knowledge behaves when pressure increases. Later sections move into clinical reasoning, scenarios, OSCEs, reflection, and tools for recovery.",
+      },
+      {
+        type: "paragraph",
+        text: "That order matters. The guide tries to build a foundation before asking you to change your habits. If you understand why something is happening, the practical advice later tends to land better.",
+      },
+      {
+        type: "paragraph",
+        text: "The second way is to enter through the problem you are actually having. This is often the more realistic option.",
+      },
+      {
+        type: "paragraph",
+        text: "If scenarios keep falling apart, you may not need the full tour right away. You may need cognitive load, retrieval, and how scenario days expose thinking under pressure. If your notes are large but not useful, you may need Smart Notes and the sections on building understanding. If OSCEs make you rush or freeze, you may need the performance and pressure sections before anything else.",
+      },
+      {
+        type: "paragraph",
+        text: "Most students use both approaches at different times. Reading in order gives you the structure. Entering through a problem gives you the most immediate help.",
+      },
+      {
+        type: "heading",
+        text: "Some sections orient. Some sections require something from you.",
+      },
+      {
+        type: "paragraph",
+        text: "Orientation sections explain what is happening underneath your learning. They are worth reading carefully, but they do not always require you to do something the same day.",
+      },
+      {
+        type: "paragraph",
+        text: "Practical sections introduce a workflow, a tool, or a way to approach feedback, notes, retrieval, or reflection. Those are meant to be used, but not all at once.",
+      },
+      {
+        type: "paragraph",
+        text: "If a section gives you three useful ideas, resist the urge to turn all three into tasks for tomorrow. Choose the one that actually connects to a problem you are seeing right now. A small adjustment that gets used is better than a complete system that collapses under the weight of a normal semester week.",
+      },
+      {
+        type: "heading",
+        text: "When something in the guide sounds familiar",
+      },
+      {
+        type: "paragraph",
+        text: "As you read, some sections may describe something you have already lived through.",
+      },
+      {
+        type: "paragraph",
+        text: "The feeling of knowing something at the desk and losing it in the scenario room. The habit of rereading notes because it feels productive. The way a directive can start to feel like a trap when the patient is borderline. The urge to replay a rough OSCE long after there is nothing left to learn from it.",
+      },
+      {
+        type: "paragraph",
+        text: "When that happens, slow down and ask: what is this section helping me name?",
+      },
+      {
+        type: "paragraph",
+        text: "That question keeps the guide practical. It moves the section from something you read into something you can examine against your own learning. You are not collecting insights. You are looking for what needs to change in how you study, practice, or respond to the next scenario.",
+      },
+      {
+        type: "heading",
+        text: "How to use tools and glossary terms",
+      },
+      {
+        type: "paragraph",
+        text: "Some sections have tools, templates, or short workflows attached. These support the reading. They are not additional assignments.",
+      },
+      {
+        type: "paragraph",
+        text: "A tool gives you a small structure you can return to. A Smart Note template helps you turn a confusing concept into something usable. A reflection tool helps you take one lesson from a scenario without replaying the entire call. A clinical reasoning check helps you pause when you have been assessing for a while without changing the plan.",
+      },
+      {
+        type: "paragraph",
+        text: "Use tools when they solve a problem you actually have.",
+      },
+      {
+        type: "paragraph",
+        text: "Glossary popups work the same way. If a term is familiar, keep reading. If it is getting in the way, open the popup, get the plain-language explanation, and continue.",
+      },
+      {
+        type: "heading",
+        text: "How not to use this guide",
+      },
+      {
+        type: "paragraph",
+        text: "The guide becomes less useful when it turns into a project.",
+      },
+      {
+        type: "paragraph",
+        text: "That can happen quietly. You read too many sections in one sitting. You collect tools without using them. You decide this is the week you rebuild your entire study system. For a few days that can feel productive. Then a busy week returns, and the system collapses.",
+      },
+      {
+        type: "paragraph",
+        text: "One piece used well is worth more than five pieces you never return to.",
+      },
+      {
+        type: "paragraph",
+        text: "One section might change how you prepare before scenario days. One reflection structure might help you leave lab with a clearer next step instead of a long list of things that went wrong. One explanation might help you stop treating every missed reassessment as proof that you are not cut out for this. That is enough for a guide like this to be worth using.",
+      },
+      {
+        type: "heading",
+        text: "Where to start",
+      },
+      {
+        type: "paragraph",
+        text: "If you are not sure where to begin, read the first few sections in order. The opening material and the cognitive load section will give you language for why learning can feel harder in labs and scenarios than it does while studying. From there, move into notes, retrieval, meaning, and the sections that connect learning to performance.",
+      },
+      {
+        type: "paragraph",
+        text: "If you already know what is bothering you, go to the next page and choose a starting point from the problem you are actually experiencing.",
+      },
     ],
     glossaryTerms: [
         "cognitive-load",
@@ -377,211 +330,170 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Give readers a practical way to choose where to begin based on the problem they are seeing in their own learning.",
     pageType: "entry-point",
     body: [
-        {
-            "type": "paragraph",
-            "text": "If you are not sure where to start, do not overthink the order yet. Start with the problem that sounds most like what is happening to you right now."
-        },
-        {
-            "type": "paragraph",
-            "text": "Most students do not arrive at a guide like this with a neat learning goal. They arrive because something is bothering them. Scenarios are not going the way they expected. Notes are piling up. OSCEs are getting closer. Feedback is starting to repeat. They are working, but the work does not feel like it is turning into steadier performance."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is enough of a starting point."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to diagnose your whole learning system before you begin. You just need to notice where the friction is highest right now, then choose the closest doorway into the guide."
-        },
-        {
-            "type": "heading",
-            "text": "If you study, but blank in scenarios"
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with Cognitive Load."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is one of the most common student problems in paramedic school. You review the material, understand it while studying, and then lose access to it when the scenario starts moving. That does not always mean you failed to study enough. It may mean your working memory is overloaded, your recall has not been trained far enough away from the notes, or your assessment structure is not yet stable enough to hold under pressure."
-        },
-        {
-            "type": "paragraph",
-            "text": "From there, move toward Retrieval and Spaced Learning. That section will help explain why rereading can feel productive while still failing to prepare you for the moment when you actually need to bring the information back."
-        },
-        {
-            "type": "heading",
-            "text": "If your notes are organized, but not useful"
-        },
-        {
-            "type": "paragraph",
-            "text": "The best first stop is Smart Notes for Paramedic Students."
-        },
-        {
-            "type": "paragraph",
-            "text": "Many students have notes that look responsible. They are highlighted, sorted, rewritten, and saved in the right folders. The problem is that those notes often store information without helping the student think with it."
-        },
-        {
-            "type": "paragraph",
-            "text": "During a scenario, the issue is rarely whether the information exists somewhere. The issue is whether it has been organized in a way that supports recognition, explanation, and decision-making."
-        },
-        {
-            "type": "paragraph",
-            "text": "After that, Meaning Before Memorization will help you shift from collecting facts to building connections between ideas."
-        },
-        {
-            "type": "heading",
-            "text": "If you know facts, but cannot connect them during calls"
-        },
-        {
-            "type": "paragraph",
-            "text": "Begin with Meaning Before Memorization."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is the student who knows the pieces, but cannot always make them form a useful shape. In paramedicine, that matters because patients rarely present as clean textbook categories. You need relationships between findings, mechanisms, risks, and decisions."
-        },
-        {
-            "type": "paragraph",
-            "text": "Once that starts to make sense, move toward Pathophysiology Through Patterns and Clinical Reasoning. Those sections help you think less in isolated labels and more in working explanations."
-        },
-        {
-            "type": "heading",
-            "text": "If directives make you hesitate"
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with Directives Through Purpose."
-        },
-        {
-            "type": "paragraph",
-            "text": "Directives can feel heavy because they are tied to safety, scope, evaluation, and consequences. Many students respond by trying to memorize every line perfectly. Precision matters, but memorization alone can make students freeze when the patient is borderline, evolving, or not matching the clean version they expected."
-        },
-        {
-            "type": "paragraph",
-            "text": "This section helps you understand directives as decision supports, not just rules to survive."
-        },
-        {
-            "type": "paragraph",
-            "text": "From there, Clinical Reasoning will help connect directive decisions to the larger problem of acting safely when certainty is incomplete. The goal is not to become casual with directives. The goal is to understand what they are protecting so your decisions become more grounded."
-        },
-        {
-            "type": "heading",
-            "text": "If scenarios keep exposing the same mistakes"
-        },
-        {
-            "type": "paragraph",
-            "text": "Go to Scenario Days as Learning Tools."
-        },
-        {
-            "type": "paragraph",
-            "text": "Repeated mistakes can feel discouraging, especially when they happen in front of instructors or classmates. But repeated errors are often information. They show where your learning system is predictable under pressure."
-        },
-        {
-            "type": "paragraph",
-            "text": "Maybe reassessment drops after the first intervention. Maybe transport decisions lag. Maybe you keep waiting for certainty before naming risk. Maybe you focus so hard on one task that the larger call starts drifting away from you."
-        },
-        {
-            "type": "paragraph",
-            "text": "Scenario work becomes more useful when you stop treating each run as a separate judgment and start looking for patterns."
-        },
-        {
-            "type": "paragraph",
-            "text": "After that, Common Errors and What They Reveal and The Five Whys can help you turn feedback into something smaller and more usable."
-        },
-        {
-            "type": "heading",
-            "text": "If OSCEs make you rush or freeze"
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with OSCE Preparation."
-        },
-        {
-            "type": "paragraph",
-            "text": "OSCEs change how thinking feels. You are being watched. Time is visible. The scenario has stakes. Even students who know the material can find themselves moving too quickly, skipping checks, over-explaining, or getting stuck trying to do the perfect assessment."
-        },
-        {
-            "type": "paragraph",
-            "text": "OSCE preparation is not about becoming flawless. It is about keeping enough structure available that stress does not take over the call."
-        },
-        {
-            "type": "paragraph",
-            "text": "After that, Performance Under Pressure will help explain why pressure changes access to knowledge and what kind of structure tends to hold up better than confidence alone."
-        },
-        {
-            "type": "heading",
-            "text": "If feedback stays with you too long"
-        },
-        {
-            "type": "paragraph",
-            "text": "Begin with Reflection Without Journaling, then use The Five Whys if you need a more structured way to trace the problem back to something actionable."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some students do not ignore feedback. They do the opposite. They carry it around for the rest of the day, replay the scenario, and try to turn the whole thing into a lesson. That can feel responsible, but it often becomes too broad to be useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "Good reflection is smaller than that. It usually starts with one moment, one decision, or one pattern. From there, the goal is to identify what you would notice or do differently next time."
-        },
-        {
-            "type": "heading",
-            "text": "If you cannot tell whether you are improving"
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with Scenario Days as Learning Tools."
-        },
-        {
-            "type": "paragraph",
-            "text": "Improvement in paramedic school does not always feel smooth. Sometimes it looks messy because you are adding new layers: communication, prioritization, directives, reassessment, transport thinking, and clinical reasoning. You may feel less polished for a while because your learning is reorganizing."
-        },
-        {
-            "type": "paragraph",
-            "text": "That can be frustrating if you only judge improvement by how good one scenario felt."
-        },
-        {
-            "type": "paragraph",
-            "text": "A better question is whether your recovery is improving. Are you noticing problems sooner? Are you repeating the same mistake unchanged, or does it shift after feedback? Are you starting to name risk earlier, even if the call still feels awkward?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Those are signs worth watching."
-        },
-        {
-            "type": "heading",
-            "text": "If none of these fit perfectly"
-        },
-        {
-            "type": "paragraph",
-            "text": "Most learning problems overlap, so it is normal if none of these fit perfectly."
-        },
-        {
-            "type": "paragraph",
-            "text": "A scenario issue might involve cognitive load, weak retrieval, unclear meaning, directive anxiety, and pressure all at once. You do not need to separate those perfectly before starting."
-        },
-        {
-            "type": "paragraph",
-            "text": "Choose the section that feels closest to the problem you are having. Read enough to understand what it is naming. Then make one small adjustment."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is usually better than trying to fix the whole system at once."
-        },
-        {
-            "type": "heading",
-            "text": "If you want the intended order"
-        },
-        {
-            "type": "paragraph",
-            "text": "If you would rather move through the guide in order, start with Cognitive Load."
-        },
-        {
-            "type": "paragraph",
-            "text": "That section gives the first foundation for the rest of VitalNotes. It explains why capable students can lose track of simple things when assessment, communication, memory, and decision-making all compete for attention. Once that makes sense, the later sections are easier to place."
-        },
-       
+      {
+        type: "paragraph",
+        text: "Most students do not arrive at a guide like this with a neat learning goal. They arrive because something is bothering them. Scenarios are not going the way they expected. Notes are piling up. OSCEs are getting closer. Feedback is starting to repeat. They are working, but the work is not turning into steadier performance.",
+      },
+      {
+        type: "paragraph",
+        text: "Start with the problem that sounds most like what is happening to you right now. You do not need to diagnose your whole learning system first. You just need to notice where the friction is highest, then choose the closest entry point.",
+      },
+      {
+        type: "heading",
+        text: "If you study, but blank in scenarios",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Cognitive Load.",
+      },
+      {
+        type: "paragraph",
+        text: "This is one of the most common problems in paramedic school. You review the material, understand it while studying, and then lose access to it when the scenario starts moving. That is not always a studying problem. It may mean your working memory is overloaded during the call, your recall has not been practiced far enough away from the notes, or your assessment structure is not yet stable enough to hold when communication, decision-making, and skills all compete for attention at the same time.",
+      },
+      {
+        type: "paragraph",
+        text: "From there, move to Retrieval and Spaced Learning. That section explains why rereading can feel productive while still failing to prepare you for the moment when you need to bring knowledge back without anything prompting you.",
+      },
+      {
+        type: "heading",
+        text: "If your notes are organized, but not useful",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Smart Notes for Paramedic Students.",
+      },
+      {
+        type: "paragraph",
+        text: "Many students have notes that look responsible: highlighted, sorted, rewritten, saved in the right folders. The problem is that those notes often store information without helping the student reason with it. In a scenario, the issue is rarely whether the information exists somewhere. It is whether it has been organized in a way that supports recognition and decision-making when the call is moving.",
+      },
+      {
+        type: "paragraph",
+        text: "After that, Meaning Before Memorization will help you shift from collecting facts to building connections between ideas, mechanisms, and clinical decisions.",
+      },
+      {
+        type: "heading",
+        text: "If you know facts, but cannot connect them during calls",
+      },
+      {
+        type: "paragraph",
+        text: "Begin with Meaning Before Memorization.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the student who knows the pieces but cannot always make them form a useful shape under pressure. You can define shock. You can list the signs. But when a patient is pale, quiet, and faster than expected after a mechanism of injury, something is slower to arrive than the facts themselves.",
+      },
+      {
+        type: "paragraph",
+        text: "Paramedicine asks for relationships between findings, mechanisms, risks, and decisions, not a list of correctly remembered items. Once that starts to make sense, move toward Pathophysiology Through Patterns and Clinical Reasoning.",
+      },
+      {
+        type: "heading",
+        text: "If directives make you hesitate",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Directives Through Purpose.",
+      },
+      {
+        type: "paragraph",
+        text: "Directives feel heavy because they are tied to safety, scope, evaluation, and consequences. Many students respond by trying to memorize every line perfectly. The problem is that memorization alone can make students freeze when the patient is borderline, evolving, or not matching the clean version they expected. You know the threshold, but the patient's blood pressure is sitting right on it and they are getting worse.",
+      },
+      {
+        type: "paragraph",
+        text: "This section helps you understand directives as decision supports built around a specific clinical risk, not just rules to survive. From there, Clinical Reasoning will connect directive decisions to the larger problem of acting safely when certainty is incomplete.",
+      },
+      {
+        type: "heading",
+        text: "If scenarios keep exposing the same mistakes",
+      },
+      {
+        type: "paragraph",
+        text: "Go to Scenario Days as Learning Tools.",
+      },
+      {
+        type: "paragraph",
+        text: "Repeated mistakes can feel discouraging, especially in front of instructors or classmates. But repeated errors usually have a shape. Maybe reassessment drops every time after the first intervention. Maybe transport decisions lag because you are waiting for the call to become more obvious before naming risk. Maybe you focus so hard on one task that the larger picture starts drifting, and the patient's deterioration registers late.",
+      },
+      {
+        type: "paragraph",
+        text: "Scenario work becomes more useful when you stop treating each run as a separate judgment and start reading the pattern underneath.",
+      },
+      {
+        type: "paragraph",
+        text: "After that, Common Errors and What They Reveal and The Five Whys can help you turn feedback into something specific enough to carry into the next room.",
+      },
+      {
+        type: "heading",
+        text: "If OSCEs make you rush or freeze",
+      },
+      {
+        type: "paragraph",
+        text: "Start with OSCE Preparation.",
+      },
+      {
+        type: "paragraph",
+        text: "OSCEs change how thinking feels. You are being watched, time is visible, and the stakes are real. Even students who know the material can find themselves moving too quickly, skipping contraindication checks, over-explaining to fill silence, or getting stuck trying to complete a perfect assessment while the call is drifting.",
+      },
+      {
+        type: "paragraph",
+        text: "OSCE preparation is not about becoming flawless. It is about keeping enough structure available that stress does not take over the decisions.",
+      },
+      {
+        type: "paragraph",
+        text: "After that, Performance Under Pressure explains why pressure narrows access to knowledge and what kind of structure holds up better than confidence alone when working memory is full.",
+      },
+      {
+        type: "heading",
+        text: "If feedback stays with you too long",
+      },
+      {
+        type: "paragraph",
+        text: "Begin with Reflection Without Journaling, then use The Five Whys if you need a more structured way to trace the problem back to something you can act on.",
+      },
+      {
+        type: "paragraph",
+        text: "Some students do not ignore feedback. They carry it for the rest of the day, replay the scenario on the drive home, and keep returning to the moment where things went wrong. That can feel like learning, but it usually is not. After a certain point, replaying does not add information. It just keeps the discomfort active without producing a next step.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful reflection is narrower. It starts with one moment, one decision, or one pattern. The goal is not to account for the whole performance. It is to identify one thing you would notice or do differently next time.",
+      },
+      {
+        type: "heading",
+        text: "If you cannot tell whether you are improving",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Scenario Days as Learning Tools.",
+      },
+      {
+        type: "paragraph",
+        text: "Improvement in paramedic school is rarely smooth. You may feel less polished for a while because you are integrating new layers at the same time: communication, prioritization, directive decisions, reassessment timing, transport thinking. The call can feel messier right before it starts feeling more organized.",
+      },
+      {
+        type: "paragraph",
+        text: "A more useful question than \"how did that feel\" is whether your recovery is getting faster. Are you noticing problems sooner in the call rather than only in debrief? When a mistake repeats, is it exactly the same, or has it shifted after feedback? Are you starting to name risk earlier, even when the overall call still feels awkward? Those are better signals than how smooth any single scenario felt.",
+      },
+      {
+        type: "heading",
+        text: "If none of these fit perfectly",
+      },
+      {
+        type: "paragraph",
+        text: "Most learning problems overlap. A scenario issue might involve cognitive load, weak retrieval, unclear meaning, directive anxiety, and pressure all at once. You do not need to separate those cleanly before starting.",
+      },
+      {
+        type: "paragraph",
+        text: "Choose the entry point closest to the problem you are actually having. Read enough to understand what it is naming. Then make one adjustment.",
+      },
+      {
+        type: "heading",
+        text: "If you want the full order",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Cognitive Load. That section builds the first foundation for the rest of VitalNotes and makes the later sections easier to place.",
+      },
     ],
     glossaryTerms: [
         "cognitive-load",
@@ -616,263 +528,194 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Explain cognitive load as a normal pressure in paramedic learning, especially when assessment, communication, memory, decisions, and procedures compete for attention.",
     pageType: "conceptual",
     body: [
-        {
-            "type": "paragraph",
-            "text": "There is a particular kind of frustration that shows up early in paramedic training."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student studies. They know the content well enough to explain it. They can talk through an assessment sequence, describe a directive, list relevant findings, and identify what they would probably do in a calm conversation."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then the scenario starts, and something simple disappears."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not something obscure. Not a rare contraindication hidden three layers deep. Something ordinary. A reassessment. A blood glucose. A second set of vitals. A question they meant to ask. A safety check they usually remember."
-        },
-        {
-            "type": "paragraph",
-            "text": "Afterward, the student often says, “I don’t know why I forgot that. I knew it.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "And most of the time, they are telling the truth."
-        },
-        {
-            "type": "paragraph",
-            "text": "Cognitive load is one way to understand what happened."
-        },
-        {
-            "type": "heading",
-            "text": "What cognitive load means here"
-        },
-        {
-            "type": "paragraph",
-            "text": "Cognitive load is the amount of mental work your brain is trying to manage at one time."
-        },
-        {
-            "type": "paragraph",
-            "text": "That may sound simple, but in paramedicine the load builds quickly. You are rarely doing one thing. You are listening to the patient, watching their breathing, thinking about the scene, checking your partner’s progress, remembering a directive, deciding what matters now, and trying not to lose the overall direction of the call."
-        },
-        {
-            "type": "paragraph",
-            "text": "Even in a lab, where the patient is simulated and the stakes are controlled, the mental task is still crowded."
-        },
-        {
-            "type": "paragraph",
-            "text": "Your working memory can only hold and manipulate so much at once. When too many things compete for that limited space, performance starts to change. You may become more reactive. You may fixate on one task. You may stop hearing parts of the history. You may keep moving, but lose track of why you are moving."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is one way cognitive load shows up in performance."
-        },
-        {
-            "type": "paragraph",
-            "text": "It does not mean you are careless. It means the task is asking your attention to carry more than it can manage cleanly."
-        },
-        {
-            "type": "heading",
-            "text": "Why trying harder does not always fix it"
-        },
-        {
-            "type": "paragraph",
-            "text": "When students feel overloaded, the first instinct is usually to push harder."
-        },
-        {
-            "type": "paragraph",
-            "text": "Focus more. Study more. Memorize the steps again. Promise yourself you will not miss that thing next time."
-        },
-        {
-            "type": "paragraph",
-            "text": "Sometimes that helps, especially if the issue really was a knowledge gap. But cognitive load problems are not always fixed by adding more content. In fact, adding more to remember can make the problem worse if the structure underneath has not improved."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student who keeps forgetting reassessment may not need another reminder that reassessment matters. They may need a more stable place for reassessment to live in their call flow."
-        },
-        {
-            "type": "paragraph",
-            "text": "The same is true for other common misses. A blood glucose in an altered patient may disappear because the student has not built a reliable early check for simple reversible causes. A directive may feel frozen not because the wording was never studied, but because the student does not yet understand what the directive is protecting."
-        },
-        {
-            "type": "paragraph",
-            "text": "More effort is not useless. It just needs to be aimed at the right problem."
-        },
-        {
-            "type": "heading",
-            "text": "What overload looks like in a scenario"
-        },
-        {
-            "type": "paragraph",
-            "text": "Cognitive overload usually does not feel dramatic from the outside."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student may still look busy. They may still be performing skills, asking questions, talking to their partner, and moving through the call. The problem is that their attention has narrowed without them noticing."
-        },
-        {
-            "type": "paragraph",
-            "text": "You might see it as a student spending several minutes adjusting oxygen delivery while the larger assessment stalls. Or getting focused on lung sounds and missing that the patient’s mental status has changed. Or asking a long list of history questions without naming the risk that is already becoming clear."
-        },
-        {
-            "type": "paragraph",
-            "text": "In the moment, this can feel like being behind."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not always panicked. Just crowded. The student knows there are several things to do, but the order becomes blurry. They may start reaching for the next visible task instead of the next important one."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is one of the reasons cognitive load matters so much in paramedic education. When load gets too high, students do not simply forget facts. They lose access to priorities."
-        },
-        {
-            "type": "heading",
-            "text": "A paramedic example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Picture a student running a respiratory scenario."
-        },
-        {
-            "type": "paragraph",
-            "text": "The patient is short of breath, anxious, and speaking in short phrases. The student notices wheezing, checks oxygen saturation, applies oxygen, and starts thinking about bronchodilator treatment. So far, the call is moving."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then the patient becomes quieter."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student is still busy. They are adjusting equipment, thinking through the medication, trying to communicate with their partner, and watching the monitor. But they do not pause to reassess work of breathing, mental status, or whether the quietness represents improvement or fatigue."
-        },
-        {
-            "type": "paragraph",
-            "text": "In debrief, the student may say, “I knew I should reassess. I just got focused on the treatment.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "That is a cognitive load problem."
-        },
-        {
-            "type": "paragraph",
-            "text": "The treatment became the center of attention. The reassessment, which is what gives the treatment meaning, slipped out of reach."
-        },
-        {
-            "type": "paragraph",
-            "text": "The fix is not simply telling the student, “Remember to reassess.” They already know that. The better question is where reassessment belongs in their structure so it returns after an intervention, even when the call feels busy."
-        },
-        {
-            "type": "heading",
-            "text": "Structure protects thinking"
-        },
-        {
-            "type": "paragraph",
-            "text": "Structure matters because it reduces the number of decisions your working memory has to remake in the moment."
-        },
-        {
-            "type": "paragraph",
-            "text": "If every scenario requires you to rebuild your approach from scratch, you will run out of mental space quickly. You will be deciding what to ask, what to check, what matters, what comes next, what your partner needs, and what the patient is doing, all at the same time."
-        },
-        {
-            "type": "paragraph",
-            "text": "A stable structure does not remove clinical thinking. It protects it."
-        },
-        {
-            "type": "paragraph",
-            "text": "When your basic sequence is reliable, your attention is freed for the parts of the call that actually require judgment. You can notice when the patient changes. You can hear the detail in the history. You can compare findings instead of just collecting them. You can ask whether your first explanation still fits."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is why experienced clinicians often look calmer than students. It is not because the call is simple. It is because more of the basic structure is already available to them. They are not spending as much attention deciding where their attention should go."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is part of what you are building as a student."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are not only building knowledge. You are building structure that can still be used when the call gets crowded."
-        },
-        {
-            "type": "heading",
-            "text": "Some load belongs in the work"
-        },
-        {
-            "type": "paragraph",
-            "text": "Not all cognitive load is bad."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some of it belongs in the work. Assessing a sick patient should require thinking. Making decisions with incomplete information should take effort. Learning a new skill should feel mentally demanding at first."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of load belongs in the work."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem is wasted load."
-        },
-        {
-            "type": "paragraph",
-            "text": "Wasted load comes from things like unclear routines, messy notes, poorly understood directives, trying to remember every step instead of using a stable assessment pattern, or repeatedly deciding the same basic priorities from scratch."
-        },
-        {
-            "type": "paragraph",
-            "text": "Students often blame themselves for this kind of strain. They assume they are slow, scattered, or not confident enough. Sometimes the better explanation is that too much of their attention is being spent on things that could have been structured earlier."
-        },
-        {
-            "type": "paragraph",
-            "text": "A good learning system does not remove challenge. It reduces unnecessary strain so the real challenge can be handled better."
-        },
-        {
-            "type": "heading",
-            "text": "How to start working with cognitive load"
-        },
-        {
-            "type": "paragraph",
-            "text": "For now, do not try to fix everything."
-        },
-        {
-            "type": "paragraph",
-            "text": "After a lab or scenario, choose one moment where your thinking became crowded. Not the whole call. Just one moment."
-        },
-        {
-            "type": "paragraph",
-            "text": "Ask what was competing for your attention there."
-        },
-        {
-            "type": "paragraph",
-            "text": "Were you trying to remember a sequence? Were you unsure what mattered most? Were you focused on a task while the patient’s overall condition was changing? Were you waiting for certainty before acting? Were you carrying too many possible explanations without a way to sort them?"
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of question is more useful than simply asking, “What did I forget?”"
-        },
-        {
-            "type": "paragraph",
-            "text": "Forgetting is often the surface problem. The better learning is underneath it."
-        },
-        {
-            "type": "paragraph",
-            "text": "Once you identify where the load built up, you can decide what kind of support is needed. Maybe you need a better assessment routine. Maybe a concept needs to be understood more clearly. Maybe a directive needs to be learned by purpose, not just wording. Maybe a note needs to be rebuilt so it supports thinking instead of storage."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is where the rest of VitalNotes starts to connect."
-        },
-        {
-            "type": "paragraph",
-            "text": "Cognitive load helps explain why capable students can lose access to simple things under pressure."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is where the guide turns next: why studying can feel productive even when it is not preparing the brain to retrieve and use knowledge in motion."
-        },
-       
+      {
+        type: "paragraph",
+        text: "There is a particular kind of frustration that shows up early in paramedic training.",
+      },
+      {
+        type: "paragraph",
+        text: "A student studies. They know the content well enough to explain it. They can talk through an assessment sequence, describe a directive, list relevant findings, and identify what they would probably do in a calm conversation. Then the scenario starts, and something ordinary disappears. Not a rare contraindication buried three layers deep. A reassessment. A blood glucose. A question they meant to ask. A safety check they always remember at the desk.",
+      },
+      {
+        type: "paragraph",
+        text: "Afterward, the student says, \"I don't know why I forgot that. I knew it.\" And most of the time, they are telling the truth.",
+      },
+      {
+        type: "paragraph",
+        text: "Cognitive load is one way to understand what happened, and more importantly, what to do differently.",
+      },
+      {
+        type: "heading",
+        text: "What cognitive load means here",
+      },
+      {
+        type: "paragraph",
+        text: "Cognitive load is the amount of mental work your brain is managing at one time.",
+      },
+      {
+        type: "paragraph",
+        text: "In paramedicine, that load builds fast. You are rarely doing one thing. You are listening to the patient, watching their breathing, tracking the scene, checking your partner's progress, holding a directive in mind, deciding what matters right now, and trying not to lose the overall direction of the call. Even in a lab, where the patient is simulated and the stakes are controlled, the mental task is still crowded.",
+      },
+      {
+        type: "paragraph",
+        text: "Working memory can only hold and manipulate so much at once. When too many things compete for that space at the same time, performance changes in ways that are not always visible from the outside. You may become more reactive. You may fixate on one task while the larger picture drifts. You may stop hearing parts of the history. You may keep moving but lose track of why.",
+      },
+      {
+        type: "paragraph",
+        text: "When load gets high enough, students do not simply forget facts. They lose access to priorities. That is the more serious problem.",
+      },
+      {
+        type: "heading",
+        text: "Why pushing harder does not always fix it",
+      },
+      {
+        type: "paragraph",
+        text: "When students feel overloaded, the first instinct is to push harder. Focus more. Study more. Memorize the steps again. Promise not to miss that thing next time.",
+      },
+      {
+        type: "paragraph",
+        text: "Sometimes that helps, particularly if the issue is a genuine knowledge gap. But cognitive load problems are not always fixed by adding more content. Adding more to remember can make the problem worse if the structure underneath has not improved.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who keeps losing reassessment after an intervention may not need another reminder that reassessment matters. They may need a more reliable place for it in their call flow, a consistent trigger that fires after every treatment regardless of how busy the call feels.",
+      },
+      {
+        type: "paragraph",
+        text: "The blood glucose in an altered patient disappears for a similar reason. Not because the student forgot that glucose matters in altered mental status. Because they have no automatic check that fires when a patient is confused: a habit that runs before the explanation is clear, precisely because glucose is cheap to rule out and expensive to miss.",
+      },
+      {
+        type: "paragraph",
+        text: "A directive can feel frozen at the decision point not because the wording was never studied, but because the student understands the threshold without understanding the risk the threshold is managing. When the patient is sitting right on the boundary, memorized wording gives you the number. Understanding the purpose gives you the reasoning.",
+      },
+      {
+        type: "paragraph",
+        text: "More effort is not useless. It needs to be aimed at the right problem.",
+      },
+      {
+        type: "heading",
+        text: "What overload looks like in a scenario",
+      },
+      {
+        type: "paragraph",
+        text: "Cognitive overload rarely looks dramatic from the outside.",
+      },
+      {
+        type: "paragraph",
+        text: "A student may still look busy: performing skills, asking questions, talking to their partner, moving through the call. The problem is that attention has narrowed without them noticing. They are spending two minutes adjusting oxygen delivery while the patient's mental status quietly changes. They are working through a detailed medication history while the trajectory of the call is already becoming clear. They are asking about allergies to a patient who is getting worse.",
+      },
+      {
+        type: "paragraph",
+        text: "In the moment, this feels like being behind. Not panicked. Just crowded. The student knows there are several things to do, but the order has blurred. They reach for the next visible task instead of the next important one.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Picture a student running a respiratory scenario.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient is short of breath, anxious, and speaking in short phrases. The student notices wheezing, checks oxygen saturation, applies oxygen, and starts thinking through bronchodilator treatment. The call is moving.",
+      },
+      {
+        type: "paragraph",
+        text: "Then the patient becomes quieter.",
+      },
+      {
+        type: "paragraph",
+        text: "The student is still busy: adjusting equipment, thinking through the medication, communicating with their partner, watching the monitor. But they do not pause to reassess work of breathing, mental status, or whether the quietness represents improvement or fatigue. In a patient with severe bronchospasm, quieter lung sounds can mean less air movement, not better airflow.",
+      },
+      {
+        type: "paragraph",
+        text: "In debrief, the student says, \"I knew I should reassess. I just got focused on the treatment.\"",
+      },
+      {
+        type: "paragraph",
+        text: "The treatment became the center of attention. Reassessment, which is what gives the treatment meaning, slipped out of reach. The fix is not telling the student to reassess more. They already know that. The better question is where reassessment lives in their structure so it returns after an intervention automatically, before the next task pulls attention forward.",
+      },
+      {
+        type: "heading",
+        text: "Structure protects thinking",
+      },
+      {
+        type: "paragraph",
+        text: "Structure matters because it reduces the number of decisions working memory has to remake in real time.",
+      },
+      {
+        type: "paragraph",
+        text: "If every scenario requires rebuilding your approach from scratch, you run out of mental space quickly. You are deciding what to ask, what to check, what matters, what comes next, what your partner needs, and what the patient is doing, all simultaneously, all competing for the same limited attention.",
+      },
+      {
+        type: "paragraph",
+        text: "A stable structure does not remove clinical thinking. It protects it by making room for it.",
+      },
+      {
+        type: "paragraph",
+        text: "When your basic sequence is reliable, attention is freed for the parts of the call that actually require judgment: noticing when the patient changes, hearing the detail in the history, comparing findings instead of just collecting them, asking whether your first explanation still fits.",
+      },
+      {
+        type: "paragraph",
+        text: "This is part of why experienced paramedics often look calmer in the same room as a deteriorating patient. The call may be equally complicated, but more of the basic structure has become automatic for them. They are not deciding where attention should go. That decision is already made, so attention can go toward what needs it: whether the patient is compensating, whether the explanation is still holding, and what changes if the next set of vitals moves the wrong way.",
+      },
+      {
+        type: "paragraph",
+        text: "Students can work toward this deliberately. It does not only come with time. It comes with practicing the structure of a call, not just the content. Rehearsing your assessment entry until the sequence is stable. Deciding in advance where glucose, reassessment, and transport priority live in your flow, so those decisions do not have to be made fresh under pressure every time.",
+      },
+      {
+        type: "heading",
+        text: "Some load belongs in the work",
+      },
+      {
+        type: "paragraph",
+        text: "Not all cognitive load is a problem.",
+      },
+      {
+        type: "paragraph",
+        text: "Assessing a patient who is deteriorating should require thinking. Making a directive decision when the patient is borderline should take effort. Learning to manage airway, monitor, and communication at the same time should feel demanding at first. That load is appropriate. It is what skill development feels like from the inside.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is wasted load: mental effort that produces nothing useful.",
+      },
+      {
+        type: "paragraph",
+        text: "Wasted load looks like deciding every time whether to do lung sounds before or after the medication history because you never settled on a sequence. It looks like notes that store information but do not help you reason with it, so you have to reconstruct the explanation from scratch before every lab. It looks like knowing the nitroglycerin threshold by number without knowing why that threshold exists, so when the patient's pressure is sitting right on it and trending down, the directive gives you a line but not a decision.",
+      },
+      {
+        type: "paragraph",
+        text: "Students often blame themselves for this kind of strain. They assume they are slow, scattered, or not confident enough. Sometimes the better explanation is that too much attention is going toward decisions that could have been made earlier, in a lower-pressure moment, when there was time to build the structure properly.",
+      },
+      {
+        type: "paragraph",
+        text: "A good learning system does not remove challenge. It reduces unnecessary strain so the real challenge can be handled better.",
+      },
+      {
+        type: "heading",
+        text: "How to start working with cognitive load",
+      },
+      {
+        type: "paragraph",
+        text: "After a lab or scenario, choose one moment where thinking became crowded. Not the whole call. One moment.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask what was competing for attention there. Were you trying to hold a sequence in mind while simultaneously managing the patient? Were you unsure what mattered most, so you kept gathering instead of deciding? Were you focused on a task while the patient's overall picture was changing around it? Were you waiting for certainty before acting on a risk that was already visible?",
+      },
+      {
+        type: "paragraph",
+        text: "That question is more useful than simply asking what you forgot. Forgetting is usually the surface. The load problem is underneath it.",
+      },
+      {
+        type: "paragraph",
+        text: "Once you can name where the crowding happened, you can decide what kind of work would actually address it. Maybe you need a more stable assessment routine you practice until the entry is automatic. Maybe a concept needs to be understood more deeply so it stops requiring active recall every time. Maybe a directive needs to be learned by its purpose and not just its wording. Maybe a note needs to be rebuilt so it supports reasoning rather than storage.",
+      },
+      {
+        type: "paragraph",
+        text: "That is the kind of work that changes what happens in the next scenario, not just what you remember about the last one.",
+      },
     ],
     glossaryTerms: [
         "cognitive-load",
@@ -901,283 +744,206 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Show why familiar study methods can feel productive without building reliable access during scenarios, labs, or OSCEs.",
     pageType: "conceptual",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Some studying feels productive because it feels calm."
-        },
-        {
-            "type": "paragraph",
-            "text": "You sit down with your notes. The slides are open. The chart is in front of you. The directive is written out clearly. The medication dose is where it always is. The contraindications are listed in order. Nothing is moving, nobody is watching, and the material has labels attached to it."
-        },
-        {
-            "type": "paragraph",
-            "text": "In that setting, things can feel solid."
-        },
-        {
-            "type": "paragraph",
-            "text": "You recognize the words. You remember seeing the explanation before. You can follow the logic while the page is guiding you. It feels like the knowledge is there, and in one sense, it is."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then a scenario starts, and the same knowledge does not return the same way."
-        },
-        {
-            "type": "paragraph",
-            "text": "That can be frustrating because the student did not necessarily avoid the work. They may have spent real time studying. They may have reviewed carefully. They may have felt reasonably prepared. The problem is that performance asks for something different than recognition."
-        },
-        {
-            "type": "paragraph",
-            "text": "In a scenario, you are not looking at the answer. You are trying to bring it back while also assessing, listening, communicating, watching the patient, and deciding what matters next."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is a different task."
-        },
-        {
-            "type": "heading",
-            "text": "Familiar is not the same as available"
-        },
-        {
-            "type": "paragraph",
-            "text": "A lot of common studying builds familiarity."
-        },
-        {
-            "type": "paragraph",
-            "text": "Familiarity is the sense that you have seen something before. It is what happens when the material looks clear while you are reading it. The heading reminds you what the topic is. The table separates the categories. The bolded term tells you what matters. The slide order gives the idea a shape before you have to create one yourself."
-        },
-        {
-            "type": "paragraph",
-            "text": "There is nothing wrong with familiarity. It is part of learning."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem starts when familiarity is mistaken for access."
-        },
-        {
-            "type": "paragraph",
-            "text": "Access means you can bring the idea back when the cues are gone. You can explain it without the paragraph in front of you. You can recognize it when it appears in a patient instead of on a slide. You can use it when the presentation is incomplete, the room is busy, and your attention is already carrying several other things."
-        },
-        {
-            "type": "paragraph",
-            "text": "Paramedic learning depends heavily on access."
-        },
-        {
-            "type": "paragraph",
-            "text": "The patient will not present as a clean heading. They will present as breathing pattern, skin, posture, history fragments, vital signs, family comments, scene context, and changes over time. The student has to assemble meaning from that."
-        },
-        {
-            "type": "paragraph",
-            "text": "Review can make material feel known before it is ready for that kind of work."
-        },
-        {
-            "type": "heading",
-            "text": "Why review can hide weak learning"
-        },
-        {
-            "type": "paragraph",
-            "text": "Most students are not lazy about studying. Many are doing exactly what school has trained them to do."
-        },
-        {
-            "type": "paragraph",
-            "text": "They review. They rewrite. They organize. They make cleaner notes. They spend time with the material, and time with the material feels like progress."
-        },
-        {
-            "type": "paragraph",
-            "text": "Sometimes it is progress."
-        },
-        {
-            "type": "paragraph",
-            "text": "The issue is that review often keeps the task too comfortable. The answer is visible. The structure is already provided. The cues are stable. The student can follow the explanation without having to rebuild it."
-        },
-        {
-            "type": "paragraph",
-            "text": "Paramedicine rarely asks for knowledge that gently."
-        },
-        {
-            "type": "paragraph",
-            "text": "In labs and OSCEs, the student has to decide what matters without the slide headings. They have to notice which findings belong together. They have to remember a directive while also deciding whether the patient fits it. They have to keep thinking after the first intervention instead of mentally relaxing because something has been done."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is why studying can feel productive and still not transfer well. The study session may have strengthened recognition without doing enough to strengthen recall, comparison, or use."
-        },
-        {
-            "type": "heading",
-            "text": "A common scenario problem"
-        },
-        {
-            "type": "paragraph",
-            "text": "Picture a student preparing for a respiratory lab."
-        },
-        {
-            "type": "paragraph",
-            "text": "The night before, they review asthma, COPD, and heart failure. The notes are organized. The categories look clear while reading. Asthma has bronchoconstriction and wheezing. COPD has chronic history and air trapping. Heart failure has fluid backup, crackles, edema, and cardiac history."
-        },
-        {
-            "type": "paragraph",
-            "text": "At the desk, those categories behave themselves."
-        },
-        {
-            "type": "paragraph",
-            "text": "In the scenario, they do not."
-        },
-        {
-            "type": "paragraph",
-            "text": "The patient is short of breath. They are anxious. They have a cough. Their oxygen saturation is not terrible, but their work of breathing is high. Lung sounds are present, but not as clean as the notes made them seem. The student starts trying to remember which condition this is supposed to be."
-        },
-        {
-            "type": "paragraph",
-            "text": "The issue is not that they never studied."
-        },
-        {
-            "type": "paragraph",
-            "text": "The issue is that their studying may have stayed too close to the notes. They reviewed the differences while the categories were already separated for them. They did not spend enough time trying to retrieve those differences without cues, compare similar presentations, or ask what would make one explanation more likely than another."
-        },
-        {
-            "type": "paragraph",
-            "text": "So when the call becomes less tidy, the categories start to blur."
-        },
-        {
-            "type": "paragraph",
-            "text": "That blur is not always a knowledge failure. Sometimes it is a practice-design problem."
-        },
-        {
-            "type": "heading",
-            "text": "Pressure reveals what study did not test"
-        },
-        {
-            "type": "paragraph",
-            "text": "Pressure does not create every learning problem, but it makes weak access easier to see."
-        },
-        {
-            "type": "paragraph",
-            "text": "When a student is calm, rested, and looking directly at their notes, fragile learning can hide. The material feels known because the environment is helping. The page gives cues. The order gives structure. The answer is nearby."
-        },
-        {
-            "type": "paragraph",
-            "text": "During a scenario, that support disappears."
-        },
-        {
-            "type": "paragraph",
-            "text": "Now the student has to carry more in working memory. They have to listen, observe, decide, communicate, and remember at the same time. If knowledge has mostly been practiced through recognition, it may not return cleanly under that load."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is why students sometimes describe “blanking.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "Blanking is not always empty memory. Sometimes the knowledge is there, but it has not been practiced in a way that makes it reachable under delay, distraction, or pressure."
-        },
-        {
-            "type": "paragraph",
-            "text": "That distinction matters. If the problem is missing knowledge, the student needs to learn the content. If the problem is access, the student needs to practice bringing the content back."
-        },
-        {
-            "type": "paragraph",
-            "text": "Those are related, but they are not the same job."
-        },
-        {
-            "type": "heading",
-            "text": "Better studying asks more of the brain"
-        },
-        {
-            "type": "paragraph",
-            "text": "Better studying is not always longer studying."
-        },
-        {
-            "type": "paragraph",
-            "text": "Often, it is studying that asks the brain to do more of the work."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of rereading the asthma notes, close them and explain what air trapping means in your own words. Instead of looking over the nitroglycerin directive again, try to recall the major indications, contraindications, and the reason they matter before checking. Instead of reviewing a comparison chart, cover it and ask what would actually separate those conditions during a call."
-        },
-        {
-            "type": "paragraph",
-            "text": "This usually feels worse at first."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is slower. It exposes gaps. It can make you feel less confident for a few minutes. You may realize that you recognized the explanation more easily than you could produce it. You may remember the wording of a directive but not the purpose behind it. You may know the list of symptoms but struggle to explain why they belong together."
-        },
-        {
-            "type": "paragraph",
-            "text": "That discomfort is useful when it is handled properly."
-        },
-        {
-            "type": "paragraph",
-            "text": "It shows you where the learning is still weak enough to need attention. It shows which connections are not stable yet. It shows where the notes are doing too much of the work for you."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is better information than another smooth review session."
-        },
-        {
-            "type": "heading",
-            "text": "What productive studying can look like"
-        },
-        {
-            "type": "paragraph",
-            "text": "A useful study session may feel a little uneven."
-        },
-        {
-            "type": "paragraph",
-            "text": "You try to explain something and miss part of it. You check the notes and correct it. You compare two similar conditions and realize you were using the wrong cue. You attempt to recall a directive and notice that you remember the threshold but not what the threshold is protecting. You look back at a scenario mistake and realize the problem was not the treatment itself, but the moment where you stopped reassessing."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of studying does not always feel polished."
-        },
-        {
-            "type": "paragraph",
-            "text": "It can feel like you are finding problems."
-        },
-        {
-            "type": "paragraph",
-            "text": "In a way, you are. But you are finding them at the desk, in a lower-stakes environment, before a scenario finds them for you. That is the advantage. You are not trying to prove that you know everything. You are trying to see what is stable enough to use and what still needs support."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is not to make studying feel worse for its own sake. The goal is to make studying more honest."
-        },
-        {
-            "type": "heading",
-            "text": "What to change first"
-        },
-        {
-            "type": "paragraph",
-            "text": "Do not overhaul your whole study routine at once."
-        },
-        {
-            "type": "paragraph",
-            "text": "Start by adding a small retrieval step after review."
-        },
-        {
-            "type": "paragraph",
-            "text": "Read a section of your notes, then close them. Explain the idea out loud, write a rough version from memory, or ask yourself what the concept would look like in a patient. Then reopen the notes and check what was accurate, what was missing, and what only felt obvious because the page was in front of you."
-        },
-        {
-            "type": "paragraph",
-            "text": "This does not need to take long."
-        },
-        {
-            "type": "paragraph",
-            "text": "A few minutes of honest retrieval can show you more than a long stretch of comfortable rereading. Not because rereading is useless, but because rereading often hides the gap between recognition and access."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are trying to find that gap early enough to do something about it."
-        },
-        {
-            "type": "paragraph",
-            "text": "Studying feels productive when the material becomes familiar. Paramedic performance needs knowledge that can be retrieved, connected, and used while the call is moving."
-        },
-        {
-            "type": "paragraph",
-            "text": "That leads into a second kind of pressure students often misread: learning strain that is real, but not always personal failure."
-        },
-       
+      {
+        type: "paragraph",
+        text: "Some studying feels productive because the environment does most of the work.",
+      },
+      {
+        type: "paragraph",
+        text: "Your notes are open. The directive is written out. The categories are already separated. The heading tells you what the topic is before you have to identify it yourself. The order of the slide tells you what comes next. Nothing is moving, nobody is watching, and every piece of information has a label attached to it.",
+      },
+      {
+        type: "paragraph",
+        text: "In that setting, knowledge can feel solid. You recognize the words. You remember the explanation. You can follow the logic while the page is in front of you. That recognition is real, and it is part of learning.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is that a scenario strips all of that away.",
+      },
+      {
+        type: "paragraph",
+        text: "Now there is no heading telling you this is a cardiac call. There is a person sitting forward in a chair, pale and sweating, saying the chest tightness started at breakfast. There is no category separating the conditions. There is a set of vitals, a 12-lead that is not perfectly diagnostic, a family member in the doorway, and a patient who keeps saying they feel fine. The student has to assemble meaning from that. Recognition built at a calm desk, with answers nearby, may not be the same thing as access under those conditions.",
+      },
+      {
+        type: "heading",
+        text: "Familiar is not the same as available",
+      },
+      {
+        type: "paragraph",
+        text: "Familiarity is the sense that you have seen something before. It is what happens when material looks clear while you are reading it. The table separates the categories. The bolded term tells you what matters. The comparison chart lines the conditions up side by side so the differences seem obvious.",
+      },
+      {
+        type: "paragraph",
+        text: "There is nothing wrong with familiarity. It is part of learning.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem starts when familiarity gets mistaken for access.",
+      },
+      {
+        type: "paragraph",
+        text: "Access means you can bring the idea back when the cues are gone. You can explain it without the paragraph in front of you. You can recognize it when it appears in a patient instead of on a slide, when the presentation is incomplete, the room is busy, and your attention is already carrying several other things.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient will not present as a clean heading. They will present as a posture, a skin color, a breathing pattern, a fragment of history from a family member who is also frightened, and findings that change between your first assessment and your second. The student has to assemble meaning from that. Review can make material feel known before it is ready for that kind of work.",
+      },
+      {
+        type: "heading",
+        text: "Why review can hide weak learning",
+      },
+      {
+        type: "paragraph",
+        text: "Most students are not lazy about studying. Many are doing exactly what school has trained them to do.",
+      },
+      {
+        type: "paragraph",
+        text: "They review. They rewrite. They organize. They make cleaner notes. They spend time with the material, and time with the material feels like progress.",
+      },
+      {
+        type: "paragraph",
+        text: "The issue is that review often keeps the task too comfortable. The answer is visible. The structure is already provided. The student can follow the explanation without having to rebuild it.",
+      },
+      {
+        type: "paragraph",
+        text: "Paramedicine rarely offers knowledge that gently.",
+      },
+      {
+        type: "paragraph",
+        text: "In a lab or OSCE, the student has to decide what matters without the slide headings. They have to recognize which findings belong together. They have to remember a directive while simultaneously deciding whether the patient in front of them actually fits it. They have to keep thinking after the first intervention rather than mentally settling because something has been done.",
+      },
+      {
+        type: "paragraph",
+        text: "Review can strengthen the sense that material is known without doing much for the ability to use it.",
+      },
+      {
+        type: "heading",
+        text: "A common scenario problem",
+      },
+      {
+        type: "paragraph",
+        text: "Picture a student preparing for a neuro lab.",
+      },
+      {
+        type: "paragraph",
+        text: "The night before, they review stroke, hypoglycemia, and altered mental status. The notes are organized. Stroke has facial droop, arm drift, speech changes, and a sudden onset. Hypoglycemia has diaphoresis, confusion, tachycardia, and a history of diabetes. Altered mental status has a differential with a long list of causes.",
+      },
+      {
+        type: "paragraph",
+        text: "At the desk, those categories hold their shape.",
+      },
+      {
+        type: "paragraph",
+        text: "In the scenario, a patient in their sixties is sitting at the kitchen table. Their speech is slightly slow. Their right arm seems weaker than their left. They are oriented but not quite themselves. The blood glucose is 4.8. The family says they had a similar episode three months ago that resolved.",
+      },
+      {
+        type: "paragraph",
+        text: "The student knows stroke is in the differential. They documented it in their notes the night before. But now the presentation is softer than the textbook version, the glucose is borderline acceptable, and the family's mention of a previous episode is pulling attention toward something recurrent rather than something acute.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is not that the student never studied.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is that their studying kept the conditions too clean. They reviewed the differences while the categories were already separated for them on the page. They did not spend enough time asking what stroke looks like when the onset is unclear, what a borderline glucose means when the patient still seems off, or what a previous similar episode actually changes about the risk picture.",
+      },
+      {
+        type: "paragraph",
+        text: "So when the call is softer than the textbook version, the categories start to blur. That blur is not a knowledge failure. It is a practice-design problem. The student practiced recognizing information that was already organized. They did not practice assembling it from the messier raw material a patient provides.",
+      },
+      {
+        type: "heading",
+        text: "Pressure reveals what studying did not test",
+      },
+      {
+        type: "paragraph",
+        text: "Pressure does not create every learning problem, but it makes weak access easier to see.",
+      },
+      {
+        type: "paragraph",
+        text: "When a student is calm, rested, and looking at their notes, fragile learning can hide. The material feels known because the environment is helping. The page provides cues. The structure already exists. The answer is nearby.",
+      },
+      {
+        type: "paragraph",
+        text: "During a scenario, that support disappears.",
+      },
+      {
+        type: "paragraph",
+        text: "The student has to carry more in working memory at the same time: listening, observing, deciding, communicating, and remembering while the patient is still changing. If knowledge has mostly been practiced through recognition, it may not return cleanly under that load.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why students describe blanking. Blanking is not always empty memory. Sometimes the knowledge is there, but it has not been practiced in a way that makes it reachable under delay, distraction, and pressure simultaneously.",
+      },
+      {
+        type: "paragraph",
+        text: "That distinction changes what you do next. If the problem is missing knowledge, the student needs to learn the content. If the problem is access, the student needs to practice retrieving the content without the cues that were present during studying. Those are related problems, but they need different responses.",
+      },
+      {
+        type: "heading",
+        text: "Better studying asks more of the brain",
+      },
+      {
+        type: "paragraph",
+        text: "Better studying is not always longer studying. Often it means removing the scaffolding that studying usually provides.",
+      },
+      {
+        type: "paragraph",
+        text: "Close the notes and explain the difference between a STEMI and an NSTEMI in your own words, including why that difference changes your transport decision rather than just your documentation. Try to recall the contraindications for nitroglycerin before opening the directive, then ask yourself what each one is actually protecting against: why hypotension matters, why inferior STEMI changes the risk picture, why recent sildenafil use is relevant. Cover the pediatric weight estimation guide and work through what you would do for a four-year-old in respiratory distress if the Broselow tape was not immediately available.",
+      },
+      {
+        type: "paragraph",
+        text: "This feels worse than reviewing. It is slower. It exposes gaps. It can make you feel less confident for a few minutes.",
+      },
+      {
+        type: "paragraph",
+        text: "That exposure is the point.",
+      },
+      {
+        type: "paragraph",
+        text: "It shows you where connections are not stable yet. It shows which ideas you were following on the page versus actually holding in your head. It shows you where the notes were doing too much of the work. That is better information than another smooth review session, because it shows you what the scenario will find before the scenario finds it.",
+      },
+      {
+        type: "heading",
+        text: "What productive studying can look like",
+      },
+      {
+        type: "paragraph",
+        text: "A useful study session may feel uneven.",
+      },
+      {
+        type: "paragraph",
+        text: "You try to explain the difference between obstructive shock and distributive shock without looking, and you get the mechanism right but confuse the clinical picture. You check the notes and correct it. You attempt to recall what would make a confused, combative patient with a history of alcohol use more concerning for something other than intoxication, and you realize you jumped to the familiar explanation without asking what else could produce the same picture. You look back at a scenario where you missed a transport decision and realize the issue was not the treatment itself, but the moment where your assessment stopped updating.",
+      },
+      {
+        type: "paragraph",
+        text: "These are not comfortable moments. They are productive ones.",
+      },
+      {
+        type: "paragraph",
+        text: "You are finding problems at the desk, in a lower-stakes environment, before a scenario finds them for you. You are not trying to prove that everything is solid. You are trying to see what is stable enough to use and what still needs support.",
+      },
+      {
+        type: "heading",
+        text: "What to change first",
+      },
+      {
+        type: "paragraph",
+        text: "After reading a section of your notes, close them.",
+      },
+      {
+        type: "paragraph",
+        text: "Explain the idea out loud, write a rough version from memory, or ask yourself what the concept would look like in a patient who did not present as a textbook example. Then reopen the notes and check what was accurate, what was missing, and what only felt obvious because the page was in front of you.",
+      },
+      {
+        type: "paragraph",
+        text: "A few minutes of honest retrieval will usually show you more than a long stretch of comfortable rereading. Rereading tells you what is familiar. Retrieval tells you what you can actually use when the notes are closed and the patient is waiting.",
+      },
+      {
+        type: "paragraph",
+        text: "You are trying to find the gap at the desk, where there is still time to repair it, rather than in the scenario room where the patient is changing and the clock is already moving.",
+      },
     ],
     glossaryTerms: [
         "retrieval-practice",
@@ -1207,331 +973,190 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Separate useful difficulty from wasted difficulty so students can respond to strain without turning every hard moment into a personal failure.",
     pageType: "conceptual",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Paramedic school can make strain feel like evidence."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student falls behind in studying and assumes they lack discipline. They freeze during a scenario and assume they are not confident enough. They receive the same feedback twice and assume they are not improving. They leave lab tired or embarrassed, and the whole thing starts to feel like a statement about who they are."
-        },
-        {
-            "type": "paragraph",
-            "text": "That interpretation is understandable. It is also not always accurate."
-        },
-        {
-            "type": "paragraph",
-            "text": "Learning paramedicine asks a lot from a person. There is content to understand, skills to practice, directives to apply, scenarios to run, feedback to absorb, and pressure to tolerate. Some strain comes with learning a role where knowledge has to become action."
-        },
-        {
-            "type": "paragraph",
-            "text": "But strain is not one thing."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some difficulty is useful. Some difficulty is waste. Some comes from being challenged in the right way. Some comes from trying to learn without enough structure underneath you. Some means you are finding the edge of your current understanding. Some means the method you are using is not giving much back for the energy you are spending."
-        },
-        {
-            "type": "paragraph",
-            "text": "That distinction matters because students often respond to all strain the same way. They push harder, study longer, blame confidence, or decide they are falling behind. Sometimes more effort is needed. Sometimes rest is needed. Sometimes a better system is needed."
-        },
-        {
-            "type": "paragraph",
-            "text": "Before deciding what to do next, it helps to understand what kind of strain you are actually dealing with."
-        },
-        {
-            "type": "heading",
-            "text": "Why strain feels personal"
-        },
-        {
-            "type": "paragraph",
-            "text": "When learning becomes difficult, students usually feel it before they can explain it."
-        },
-        {
-            "type": "paragraph",
-            "text": "They notice that scenarios feel worse than studying. They notice that feedback hits harder than expected. They notice that they can explain something calmly, but cannot use it smoothly when observed. They notice that other students look like they are handling the program better, even though that is rarely the full truth."
-        },
-        {
-            "type": "paragraph",
-            "text": "In that environment, it is easy to turn a learning problem into a personal label."
-        },
-        {
-            "type": "paragraph",
-            "text": "“I am bad at scenarios.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "“I am not a good test taker.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "“I am too anxious.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "“I am not built for this.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "There may be something real underneath those statements, but the statements themselves are usually too broad to help. They do not tell you what to practice, what to change, or what to ask for. They turn a specific difficulty into a fixed identity."
-        },
-        {
-            "type": "paragraph",
-            "text": "A better question is not, “What is wrong with me?”"
-        },
-        {
-            "type": "paragraph",
-            "text": "A better question is, “What is this strain pointing toward?”"
-        },
-        {
-            "type": "paragraph",
-            "text": "That question gives you somewhere to work."
-        },
-        {
-            "type": "heading",
-            "text": "Some difficulty belongs in the process"
-        },
-        {
-            "type": "paragraph",
-            "text": "Not every hard moment is a sign that something has gone wrong."
-        },
-        {
-            "type": "paragraph",
-            "text": "Trying to retrieve information without looking at notes should feel harder than rereading. Running a scenario should feel more demanding than talking through a case at a desk. Receiving feedback should create some discomfort, especially when it shows you a gap you did not notice on your own."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of difficulty can be useful because it asks the learning system to do something real."
-        },
-        {
-            "type": "paragraph",
-            "text": "It asks you to bring knowledge back, compare ideas, adjust your thinking, notice a pattern, or use a skill while attention is divided. Those are the conditions paramedic learning has to prepare for. If practice never reaches that level, it may feel smooth while leaving you underprepared."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student who struggles to explain the difference between asthma, COPD, and heart failure without notes is not necessarily failing. They may have found the exact place where their understanding needs to become more usable."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student who feels awkward during reassessment practice is not necessarily behind. They may be moving from knowing reassessment matters to actually making it part of their call flow."
-        },
-        {
-            "type": "paragraph",
-            "text": "Useful difficulty is not comfortable, but it gives you information you can act on."
-        },
-        {
-            "type": "heading",
-            "text": "Some difficulty is just noise"
-        },
-        {
-            "type": "paragraph",
-            "text": "Other difficulty does not help much."
-        },
-        {
-            "type": "paragraph",
-            "text": "Rereading the same notes for hours without testing recall can feel responsible, but it may not change what happens in a scenario. Rewriting slides into cleaner language can feel productive, but it may not help if the ideas are still disconnected. Trying to memorize a directive without understanding its purpose can create more anxiety than confidence."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is wasted difficulty."
-        },
-        {
-            "type": "paragraph",
-            "text": "It uses energy without improving access, understanding, judgment, or performance."
-        },
-        {
-            "type": "paragraph",
-            "text": "You can often recognize it by the lack of movement. The student is working, but the same problems keep appearing in almost the same way. They study, but cannot retrieve the material. They reflect after scenarios, but do not leave with a specific adjustment. They practice skills, but never connect the skill to the decision that makes it matter."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of strain deserves attention."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not because the student is the problem, but because the method is not giving enough back."
-        },
-        {
-            "type": "heading",
-            "text": "A lab example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Picture a student preparing for a medical lab."
-        },
-        {
-            "type": "paragraph",
-            "text": "The night before, they review respiratory conditions. They reread notes, highlight key findings, and look over the relevant directives. It feels like a solid study session because the material is familiar and organized."
-        },
-        {
-            "type": "paragraph",
-            "text": "In lab, the scenario starts messy. The patient is short of breath, anxious, and answering in short phrases. The student remembers pieces of the content, but the pieces are hard to use. Several possible causes come to mind, but the findings blur together. They ask questions, but the questions do not seem to narrow the problem. They begin treatment, but reassessment becomes inconsistent once the call gets busy."
-        },
-        {
-            "type": "paragraph",
-            "text": "Afterward, the student feels like they did not study enough."
-        },
-        {
-            "type": "paragraph",
-            "text": "Maybe there is some truth to that. But it may not be the most useful explanation."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem may be that the studying did not match the task. The student reviewed information in a calm, labelled format, but the scenario required retrieval, comparison, prioritization, and reassessment under load. The strain in the scenario was real, but repeating the same study method for longer may not solve it."
-        },
-        {
-            "type": "paragraph",
-            "text": "A better response might be to change the study task."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of rereading respiratory notes again, the student could close the notes and explain how different respiratory problems would look in a patient. They could compare similar presentations. They could ask what finding would make them change their mind. They could build a small note around one recurring confusion. They could rehearse reassessment after treatment, not as a line on a checklist, but as the moment where they find out whether their plan is working."
-        },
-        {
-            "type": "paragraph",
-            "text": "The work is still hard, but now the strain is aimed at the actual problem."
-        },
-        {
-            "type": "heading",
-            "text": "How to read strain more carefully"
-        },
-        {
-            "type": "paragraph",
-            "text": "Learning strain becomes more useful when you stop treating it as one category."
-        },
-        {
-            "type": "paragraph",
-            "text": "After a difficult study session, lab, scenario, or OSCE, try to name what kind of difficulty showed up."
-        },
-        {
-            "type": "paragraph",
-            "text": "Was it missing knowledge?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Was it weak retrieval?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Was too much competing for attention?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Was the structure unclear?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Was the feedback accurate but too broad?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Were you trying to fix too many things at once?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Those are different problems, and they need different responses."
-        },
-        {
-            "type": "paragraph",
-            "text": "A knowledge gap may need teaching, reading, or clarification. Weak retrieval may need practice bringing information back without notes. Cognitive overload may need better structure. Repeated scenario errors may need reflection or a smaller practice target. Emotional residue after feedback may need containment, not more analysis."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is not to diagnose yourself perfectly."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is to stop treating every hard moment as proof that you are not working hard enough."
-        },
-        {
-            "type": "heading",
-            "text": "The danger of overcorrecting"
-        },
-        {
-            "type": "paragraph",
-            "text": "There is another trap here."
-        },
-        {
-            "type": "paragraph",
-            "text": "Once students realize not all strain is personal, they can swing too far in the other direction. Every hard scenario starts to feel unfair. Every uncomfortable piece of feedback feels like too much. Every difficult study session feels like proof that the system is wrong."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is not the point either."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some difficulty belongs in the work. Paramedicine requires judgment under uncertainty. It requires skill repetition. It requires correction. It requires learning to stay functional when the first explanation does not hold."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is not to remove discomfort from the process."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is to make discomfort useful where possible, and reduce the parts that are only adding noise."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is a more honest standard."
-        },
-        {
-            "type": "heading",
-            "text": "What to do next time learning feels heavy"
-        },
-        {
-            "type": "paragraph",
-            "text": "When learning feels heavy, pause before adding more hours."
-        },
-        {
-            "type": "paragraph",
-            "text": "Ask what kind of work the strain is asking for."
-        },
-        {
-            "type": "paragraph",
-            "text": "If you are rereading and nothing is changing, switch to retrieval. If you are overwhelmed in scenarios, look for where attention is becoming crowded. If directives feel fragile, look for the purpose behind the rule. If feedback keeps repeating, choose one moment to examine instead of replaying the whole call."
-        },
-        {
-            "type": "paragraph",
-            "text": "Small adjustments matter here."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to rebuild your whole study system every time something feels hard. In fact, that can become another form of wasted difficulty. Choose one change that would make the next attempt clearer."
-        },
-        {
-            "type": "paragraph",
-            "text": "One better retrieval attempt."
-        },
-        {
-            "type": "paragraph",
-            "text": "One cleaner note."
-        },
-        {
-            "type": "paragraph",
-            "text": "One reassessment habit."
-        },
-        {
-            "type": "paragraph",
-            "text": "One feedback point carried into the next scenario."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is usually enough to move the work forward."
-        },
-        {
-            "type": "paragraph",
-            "text": "Learning strain is not automatically a personal failure. It is also not automatically meaningful just because it feels hard."
-        },
-        {
-            "type": "paragraph",
-            "text": "It needs to be interpreted."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some difficulty helps learning become stronger. Some difficulty burns effort without changing much. The next part of the guide moves from why learning feels hard into how understanding is built, starting with the difference between memorizing facts and making meaning from them."
-        },
-       
+      {
+        type: "paragraph",
+        text: "Paramedic school can make strain feel like evidence.",
+      },
+      {
+        type: "paragraph",
+        text: "A student falls behind in studying and decides they lack discipline. They freeze during a scenario and decide they are not confident enough. They receive the same feedback twice and decide they are not improving. They leave lab tired and embarrassed, and somewhere in that tiredness the difficulty starts to feel like a statement about who they are rather than a problem with a specific shape.",
+      },
+      {
+        type: "paragraph",
+        text: "That interpretation is understandable. It is also usually incomplete.",
+      },
+      {
+        type: "paragraph",
+        text: "Learning paramedicine asks a lot from a person at the same time: content to understand, skills to practice, directives to apply, scenarios to run, feedback to absorb, and enough pressure to tolerate that performance starts to feel like evaluation of character rather than assessment of a developing skill set. Some strain comes with that. It is built into what the role requires.",
+      },
+      {
+        type: "paragraph",
+        text: "But not all strain points in the same direction, and treating it as one thing is often where students go wrong.",
+      },
+      {
+        type: "heading",
+        text: "Why strain feels personal",
+      },
+      {
+        type: "paragraph",
+        text: "When learning becomes difficult, students feel it before they can name it.",
+      },
+      {
+        type: "paragraph",
+        text: "Scenarios feel worse than studying. Feedback hits harder than expected. Something that was explainable in a calm conversation disappears when an instructor is watching. Other students look like they are handling the program better, even though that is rarely the complete picture.",
+      },
+      {
+        type: "paragraph",
+        text: "In that environment, it is easy to turn a learning problem into a fixed label.",
+      },
+      {
+        type: "paragraph",
+        text: "\"I am bad at scenarios. I am not a good test taker. I am too anxious. I am not built for this.\"",
+      },
+      {
+        type: "paragraph",
+        text: "There may be something real underneath those statements. But as explanations, they are too broad to be useful. They do not tell you what to practice, what to change, or what to ask for. They convert a specific difficulty, which could be examined and addressed, into a personal verdict, which cannot.",
+      },
+      {
+        type: "paragraph",
+        text: "A more useful question than \"what is wrong with me\" is \"what is this strain pointing toward.\" That question gives you somewhere to go.",
+      },
+      {
+        type: "heading",
+        text: "Some difficulty belongs in the process",
+      },
+      {
+        type: "paragraph",
+        text: "Not every hard moment means something has gone wrong.",
+      },
+      {
+        type: "paragraph",
+        text: "Trying to retrieve information without your notes should feel harder than rereading them. That is not a problem with your memory. It is the difference between following a path and finding it. Running a scenario under observation should feel more demanding than talking through the same case at a desk. Receiving feedback that shows you a gap you missed should create some discomfort, because it is asking you to update an explanation you were confident in.",
+      },
+      {
+        type: "paragraph",
+        text: "That kind of difficulty is productive. It asks your learning system to do something that matches what paramedicine actually requires.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who struggles to explain what differentiates early septic shock from cardiogenic shock without looking at their notes has not necessarily failed to study. They may have found the exact place where their understanding needs to become more usable. The two conditions share enough surface features, tachycardia, altered mentation, low pressure, cool or clammy skin depending on stage, that distinguishing them requires more than a list. It requires understanding what is happening to perfusion in each case and why the treatments diverge from that point.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who feels awkward during a pediatric assessment because they keep second-guessing their normal value ranges has not fallen behind. They may be moving from knowing that pediatric vitals differ from adult vitals to building a reliable clinical picture of what a sick child actually looks like in front of them, which is a different and harder kind of knowing.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful difficulty is not comfortable. But it produces something: a gap identified, a connection made, a habit pushed one step closer to reliable.",
+      },
+      {
+        type: "heading",
+        text: "Some difficulty is just noise",
+      },
+      {
+        type: "paragraph",
+        text: "Other difficulty does not produce much.",
+      },
+      {
+        type: "paragraph",
+        text: "Rereading the same cardiac notes for ninety minutes without closing them and testing recall can feel responsible without changing what happens when a patient presents with atypical chest pain and a non-diagnostic ECG. Rewriting lecture slides into cleaner language can feel productive without helping if the ideas are still disconnected from mechanism and clinical use. Trying to memorize the stroke directive line by line without understanding what the time window is protecting against can create more hesitation at the decision point, not less.",
+      },
+      {
+        type: "paragraph",
+        text: "You can often recognize wasted difficulty by the lack of movement. The student is working, but the same problems keep appearing in the same shape. They study and still cannot retrieve. They reflect after scenarios and still leave without a specific next step. They practice skills in isolation and still cannot connect the skill to the decision that determines when it matters.",
+      },
+      {
+        type: "paragraph",
+        text: "That kind of strain deserves attention, not because the student is the problem, but because the method is not giving enough back for the energy being spent.",
+      },
+      {
+        type: "heading",
+        text: "A lab example",
+      },
+      {
+        type: "paragraph",
+        text: "Picture a student preparing for a trauma lab.",
+      },
+      {
+        type: "paragraph",
+        text: "The night before, they review hemorrhagic shock: mechanisms, signs, stages, treatment priorities. The notes look organized. Tachycardia is early. Hypotension is late. Skin changes, mentation, and perfusion tell you where the patient is in the compensation curve. The directive decisions feel clear on paper.",
+      },
+      {
+        type: "paragraph",
+        text: "In lab, the scenario gives them a patient after a significant mechanism. The patient is awake, talking, and initially not alarming. Vital signs are borderline: pressure acceptable, pulse slightly elevated, skin a little cool. The patient says they feel okay. The student begins a thorough history.",
+      },
+      {
+        type: "paragraph",
+        text: "Over the next few minutes, the patient gets worse. Faster, softer, quieter.",
+      },
+      {
+        type: "paragraph",
+        text: "Afterward the student says they did not study enough.",
+      },
+      {
+        type: "paragraph",
+        text: "That may be partly true. But the more specific problem is that studying did not match the task. They reviewed hemorrhagic shock as a category with clearly defined stages. The scenario gave them early, subtle compensation without a label, and asked them to recognize the trajectory before the numbers became dramatic. Rereading the same notes again would not have fixed that gap.",
+      },
+      {
+        type: "paragraph",
+        text: "A better response is to change the study task. Close the notes and ask: what does early hemorrhagic shock look like in a patient who is still talking, still compensating, and whose vitals have not yet become obvious? What finding would make you treat this patient with more urgency before the pressure drops? What would you be watching on reassessment to know whether the compensation is holding?",
+      },
+      {
+        type: "paragraph",
+        text: "Those questions practice the reasoning the scenario actually tested, not the recognition that studying tends to build.",
+      },
+      {
+        type: "heading",
+        text: "How to read strain more carefully",
+      },
+      {
+        type: "paragraph",
+        text: "Strain becomes more useful when you stop treating it as one category.",
+      },
+      {
+        type: "paragraph",
+        text: "After a difficult study session, lab, scenario, or OSCE, try to name what kind of difficulty showed up.",
+      },
+      {
+        type: "paragraph",
+        text: "Was it missing knowledge, where the content itself was not there? Was it weak retrieval, where the content existed but would not return without the cues studying provides? Was it cognitive overload, where too many things competed for attention at once? Was it structural, where your assessment or call flow had gaps that pressure exposed? Was the feedback accurate but too broad to carry into the next attempt?",
+      },
+      {
+        type: "paragraph",
+        text: "Those are different problems with different responses.",
+      },
+      {
+        type: "paragraph",
+        text: "A knowledge gap needs teaching, reading, or clarification. Weak retrieval needs practice bringing information back without notes. Overload needs better structure in the call flow, not more content. Repeated scenario errors usually need one specific practice target, not a longer list of corrections. Emotional residue after a rough OSCE needs time and containment, not another two hours of analysis.",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to diagnose yourself precisely. You need to stop treating every hard moment as proof that you are not working hard enough, and start asking what the difficulty is actually pointing toward.",
+      },
+      {
+        type: "heading",
+        text: "What to do when learning feels heavy",
+      },
+      {
+        type: "paragraph",
+        text: "When learning feels heavy, pause before adding more of the same kind of work.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are rereading the same section before every lab and still blanking during scenarios, the problem is probably not volume. Switch to retrieval: close the notes and explain the concept, compare two similar presentations, or ask what finding would change your decision.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are overwhelmed during scenarios, look for where attention is crowding. Is it the assessment sequence itself, the directive decision, the communication, or all three competing simultaneously? Each of those has a different fix.",
+      },
+      {
+        type: "paragraph",
+        text: "If the same feedback shows up across multiple scenarios, stop trying to hold all of it. Pick one moment from the last run, the specific point where thinking shifted in the wrong direction, and decide what you would do differently at that moment next time. One specific adjustment, carried deliberately into the next room, will move the work forward more reliably than a long list of corrections held loosely in mind.",
+      },
+      {
+        type: "paragraph",
+        text: "Some difficulty belongs in the work. Some of it is just burning energy. Telling the difference is its own skill, and one worth developing early.",
+      },
     ],
     glossaryTerms: [
         "cognitive-load",
@@ -1560,334 +1185,280 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Show how paramedic knowledge becomes more usable when facts are connected through meaning, mechanism, consequence, and patient care.",
     pageType: "conceptual",
     body: [
-        {
-            "type": "paragraph",
-            "text": "A lot of paramedic students try to solve confusion by adding more information."
-        },
-        {
-            "type": "paragraph",
-            "text": "That makes sense at first. When you feel unsure, more facts seem like the safest answer. More signs and symptoms. More medication details. More pathophysiology. More directive language. More notes from lectures, labs, textbooks, and debriefs."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some of that is necessary. You do need facts. You need anatomy, physiology, medication doses, contraindications, assessment findings, and directive details. None of this guide is asking you to be vague about the actual content."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem is that facts do not automatically become understanding."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student can memorize a long list of findings and still freeze when a patient does not present cleanly. They can know the symptoms of several conditions and still struggle to decide which findings matter most. They can remember what a medication does and still hesitate because they do not understand what problem it is meant to solve in that patient, at that moment."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where the Build Understanding cluster begins."
-        },
-        {
-            "type": "paragraph",
-            "text": "The first part of VitalNotes looked at why learning can feel unstable. Now we start looking at how knowledge becomes more usable. That starts with meaning."
-        },
-        {
-            "type": "heading",
-            "text": "What meaning means here"
-        },
-        {
-            "type": "paragraph",
-            "text": "In VitalNotes, meaning does not mean personal meaning, motivation, or having a big insight about the work."
-        },
-        {
-            "type": "paragraph",
-            "text": "It means connection."
-        },
-        {
-            "type": "paragraph",
-            "text": "A fact becomes more useful when it is connected to a process, a consequence, or a decision. A symptom becomes more useful when you understand what might be producing it. A vital sign becomes more useful when you can ask whether it fits with the patient’s story. A directive becomes more useful when you understand what risk it is trying to manage."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is why understanding feels different from memorization."
-        },
-        {
-            "type": "paragraph",
-            "text": "Memorization can help you recall that tachycardia is a fast heart rate. Meaning helps you ask why the heart rate is fast here. Pain, fever, anxiety, hypovolemia, hypoxia, stimulant use, sepsis, exertion, and compensation for shock can all produce tachycardia, but they do not point in the same clinical direction."
-        },
-        {
-            "type": "paragraph",
-            "text": "The number matters. What the number belongs to matters more."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is the shift this section is trying to make."
-        },
-        {
-            "type": "heading",
-            "text": "Why isolated facts are hard to use"
-        },
-        {
-            "type": "paragraph",
-            "text": "Isolated facts are fragile because they have to be managed one at a time."
-        },
-        {
-            "type": "paragraph",
-            "text": "In calm study conditions, this can feel manageable. You can review one condition, then another. You can look at a comparison chart. You can read a list of signs and symptoms and feel like the differences are clear."
-        },
-        {
-            "type": "paragraph",
-            "text": "In scenarios, the facts arrive mixed together."
-        },
-        {
-            "type": "paragraph",
-            "text": "A patient may be pale, nauseated, weak, mildly short of breath, anxious, and unable to give a clean history. Their blood pressure may be lower than expected. Their pulse may be fast. Their blood glucose may be normal. Their ECG may not show anything dramatic right away. Their family may say they have “just been off today.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "If those findings are floating separately, they compete for attention. You start juggling. You ask more questions, collect more data, and wait for one finding to finally tell you what is happening."
-        },
-        {
-            "type": "paragraph",
-            "text": "Sometimes that finding never arrives."
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning helps by giving the information a shape. You begin asking what process could explain several findings at once. You start looking for relationships instead of waiting for a single clue to rescue the call."
-        },
-        {
-            "type": "heading",
-            "text": "A paramedic example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Picture a student assessing an older patient who feels weak and unwell."
-        },
-        {
-            "type": "paragraph",
-            "text": "The patient is sitting in a chair, pale and tired. They feel nauseated. They deny chest pain. They are mildly short of breath when speaking. Their skin is warm. Their pulse is fast. Their blood pressure is soft. The family says they seemed normal yesterday but have been more confused this morning."
-        },
-        {
-            "type": "paragraph",
-            "text": "A fact-by-fact approach can scatter quickly."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student thinks about nausea, then shortness of breath, then weakness, then altered mentation, then whether this is cardiac, diabetic, infectious, neurological, anxiety-related, or something else. Each finding creates another possible direction. The student keeps gathering information, but the call does not become clearer."
-        },
-        {
-            "type": "paragraph",
-            "text": "A meaning-based approach asks a steadier question:"
-        },
-        {
-            "type": "paragraph",
-            "text": "What process could explain several of these findings together?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Now the student can begin building a working explanation. Maybe this is infection with early sepsis. Maybe there is dehydration or poor perfusion. Maybe the shortness of breath is not the main problem, but part of the body trying to compensate. Maybe the confusion is not a separate complaint, but part of the same larger process."
-        },
-        {
-            "type": "paragraph",
-            "text": "That does not mean the student has the final answer. It means the information is starting to organize."
-        },
-        {
-            "type": "paragraph",
-            "text": "From there, the assessment becomes more purposeful. Temperature matters. Skin signs matter. Blood pressure trends matter. Mental status changes matter. Recent infection, urinary symptoms, oral intake, medications, and baseline function matter. Reassessment matters because the patient may be compensating until they are not."
-        },
-        {
-            "type": "paragraph",
-            "text": "The findings are the same, but now they are being used together."
-        },
-        {
-            "type": "heading",
-            "text": "Meaning reduces the number of loose pieces"
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning helps because it lowers the number of loose pieces your working memory has to carry."
-        },
-        {
-            "type": "paragraph",
-            "text": "Without meaning, every finding demands its own space. Pulse, skin, breathing, blood pressure, history, medications, and patient appearance all fight for attention. You may remember many of them and still not know what to do with them."
-        },
-        {
-            "type": "paragraph",
-            "text": "With meaning, findings begin to group."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are no longer holding “fast pulse” as an isolated fact. You are asking what it might be compensating for. You are no longer holding “confusion” as a separate item. You are asking whether it fits with perfusion, infection, hypoxia, glucose, stroke, medication effect, or something else. You are no longer collecting vital signs just to complete a set. You are using them to test whether your explanation still makes sense."
-        },
-        {
-            "type": "paragraph",
-            "text": "This does not make the call easy."
-        },
-        {
-            "type": "paragraph",
-            "text": "It makes the information easier to work with."
-        },
-        {
-            "type": "paragraph",
-            "text": "That matters in paramedicine because you rarely get perfect clarity at the start. You often get fragments, changes over time, and enough uncertainty that your first explanation has to stay flexible."
-        },
-        {
-            "type": "heading",
-            "text": "Meaning is built through better questions"
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning develops when students start asking better questions of the material."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not more complicated questions. Better ones."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of only asking, “What are the signs and symptoms?” ask what those signs and symptoms have in common. Instead of only asking, “What is the treatment?” ask what problem the treatment is trying to change. Instead of only asking, “What does the directive say?” ask what risk the directive is trying to manage."
-        },
-        {
-            "type": "paragraph",
-            "text": "A few questions are especially useful:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Why does this finding matter?",
-                "What process could explain several findings together?",
-                "What would I expect to see next if this explanation is right?",
-                "What does not fit?",
-                "What would make me change my mind?",
-                "What decision does this information support?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "These questions pull facts into relationships."
-        },
-        {
-            "type": "paragraph",
-            "text": "They also prepare you for clinical reasoning later, because clinical reasoning is not just knowing what things are. It is building, testing, and adjusting an explanation while the patient is still in front of you."
-        },
-        {
-            "type": "heading",
-            "text": "Memorization still has a place"
-        },
-        {
-            "type": "paragraph",
-            "text": "This section is not an argument against memorization."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some things need to be memorized. Medication doses. Contraindications. Directive boundaries. Assessment sequences. Critical safety checks. You do not want to be figuring out the dose of a medication during an OSCE or trying to reconstruct a contraindication from first principles while the patient is waiting."
-        },
-        {
-            "type": "paragraph",
-            "text": "Memory matters."
-        },
-        {
-            "type": "paragraph",
-            "text": "The issue is when memorization is asked to do the whole job."
-        },
-        {
-            "type": "paragraph",
-            "text": "Memorization gives you access to pieces. Meaning helps you use those pieces properly. You need both, but they are not the same. If you memorize without meaning, the content may stay brittle. If you chase meaning without learning the details, your thinking can become too loose to be safe."
-        },
-        {
-            "type": "paragraph",
-            "text": "Good learning brings them together."
-        },
-        {
-            "type": "paragraph",
-            "text": "You learn the facts, then keep asking what they are connected to."
-        },
-        {
-            "type": "heading",
-            "text": "How meaning grows over time"
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning is not built all at once."
-        },
-        {
-            "type": "paragraph",
-            "text": "Early in paramedic school, many things feel separate because they are separate in your experience. You learn anatomy in one place, pathophysiology in another, directives somewhere else, and assessment structure during lab. Then scenarios ask you to combine all of it before the connections feel natural."
-        },
-        {
-            "type": "paragraph",
-            "text": "That awkwardness is expected."
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning grows through repeated contact with similar problems. It grows when you compare cases, notice what changed your thinking, revise an explanation after feedback, or connect a new finding to something you already understand."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student may first learn that sepsis can cause fever and tachycardia. Later, they learn that sepsis can also involve altered mentation, weakness, low blood pressure, poor intake, and vague presentations in older adults. Later still, they begin to see how those findings connect through infection, inflammation, perfusion, and compensation."
-        },
-        {
-            "type": "paragraph",
-            "text": "The word stayed the same, but the student’s understanding of the word became deeper and more useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is what you are aiming for."
-        },
-        {
-            "type": "heading",
-            "text": "A practical way to study for meaning"
-        },
-        {
-            "type": "paragraph",
-            "text": "When you study a topic, do not stop after the list."
-        },
-        {
-            "type": "paragraph",
-            "text": "Choose one concept and explain what is happening underneath it."
-        },
-        {
-            "type": "paragraph",
-            "text": "For example, instead of only writing:"
-        },
-        {
-            "type": "paragraph",
-            "text": "“Shock signs: tachycardia, hypotension, pale skin, altered LOC.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "Push one layer deeper."
-        },
-        {
-            "type": "paragraph",
-            "text": "What is the body trying to protect? What is it failing to maintain? Why might heart rate rise before blood pressure falls? Why might altered mental status matter early? What would you expect to happen if compensation fails?"
-        },
-        {
-            "type": "paragraph",
-            "text": "This does not need to become an essay. A few careful sentences are enough."
-        },
-        {
-            "type": "paragraph",
-            "text": "The point is to make the mechanism visible."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then connect that explanation to assessment. What would you look for? What would you reassess? What would make you more concerned? What would make you reconsider?"
-        },
-        {
-            "type": "paragraph",
-            "text": "That is how facts start becoming usable."
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning helps facts become organized enough to use."
-        },
-        {
-            "type": "paragraph",
-            "text": "It does not replace memory. It gives memory structure. It helps students see why findings matter together, why assessment should narrow rather than simply expand, and why decisions become easier when information has a shape."
-        },
-        {
-            "type": "paragraph",
-            "text": "That same idea becomes more concrete when we move closer to the body itself: how mechanisms create the patterns students need to recognize in scenarios and patient care."
-        },
-      
+      {
+        type: "paragraph",
+        text: "A lot of paramedic students try to solve confusion by adding more information.",
+      },
+      {
+        type: "paragraph",
+        text: "That instinct makes sense. When something feels uncertain, more facts seem like the safest response: more signs and symptoms, more medication details, more pathophysiology, more directive language. And some of that is necessary. You do need facts. You need anatomy, physiology, medication doses, contraindications, assessment findings, and directive details. None of this guide is asking you to be vague about the actual content.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is that adding more isolated facts does not build understanding. It adds weight without adding structure. And when working memory is already crowded during a scenario, more unorganized facts make the problem worse, not better.",
+      },
+      {
+        type: "paragraph",
+        text: "What actually changes how well knowledge can be used is not the number of facts. It is how those facts are connected to each other.",
+      },
+      {
+        type: "heading",
+        text: "What meaning means here",
+      },
+      {
+        type: "paragraph",
+        text: "Meaning, in this guide, does not refer to personal motivation or a large insight about the work.",
+      },
+      {
+        type: "paragraph",
+        text: "It means connection. A fact becomes more useful when it is tied to a process, a consequence, or a decision. A symptom becomes more useful when you understand what might be producing it. A vital sign becomes more useful when you can ask whether it fits the patient's story. A directive becomes more useful when you understand what risk it is built around.",
+      },
+      {
+        type: "paragraph",
+        text: "Memorization can help you recall that tachycardia is a fast heart rate. Meaning helps you ask why the heart rate is fast here, in this patient, with this history and these other findings. Pain, fever, anxiety, hypovolemia, hypoxia, stimulant use, sepsis, exertion, and compensation for falling perfusion can all produce tachycardia. They do not point in the same clinical direction. The number matters. What the number belongs to matters more.",
+      },
+      {
+        type: "paragraph",
+        text: "When facts are connected through meaning, something important happens: they stop requiring individual storage. Instead of holding tachycardia, altered mentation, cool skin, and soft blood pressure as four separate items competing for attention, a student who understands poor perfusion holds them as one question. The findings group around a process, and the process is more stable under pressure than any list of its parts.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why understanding feels different from memorization, and why it performs differently when the call gets busy.",
+      },
+      {
+        type: "heading",
+        text: "Why isolated facts are hard to use",
+      },
+      {
+        type: "paragraph",
+        text: "Isolated facts are fragile because they have to be managed one at a time.",
+      },
+      {
+        type: "paragraph",
+        text: "In calm study conditions, this can feel manageable. You can review one condition, then another, look at a comparison chart, read a list of findings, and feel like the differences are clear.",
+      },
+      {
+        type: "paragraph",
+        text: "In scenarios, the findings arrive mixed together without labels.",
+      },
+      {
+        type: "paragraph",
+        text: "A patient may be pale, nauseated, weak, mildly short of breath, anxious, and unable to give a clean history. Their blood pressure may be lower than expected. Their pulse may be fast. Their blood glucose may be normal. Their ECG may not show anything dramatic. Their family says they have \"just been off today.\"",
+      },
+      {
+        type: "paragraph",
+        text: "If those findings are floating separately, they compete for attention. You ask more questions, collect more data, and wait for one finding to finally tell you what is happening. Sometimes that finding never arrives cleanly.",
+      },
+      {
+        type: "paragraph",
+        text: "Meaning helps by giving the information a shape before the label does. You begin asking what process could explain several findings at once. You start looking for relationships instead of waiting for a single cue to rescue the call.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Picture a student assessing an older patient who feels weak and unwell.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient is sitting in a chair, pale and tired. They feel nauseated. They deny chest pain. They are mildly short of breath when speaking. Their skin is warm. Their pulse is fast. Their blood pressure is soft. The family says they seemed normal yesterday but have been more confused this morning.",
+      },
+      {
+        type: "paragraph",
+        text: "A fact-by-fact approach scatters quickly here.",
+      },
+      {
+        type: "paragraph",
+        text: "The student cycles through nausea, then shortness of breath, then weakness, then altered mentation, then whether this is cardiac, diabetic, infectious, neurological, or something else. Each finding creates another direction. The student keeps gathering, but the call does not become clearer. They are not reasoning. They are cataloguing.",
+      },
+      {
+        type: "paragraph",
+        text: "A meaning-based approach asks a steadier question: what process could explain several of these findings together?",
+      },
+      {
+        type: "paragraph",
+        text: "Now the student can begin building a working explanation. Infection with early sepsis. Dehydration and poor perfusion. A cardiovascular process presenting atypically in an older patient. The shortness of breath may not be the primary problem, but the body's attempt to compensate for something else. The confusion may not be a separate complaint, but part of the same deteriorating picture.",
+      },
+      {
+        type: "paragraph",
+        text: "None of those is a confirmed diagnosis. But the information is starting to organize around possibilities that can be tested.",
+      },
+      {
+        type: "paragraph",
+        text: "From there, assessment becomes purposeful rather than comprehensive. Temperature matters now. Skin signs matter. Blood pressure trends matter. Mental status trajectory matters. Recent infection, urinary symptoms, oral intake, and baseline function matter. Reassessment matters specifically because an older patient with early sepsis can look acceptable until compensation fails, and the window between looking okay and looking very sick can be short.",
+      },
+      {
+        type: "paragraph",
+        text: "The findings are the same. What changed is that they are being used together rather than stored separately.",
+      },
+      {
+        type: "heading",
+        text: "Why meaning reduces working memory load",
+      },
+      {
+        type: "paragraph",
+        text: "This is where meaning connects directly to performance under pressure.",
+      },
+      {
+        type: "paragraph",
+        text: "Working memory is limited. During a scenario, it is already carrying assessment structure, communication, directive knowledge, partner coordination, and the patient's changing condition. Every additional isolated fact that has to be held separately adds to that load.",
+      },
+      {
+        type: "paragraph",
+        text: "Meaning reduces the load because connected knowledge takes up less space.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who understands early sepsis as a process, infection triggering inflammation, inflammation stressing perfusion, perfusion declining until compensation produces the vital sign changes and mental status shifts, can hold that whole picture as one thing. A student who only has a list of sepsis signs has to hold each item individually. Under pressure, the list breaks apart. The understanding tends to hold.",
+      },
+      {
+        type: "paragraph",
+        text: "This is also why meaning is harder to build than memorization but more durable under load. Memorizing a list requires repetition. Building meaning requires explanation, comparison, and questioning, work that takes more effort up front but produces knowledge that can survive a crowded scenario.",
+      },
+      {
+        type: "heading",
+        text: "Meaning sharpens discrimination",
+      },
+      {
+        type: "paragraph",
+        text: "One of the practical benefits of meaning-based study is that it helps students tell conditions apart when they share surface features.",
+      },
+      {
+        type: "paragraph",
+        text: "Asthma, COPD, and heart failure can all produce dyspnea, anxiety, and audible lung sounds. Studied in isolation, each has its own list of findings that seems distinct enough at a desk. In a scenario, a patient with a long smoking history, mild wheeze, and moderate distress does not arrive wearing a label. The student has to discriminate from the presentation itself.",
+      },
+      {
+        type: "paragraph",
+        text: "That discrimination is built by studying similar conditions together, not as separate topics, and asking what actually separates them when the surface looks similar.",
+      },
+      {
+        type: "paragraph",
+        text: "For respiratory distress: if the patient's history suggests chronic airflow limitation, what findings would push you toward a COPD exacerbation over acute heart failure? If the patient has no cardiac history but is visibly working hard to breathe, what would you expect to find differently on auscultation depending on the underlying mechanism? If the patient responds well to a bronchodilator, what does that tell you about the primary problem, and what would a poor response suggest?",
+      },
+      {
+        type: "paragraph",
+        text: "Those questions build discrimination. They are not asking you to memorize more. They are asking you to understand the differences at the level of mechanism so the distinctions survive when the presentation is less clean than the notes.",
+      },
+      {
+        type: "paragraph",
+        text: "The same logic applies across the curriculum. Distinguishing early hemorrhagic shock from neurogenic shock. Telling distributive septic physiology from cardiogenic pump failure. Recognizing that a stroke and hypoglycemia can look remarkably similar from the doorway and that one of them is immediately reversible while the other depends on time. These distinctions cannot be built by studying each condition separately and hoping the differences stick. They have to be practiced as comparisons, with the mechanism doing the work of separation.",
+      },
+      {
+        type: "heading",
+        text: "Meaning is built through better questions",
+      },
+      {
+        type: "paragraph",
+        text: "Meaning develops when students start asking better questions of the material.",
+      },
+      {
+        type: "paragraph",
+        text: "Not more complicated questions. More useful ones.",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of only asking \"what are the signs and symptoms,\" ask what those signs and symptoms share. What process produces most of them? Which ones are early and which are late? Which would you expect to see in a compensating patient, and which appear after compensation fails?",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of only asking \"what is the treatment,\" ask what problem the treatment is changing. If you give a bronchodilator, what specifically are you trying to reverse? What would tell you it worked? What would tell you the problem is not bronchospasm?",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of only asking \"what does the directive say,\" ask what the directive is protecting. Why does the nitroglycerin directive have a blood pressure threshold? Why does that threshold change when the ECG suggests an inferior STEMI? What is the physiological risk the directive is managing, and why does that risk increase in those specific circumstances?",
+      },
+      {
+        type: "paragraph",
+        text: "A few questions worth returning to across topics:",
+      },
+      {
+        type: "list",
+        items: [
+          "What process could explain several of these findings together?",
+          "What would I expect to see next if this explanation is right?",
+          "What finding would make me change my mind?",
+          "What is this treatment changing, and how would I know it worked?",
+          "What does this directive boundary exist to protect against?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These questions move facts into relationships. And relationships are what clinical reasoning runs on.",
+      },
+      {
+        type: "heading",
+        text: "Memorization still has a place",
+      },
+      {
+        type: "paragraph",
+        text: "This section is not arguing against memorization.",
+      },
+      {
+        type: "paragraph",
+        text: "Some things need to be memorized. Medication doses. Directive boundaries. Critical safety checks. Assessment sequences. You do not want to reconstruct a contraindication from first principles while the patient is waiting. Memory matters for the parts of the work that have to be automatic.",
+      },
+      {
+        type: "paragraph",
+        text: "The issue is when memorization is asked to do the whole job. Memorization gives you access to pieces. Meaning helps you use those pieces at the right moment, in the right combination, for the right patient. You need both. They are not interchangeable. Memorized facts without meaning stay brittle under pressure. Meaning without the underlying facts becomes too loose to be clinically safe.",
+      },
+      {
+        type: "heading",
+        text: "A practical way to study for meaning",
+      },
+      {
+        type: "paragraph",
+        text: "When you study a topic, do not stop after the list.",
+      },
+      {
+        type: "paragraph",
+        text: "Take one concept and push one layer deeper. Instead of writing out the signs of right-sided heart failure and stopping there, ask what is actually failing. The right ventricle cannot move blood forward efficiently, so blood backs up behind it. That backup increases venous pressure. Elevated venous pressure produces the JVD, peripheral edema, and hepatic congestion you find on examination. It also explains why these patients may not have the same pulmonary edema picture as left-sided failure, and why position and fluid management become different considerations.",
+      },
+      {
+        type: "paragraph",
+        text: "That explanation does not require an essay. A few careful sentences are enough.",
+      },
+      {
+        type: "paragraph",
+        text: "Then connect it forward: what would you look for in your assessment? What would you reassess? What finding would increase your concern? What would make you reconsider the explanation?",
+      },
+      {
+        type: "paragraph",
+        text: "Do the same for the conditions around it. How does right-sided failure produced by a massive PE look different from right-sided failure from chronic pulmonary hypertension? Not because you need to diagnose either, but because understanding the difference sharpens how you read the presentation.",
+      },
+      {
+        type: "paragraph",
+        text: "That is how facts start becoming usable knowledge rather than a list that holds together at a desk and fragments in a scenario.",
+      },
+      {
+        type: "heading",
+        text: "How meaning grows over time",
+      },
+      {
+        type: "paragraph",
+        text: "Meaning is not built all at once, and the early awkwardness of not having it is expected.",
+      },
+      {
+        type: "paragraph",
+        text: "Early in paramedic school, many things feel separate because they are separate in your experience. Anatomy is taught in one place, pathophysiology in another, directives somewhere else, assessment structure in lab. Scenarios ask you to combine all of it before the connections feel natural. That gap is not a failure of studying. It is what the early stage of building a clinical schema feels like from the inside.",
+      },
+      {
+        type: "paragraph",
+        text: "Meaning accumulates through repeated contact with the same kind of problem in different forms. It grows when you compare two presentations and notice what pushed you toward one explanation. It grows when feedback shows you that the finding you dismissed was the one that changed the risk picture. It grows when you explain something out loud to a partner and discover mid-sentence that your explanation has a gap you did not know was there.",
+      },
+      {
+        type: "paragraph",
+        text: "A student may first understand sepsis as fever and tachycardia. Later, they encounter an older adult with vague weakness, soft pressure, faster breathing, and a family who says \"they're just not right today,\" and the connection builds. Later still, after more scenarios and more feedback, they begin to see how infection, inflammation, perfusion failure, and the body's compensatory responses all converge on the same clinical picture, which is why recognizing it earlier, before the numbers become dramatic, is the thing that actually changes the outcome.",
+      },
+      {
+        type: "paragraph",
+        text: "The label stayed the same. What the label connects to kept expanding.",
+      },
+      {
+        type: "paragraph",
+        text: "That is what you are building, not a longer list, but a richer structure that can hold more and stay usable when the call gets hard.",
+      },
     ],
     glossaryTerms: [
         "meaning",
@@ -1914,440 +1485,307 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Connect pathophysiology to patient presentation so mechanisms can guide assessment, anticipation, and reassessment.",
     pageType: "conceptual",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Pathophysiology often feels like it belongs somewhere else."
-        },
-        {
-            "type": "paragraph",
-            "text": "It lives in lectures, textbooks, diagrams, exams, and long explanations that can feel far away from actual patient care. Students learn terms, pathways, disease processes, and body systems, then step into scenarios where the patient is talking, breathing, moving, refusing, worsening, improving, or not fitting the category cleanly."
-        },
-        {
-            "type": "paragraph",
-            "text": "In that moment, physiology can disappear."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student may recognize wheezing, chest pain, confusion, weakness, fever, hypotension, or anxiety, but the process underneath the presentation is harder to hold onto. They may remember the disease label, but not what the body is trying to do or what might happen next."
-        },
-        {
-            "type": "paragraph",
-            "text": "That matters because pathophysiology is not supposed to sit beside patient care as a separate academic layer."
-        },
-        {
-            "type": "paragraph",
-            "text": "It should help you understand why the presentation is behaving the way it is."
-        },
-        {
-            "type": "paragraph",
-            "text": "A pattern is not just what a patient looks like. It is what the findings suggest together, how they are changing, what they may become, and what risk they point toward. Pathophysiology gives those patterns their shape."
-        },
-        {
-            "type": "heading",
-            "text": "What pathophysiology is for"
-        },
-        {
-            "type": "paragraph",
-            "text": "Pathophysiology is a way of explaining what is happening in the body when normal function is disrupted."
-        },
-        {
-            "type": "paragraph",
-            "text": "That does not mean you need to recite every pathway during a call. It means physiology should help you stay oriented when the presentation is unclear."
-        },
-        {
-            "type": "paragraph",
-            "text": "Early in a call, you often do not know the diagnosis. You may not know whether a shortness of breath call is asthma, COPD, pneumonia, heart failure, pulmonary embolism, anxiety, sepsis, or something else. What you may be able to recognize earlier is that breathing is becoming ineffective, oxygen delivery is under stress, perfusion is poor, compensation is starting to fail, or neurologic function is changing."
-        },
-        {
-            "type": "paragraph",
-            "text": "Those are not final answers."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are ways to keep thinking organized while more information appears."
-        },
-        {
-            "type": "paragraph",
-            "text": "Useful physiological understanding helps you ask questions like:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What system is under stress?",
-                "What is the body trying to maintain?",
-                "What is starting to fail?",
-                "Is the patient compensating?",
-                "Is that compensation working?",
-                "What would I expect to see if this gets worse?",
-                "What action supports the process that is failing?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Those questions make pathophysiology practical. They move it from something you remember into something you use."
-        },
-        {
-            "type": "heading",
-            "text": "Mechanisms before labels"
-        },
-        {
-            "type": "paragraph",
-            "text": "A common trap is learning pathophysiology mainly by diagnosis."
-        },
-        {
-            "type": "paragraph",
-            "text": "Asthma. Sepsis. ACS. Stroke. Anaphylaxis. Heart failure."
-        },
-        {
-            "type": "paragraph",
-            "text": "Those labels matter, but they often arrive late. Early in a call, the presentation is usually less tidy. You may have a patient who is short of breath and anxious. Or weak and pale. Or confused with vague symptoms. Or nauseated with borderline vitals. Several diagnoses may be possible, and none may be obvious yet."
-        },
-        {
-            "type": "paragraph",
-            "text": "If your thinking depends too heavily on naming the condition, uncertainty can feel like a wall."
-        },
-        {
-            "type": "paragraph",
-            "text": "Mechanism-based thinking gives you another way in."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of asking only, “What diagnosis is this?” you can ask:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Is airflow limited?",
-                "Is ventilation effective?",
-                "Is gas exchange impaired?",
-                "Is perfusion adequate?",
-                "Is oxygen delivery meeting demand?",
-                "Is neurologic function changing?",
-                "Is the body compensating or starting to fail?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "These questions do not require certainty. They help you act while certainty is still developing."
-        },
-        {
-            "type": "paragraph",
-            "text": "You may not know exactly what the final label is yet, but you can often begin to understand what is going wrong."
-        },
-        {
-            "type": "heading",
-            "text": "A respiratory example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Consider a patient who is short of breath and anxious."
-        },
-        {
-            "type": "paragraph",
-            "text": "A label-first approach may bounce between possibilities. Is this asthma? Panic? COPD? Heart failure? Pneumonia? The early features can overlap, especially when the patient is distressed, the room is busy, and the history is incomplete."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student may start searching for the one finding that settles it."
-        },
-        {
-            "type": "paragraph",
-            "text": "A mechanism-first approach is steadier."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student asks what is actually failing. Is air moving well? Is the patient working hard to breathe? Are they tiring? Is oxygenation adequate? Is the problem mainly airflow, gas exchange, perfusion, demand, or something else? Are they anxious because they are panicking, or because their body is struggling to breathe?"
-        },
-        {
-            "type": "paragraph",
-            "text": "Now the assessment has direction."
-        },
-        {
-            "type": "paragraph",
-            "text": "Lung sounds matter, but so does work of breathing. Oxygen saturation matters, but so does mental status. Respiratory rate matters, but so does whether the patient can sustain that effort. The patient’s response to treatment matters because it tells you whether your explanation is still holding."
-        },
-        {
-            "type": "paragraph",
-            "text": "This does not mean the student ignores diagnoses."
-        },
-        {
-            "type": "paragraph",
-            "text": "It means physiology helps organize the possibilities before the diagnosis is clean."
-        },
-        {
-            "type": "heading",
-            "text": "Patterns are more than appearances"
-        },
-        {
-            "type": "paragraph",
-            "text": "When students hear “pattern,” they often think of how something looks."
-        },
-        {
-            "type": "paragraph",
-            "text": "Wheezing looks like asthma. Facial droop looks like stroke. Chest pain looks cardiac. Hives and wheeze look like anaphylaxis."
-        },
-        {
-            "type": "paragraph",
-            "text": "Appearances matter, but they are not enough."
-        },
-        {
-            "type": "paragraph",
-            "text": "A useful clinical pattern includes behaviour over time. It includes what is changing, what is not changing, what improves after treatment, what worsens despite treatment, and what does not fit the initial impression."
-        },
-        {
-            "type": "paragraph",
-            "text": "Wheezing alone does not tell the whole story."
-        },
-        {
-            "type": "paragraph",
-            "text": "Wheezing with high work of breathing, decreasing air movement, fatigue, and altered mentation means something different than wheezing with stable effort and good response to treatment."
-        },
-        {
-            "type": "paragraph",
-            "text": "The sound is only one part of the pattern."
-        },
-        {
-            "type": "paragraph",
-            "text": "The mechanism tells you why the pattern matters."
-        },
-        {
-            "type": "heading",
-            "text": "Compensation matters"
-        },
-        {
-            "type": "paragraph",
-            "text": "One of the most useful physiological ideas for students is compensation."
-        },
-        {
-            "type": "paragraph",
-            "text": "The body often works hard to hide a problem before it becomes obvious."
-        },
-        {
-            "type": "paragraph",
-            "text": "A patient may maintain blood pressure for a while despite poor perfusion. A patient may breathe faster to compensate for metabolic stress. A patient may look anxious because their body is responding to hypoxia, shock, fever, pain, or acidosis. A patient may become confused before a monitor value looks dramatic."
-        },
-        {
-            "type": "paragraph",
-            "text": "If students only memorize late signs, they may wait too long."
-        },
-        {
-            "type": "paragraph",
-            "text": "Pathophysiology helps you look for the work the body is doing before failure becomes obvious."
-        },
-        {
-            "type": "paragraph",
-            "text": "A fast pulse is not just a fast pulse. It may be compensation. Fast breathing is not just a respiratory finding. It may be the body trying to manage oxygen demand, ventilation, acid-base balance, pain, fever, or shock. Altered mental status is not just a separate complaint. It may be an early sign that oxygen delivery, perfusion, glucose, temperature, or neurologic function is under threat."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where physiology becomes clinically useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "It helps you notice when the body is working too hard to appear stable."
-        },
-        {
-            "type": "heading",
-            "text": "How mechanisms reduce mental strain"
-        },
-        {
-            "type": "paragraph",
-            "text": "Mechanism-based thinking reduces mental strain because it gives findings somewhere to go."
-        },
-        {
-            "type": "paragraph",
-            "text": "Without a mechanism, every finding becomes another loose detail. The student is holding pulse, respiratory rate, blood pressure, skin, mental status, lung sounds, history, medications, and scene information as separate pieces. That can overload working memory quickly."
-        },
-        {
-            "type": "paragraph",
-            "text": "With a mechanism, findings begin to group."
-        },
-        {
-            "type": "paragraph",
-            "text": "Shortness of breath, anxiety, fatigue, and decreasing air movement may group around ventilation failure. Tachycardia, pale skin, weakness, and soft blood pressure may group around perfusion. Fever, confusion, fast breathing, and weakness may group around infection and systemic stress."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student is still thinking carefully, but they are no longer juggling every detail in isolation."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is one reason pathophysiology supports clinical reasoning. It gives reasoning something solid to stand on while the call is still unclear."
-        },
-        {
-            "type": "heading",
-            "text": "How to study pathophysiology so it transfers"
-        },
-        {
-            "type": "paragraph",
-            "text": "Studying pathophysiology by memorizing disease summaries rarely transfers well on its own."
-        },
-        {
-            "type": "paragraph",
-            "text": "A better approach is to study by mechanism families."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of only studying one condition at a time, compare conditions that share a similar underlying problem."
-        },
-        {
-            "type": "paragraph",
-            "text": "For example:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "conditions that impair ventilation",
-                "conditions that impair gas exchange",
-                "conditions that reduce preload",
-                "conditions that increase oxygen demand",
-                "conditions that reduce perfusion",
-                "conditions that disrupt neurologic control",
-                "conditions that create compensatory tachycardia",
-                "conditions that cause altered mental status before obvious vital sign collapse"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "This lets knowledge move across scenarios."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are not only learning asthma. You are learning what airflow limitation looks like and what fatigue looks like. You are not only learning sepsis. You are learning how systemic infection can affect perfusion, mental status, temperature, respiratory drive, and compensation. You are not only learning shock. You are learning what happens when oxygen delivery does not meet demand."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of organization is more flexible than a list of diagnoses."
-        },
-        {
-            "type": "heading",
-            "text": "A simple way to study a mechanism"
-        },
-        {
-            "type": "paragraph",
-            "text": "When reviewing a condition or lecture topic, avoid starting with the label alone."
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with the mechanism."
-        },
-        {
-            "type": "paragraph",
-            "text": "Ask:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What primary system is under stress?",
-                "What is the body trying to maintain?",
-                "What mechanism explains the key findings?",
-                "What compensation would I expect early?",
-                "What signs suggest compensation is failing?",
-                "What would I reassess after treatment?",
-                "What would make this pattern not fit?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "For example, if you are studying heart failure, do not only memorize crackles, edema, shortness of breath, and medications."
-        },
-        {
-            "type": "paragraph",
-            "text": "Ask what is backing up, what is not moving forward effectively, why breathing becomes difficult, why positioning matters, why blood pressure changes your options, and what deterioration might look like."
-        },
-        {
-            "type": "paragraph",
-            "text": "That turns the topic into a usable explanation."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is not to write a textbook chapter. The goal is to understand enough of the mechanism that the presentation starts to make sense when it appears in a patient."
-        },
-        {
-            "type": "heading",
-            "text": "How this supports directives"
-        },
-        {
-            "type": "paragraph",
-            "text": "Directives make more sense when physiology makes more sense."
-        },
-        {
-            "type": "paragraph",
-            "text": "Blood pressure thresholds stop feeling like random numbers. Contraindications feel protective rather than restrictive. Reassessment matters because treatment should change something. Timing matters because some problems worsen while you wait for perfect clarity."
-        },
-        {
-            "type": "paragraph",
-            "text": "This does not mean you make directives flexible in unsafe ways."
-        },
-        {
-            "type": "paragraph",
-            "text": "It means you understand why the boundaries exist."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student who understands physiology is better able to explain why a medication is appropriate, why it should be withheld, why transport should not be delayed, or why a patient needs reassessment after an intervention."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not simply choosing actions because the directive allows them."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are choosing actions because the action matches what appears to be happening in the body, within the limits of their scope and standards."
-        },
-        {
-            "type": "heading",
-            "text": "What good understanding looks like"
-        },
-        {
-            "type": "paragraph",
-            "text": "Good pathophysiology understanding does not look like reciting long pathways from memory."
-        },
-        {
-            "type": "paragraph",
-            "text": "It looks like being able to stay oriented."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student with useful physiological understanding can explain why a finding matters. They can anticipate what may happen next. They can notice when a familiar pattern is drifting. They can explain why reassessment matters after treatment. They can recognize when something does not fit and adjust their thinking."
-        },
-        {
-            "type": "paragraph",
-            "text": "In labs and OSCEs, this often shows up as steadier reasoning."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student may not have the final diagnosis early, but their questions become more purposeful. Their reassessments make more sense. Their treatment decisions are easier to explain. Their concern rises earlier when compensation starts to fail."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is the goal."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not perfect recall of every pathway."
-        },
-        {
-            "type": "paragraph",
-            "text": "Usable understanding of how systems fail, compensate, and recover."
-        },
-        {
-            "type": "paragraph",
-            "text": "Pathophysiology helps students understand why patient patterns behave the way they do."
-        },
-        {
-            "type": "paragraph",
-            "text": "It connects facts to mechanisms. It makes assessment more purposeful. It gives clinical reasoning something solid to work with before the final diagnosis is clear."
-        },
-        {
-            "type": "paragraph",
-            "text": "The patterns are not shortcuts. They are the underlying structure that makes clinical information easier to hold and harder to forget."
-        },
-        {
-            "type": "paragraph",
-            "text": "The same logic applies to directives. They carry purpose, risk, and decision boundaries, which is why understanding what a directive is protecting makes it easier to apply safely."
-        },
-     
+      {
+        type: "paragraph",
+        text: "Pathophysiology is usually taught as its own subject.",
+      },
+      {
+        type: "paragraph",
+        text: "It has its own lectures, its own vocabulary, its own exams, and its own reward structure. You learn terms, pathways, and disease processes in one context, then step into a scenario where the patient is anxious, poorly historical, and not organizing their presentation around any of the categories you just studied. The physiology you worked to understand does not automatically transfer into the room.",
+      },
+      {
+        type: "paragraph",
+        text: "That gap is real, and it is not a failure of studying. It is what happens when knowledge is built in one context and used in another. The fix is not reviewing pathophysiology harder. It is learning to use it differently: as a way to stay oriented during a call rather than as a set of facts to retrieve after the label has arrived.",
+      },
+      {
+        type: "heading",
+        text: "What pathophysiology is for",
+      },
+      {
+        type: "paragraph",
+        text: "Pathophysiology is a way of explaining what is happening in the body when normal function is disrupted.",
+      },
+      {
+        type: "paragraph",
+        text: "That does not mean reciting every pathway during a call. It means physiology should help you stay oriented when the presentation is unclear, when the diagnosis has not declared itself, and when you still have to act.",
+      },
+      {
+        type: "paragraph",
+        text: "Early in a call, you often do not know the label. You may not know whether shortness of breath is asthma, COPD, pneumonia, heart failure, pulmonary embolism, sepsis, or anxiety. What you can often recognize earlier is that breathing is becoming ineffective, oxygen delivery is under stress, perfusion is poor, compensation is starting to fail, or neurologic function is changing.",
+      },
+      {
+        type: "paragraph",
+        text: "Those are not final answers. They are ways to keep thinking organized while more information arrives. And they are enough to guide safe action while the picture is still forming.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful physiological understanding helps you ask:",
+      },
+      {
+        type: "list",
+        items: [
+          "What system is under stress?",
+          "What is the body trying to maintain?",
+          "What is starting to fail?",
+          "Is the patient compensating, and is that compensation working?",
+          "What would I expect to see if this gets worse?",
+          "What action supports the process that is failing?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Those questions make pathophysiology practical. They move it from something you remember into something you use.",
+      },
+      {
+        type: "heading",
+        text: "Mechanisms before labels",
+      },
+      {
+        type: "paragraph",
+        text: "A common trap is learning pathophysiology mainly by diagnosis.",
+      },
+      {
+        type: "paragraph",
+        text: "Asthma. Sepsis. ACS. Stroke. Anaphylaxis. Heart failure.",
+      },
+      {
+        type: "paragraph",
+        text: "Those labels matter, but they often arrive late. Early in a call, the presentation is usually less tidy. A patient who is pale, quiet, and breathing faster than expected after a significant mechanism of injury may have hemorrhagic shock, tension pneumothorax, or neurogenic shock. The surface looks similar. The mechanisms are different. The treatment priorities diverge significantly.",
+      },
+      {
+        type: "paragraph",
+        text: "If your thinking depends on naming the condition before you can act, uncertainty becomes a wall.",
+      },
+      {
+        type: "paragraph",
+        text: "Mechanism-based thinking gives you a way through before the label is clear.",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of asking only \"what diagnosis is this,\" you can ask:",
+      },
+      {
+        type: "list",
+        items: [
+          "Is airflow limited, or is gas exchange impaired?",
+          "Is perfusion adequate, and what is the pressure trend suggesting?",
+          "Is oxygen delivery meeting demand?",
+          "Is neurologic function changing, and how fast?",
+          "Is the body compensating, or is compensation starting to fail?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These questions do not require certainty. They let you act while certainty is still developing, and they keep the assessment from stalling while you wait for a finding that may not arrive cleanly.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Consider a patient in their fifties found sitting at the kitchen table, diaphoretic, mildly confused, and breathing faster than normal. They deny chest pain. There is no obvious trauma. The family says they have type 2 diabetes and were fine at dinner. Blood glucose comes back at 2.1.",
+      },
+      {
+        type: "paragraph",
+        text: "A label-first approach resolves this quickly: hypoglycemia, treat and reassess.",
+      },
+      {
+        type: "paragraph",
+        text: "But the mechanism-first student asks a further question: does the presentation fit that explanation fully?",
+      },
+      {
+        type: "paragraph",
+        text: "Hypoglycemia can produce diaphoresis, confusion, and tachycardia. But the breathing pattern is faster than hypoglycemia typically produces. The patient looks more unwell than the glucose alone explains. The skin is warm, not the cool clammy picture of sympathetic response to low glucose.",
+      },
+      {
+        type: "paragraph",
+        text: "Now the mechanism question becomes useful. Is this purely glucose-driven, or is there another process running alongside it? Could this patient have an infection producing both the glucose dysregulation and the respiratory and perfusion changes? Is the confusion glucose-related, septic, or both?",
+      },
+      {
+        type: "paragraph",
+        text: "The student treats the hypoglycemia because it is immediately reversible and dangerous to miss. They also reassess specifically after treatment: does the confusion resolve at the rate you would expect? Does the breathing pattern normalize? If the explanation was correct, the patient should move in a predictable direction. If they do not, the working explanation needs to change.",
+      },
+      {
+        type: "paragraph",
+        text: "That is mechanism-based reasoning. Not a replacement for the directive or the treatment. A way to keep the call honest while it is still developing.",
+      },
+      {
+        type: "heading",
+        text: "Patterns are more than appearances",
+      },
+      {
+        type: "paragraph",
+        text: "When students hear \"pattern,\" they often think of how something looks at a single moment.",
+      },
+      {
+        type: "paragraph",
+        text: "Wheezing looks like asthma. Facial droop looks like stroke. Hives and wheeze look like anaphylaxis.",
+      },
+      {
+        type: "paragraph",
+        text: "Appearances matter. They are not enough.",
+      },
+      {
+        type: "paragraph",
+        text: "A clinical pattern is not a snapshot. It is a trajectory. It includes what is changing, what is not changing, what improves after treatment, what worsens despite it, and what does not fit the initial impression. A patient can look stable and still be deteriorating. A patient can look alarming and still be compensating effectively. The difference is in the direction of travel, not the single point in time.",
+      },
+      {
+        type: "paragraph",
+        text: "A patient with wheeze and high work of breathing who is also becoming quieter, less able to speak in full sentences, and increasingly tired is not the same clinical problem as a patient with wheeze who is anxious, moving air well, and improving with positioning. The sound is the same. The mechanism, the trajectory, and the urgency are completely different.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why experienced clinicians track changes between assessments, not just findings within them. The first set of vitals tells you where the patient is. The second set tells you which direction they are heading. Pathophysiology gives you the framework to understand what that direction means before it becomes obvious.",
+      },
+      {
+        type: "heading",
+        text: "Compensation matters",
+      },
+      {
+        type: "paragraph",
+        text: "One of the most important physiological concepts for paramedic students is compensation: the body's attempt to maintain function while something is failing.",
+      },
+      {
+        type: "paragraph",
+        text: "Compensation hides problems before they become dramatic. A patient may maintain blood pressure for a significant period despite poor perfusion. A patient may breathe faster to compensate for metabolic acidosis, fever, hypoxia, or shock. A patient may look anxious because their sympathetic system is responding to physiologic stress before any monitor value becomes alarming. A patient may become confused before a single vital sign crosses a threshold.",
+      },
+      {
+        type: "paragraph",
+        text: "Students who only memorize late signs wait too long.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding compensation means you start looking for what the body is working to maintain rather than waiting for evidence that maintenance has failed.",
+      },
+      {
+        type: "paragraph",
+        text: "A fast pulse in a trauma patient is not just a number. It may be the cardiovascular system protecting blood pressure while volume is falling. Fast breathing in a patient with vomiting and abdominal pain is not just a respiratory finding. It may be the body buffering acidosis. Altered mental status in a patient who looks otherwise acceptable is not a separate complaint to document later. It may be the first sign that oxygen delivery, perfusion, glucose, temperature, or intracranial pressure is under threat.",
+      },
+      {
+        type: "paragraph",
+        text: "Recognizing compensation is how you find the problem while the patient still looks okay. That window matters because it is when intervention changes the most.",
+      },
+      {
+        type: "heading",
+        text: "How mechanisms reduce mental strain",
+      },
+      {
+        type: "paragraph",
+        text: "Mechanism-based thinking reduces mental strain because it gives findings somewhere to belong.",
+      },
+      {
+        type: "paragraph",
+        text: "Without a mechanism, every finding becomes a separate item to hold. Pulse, respiratory rate, blood pressure, skin, mental status, lung sounds, history, medications, scene context: each one competes for working memory while the call is moving. That load is significant. Under pressure it becomes harder to manage, and findings start to drop.",
+      },
+      {
+        type: "paragraph",
+        text: "With a mechanism, findings begin to cluster around a process.",
+      },
+      {
+        type: "paragraph",
+        text: "Tachycardia, cool skin, weakness, and soft blood pressure cluster around perfusion. Fever, confusion, faster breathing, and decreased urine output cluster around systemic infection and circulatory stress. Decreased air movement, fatigue, and worsening mental status in a patient who initially had obvious wheeze cluster around ventilation failure rather than simple bronchospasm.",
+      },
+      {
+        type: "paragraph",
+        text: "The student is still thinking carefully. But they are thinking about one process with several expressions rather than managing six unrelated data points simultaneously. That is a meaningful reduction in load, and it becomes more important as the call gets busier and the findings multiply.",
+      },
+      {
+        type: "paragraph",
+        text: "This is also why mechanism-based knowledge transfers across presentations in a way that diagnosis-based knowledge often does not. A student who has memorized the sepsis presentation does well when the patient has obvious fever, rigors, and a clear source. They may struggle when the patient is an older adult with vague decline, no fever, and a soft blood pressure that has not yet crossed the hypotension threshold. A student who understands how systemic infection loads the circulatory system recognizes the same physiological process in both presentations, even when the surface looks different.",
+      },
+      {
+        type: "heading",
+        text: "How to study pathophysiology so it transfers",
+      },
+      {
+        type: "paragraph",
+        text: "Studying pathophysiology as a list of disease summaries rarely transfers to scenarios well.",
+      },
+      {
+        type: "paragraph",
+        text: "A more useful approach is to study by mechanism families: grouping conditions by what they share physiologically rather than by their label.",
+      },
+      {
+        type: "list",
+        items: [
+          "Conditions that impair ventilation",
+          "Conditions that impair gas exchange",
+          "Conditions that reduce preload",
+          "Conditions that increase oxygen demand without increasing supply",
+          "Conditions that disrupt neurologic control of breathing",
+          "Conditions that create compensatory tachycardia",
+          "Conditions that cause altered mental status before obvious vital sign changes",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This organization lets knowledge move across presentations. You are not only learning sepsis. You are learning how systemic infection stresses perfusion, drives compensatory tachycardia and tachypnea, shifts fluid distribution, and eventually produces the mental status changes that appear before hypotension in many patients. That understanding works when the patient has a clear infectious source, and it works when they do not, because the mechanism is the same even when the presentation is softer.",
+      },
+      {
+        type: "paragraph",
+        text: "When reviewing any topic, try starting with the mechanism rather than the label.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask: what primary system is under stress? What is the body trying to maintain? What compensation would appear early, and what signs suggest compensation is failing? What would I reassess after treatment, and what would tell me the explanation is still holding?",
+      },
+      {
+        type: "paragraph",
+        text: "For example: if you are studying diabetic ketoacidosis, do not start with the list of signs. Start with what is happening. Insulin deficiency means glucose cannot enter cells. Cells starve and shift to fat metabolism. Fat metabolism produces ketone bodies, which are acidic. The body recognizes the acidosis and drives breathing faster and deeper to blow off CO2 and buffer the pH. That is Kussmaul breathing, and understanding it as compensation tells you something a memorized list does not: if this patient's breathing effort decreases, it may not mean they are improving. It may mean they are tiring, and the acidosis is winning.",
+      },
+      {
+        type: "paragraph",
+        text: "That kind of understanding changes what you notice in a reassessment.",
+      },
+      {
+        type: "heading",
+        text: "How this supports directive decisions",
+      },
+      {
+        type: "paragraph",
+        text: "Directives make more sense when physiology makes more sense.",
+      },
+      {
+        type: "paragraph",
+        text: "The nitroglycerin blood pressure threshold stops being an arbitrary number and becomes a physiological boundary: nitrates cause vasodilation, and a patient who is already hypotensive cannot tolerate further reduction in preload without risk of cardiovascular collapse. The threshold is there because the directive is managing that risk.",
+      },
+      {
+        type: "paragraph",
+        text: "The reason inferior STEMI changes the nitroglycerin decision becomes clearer once you understand right ventricular involvement and preload dependence. It is not an exception to memorize. It is a consequence of the same physiology the directive is built around.",
+      },
+      {
+        type: "paragraph",
+        text: "The reason you reassess after a bronchodilator before repeating the dose is not just procedural compliance. It is because the treatment should have changed something measurable: work of breathing, air movement, speech, mental status. If it did not, the explanation of what is causing the distress may need to change before you give more of the same treatment.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding the physiology behind a directive converts it from a rule to follow into a reasoning structure to apply. That makes it more reliable at the decision point, not less, because the decision is grounded in why rather than just what.",
+      },
+      {
+        type: "heading",
+        text: "What good understanding looks like",
+      },
+      {
+        type: "paragraph",
+        text: "Good pathophysiology understanding does not look like reciting long pathways from memory.",
+      },
+      {
+        type: "paragraph",
+        text: "It looks like steadier reasoning when the presentation is unclear.",
+      },
+      {
+        type: "paragraph",
+        text: "A student with usable physiological understanding can explain why a finding matters, anticipate what may happen next, notice when the pattern is drifting in a direction that changes the risk picture, and recognize when something does not fit the explanation they were carrying. Their reassessments make sense because they are checking whether the mechanism is responding rather than repeating the same questions to fill time. Their concern rises earlier, before the late signs that make the problem obvious.",
+      },
+      {
+        type: "paragraph",
+        text: "In labs and OSCEs, this often shows up quietly. The student may not have a confident label early. But their questions become more purposeful, their decisions become easier to explain, and their call flow becomes harder to derail when the presentation does not match the textbook version.",
+      },
+      {
+        type: "paragraph",
+        text: "That is what physiology is for in the field: not a separate academic layer sitting beside patient care, but the structure underneath it that keeps clinical reasoning stable when the patient stops being simple.",
+      },
     ],
     glossaryTerms: [
         "pathophysiology",
@@ -2373,495 +1811,233 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Frame directives as risk-managed clinical decisions built around purpose, physiology, boundaries, and reassessment.",
     pageType: "tool-supported",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Directives can feel heavier than almost anything else students learn."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is understandable. They carry authority. They are tied to scope, safety, evaluation, documentation, and patient care. Getting a directive wrong can feel more serious than missing a detail in a history or forgetting a term from lecture. Students know they are being watched closely when directives are involved, and that pressure changes how thinking feels."
-        },
-        {
-            "type": "paragraph",
-            "text": "The usual response is memorization."
-        },
-        {
-            "type": "paragraph",
-            "text": "Students study the wording. They repeat the indications. They memorize contraindications, doses, routes, thresholds, sequence, and patch points. That matters. You do need to know the details. A directive is not something you want to vaguely understand while trying to manage a real patient."
-        },
-        {
-            "type": "paragraph",
-            "text": "But memorization can become brittle if it is the only layer."
-        },
-        {
-            "type": "paragraph",
-            "text": "If the patient fits the clean version you studied, the decision may feel straightforward. If the patient is borderline, evolving, compensating, vague, anxious, refusing, or giving conflicting information, the directive can suddenly feel harder to use. The student may know the words, but still not understand what the words are protecting."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is where this section fits."
-        },
-        {
-            "type": "paragraph",
-            "text": "The last two sections looked at meaning and pathophysiology. This section applies that same idea to directives. A directive becomes easier to use when you understand its purpose, its boundaries, and the clinical risk it is trying to manage."
-        },
-        {
-            "type": "heading",
-            "text": "What directives are for"
-        },
-        {
-            "type": "paragraph",
-            "text": "Directives are not meant to replace thinking."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are designed to support safe decision-making in situations where risk, time, scope, and uncertainty all matter. They help standardize care. They define boundaries. They protect patients. They protect providers. They reduce unnecessary variation when the situation already has enough moving parts."
-        },
-        {
-            "type": "paragraph",
-            "text": "A directive gives judgment a safer container."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is different from treating it like a script."
-        },
-        {
-            "type": "paragraph",
-            "text": "Students sometimes search for exact matches because exact matches feel safer. They want the patient to line up perfectly with the version they studied. They want the indication to be obvious, the contraindications to be absent, the vital signs to be comfortably within range, and the story to move in a straight line."
-        },
-        {
-            "type": "paragraph",
-            "text": "Sometimes that happens."
-        },
-        {
-            "type": "paragraph",
-            "text": "Often it does not."
-        },
-        {
-            "type": "paragraph",
-            "text": "Paramedic care frequently happens before complete certainty is available. The directive helps you decide what is safe, reasonable, and within scope while the picture is still developing."
-        },
-        {
-            "type": "heading",
-            "text": "Purpose does not make directives loose"
-        },
-        {
-            "type": "paragraph",
-            "text": "Understanding purpose does not mean becoming casual with directives."
-        },
-        {
-            "type": "paragraph",
-            "text": "A directive has boundaries for a reason. Indications, contraindications, dosing limits, age limits, blood pressure limits, routes, patch points, reassessment expectations, and documentation requirements are part of the safety structure. They are not optional details."
-        },
-        {
-            "type": "paragraph",
-            "text": "Purpose does not give you permission to ignore them."
-        },
-        {
-            "type": "paragraph",
-            "text": "Purpose helps you understand why they are there."
-        },
-        {
-            "type": "paragraph",
-            "text": "That matters because students can drift into two different errors. Some become so rigid that they wait for a perfect presentation while the patient worsens. Others become too loose and treat the directive like a general suggestion because the situation feels urgent."
-        },
-        {
-            "type": "paragraph",
-            "text": "Neither approach is safe."
-        },
-        {
-            "type": "paragraph",
-            "text": "Better directive use means respecting the boundaries while understanding the problem those boundaries are built around."
-        },
-        {
-            "type": "heading",
-            "text": "Why memorization can stall decision-making"
-        },
-        {
-            "type": "paragraph",
-            "text": "Memorizing directives can create short-term confidence."
-        },
-        {
-            "type": "paragraph",
-            "text": "You know the steps. You know the numbers. You know what is allowed."
-        },
-        {
-            "type": "paragraph",
-            "text": "The difficulty comes when the patient falls between the clean lines. A patient has symptoms that suggest risk, but the story is incomplete. A vital sign is borderline. The complaint sounds familiar, but one detail does not fit. A treatment seems possible, but the contraindication screen is not finished. A reassessment changes the picture."
-        },
-        {
-            "type": "paragraph",
-            "text": "These are the moments where students often stall."
-        },
-        {
-            "type": "paragraph",
-            "text": "They may keep searching for the exact phrase that will make the decision feel safe. They may ask more and more questions without deciding what risk is already present. They may avoid an appropriate treatment because they do not feel confident enough to justify it. Or they may give a treatment because the directive seems to allow it, without being able to explain why it fits the patient."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem is not always that they forgot the directive."
-        },
-        {
-            "type": "paragraph",
-            "text": "Sometimes they learned the directive as wording without learning the clinical purpose underneath it."
-        },
-        {
-            "type": "heading",
-            "text": "A paramedic example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Consider oxygen administration."
-        },
-        {
-            "type": "paragraph",
-            "text": "A student who treats oxygen as a memorized rule may drift in one of two directions."
-        },
-        {
-            "type": "paragraph",
-            "text": "One student may wait rigidly for a number before acting, even when the patient’s work of breathing, mental status, trajectory, or overall presentation is concerning. Another student may apply oxygen automatically to anyone who feels short of breath, without asking whether oxygen is needed, whether the reading is reliable, or whether oxygen is treating the actual problem."
-        },
-        {
-            "type": "paragraph",
-            "text": "Both students may be trying to be safe."
-        },
-        {
-            "type": "paragraph",
-            "text": "Both may be missing the purpose."
-        },
-        {
-            "type": "paragraph",
-            "text": "Oxygen is not meant to treat the word “shortness of breath” by itself. It is meant to support oxygenation when oxygenation is inadequate or at risk. That means the student has to consider the number, but not only the number. Waveform quality matters. Work of breathing matters. Mental status matters. Skin signs, trajectory, underlying complaint, and response to treatment matter."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student who understands purpose is not being casual. They are more grounded."
-        },
-        {
-            "type": "paragraph",
-            "text": "They can explain why oxygen is indicated, why it is not indicated, or why reassessment is needed before the plan changes. They are not simply chasing a threshold or treating a complaint word. They are asking what clinical risk the directive is designed to manage."
-        },
-        {
-            "type": "paragraph",
-            "text": "That same kind of thinking applies across directives."
-        },
-        {
-            "type": "paragraph",
-            "text": "A pain medication decision is not only about whether pain exists. It is about severity, patient suitability, contraindications, route, dose, reassessment, and whether the treatment matches the clinical picture. A nausea treatment is not only about nausea. It is about cause, risk, patient condition, contraindications, and what needs to be watched after. A cardiac ischemia directive is not only about chest discomfort. It is about risk, presentation, contraindications, vital signs, ECG interpretation, response, and whether the patient’s condition is changing."
-        },
-        {
-            "type": "paragraph",
-            "text": "The directive gives the boundary."
-        },
-        {
-            "type": "paragraph",
-            "text": "Purpose helps you understand the decision inside that boundary."
-        },
-        {
-            "type": "heading",
-            "text": "What directive intent sounds like"
-        },
-        {
-            "type": "paragraph",
-            "text": "Directive intent is the answer to a simple question:"
-        },
-        {
-            "type": "paragraph",
-            "text": "What is this directive trying to protect, support, or prevent?"
-        },
-        {
-            "type": "paragraph",
-            "text": "That question changes how you study."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of only asking, “What does the directive allow?” you begin asking:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What clinical risk is this directive built around?",
-                "What physiology is being supported or protected?",
-                "What patient group is this directive meant for?",
-                "What findings matter most before acting?",
-                "What findings make this treatment unsafe?",
-                "What needs to be reassessed after intervention?",
-                "Where are the boundaries firm?",
-                "What would justify withholding, patching, or changing course?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Those questions do not replace the directive."
-        },
-        {
-            "type": "paragraph",
-            "text": "They help the directive make sense."
-        },
-        {
-            "type": "paragraph",
-            "text": "They also make the details easier to remember because the pieces are no longer floating separately. Indications, contraindications, thresholds, doses, routes, and reassessment expectations start to connect around the risk being managed."
-        },
-        {
-            "type": "heading",
-            "text": "Boundaries are part of the meaning"
-        },
-        {
-            "type": "paragraph",
-            "text": "Students sometimes treat directive meaning and directive boundaries as separate things."
-        },
-        {
-            "type": "paragraph",
-            "text": "Meaning feels like the flexible part. Boundaries feel like the rigid part."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is more useful to see boundaries as part of the meaning."
-        },
-        {
-            "type": "paragraph",
-            "text": "A contraindication is not just a rule that blocks treatment. It usually points to a risk that may become worse if the treatment is given. A threshold is not just a number to memorize. It often marks where the balance of benefit and harm changes. A reassessment requirement is not just something instructors want to hear. It is how you find out whether the intervention helped, harmed, or failed to change the problem."
-        },
-        {
-            "type": "paragraph",
-            "text": "When students understand this, directive boundaries feel less random."
-        },
-        {
-            "type": "paragraph",
-            "text": "They become part of the clinical reasoning."
-        },
-        {
-            "type": "paragraph",
-            "text": "You still follow them. You just understand why following them matters."
-        },
-        {
-            "type": "heading",
-            "text": "Why this helps under pressure"
-        },
-        {
-            "type": "paragraph",
-            "text": "Directive anxiety increases cognitive load."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student is already assessing the patient, listening to the history, managing equipment, communicating with a partner, watching the monitor, and thinking about transport. Then the directive enters the call, and attention narrows. The student may stop listening as well. They may look for reassurance from the instructor. They may repeat the same question several times. They may freeze because the decision feels like a test."
-        },
-        {
-            "type": "paragraph",
-            "text": "Purpose gives the mind a structure to hold onto."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of holding every line as a separate rule, the student can organize the directive around a few anchors:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "the clinical risk",
-                "the physiology or patient problem",
-                "the firm boundaries",
-                "the expected effect",
-                "the reassessment"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "The details still matter, but they now have somewhere to belong."
-        },
-        {
-            "type": "paragraph",
-            "text": "That makes decision-making steadier."
-        },
-        {
-            "type": "paragraph",
-            "text": "It also makes explanation easier. A student who understands purpose can say why they are acting, why they are withholding, or why they are reassessing before deciding. That is very different from guessing, stalling, or reciting."
-        },
-        {
-            "type": "heading",
-            "text": "Labs and OSCEs are not obedience tests"
-        },
-        {
-            "type": "paragraph",
-            "text": "During labs and OSCEs, students often assume directives are evaluated as obedience."
-        },
-        {
-            "type": "paragraph",
-            "text": "In reality, the better standard is judgment within boundaries."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instructors are looking for decisions that are safe, reasonable, defensible, and responsive to the information available at the time. Blindly following a remembered sequence without interpreting the patient can be unsafe. Ignoring the directive because the situation feels urgent can also be unsafe."
-        },
-        {
-            "type": "paragraph",
-            "text": "Competence sits in the middle."
-        },
-        {
-            "type": "paragraph",
-            "text": "You need to know the directive. You need to respect the directive. You also need to apply it to the patient in front of you."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is why scenarios are often imperfect. They are not always designed to give you a clean checkbox moment. They are designed to show whether you can manage uncertainty without abandoning safety."
-        },
-        {
-            "type": "heading",
-            "text": "Learning directives by problem space"
-        },
-        {
-            "type": "paragraph",
-            "text": "Trying to learn every directive in isolation is exhausting."
-        },
-        {
-            "type": "paragraph",
-            "text": "It also makes transfer harder."
-        },
-        {
-            "type": "paragraph",
-            "text": "A better approach is to learn directives by problem space."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of treating each directive as a separate block of text, ask what kind of clinical problem it belongs to. Pain. Respiratory distress. Hypoglycemia. Nausea and vomiting. Suspected cardiac ischemia. Anaphylaxis. Seizure. Stroke. Trauma. Refusal. Capacity. Transport risk."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then ask what each directive is doing inside that problem space."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some directives support physiology. Some reduce risk of deterioration. Some define when a symptom relief option is reasonable. Some prevent harm by setting firm limits. Some guide communication, reassessment, or escalation."
-        },
-        {
-            "type": "paragraph",
-            "text": "This helps you see the directive as part of patient care, not as a separate document floating above it."
-        },
-        {
-            "type": "paragraph",
-            "text": "It also helps you compare."
-        },
-        {
-            "type": "paragraph",
-            "text": "What makes one patient eligible and another not? What risk changes the decision? What would make treatment inappropriate even if the complaint sounds familiar? What reassessment would show whether your plan is still safe?"
-        },
-        {
-            "type": "paragraph",
-            "text": "That is where understanding starts to become usable."
-        },
-        {
-            "type": "heading",
-            "text": "A small way to study a directive"
-        },
-        {
-            "type": "paragraph",
-            "text": "When you review a directive, do not stop after the indications and contraindications."
-        },
-        {
-            "type": "paragraph",
-            "text": "Add a short purpose check."
-        },
-        {
-            "type": "paragraph",
-            "text": "Ask:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What clinical risk is this directive protecting against?",
-                "What problem is the intervention trying to change?",
-                "What findings make the intervention more appropriate?",
-                "What findings make it unsafe?",
-                "What should improve if the intervention works?",
-                "What would I need to reassess?",
-                "What would make me stop, withhold, patch, or change course?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "This does not need to become a long note."
-        },
-        {
-            "type": "paragraph",
-            "text": "A few careful sentences are usually enough."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is to connect the wording to the patient problem. If you can explain why the directive exists, when it helps, when it does not, and what needs to be checked afterward, you are much closer to using it safely."
-        },
-        {
-            "type": "heading",
-            "text": "Using the Directive Meaning Check"
-        },
-        {
-            "type": "paragraph",
-            "text": "This section is one of the first places where a tool can help."
-        },
-        {
-            "type": "paragraph",
-            "text": "The Directive Meaning Check gives you a short structure for studying or reviewing a directive:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What clinical risk is this directive protecting against?",
-                "What physiology is being supported or prevented?",
-                "Where are the firm boundaries?",
-                "What would justify reassessment or change?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Use it when a directive feels like wording you are trying to survive rather than a decision structure you understand."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to use it for every directive every time. It is most useful when a directive feels fragile, confusing, or hard to explain."
-        },
-        {
-            "type": "heading",
-            "text": "What confidence looks like here"
-        },
-        {
-            "type": "paragraph",
-            "text": "Confidence with directives does not mean speed."
-        },
-        {
-            "type": "paragraph",
-            "text": "It does not mean you never hesitate. It does not mean every answer feels obvious. It does not mean you can recite every line without tension."
-        },
-        {
-            "type": "paragraph",
-            "text": "Better confidence looks steadier than that."
-        },
-        {
-            "type": "paragraph",
-            "text": "It looks like appropriate caution without paralysis. It looks like checking contraindications because they matter, not because you are panicking. It looks like explaining why a treatment fits the patient. It looks like withholding a treatment calmly when the boundary is present. It looks like reassessing after intervention because the decision is not finished once the medication is given or the treatment is started."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of confidence is built through understanding and repetition together."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not one or the other."
-        },
-        {
-            "type": "paragraph",
-            "text": "Directives are not obstacles to patient care."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are structures designed to support safe care when information is incomplete, pressure is present, and decisions still have to be made. When you understand what a directive is protecting, the directive becomes less like a fragile rule and more like a guide for judgment within safe boundaries."
-        },
-        {
-            "type": "paragraph",
-            "text": "This completes the Build Understanding cluster."
-        },
-        {
-            "type": "paragraph",
-            "text": "From here, the guide turns toward notes: how to build Smart Notes that help you keep, develop, and reuse the kind of understanding we have been building here."
-        },
-       
+      {
+        type: "paragraph",
+        text: "Directives can feel heavier than almost anything else in paramedic school.",
+      },
+      {
+        type: "paragraph",
+        text: "That is understandable. They carry authority. They are tied to scope, safety, evaluation, documentation, and patient outcomes. Students know they are being watched closely when directive decisions are involved, and that pressure changes how thinking feels.",
+      },
+      {
+        type: "paragraph",
+        text: "The usual response is to memorize harder. Study the wording. Repeat the indications. Lock in the contraindications, doses, routes, thresholds, and sequence. That matters. You do need to know the details. A directive is not something you want to vaguely understand while managing a real patient.",
+      },
+      {
+        type: "paragraph",
+        text: "But memorization alone creates a specific problem: it gives you the wording without the reasoning. When the patient fits the clean version you studied, the decision may feel manageable. When the patient is borderline, evolving, compensating, or giving conflicting information, the wording does not tell you what to do. You know the threshold, but the patient's blood pressure is sitting on it and trending down. You know the contraindication list, but you are not sure whether this patient's complaint fits the indication in the first place. You know what the directive allows, but you cannot explain why it allows it.",
+      },
+      {
+        type: "paragraph",
+        text: "That gap between wording and reasoning is where this section works.",
+      },
+      {
+        type: "heading",
+        text: "What directives are for",
+      },
+      {
+        type: "paragraph",
+        text: "Directives are not meant to replace thinking. They are designed to support safe decision-making when risk, time, scope, and uncertainty all matter simultaneously. They define boundaries, standardize care, protect patients, and protect providers. They reduce unnecessary variation in situations that already have enough moving parts.",
+      },
+      {
+        type: "paragraph",
+        text: "A directive gives judgment a safer container. That is different from treating it as a script to survive.",
+      },
+      {
+        type: "paragraph",
+        text: "Students often search for exact matches because exact matches feel safer. They want the patient to line up perfectly with the studied version: obvious indication, absent contraindications, vital signs comfortably within range, history moving in a straight line. That happens sometimes, but not as often as students expect. Paramedic care frequently happens before complete certainty is available, and the directive helps you decide what is safe and reasonable while the picture is still developing.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding purpose does not mean becoming casual with directive boundaries. Indications, contraindications, dosing limits, blood pressure thresholds, patch points, and reassessment requirements are part of the safety structure. Purpose helps you understand why those boundaries exist, which makes them more reliable at the decision point, not less.",
+      },
+      {
+        type: "heading",
+        text: "Why memorization can stall at the decision point",
+      },
+      {
+        type: "paragraph",
+        text: "Memorizing directives can create short-term confidence that does not survive contact with a messy patient.",
+      },
+      {
+        type: "paragraph",
+        text: "You know the steps. You know the numbers. You know what is allowed. Then the patient falls between the clean lines. A vital sign is borderline. The complaint sounds familiar, but one detail does not fit. The contraindication screen is incomplete because the history is still arriving. A reassessment changes the picture mid-treatment.",
+      },
+      {
+        type: "paragraph",
+        text: "These are the moments students stall.",
+      },
+      {
+        type: "paragraph",
+        text: "They search for the exact phrase that will make the decision feel safe. They ask more questions without deciding what risk is already present. They avoid an appropriate treatment because they cannot fully justify it yet, or they give a treatment because the directive seems to allow it without being able to explain why it fits this patient. They know the directive as wording but not as a clinical decision.",
+      },
+      {
+        type: "paragraph",
+        text: "The solution is not memorizing more carefully. It is understanding what the directive is built around.",
+      },
+      {
+        type: "heading",
+        text: "A worked example: nitroglycerin",
+      },
+      {
+        type: "paragraph",
+        text: "Nitroglycerin is one of the directives where the gap between memorized wording and clinical reasoning shows up most clearly.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who has memorized the directive knows the blood pressure threshold. They know nitroglycerin is contraindicated below a certain systolic. They know to ask about sildenafil use. They know the dose and route.",
+      },
+      {
+        type: "paragraph",
+        text: "What the wording does not automatically explain is why the blood pressure threshold exists.",
+      },
+      {
+        type: "paragraph",
+        text: "Nitroglycerin causes vasodilation. Vasodilation reduces preload. A patient whose cardiovascular system is already struggling to maintain pressure cannot tolerate a further reduction in preload without risk of significant hypotension and cardiovascular compromise. The threshold is not an arbitrary number. It is the point below which the risk of that compromise increases enough to outweigh the benefit.",
+      },
+      {
+        type: "paragraph",
+        text: "That understanding changes how the directive behaves at the decision point.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who only knows the threshold checks the number and either proceeds or stops. A student who understands the physiology can ask what else matters. Is the blood pressure trending down or holding? Is the patient on medications that affect preload or pressure? Does the ECG suggest inferior involvement, which raises the possibility of right ventricular compromise and makes preload dependence even more significant? Is the patient's presentation consistent with ischemia where nitroglycerin may help, or is the chest pain more likely musculoskeletal, where it will not?",
+      },
+      {
+        type: "paragraph",
+        text: "The directive boundary is the same in both cases. The reasoning inside that boundary is completely different.",
+      },
+      {
+        type: "paragraph",
+        text: "This matters most when the patient is borderline. When the pressure is 94 and trending down, when the ECG shows inferior changes, when the patient is diaphoretic and the pain is not resolving, the memorized threshold gives you a number. The physiological understanding gives you a decision.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example: oxygen",
+      },
+      {
+        type: "paragraph",
+        text: "Consider oxygen administration, where the same split between memorization and understanding appears in a different form.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who treats oxygen as a memorized rule can drift in either direction. One student waits rigidly for a specific saturation reading before acting, even when work of breathing, mental status, skin signs, and trajectory are all concerning. Another student applies oxygen automatically to anyone who describes shortness of breath, without asking whether oxygenation is actually inadequate or whether oxygen addresses the underlying problem.",
+      },
+      {
+        type: "paragraph",
+        text: "Both students are trying to be safe. Both are missing the purpose.",
+      },
+      {
+        type: "paragraph",
+        text: "Oxygen is meant to support oxygenation when oxygenation is inadequate or at risk. That means the number matters, but not in isolation. Waveform quality matters. Work of breathing matters. Mental status trajectory matters. The underlying complaint and the patient's response to positioning and treatment matter. A patient with a saturation of 94 who is working hard to breathe, becoming quieter, and less able to speak in full sentences is a different clinical situation than a patient with a saturation of 94 who is anxious, moving air well, and improving with reassurance.",
+      },
+      {
+        type: "paragraph",
+        text: "The student who understands purpose is not being loose with the directive. They are more grounded. They can explain why oxygen is indicated, why it may not be indicated, and what they are watching to know whether the decision needs to change. They are asking what clinical risk the directive is designed to manage, not just whether a threshold has been crossed.",
+      },
+      {
+        type: "heading",
+        text: "Boundaries are part of the meaning",
+      },
+      {
+        type: "paragraph",
+        text: "Students sometimes treat directive meaning and directive boundaries as separate things. Meaning feels like the flexible part. Boundaries feel like the rigid part.",
+      },
+      {
+        type: "paragraph",
+        text: "It is more useful to see them as the same thing.",
+      },
+      {
+        type: "paragraph",
+        text: "A contraindication is not just a rule that blocks treatment. It usually points to a risk that may become worse if treatment is given. The sildenafil contraindication for nitroglycerin is not arbitrary: both drugs affect nitric oxide pathways, and combining them can cause severe, refractory hypotension. The inferior STEMI consideration is not an exception to memorize: it reflects the physiology of right ventricular preload dependence in a patient whose right heart may already be under stress. Once you understand the physiological risk each boundary is managing, the boundary stops being a tripwire and starts being a clinical signal.",
+      },
+      {
+        type: "paragraph",
+        text: "A reassessment requirement works the same way. It is not something instructors want to hear. It is how you find out whether the intervention changed the problem it was meant to change, and whether the explanation you were working from is still holding.",
+      },
+      {
+        type: "paragraph",
+        text: "When boundaries are understood as expressions of the underlying clinical risk rather than arbitrary rules, they become harder to forget and easier to explain.",
+      },
+      {
+        type: "heading",
+        text: "How purpose reduces directive anxiety under pressure",
+      },
+      {
+        type: "paragraph",
+        text: "Directive anxiety increases cognitive load at exactly the moment when working memory is already full.",
+      },
+      {
+        type: "paragraph",
+        text: "The student is assessing the patient, listening to the history, managing equipment, communicating with a partner, and tracking the monitor. Then the directive decision arrives, and attention narrows further. The student may stop listening as well. They may repeat the same question several times looking for reassurance. They may freeze because the decision feels like a test within a test.",
+      },
+      {
+        type: "paragraph",
+        text: "When a directive is understood as wording alone, each line competes for working memory as a separate rule. When it is understood as a clinical question built around a specific physiological risk, it consolidates. The student is no longer holding eight rules. They are holding one question: does this patient have the problem this directive is designed to address, and are the conditions under which treatment is safe present?",
+      },
+      {
+        type: "paragraph",
+        text: "That consolidation matters most when the call is busy. A single coherent clinical question is much more stable under pressure than a list of separate memorized lines.",
+      },
+      {
+        type: "paragraph",
+        text: "Directive decisions also become easier to explain when purpose is understood. A student who can say \"I withheld nitroglycerin because the blood pressure is borderline and the ECG suggests inferior involvement, which raises concern for right ventricular preload dependence\" is doing something different from a student who says \"the systolic was below the threshold.\" Both students may make the same call. Only one of them has reasoning that can survive a debrief question.",
+      },
+      {
+        type: "heading",
+        text: "Learning directives by problem space",
+      },
+      {
+        type: "paragraph",
+        text: "One practical way to reduce the isolation of directive study is to learn directives by the clinical problem they belong to rather than as separate documents.",
+      },
+      {
+        type: "paragraph",
+        text: "Take suspected cardiac ischemia as a problem space. The directive decisions in that space, aspirin, nitroglycerin, reassessment timing, transport priority, ECG acquisition, patch indications, all connect around a shared set of questions: what is the ischemic risk, what is the hemodynamic status, what does the ECG tell us, and is the patient's condition changing? Understanding those questions as a group makes each individual directive decision easier to place, because they are all expressions of the same underlying clinical problem.",
+      },
+      {
+        type: "paragraph",
+        text: "Do the same for anaphylaxis. Epinephrine, diphenhydramine, fluid considerations, positioning, reassessment, transport urgency: these connect around the question of what is failing in the anaphylactic response and what needs to be stabilized first. When the directive decisions group around a physiological problem rather than sitting in isolation, the reasoning inside any one of them becomes more accessible under pressure.",
+      },
+      {
+        type: "paragraph",
+        text: "When studying any directive, push past the indications and contraindications into the problem space underneath:",
+      },
+      {
+        type: "list",
+        items: [
+          "What clinical risk is this directive protecting against?",
+          "What physiology is being supported or prevented?",
+          "What findings make the treatment more appropriate?",
+          "What findings make it unsafe, and why?",
+          "What should improve if the intervention works?",
+          "What would make me stop, withhold, or change course?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A few careful sentences answering those questions will do more for directive confidence than rereading the wording three more times.",
+      },
+      {
+        type: "heading",
+        text: "What confidence with directives actually looks like",
+      },
+      {
+        type: "paragraph",
+        text: "Confidence with directives does not mean speed or absence of hesitation.",
+      },
+      {
+        type: "paragraph",
+        text: "It looks like appropriate caution without paralysis. It looks like checking contraindications because you understand what they are protecting, not because you are panicking through a list. It looks like withholding a treatment calmly and being able to explain why the boundary is present for this patient. It looks like reassessing after an intervention because you know what the treatment was supposed to change and you want to know whether it did.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who understands what a directive is protecting can apply it to the patient in front of them rather than searching for the patient to match the directive. That shift, from pattern matching to purposeful clinical reasoning, is what makes directive decisions more reliable when the patient is borderline, evolving, and not fitting any clean version.",
+      },
+      {
+        type: "paragraph",
+        text: "The boundary is still there. The reasoning inside it is now yours.",
+      },
     ],
     glossaryTerms: [
         "directive",
@@ -2891,690 +2067,371 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Use Smart Notes to turn scattered learning into explanations and connections students can return to during study, lab, and scenario preparation.",
     pageType: "tool-supported",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Most paramedic students already take notes."
-        },
-        {
-            "type": "paragraph",
-            "text": "They write during lectures. They highlight slides. They copy definitions, save charts, organize binders, and build folders by topic. Some students have polished notes. Some have messy notes. Some have notes spread across notebooks, apps, handouts, screenshots, and whatever document was open at the time."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem is not usually that students have no notes."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem is that many notes do not help much when the student has to think."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note can be accurate and still not help during a scenario. It can be complete and still be hard to use. It can look responsible and still leave the student saying, “I knew that, I just could not put it together fast enough.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "That is the problem this section is trying to solve."
-        },
-        {
-            "type": "paragraph",
-            "text": "The last cluster focused on building understanding. This cluster is about keeping that understanding alive long enough to use it, revise it, and connect it to new situations. Smart Notes are one way to do that."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not a way to collect more information. They are a way to make important ideas easier to return to, explain, and use."
-        },
-        {
-            "type": "heading",
-            "text": "What makes a note smart"
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note is not defined by software."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is not defined by Obsidian, folders, backlinks, tags, plugins, templates, or a nice-looking graph. You can write a Smart Note in an app, a notebook, a document, or a plain text file."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note is smart when it helps your future self think more clearly."
-        },
-        {
-            "type": "paragraph",
-            "text": "That means it does more than store information. It explains one idea in your own words. It shows why the idea matters. It connects to other ideas. It gives you something useful when you are preparing for a scenario, reviewing after feedback, or trying to understand why a decision felt hard."
-        },
-        {
-            "type": "paragraph",
-            "text": "A useful Smart Note usually answers some version of these questions:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What is happening here?",
-                "Why does it matter clinically?",
-                "How would this show up in assessment?",
-                "What mistake could this prevent?",
-                "What does this connect to?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That is different from copying a lecture slide."
-        },
-        {
-            "type": "paragraph",
-            "text": "A copied slide preserves someone else’s structure. A Smart Note helps build yours."
-        },
-        {
-            "type": "heading",
-            "text": "Why regular notes stop helping"
-        },
-        {
-            "type": "paragraph",
-            "text": "Regular notes can be useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "They preserve what was taught. They help you keep track of details. They give you something to review before a quiz, test, lab, or OSCE. Early in a topic, that may be exactly what you need."
-        },
-        {
-            "type": "paragraph",
-            "text": "The problem is that many notes are built for recognition, not use."
-        },
-        {
-            "type": "paragraph",
-            "text": "They work best when you already know what you are looking for. You open the folder, find the topic, reread the section, and recognize the information. In that setting, the note seems helpful because the situation is calm and the label is already attached."
-        },
-        {
-            "type": "paragraph",
-            "text": "Scenarios do not work that way."
-        },
-        {
-            "type": "paragraph",
-            "text": "A patient does not arrive as “respiratory pathology, slide twelve.” They arrive with effort, colour, posture, speech, anxiety, silence, family comments, vital signs, changing presentation, and a partner waiting for your next move."
-        },
-        {
-            "type": "paragraph",
-            "text": "If your notes are mostly lists, your brain still has to assemble the meaning later. If your notes mirror the order of a lecture, your brain still has to reorganize the ideas around the patient. If your notes collect every detail, your brain still has to decide what matters when attention is already busy."
-        },
-        {
-            "type": "paragraph",
-            "text": "Detailed notes can still fail if they store information without reducing the work of using it."
-        },
-        {
-            "type": "heading",
-            "text": "What Smart Notes do differently"
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes shift some of the thinking earlier."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of trying to assemble meaning for the first time during a scenario, you begin building that meaning while studying, reviewing, or reflecting."
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note might take a confusing idea and turn it into a short explanation. It might connect a patient sign to a mechanism. It might capture a common mistake from lab. It might explain why one finding matters more than it first appears. It might link a directive to the risk it is protecting against."
-        },
-        {
-            "type": "paragraph",
-            "text": "The note does not replace practice."
-        },
-        {
-            "type": "paragraph",
-            "text": "It prepares your thinking for practice."
-        },
-        {
-            "type": "paragraph",
-            "text": "When a similar situation appears later, you are not starting from loose facts. You have already built a small structure that helps you recognize what matters, what might be happening, and what needs to be checked next."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is the value of Smart Notes in paramedic learning. They help preserve small pieces of understanding so those pieces can be used again."
-        },
-        {
-            "type": "heading",
-            "text": "A paramedic example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Imagine a student preparing for respiratory scenarios."
-        },
-        {
-            "type": "paragraph",
-            "text": "Their original notes on asthma are long. They include definitions, airway anatomy, bronchoconstriction, medications, contraindications, and several copied slides. The notes are accurate. They look thorough."
-        },
-        {
-            "type": "paragraph",
-            "text": "During a scenario, the patient is anxious and breathing quickly. Lung sounds are wheezy. Oxygen saturation is acceptable. After treatment, the wheezing becomes less obvious, but the patient looks more tired and is speaking less."
-        },
-        {
-            "type": "paragraph",
-            "text": "The student hesitates."
-        },
-        {
-            "type": "paragraph",
-            "text": "They remember asthma. They remember wheezing. They remember treatment. But they do not immediately recognize that quieter lung sounds may not mean improvement if the patient is tiring."
-        },
-        {
-            "type": "paragraph",
-            "text": "Later, in debrief, the student says, “I knew the asthma stuff. I just did not put it together.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note would not need to summarize all of asthma."
-        },
-        {
-            "type": "paragraph",
-            "text": "It might be titled:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Asthma can become quieter when fatigue worsens"
-        },
-        {
-            "type": "paragraph",
-            "text": "The note might explain:"
-        },
-        {
-            "type": "paragraph",
-            "text": "In severe bronchospasm, reduced wheezing is not always improvement. If work of breathing remains high, speech worsens, mental status changes, or air movement decreases, the patient may be tiring. Reassessment after treatment needs to focus on effort, air movement, speech, mental status, and overall trajectory, not just whether wheezing sounds better."
-        },
-        {
-            "type": "paragraph",
-            "text": "Clinical signals might include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "reduced ability to speak",
-                "decreasing air movement",
-                "persistent high work of breathing",
-                "altered mental status",
-                "fatigue after initial treatment",
-                "poor or incomplete response to bronchodilator treatment"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Common confusion:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Students may relax when wheezing decreases, even though reduced sound can mean less air movement rather than improvement."
-        },
-        {
-            "type": "paragraph",
-            "text": "Links might include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Work of Breathing",
-                "Air Trapping",
-                "Respiratory Fatigue",
-                "Reassessment After Intervention",
-                "Oxygenation Versus Ventilation"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That note is not a full asthma review. It is a small clinical distinction made visible."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is what makes it reusable."
-        },
-        {
-            "type": "heading",
-            "text": "One note, one idea"
-        },
-        {
-            "type": "paragraph",
-            "text": "The most important rule is simple:"
-        },
-        {
-            "type": "paragraph",
-            "text": "One Smart Note should hold one idea."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not one lecture. Not one disease. Not one chapter. One idea."
-        },
-        {
-            "type": "paragraph",
-            "text": "If a note tries to explain asthma, COPD, pneumonia, heart failure, oxygen administration, bronchodilators, and respiratory failure all at once, it becomes hard to reuse. It may be thorough, but it is not sharp."
-        },
-        {
-            "type": "paragraph",
-            "text": "A useful note is smaller."
-        },
-        {
-            "type": "paragraph",
-            "text": "Examples:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Quiet lungs can mean worsening fatigue",
-                "Chest pain decisions are guided by risk before certainty",
-                "Fever in older adults may not look dramatic early",
-                "Reassessment after treatment tells you whether your explanation still fits",
-                "Blood pressure can stay normal while compensation is working",
-                "Oxygen saturation does not fully describe work of breathing"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "These are not full topics."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are ideas that can be explained, linked, tested, revised, and reused."
-        },
-        {
-            "type": "heading",
-            "text": "Write explanations, not transcripts"
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note should be written in your own words."
-        },
-        {
-            "type": "paragraph",
-            "text": "This matters because explanation is part of the learning."
-        },
-        {
-            "type": "paragraph",
-            "text": "If you copy a definition, you preserve the wording. If you explain the idea, you expose what you understand and what you do not. That can feel slower, but it gives you better information."
-        },
-        {
-            "type": "paragraph",
-            "text": "For example, a copied definition might say:"
-        },
-        {
-            "type": "paragraph",
-            "text": "“Sepsis is a dysregulated host response to infection.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "That may be accurate, but it may not help much in lab if it stays disconnected from presentation and assessment."
-        },
-        {
-            "type": "paragraph",
-            "text": "A more useful note might say:"
-        },
-        {
-            "type": "paragraph",
-            "text": "In sepsis, infection can create a body-wide response that affects perfusion, temperature, breathing, mental status, and overall stability. In older adults, this may show up vaguely at first: weakness, confusion, poor intake, fast breathing, soft pressure, or “not acting right.” The risk is waiting for the presentation to become obvious before treating it seriously."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of note helps you think."
-        },
-        {
-            "type": "paragraph",
-            "text": "It connects definition, presentation, risk, and action."
-        },
-        {
-            "type": "heading",
-            "text": "Link by meaning, not by topic"
-        },
-        {
-            "type": "paragraph",
-            "text": "Links are useful when they represent a real relationship."
-        },
-        {
-            "type": "paragraph",
-            "text": "Do not link notes simply because they live in the same category. Link them because one idea changes how you understand another."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note on early sepsis might link to:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Altered Mental Status as an Early Warning Sign",
-                "Compensation Before Collapse",
-                "Perfusion and Mental Status",
-                "Vague Presentations in Older Adults",
-                "Transport Decisions Under Uncertainty"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Those links matter because they shape the same kind of decision."
-        },
-        {
-            "type": "paragraph",
-            "text": "A link should help future you follow a reasoning trail."
-        },
-        {
-            "type": "paragraph",
-            "text": "If the link does not change how you think, it probably does not need to be there."
-        },
-        {
-            "type": "heading",
-            "text": "What a Smart Note usually contains"
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note does not need to be long."
-        },
-        {
-            "type": "paragraph",
-            "text": "A simple structure is enough:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Claim",
-                "Explanation",
-                "Clinical signals",
-                "Common confusion",
-                "Links"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "The claim is the core idea in one sentence."
-        },
-        {
-            "type": "paragraph",
-            "text": "The explanation says why it works in your own words."
-        },
-        {
-            "type": "paragraph",
-            "text": "Clinical signals describe what you would notice in assessment, scenarios, or patient care."
-        },
-        {
-            "type": "paragraph",
-            "text": "Common confusion names what students often mix up."
-        },
-        {
-            "type": "paragraph",
-            "text": "Links connect the idea to other notes that shape reasoning."
-        },
-        {
-            "type": "paragraph",
-            "text": "This gives the note meaning, context, and retrieval hooks without turning it into an essay."
-        },
-        {
-            "type": "heading",
-            "text": "Using the Smart Note Template"
-        },
-        {
-            "type": "paragraph",
-            "text": "Use Smart Note Template when you want to turn a concept, scenario error, confusing idea, or repeated feedback point into something reusable."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need it for every note."
-        },
-        {
-            "type": "paragraph",
-            "text": "Use it when an idea feels important enough to keep developing."
-        },
-        {
-            "type": "paragraph",
-            "text": "Good candidates include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "a recurring scenario mistake",
-                "a physiological mechanism that keeps showing up",
-                "a directive decision that feels fragile",
-                "a pattern you keep missing",
-                "a comparison between similar presentations",
-                "a feedback point you do not want to lose",
-                "a clinical distinction that would change assessment or treatment"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "The template is not there to make notes look better."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is there to help you preserve the kind of thinking you want available later."
-        },
-        {
-            "type": "heading",
-            "text": "What Smart Notes are not"
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes are not full lecture summaries."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not protocol replacements."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not giant condition reviews."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not checklists for real-time care."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not a way to capture everything."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not meant to become another place where you prove how hard you are working."
-        },
-        {
-            "type": "paragraph",
-            "text": "This matters because students often overbuild note systems."
-        },
-        {
-            "type": "paragraph",
-            "text": "They create too many folders, tags, plugins, templates, dashboards, and rules. The system begins to demand attention instead of supporting it."
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note system should stay small enough to use when school gets busy."
-        },
-        {
-            "type": "paragraph",
-            "text": "If the system only works when you are motivated, rested, and caught up, it is too fragile."
-        },
-        {
-            "type": "heading",
-            "text": "A small weekly rhythm"
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to create Smart Notes every day."
-        },
-        {
-            "type": "paragraph",
-            "text": "A small rhythm is better."
-        },
-        {
-            "type": "paragraph",
-            "text": "During the week, capture rough ideas from lectures, labs, readings, and scenarios. Do not polish them. Just catch what might matter."
-        },
-        {
-            "type": "paragraph",
-            "text": "Capture things like:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "one question you could not answer",
-                "one scenario moment that felt important",
-                "one distinction you keep mixing up",
-                "one explanation that suddenly made sense",
-                "one decision point that felt hard",
-                "one feedback point that repeated"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Then, once or twice a week, process a few of them."
-        },
-        {
-            "type": "paragraph",
-            "text": "For each captured item, choose one action:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "discard it",
-                "leave it as a working note",
-                "turn it into one Smart Note"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need a huge output."
-        },
-        {
-            "type": "paragraph",
-            "text": "A few useful notes each week will matter more than a large system you cannot maintain. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to."
-        },
-        {
-            "type": "heading",
-            "text": "How Smart Notes help scenarios"
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes change how you prepare."
-        },
-        {
-            "type": "paragraph",
-            "text": "Instead of reviewing isolated topics, you review connected reasoning."
-        },
-        {
-            "type": "paragraph",
-            "text": "Before a respiratory scenario day, you might follow links between:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "work of breathing",
-                "air trapping",
-                "respiratory fatigue",
-                "oxygenation versus ventilation",
-                "reassessment after treatment",
-                "anxiety and air hunger"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of review activates a model."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are not trying to memorize a list from scratch. You are warming up the relationships you have already built."
-        },
-        {
-            "type": "paragraph",
-            "text": "This can reduce the feeling of blanking because your mind has more structure to return to. You still need to assess the patient in front of you. You still need to think. But you are not asking your brain to assemble everything for the first time under pressure."
-        },
-        {
-            "type": "heading",
-            "text": "Common traps early on"
-        },
-        {
-            "type": "paragraph",
-            "text": "There are a few traps worth avoiding."
-        },
-        {
-            "type": "heading",
-            "text": "Trying to capture everything"
-        },
-        {
-            "type": "paragraph",
-            "text": "This creates overload."
-        },
-        {
-            "type": "paragraph",
-            "text": "Capture less than you think, then spend more attention on the few ideas that actually deserve to become notes."
-        },
-        {
-            "type": "heading",
-            "text": "Rewriting lecture slides"
-        },
-        {
-            "type": "paragraph",
-            "text": "This feels productive but often changes very little."
-        },
-        {
-            "type": "paragraph",
-            "text": "Use the lecture slide as a source. Then write the idea in your own words and connect it to assessment, decisions, or common confusion."
-        },
-        {
-            "type": "heading",
-            "text": "Over-organizing too early"
-        },
-        {
-            "type": "paragraph",
-            "text": "Folders, tags, plugins, dashboards, and aesthetics are tempting."
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with notes and links. Let structure emerge from use."
-        },
-        {
-            "type": "heading",
-            "text": "Making notes too broad"
-        },
-        {
-            "type": "paragraph",
-            "text": "A note called “Shock” is probably too large."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note called “Early shock may show up before hypotension” is more useful."
-        },
-        {
-            "type": "heading",
-            "text": "Treating notes as proof of effort"
-        },
-        {
-            "type": "paragraph",
-            "text": "Notes are not there to prove that you studied."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are there to help future you think, assess, decide, and improve."
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes are one way to preserve understanding so it can keep developing."
-        },
-        {
-            "type": "paragraph",
-            "text": "They help you turn scattered learning into small explanations you can return to, connect, revise, and use. They reduce mental strain by doing some of the organizing work before scenarios and OSCEs ask you to perform."
-        },
-        {
-            "type": "paragraph",
-            "text": "From there, notes need room to change. The guide now separates capture notes, working notes, and Smart Notes, and looks at how ideas mature without forcing you into endless rewriting or perfectionism."
-        },
-     
-    
-        {
-            "type": "paragraph",
-            "text": "If you want a digital system for building linked notes, the Resources page has a setup guide for Obsidian."
-        },
-],
-    glossaryTerms: [
-        "smart-notes",
-        "working-notes",
-        "capture-notes",
-        "meaning",
-        "schema",
-        "cognitive-load",
-        "retrieval-practice",
-        "clinical-reasoning",
+      {
+        type: "paragraph",
+        text: "Most paramedic students already take notes.",
+      },
+      {
+        type: "paragraph",
+        text: "They write during lectures, highlight slides, copy definitions, save charts, and build folders by topic. Some notes are polished. Some are messy. Some are spread across notebooks, apps, handouts, and whatever document was open at the time.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is rarely that students have no notes. The problem is that most notes are organized around how material was taught, not around how it needs to be used.",
+      },
+      {
+        type: "paragraph",
+        text: "A folder organized by lecture topic is easy to navigate when you know which lecture something came from. It is much harder when a patient presents with a combination of findings that cuts across three different lectures simultaneously, and you need to understand what those findings suggest together rather than where they were introduced. In that moment, the note that looked thorough at a desk becomes hard to use in a room that is moving.",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note is built for the room that is moving.",
+      },
+      {
+        type: "heading",
+        text: "What makes a note smart",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note is not defined by software. It is not defined by Obsidian, folders, backlinks, or tags. You can write one in an app, a notebook, or a plain text file.",
+      },
+      {
+        type: "paragraph",
+        text: "A note is smart when it helps your future self think more clearly.",
+      },
+      {
+        type: "paragraph",
+        text: "That means it does more than store information. It explains one idea in your own words. It shows why the idea matters clinically. It connects to other ideas. It gives you something useful when you are preparing for a scenario, reviewing after feedback, or trying to understand why a decision felt fragile.",
+      },
+      {
+        type: "paragraph",
+        text: "A useful Smart Note usually answers some version of these questions:",
+      },
+      {
+        type: "list",
+        items: [
+          "What is happening here, and why?",
+          "How would this show up during assessment?",
+          "What mistake could this prevent?",
+          "What does this connect to?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Copying a lecture slide preserves someone else's structure. A Smart Note helps you build your own.",
+      },
+      {
+        type: "heading",
+        text: "Why regular notes stop helping",
+      },
+      {
+        type: "paragraph",
+        text: "Regular notes can be useful early. They preserve what was taught, help you track details, and give you something to review before a quiz or lab.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem is that most notes are built for recognition rather than use.",
+      },
+      {
+        type: "paragraph",
+        text: "They work best when you already know what you are looking for. You open the folder, find the topic, reread the section, and recognize the information. In that setting the note seems helpful because the situation is calm and the label is already attached.",
+      },
+      {
+        type: "paragraph",
+        text: "Scenarios do not work that way.",
+      },
+      {
+        type: "paragraph",
+        text: "A patient does not arrive as \"respiratory pathology, slide twelve.\" They arrive with breathing effort, skin colour, posture, speech, anxiety, silence, family comments, vital signs, and a presentation that changes while you are still assessing. If your notes are mostly lists, your brain still has to assemble meaning from them in real time. If your notes mirror the order of a lecture, your brain still has to reorganize those ideas around the patient. If your notes collect every detail equally, your brain still has to decide what matters when attention is already crowded.",
+      },
+      {
+        type: "paragraph",
+        text: "Notes that store information without reducing the work of using it are not doing the job the scenario requires.",
+      },
+      {
+        type: "heading",
+        text: "What Smart Notes do differently",
+      },
+      {
+        type: "paragraph",
+        text: "Smart Notes shift some of the assembly work to before the scenario begins.",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of trying to build meaning for the first time in the scenario room, you build it while studying, reviewing feedback, or sitting with a concept after lab that did not quite click. When a similar situation appears later, you are not starting from loose facts. You have already built a small structure that helps you recognize what matters, what might be happening, and what needs checking.",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note might take the concept of quiet lung sounds in severe asthma and explain why reduced air movement can look like improvement when it is actually the opposite. It might connect a patient sign to a mechanism: that tachycardia in early shock is compensation, not a separate problem. It might capture the scenario moment where you gave the bronchodilator and forgot to check whether breathing effort had actually changed. It might explain why the blood pressure threshold in the nitroglycerin directive exists, rather than just noting that the threshold is there.",
+      },
+      {
+        type: "paragraph",
+        text: "The note does not replace practice. It prepares your thinking for it, so practice can work on clinical reasoning rather than on reconstructing basic understanding from scratch.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Imagine a student preparing for respiratory scenarios.",
+      },
+      {
+        type: "paragraph",
+        text: "Their original notes on asthma are long: definitions, airway anatomy, bronchoconstriction, medications, contraindications, several copied slides. The notes are accurate. They look thorough.",
+      },
+      {
+        type: "paragraph",
+        text: "During a scenario, the patient is anxious and breathing quickly. Lung sounds are wheezy. Oxygen saturation is acceptable. After treatment, the wheezing becomes less obvious, but the patient looks more tired and is speaking less.",
+      },
+      {
+        type: "paragraph",
+        text: "The student hesitates.",
+      },
+      {
+        type: "paragraph",
+        text: "They remember asthma. They remember the treatment. But they do not immediately recognize that quieter lung sounds may not mean improvement when the patient is tiring and air movement is decreasing.",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note would not summarize all of asthma. It might be titled:",
+      },
+      {
+        type: "paragraph",
+        text: "Asthma can become quieter when fatigue worsens",
+      },
+      {
+        type: "paragraph",
+        text: "The explanation might read:",
+      },
+      {
+        type: "paragraph",
+        text: "In severe bronchospasm, reduced wheezing is not always improvement. If work of breathing remains high, speech worsens, mental status changes, or air movement decreases, the patient may be tiring rather than improving. Reassessment after treatment needs to focus on effort, air movement, speech, mental status, and overall trajectory, not just whether wheezing sounds better.",
+      },
+      {
+        type: "paragraph",
+        text: "Clinical signals:",
+      },
+      {
+        type: "list",
+        items: [
+          "reduced ability to speak in full sentences",
+          "decreasing air movement on auscultation",
+          "persistent or increasing work of breathing",
+          "altered or declining mental status",
+          "fatigue after initial treatment",
+          "poor or incomplete response to bronchodilator",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Common confusion: Students often relax when wheezing decreases, even though reduced sound can mean less air movement rather than better airflow.",
+      },
+      {
+        type: "paragraph",
+        text: "Links:",
+      },
+      {
+        type: "list",
+        items: [
+          "Work of Breathing",
+          "Air Trapping",
+          "Respiratory Fatigue",
+          "Reassessment After Intervention",
+          "Oxygenation Versus Ventilation",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That note is not a full asthma review. It is one clinical distinction made visible and retrievable. The difference between that note and the original lecture notes is not length or accuracy. It is that this one is built around the moment where thinking breaks down, not around the order of how the topic was introduced.",
+      },
+      {
+        type: "heading",
+        text: "One note, one idea",
+      },
+      {
+        type: "paragraph",
+        text: "One Smart Note should hold one idea.",
+      },
+      {
+        type: "paragraph",
+        text: "Not one lecture. Not one disease. Not one chapter. One idea.",
+      },
+      {
+        type: "paragraph",
+        text: "A note that tries to explain asthma, COPD, pneumonia, heart failure, oxygen administration, bronchodilators, and respiratory failure at once becomes hard to retrieve and harder to revise. The signal is buried in the volume.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful notes are smaller:",
+      },
+      {
+        type: "list",
+        items: [
+          "Quiet lungs can mean worsening fatigue, not improvement",
+          "Chest pain decisions are shaped by risk before certainty arrives",
+          "Fever in older adults may be absent even in serious infection",
+          "Reassessment after treatment tests whether your explanation still fits",
+          "Blood pressure can stay normal while compensation is working",
+          "Oxygen saturation does not fully describe work of breathing or ventilation",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These are not complete topics. They are ideas small enough to explain, link, test, revise, and reuse.",
+      },
+      {
+        type: "heading",
+        text: "Write explanations, not transcripts",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note should be written in your own words.",
+      },
+      {
+        type: "paragraph",
+        text: "This matters because writing an explanation requires generation, which is harder than copying but produces something more durable. When you copy a definition, you preserve the wording. When you explain the idea, you expose what you understand and what you do not. That gap is useful information.",
+      },
+      {
+        type: "paragraph",
+        text: "A copied definition might say: \"Sepsis is a dysregulated host response to infection.\"",
+      },
+      {
+        type: "paragraph",
+        text: "That is accurate, but it may not help much in lab when it stays disconnected from presentation and assessment.",
+      },
+      {
+        type: "paragraph",
+        text: "A more useful note might say:",
+      },
+      {
+        type: "paragraph",
+        text: "In sepsis, infection can create a body-wide response that affects perfusion, temperature, breathing, mental status, and overall stability. In older adults, this may show up vaguely at first: weakness, confusion, poor oral intake, faster breathing, soft blood pressure, or a family member saying \"they're just not right.\" The risk is waiting for an obvious infectious picture before treating the underlying instability seriously.",
+      },
+      {
+        type: "paragraph",
+        text: "The second version connects the definition to a presentation, to a patient population, and to the specific error the note is designed to prevent. It is harder to write than a copied sentence. That difficulty is part of what makes it more useful under pressure.",
+      },
+      {
+        type: "heading",
+        text: "Why the template fields each do specific work",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note does not need to be long. A simple structure is enough:",
+      },
+      {
+        type: "list",
+        items: [
+          "Claim: the core idea in one sentence",
+          "Explanation: why it works, in your own words",
+          "Clinical signals: what you would notice in assessment or a scenario",
+          "Common confusion: what students often mix up",
+          "Links: other notes that shape the same reasoning",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These are not formatting choices. Each field does specific cognitive work.",
+      },
+      {
+        type: "paragraph",
+        text: "The claim forces distillation. If you cannot state the idea in one sentence, you may not fully understand it yet. That is useful to discover at the desk rather than in the scenario room.",
+      },
+      {
+        type: "paragraph",
+        text: "The explanation in your own words requires generation rather than recognition. Recognition is what rereading produces. Generation is what retrieval practice produces. The explanation field turns note-writing into a low-stakes retrieval attempt.",
+      },
+      {
+        type: "paragraph",
+        text: "Clinical signals tie the idea to patient presentations rather than to lecture headings. When you see a patient who is pale, tachycardic, and speaking less, the signals in your notes activate the reasoning you built, not the folder you filed it in.",
+      },
+      {
+        type: "paragraph",
+        text: "Common confusion prevents interference. When two ideas look similar at a desk, they blur together under pressure. Naming the confusion explicitly gives you a check to run when the call could go either way.",
+      },
+      {
+        type: "paragraph",
+        text: "Links build the network structure that reduces working memory load. A student who follows the link from respiratory fatigue to reassessment after intervention to oxygenation versus ventilation is moving through a reasoning trail, not a topic list. That structure is more stable under pressure than a set of disconnected facts.",
+      },
+      {
+        type: "heading",
+        text: "How Smart Notes change scenario preparation",
+      },
+      {
+        type: "paragraph",
+        text: "Smart Notes change what reviewing before a scenario actually does.",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of rereading isolated topics, you follow connected reasoning. Before a respiratory scenario day, you might spend ten minutes moving through:",
+      },
+      {
+        type: "paragraph",
+        text: "work of breathing, respiratory fatigue, oxygenation versus ventilation, reassessment after intervention, anxiety and air hunger",
+      },
+      {
+        type: "paragraph",
+        text: "That review is not memorization. It is reactivation. You are warming up a schema, a connected structure your brain can retrieve as a unit rather than rebuild from pieces under pressure. That is why this kind of preparation reduces blanking: the structure is already available, so attention during the scenario can go toward the patient rather than toward reconstructing the explanation from scratch.",
+      },
+      {
+        type: "paragraph",
+        text: "You still have to assess. You still have to think. But you are not assembling the reasoning for the first time while the patient is deteriorating and your partner is waiting.",
+      },
+      {
+        type: "heading",
+        text: "A small weekly rhythm",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to create Smart Notes every day.",
+      },
+      {
+        type: "paragraph",
+        text: "During the week, capture rough ideas from lectures, labs, readings, and scenarios without polishing them. Catch what might matter:",
+      },
+      {
+        type: "list",
+        items: [
+          "a question you could not answer in the moment",
+          "a scenario decision that felt fragile",
+          "a distinction you keep mixing up",
+          "a feedback point that repeated",
+          "a clinical finding that surprised you",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Then, once or twice a week, process a few of them. For each one, choose one action: discard it, leave it as a working note, or turn it into one Smart Note.",
+      },
+      {
+        type: "paragraph",
+        text: "The output does not need to be large. A few useful notes each week will matter more than a large system that cannot survive a busy semester. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to.",
+      },
+      {
+        type: "heading",
+        text: "Common traps",
+      },
+      {
+        type: "paragraph",
+        text: "Capturing too much. Every idea does not need to become a note. Capture less than you think, then spend more attention on the ideas that actually deserve to develop.",
+      },
+      {
+        type: "paragraph",
+        text: "Rewriting lecture slides. This feels productive but usually changes little. Use the slide as a source. Then write the idea in your own words and connect it to assessment, decisions, or common confusion. The rewriting is not the work. The explaining is.",
+      },
+      {
+        type: "paragraph",
+        text: "Over-organizing before you have notes worth organizing. Folders, tags, plugins, and dashboards are tempting early. Start with notes and links. Let structure emerge from use rather than building a system for ideas that do not exist yet.",
+      },
+      {
+        type: "paragraph",
+        text: "Making notes too broad. A note called \"Shock\" is probably too large. A note called \"Early shock may show up before hypotension\" is more useful because it is built around a specific clinical moment, not a topic heading.",
+      },
+      {
+        type: "paragraph",
+        text: "Treating the system as proof of effort. Notes are not there to show that you studied. They are there to help future you think, assess, and decide. If the system is demanding more attention than the learning, simplify it.",
+      },
     ],
     relatedTools: [
         "smart-note-template"
@@ -3597,773 +2454,505 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Show how notes can serve different jobs at different stages, from rough capture to more stable explanations that can be revised and reused.",
     pageType: "practical-system",
     body: [
-        {
-            "type": "paragraph",
-            "text": "Not every note should be treated like a finished thought."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is where a lot of note systems start to break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete."
-        },
-        {
-            "type": "paragraph",
-            "text": "After a while, the system starts to feel heavier than the learning."
-        },
-        {
-            "type": "paragraph",
-            "text": "Capturing ideas becomes slower. Processing notes feels like another assignment. Students either stop using the system, or they keep adding to it without developing the ideas that matter most."
-        },
-        {
-            "type": "paragraph",
-            "text": "Paramedic learning is not clean enough for every note to arrive finished."
-        },
-        {
-            "type": "paragraph",
-            "text": "Your understanding changes. It deepens, narrows, reorganizes, and sometimes corrects itself. You may hear something in lecture and only half understand it. Then it appears in lab. Then you miss it during a scenario. Then feedback gives it a different shape. Then, a week later, the idea finally clicks because you see how it connects to assessment or decision-making."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note system has to allow for that."
-        },
-        {
-            "type": "paragraph",
-            "text": "This section is about letting notes have different jobs at different stages of learning."
-        },
-        {
-            "type": "heading",
-            "text": "Notes should not feel finished too early"
-        },
-        {
-            "type": "paragraph",
-            "text": "Early learners often assume a good note is a complete note."
-        },
-        {
-            "type": "paragraph",
-            "text": "Clear. Clean. Organized. Final."
-        },
-        {
-            "type": "paragraph",
-            "text": "That assumption makes sense, especially if most school notes have been built around tests. You collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing."
-        },
-        {
-            "type": "paragraph",
-            "text": "A first version of an idea may be useful without being complete."
-        },
-        {
-            "type": "paragraph",
-            "text": "It may not include the edge case yet. It may not include the mistake you made in scenario. It may not include the directive boundary that suddenly made the concept matter. It may not include the patient presentation that finally showed you why the idea was clinically important."
-        },
-        {
-            "type": "paragraph",
-            "text": "If notes feel finished too early, they can freeze your first version of understanding."
-        },
-        {
-            "type": "paragraph",
-            "text": "That version may not be wrong. It may just be too thin."
-        },
-        {
-            "type": "paragraph",
-            "text": "A useful note does not need to be correct forever. It needs to help you think now, while staying open to revision later."
-        },
-        {
-            "type": "heading",
-            "text": "Three kinds of notes"
-        },
-        {
-            "type": "paragraph",
-            "text": "For VitalNotes, you only need three practical note types:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "capture notes",
-                "working notes",
-                "Smart Notes"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "These are not rigid categories. They are stages of development."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some ideas move through all three stages. Some do not. A quick reminder may stay as a capture note and then get deleted. A messy explanation may stay as a working note for a while. A high-value idea may become a Smart Note because it keeps showing up in scenarios, directives, feedback, or clinical reasoning."
-        },
-        {
-            "type": "paragraph",
-            "text": "The point is not to promote every note."
-        },
-        {
-            "type": "paragraph",
-            "text": "The point is to notice what kind of work the note is doing."
-        },
-        {
-            "type": "heading",
-            "text": "Capture notes"
-        },
-        {
-            "type": "paragraph",
-            "text": "Capture notes are fast, messy, and temporary."
-        },
-        {
-            "type": "paragraph",
-            "text": "They exist to catch something before it disappears."
-        },
-        {
-            "type": "paragraph",
-            "text": "That might be:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "a question from lecture",
-                "a phrase an instructor used",
-                "a scenario moment that felt important",
-                "a repeated feedback point",
-                "a patient cue you did not understand",
-                "a directive decision that felt uncertain",
-                "a comparison you want to revisit",
-                "a mistake that might matter later"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "A capture note does not need structure."
-        },
-        {
-            "type": "paragraph",
-            "text": "It does not need a good title. It does not need links. It does not need to be written well."
-        },
-        {
-            "type": "paragraph",
-            "text": "Examples:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "patient got quieter after treatment, not sure if better",
-                "why does sepsis look vague in elderly patients",
-                "reassessment keeps showing up in feedback",
-                "chest pain without ECG changes still felt risky",
-                "oxygen saturation okay but patient looked bad",
-                "confused before vitals looked dramatic"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "These are not finished thoughts."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are traces of attention. Something happened, and part of you noticed it might matter."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is enough for capture."
-        },
-        {
-            "type": "heading",
-            "text": "Working notes"
-        },
-        {
-            "type": "paragraph",
-            "text": "Working notes are where you wrestle with an idea."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are not raw capture anymore, but they are not stable Smart Notes yet."
-        },
-        {
-            "type": "paragraph",
-            "text": "A working note might include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "rough explanations",
-                "cause and effect chains",
-                "small comparison tables",
-                "questions you are still sorting out",
-                "partial links to related ideas",
-                "examples from lab or scenarios",
-                "early attempts to explain a mechanism",
-                "notes from feedback that need interpretation"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where a lot of real learning happens."
-        },
-        {
-            "type": "paragraph",
-            "text": "A working note lets you say, “I think this is what is happening, but I am not fully sure yet.”"
-        },
-        {
-            "type": "paragraph",
-            "text": "That matters because paramedic students often want to jump too quickly from confusion to final answer. Working notes give partial understanding somewhere to live while it becomes clearer."
-        },
-        {
-            "type": "paragraph",
-            "text": "For example, a working note on respiratory fatigue might include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "wheezing can decrease when air movement worsens",
-                "patient may speak less",
-                "mental status matters",
-                "work of breathing may be more important than SpO₂ alone",
-                "reassessment after bronchodilator should include effort, speech, air movement, and fatigue",
-                "need to connect this to oxygenation versus ventilation"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That note is not polished yet."
-        },
-        {
-            "type": "paragraph",
-            "text": "But it is doing real work. It is holding the pieces together long enough for the student to return, compare, revise, and eventually understand the pattern more clearly."
-        },
-        {
-            "type": "heading",
-            "text": "Smart Notes"
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes are more stable."
-        },
-        {
-            "type": "paragraph",
-            "text": "They explain one idea clearly enough that future you can reuse it."
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note usually includes:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "a clear claim",
-                "an explanation in your own words",
-                "clinical signals",
-                "common confusion",
-                "meaningful links"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note does not have to be perfect. It just has to be stable enough to help later."
-        },
-        {
-            "type": "paragraph",
-            "text": "For example:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Quiet lungs can mean worsening respiratory fatigue."
-        },
-        {
-            "type": "paragraph",
-            "text": "In severe bronchospasm or respiratory distress, less wheezing is not always improvement. If the patient is still working hard to breathe, speaking less, becoming tired, or showing altered mental status, reduced sound may mean reduced air movement rather than recovery. Reassessment should focus on effort, speech, air movement, mental status, and trajectory."
-        },
-        {
-            "type": "paragraph",
-            "text": "That kind of note can help during later study, scenario preparation, and feedback review."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is small, clear, and tied to patient care."
-        },
-        {
-            "type": "paragraph",
-            "text": "It does not summarize all of asthma. It preserves one clinical distinction that could change assessment and reassessment."
-        },
-        {
-            "type": "heading",
-            "text": "Not every note should become a Smart Note"
-        },
-        {
-            "type": "paragraph",
-            "text": "This is important."
-        },
-        {
-            "type": "paragraph",
-            "text": "If every captured idea becomes a Smart Note, the system will become too heavy."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some notes are useful only for a day. Some are reminders. Some are questions that get answered quickly. Some are rough thoughts that no longer matter after a better explanation appears. Some are just noise from a busy week."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is normal."
-        },
-        {
-            "type": "paragraph",
-            "text": "A healthy note system includes deletion. It also includes leaving some notes unfinished."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to turn every lecture point, lab comment, or textbook paragraph into a permanent note. That would make the system harder to maintain and less useful over time."
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes should be reserved for ideas that keep mattering."
-        },
-        {
-            "type": "paragraph",
-            "text": "Good candidates include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "repeated mistakes",
-                "high-risk distinctions",
-                "mechanisms that explain multiple presentations",
-                "directive decisions that feel fragile",
-                "assessment cues that change interpretation",
-                "feedback that keeps returning",
-                "comparisons that prevent confusion",
-                "ideas that connect across several topics"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "The question is not, “Can I make a note out of this?”"
-        },
-        {
-            "type": "paragraph",
-            "text": "The better question is, “Will this help me think later?”"
-        },
-        {
-            "type": "heading",
-            "text": "How ideas mature"
-        },
-        {
-            "type": "paragraph",
-            "text": "An idea often begins as something vague."
-        },
-        {
-            "type": "paragraph",
-            "text": "You hear it once and only partly understand it."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then it appears again."
-        },
-        {
-            "type": "paragraph",
-            "text": "Maybe during lab, you see a patient who does not match the clean textbook version. Maybe during a scenario, you miss a cue. Maybe during feedback, someone points out that your treatment was reasonable but your reassessment was weak. Maybe while studying, you realize two conditions look similar until you compare the mechanism."
-        },
-        {
-            "type": "paragraph",
-            "text": "Each exposure changes the idea slightly."
-        },
-        {
-            "type": "paragraph",
-            "text": "At first, your note may say:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Sepsis can look vague."
-        },
-        {
-            "type": "paragraph",
-            "text": "Later, it might become:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Older adults may show sepsis through weakness, confusion, poor intake, and subtle vital sign changes before the presentation looks dramatic."
-        },
-        {
-            "type": "paragraph",
-            "text": "Later still, after scenarios and feedback, the note might become:"
-        },
-        {
-            "type": "paragraph",
-            "text": "In older adults, early sepsis may present as vague decline rather than a clear infectious picture. Weakness, confusion, poor intake, fast breathing, soft pressure, warm skin, or family concern may matter more when they appear together. The risk is waiting for obvious fever or hypotension before treating the patient as potentially unstable."
-        },
-        {
-            "type": "paragraph",
-            "text": "The topic did not change."
-        },
-        {
-            "type": "paragraph",
-            "text": "The centre of the note changed."
-        },
-        {
-            "type": "paragraph",
-            "text": "It moved from label, to presentation, to risk and decision-making."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is idea maturation."
-        },
-        {
-            "type": "heading",
-            "text": "A paramedic example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Imagine a student creates an early note after learning about hypoxia."
-        },
-        {
-            "type": "paragraph",
-            "text": "The first capture note says:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Hypoxia causes confusion."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is fine as a starting point."
-        },
-        {
-            "type": "paragraph",
-            "text": "After a respiratory scenario, the student notices something more specific. The patient became more confused and less cooperative before the oxygen saturation changed much. The instructor emphasized mental status and work of breathing during debrief."
-        },
-        {
-            "type": "paragraph",
-            "text": "The working note becomes:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Mental status can change before oxygen numbers look dramatic. Need to watch confusion, agitation, fatigue, and ability to speak. Oxygen saturation is useful, but it does not tell the whole story."
-        },
-        {
-            "type": "paragraph",
-            "text": "Later, after more practice, the Smart Note becomes:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Altered mental status can be an early warning sign in respiratory failure."
-        },
-        {
-            "type": "paragraph",
-            "text": "When breathing is becoming ineffective, the brain may show signs of poor oxygen delivery, rising carbon dioxide, fatigue, or overall physiologic stress before the monitor gives a dramatic number. Confusion, agitation, drowsiness, reduced speech, or poor cooperation should raise concern, especially when paired with increased work of breathing or decreasing air movement."
-        },
-        {
-            "type": "paragraph",
-            "text": "Now the note is more useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "It gives the student something to notice in a future scenario. It connects to assessment. It supports reassessment. It helps prevent the common mistake of waiting for one number to make the situation obvious."
-        },
-        {
-            "type": "paragraph",
-            "text": "The idea matured because the student kept using it."
-        },
-        {
-            "type": "heading",
-            "text": "When to revise a note"
-        },
-        {
-            "type": "paragraph",
-            "text": "Revision should follow learning."
-        },
-        {
-            "type": "paragraph",
-            "text": "Do not revise a note just because it looks messy."
-        },
-        {
-            "type": "paragraph",
-            "text": "Revise it when something meaningful has changed."
-        },
-        {
-            "type": "paragraph",
-            "text": "Good reasons to revise include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "a scenario contradicted your explanation",
-                "feedback showed that your note missed an important part",
-                "you keep misapplying the idea under pressure",
-                "the same confusion appears repeatedly",
-                "you can explain the idea more clearly than before",
-                "the note is too broad to reuse",
-                "the note needs to split into smaller notes",
-                "a link would help connect it to a related decision"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Those are good reasons because they show the note is interacting with your learning."
-        },
-        {
-            "type": "heading",
-            "text": "When not to revise a note"
-        },
-        {
-            "type": "paragraph",
-            "text": "Do not revise a note just because:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "it feels unfinished",
-                "it is not pretty",
-                "the wording could be smoother",
-                "your folder system feels messy",
-                "you are avoiding harder study",
-                "you are chasing the feeling of being organized",
-                "you found a new template online",
-                "you are uncomfortable with imperfection"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where students can lose a lot of time."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note system can become a safe place to look busy."
-        },
-        {
-            "type": "paragraph",
-            "text": "You can spend hours reorganizing, rewriting, renaming, tagging, and adjusting templates while very little understanding changes."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is not note maturation."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is maintenance pretending to be learning."
-        },
-        {
-            "type": "heading",
-            "text": "Linking as maturation"
-        },
-        {
-            "type": "paragraph",
-            "text": "As understanding deepens, linking becomes more important."
-        },
-        {
-            "type": "paragraph",
-            "text": "Not every note needs to be rewritten. Sometimes it needs to be connected."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note on early hypoxia might eventually link to:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Altered Mental Status as an Early Warning Sign",
-                "Oxygenation Versus Ventilation",
-                "Respiratory Fatigue",
-                "Work of Breathing",
-                "Reassessment After Intervention",
-                "Cognitive Narrowing Under Stress"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Those links matter because the ideas influence each other."
-        },
-        {
-            "type": "paragraph",
-            "text": "They help you see how the same concept behaves across different situations. They let you compare related ideas without merging them into one giant note. They also help you prepare for scenarios by following reasoning trails rather than rereading folders."
-        },
-        {
-            "type": "paragraph",
-            "text": "A mature note system is not necessarily bigger."
-        },
-        {
-            "type": "paragraph",
-            "text": "It is usually better connected."
-        },
-        {
-            "type": "heading",
-            "text": "Splitting and shrinking notes"
-        },
-        {
-            "type": "paragraph",
-            "text": "As ideas mature, some notes need to split."
-        },
-        {
-            "type": "paragraph",
-            "text": "A note called “Respiratory Distress” may eventually become too large. It might split into:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Work of Breathing",
-                "Air Trapping",
-                "Respiratory Fatigue",
-                "Oxygenation Versus Ventilation",
-                "Anxiety and Air Hunger",
-                "Reassessment After Bronchodilator Treatment"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That does not mean the original note was bad."
-        },
-        {
-            "type": "paragraph",
-            "text": "It means your understanding became more detailed."
-        },
-        {
-            "type": "paragraph",
-            "text": "Other notes may shrink."
-        },
-        {
-            "type": "paragraph",
-            "text": "A long working note may eventually become a few clear sentences because you understand the idea better. The note does not need to hold every detail anymore. It only needs to preserve the part that helps you think."
-        },
-        {
-            "type": "paragraph",
-            "text": "Mature notes often become shorter, not longer."
-        },
-        {
-            "type": "heading",
-            "text": "Avoiding perfectionism"
-        },
-        {
-            "type": "paragraph",
-            "text": "A mature note system does not require constant maintenance."
-        },
-        {
-            "type": "paragraph",
-            "text": "If you find yourself endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is starting to pull attention away from learning."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is a warning sign."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is not to build a perfect vault."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is to build a useful thinking system that can survive paramedic school."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some mess is allowed. Some incompleteness is allowed. Some rough notes can stay rough until they have a reason to change."
-        },
-        {
-            "type": "paragraph",
-            "text": "If a note helps you think better today, it is good enough for today."
-        },
-        {
-            "type": "paragraph",
-            "text": "Refinement should come from use, not from the need to make the system feel clean."
-        },
-        {
-            "type": "heading",
-            "text": "Preparing for retrieval"
-        },
-        {
-            "type": "paragraph",
-            "text": "Mature notes create better material for retrieval practice."
-        },
-        {
-            "type": "paragraph",
-            "text": "When notes emphasize decisions, contrasts, early signals, common errors, and mechanisms, they can become strong prompts later."
-        },
-        {
-            "type": "paragraph",
-            "text": "For example, a Smart Note might turn into retrieval questions like:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "What are early signs that respiratory fatigue is worsening?",
-                "Why can altered mental status matter before SpO₂ changes dramatically?",
-                "What makes early sepsis difficult to recognize in older adults?",
-                "What would make this treatment inappropriate?",
-                "What finding would make me change my mind?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That matters because retrieval should not just ask you to remember isolated facts."
-        },
-        {
-            "type": "paragraph",
-            "text": "It should help you bring back the kind of understanding you need during scenarios and OSCEs."
-        },
-        {
-            "type": "paragraph",
-            "text": "Anki, flashcards, or recall drills should strengthen access to understanding you have already started building."
-        },
-        {
-            "type": "paragraph",
-            "text": "They should not replace the work of understanding."
-        },
-        {
-            "type": "heading",
-            "text": "A small process for note maturity"
-        },
-        {
-            "type": "paragraph",
-            "text": "Once or twice a week, look at a few notes and ask:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Is this just a capture note?",
-                "Does it need to become a working note?",
-                "Is there one idea here worth turning into a Smart Note?",
-                "Has my understanding changed because of a scenario, feedback, or practice?",
-                "Should this note be linked, split, shortened, or left alone?"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "Then choose one action:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "delete it",
-                "leave it",
-                "process it",
-                "link it",
-                "split it",
-                "revise it"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "That is enough."
-        },
-        {
-            "type": "paragraph",
-            "text": "You do not need to overhaul your system."
-        },
-        {
-            "type": "paragraph",
-            "text": "You are just keeping it alive."
-        },
-        {
-            "type": "paragraph",
-            "text": "Your notes do not need to be finished before they can help you."
-        },
-        {
-            "type": "paragraph",
-            "text": "They need to be able to change as your understanding changes."
-        },
-        {
-            "type": "paragraph",
-            "text": "Capture notes preserve raw experience. Working notes let you wrestle with partial understanding. Smart Notes stabilize ideas that are ready to be reused. Over time, the system becomes smaller, clearer, and more connected because your thinking has matured."
-        },
-        {
-            "type": "paragraph",
-            "text": "Notes do not need to be finished to be useful. They need to be honest about where your understanding actually is."
-        },
-        {
-            "type": "paragraph",
-            "text": "This closes the Build Usable Notes cluster. From here, the guide turns toward recall: whether the ideas you have built can come back when the notes are closed and the scenario is moving."
-        },
-      
+      {
+        type: "paragraph",
+        text: "Not every note should be treated like a finished thought.",
+      },
+      {
+        type: "paragraph",
+        text: "That is where a lot of note systems break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete.",
+      },
+      {
+        type: "paragraph",
+        text: "After a while, the system starts to feel heavier than the learning.",
+      },
+      {
+        type: "paragraph",
+        text: "Most students assume a good note is a complete note because school has historically rewarded completeness: collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing, which means a note written in week two should be able to change when a scenario in week six shows you something the textbook did not.",
+      },
+      {
+        type: "paragraph",
+        text: "A note system has to allow for that.",
+      },
+      {
+        type: "heading",
+        text: "Notes should not feel finished too early",
+      },
+      {
+        type: "paragraph",
+        text: "A first version of an idea may be useful without being complete.",
+      },
+      {
+        type: "paragraph",
+        text: "It may not include the edge case yet, or the mistake you made in the scenario that finally made the concept matter, or the directive boundary that changed how you read the presentation, or the patient who did not match the clean textbook version and forced you to think more carefully.",
+      },
+      {
+        type: "paragraph",
+        text: "If notes feel finished too early, they freeze your first version of understanding. That version may not be wrong. It is often just too thin to survive contact with a real call.",
+      },
+      {
+        type: "paragraph",
+        text: "A useful note does not need to be correct forever. It needs to help you think now, while staying open to revision later.",
+      },
+      {
+        type: "heading",
+        text: "Three kinds of notes",
+      },
+      {
+        type: "paragraph",
+        text: "For this system, you only need three note types: capture notes, working notes, and Smart Notes.",
+      },
+      {
+        type: "paragraph",
+        text: "These are stages of development, not rigid categories. Some ideas move through all three. A quick reminder may stay as a capture note and get deleted. A messy explanation may stay as a working note for weeks. A high-value idea earns a Smart Note because it keeps showing up in scenarios, directives, feedback, or clinical decisions.",
+      },
+      {
+        type: "paragraph",
+        text: "The point is to notice what kind of work a note is doing at this stage of your learning.",
+      },
+      {
+        type: "heading",
+        text: "Capture notes",
+      },
+      {
+        type: "paragraph",
+        text: "Capture notes are fast, messy, and temporary.",
+      },
+      {
+        type: "paragraph",
+        text: "They exist to catch something before it disappears, not to explain it.",
+      },
+      {
+        type: "paragraph",
+        text: "That might be:",
+      },
+      {
+        type: "list",
+        items: [
+          "a question from lecture you did not have time to chase",
+          "a phrase an instructor used that felt important",
+          "a scenario moment where something was missed",
+          "a repeated feedback point",
+          "a patient cue that did not make sense yet",
+          "a directive decision that felt uncertain",
+          "a comparison you want to revisit",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Examples of what capture notes actually look like:",
+      },
+      {
+        type: "list",
+        items: [
+          "patient got quieter after treatment, not sure if better or worse",
+          "why does early cardiac tamponade look deceptively stable",
+          "reassessment keeps appearing in feedback, need to figure out why mine disappears",
+          "glucose was normal but patient still seemed off",
+          "pediatric patient looked less sick than the numbers suggested",
+          "family said \"he's not right\" before any vital sign changed",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These are traces of attention. Something happened and part of you noticed it might matter. The capture note holds it long enough to return to it.",
+      },
+      {
+        type: "heading",
+        text: "Working notes",
+      },
+      {
+        type: "paragraph",
+        text: "Working notes are where you wrestle with an idea.",
+      },
+      {
+        type: "paragraph",
+        text: "They are not raw capture anymore, but they are not stable Smart Notes yet. A working note lets you say \"I think this is what is happening, but I am not fully sure.\" That matters because paramedic students often want to jump too quickly from confusion to final answer. Working notes give partial understanding somewhere to live while it develops.",
+      },
+      {
+        type: "paragraph",
+        text: "A working note might include rough explanations, cause-and-effect chains, small comparison tables, questions still being sorted out, examples from lab or scenarios, and early attempts to explain a mechanism.",
+      },
+      {
+        type: "paragraph",
+        text: "For example, a working note on cardiac tamponade might include:",
+      },
+      {
+        type: "list",
+        items: [
+          "fluid around the heart limits filling",
+          "right side affected earlier than left",
+          "patient may look deceptively stable early",
+          "hypotension, muffled sounds, and JVD in classic presentation but rarely all three",
+          "Beck's triad often incomplete in real patients",
+          "need to connect this to why the presentation can look like shock without obvious cause",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That note is not polished. It is holding pieces together long enough to return to them, compare, and eventually understand the pattern clearly enough to make a Smart Note worth building.",
+      },
+      {
+        type: "heading",
+        text: "Smart Notes",
+      },
+      {
+        type: "paragraph",
+        text: "Smart Notes are more stable. They explain one idea clearly enough that future you can reuse it.",
+      },
+      {
+        type: "paragraph",
+        text: "A Smart Note usually includes a clear claim, an explanation in your own words, clinical signals, common confusion, and meaningful links.",
+      },
+      {
+        type: "paragraph",
+        text: "For example:",
+      },
+      {
+        type: "paragraph",
+        text: "Early cardiac tamponade may look deceptively stable",
+      },
+      {
+        type: "paragraph",
+        text: "Fluid accumulating around the heart compresses the chambers and limits filling, reducing stroke volume. The body compensates with tachycardia and vasoconstriction, which can maintain blood pressure for a while and make the patient look less sick than they are. Beck's triad of hypotension, muffled heart sounds, and JVD is the classic teaching picture, but all three are rarely present together in early tamponade. A patient after trauma or with a known malignancy who is unexplainably tachycardic, developing subtle JVD, and not responding to fluid the way you would expect should keep tamponade on the differential even if the pressure is still acceptable.",
+      },
+      {
+        type: "paragraph",
+        text: "Clinical signals:",
+      },
+      {
+        type: "list",
+        items: [
+          "tachycardia disproportionate to the presentation",
+          "JVD without obvious respiratory cause",
+          "muffled or distant heart sounds",
+          "blood pressure holding but with narrow pulse pressure",
+          "poor or absent response to fluid in a patient who should be responding",
+          "mechanism or history that fits",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Common confusion: Students often wait for all three components of Beck's triad. In real patients, early tamponade may show only tachycardia and subtle JVD while blood pressure is still compensated.",
+      },
+      {
+        type: "paragraph",
+        text: "Links:",
+      },
+      {
+        type: "list",
+        items: [
+          "Obstructive Shock",
+          "Compensation Before Collapse",
+          "JVD as a Clinical Signal",
+          "Narrow Pulse Pressure",
+          "Reassessment After Fluid",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That note is not a full trauma or cardiology review. It is one clinical distinction: the patient may look okay right up until they do not, and the window between compensated and decompensated can be short.",
+      },
+      {
+        type: "heading",
+        text: "Not every note should become a Smart Note",
+      },
+      {
+        type: "paragraph",
+        text: "If every captured idea becomes a Smart Note, the system becomes too heavy to use during a real semester.",
+      },
+      {
+        type: "paragraph",
+        text: "Some notes are useful only for a day. Some are reminders. Some are questions that get answered quickly and do not need to live anywhere. Some are rough thoughts that no longer matter once a better explanation appears.",
+      },
+      {
+        type: "paragraph",
+        text: "A healthy note system includes deletion, and it includes leaving some notes unfinished.",
+      },
+      {
+        type: "paragraph",
+        text: "Smart Notes should be reserved for ideas that keep mattering:",
+      },
+      {
+        type: "list",
+        items: [
+          "repeated scenario mistakes",
+          "high-risk clinical distinctions",
+          "mechanisms that explain multiple presentations",
+          "directive decisions that feel fragile",
+          "assessment cues that change interpretation",
+          "feedback that keeps returning in the same shape",
+          "comparisons that prevent confusion between similar presentations",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The better question is not \"can I make a note out of this\" but \"will this help me think later.\"",
+      },
+      {
+        type: "heading",
+        text: "How ideas mature",
+      },
+      {
+        type: "paragraph",
+        text: "An idea often begins as something vague. You hear it once and only partly understand it.",
+      },
+      {
+        type: "paragraph",
+        text: "Then it appears again. Maybe during lab you see a patient who does not match the clean textbook version. Maybe during a scenario you miss a cue. Maybe feedback shows you that your treatment was reasonable but your reassessment was weak. Maybe while studying, you realize two conditions look similar until you examine the mechanism.",
+      },
+      {
+        type: "paragraph",
+        text: "Each exposure changes the idea slightly.",
+      },
+      {
+        type: "paragraph",
+        text: "At first, your note may say:",
+      },
+      {
+        type: "paragraph",
+        text: "Sepsis can look vague.",
+      },
+      {
+        type: "paragraph",
+        text: "Later, it might become:",
+      },
+      {
+        type: "paragraph",
+        text: "Older adults may show sepsis through weakness, confusion, poor intake, and subtle vital sign changes before the presentation looks dramatic.",
+      },
+      {
+        type: "paragraph",
+        text: "Later still, after scenarios and feedback, the note might become:",
+      },
+      {
+        type: "paragraph",
+        text: "In older adults, early sepsis may present as vague decline rather than a clear infectious picture. Weakness, confusion, poor oral intake, fast breathing, soft blood pressure, warm skin, or family concern may matter more when they appear together. The risk is waiting for obvious fever or hypotension before treating the patient as potentially unstable.",
+      },
+      {
+        type: "paragraph",
+        text: "The topic stayed the same. What changed was the centre of the note: from label, to presentation, to risk and decision-making. That progression is idea maturation. The note got more useful not because more information was added, but because the student's understanding of what mattered in that information kept deepening.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Imagine a student creates an early note after learning about hypoxia.",
+      },
+      {
+        type: "paragraph",
+        text: "The first capture note says: hypoxia causes confusion.",
+      },
+      {
+        type: "paragraph",
+        text: "Fine as a starting point.",
+      },
+      {
+        type: "paragraph",
+        text: "After a respiratory scenario, the student notices something more specific. The patient became more confused and less cooperative before the oxygen saturation changed much. The instructor emphasized mental status and work of breathing during debrief.",
+      },
+      {
+        type: "paragraph",
+        text: "The working note becomes: mental status can change before oxygen numbers look dramatic. Need to watch confusion, agitation, fatigue, and ability to speak. Saturation is useful but does not tell the whole story.",
+      },
+      {
+        type: "paragraph",
+        text: "Later, after more practice, the Smart Note becomes:",
+      },
+      {
+        type: "paragraph",
+        text: "Altered mental status can be an early warning sign in respiratory failure",
+      },
+      {
+        type: "paragraph",
+        text: "When breathing is becoming ineffective, the brain may show signs of poor oxygen delivery, rising carbon dioxide, fatigue, or overall physiologic stress before the monitor gives a dramatic number. Confusion, agitation, drowsiness, reduced speech, or poor cooperation should raise concern, especially when paired with increased work of breathing or decreasing air movement.",
+      },
+      {
+        type: "paragraph",
+        text: "Now the note gives the student something to notice in a future scenario. It connects to assessment. It supports reassessment. It targets the specific mistake of waiting for one number to make the situation obvious.",
+      },
+      {
+        type: "paragraph",
+        text: "The idea matured because the student kept returning to it as understanding changed.",
+      },
+      {
+        type: "heading",
+        text: "When to revise a note",
+      },
+      {
+        type: "paragraph",
+        text: "Revision should follow learning, not the feeling that the note looks untidy.",
+      },
+      {
+        type: "paragraph",
+        text: "Good reasons to revise:",
+      },
+      {
+        type: "list",
+        items: [
+          "a scenario contradicted your explanation",
+          "feedback showed the note missed something important",
+          "you keep misapplying the idea under pressure",
+          "the same confusion appears repeatedly",
+          "you can explain the idea more clearly than before",
+          "the note has become too broad to reuse",
+          "a link would help connect it to a related decision",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Do not revise a note because it feels unfinished, the wording could be smoother, your folder system feels messy, you are avoiding harder study, or you are chasing the feeling of being organized.",
+      },
+      {
+        type: "paragraph",
+        text: "A note system can become a safe place to look busy. You can spend hours reorganizing, rewriting, renaming, and adjusting templates while very little understanding changes. That is maintenance pretending to be learning.",
+      },
+      {
+        type: "heading",
+        text: "Linking as maturation",
+      },
+      {
+        type: "paragraph",
+        text: "As understanding deepens, linking becomes more important than rewriting.",
+      },
+      {
+        type: "paragraph",
+        text: "Not every note needs to be revised. Sometimes it needs to be connected.",
+      },
+      {
+        type: "paragraph",
+        text: "When you link a note on early sepsis to vague presentations in older adults, to compensation before collapse, and to transport decisions under uncertainty, you are not just cross-referencing. You are building a schema: a connected structure that can be retrieved as a unit when a patient presents with pieces of the picture rather than the whole thing. That is why following links before a scenario does something different from rereading a topic. Rereading activates recognition. Following links activates the reasoning structure you built, which is what the scenario actually needs.",
+      },
+      {
+        type: "paragraph",
+        text: "A note on early hypoxia might eventually link to:",
+      },
+      {
+        type: "list",
+        items: [
+          "Altered Mental Status as an Early Warning Sign",
+          "Oxygenation Versus Ventilation",
+          "Respiratory Fatigue",
+          "Work of Breathing",
+          "Reassessment After Intervention",
+          "Cognitive Narrowing Under Stress",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Those links matter because the ideas influence the same decisions. They help you see how one concept behaves across different situations without collapsing them into a single giant note that becomes too broad to use.",
+      },
+      {
+        type: "paragraph",
+        text: "A mature note system is not necessarily bigger. It is usually better connected.",
+      },
+      {
+        type: "heading",
+        text: "Splitting and shrinking notes",
+      },
+      {
+        type: "paragraph",
+        text: "As ideas mature, some notes need to split.",
+      },
+      {
+        type: "paragraph",
+        text: "A note called \"Shock\" may eventually become too large and too general. It might split into:",
+      },
+      {
+        type: "list",
+        items: [
+          "Early Shock May Present Before Hypotension",
+          "Compensatory Tachycardia and What It Means",
+          "Distributive vs Obstructive Shock: The Surface Looks Similar",
+          "Fluid Response as a Diagnostic Tool",
+          "When to Treat for Shock Before the Diagnosis Is Clear",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That split does not mean the original note was bad. It means your understanding became more granular and each distinction earned its own space.",
+      },
+      {
+        type: "paragraph",
+        text: "Other notes shrink. A long working note may compress to a few clear sentences once the idea is stable, because the note no longer needs to hold every piece of the reasoning. It only needs to preserve the part that helps you think at the moment of use.",
+      },
+      {
+        type: "paragraph",
+        text: "Mature notes often become shorter and better connected, not longer and more comprehensive.",
+      },
+      {
+        type: "heading",
+        text: "Avoiding perfectionism",
+      },
+      {
+        type: "paragraph",
+        text: "A mature note system does not require constant maintenance.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is pulling attention away from learning. That is a warning sign.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal is not a perfect vault. The goal is a thinking system that can survive paramedic school.",
+      },
+      {
+        type: "paragraph",
+        text: "Some mess is allowed. Some notes can stay rough until they have a reason to change. If a note helps you think better today, it is good enough for today. Refinement should come from use, not from the need to make the system feel clean.",
+      },
+      {
+        type: "heading",
+        text: "Preparing for retrieval",
+      },
+      {
+        type: "paragraph",
+        text: "Mature notes create stronger retrieval prompts.",
+      },
+      {
+        type: "paragraph",
+        text: "When a note is built around a decision, a contrast, an early warning sign, or a common error rather than a definition, it naturally generates questions worth practicing:",
+      },
+      {
+        type: "list",
+        items: [
+          "What are early signs that cardiac tamponade is developing despite acceptable blood pressure?",
+          "Why can mental status change before oxygen saturation looks dramatic?",
+          "What makes early sepsis difficult to recognize in older adults, and what finding would push you to treat it seriously?",
+          "What finding would make you reconsider this treatment?",
+          "What would tell you that your working explanation is no longer holding?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These questions do not ask for isolated facts. They ask for the kind of reasoning that scenarios and OSCEs actually test. Retrieval practice built from mature notes strengthens access to understanding you have already built, rather than substituting for the work of building it.",
+      },
+      {
+        type: "heading",
+        text: "A small process for note maturity",
+      },
+      {
+        type: "paragraph",
+        text: "Once or twice a week, look at a few notes and ask:",
+      },
+      {
+        type: "list",
+        items: [
+          "Is this just a capture note that needs processing, or can it be deleted?",
+          "Has my understanding changed because of a scenario, feedback, or practice?",
+          "Does this note need to be linked, split, shortened, or revised?",
+          "Is there one idea here worth turning into a Smart Note?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Then choose one action: delete it, leave it, process it, link it, split it, or revise it.",
+      },
+      {
+        type: "paragraph",
+        text: "That is enough. You are not overhauling the system. You are keeping it alive and honest about where your understanding actually is.",
+      },
     ],
     glossaryTerms: [
         "capture-notes",
@@ -5104,356 +3693,225 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Explain why recognizing material is not enough, and how spaced retrieval helps knowledge become easier to reach when training pressure rises.",
     pageType: "conceptual",
     body: [
-        
-        {
-            "type": "paragraph",
-            "text": "A lot of students meet this problem in a frustrating way."
-        },
-        {
-            "type": "paragraph",
-            "text": "They review a topic and it feels clear. Respiratory distress makes sense while the notes are open. Cardiac chest pain seems organized while the lecture slides are in front of them. Stroke assessment feels manageable when the checklist is visible. The information is familiar, and that familiarity can feel like readiness."
-        },
-        {
-            "type": "paragraph",
-            "text": "Then a scenario starts."
-        },
-        {
-            "type": "paragraph",
-            "text": "The patient is talking. Their partner is asking questions. The monitor is producing numbers that need to be interpreted. The instructor is watching quietly. The student knows they have seen this material before, but the knowledge does not arrive in a clean, usable form."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where the problem changes from understanding the material to being able to reach it."
-        },
-        {
-            "type": "paragraph",
-            "text": "Earlier in the guide, we looked at why familiar study can feel productive without preparing students for pressure. Here, the focus becomes more practical: how do you train knowledge so it can be reached when the page is closed and the situation keeps moving?"
-        },
-        {
-            "type": "heading",
-            "text": "The problem with smooth review"
-        },
-        {
-            "type": "paragraph",
-            "text": "Review has a place. It helps you re-enter material, check wording, revisit explanations, and notice what you have forgotten. The problem comes when review becomes the only way students judge whether they know something."
-        },
-        {
-            "type": "paragraph",
-            "text": "Review gives you cues: the heading, the diagram, the slide order, and the sentence before and after the key idea. All of that support helps hold the idea in place."
-        },
-        {
-            "type": "paragraph",
-            "text": "Scenarios remove much of that support. They also add competing demands: assessment, communication, equipment, time awareness, uncertainty, and decisions that need to be explained. A student may recognize a concept during review but still struggle to retrieve and use it during performance."
-        },
-        {
-            "type": "paragraph",
-            "text": "The studying may have helped, but it did not yet train access strongly enough."
-        },
-        {
-            "type": "heading",
-            "text": "What retrieval trains"
-        },
-        {
-            "type": "paragraph",
-            "text": "Retrieval means trying to bring information back before looking at the answer."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is different from rereading. When you retrieve, you ask your memory to rebuild the idea. That process is less comfortable than review because it exposes gaps quickly. You may realize that you can name a condition but cannot explain what is happening physiologically. You may remember a medication but forget what would make you withhold it. You may know a directive threshold but struggle to explain the risk the directive is managing."
-        },
-        {
-            "type": "paragraph",
-            "text": "Those gaps are not a reason to avoid retrieval."
-        },
-        {
-            "type": "paragraph",
-            "text": "They are the reason to use it."
-        },
-        {
-            "type": "paragraph",
-            "text": "A gap found during study is useful. A gap found during a scenario is still useful, but it is more expensive. There is more pressure, more emotion, and less time to repair the connection in the moment."
-        },
-        {
-            "type": "paragraph",
-            "text": "Retrieval lets students find weak access while the stakes are still low."
-        },
-        {
-            "type": "heading",
-            "text": "Why spacing matters"
-        },
-        {
-            "type": "paragraph",
-            "text": "Spacing means returning to learning after some time has passed."
-        },
-        {
-            "type": "paragraph",
-            "text": "This matters because knowledge can feel stable immediately after studying even when it is still fragile. If you review a concept several times in one sitting, the material stays warm. You may remember it partly because the cues are still nearby."
-        },
-        {
-            "type": "paragraph",
-            "text": "Paramedic training does not usually ask for knowledge under those conditions."
-        },
-        {
-            "type": "paragraph",
-            "text": "You may learn something in lecture, use it in lab several days later, see it again during a scenario, and then need it during an OSCE when you are tired, watched, and managing several things at once. The delay is part of the test. So is the pressure."
-        },
-        {
-            "type": "paragraph",
-            "text": "Spacing gives learning a safer version of that delay."
-        },
-        {
-            "type": "paragraph",
-            "text": "When you return to an idea after time has passed, you have to find it again. That effort is useful. It strengthens the path back to the knowledge and makes future access more reliable."
-        },
-        {
-            "type": "paragraph",
-            "text": "The goal is not to make recall feel effortless during study. The goal is to make it more available later."
-        },
-        {
-            "type": "heading",
-            "text": "A paramedic example"
-        },
-        {
-            "type": "paragraph",
-            "text": "Imagine a student preparing for a respiratory scenario day."
-        },
-        {
-            "type": "paragraph",
-            "text": "They review asthma, COPD, pneumonia, and heart failure the night before lab. The notes are organized. The differences seem clear enough. Asthma involves bronchoconstriction. COPD involves chronic airflow limitation. Pneumonia can impair gas exchange. Heart failure can produce fluid in the lungs."
-        },
-        {
-            "type": "paragraph",
-            "text": "During review, the categories feel manageable."
-        },
-        {
-            "type": "paragraph",
-            "text": "In the scenario, the patient is short of breath, anxious, pale, and speaking in short phrases. Lung sounds are abnormal. Oxygen saturation matters, but it does not explain everything. The student remembers fragments from several conditions at once and starts treating the call as generic respiratory distress. They are doing things, but they are not clearly tracking what pattern they are seeing or what would change their concern."
-        },
-        {
-            "type": "paragraph",
-            "text": "The issue is not that they failed to study."
-        },
-        {
-            "type": "paragraph",
-            "text": "Much of their study happened with the answer nearby."
-        },
-        {
-            "type": "paragraph",
-            "text": "A different approach would look less smooth during preparation, but it would build stronger access. Several days before lab, the student closes their notes and tries to explain the difference between obstructive breathing, impaired gas exchange, and fluid in the lungs. They check what was missing. The next day, they try a different prompt: “What findings would make this shortness of breath more concerning?” Later, they ask, “What should I reassess after oxygen, positioning, or bronchodilator treatment?”"
-        },
-        {
-            "type": "paragraph",
-            "text": "By scenario day, they still need to think. The call still has uncertainty. But the important distinctions are easier to reach because the student has practiced finding them without the notes open."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is the practical value of retrieval."
-        },
-        {
-            "type": "heading",
-            "text": "Retrieval works better when meaning is already forming"
-        },
-        {
-            "type": "paragraph",
-            "text": "This is why the previous clusters matter."
-        },
-        {
-            "type": "paragraph",
-            "text": "If you retrieve only isolated facts, studying can turn into a trivia exercise. Some facts do need to be known, including doses, contraindications, timelines, and assessment details. But paramedic performance usually depends on how those facts are connected."
-        },
-        {
-            "type": "paragraph",
-            "text": "Smart Notes give retrieval better material."
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note about asthma and air trapping can become:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Explain why quieter lung sounds may be concerning in severe asthma."
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note about chest pain and risk can become:"
-        },
-        {
-            "type": "paragraph",
-            "text": "Why might care begin before diagnostic certainty?"
-        },
-        {
-            "type": "paragraph",
-            "text": "A Smart Note about directives can become:"
-        },
-        {
-            "type": "paragraph",
-            "text": "What is this directive protecting against, and what would make me withhold or stop treatment?"
-        },
-        {
-            "type": "paragraph",
-            "text": "These prompts ask for relationships. They bring back mechanisms, risks, and decision points. That kind of retrieval is closer to what students need during assessment and reassessment."
-        },
-        {
-            "type": "heading",
-            "text": "What to retrieve"
-        },
-        {
-            "type": "paragraph",
-            "text": "Not everything deserves the same retrieval effort."
-        },
-        {
-            "type": "paragraph",
-            "text": "Some information can be reviewed, checked, or looked up when needed. Other knowledge needs to be reachable because it shapes early decisions."
-        },
-        {
-            "type": "paragraph",
-            "text": "Good retrieval targets include:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "high-risk presentations",
-                "common conditions with overlapping findings",
-                "directive boundaries and contraindications",
-                "mechanisms that explain several findings at once",
-                "reassessment priorities after treatment",
-                "differences between similar presentations",
-                "repeated mistakes from scenarios or labs"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "For example, retrieving the exact wording of a long explanation may not be the best use of effort. Retrieving why a contraindication matters, what clinical risk is being managed, or what finding should change the plan is much more useful."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where retrieval starts to connect with judgment."
-        },
-        {
-            "type": "heading",
-            "text": "A simple way to begin"
-        },
-        {
-            "type": "paragraph",
-            "text": "Do not start with a complicated calendar."
-        },
-        {
-            "type": "paragraph",
-            "text": "Start with one important idea."
-        },
-        {
-            "type": "paragraph",
-            "text": "Choose a concept from lecture, lab, a scenario, or a Smart Note. Close the source. Try to explain the idea in your own words. Then check what was accurate, what was missing, and what needs another attempt later."
-        },
-        {
-            "type": "paragraph",
-            "text": "A simple rhythm looks like this:"
-        },
-        {
-            "type": "list",
-            "items": [
-                "Pick one concept that matters clinically.",
-                "Close your notes.",
-                "Explain the idea from memory.",
-                "Check against your notes or source material.",
-                "Mark one gap.",
-                "Return to the same idea after time has passed.",
-                "Use a slightly different prompt next time."
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "The changed prompt matters."
-        },
-        {
-            "type": "paragraph",
-            "text": "If you ask the exact same question every time, you may start memorizing the answer pattern. Real patients do not present the same cue in the same wording each time. Variation helps retrieval become more flexible."
-        },
-        {
-            "type": "paragraph",
-            "text": "You might retrieve a concept once by explaining it, once by comparing it to another condition, and once by asking what would change your plan. The content is related, but the route back to it is different."
-        },
-        {
-            "type": "paragraph",
-            "text": "That is useful practice."
-        },
-        {
-            "type": "heading",
-            "text": "What retrieval should feel like"
-        },
-        {
-            "type": "paragraph",
-            "text": "Retrieval often feels worse than review at first, especially when students are used to judging learning by how smooth review feels."
-        },
-        {
-            "type": "paragraph",
-            "text": "Review reassures you because the material is visible. Retrieval asks you to work before you feel fully ready. It can make knowledge feel less stable at the start because it shows you the parts that are not yet reachable."
-        },
-        {
-            "type": "paragraph",
-            "text": "This is where students need to be careful with interpretation."
-        },
-        {
-            "type": "paragraph",
-            "text": "An incomplete retrieval attempt does not mean the method failed. It means the method found something. That finding gives you a place to work. You check the source, repair the explanation, and return later."
-        },
-        {
-            "type": "paragraph",
-            "text": "Over time, retrieval tends to become less dramatic. The knowledge does not always feel perfectly fluent, but it becomes easier to locate and use. That is the direction you are looking for: not a rush of confidence during review, but better access when the situation asks for it."
-        },
-        {
-            "type": "heading",
-            "text": "Keeping spacing realistic"
-        },
-        {
-            "type": "paragraph",
-            "text": "Spacing does not need to become a perfect schedule."
-        },
-        {
-            "type": "paragraph",
-            "text": "For most students, a realistic pattern is enough. Return to important ideas after a short delay, then after a longer one. That might mean later the same day, a few days later, and again before a lab, scenario, or test."
-        },
-        {
-            "type": "paragraph",
-            "text": "The exact timing matters less than the habit of not keeping all retrieval inside one study block."
-        },
-        {
-            "type": "paragraph",
-            "text": "Let time pass."
-        },
-        {
-            "type": "paragraph",
-            "text": "Come back."
-        },
-        {
-            "type": "paragraph",
-            "text": "Try before looking."
-        },
-        {
-            "type": "paragraph",
-            "text": "This works especially well with Smart Notes because the notes are already built around meaning. You can open one note, read it briefly, close it, explain the idea, check yourself, then move on. A few minutes repeated across a week can do more for access than a long review session that never asks memory to work."
-        },
-        {
-            "type": "paragraph",
-            "text": "For this stage, small and repeatable is enough."
-        },
-        {
-            "type": "heading",
-            "text": "What this sets up next"
-        },
-        {
-            "type": "paragraph",
-            "text": "Retrieval and spacing help knowledge become more available."
-        },
-        {
-            "type": "paragraph",
-            "text": "The next question is what kind of knowledge should be practiced this way. In paramedicine, you are not just trying to remember facts. You are trying to recall information in a form that supports assessment, prioritization, directive use, reassessment, and communication."
-        },
-        {
-            "type": "paragraph",
-            "text": "That distinction is important enough for its own section."
-        },
-      
+      {
+        type: "paragraph",
+        text: "A lot of students meet this problem in a frustrating way.",
+      },
+      {
+        type: "paragraph",
+        text: "They review a topic and it feels clear. A cardiac call seems organized while the lecture slides are in front of them. A stroke assessment feels manageable when the checklist is visible. The information is familiar, and that familiarity can feel like readiness.",
+      },
+      {
+        type: "paragraph",
+        text: "Then a scenario starts.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient is talking. Their partner is asking questions. The monitor is producing numbers that need to be interpreted. The instructor is watching quietly. The student knows they have seen this material before, but the knowledge does not arrive in a clean, usable form.",
+      },
+      {
+        type: "paragraph",
+        text: "This is where the problem changes from understanding the material to being able to reach it when nothing is prompting you.",
+      },
+      {
+        type: "heading",
+        text: "The problem with smooth review",
+      },
+      {
+        type: "paragraph",
+        text: "Review has a place. It helps you re-enter material, check wording, revisit explanations, and notice what you have forgotten. The problem comes when review becomes the only way students judge whether they know something.",
+      },
+      {
+        type: "paragraph",
+        text: "Review gives you cues: the heading, the diagram, the slide order, the sentence before and after the key idea. That support holds the knowledge in place while you are looking at it.",
+      },
+      {
+        type: "paragraph",
+        text: "Scenarios remove most of that support and add competing demands simultaneously: assessment, communication, equipment, time pressure, uncertainty, and decisions that need to be explained. A student may recognize a concept clearly during review and still struggle to retrieve it during a call, not because they did not study, but because they practiced recognizing knowledge that was already visible rather than finding it when it was not.",
+      },
+      {
+        type: "heading",
+        text: "What retrieval trains",
+      },
+      {
+        type: "paragraph",
+        text: "Retrieval means trying to bring information back before looking at the answer.",
+      },
+      {
+        type: "paragraph",
+        text: "This is harder than rereading, and that difficulty is the point.",
+      },
+      {
+        type: "paragraph",
+        text: "When you retrieve, you ask your memory to rebuild the idea without the cues that were present during studying. That process exposes gaps quickly: you may be able to name a condition but not explain what is happening physiologically. You may remember a medication but not what would make you withhold it. You may know a directive threshold but not the risk the threshold is managing.",
+      },
+      {
+        type: "paragraph",
+        text: "Here is the part that matters most practically: the act of trying to retrieve something, even when the attempt is incomplete and you have to check afterward, strengthens the path back to that knowledge more than rereading it again would. Getting it wrong and correcting it does more for future access than reading it correctly the first time. That is uncomfortable to experience, because it makes knowledge feel less stable in the short term, but it is what makes knowledge more available later when the notes are closed and the patient is waiting.",
+      },
+      {
+        type: "paragraph",
+        text: "A gap found at the desk, where you can check the notes and repair the explanation, is far less expensive than a gap found in a scenario room where the patient is changing and there is no time to start from the beginning.",
+      },
+      {
+        type: "heading",
+        text: "Why spacing matters",
+      },
+      {
+        type: "paragraph",
+        text: "Spacing means returning to learning after time has passed, and it works for a specific reason that matters in paramedic training.",
+      },
+      {
+        type: "paragraph",
+        text: "Knowledge acquired in one context, a calm study session at a desk the night before lab, does not automatically transfer to a different context, a busy scenario with an instructor watching and a patient who is deteriorating in a direction that the notes did not cover. The study session and the scenario feel different physically, emotionally, and cognitively. Knowledge that was accessed in the calm context may not be easily reached in the pressured one unless it has been practiced across varied conditions.",
+      },
+      {
+        type: "paragraph",
+        text: "You may learn about early shock in lecture, encounter a patient with compensated hypovolemia during lab a week later, miss a transport decision in your first trauma scenario, and then need to recognize the pattern clearly in an OSCE at the end of the semester when you are tired and being evaluated. The delay and the changing conditions are part of what you are preparing for.",
+      },
+      {
+        type: "paragraph",
+        text: "Spacing gives learning a safer version of that variation. When you return to an idea after a gap, you have to find it again rather than follow it while it is still warm. That search strengthens the path back. The knowledge becomes more reliably accessible not because you spent more time with it, but because you have retrieved it enough times, across enough conditions, that it stops being fragile.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Imagine a student preparing for a trauma scenario day.",
+      },
+      {
+        type: "paragraph",
+        text: "They review hemorrhagic shock, spinal injury, and tension pneumothorax the night before. The notes are organized. The differences seem clear enough. Hemorrhagic shock involves volume loss and compensation. Tension pneumothorax involves pressure buildup and mediastinal shift. Spinal injury involves neurogenic disruption of vascular tone.",
+      },
+      {
+        type: "paragraph",
+        text: "During review, the categories feel manageable.",
+      },
+      {
+        type: "paragraph",
+        text: "In the scenario, a patient has been involved in a significant motor vehicle collision. They are awake, talking, and initially not alarming. Vital signs are borderline: pressure acceptable, pulse elevated, skin slightly cool. The patient says they feel okay. The student begins a thorough history and secondary assessment.",
+      },
+      {
+        type: "paragraph",
+        text: "Over the next few minutes, the patient gets faster, softer, and quieter.",
+      },
+      {
+        type: "paragraph",
+        text: "The student remembers pieces from several conditions. They continue the assessment. But they are not clearly tracking which pattern they are seeing, what the trajectory means, or what would need to change in the plan before the blood pressure crosses a threshold.",
+      },
+      {
+        type: "paragraph",
+        text: "Much of their preparation happened with the answer nearby and the categories already separated.",
+      },
+      {
+        type: "paragraph",
+        text: "A different approach would feel less smooth during studying but would build stronger access. Several days before lab, the student closes the notes and tries to explain: what does early compensated hemorrhagic shock actually look like in a patient who is still talking and whose pressure has not yet dropped? What finding would push you toward treating for shock before the vital signs become dramatic? What does the response to a fluid challenge tell you about the underlying problem?",
+      },
+      {
+        type: "paragraph",
+        text: "The next day, a different prompt: what would make you concerned about tension pneumothorax in a trauma patient who initially looked stable? What would you expect to find that would push it up the differential?",
+      },
+      {
+        type: "paragraph",
+        text: "By scenario day, the call still has uncertainty. But the important distinctions are more accessible because the student has practiced finding them without the notes open, through different routes and on different days.",
+      },
+      {
+        type: "heading",
+        text: "Retrieval works better when meaning is already forming",
+      },
+      {
+        type: "paragraph",
+        text: "Retrieval built on isolated facts tends to produce a trivia exercise. Some facts do need to be known: doses, contraindications, timelines, and assessment details. But paramedic performance usually depends on how those facts are connected, and retrieval should practice the connections.",
+      },
+      {
+        type: "paragraph",
+        text: "Smart Notes give retrieval better material because they are already built around meaning rather than definitions.",
+      },
+      {
+        type: "paragraph",
+        text: "A note on early hemorrhagic shock can become: explain why tachycardia in a trauma patient with acceptable blood pressure should still raise concern.",
+      },
+      {
+        type: "paragraph",
+        text: "A note on tension pneumothorax can become: what finding would make you suspect tension pneumothorax in a patient who initially looked stable after blunt chest trauma?",
+      },
+      {
+        type: "paragraph",
+        text: "A note on directive intent can become: what is this directive protecting against, and what finding would make you withhold or stop treatment?",
+      },
+      {
+        type: "paragraph",
+        text: "These prompts ask for relationships, mechanisms, risks, and decision points. That kind of retrieval is closer to what assessment and reassessment actually demand than a question that asks for a list.",
+      },
+      {
+        type: "heading",
+        text: "What to retrieve",
+      },
+      {
+        type: "paragraph",
+        text: "Not everything deserves the same retrieval effort.",
+      },
+      {
+        type: "paragraph",
+        text: "Some information can be reviewed, checked, or looked up when needed. Other knowledge needs to be immediately accessible because it shapes early decisions under pressure.",
+      },
+      {
+        type: "paragraph",
+        text: "Good retrieval targets:",
+      },
+      {
+        type: "list",
+        items: [
+          "high-risk presentations that can look deceptively stable early",
+          "conditions with overlapping findings that require discrimination",
+          "directive boundaries and the physiological reasoning behind them",
+          "mechanisms that explain several findings simultaneously",
+          "reassessment priorities after a specific intervention",
+          "repeated mistakes from scenarios or labs that share an underlying pattern",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Retrieving the exact wording of a long explanation is rarely the best use of effort. Retrieving why a contraindication matters, what clinical risk is being managed, or what finding should change the plan is much closer to what scenarios test.",
+      },
+      {
+        type: "heading",
+        text: "A simple way to begin",
+      },
+      {
+        type: "paragraph",
+        text: "Start with one concept that matters clinically.",
+      },
+      {
+        type: "paragraph",
+        text: "Close the source. Try to explain the idea from memory. Then check what was accurate, what was missing, and what needs another attempt later. Return to the same idea after time has passed, using a different prompt.",
+      },
+      {
+        type: "paragraph",
+        text: "That variation matters. If you ask the exact same question every time, you may start memorizing the answer pattern rather than the understanding. Real patients do not present the same cue in the same wording. You might retrieve a concept once by explaining the mechanism, once by comparing it to a similar presentation, and once by asking what finding would change your plan. The content is the same. The route back to it is different. That variation builds flexible access rather than a rehearsed response.",
+      },
+      {
+        type: "paragraph",
+        text: "A realistic rhythm looks like this: return to important ideas after a short delay, then after a longer one. A few days after lecture, before lab, and again before a scenario or assessment. The exact timing matters less than the habit of not keeping all retrieval inside a single study block where the material is still warm.",
+      },
+      {
+        type: "heading",
+        text: "What retrieval should feel like",
+      },
+      {
+        type: "paragraph",
+        text: "Retrieval often feels worse than review, especially when students are used to judging learning by how smooth and confident studying feels.",
+      },
+      {
+        type: "paragraph",
+        text: "Review reassures because the material is visible. Retrieval asks you to work before you feel fully ready, and it shows you what is not yet accessible rather than confirming what already feels solid. That discomfort is information. An incomplete retrieval attempt does not mean the method failed. It means the method found something worth repairing before the scenario finds it for you.",
+      },
+      {
+        type: "paragraph",
+        text: "Over time, retrieval becomes less dramatic. The knowledge does not always feel perfectly fluent, but it becomes easier to locate when the situation asks for it. That is the direction you are looking for: not a sense of confidence during review, but reliable access when the notes are closed, the room is busy, and nothing is prompting you.",
+      },
     ],
     glossaryTerms: [
         "retrieval-practice",
