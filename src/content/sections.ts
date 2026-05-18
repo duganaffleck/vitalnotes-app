@@ -2162,7 +2162,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A Smart Note might take the concept of quiet lung sounds in severe asthma and explain why reduced air movement can look like improvement when it is actually the opposite. It might connect a patient sign to a mechanism: that tachycardia in early shock is compensation, not a separate problem. It might capture the scenario moment where you gave the bronchodilator and forgot to check whether breathing effort had actually changed. It might explain why the blood pressure threshold in the nitroglycerin directive exists, rather than just noting that the threshold is there.",
+        text: "A Smart Note might take the concept of quiet lung sounds in severe asthma and explain why reduced air movement can look like improvement when it is actually the opposite. It might connect a patient sign to a mechanism: that tachycardia in early shock is compensation, not a separate problem. It might capture the scenario moment where you gave the bronchodilator and forgot to check whether breathing effort had actually changed. It might explain why epinephrine is the first intervention in anaphylaxis rather than antihistamines, and what the difference in mechanism means for how quickly you need to act.",
       },
       {
         type: "paragraph",
@@ -2983,96 +2983,96 @@ const sectionSeeds: SectionSeed[] = [
     pageType: "practical-system",
     body: [
         {
-            "type": "paragraph",
-            "text": "Obsidian can be useful for paramedic learning, but only if it stays simple enough to use during a real semester."
+            type: "paragraph",
+            text: "Obsidian can be useful for paramedic learning, but only if it stays simple enough to use during a real semester."
         },
         {
-            "type": "paragraph",
-            "text": "That part matters."
+            type: "paragraph",
+            text: "That part matters."
         },
         {
-            "type": "paragraph",
-            "text": "A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet."
+            type: "paragraph",
+            text: "A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet."
         },
         {
-            "type": "paragraph",
-            "text": "Eventually, the system asks for more attention than the learning."
+            type: "paragraph",
+            text: "Eventually, the system asks for more attention than the learning."
         },
         {
-            "type": "paragraph",
-            "text": "That is not what we want here."
+            type: "paragraph",
+            text: "That is not what we want here."
         },
         {
-            "type": "paragraph",
-            "text": "For VitalNotes, Obsidian is not meant to become another project. It is a place where your thinking can live, connect, and change over time. It should help you return to important ideas without asking you to rebuild your understanding every time you sit down to study."
+            type: "paragraph",
+            text: "For VitalNotes, Obsidian is not meant to become another project. It is a place where your thinking can live, connect, and change over time. It should help you return to important ideas without asking you to rebuild your understanding every time you sit down to study."
         },
         {
-            "type": "paragraph",
-            "text": "The goal is not to become good at Obsidian."
+            type: "paragraph",
+            text: "The goal is not to become good at Obsidian."
         },
         {
-            "type": "paragraph",
-            "text": "The goal is to make your learning easier to return to."
+            type: "paragraph",
+            text: "The goal is to make your learning easier to return to."
         },
         {
-            "type": "heading",
-            "text": "What Obsidian is"
+            type: "heading",
+            text: "What Obsidian is"
         },
         {
-            "type": "paragraph",
-            "text": "Obsidian is a note-taking app that stores your notes as plain text files on your computer."
+            type: "paragraph",
+            text: "Obsidian is a note-taking app that stores your notes as plain text files on your computer."
         },
         {
-            "type": "paragraph",
-            "text": "A group of notes in Obsidian is called a vault. A vault is just a folder. Inside that folder, each note is a simple text file written in Markdown."
+            type: "paragraph",
+            text: "A group of notes in Obsidian is called a vault. A vault is just a folder. Inside that folder, each note is a simple text file written in Markdown."
         },
         {
-            "type": "paragraph",
-            "text": "You do not need to understand Markdown deeply to use it. For this guide, it is enough to know that you can write normal text, make headings, create lists, and connect notes with double brackets."
+            type: "paragraph",
+            text: "You do not need to understand Markdown deeply to use it. For this guide, it is enough to know that you can write normal text, make headings, create lists, and connect notes with double brackets."
         },
         {
-            "type": "paragraph",
-            "text": "A link might look like this:"
+            type: "paragraph",
+            text: "A link might look like this:"
         },
         {
-            "type": "paragraph",
-            "text": "Respiratory Fatigue"
+            type: "paragraph",
+            text: "Respiratory Fatigue"
         },
         {
-            "type": "paragraph",
-            "text": "That link can connect one note to another."
+            type: "paragraph",
+            text: "That link can connect one note to another."
         },
         {
-            "type": "paragraph",
-            "text": "This is the main reason Obsidian works well for Smart Notes. It lets you connect ideas without forcing everything into a rigid folder system."
+            type: "paragraph",
+            text: "This is the main reason Obsidian works well for Smart Notes. It lets you connect ideas without forcing everything into a rigid folder system."
         },
         {
-            "type": "paragraph",
-            "text": "That is useful in paramedic learning because ideas rarely stay in one place. Respiratory fatigue connects to work of breathing. Work of breathing connects to reassessment. Reassessment connects to treatment decisions. Treatment decisions connect to directives. Directives connect back to risk, physiology, and patient presentation."
+            type: "paragraph",
+            text: "That is useful in paramedic learning because ideas rarely stay in one place. Respiratory fatigue connects to work of breathing. Work of breathing connects to reassessment. Reassessment connects to treatment decisions. Treatment decisions connect to directives. Directives connect back to risk, physiology, and patient presentation."
         },
         {
-            "type": "paragraph",
-            "text": "Obsidian gives those relationships somewhere to live."
+            type: "paragraph",
+            text: "Obsidian gives those relationships somewhere to live."
         },
         {
-            "type": "heading",
-            "text": "What Obsidian is not"
+            type: "heading",
+            text: "What Obsidian is not"
         },
         {
-            "type": "paragraph",
-            "text": "Obsidian can do a lot."
+            type: "paragraph",
+            text: "Obsidian can do a lot."
         },
         {
-            "type": "paragraph",
-            "text": "That is useful, but it can also become a trap."
+            type: "paragraph",
+            text: "That is useful, but it can also become a trap."
         },
         {
-            "type": "paragraph",
-            "text": "For this guide, Obsidian is not:"
+            type: "paragraph",
+            text: "For this guide, Obsidian is not:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "a task manager",
                 "a productivity dashboard",
                 "a place to store everything",
@@ -3084,72 +3084,72 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "If Obsidian becomes all of those things, it will probably become too heavy."
+            type: "paragraph",
+            text: "If Obsidian becomes all of those things, it will probably become too heavy."
         },
         {
-            "type": "paragraph",
-            "text": "You need a place to capture ideas, develop notes, connect related thinking, and return to those notes before scenarios, labs, OSCEs, and studying."
+            type: "paragraph",
+            text: "You need a place to capture ideas, develop notes, connect related thinking, and return to those notes before scenarios, labs, OSCEs, and studying."
         },
         {
-            "type": "paragraph",
-            "text": "That is enough for now."
+            type: "paragraph",
+            text: "That is enough for now."
         },
         {
-            "type": "heading",
-            "text": "The basic vault structure"
+            type: "heading",
+            text: "The basic vault structure"
         },
         {
-            "type": "paragraph",
-            "text": "Start with three spaces:"
+            type: "paragraph",
+            text: "Start with three spaces:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "Inbox",
                 "Notes",
                 "Reference"
             ]
         },
         {
-            "type": "paragraph",
-            "text": "That is enough at the beginning."
+            type: "paragraph",
+            text: "That is enough at the beginning."
         },
         {
-            "type": "paragraph",
-            "text": "Do not start by creating a folder for every course, body system, directive, medication, week, lab, and exam. That may feel organized, but it often creates more places for ideas to disappear."
+            type: "paragraph",
+            text: "Do not start by creating a folder for every course, body system, directive, medication, week, lab, and exam. That may feel organized, but it often creates more places for ideas to disappear."
         },
         {
-            "type": "paragraph",
-            "text": "Start smaller."
+            type: "paragraph",
+            text: "Start smaller."
         },
         {
-            "type": "paragraph",
-            "text": "Let the structure grow from actual use."
+            type: "paragraph",
+            text: "Let the structure grow from actual use."
         },
         {
-            "type": "heading",
-            "text": "Inbox"
+            type: "heading",
+            text: "Inbox"
         },
         {
-            "type": "paragraph",
-            "text": "The Inbox is for capture."
+            type: "paragraph",
+            text: "The Inbox is for capture."
         },
         {
-            "type": "paragraph",
-            "text": "This is where messy things go before you know what they are."
+            type: "paragraph",
+            text: "This is where messy things go before you know what they are."
         },
         {
-            "type": "paragraph",
-            "text": "Use it during lectures, labs, readings, debriefs, and scenario days. Capture quickly. Do not polish. Do not format. Do not worry too much about titles."
+            type: "paragraph",
+            text: "Use it during lectures, labs, readings, debriefs, and scenario days. Capture quickly. Do not polish. Do not format. Do not worry too much about titles."
         },
         {
-            "type": "paragraph",
-            "text": "Inbox notes might look like this:"
+            type: "paragraph",
+            text: "Inbox notes might look like this:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "patient got quieter after treatment, not sure if better",
                 "instructor emphasized reassessment again",
                 "why does shock feel subtle early",
@@ -3160,68 +3160,68 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "These are not finished thoughts."
+            type: "paragraph",
+            text: "These are not finished thoughts."
         },
         {
-            "type": "paragraph",
-            "text": "They are moments worth returning to."
+            type: "paragraph",
+            text: "They are moments worth returning to."
         },
         {
-            "type": "paragraph",
-            "text": "Nothing should live in the Inbox forever. The Inbox is a holding space. Its job is to catch the idea before it disappears, not to become a storage room for everything you did not process."
+            type: "paragraph",
+            text: "Nothing should live in the Inbox forever. The Inbox is a holding space. Its job is to catch the idea before it disappears, not to become a storage room for everything you did not process."
         },
         {
-            "type": "heading",
-            "text": "Notes"
+            type: "heading",
+            text: "Notes"
         },
         {
-            "type": "paragraph",
-            "text": "The Notes folder is where thinking happens."
+            type: "paragraph",
+            text: "The Notes folder is where thinking happens."
         },
         {
-            "type": "paragraph",
-            "text": "This is where working notes and Smart Notes live."
+            type: "paragraph",
+            text: "This is where working notes and Smart Notes live."
         },
         {
-            "type": "paragraph",
-            "text": "A working note is still developing. It may contain rough explanations, questions, examples, and partial links."
+            type: "paragraph",
+            text: "A working note is still developing. It may contain rough explanations, questions, examples, and partial links."
         },
         {
-            "type": "paragraph",
-            "text": "A Smart Note is more stable. It explains one idea clearly enough that future you can reuse it."
+            type: "paragraph",
+            text: "A Smart Note is more stable. It explains one idea clearly enough that future you can reuse it."
         },
         {
-            "type": "paragraph",
-            "text": "These do not need separate folders at first."
+            type: "paragraph",
+            text: "These do not need separate folders at first."
         },
         {
-            "type": "paragraph",
-            "text": "You can keep them together and let the note itself show its stage. A rough note can stay rough while the idea is still forming. A clearer note can become a Smart Note when it is ready."
+            type: "paragraph",
+            text: "You can keep them together and let the note itself show its stage. A rough note can stay rough while the idea is still forming. A clearer note can become a Smart Note when it is ready."
         },
         {
-            "type": "paragraph",
-            "text": "The Notes folder is for ideas you are thinking with."
+            type: "paragraph",
+            text: "The Notes folder is for ideas you are thinking with."
         },
         {
-            "type": "paragraph",
-            "text": "That means not everything belongs there. A copied table, a PDF, a lecture slide, or a directive document may be useful, but those things are not automatically your thinking. Your thinking begins when you explain, compare, question, connect, or apply the material."
+            type: "paragraph",
+            text: "That means not everything belongs there. A copied table, a PDF, a lecture slide, or a directive document may be useful, but those things are not automatically your thinking. Your thinking begins when you explain, compare, question, connect, or apply the material."
         },
         {
-            "type": "heading",
-            "text": "Reference"
+            type: "heading",
+            text: "Reference"
         },
         {
-            "type": "paragraph",
-            "text": "Reference is for material you may need to look up, but are not actively turning into your own thinking yet."
+            type: "paragraph",
+            text: "Reference is for material you may need to look up, but are not actively turning into your own thinking yet."
         },
         {
-            "type": "paragraph",
-            "text": "This might include:"
+            type: "paragraph",
+            text: "This might include:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "copied directive text",
                 "medication tables",
                 "lecture slides",
@@ -3233,72 +3233,72 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "Reference material is useful. It helps with accuracy. It gives you something to check against."
+            type: "paragraph",
+            text: "Reference material is useful. It helps with accuracy. It gives you something to check against."
         },
         {
-            "type": "paragraph",
-            "text": "But reference material is not the same as understanding."
+            type: "paragraph",
+            text: "But reference material is not the same as understanding."
         },
         {
-            "type": "paragraph",
-            "text": "A copied table can support a Smart Note, but it is not a Smart Note by itself. A directive can sit in Reference, but your thinking about the directive should live in Notes. A lecture slide can help you check a detail, but it should not replace your own explanation of why the idea matters."
+            type: "paragraph",
+            text: "A copied table can support a Smart Note, but it is not a Smart Note by itself. A directive can sit in Reference, but your thinking about the directive should live in Notes. A lecture slide can help you check a detail, but it should not replace your own explanation of why the idea matters."
         },
         {
-            "type": "paragraph",
-            "text": "Reference supports thinking."
+            type: "paragraph",
+            text: "Reference supports thinking."
         },
         {
-            "type": "paragraph",
-            "text": "It should not become a graveyard for files you never return to."
+            type: "paragraph",
+            text: "It should not become a graveyard for files you never return to."
         },
         {
-            "type": "heading",
-            "text": "How ideas move through the system"
+            type: "heading",
+            text: "How ideas move through the system"
         },
         {
-            "type": "paragraph",
-            "text": "A simple note system has a simple path."
+            type: "paragraph",
+            text: "A simple note system has a simple path."
         },
         {
-            "type": "paragraph",
-            "text": "First, capture."
+            type: "paragraph",
+            text: "First, capture."
         },
         {
-            "type": "paragraph",
-            "text": "You write something quickly because it might matter."
+            type: "paragraph",
+            text: "You write something quickly because it might matter."
         },
         {
-            "type": "paragraph",
-            "text": "Second, process."
+            type: "paragraph",
+            text: "Second, process."
         },
         {
-            "type": "paragraph",
-            "text": "You return to the captured note and ask what it is really about."
+            type: "paragraph",
+            text: "You return to the captured note and ask what it is really about."
         },
         {
-            "type": "paragraph",
-            "text": "Third, stabilize."
+            type: "paragraph",
+            text: "Third, stabilize."
         },
         {
-            "type": "paragraph",
-            "text": "If the idea matters enough, you turn it into a working note or Smart Note."
+            type: "paragraph",
+            text: "If the idea matters enough, you turn it into a working note or Smart Note."
         },
         {
-            "type": "paragraph",
-            "text": "For example, an Inbox note might say:"
+            type: "paragraph",
+            text: "For example, an Inbox note might say:"
         },
         {
-            "type": "paragraph",
-            "text": "Patient more confused before oxygen saturation changed much."
+            type: "paragraph",
+            text: "Patient more confused before oxygen saturation changed much."
         },
         {
-            "type": "paragraph",
-            "text": "When processing it, you might ask:"
+            type: "paragraph",
+            text: "When processing it, you might ask:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "What is this actually about?",
                 "What decision does it affect?",
                 "What mistake could it prevent?",
@@ -3306,56 +3306,56 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "That rough note might eventually become:"
+            type: "paragraph",
+            text: "That rough note might eventually become:"
         },
         {
-            "type": "paragraph",
-            "text": "Altered mental status can be an early warning sign in respiratory failure"
+            type: "paragraph",
+            text: "Altered mental status can be an early warning sign in respiratory failure"
         },
         {
-            "type": "paragraph",
-            "text": "The Smart Note might explain that worsening confusion, agitation, drowsiness, or reduced ability to cooperate can signal poor oxygen delivery, rising carbon dioxide, fatigue, or broader physiologic stress before one dramatic monitor value appears."
+            type: "paragraph",
+            text: "The Smart Note might explain that worsening confusion, agitation, drowsiness, or reduced ability to cooperate can signal poor oxygen delivery, rising carbon dioxide, fatigue, or broader physiologic stress before one dramatic monitor value appears."
         },
         {
-            "type": "paragraph",
-            "text": "Now the note is useful."
+            type: "paragraph",
+            text: "Now the note is useful."
         },
         {
-            "type": "paragraph",
-            "text": "It is no longer just a memory from one scenario. It has become a clinical idea you can return to, link, revise, and retrieve."
+            type: "paragraph",
+            text: "It is no longer just a memory from one scenario. It has become a clinical idea you can return to, link, revise, and retrieve."
         },
         {
-            "type": "heading",
-            "text": "How to name notes"
+            type: "heading",
+            text: "How to name notes"
         },
         {
-            "type": "paragraph",
-            "text": "Good note titles should communicate meaning."
+            type: "paragraph",
+            text: "Good note titles should communicate meaning."
         },
         {
-            "type": "paragraph",
-            "text": "A title like:"
+            type: "paragraph",
+            text: "A title like:"
         },
         {
-            "type": "paragraph",
-            "text": "Respiratory Distress"
+            type: "paragraph",
+            text: "Respiratory Distress"
         },
         {
-            "type": "paragraph",
-            "text": "may be too broad."
+            type: "paragraph",
+            text: "may be too broad."
         },
         {
-            "type": "paragraph",
-            "text": "It names a topic, but it does not tell you what the note is trying to say."
+            type: "paragraph",
+            text: "It names a topic, but it does not tell you what the note is trying to say."
         },
         {
-            "type": "paragraph",
-            "text": "More useful titles might be:"
+            type: "paragraph",
+            text: "More useful titles might be:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "Quiet lungs can mean worsening fatigue",
                 "Oxygen saturation does not fully describe work of breathing",
                 "Altered mental status can be an early warning sign",
@@ -3365,36 +3365,36 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "Those titles do more work."
+            type: "paragraph",
+            text: "Those titles do more work."
         },
         {
-            "type": "paragraph",
-            "text": "They carry a claim, distinction, or clinical warning. They help future you know why the note exists before you open it."
+            type: "paragraph",
+            text: "They carry a claim, distinction, or clinical warning. They help future you know why the note exists before you open it."
         },
         {
-            "type": "paragraph",
-            "text": "If a title could be a textbook chapter, it is probably too broad for a Smart Note."
+            type: "paragraph",
+            text: "If a title could be a textbook chapter, it is probably too broad for a Smart Note."
         },
         {
-            "type": "heading",
-            "text": "Linking as reasoning"
+            type: "heading",
+            text: "Linking as reasoning"
         },
         {
-            "type": "paragraph",
-            "text": "Links should represent relationships that matter."
+            type: "paragraph",
+            text: "Links should represent relationships that matter."
         },
         {
-            "type": "paragraph",
-            "text": "Do not link notes only because they belong to the same broad topic. Link them because one idea changes how you understand another."
+            type: "paragraph",
+            text: "Do not link notes only because they belong to the same broad topic. Link them because one idea changes how you understand another."
         },
         {
-            "type": "paragraph",
-            "text": "A note on respiratory fatigue might link to:"
+            type: "paragraph",
+            text: "A note on respiratory fatigue might link to:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "Work of Breathing",
                 "Air Trapping",
                 "Oxygenation Versus Ventilation",
@@ -3403,36 +3403,36 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "Those links are useful because the ideas influence the same decisions."
+            type: "paragraph",
+            text: "Those links are useful because the ideas influence the same decisions."
         },
         {
-            "type": "paragraph",
-            "text": "They help you follow a reasoning trail."
+            type: "paragraph",
+            text: "They help you follow a reasoning trail."
         },
         {
-            "type": "paragraph",
-            "text": "If a link does not help you think differently, compare more clearly, or find a useful connection later, it probably does not need to be there."
+            type: "paragraph",
+            text: "If a link does not help you think differently, compare more clearly, or find a useful connection later, it probably does not need to be there."
         },
         {
-            "type": "heading",
-            "text": "A simple weekly rhythm"
+            type: "heading",
+            text: "A simple weekly rhythm"
         },
         {
-            "type": "paragraph",
-            "text": "You do not need to live inside Obsidian."
+            type: "paragraph",
+            text: "You do not need to live inside Obsidian."
         },
         {
-            "type": "paragraph",
-            "text": "During the week, capture rough notes as they appear."
+            type: "paragraph",
+            text: "During the week, capture rough notes as they appear."
         },
         {
-            "type": "paragraph",
-            "text": "This might happen during:"
+            type: "paragraph",
+            text: "This might happen during:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "lectures",
                 "labs",
                 "readings",
@@ -3442,16 +3442,16 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "Then, once or twice a week, process a small number of captured notes."
+            type: "paragraph",
+            text: "Then, once or twice a week, process a small number of captured notes."
         },
         {
-            "type": "paragraph",
-            "text": "For each note, choose one action:"
+            type: "paragraph",
+            text: "For each note, choose one action:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "delete it",
                 "leave it as capture",
                 "develop it into a working note",
@@ -3460,92 +3460,92 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "That is enough."
+            type: "paragraph",
+            text: "That is enough."
         },
         {
-            "type": "paragraph",
-            "text": "You are not trying to process everything. You are trying to keep the important ideas from disappearing."
+            type: "paragraph",
+            text: "You are not trying to process everything. You are trying to keep the important ideas from disappearing."
         },
         {
-            "type": "paragraph",
-            "text": "A useful weekly rhythm might be as small as twenty minutes. Open the Inbox. Pick three notes. Clean one up. Delete one. Link one to something that already matters."
+            type: "paragraph",
+            text: "A useful weekly rhythm might be as small as twenty minutes. Open the Inbox. Pick three notes. Clean one up. Delete one. Link one to something that already matters."
         },
         {
-            "type": "paragraph",
-            "text": "That kind of small maintenance is usually more valuable than a large rebuild you only do when you feel behind."
+            type: "paragraph",
+            text: "That kind of small maintenance is usually more valuable than a large rebuild you only do when you feel behind."
         },
         {
-            "type": "heading",
-            "text": "Before scenarios or OSCEs"
+            type: "heading",
+            text: "Before scenarios or OSCEs"
         },
         {
-            "type": "paragraph",
-            "text": "Obsidian can help you prepare by reactivating connected understanding."
+            type: "paragraph",
+            text: "Obsidian can help you prepare by reactivating connected understanding."
         },
         {
-            "type": "paragraph",
-            "text": "Before a respiratory scenario day, you might open one useful note and follow a few links for five or ten minutes."
+            type: "paragraph",
+            text: "Before a respiratory scenario day, you might open one useful note and follow a few links for five or ten minutes."
         },
         {
-            "type": "paragraph",
-            "text": "You might move from:"
+            type: "paragraph",
+            text: "You might move from:"
         },
         {
-            "type": "paragraph",
-            "text": "Work of Breathing"
+            type: "paragraph",
+            text: "Work of Breathing"
         },
         {
-            "type": "paragraph",
-            "text": "to:"
+            type: "paragraph",
+            text: "to:"
         },
         {
-            "type": "paragraph",
-            "text": "Respiratory Fatigue"
+            type: "paragraph",
+            text: "Respiratory Fatigue"
         },
         {
-            "type": "paragraph",
-            "text": "to:"
+            type: "paragraph",
+            text: "to:"
         },
         {
-            "type": "paragraph",
-            "text": "Oxygenation Versus Ventilation"
+            type: "paragraph",
+            text: "Oxygenation Versus Ventilation"
         },
         {
-            "type": "paragraph",
-            "text": "to:"
+            type: "paragraph",
+            text: "to:"
         },
         {
-            "type": "paragraph",
-            "text": "Reassessment After Intervention"
+            type: "paragraph",
+            text: "Reassessment After Intervention"
         },
         {
-            "type": "paragraph",
-            "text": "That kind of review is different from rereading a folder."
+            type: "paragraph",
+            text: "That kind of review is different from rereading a folder."
         },
         {
-            "type": "paragraph",
-            "text": "You are not trying to memorize everything again. You are warming up relationships that matter."
+            type: "paragraph",
+            text: "You are not trying to memorize everything again. You are warming up relationships that matter."
         },
         {
-            "type": "paragraph",
-            "text": "This can help because scenarios rarely test isolated facts in isolation. They ask you to use connected understanding while the patient is changing, while other tasks compete for attention, and while you still have to decide what matters next."
+            type: "paragraph",
+            text: "This can help because scenarios rarely test isolated facts in isolation. They ask you to use connected understanding while the patient is changing, while other tasks compete for attention, and while you still have to decide what matters next."
         },
         {
-            "type": "heading",
-            "text": "What to avoid early"
+            type: "heading",
+            text: "What to avoid early"
         },
         {
-            "type": "paragraph",
-            "text": "Avoid building the system before you have notes that need a system."
+            type: "paragraph",
+            text: "Avoid building the system before you have notes that need a system."
         },
         {
-            "type": "paragraph",
-            "text": "Common traps include:"
+            type: "paragraph",
+            text: "Common traps include:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "installing plugins before you know what problem they solve",
                 "building dashboards",
                 "spending too long choosing themes",
@@ -3557,36 +3557,36 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "These things can feel productive."
+            type: "paragraph",
+            text: "These things can feel productive."
         },
         {
-            "type": "paragraph",
-            "text": "Sometimes they are just another way to avoid the harder work of understanding."
+            type: "paragraph",
+            text: "Sometimes they are just another way to avoid the harder work of understanding."
         },
         {
-            "type": "paragraph",
-            "text": "Start with writing, linking, and returning to ideas."
+            type: "paragraph",
+            text: "Start with writing, linking, and returning to ideas."
         },
         {
-            "type": "paragraph",
-            "text": "The rest can wait."
+            type: "paragraph",
+            text: "The rest can wait."
         },
         {
-            "type": "heading",
-            "text": "When to change the system"
+            type: "heading",
+            text: "When to change the system"
         },
         {
-            "type": "paragraph",
-            "text": "Change the system only when the current system stops helping."
+            type: "paragraph",
+            text: "Change the system only when the current system stops helping."
         },
         {
-            "type": "paragraph",
-            "text": "Good reasons to adjust include:"
+            type: "paragraph",
+            text: "Good reasons to adjust include:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "finding notes has become difficult",
                 "links feel noisy instead of useful",
                 "too many notes are stuck in the Inbox",
@@ -3597,40 +3597,40 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "Do not change the system just because it feels imperfect."
+            type: "paragraph",
+            text: "Do not change the system just because it feels imperfect."
         },
         {
-            "type": "paragraph",
-            "text": "Some imperfection is normal."
+            type: "paragraph",
+            text: "Some imperfection is normal."
         },
         {
-            "type": "paragraph",
-            "text": "A note system should evolve from use, not from discomfort with mess."
+            type: "paragraph",
+            text: "A note system should evolve from use, not from discomfort with mess."
         },
         {
-            "type": "heading",
-            "text": "What success looks like"
+            type: "heading",
+            text: "What success looks like"
         },
         {
-            "type": "paragraph",
-            "text": "A working Obsidian system is usually not impressive from the outside."
+            type: "paragraph",
+            text: "A working Obsidian system is usually not impressive from the outside."
         },
         {
-            "type": "paragraph",
-            "text": "It may look plain. It may have a small number of folders. It may have rough notes beside clearer ones. It may not have a beautiful graph or elaborate dashboard."
+            type: "paragraph",
+            text: "It may look plain. It may have a small number of folders. It may have rough notes beside clearer ones. It may not have a beautiful graph or elaborate dashboard."
         },
         {
-            "type": "paragraph",
-            "text": "That is fine."
+            type: "paragraph",
+            text: "That is fine."
         },
         {
-            "type": "paragraph",
-            "text": "Success looks more like this:"
+            type: "paragraph",
+            text: "Success looks more like this:"
         },
         {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
                 "you can capture important ideas quickly",
                 "you can return to them later",
                 "some ideas become clearer over time",
@@ -3641,28 +3641,28 @@ const sectionSeeds: SectionSeed[] = [
             ]
         },
         {
-            "type": "paragraph",
-            "text": "If Obsidian helps with that, it is working."
+            type: "paragraph",
+            text: "If Obsidian helps with that, it is working."
         },
         {
-            "type": "paragraph",
-            "text": "If the system demands attention instead of supporting learning, simplify it."
+            type: "paragraph",
+            text: "If the system demands attention instead of supporting learning, simplify it."
         },
         {
-            "type": "paragraph",
-            "text": "Obsidian is only useful if it helps you think."
+            type: "paragraph",
+            text: "Obsidian is only useful if it helps you think."
         },
         {
-            "type": "paragraph",
-            "text": "Used well, it gives your Smart Notes a simple home. It lets ideas move from rough capture to working explanation to reusable understanding. It helps you connect physiology, directives, patient presentations, scenario errors, and clinical reasoning without forcing everything into rigid folders."
+            type: "paragraph",
+            text: "Used well, it gives your Smart Notes a simple home. It lets ideas move from rough capture to working explanation to reusable understanding. It helps you connect physiology, directives, patient presentations, scenario errors, and clinical reasoning without forcing everything into rigid folders."
         },
         {
-            "type": "paragraph",
-            "text": "This completes the Build Usable Notes cluster."
+            type: "paragraph",
+            text: "This completes the Build Usable Notes cluster."
         },
         {
-            "type": "paragraph",
-            "text": "If you are following the main guide, the next core step is recall: whether the understanding you have built can come back when you need it."
+            type: "paragraph",
+            text: "If you are following the main guide, the next core step is recall: whether the understanding you have built can come back when you need it."
         },
      
     ],
@@ -4325,9 +4325,9 @@ const sectionSeeds: SectionSeed[] = [
     body: [
    
       {
-  type: "paragraph",
-  text: "Anki can help paramedic students."
-},
+            "type": "paragraph",
+            "text": "Anki can help paramedic students."
+        },
 
         {
             "type": "paragraph",
@@ -4358,13 +4358,13 @@ const sectionSeeds: SectionSeed[] = [
             "text": "The better question is, “What kind of recall am I training?”"
         },
         {
-  type: "heading",
-  text: "What Anki is"
-},
+            "type": "heading",
+            "text": "What Anki is"
+        },
 {
-  type: "paragraph",
-  text: "Anki is a flashcard app that uses spaced repetition to bring cards back for review over time. In this guide, it is introduced as a way to practise recall for selected paramedic knowledge so important details are easier to access during labs, scenarios, and OSCEs. Used carefully, it supports the learning system you are already building rather than replacing understanding or clinical reasoning."
-},
+            "type": "paragraph",
+            "text": "Anki is a flashcard app that uses spaced repetition to bring cards back for review over time. In this guide, it is introduced as a way to practise recall for selected paramedic knowledge so important details are easier to access during labs, scenarios, and OSCEs. Used carefully, it supports the learning system you are already building rather than replacing understanding or clinical reasoning."
+        },
         {
             "type": "heading",
             "text": "What Anki is good for"
@@ -5960,11 +5960,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The first is a middle-aged patient with chest pain and diaphoresis. The student completes a thorough assessment, obtains a 12-lead, begins thinking through ASA and nitroglycerin, and manages the call carefully. But the blood pressure trends downward across two readings and the patient becomes increasingly pale. The student keeps gathering information, waiting for the picture to become more obvious before naming the urgency.",
+        text: "The first is a middle-aged man found at home, sitting in a chair and not responding normally. He is awake but confused, and his speech is slower than usual. His glucose is 5.9. There is no obvious trauma. The blood pressure is elevated. The student works through a careful assessment, documents findings, and asks detailed history questions. But the blood pressure has been elevated across two readings and the patient's mentation has not improved, and the student keeps assessing without naming a working concern or a transport priority.",
       },
       {
         type: "paragraph",
-        text: "Feedback identifies the pattern: waiting for certainty when the trajectory had already told the story. The specific target for the next room: when vitals trend in one direction across two readings and the patient's appearance is worsening, name the transport concern before the third reading.",
+        text: "Feedback identifies the pattern: waiting for certainty when the trajectory had already changed the risk level. The specific target for the next room: when a patient with altered mentation has abnormal vital signs trending across two readings, name a working concern and a transport priority before the assessment feels complete.",
       },
       {
         type: "paragraph",
@@ -6756,42 +6756,6 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A second example: premature closure",
-      },
-      {
-        type: "paragraph",
-        text: "A student completes a scenario involving an older adult with sudden severe back pain.",
-      },
-      {
-        type: "paragraph",
-        text: "The patient is in obvious discomfort. The pain came on while they were standing in the kitchen. It is sharp and radiating to the flank. The student frames this quickly as renal colic: the age, the character of the pain, and the location fit a familiar pattern.",
-      },
-      {
-        type: "paragraph",
-        text: "The issue is not that the student noticed a pattern. The issue is that they stopped testing it.",
-      },
-      {
-        type: "paragraph",
-        text: "They did not pay enough attention to the blood pressure, which was higher than expected on one side and harder to obtain on the other. They did not ask about the quality of onset closely enough: the patient said it came on suddenly, all at once, not as a building cramp. They did not notice that the patient looked more pale and diaphoretic than the pain level seemed to warrant.",
-      },
-      {
-        type: "paragraph",
-        text: "Feedback identifies premature closure.",
-      },
-      {
-        type: "paragraph",
-        text: "A weak practice response would be: \"I need to stop assuming.\"",
-      },
-      {
-        type: "paragraph",
-        text: "A stronger practice target would be: \"When I recognize a familiar pattern early, I will name one finding that supports it and one finding that would make me reconsider before I commit to the explanation.\"",
-      },
-      {
-        type: "paragraph",
-        text: "That target does not tell the student to ignore pattern recognition. It teaches them to keep it accountable. In the next scenario, they can still act on the likely problem, but they must keep checking whether the patient is behaving as expected.",
-      },
-      {
-        type: "heading",
         text: "Why focused practice feels awkward at first",
       },
       {
@@ -6837,70 +6801,6 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "Attention shifts first. Action follows from that shift. This is why focused practice should not be treated like a checklist. The student is training what to notice, when to notice it, and how to respond once it appears.",
-      },
-      {
-        type: "heading",
-        text: "When feedback gives you too much",
-      },
-      {
-        type: "paragraph",
-        text: "Sometimes feedback is accurate but too large.",
-      },
-      {
-        type: "paragraph",
-        text: "An instructor may identify several issues at once: assessment was scattered, history was incomplete, reassessment was weak, communication with the partner was unclear, transport decision was delayed.",
-      },
-      {
-        type: "paragraph",
-        text: "The student may leave feeling like the whole scenario failed.",
-      },
-      {
-        type: "paragraph",
-        text: "In that moment, the useful move is to look for the issue underneath several of the comments. If assessment was scattered, reassessment was weak, and transport was delayed, the deeper issue may be loss of prioritization: the student was doing tasks without organizing them around the main clinical risk.",
-      },
-      {
-        type: "paragraph",
-        text: "The practice target might become: \"After my first set of findings, I will name the main risk and use that to guide what I ask, reassess, or do next.\"",
-      },
-      {
-        type: "paragraph",
-        text: "That one target may improve several visible behaviours because it addresses the structure underneath them. This is not ignoring feedback. It is organizing it so it can be practised.",
-      },
-      {
-        type: "heading",
-        text: "When to practise outside the scenario",
-      },
-      {
-        type: "paragraph",
-        text: "Not every practice target has to begin inside a full scenario.",
-      },
-      {
-        type: "paragraph",
-        text: "Some targets can be strengthened in smaller pieces first. If the target is directive decision-making, the student can practise with short patient examples before the next lab. If the target is risk explanation, they can rehearse explaining risk in plain language to a study partner. If the target is reassessment, they can build quick intervention-reassessment pairs and talk through what they would check and why.",
-      },
-      {
-        type: "paragraph",
-        text: "Smaller practice reduces load. It lets the student strengthen one part of performance before adding the full pressure of a room. But the adjustment still needs to be tested in context. Smaller practice prepares the adjustment. Scenario practice tests whether it holds.",
-      },
-      {
-        type: "heading",
-        text: "How to know if practice is working",
-      },
-      {
-        type: "paragraph",
-        text: "Focused practice is working when the pattern starts to change.",
-      },
-      {
-        type: "paragraph",
-        text: "That change may be small at first. The scenario may still feel uneven. The student may still make mistakes. But something should be different.",
-      },
-      {
-        type: "paragraph",
-        text: "Possible signs include: the student notices the issue sooner in the call rather than only in debrief. The student catches the mistake while it is happening and adjusts. The student asks a better question at the right moment. The student recovers faster after losing track. The student can explain what they were trying to improve and whether it showed up.",
-      },
-      {
-        type: "paragraph",
-        text: "Early improvement often looks like recovery, not perfection. If the repeated error changed shape, learning is happening. The goal is not to leave every scenario feeling good. The goal is to leave with evidence that practice is affecting performance.",
       },
       {
         type: "heading",
@@ -6982,11 +6882,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "You are watched. You are timed. The expectations matter. Even students who perform well in regular scenarios can feel different in an OSCE. Familiar steps become fragile. Small uncertainties feel larger. Time becomes loud.",
+        text: "You are watched. You are timed. The expectations matter. Even students who perform well in regular scenario days can feel different in an OSCE. Familiar steps become fragile. Small uncertainties feel larger. Time becomes loud.",
       },
       {
         type: "paragraph",
-        text: "This is not a personality problem. It is a cognitive load problem. Under evaluation pressure, working memory fills quickly, and structure is often the first thing to slip.",
+        text: "This is not a personality problem. It is a cognitive load problem. Under evaluation pressure, working memory fills quickly. The parts of performance that depend on conscious effort, reassessment timing, directive decisions, explaining risk clearly to the patient, are often the first to slip because they are still consuming active attention rather than running automatically.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding this matters for how you prepare, because the goal is not to become immune to pressure. The goal is to build enough structure that your thinking stays available while pressure is present.",
       },
       {
         type: "heading",
@@ -6994,27 +6898,43 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Despite how they feel, OSCEs are not designed to reward speed, confidence displays, or saying everything you know. They are assessing whether you can identify what matters, act safely, explain your priorities, and adjust when new information changes the call.",
+        text: "Despite how they feel, OSCEs are not designed to reward speed, confidence displays, or saying everything you know.",
       },
       {
         type: "paragraph",
-        text: "That is why smoothness can be misleading. A student can look polished while making fragile decisions. Another student can look a little awkward while still making safe, defensible choices and reassessing appropriately. Instructors can usually tell the difference.",
+        text: "At the PCP level, evaluators are watching for a specific and observable set of capabilities.",
+      },
+      {
+        type: "paragraph",
+        text: "They are watching whether you identify the primary threat early, before the call makes it obvious. They are watching whether your assessment sequence is stable enough to survive an unexpected finding without falling apart. They are watching whether your directive decisions connect to the patient in front of you or to a memorized version of the case. They are watching whether you reassess after intervention, not just to fill time, but to find out whether your explanation is still holding. They are watching whether you can communicate risk to the patient in plain language. And they are watching whether the call changes when new information arrives, or whether the first explanation you formed becomes fixed regardless of what the patient shows you.",
+      },
+      {
+        type: "paragraph",
+        text: "Smoothness can be misleading. A student can look polished while making fragile decisions. Another student can look slightly uncertain while making safe, defensible choices, communicating clearly, and adjusting when the patient changes. Evaluators can usually tell the difference, and most are looking for the second student.",
       },
       {
         type: "heading",
-        text: "Why capable students derail",
+        text: "Why capable students derail under evaluation",
       },
       {
         type: "paragraph",
-        text: "Under pressure, some students over-control. They try to perform the perfect assessment and run out of time. Others under-control. They commit early to a familiar explanation and stop testing it.",
+        text: "Under evaluation pressure, two failure patterns are common.",
       },
       {
         type: "paragraph",
-        text: "Both patterns make sense. The first tries to manage uncertainty by gathering more. The second tries to manage uncertainty by closing the case too soon. Neither keeps the call flexible.",
+        text: "The first is over-control. The student tries to perform the perfect assessment, narrates every step, covers every possible detail, and runs out of time or loses the thread of the call before the most important decisions are made. The intention is thoroughness. The result is a call that looked busy but did not reach the decisions that mattered.",
       },
       {
         type: "paragraph",
-        text: "A strong OSCE performance does not require perfect calm. It requires enough structure to keep thinking available while stress is present.",
+        text: "The second is under-control. The student commits early to a familiar explanation, stops testing it, and filters subsequent findings through the first impression. The call moves quickly, but it becomes smaller than the patient.",
+      },
+      {
+        type: "paragraph",
+        text: "Both patterns are attempts to manage uncertainty. The first manages it by gathering more. The second manages it by deciding early. Neither keeps the thinking flexible enough to respond when the station surprises you.",
+      },
+      {
+        type: "paragraph",
+        text: "A strong OSCE performance does not require perfect calm. It requires enough structure to keep thinking available while stress is present, and enough flexibility to change the plan when the patient gives you a reason to.",
       },
       {
         type: "heading",
@@ -7022,28 +6942,73 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A common mistake is trying to predict every possible station. That kind of preparation becomes brittle. When the station does not match the case you expected, confidence drops quickly.",
+        text: "A common mistake is trying to predict every possible station and rehearse a specific script for each one. That preparation becomes brittle. When the station presents a patient who does not match the expected version, the script breaks and there is nothing underneath it.",
       },
       {
         type: "paragraph",
-        text: "A better approach is to prepare around anchors that survive different scenarios.",
+        text: "A better approach is to prepare around anchors: a small set of thinking habits that survive different scenarios.",
       },
       {
-        type: 'list',
+        type: "list",
         items: [
-        "Identify the primary threat early.",
-        "Choose actions that remain safe if the diagnosis shifts.",
-        "Reassess deliberately after intervention.",
-        "Explain why one action matters more than another.",
+          "Identify the primary threat early, before the history is complete.",
+          "Choose actions that remain safe if the diagnosis is not yet clear.",
+          "Reassess deliberately after every intervention.",
+          "Explain why one action matters more than another, not just what you are doing.",
+          "Name what does not fit the first explanation before committing to it.",
         ],
       },
       {
         type: "paragraph",
-        text: "Anchors reduce decision churn. They give you a place to return when the station starts pulling your attention in different directions.",
+        text: "Anchors reduce decision churn. They give you a place to return when the station starts pulling attention in several directions at once.",
       },
       {
         type: "paragraph",
-        text: "A student preparing for a cardiac chest pain station may rehearse the typical picture: central pressure, diaphoresis, ECG changes, and nitroglycerin within directive. That rehearsal is useful, but it becomes brittle if the station presents a patient with borderline blood pressure, an unclear ECG, and a medication history the student was not expecting. The anchor holds. The script breaks. Students who prepare around thinking rather than cases adjust faster.",
+        text: "Consider an OSCE station involving a middle-aged woman found at home by her son. She is confused, has not eaten today, and has a history of type 2 diabetes and hypertension. The glucose is low and the student treats it. That is the expected response and it is correct.",
+      },
+      {
+        type: "paragraph",
+        text: "But the station is not finished. After treatment, the patient improves partially but remains more confused than the glucose correction alone should explain. Her blood pressure is higher than expected. She has a mild headache she did not initially mention. The son says she seemed \"off\" since this morning before she became obviously confused.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who prepared only for the diabetic emergency script will feel the station slipping when the expected resolution does not happen cleanly. A student who prepared around anchors will use the incomplete response as information: glucose was likely a contributing factor, but the explanation is not holding. The anchors, reassess after intervention, name what does not fit, keep acting safely while the picture develops, give the student a structure to return to while they adjust.",
+      },
+      {
+        type: "paragraph",
+        text: "The anchor holds when the script no longer fits. That is what it is for.",
+      },
+      {
+        type: "heading",
+        text: "What OSCE preparation should include",
+      },
+      {
+        type: "paragraph",
+        text: "Effective OSCE preparation works at three levels.",
+      },
+      {
+        type: "paragraph",
+        text: "The first is content. Know the medications, doses, contraindications, directive thresholds, and assessment sequences that are likely to matter. This is not negotiable. Anchors have nothing to hold if the content underneath is vague.",
+      },
+      {
+        type: "paragraph",
+        text: "The second is decision practice. Rehearse the specific moments where thinking usually breaks down under pressure. For most students, these are directive decisions with borderline presentations, transport decisions with incomplete information, and reassessment after intervention. Do not only review what the right answer is. Practise making the decision when the presentation is imperfect. Ask: what would make this unsafe? What would I need to see to change my plan? What would a wrong choice cost this patient?",
+      },
+      {
+        type: "paragraph",
+        text: "The third is communication practice. Speaking clinical reasoning out loud is harder than thinking it. Under pressure, many students can hold a correct working explanation internally and still fail to communicate it clearly to the patient or the evaluator. Practise explaining risk, explaining your plan, and explaining what you are watching for. A sentence like \"I am concerned this could still be serious even though your vitals are acceptable right now, and I want to keep a close eye on you en route\" tells the evaluator more about your reasoning than any amount of silent assessment work.",
+      },
+      {
+        type: "heading",
+        text: "Before the OSCE",
+      },
+      {
+        type: "paragraph",
+        text: "In the hours before an OSCE, resist the urge to cram new content. If a gap in knowledge exists at this stage, an hour of frantic review is unlikely to close it. What is worth doing is a short review of your anchors: what are the two or three thinking habits you want to bring into the room? Retrieve one or two clinical ideas from memory without looking at notes, not to check whether you remember them, but to warm up the access pathways before the pressure arrives.",
+      },
+      {
+        type: "paragraph",
+        text: "The night before is not the time to rehearse worst-case station scenarios. That sharpens anxiety without improving performance. If there is a directive decision that has felt fragile, practise the reasoning behind it once, deliberately. If reassessment has been a recurring weakness, remind yourself of the loop: intervene, recheck the reason you intervened, adjust. Then stop.",
       },
       {
         type: "heading",
@@ -7051,11 +7016,19 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Once the station begins, let preparation become structure rather than performance. Start with safety and primary threats. Let assessment unfold without racing ahead. Speak your reasoning when it helps the evaluator understand your priorities, but do not narrate everything you know.",
+        text: "Once the station begins, let preparation become structure rather than performance.",
       },
       {
         type: "paragraph",
-        text: "If you feel stuck, pause briefly and re-orient. A small reset is not wasted time. It can prevent a small uncertainty from turning into a cascade.",
+        text: "Start with the patient. Identify the primary threat. Let assessment unfold without racing ahead to treatment before the picture is clear. When you make a decision, say briefly why it matters: not a lecture, just enough that the evaluator can follow your reasoning.",
+      },
+      {
+        type: "paragraph",
+        text: "If you feel stuck, pause briefly and re-orient. Ask yourself: what do I think is happening right now? What would I do next if this were a real call? That question often restores the structure that pressure has narrowed. A small reset is not wasted time. It can prevent a small uncertainty from compounding into a cascade.",
+      },
+      {
+        type: "paragraph",
+        text: "When a finding surprises you or does not fit, name it rather than absorbing it silently. \"That finding is not what I expected, so I want to reassess before I continue\" tells the evaluator that you are reasoning, not just performing. Students who can acknowledge uncertainty while still keeping the call moving are demonstrating exactly what safe paramedicine requires.",
       },
       {
         type: "heading",
@@ -7063,15 +7036,19 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "What you do afterward shapes what consolidates. Avoid replaying the entire station as if more replay will make it clearer. That usually builds anxiety, not learning.",
+        text: "What you do in the hour after an OSCE shapes what consolidates.",
       },
       {
         type: "paragraph",
-        text: "Instead, identify one moment where your reasoning held, one moment where it strained, and one adjustment for next time. Then stop. The goal is to carry forward something usable, not to keep the station alive all day.",
+        text: "Avoid replaying the entire station repeatedly. That tends to amplify distress without producing clarity. The memory of a stressful performance is not a reliable source of information about what actually happened, and most students are harsher on themselves in replay than any evaluator would be.",
       },
       {
         type: "paragraph",
-        text: "OSCE preparation is about protecting the thinking you have already built so it remains accessible under evaluation. From here, the guide looks more directly at what pressure does to thinking and how to reset when attention narrows.",
+        text: "Instead, identify three specific things: one moment where your reasoning held under pressure, one moment where it strained and you noticed it, and one adjustment that would change how you enter the next station. Then stop. The goal is to carry forward something usable, not to keep the station running in your head all day.",
+      },
+      {
+        type: "paragraph",
+        text: "If feedback is available, treat it the same way you would treat scenario feedback: extract the pattern, translate it into one specific behaviour, and decide where you will test it next.",
       },
     ],
     glossaryTerms: [
@@ -7113,11 +7090,15 @@ const sectionSeeds: SectionSeed[] = [
     body: [
       {
         type: "paragraph",
-        text: "You are three minutes into a chest pain station and the room starts to speed up.",
+        text: "You are four minutes into a station involving a patient who is conscious but not making sense.",
       },
       {
         type: "paragraph",
-        text: "The patient is talking. The evaluator is watching. You know nitroglycerin may be appropriate, but now you are thinking about time, contraindications, vital signs, ECG findings, transport, your partner, and whether you sound confident enough. A step you usually remember suddenly feels harder to reach.",
+        text: "The family called because their father, who has a history of hypertension and type 2 diabetes, was found in the kitchen, not responding normally. He is awake. He answers simple questions slowly. His glucose is 5.4. There is no obvious trauma. The blood pressure is elevated, significantly more than you would expect for someone at rest. The son is asking you what is wrong.",
+      },
+      {
+        type: "paragraph",
+        text: "You know stroke is in the differential. You know hypoglycemia is less likely with that glucose. You know the blood pressure matters. You know your primary survey is clear. But now the room is speeding up. The son is repeating his question. The evaluator is watching. You are trying to decide whether to say something definitive before you feel certain enough to say it, and the steps that usually come naturally are suddenly harder to sequence.",
       },
       {
         type: "paragraph",
@@ -7129,15 +7110,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Under pressure, the brain prioritizes speed and threat detection. That can help when risk is obvious, but it can also narrow attention around one cue, one task, or one fear.",
+        text: "Under pressure, the brain prioritizes speed and threat detection. That can help when risk is obvious, but it also narrows attention. Working memory has less room. Students rely more heavily on defaults. It becomes harder to hold multiple possibilities at once, and familiar actions feel safer than slower reasoning, even when slower reasoning is exactly what the situation requires.",
       },
       {
         type: "paragraph",
-        text: "Working memory has less room. Students rely more heavily on defaults. It becomes harder to hold multiple possibilities at once, and familiar actions can feel safer than slower reasoning.",
+        text: "This is not panic. Most students who experience this under evaluation would not describe it as panic. It feels more like crowding: several things competing for attention at the same time, and the sense that the next step should be obvious but is not quite arriving.",
       },
       {
         type: "paragraph",
-        text: "This explains why a student may know what to do and still struggle to decide when or why. The knowledge has not disappeared. Access to it has become constrained.",
+        text: "The knowledge has not disappeared. Access to it has become constrained. A student who can explain the stroke assessment sequence clearly at a desk may find that the sequence is harder to initiate in a room where they are also managing a frightened family member, watching a monitor, tracking time, and trying to appear competent simultaneously. Each of those tasks consumes working memory. What is left for reasoning is less than what the task actually requires.",
       },
       {
         type: "heading",
@@ -7149,43 +7130,87 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Under stress, confidence often attaches to the most familiar response. That is why confident errors happen. A student may move quickly through a chest pain call and still skip the sequence that protects nitroglycerin use. They did not forget the directive. They lost access to the structure that keeps the directive safe.",
+        text: "Under stress, confidence often attaches to the most familiar response rather than the most appropriate one. A student can move efficiently through a pediatric respiratory call, sound clear and composed, and still miss the point at which the child's work of breathing crossed from manageable to urgent. They did not forget the signs of increased effort. They lost access to the structure that makes reassessment happen automatically after an intervention. The call was moving forward. The reasoning had narrowed.",
       },
       {
         type: "paragraph",
-        text: "Afterward, the student may describe the moment as panicking or blanking. That may be true emotionally, but it is not precise enough for learning. The more useful explanation is narrower: pressure pulled attention toward speed and performance appearance, and away from the sequence that makes nitroglycerin safe. That gives the student something specific to practise.",
+        text: "Afterward, the student may describe the moment as rushing or blanking. That may be true emotionally, but it is not precise enough for learning. The more useful explanation is specific: pressure pulled attention toward movement and performance, and away from the reassessment loop that would have flagged the change. That version gives the student something to practise.",
       },
       {
         type: "paragraph",
-        text: "Structure holds up better than confidence because it gives thinking somewhere to return.",
+        text: "Structure holds up better than confidence. Confidence tells you to keep moving. Structure tells you what comes next.",
       },
       {
         type: "heading",
-        text: "What skilled performance looks like",
+        text: "What skilled performance under pressure actually looks like",
       },
       {
         type: "paragraph",
-        text: "Strong performance under pressure is often quieter than students expect. It is not rushed. It does not involve saying everything at once. It usually involves fewer actions, done deliberately, with reassessment close behind.",
+        text: "Strong performance under pressure is often quieter than students expect.",
       },
       {
         type: "paragraph",
-        text: "Skilled performers identify the primary risk early, choose conservative actions that remain safe across possibilities, reassess after intervention, and use brief resets when uncertainty spikes. They do not eliminate stress. They work within it.",
+        text: "It is not fast. It does not involve saying everything at once or demonstrating mastery by covering every possibility. It usually involves fewer actions, done deliberately, with reassessment built into the sequence rather than added as an afterthought.",
+      },
+      {
+        type: "paragraph",
+        text: "Consider a student managing a post-ictal patient in a scenario where the presentation is not resolving the way a typical postictal period would. The seizure was witnessed. The patient has a known seizure disorder. The glucose is normal. Six minutes later, the patient is still not improving, and their breathing has become slightly irregular.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who has lost structure under pressure keeps repeating the same assessment steps because repetition feels like progress. They are doing things. The call is moving. But the explanation is not being tested, and the breathing change has not been incorporated into the plan.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who has maintained structure uses the unexpected trajectory as information. They name it out loud: \"This is not resolving the way I would expect for a straightforward postictal period, and the breathing pattern is changing. I want to reassess airway and respiratory effort specifically, and I am lowering my threshold for intervention.\" They do not need the answer to be certain before adjusting the plan. They need the plan to stay honest about what the patient is showing them.",
+      },
+      {
+        type: "paragraph",
+        text: "That second student is not calmer. They are probably equally stressed. The difference is that their thinking has somewhere to return when pressure narrows it.",
       },
       {
         type: "heading",
-        text: "Training pressure tolerance deliberately",
+        text: "The role of structure in pressure situations",
       },
       {
         type: "paragraph",
-        text: "Pressure tolerance is not built by waiting for high-stakes moments. It is built by practising the parts of performance that usually disappear when stress rises.",
+        text: "Structure matters under pressure because it reduces the number of decisions working memory has to remake in real time.",
       },
       {
         type: "paragraph",
-        text: "That means practising decisions aloud, rehearsing brief explanations of why one step matters more than another, pausing mid-scenario to re-orient, and repeating similar scenarios with small variations so you do not rely on a single pattern.",
+        text: "When your assessment sequence is reliable, attention frees up for the parts of the call that actually require judgment. When your reassessment habit is automatic, it fires after an intervention without needing to be consciously initiated. When a directive decision is understood by purpose rather than memorized by wording, it consolidates into one clinical question rather than a list of separate rules.",
       },
       {
         type: "paragraph",
-        text: "The goal is not to feel calm every time. The goal is to keep your thinking usable even when you do not feel calm.",
+        text: "These structures do not remove the stress of an OSCE or a difficult scenario. They give the thinking a framework to operate inside. A student with reliable structures under pressure is not someone who feels less. They are someone whose performance degrades more slowly when feeling a lot.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why deliberate practice under realistic conditions matters. Practising only in comfortable, low-stakes settings builds skill that works in comfortable, low-stakes settings. Practising in conditions that include observation, time pressure, unexpected findings, and the need to explain decisions out loud builds skill that is more likely to transfer to evaluation environments.",
+      },
+      {
+        type: "heading",
+        text: "Building pressure tolerance deliberately",
+      },
+      {
+        type: "paragraph",
+        text: "Pressure tolerance is not built by waiting for high-stakes moments and hoping experience accumulates.",
+      },
+      {
+        type: "paragraph",
+        text: "It is built by practising the specific parts of performance that disappear when stress rises.",
+      },
+      {
+        type: "paragraph",
+        text: "For most students, these are: naming a working concern before certainty arrives, reassessing after intervention before moving to the next task, explaining reasoning to another person while simultaneously managing the patient, and adjusting when new information does not fit the first explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "Practise these deliberately. Say your working concern out loud during practice scenarios, even when it feels premature. After every intervention, name the finding you are rechecking and what you expect to see if the intervention worked. When a finding surprises you, say \"that does not fit what I expected\" before deciding what it means. Treat the explanation as provisional until reassessment confirms it.",
+      },
+      {
+        type: "paragraph",
+        text: "Variation in practice also matters. A student who prepares by running the same type of scenario repeatedly builds a pattern that works for that type of scenario. Practise the same reasoning habits across different call types: a child with a fever and a petechial rash, a patient with alcohol on their breath and unequal pupils, an older adult who is unusually drowsy after a fall. The clinical specifics change. The reasoning habits should remain constant.",
       },
       {
         type: "heading",
@@ -7193,35 +7218,43 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "When pressure rises, use a small orientation check.",
+        text: "When pressure rises and thinking starts to narrow, a short check can restore orientation without turning the call into a pause exercise.",
       },
       {
-        type: 'list',
+        type: "paragraph",
+        text: "Ask:",
+      },
+      {
+        type: "list",
         items: [
-        "What is the primary risk right now?",
-        "What action keeps the patient safest if I am wrong?",
-        "What do I need to reassess after this step?",
+          "What do I think is happening right now?",
+          "What action keeps the patient safest if my explanation is incomplete?",
+          "What will I reassess after this step to know whether the plan is holding?",
         ],
       },
       {
         type: "paragraph",
-        text: "These questions stabilize thinking without turning the call into a pause exercise. They help prevent both freezing and premature closure.",
+        text: "These three questions do not slow the call. They redirect attention toward the most important decision rather than the most visible one. A student who can answer them roughly has an orientation. A student who cannot has identified exactly where to focus next.",
       },
       {
         type: "heading",
-        text: "Why performance varies",
+        text: "Why performance varies and what that means",
       },
       {
         type: "paragraph",
-        text: "Students often worry when one day feels smooth and another feels scattered. Variation is normal, especially while new layers are being integrated. Performance under pressure improves unevenly.",
+        text: "Students often worry when one scenario feels smooth and the next feels scattered.",
       },
       {
         type: "paragraph",
-        text: "What matters first is recovery speed. Are you noticing when attention narrows? Are you re-orienting sooner? Are the same pressure errors repeating unchanged, or are they shifting after feedback?",
+        text: "Variation is normal, particularly while new layers of attention are being integrated. A student who is actively building reassessment timing, transport prioritization, and communication skills simultaneously will have uneven days. That unevenness is not evidence of capability. It is evidence of integration in progress.",
       },
       {
         type: "paragraph",
-        text: "Improvement often appears first as faster recovery, not flawless execution. That is enough to train. The next step is learning how to reset when thinking narrows in the middle of the call.",
+        text: "What matters first is recovery speed. Are you noticing when attention narrows, and noticing it earlier than you did three weeks ago? Are the same pressure errors repeating in exactly the same form, or are they shifting after feedback? Are you re-orienting sooner once you recognize that the call has drifted?",
+      },
+      {
+        type: "paragraph",
+        text: "Improvement under pressure often appears first as faster recovery rather than flawless execution. A student who catches a missed reassessment two minutes into the scenario instead of only at debrief is progressing, even if the scenario still felt messy overall. Each attempt where structure holds one moment longer than it did before is useful work.",
       },
     ],
     glossaryTerms: [
@@ -7262,11 +7295,11 @@ const sectionSeeds: SectionSeed[] = [
     body: [
       {
         type: "paragraph",
-        text: "Somewhere in the middle of the station, the call gets smaller.",
+        text: "Somewhere in the middle of a call or station, things get smaller.",
       },
       {
         type: "paragraph",
-        text: "One cue becomes too important. One task starts to feel like the whole plan. You are still moving, still speaking, and still assessing in some form, but your attention has narrowed around a smaller part of the situation than the patient needs.",
+        text: "One cue becomes too important. One task starts to feel like the whole plan. You are still moving, still speaking, and still assessing in some form, but your attention has pulled into a narrower space than the patient actually needs. The call you are managing is becoming a smaller version of the call in front of you.",
       },
       {
         type: "paragraph",
@@ -7278,11 +7311,27 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Narrowing can show up in different ways. A student may keep working on the medication setup while the patient’s overall status changes. They may chase one finding and stop listening to the story. They may continue a treatment plan because changing direction would feel like admitting they were wrong.",
+        text: "Narrowing can take several forms and not all of them look like obvious dysfunction.",
       },
       {
         type: "paragraph",
-        text: "The problem is not that attention became focused. Focus is useful. The problem is that the focus stopped updating.",
+        text: "A student may become absorbed in setting up a medication while the patient's overall trajectory changes around them. They are doing something correct. They are just doing it in a way that has temporarily displaced the broader picture.",
+      },
+      {
+        type: "paragraph",
+        text: "A student may lock onto one finding, an ECG change, a saturation number, a blood pressure reading, and keep returning to it while the patient's mental status, skin, and work of breathing are quietly shifting.",
+      },
+      {
+        type: "paragraph",
+        text: "A student may commit to an explanation and keep advancing the call in one direction because changing course feels like admitting an error. The assessment continues. The plan does not update.",
+      },
+      {
+        type: "paragraph",
+        text: "In each case, the problem is not that attention became focused. Focus is useful. The problem is that the focus stopped updating. The student is paying attention, but to a smaller slice of the situation than the patient requires.",
+      },
+      {
+        type: "paragraph",
+        text: "Under evaluation pressure, narrowing becomes more likely because working memory is already carrying more than usual. Observation, time awareness, performance anxiety, directive recall, partner management, and patient assessment are all competing for the same limited space. When something goes slightly wrong, or when the call becomes unclear, the brain often narrows attention further as a way of managing that load. It reaches for what is familiar, what feels controllable, or what was most recently in focus.",
       },
       {
         type: "heading",
@@ -7290,11 +7339,59 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "When thinking narrows, telling yourself to relax rarely fixes the problem. The issue is not only emotion. It is orientation.",
+        text: "When thinking narrows, the problem is not only emotional. It is structural.",
       },
       {
         type: "paragraph",
-        text: "You need a small way to widen the frame without abandoning the call. The reset has to be short enough to use while you are still performing.",
+        text: "The issue is not that you are too anxious. The issue is that your orientation has shrunk. You have lost the wider view of the call that you need in order to make the next right decision. Telling yourself to relax may reduce distress slightly, but it does not automatically restore orientation. You need a small, deliberate way to widen the frame without abandoning the call.",
+      },
+      {
+        type: "paragraph",
+        text: "The reset has to be short enough to use while still performing. It cannot require stepping out of the scenario or stopping care. It needs to be something that happens in the space between one action and the next, quietly enough that it does not interrupt the call but deliberately enough that it actually changes where your attention goes.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Picture a student managing a dialysis patient who called because they missed a session and is now feeling weak and short of breath.",
+      },
+      {
+        type: "paragraph",
+        text: "Early in the call, the student identifies the missed dialysis, notes an elevated potassium on the patient's home monitoring sheet, and becomes focused on the cardiac risk. They apply the monitor, run an ECG, and are watching the rhythm carefully. The ECG looks concerning. Their attention has settled here.",
+      },
+      {
+        type: "paragraph",
+        text: "While they are watching the monitor, the patient becomes quieter. Their breathing has changed slightly. They are still answering questions, but with less effort than a few minutes ago, and the responses are becoming shorter.",
+      },
+      {
+        type: "paragraph",
+        text: "The student does not notice the change. They are still focused on the rhythm. They ask about the patient's last dialysis again. They check the ECG once more. The call is moving, but it has become smaller than the patient.",
+      },
+      {
+        type: "paragraph",
+        text: "A few minutes later, the evaluator asks, \"Can you tell me what you are most concerned about right now?\"",
+      },
+      {
+        type: "paragraph",
+        text: "The student answers about the potassium and the rhythm. That concern was real. But the patient in front of them has been showing signs of respiratory deterioration that have gone unaddressed because attention narrowed around the first legitimate finding.",
+      },
+      {
+        type: "paragraph",
+        text: "Now consider what a reset would look like at the moment the patient got quieter.",
+      },
+      {
+        type: "paragraph",
+        text: "The student is about to check the ECG for the third time. They pause. They look at the patient rather than the monitor. They name the main risk out loud, or internally if necessary: \"This patient may be deteriorating. I am going to look at the whole picture before I continue.\"",
+      },
+      {
+        type: "paragraph",
+        text: "They check breathing effort, mental status, skin, and speech quality. They recognize that something has changed. Their explanation expands to include respiratory compromise alongside the cardiac risk. The plan changes: the rhythm still matters, but the patient's deteriorating respiratory status now changes the urgency of the call.",
+      },
+      {
+        type: "paragraph",
+        text: "The reset was a few seconds. It happened in the space between checking the ECG and checking it again. It brought the call back to the patient.",
       },
       {
         type: "heading",
@@ -7305,32 +7402,40 @@ const sectionSeeds: SectionSeed[] = [
         text: "Use the reset when you notice that your thinking has become too small, too fast, or too fixed.",
       },
       {
-        type: 'list',
-        items: [
-        "Stop for one breath and name the patient’s main problem right now.",
-        "Look again for the cue that does not fit your current explanation.",
-        "Choose the next safest action, then reassess after it.",
-        ],
+        type: "paragraph",
+        text: "First: stop for one breath and name the patient's main problem right now, not the problem you were working on a minute ago, but the problem the patient is presenting with at this moment. If you cannot name it clearly, that is information.",
       },
       {
         type: "paragraph",
-        text: "This is not a dramatic pause. It can happen silently while you reposition, delegate, repeat vitals, or summarize to your partner. The point is to widen attention before the call drifts too far.",
+        text: "Second: look for the cue that does not fit your current explanation. Not to undermine everything you have done, but to make sure the explanation is still honest. The dialysis patient's quieter responses did not fit the picture of a stable patient with a cardiac concern. That cue deserved attention.",
       },
       {
         type: "paragraph",
-        text: "In practice, this can be brief and silent. A student managing a quieter respiratory patient might pause while repositioning and think: the main risk right now is fatigue, not asthma progression. I am going to reassess air entry and effort before the next step. That is a reset. It takes a few seconds and brings the call back to the patient.",
+        text: "Third: choose the next safest action, then reassess after it. Not the next action on a mental checklist. The safest next action given what you now know.",
+      },
+      {
+        type: "paragraph",
+        text: "This is not a dramatic pause. It can happen while repositioning the patient, delegating a task to a partner, repeating a set of vitals, or summarizing to the team. The point is to widen attention before the call drifts further into a smaller space.",
       },
       {
         type: "heading",
-        text: "Resetting during communication",
+        text: "Resetting through communication",
       },
       {
         type: "paragraph",
-        text: "Sometimes narrowing shows up in how you talk. You may over-explain to the evaluator, stop listening to the patient, or give your partner instructions without a shared plan.",
+        text: "Sometimes narrowing shows up first in how you are talking.",
       },
       {
         type: "paragraph",
-        text: "A useful reset is to say one plain sentence out loud: “Right now I am most concerned about poor perfusion, and I want to reassess blood pressure and mental status before the next decision.” That kind of sentence can steady the team and steady your own thinking.",
+        text: "You may be over-explaining one concern to the evaluator while the patient's condition is changing. You may stop listening to the patient's answers because you already know what you are looking for. You may give your partner instructions without a shared working picture of what the call is currently about.",
+      },
+      {
+        type: "paragraph",
+        text: "Speaking a brief, honest summary out loud can reset both the team and your own thinking. Something like: \"I want to step back for a moment. Right now I am most concerned about how this patient looks overall, not just the specific finding I have been watching. Let me reassess and then we will make a transport decision.\"",
+      },
+      {
+        type: "paragraph",
+        text: "That kind of sentence does something that internal recalibration alone often cannot. It externalizes the reset. It brings your partner into the current working explanation. And it often sounds, to an evaluator, like exactly the kind of reasoning they were hoping to see.",
       },
       {
         type: "heading",
@@ -7338,11 +7443,19 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Mistakes can narrow attention too. Once you notice one, the mind wants to replay it while the call continues. That creates a second problem.",
+        text: "Mistakes can narrow attention in a specific way. Once you notice you have done something wrong, the mind wants to replay it, explain it, and manage the distress it creates, all while the call is still happening. That process consumes the same working memory that the patient needs.",
       },
       {
         type: "paragraph",
-        text: "A better response is to correct what can be corrected, name what changes the plan, and return to the patient. Reflection can happen later. During the call, the reset is about getting useful again.",
+        text: "The more useful response is faster and more practical: correct what can be corrected, name what changes the plan, and return to the patient. The analysis can happen in debrief. During the call, reflection is a luxury you may not be able to afford.",
+      },
+      {
+        type: "paragraph",
+        text: "For example, a student realizes they assessed blood pressure on an arm that had an IV running and the reading was unreliable. The unhelpful response is to spend the next two minutes explaining the error, apologizing, or mentally replaying the sequence. The helpful response is to reassess on the other arm, note the new value, and move forward. The mistake is acknowledged and corrected. The call continues.",
+      },
+      {
+        type: "paragraph",
+        text: "Students sometimes remain stuck on a mistake longer than the mistake deserves, while the patient moves forward without them.",
       },
       {
         type: "heading",
@@ -7350,15 +7463,23 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Practise the reset before you need it. During low-stakes scenarios, deliberately pause after an intervention and ask what has changed. During debrief, identify the moment where your thinking narrowed and what cue could have widened it.",
+        text: "The reset is a skill, and it is easier to use under pressure if it has been practised in lower-stakes conditions first.",
       },
       {
         type: "paragraph",
-        text: "Over time, the reset becomes less dramatic. It turns into a small habit of returning to the whole patient when pressure pulls attention into one corner of the call.",
+        text: "During scenario practice, build in deliberate reset moments. After every intervention, pause and ask: what has changed about the patient since I began this action? What am I currently most focused on, and is that still the most important thing? That pause does not need to be long. Ten seconds of genuine orientation is more useful than two minutes of continued narrow assessment.",
       },
       {
         type: "paragraph",
-        text: "This gives the reflection sections a clearer job. Once the call is over, you can look back at the narrowing without replaying the whole performance.",
+        text: "After scenarios, use debrief to identify the narrowing moment specifically. Not \"I lost focus\" but \"at the point where I started watching the monitor continuously, I stopped reassessing the patient's overall status.\" Name the cue that could have triggered the reset earlier. Name what you would do differently at that specific moment.",
+      },
+      {
+        type: "paragraph",
+        text: "Variation in practice also builds reset flexibility. A student who practises resets only in familiar call types may find the reset harder to access when the call type changes. Practise the same orientation habit across different presentations: a patient with a behavioural emergency where the physical examination gets delayed, a pediatric call where the child's appearance is more alarming than the numbers, a trauma call where a secondary injury is easy to miss because the obvious one is already occupying attention. The reset is the same habit each time. The call that requires it looks different.",
+      },
+      {
+        type: "paragraph",
+        text: "Over time, the reset becomes less deliberate. It turns into a small, recurring habit of returning to the whole patient when pressure pulls attention into one corner of the call.",
       },
     ],
     glossaryTerms: [
@@ -7397,395 +7518,278 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Use brief reflection to identify one meaningful moment, understand what shaped it, and carry one adjustment into the next attempt.",
     pageType: "tool-supported",
     body: [
-        {
-                "type": "paragraph",
-                "text": "Reflection is usually introduced with good intentions."
-        },
-        {
-                "type": "paragraph",
-                "text": "After a scenario, OSCE, lab, or placement shift, students are often told to think about what happened. What went well. What went poorly. What they learned. What they would do differently next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "On paper, that makes sense. In practice, it often lands on students at the wrong moment."
-        },
-        {
-                "type": "paragraph",
-                "text": "By the time a student is asked to reflect, they may already be carrying a lot: new content, skills, directives, peer comparison, instructor feedback, upcoming evaluations, and whatever emotional residue came from the last run. A rough scenario can stay in the body for a while. So can an OSCE station that felt messier than expected."
-        },
-        {
-                "type": "paragraph",
-                "text": "When reflection is added to that without enough shape, it starts to feel like another task. Some students avoid it. Some rush it. Some write what sounds appropriate. Some replay the entire call in their head and assume that replay is reflection because it feels active."
-        },
-        {
-                "type": "paragraph",
-                "text": "The issue is not that reflection is useless. The issue is that reflection is often made too large."
-        },
-        {
-                "type": "paragraph",
-                "text": "For paramedic learning, reflection works best when it is small enough to use and specific enough to affect the next attempt."
-        },
-        {
-                "type": "heading",
-                "text": "What reflection is for"
-        },
-        {
-                "type": "paragraph",
-                "text": "Reflection is not meant to be a full replay of the call."
-        },
-        {
-                "type": "paragraph",
-                "text": "It is not a written confession, a private performance review, or a place to prove that you care by writing more. It should not leave you with ten vague lessons and no usable change."
-        },
-        {
-                "type": "paragraph",
-                "text": "The job is simpler than that."
-        },
-        {
-                "type": "paragraph",
-                "text": "Reflection helps you take one piece of experience and turn it into something you can use later."
-        },
-        {
-                "type": "paragraph",
-                "text": "That might mean noticing why you hesitated before treating. It might mean realizing that reassessment faded after the first intervention. It might mean identifying the moment where pressure narrowed your attention. It might mean seeing that you knew the directive wording, but the decision point still became fragile when the patient was borderline."
-        },
-        {
-                "type": "paragraph",
-                "text": "Those findings matter because they can shape what happens next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "A useful reflection does not need to explain every part of the performance. It needs to leave you with one adjustment that has a fair chance of showing up again in a scenario, OSCE, lab, or placement setting."
-        },
-        {
-                "type": "heading",
-                "text": "Why long reflection often fails"
-        },
-        {
-                "type": "paragraph",
-                "text": "Long reflection can look responsible from the outside."
-        },
-        {
-                "type": "paragraph",
-                "text": "A student finishes a difficult scenario and tries to write about the whole thing: dispatch information, first impression, primary assessment, history, vitals, treatments, partner communication, instructor feedback, emotions, mistakes, and what should have happened instead."
-        },
-        {
-                "type": "paragraph",
-                "text": "By the end, there may be a lot of words on the page, but the next action is still blurry."
-        },
-        {
-                "type": "paragraph",
-                "text": "That kind of reflection can create the feeling of processing without actually sharpening future behaviour. It asks the student to hold too much at once, which is often the same problem that caused the performance issue in the first place."
-        },
-        {
-                "type": "paragraph",
-                "text": "In paramedicine, useful reflection needs some constraint."
-        },
-        {
-                "type": "paragraph",
-                "text": "Choose one moment. Find what shaped it. Decide what you will try next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "That is not shallow. It is focused."
-        },
-        {
-                "type": "heading",
-                "text": "A paramedic example"
-        },
-        {
-                "type": "paragraph",
-                "text": "Imagine a student finishes a respiratory scenario."
-        },
-        {
-                "type": "paragraph",
-                "text": "The patient was short of breath, anxious, and initially able to speak in short phrases. The student recognized respiratory distress, started assessment, managed oxygen appropriately, and began thinking through treatment. After the first intervention, the patient became quieter."
-        },
-        {
-                "type": "paragraph",
-                "text": "The student kept moving. They adjusted equipment, asked more history questions, and prepared for the next step. What they did not do was deliberately return to the patient’s response: work of breathing, air entry, ability to speak, mental status, vital signs, and overall trajectory."
-        },
-        {
-                "type": "paragraph",
-                "text": "During debrief, the instructor says, “You treated, but you did not check whether the treatment changed the problem.”"
-        },
-        {
-                "type": "paragraph",
-                "text": "There are a few ways the student could handle that feedback."
-        },
-        {
-                "type": "paragraph",
-                "text": "They could replay the whole scenario from start to finish. They could list every missed question. They could write about how stressed they felt. They could make a broad promise to be more thorough next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "That may feel complete, but it probably will not change much."
-        },
-        {
-                "type": "paragraph",
-                "text": "A more useful reflection would stay closer to the moment."
-        },
-        {
-                "type": "paragraph",
-                "text": "Moment:"
-        },
-        {
-                "type": "paragraph",
-                "text": "After the first intervention, the patient became quieter."
-        },
-        {
-                "type": "paragraph",
-                "text": "What shaped the action:"
-        },
-        {
-                "type": "paragraph",
-                "text": "The intervention felt like progress, so attention moved to the next task instead of returning to the patient’s response."
-        },
-        {
-                "type": "paragraph",
-                "text": "Adjustment:"
-        },
-        {
-                "type": "paragraph",
-                "text": "After an intervention, reassess the finding that justified the intervention before moving to the next task."
-        },
-        {
-                "type": "paragraph",
-                "text": "That reflection is short, but it gives the student something usable. The next time they treat a patient, the cue is clearer than “be better at reassessment.” It becomes: after I intervene, I check whether the original problem improved, worsened, or stayed the same."
-        },
-        {
-                "type": "heading",
-                "text": "The difference between reflection and rumination"
-        },
-        {
-                "type": "paragraph",
-                "text": "Reflection and rumination can feel similar from the inside."
-        },
-        {
-                "type": "paragraph",
-                "text": "Both involve returning to something that happened. Both can happen after mistakes. Both can feel mentally active, especially when the performance was public or uncomfortable."
-        },
-        {
-                "type": "paragraph",
-                "text": "The difference is whether the thinking leads somewhere."
-        },
-        {
-                "type": "paragraph",
-                "text": "Rumination circles around the discomfort. It often sounds like:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "“I cannot believe I did that.”",
-                        "“Why do I always miss this?”",
-                        "“Everyone else probably looked better.”",
-                        "“I should have known better.”",
-                        "“I keep replaying it, but I still do not know what to do with it.”"
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Those thoughts are understandable. Scenarios and OSCEs can leave a residue. A rough performance can follow a student into the hallway, the car, or the next study session."
-        },
-        {
-                "type": "paragraph",
-                "text": "But replaying the moment is not the same as learning from it."
-        },
-        {
-                "type": "paragraph",
-                "text": "Useful reflection asks a different kind of question:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "“Where did the call start to drift?”",
-                        "“What was I paying attention to at that moment?”",
-                        "“What did I stop checking?”",
-                        "“What assumption was guiding me?”",
-                        "“What would I notice or do differently next time?”"
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "These questions move the student toward action. They do not erase the discomfort, but they keep it from becoming the whole lesson."
-        },
-        {
-                "type": "heading",
-                "text": "What to reflect on"
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not reflect on everything."
-        },
-        {
-                "type": "paragraph",
-                "text": "Choose one moment that mattered."
-        },
-        {
-                "type": "paragraph",
-                "text": "Good moments include:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "a decision that felt rushed",
-                        "a decision that felt delayed",
-                        "a point where feedback repeated something you have heard before",
-                        "a moment where the patient changed and your plan did not",
-                        "a moment where pressure made you skip structure",
-                        "a moment where you knew the content but could not use it cleanly",
-                        "a moment where your first explanation became too comfortable"
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "The moment does not need to be dramatic."
-        },
-        {
-                "type": "paragraph",
-                "text": "Often, the best reflection comes from a small point where thinking shifted. A missed reassessment. A vague transport decision. A rushed directive screen. A communication moment where you knew what you meant but did not make it clear to the patient or partner."
-        },
-        {
-                "type": "paragraph",
-                "text": "Small moments are easier to work with because they can become specific adjustments."
-        },
-        {
-                "type": "heading",
-                "text": "A simple reflection structure"
-        },
-        {
-                "type": "paragraph",
-                "text": "Use this after a scenario, OSCE, lab, or feedback conversation when you need to extract something useful without writing a full reflection."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "Name one moment.",
-                        "Name what shaped your action.",
-                        "Decide one adjustment for next time."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "The first step keeps reflection from becoming the whole call."
-        },
-        {
-                "type": "paragraph",
-                "text": "The second step helps you understand why the action made sense at the time. Most mistakes are not random. They usually come from attention, assumptions, pressure, uncertainty, weak retrieval, or a structure that was not stable enough yet."
-        },
-        {
-                "type": "paragraph",
-                "text": "The third step turns the reflection forward."
-        },
-        {
-                "type": "paragraph",
-                "text": "For example:"
-        },
-        {
-                "type": "paragraph",
-                "text": "Moment:"
-        },
-        {
-                "type": "paragraph",
-                "text": "I delayed transport because I was still trying to finish the history."
-        },
-        {
-                "type": "paragraph",
-                "text": "What shaped it:"
-        },
-        {
-                "type": "paragraph",
-                "text": "I was waiting for the assessment to feel complete before naming risk."
-        },
-        {
-                "type": "paragraph",
-                "text": "Adjustment:"
-        },
-        {
-                "type": "paragraph",
-                "text": "When the patient looks unstable or trends worse, name transport priority before collecting more detail."
-        },
-        {
-                "type": "paragraph",
-                "text": "This is not a complete analysis of the whole call. It is one useful change."
-        },
-        {
-                "type": "heading",
-                "text": "When reflection should stop"
-        },
-        {
-                "type": "paragraph",
-                "text": "One of the harder skills is knowing when to stop."
-        },
-        {
-                "type": "paragraph",
-                "text": "Students often keep thinking because the scenario still feels unresolved. They want the discomfort to settle. They want a clearer answer. They want to make sure they have learned enough from the mistake."
-        },
-        {
-                "type": "paragraph",
-                "text": "There is a point where more replay stops helping."
-        },
-        {
-                "type": "paragraph",
-                "text": "A good stopping point is when you can say:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "this was the moment",
-                        "this is what shaped my action",
-                        "this is what I will try next time"
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Once you have that, continuing to pull apart the scenario may only add noise."
-        },
-        {
-                "type": "paragraph",
-                "text": "Stopping does not mean the scenario did not matter. It means the useful part has been extracted for now. If the same pattern returns later, you can examine it again with more information."
-        },
-        {
-                "type": "heading",
-                "text": "How this supports improvement"
-        },
-        {
-                "type": "paragraph",
-                "text": "Brief reflection helps because it gives feedback a place to land."
-        },
-        {
-                "type": "paragraph",
-                "text": "Without reflection, students may hear feedback and understand it, but not carry it forward. With too much reflection, they may understand the problem and still overload themselves with too many lessons."
-        },
-        {
-                "type": "paragraph",
-                "text": "The more practical move is to keep the loop small."
-        },
-        {
-                "type": "paragraph",
-                "text": "Choose one moment. Understand it just enough. Carry one adjustment."
-        },
-        {
-                "type": "paragraph",
-                "text": "Over time, this changes what students notice. The same mistake may not disappear immediately, but it starts to shift. A student catches the drift earlier. They pause before rushing. They reassess before moving on. They name the working concern before waiting for certainty."
-        },
-        {
-                "type": "paragraph",
-                "text": "That is often what improvement looks like before it becomes smooth."
-        },
-        {
-                "type": "paragraph",
-                "text": "Reflection does not need to be heavy to be useful."
-        },
-        {
-                "type": "paragraph",
-                "text": "It needs to be specific enough to shape the next attempt. In paramedic learning, that usually means choosing one moment, naming what shaped it, and deciding what you will notice or do differently next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "Some mistakes need one layer deeper. The Five Whys gives students a way to trace a repeated or unclear mistake back to the learning structure underneath it, without turning the process into overthinking."
-        }
-],
+      {
+        type: "paragraph",
+        text: "Reflection is usually introduced with good intentions.",
+      },
+      {
+        type: "paragraph",
+        text: "After a scenario, OSCE, lab, or placement shift, students are often told to think about what happened: what went well, what went poorly, what they learned, what they would do differently. On paper, that makes sense. In practice, it often arrives at the wrong moment and without enough shape.",
+      },
+      {
+        type: "paragraph",
+        text: "By the time a student is asked to reflect, they may already be carrying a lot: new content, skills, directives, upcoming evaluations, feedback that landed harder than expected, and whatever emotional residue came from the last run. When reflection is added to that without structure, it starts to feel like another task. Some students avoid it. Some rush it. Some write what sounds appropriate. Some replay the entire call and assume that replay is reflection because it feels active.",
+      },
+      {
+        type: "paragraph",
+        text: "The issue is not that reflection is useless. The issue is that it is often made too large.",
+      },
+      {
+        type: "paragraph",
+        text: "For paramedic learning, reflection works best when it is small enough to use and specific enough to affect the next attempt.",
+      },
+      {
+        type: "heading",
+        text: "What reflection is for",
+      },
+      {
+        type: "paragraph",
+        text: "Reflection is not a full replay of the call. It is not a written confession, a private performance review, or a place to prove that you care by writing more. A reflection that leaves you with ten vague lessons and no clear next action has not done its job.",
+      },
+      {
+        type: "paragraph",
+        text: "The purpose is simpler: take one piece of experience and turn it into something you can use later.",
+      },
+      {
+        type: "paragraph",
+        text: "That might mean noticing why you hesitated before treating. It might mean realizing that reassessment faded after the first intervention. It might mean identifying the moment where pressure narrowed your attention. It might mean seeing that you knew the directive wording, but the decision point still became fragile when the patient was borderline.",
+      },
+      {
+        type: "paragraph",
+        text: "Those findings matter because they can shape what happens next time. A useful reflection does not need to explain every part of the performance. It needs to leave you with one adjustment that has a fair chance of showing up in a real scenario, OSCE, or placement setting.",
+      },
+      {
+        type: "heading",
+        text: "Why long reflection often fails",
+      },
+      {
+        type: "paragraph",
+        text: "A student finishes a difficult scenario and tries to write about the whole thing: dispatch information, first impression, primary assessment, history, vitals, treatments, partner communication, instructor feedback, emotions, mistakes, and what should have happened instead.",
+      },
+      {
+        type: "paragraph",
+        text: "By the end, there may be a lot of words on the page but the next action is still blurry.",
+      },
+      {
+        type: "paragraph",
+        text: "That kind of reflection can create the feeling of processing without actually sharpening future behaviour. It asks the student to hold too much at once, which is often the same problem that caused the performance issue in the first place. Useful reflection needs constraint. Choose one moment. Find what shaped it. Decide what you will try next time.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Imagine a student finishes a scenario involving a patient who called after a fall at home.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient is an older adult who fell in the kitchen. There is a wrist injury. The student completes a thorough assessment of the injury, manages pain, assesses for other injuries, and begins preparing for transport. The call feels organized.",
+      },
+      {
+        type: "paragraph",
+        text: "During debrief, the instructor asks: \"Did you consider why she fell?\"",
+      },
+      {
+        type: "paragraph",
+        text: "The student pauses. They assessed the injury well. They did not ask whether the fall had a cause. They did not ask whether there was any dizziness, chest discomfort, or brief loss of consciousness before she went down. They did not check whether the fall was mechanical, which a patient this age is entitled to have, or whether something happened first that made her fall.",
+      },
+      {
+        type: "paragraph",
+        text: "The instructor was not criticizing the injury management. They were pointing out that the call was approached as a trauma, and the question underneath it, why did this person fall, was never asked.",
+      },
+      {
+        type: "paragraph",
+        text: "There are several ways the student could reflect on this. They could replay the entire call from the moment of dispatch. They could list every question they should have asked. They could write about what a thorough fall assessment includes. They could make a broad resolution to be more comprehensive next time.",
+      },
+      {
+        type: "paragraph",
+        text: "That may feel thorough, but it probably will not produce a specific change.",
+      },
+      {
+        type: "paragraph",
+        text: "A more useful reflection would stay close to the moment.",
+      },
+      {
+        type: "paragraph",
+        text: "Moment: I completed a thorough injury assessment and started preparing for transport without asking about the mechanism or precipitating cause.",
+      },
+      {
+        type: "paragraph",
+        text: "What shaped it: The dispatch said \"fall,\" the injury was obvious, and the call organized itself around the injury. The question of why she fell never surfaced because the presenting problem already had an answer.",
+      },
+      {
+        type: "paragraph",
+        text: "Adjustment: For any patient who has fallen, I will ask about what was happening immediately before the fall before I assume the fall itself is the primary problem.",
+      },
+      {
+        type: "paragraph",
+        text: "That reflection is short. It gives the student something specific to carry forward. The next time there is a fall call, the cue is clearer than \"be more thorough.\" It becomes: before this call becomes about the injury, ask why the injury happened.",
+      },
+      {
+        type: "heading",
+        text: "The difference between reflection and rumination",
+      },
+      {
+        type: "paragraph",
+        text: "Reflection and rumination can feel similar from the inside. Both involve returning to something that happened. Both can feel mentally active, especially when the performance was public or uncomfortable.",
+      },
+      {
+        type: "paragraph",
+        text: "The difference is whether the thinking leads somewhere.",
+      },
+      {
+        type: "paragraph",
+        text: "Rumination circles around the discomfort:",
+      },
+      {
+        type: "list",
+        items: [
+          "\"I cannot believe I did that.\"",
+          "\"Why do I always miss this?\"",
+          "\"Everyone else probably looked better.\"",
+          "\"I should have known better.\"",
+          "\"I keep replaying it, but I still do not know what to do with it.\"",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Those thoughts are understandable. Scenarios and OSCEs can leave a residue. A rough performance can follow a student into the hallway, the car, and the next study session. But replaying the moment is not the same as learning from it.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful reflection asks a different kind of question:",
+      },
+      {
+        type: "list",
+        items: [
+          "\"Where did the call start to drift?\"",
+          "\"What was I paying attention to at that moment?\"",
+          "\"What did I stop checking?\"",
+          "\"What assumption was guiding me?\"",
+          "\"What would I notice or do differently next time?\"",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These questions move the student toward action. They do not erase the discomfort, but they keep it from becoming the whole lesson.",
+      },
+      {
+        type: "heading",
+        text: "What to reflect on",
+      },
+      {
+        type: "paragraph",
+        text: "Do not reflect on everything. Choose one moment that mattered.",
+      },
+      {
+        type: "paragraph",
+        text: "Good candidates:",
+      },
+      {
+        type: "list",
+        items: [
+          "a decision that felt rushed or delayed",
+          "a point where the same feedback appeared again",
+          "a moment where the patient changed and the plan did not",
+          "a moment where pressure made you skip structure",
+          "a moment where you knew the content but could not use it cleanly",
+          "a moment where the first explanation became too comfortable too early",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The moment does not need to be dramatic. Often the most useful reflection comes from a small point where thinking shifted in a way that mattered: a missed follow-up question, a vague transport decision, a reassessment that got displaced by the next task. Small moments are easier to work with because they can become specific adjustments.",
+      },
+      {
+        type: "heading",
+        text: "A simple reflection structure",
+      },
+      {
+        type: "paragraph",
+        text: "Use this after a scenario, OSCE, lab, or feedback conversation when you need to extract something useful without writing a full reflection.",
+      },
+      {
+        type: "paragraph",
+        text: "Name one moment. Name what shaped your action. Decide one adjustment for next time.",
+      },
+      {
+        type: "paragraph",
+        text: "The first step keeps reflection from becoming the whole call. The second step helps you understand why the action made sense at the time. Most mistakes are not random: they usually come from attention, assumptions, pressure, uncertainty, or a structure that was not stable enough yet. Understanding the why makes the adjustment more durable than a simple promise to remember.",
+      },
+      {
+        type: "paragraph",
+        text: "The third step turns reflection forward.",
+      },
+      {
+        type: "paragraph",
+        text: "For example:",
+      },
+      {
+        type: "paragraph",
+        text: "Moment: I delayed transport because I was still trying to finish the history.",
+      },
+      {
+        type: "paragraph",
+        text: "What shaped it: I was waiting for the assessment to feel complete before naming risk.",
+      },
+      {
+        type: "paragraph",
+        text: "Adjustment: When the patient looks unstable or trends worse, name transport priority before collecting more detail.",
+      },
+      {
+        type: "paragraph",
+        text: "That is one usable change. It is not a complete analysis of the whole call.",
+      },
+      {
+        type: "heading",
+        text: "When reflection should stop",
+      },
+      {
+        type: "paragraph",
+        text: "One of the harder skills is knowing when to stop.",
+      },
+      {
+        type: "paragraph",
+        text: "Students often keep thinking because the scenario still feels unresolved. They want the discomfort to settle. They want a clearer answer. They want to make sure they have learned enough from the mistake before moving on.",
+      },
+      {
+        type: "paragraph",
+        text: "There is a point where more replay stops producing anything new.",
+      },
+      {
+        type: "paragraph",
+        text: "A good stopping point is when you can say: this was the moment, this is what shaped my action, this is what I will try next time. Once you have that, continuing to pull apart the scenario tends to add noise rather than clarity.",
+      },
+      {
+        type: "paragraph",
+        text: "Stopping does not mean the scenario did not matter. It means the useful part has been extracted for now. If the same pattern returns in a later scenario, you can examine it again with more information. Most patterns worth understanding reveal themselves across multiple attempts rather than fully in one debrief.",
+      },
+      {
+        type: "paragraph",
+        text: "There is also a practical dimension to stopping. A student who spends the rest of the day processing a rough OSCE has less capacity for the next thing that needs attention. Useful reflection is efficient partly because it protects time and energy for everything that comes after it.",
+      },
+      {
+        type: "heading",
+        text: "How brief reflection accumulates",
+      },
+      {
+        type: "paragraph",
+        text: "Brief, specific reflection changes what students notice over time.",
+      },
+      {
+        type: "paragraph",
+        text: "A student who reflects after each scenario on one specific moment will not eliminate the same error immediately. But they will start catching the drift earlier. They will pause before rushing. They will reassess before moving to the next task. They will name the working concern before waiting for certainty.",
+      },
+      {
+        type: "paragraph",
+        text: "Each reflection deposits something small. The deposit is only one adjustment. But over a semester of scenario days, labs, and OSCEs, those adjustments accumulate into a different kind of attention: one that is harder to narrow, faster to recover, and more honest about what the patient is showing.",
+      },
+      {
+        type: "paragraph",
+        text: "That is often what improvement looks like before it feels smooth.",
+      },
+    ],
     glossaryTerms: [
         "reflection",
         "rumination",
@@ -7820,564 +7824,330 @@ const sectionSeeds: SectionSeed[] = [
     sectionPurpose: "Use the Five Whys to trace a meaningful mistake back to something actionable in learning, reasoning, preparation, or call structure.",
     pageType: "tool-supported",
     body: [
-        {
-                "type": "paragraph",
-                "text": "Mistakes do not teach automatically."
-        },
-        {
-                "type": "paragraph",
-                "text": "That is easy to forget in paramedic school, because mistakes are everywhere. They show up in scenarios, labs, documentation, OSCEs, and debriefs. Some are obvious right away. Others only become clear when an instructor asks one careful question and the whole call suddenly looks different."
-        },
-        {
-                "type": "paragraph",
-                "text": "It would be convenient if the mistake itself did the teaching. You miss a reassessment, feel the sting of it, and never miss it again. You delay treatment, get feedback, and the pattern disappears. You close too early on one explanation, notice it afterward, and become more flexible next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "Occasionally, it works that cleanly."
-        },
-        {
-                "type": "paragraph",
-                "text": "More often, the same pattern comes back in a slightly different shape."
-        },
-        {
-                "type": "paragraph",
-                "text": "The student may not miss the exact same step. They may miss the same kind of step. They wait too long for certainty. They focus on the first familiar pattern. They keep collecting information after the call has already shown enough risk to act. They give a treatment, then mentally move on before checking whether anything changed."
-        },
-        {
-                "type": "paragraph",
-                "text": "This is where the Five Whys can help."
-        },
-        {
-                "type": "paragraph",
-                "text": "Not every mistake needs this much attention. Most do not. But when a problem keeps returning, or when feedback feels accurate but hard to use, a short chain of better questions can keep the student from fixing the wrong layer."
-        },
-        {
-                "type": "heading",
-                "text": "What the Five Whys are for"
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys are a way of asking what led to a mistake until the answer becomes useful."
-        },
-        {
-                "type": "paragraph",
-                "text": "The point is not to reach exactly five questions. The number is less important than the movement. You are trying to move from the visible behaviour to the structure underneath it."
-        },
-        {
-                "type": "paragraph",
-                "text": "A visible behaviour might be:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "I delayed transport.",
-                        "I missed the reassessment.",
-                        "I over-focused on the monitor.",
-                        "I gave a long explanation but did not state a clear plan.",
-                        "I waited for the instructor to confirm the directive."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Those are real problems, but they are not always the best learning target."
-        },
-        {
-                "type": "paragraph",
-                "text": "If the answer stops at, “I need to remember transport,” or “I need to reassess,” the student may leave with a true statement and still no usable plan. They already know transport matters. They already know reassessment matters. The better question is why those actions became unavailable, delayed, or less important in the moment."
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys help slow that down without turning it into a long journal entry."
-        },
-        {
-                "type": "heading",
-                "text": "This is not self-interrogation"
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys can sound harsher than they need to be."
-        },
-        {
-                "type": "paragraph",
-                "text": "If the process feels like cross-examining yourself, it will probably become unhelpful. Students are already good at replaying mistakes. They do not need another method for proving they should have done better."
-        },
-        {
-                "type": "paragraph",
-                "text": "Used properly, the Five Whys are not about blame. They are about tracing the conditions that made the action make sense at the time."
-        },
-        {
-                "type": "paragraph",
-                "text": "That last phrase matters: at the time."
-        },
-        {
-                "type": "paragraph",
-                "text": "After a scenario ends, the better answer is usually easier to see. The instructor has given feedback. The patient outcome is known. The pressure is gone. From that position, the mistake can look obvious. During the call, the student may have been working with incomplete information, high cognitive load, a weak mental model, uncertainty about a directive, or a habit that has not been built strongly enough yet."
-        },
-        {
-                "type": "paragraph",
-                "text": "The question is not, “Why did I do something stupid?”"
-        },
-        {
-                "type": "paragraph",
-                "text": "The better question is, “What made this response more likely in the moment?”"
-        },
-        {
-                "type": "paragraph",
-                "text": "That version gives you something to work with."
-        },
-        {
-                "type": "heading",
-                "text": "A paramedic example"
-        },
-        {
-                "type": "paragraph",
-                "text": "Consider a student who delays nitroglycerin in a chest pain scenario."
-        },
-        {
-                "type": "paragraph",
-                "text": "The patient reports central chest pressure that started while walking up stairs. They are pale and nauseated. Their blood pressure is within range, though not especially high. The 12-lead is not diagnostic. The student gives ASA, continues assessment, asks more history questions, and keeps waiting for the presentation to become clearer before moving toward nitro."
-        },
-        {
-                "type": "paragraph",
-                "text": "During debrief, the feedback is direct: nitro was indicated, and the delay mattered."
-        },
-        {
-                "type": "paragraph",
-                "text": "A surface-level response might be:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "I need to give nitro faster next time."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "That may be true, but it is not enough."
-        },
-        {
-                "type": "paragraph",
-                "text": "A Five Whys approach asks what led to the delay."
-        },
-        {
-                "type": "heading",
-                "text": "Why was nitro delayed?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because I was not fully sure the pain was cardiac."
-        },
-        {
-                "type": "heading",
-                "text": "Why did uncertainty stop the decision?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because the ECG did not show a STEMI, and I treated that as a reason to keep gathering information."
-        },
-        {
-                "type": "heading",
-                "text": "Why did the ECG carry that much weight?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because I was looking for proof before I felt comfortable acting."
-        },
-        {
-                "type": "heading",
-                "text": "Why did I feel I needed proof?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because I was thinking of nitro as something I give after certainty, not as a treatment considered within a risk-managed directive when the patient fits and contraindications have been checked."
-        },
-        {
-                "type": "heading",
-                "text": "What does that point to?"
-        },
-        {
-                "type": "paragraph",
-                "text": "The issue is not only timing. It is how I understand chest pain risk, directive intent, contraindication checks, and reassessment after treatment."
-        },
-        {
-                "type": "paragraph",
-                "text": "Now the learning target is clearer."
-        },
-        {
-                "type": "paragraph",
-                "text": "The student does not just need to “be faster.” They need to study the directive through purpose, rehearse the contraindication screen, and practice explaining why care can begin before perfect certainty arrives."
-        },
-        {
-                "type": "paragraph",
-                "text": "That gives the next practice attempt a much better target."
-        },
-        {
-                "type": "heading",
-                "text": "How errors change shape"
-        },
-        {
-                "type": "paragraph",
-                "text": "One useful thing about the Five Whys is that the error often changes shape as the questions improve."
-        },
-        {
-                "type": "paragraph",
-                "text": "At first, the problem may look like a missed action. Then it starts to look like hesitation. Then it becomes a decision-framing problem. Eventually, it may point to the learning structure underneath: the directive was memorized as wording, but not understood as a way of managing risk. Or the physiology was known in pieces, but not connected enough to guide action. Or the student had an assessment sequence, but no reliable place where reassessment returned after intervention."
-        },
-        {
-                "type": "paragraph",
-                "text": "This does not excuse the original error. It makes the repair more accurate."
-        },
-        {
-                "type": "paragraph",
-                "text": "If a student treats every delayed treatment as a speed problem, they may become rushed. If they treat every missed reassessment as a memory problem, they may write “reassess” in bigger letters and still lose it under pressure. If they treat every fixation error as a confidence problem, they may miss the real issue: their thinking needs a deliberate check for what does not fit."
-        },
-        {
-                "type": "paragraph",
-                "text": "The first explanation is not always wrong. It is often incomplete."
-        },
-        {
-                "type": "heading",
-                "text": "Why shallow fixes are tempting"
-        },
-        {
-                "type": "paragraph",
-                "text": "After a rough scenario, students often want a quick rule."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "I will not miss that again.",
-                        "I need to be more confident.",
-                        "I need to stop overthinking.",
-                        "I need to move faster.",
-                        "I need to remember the protocol."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "These are understandable responses. They give the student something to hold onto after an uncomfortable performance."
-        },
-        {
-                "type": "paragraph",
-                "text": "The problem is that they are usually too broad to guide practice."
-        },
-        {
-                "type": "paragraph",
-                "text": "“Be more confident” does not tell you what to do when the next patient is vague. “Move faster” does not tell you which step can safely happen sooner. “Remember the protocol” does not explain why the protocol became hard to apply when the patient was borderline."
-        },
-        {
-                "type": "paragraph",
-                "text": "A useful fix should change what you notice or do next time."
-        },
-        {
-                "type": "paragraph",
-                "text": "That usually means it has to be more specific than the first thing you say to yourself after the scenario."
-        },
-        {
-                "type": "heading",
-                "text": "When to use the Five Whys"
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys are useful, but they are not for everything."
-        },
-        {
-                "type": "paragraph",
-                "text": "Use them when a mistake has some weight to it, especially when:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "the same error keeps appearing in different scenarios",
-                        "feedback feels accurate, but you are not sure what to practice",
-                        "your decision felt frozen, rushed, or overly cautious",
-                        "you acted correctly, but for a weak reason",
-                        "you acted too late because you were waiting for certainty",
-                        "your reflection keeps turning into replay instead of adjustment"
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not use them after every small imperfection."
-        },
-        {
-                "type": "paragraph",
-                "text": "Paramedic scenarios already produce enough feedback. If every missed word, awkward handoff, or minor sequence issue becomes a Five Whys exercise, the tool becomes another form of overload."
-        },
-        {
-                "type": "paragraph",
-                "text": "Choose one moment that matters."
-        },
-        {
-                "type": "paragraph",
-                "text": "Then stop when the answer points to something you can actually work on."
-        },
-        {
-                "type": "heading",
-                "text": "What a useful endpoint sounds like"
-        },
-        {
-                "type": "paragraph",
-                "text": "The endpoint of a Five Whys chain should not be a vague promise."
-        },
-        {
-                "type": "paragraph",
-                "text": "It should point toward a small learning target, structure change, or practice adjustment."
-        },
-        {
-                "type": "paragraph",
-                "text": "Less useful endpoints sound like:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "I need to do better.",
-                        "I need to be more confident.",
-                        "I should not freeze.",
-                        "I need to study more.",
-                        "I need to remember everything."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "More useful endpoints sound like:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "I need to practice naming a working concern before I have diagnostic certainty.",
-                        "I need a reliable reassessment point after the first intervention.",
-                        "I need to study this directive by purpose, not only by indications and contraindications.",
-                        "I need to compare these two presentations because I keep treating them as the same pattern.",
-                        "I need to state my plan to my partner when I feel my attention narrowing."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "The difference is practical."
-        },
-        {
-                "type": "paragraph",
-                "text": "A vague endpoint leaves the student with pressure. A specific endpoint gives the next attempt somewhere to go."
-        },
-        {
-                "type": "heading",
-                "text": "A second example: missed reassessment"
-        },
-        {
-                "type": "paragraph",
-                "text": "Consider a respiratory scenario."
-        },
-        {
-                "type": "paragraph",
-                "text": "The student recognizes wheezing, applies appropriate initial care, and begins treatment. The patient’s breathing sounds quieter afterward. The student moves on to transport planning and documentation details, but does not reassess work of breathing, air entry, speech, mental status, or the full vital sign trend."
-        },
-        {
-                "type": "paragraph",
-                "text": "In debrief, the instructor points out that the patient may have been tiring, not improving."
-        },
-        {
-                "type": "paragraph",
-                "text": "A shallow fix says:"
-        },
-        {
-                "type": "list",
-                "items": [
-                        "I need to reassess after treatment."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Again, true but incomplete."
-        },
-        {
-                "type": "paragraph",
-                "text": "A Five Whys chain might look like this:"
-        },
-        {
-                "type": "heading",
-                "text": "Why did reassessment get missed?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because I moved on after giving the treatment."
-        },
-        {
-                "type": "heading",
-                "text": "Why did I move on?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because giving the treatment felt like completing the main task."
-        },
-        {
-                "type": "heading",
-                "text": "Why did treatment feel like completion?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because I was thinking of the intervention as the goal, not as something that needed to be tested."
-        },
-        {
-                "type": "heading",
-                "text": "Why was I not testing it?"
-        },
-        {
-                "type": "paragraph",
-                "text": "Because my call structure does not automatically return me to patient response after an intervention."
-        },
-        {
-                "type": "heading",
-                "text": "What does that point to?"
-        },
-        {
-                "type": "paragraph",
-                "text": "I need to build a specific reassessment habit after treatment: effort, speech, air movement, mental status, vital signs, and whether the original explanation still fits."
-        },
-        {
-                "type": "paragraph",
-                "text": "Now the student has a better target."
-        },
-        {
-                "type": "paragraph",
-                "text": "They are not just trying to “remember reassessment.” They are building a place for reassessment to live in the call."
-        },
-        {
-                "type": "heading",
-                "text": "How this connects to reflection"
-        },
-        {
-                "type": "paragraph",
-                "text": "The previous section focused on reflecting without turning the whole performance into a long journal entry."
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys are a more focused version of that same idea."
-        },
-        {
-                "type": "paragraph",
-                "text": "Reflection asks, “What moment is worth learning from?”"
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys ask, “What led to that moment?”"
-        },
-        {
-                "type": "paragraph",
-                "text": "Used together, they keep post-scenario learning contained. The student does not need to process the entire call. They choose one meaningful moment, trace it far enough to find the learning target, then carry one adjustment into the next attempt."
-        },
-        {
-                "type": "paragraph",
-                "text": "That is enough for most situations."
-        },
-        {
-                "type": "paragraph",
-                "text": "More analysis is not always better. Once the useful adjustment is clear, continuing to dig can turn reflection back into rumination."
-        },
-        {
-                "type": "heading",
-                "text": "A simple way to use the Five Whys"
-        },
-        {
-                "type": "paragraph",
-                "text": "Use this only when the mistake is worth a closer look."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "Choose one moment."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Pick the moment where a decision, hesitation, fixation, or missed reassessment mattered. Do not analyze the whole call."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "Describe what happened plainly."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Use one sentence. Avoid drama. Avoid self-judgment."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "Ask what led to it."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "Start with the visible behaviour, then keep asking what made that behaviour more likely."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "Stop when the answer becomes actionable."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "You are looking for a learning target, not a perfect explanation."
-        },
-        {
-                "type": "list",
-                "items": [
-                        "Convert the endpoint into one adjustment."
-                ]
-        },
-        {
-                "type": "paragraph",
-                "text": "The adjustment should be specific enough to use in the next scenario, lab, OSCE, or placement shift."
-        },
-        {
-                "type": "heading",
-                "text": "What not to do with the Five Whys"
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not use them to prove that you failed."
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not use them to explain every small imperfection."
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not keep asking why after the answer has already become useful."
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not turn the process into a full written assignment unless an instructor has asked for that."
-        },
-        {
-                "type": "paragraph",
-                "text": "Do not make the endpoint a personality judgment."
-        },
-        {
-                "type": "paragraph",
-                "text": "If the chain ends with “I am bad at this,” the process has gone off course."
-        },
-        {
-                "type": "paragraph",
-                "text": "A better endpoint should sound like something you can practice, notice, compare, rehearse, or build into structure."
-        },
-        {
-                "type": "paragraph",
-                "text": "The Five Whys help when a mistake needs more than a quick note, but less than a full debrief with yourself."
-        },
-        {
-                "type": "paragraph",
-                "text": "They move the student from what happened, to what shaped it, to what needs support next. Used carefully, they keep reflection practical without making every error feel heavier than it needs to be."
-        },
-        {
-                "type": "paragraph",
-                "text": "Once that endpoint is clear, the remaining work is making it usable: carrying one adjustment into the next attempt without trying to fix everything at once."
-        }
-],
+      {
+        type: "paragraph",
+        text: "Mistakes do not teach automatically.",
+      },
+      {
+        type: "paragraph",
+        text: "It would be convenient if they did. You miss a reassessment, feel the sting of it, and never miss it again. You delay treatment, get feedback, and the pattern disappears. But more often, the same pattern comes back in a slightly different shape.",
+      },
+      {
+        type: "paragraph",
+        text: "The student may not miss the exact same step. They miss the same kind of step. They wait too long for certainty. They focus on the first familiar pattern. They keep gathering information after the call has already shown enough risk to act. They give a treatment and mentally move on before checking whether anything changed.",
+      },
+      {
+        type: "paragraph",
+        text: "This is where the Five Whys can help. Not for every mistake. Most mistakes do not need this level of attention. But when a problem keeps returning, or when feedback feels accurate but hard to use, a short chain of better questions can keep the student from fixing the wrong layer.",
+      },
+      {
+        type: "heading",
+        text: "What the Five Whys are for",
+      },
+      {
+        type: "paragraph",
+        text: "The Five Whys are a way of asking what led to a mistake until the answer becomes useful.",
+      },
+      {
+        type: "paragraph",
+        text: "The point is not to reach exactly five questions. The number matters less than the movement. You are trying to move from the visible behaviour to the structure underneath it.",
+      },
+      {
+        type: "paragraph",
+        text: "A visible behaviour might be:",
+      },
+      {
+        type: "list",
+        items: [
+          "I delayed transport.",
+          "I missed the reassessment.",
+          "I over-focused on the monitor.",
+          "I waited for the instructor to confirm before acting on the directive.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Those are real problems, but they are not always the best learning target. If the answer stops at \"I need to remember transport\" or \"I need to reassess more,\" the student may leave with a true statement and still no usable plan. They already know transport matters. They already know reassessment matters. The better question is why those actions became unavailable, delayed, or less important in the moment.",
+      },
+      {
+        type: "heading",
+        text: "This is not self-interrogation",
+      },
+      {
+        type: "paragraph",
+        text: "The Five Whys can sound harsher than they need to be. If the process feels like cross-examining yourself, it will become unhelpful. Students are already good at replaying mistakes. They do not need another method for proving they should have done better.",
+      },
+      {
+        type: "paragraph",
+        text: "Used properly, the Five Whys are not about blame. They are about tracing the conditions that made the action make sense at the time.",
+      },
+      {
+        type: "paragraph",
+        text: "That distinction matters practically. Self-blame tends to produce one of two responses: avoidance, where the student stops examining the mistake because it feels too uncomfortable, or over-correction, where they try to eliminate the error by force of will rather than by understanding what produced it. Neither changes the underlying structure.",
+      },
+      {
+        type: "paragraph",
+        text: "Situational curiosity produces something different. When the question shifts from \"why did I do something wrong\" to \"what made this response more likely in the moment,\" the answer becomes more honest and more useful. After a scenario ends, the better answer is usually easier to see: the instructor has given feedback, the pressure is gone, the outcome is known. During the call, the student may have been working with incomplete information, high cognitive load, a weak mental model, uncertainty about a directive, or a habit not yet built strongly enough. The question is what made this particular response the one that happened, not whether a better student would have done differently.",
+      },
+      {
+        type: "paragraph",
+        text: "That version gives you something to work with.",
+      },
+      {
+        type: "heading",
+        text: "A paramedic example",
+      },
+      {
+        type: "paragraph",
+        text: "Consider a student managing a patient found by family after an extended time on the floor following a fall.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient is an older adult, found in the bedroom. They had been down for an unknown period: possibly a few hours, possibly longer. They are conscious and answering questions, but slow. There is a hip injury, and the student appropriately manages pain, assesses circulation and sensation, and begins preparing for transport. The patient tolerates movement acceptably.",
+      },
+      {
+        type: "paragraph",
+        text: "What the student does not do is closely reassess the patient's overall condition after pain management: mental status, skin temperature, blood pressure trend, and whether anything about the clinical picture suggests prolonged immobility has produced effects beyond the injury itself. Rhabdomyolysis, hypothermia, and cardiovascular compromise from extended time on a cold floor in an older adult are not dramatic presentations at first. They are quiet ones.",
+      },
+      {
+        type: "paragraph",
+        text: "During debrief, the instructor says: \"You managed the injury well. Did you think about how long she might have been down?\"",
+      },
+      {
+        type: "paragraph",
+        text: "The student pauses. They had not.",
+      },
+      {
+        type: "paragraph",
+        text: "A shallow fix: I need to ask about time down for all fall patients.",
+      },
+      {
+        type: "paragraph",
+        text: "A Five Whys chain:",
+      },
+      {
+        type: "paragraph",
+        text: "Why was the duration not explored? Because the injury was visible and the patient was conscious, so the call organized itself around those facts.",
+      },
+      {
+        type: "paragraph",
+        text: "Why did the injury become the organizing frame? Because the dispatch said \"fall with injury\" and the presentation confirmed injury immediately.",
+      },
+      {
+        type: "paragraph",
+        text: "Why did confirmation of the injury close the assessment? Because I completed the injury assessment and moved toward transport without asking what else the presentation might include.",
+      },
+      {
+        type: "paragraph",
+        text: "Why did I not ask what else might be present? Because I had no reliable habit of asking \"what might prolonged immobility have caused\" as part of the assessment for any patient found down.",
+      },
+      {
+        type: "paragraph",
+        text: "What does that point to? For any patient found after time on the floor, I need to build in a specific question about duration and a targeted check for the complications that prolonged immobility produces in older adults: perfusion, skin, temperature, and renal risk.",
+      },
+      {
+        type: "paragraph",
+        text: "Now the student has a target that addresses the actual gap: not the fall assessment itself, but the layer of thinking underneath it that asks what the circumstances surrounding the fall may have produced beyond the injury.",
+      },
+      {
+        type: "heading",
+        text: "How errors change shape",
+      },
+      {
+        type: "paragraph",
+        text: "One useful thing about the Five Whys is that the error often changes shape as the questions improve.",
+      },
+      {
+        type: "paragraph",
+        text: "At first, the problem may look like a missed action. Then it starts to look like hesitation. Then it becomes a decision-framing problem. Eventually, it may point to the learning structure underneath: the directive was memorized as wording but not understood as a way of managing risk. Or the physiology was known in pieces but not connected enough to guide action. Or the student had an assessment sequence but no reliable place where reassessment returned after intervention.",
+      },
+      {
+        type: "paragraph",
+        text: "This does not excuse the original error. It makes the repair more accurate.",
+      },
+      {
+        type: "paragraph",
+        text: "If a student treats every delayed treatment as a speed problem, they may become rushed. If they treat every missed reassessment as a memory problem, they may write \"reassess\" in bigger letters and still lose it under pressure. If they treat every fixation error as a confidence problem, they may miss the real issue: their thinking needs a deliberate check for what does not fit.",
+      },
+      {
+        type: "paragraph",
+        text: "The first explanation is not always wrong. It is often just incomplete.",
+      },
+      {
+        type: "heading",
+        text: "Why shallow fixes are tempting",
+      },
+      {
+        type: "paragraph",
+        text: "After a rough scenario, students often want a quick rule: I will not miss that again. I need to be more confident. I need to move faster. I need to remember the protocol.",
+      },
+      {
+        type: "paragraph",
+        text: "These are understandable. They give the student something to hold onto after an uncomfortable performance. The problem is that they are too broad to guide practice. \"Be more confident\" does not tell you what to do when the next patient is vague. \"Move faster\" does not tell you which step can safely happen sooner. \"Remember the protocol\" does not explain why the protocol became hard to apply when the patient was borderline.",
+      },
+      {
+        type: "paragraph",
+        text: "A useful fix should change what you notice or do next time. That usually requires more specificity than the first thing you say to yourself after the scenario.",
+      },
+      {
+        type: "heading",
+        text: "When to use the Five Whys",
+      },
+      {
+        type: "paragraph",
+        text: "Use them when a mistake has some weight to it, particularly when:",
+      },
+      {
+        type: "list",
+        items: [
+          "the same error keeps appearing in different scenarios",
+          "feedback feels accurate but you are not sure what to practise",
+          "your decision felt frozen, rushed, or overly cautious",
+          "you acted correctly but for a weak reason",
+          "you acted too late because you were waiting for certainty",
+          "your reflection keeps turning into replay instead of adjustment",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Do not use them after every small imperfection. Paramedic scenarios already produce enough feedback. If every minor sequence issue becomes a Five Whys exercise, the tool becomes another form of overload. Choose one moment that matters, then stop when the answer points to something you can actually work on.",
+      },
+      {
+        type: "heading",
+        text: "What a useful endpoint sounds like",
+      },
+      {
+        type: "paragraph",
+        text: "The endpoint of a Five Whys chain should point toward a specific learning target, not a vague promise.",
+      },
+      {
+        type: "paragraph",
+        text: "Less useful endpoints:",
+      },
+      {
+        type: "list",
+        items: [
+          "I need to do better.",
+          "I need to be more confident.",
+          "I should not freeze.",
+          "I need to study more.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "More useful endpoints:",
+      },
+      {
+        type: "list",
+        items: [
+          "I need to practise naming a working concern before I have diagnostic certainty.",
+          "I need a reliable reassessment point after the first intervention, tied to the specific finding I acted on.",
+          "I need to study this directive by purpose, not only by indications and contraindications.",
+          "I need to compare these two presentations because I keep treating them as the same pattern.",
+          "I need to state my plan to my partner when I feel my attention narrowing.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A specific endpoint gives the next attempt somewhere to go.",
+      },
+      {
+        type: "heading",
+        text: "A second example: directive hesitation",
+      },
+      {
+        type: "paragraph",
+        text: "Consider a student who delays nitroglycerin in a chest pain scenario.",
+      },
+      {
+        type: "paragraph",
+        text: "The patient reports central chest pressure that started while walking up stairs. They are pale and nauseated. Their blood pressure is within range. The 12-lead is not diagnostic. The student gives ASA, continues assessment, asks more history questions, and keeps waiting for the presentation to become clearer before moving toward nitro.",
+      },
+      {
+        type: "paragraph",
+        text: "During debrief, the feedback is direct: nitro was indicated, and the delay mattered.",
+      },
+      {
+        type: "paragraph",
+        text: "A surface-level response: I need to give nitro faster next time.",
+      },
+      {
+        type: "paragraph",
+        text: "That may be true, but it is not enough.",
+      },
+      {
+        type: "paragraph",
+        text: "A Five Whys chain:",
+      },
+      {
+        type: "paragraph",
+        text: "Why was nitro delayed? Because I was not fully sure the pain was cardiac.",
+      },
+      {
+        type: "paragraph",
+        text: "Why did uncertainty stop the decision? Because the ECG did not show a STEMI, and I treated that as a reason to keep gathering information.",
+      },
+      {
+        type: "paragraph",
+        text: "Why did the ECG carry that much weight? Because I was looking for proof before I felt comfortable acting.",
+      },
+      {
+        type: "paragraph",
+        text: "Why did I feel I needed proof? Because I was thinking of nitro as something I give after certainty, not as a treatment considered within a risk-managed directive when the patient fits and contraindications have been checked.",
+      },
+      {
+        type: "paragraph",
+        text: "What does that point to? The issue is not only timing. It is how I understand chest pain risk, directive intent, contraindication screening, and reassessment after treatment.",
+      },
+      {
+        type: "paragraph",
+        text: "Now the learning target is clearer. The student does not just need to \"be faster.\" They need to study the directive through purpose, rehearse the contraindication screen, and practise explaining why care can begin before perfect certainty arrives.",
+      },
+      {
+        type: "heading",
+        text: "A simple way to use the Five Whys",
+      },
+      {
+        type: "paragraph",
+        text: "Use this only when the mistake is worth a closer look.",
+      },
+      {
+        type: "paragraph",
+        text: "Choose one moment: pick the decision, hesitation, fixation, or missed step that mattered most. Do not analyze the whole call.",
+      },
+      {
+        type: "paragraph",
+        text: "Describe what happened plainly in one sentence. Avoid drama and self-judgment.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask what led to it: start with the visible behaviour, then keep asking what made that behaviour more likely in the moment.",
+      },
+      {
+        type: "paragraph",
+        text: "Stop when the answer becomes actionable: you are looking for a learning target, not a perfect explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "Convert the endpoint into one adjustment specific enough to use in the next scenario, lab, OSCE, or placement shift.",
+      },
+      {
+        type: "heading",
+        text: "What not to do with the Five Whys",
+      },
+      {
+        type: "paragraph",
+        text: "Do not use them to prove that you failed. Do not apply them to every small imperfection. Do not keep asking why after the answer has already become useful. Do not make the endpoint a personality judgment.",
+      },
+      {
+        type: "paragraph",
+        text: "If the chain ends with \"I am bad at this,\" the process has gone off course. A useful endpoint should point toward something you can practise, notice, compare, rehearse, or build into structure.",
+      },
+      {
+        type: "paragraph",
+        text: "The Five Whys help when a mistake needs more than a quick note but less than a full debrief with yourself. They move the student from what happened, to what shaped it, to what needs support next. Used carefully, they keep reflection practical without making every error feel heavier than it needs to be.",
+      },
+    ],
     glossaryTerms: [
         "five-whys",
         "reflection",
@@ -8419,11 +8189,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That sounds obvious, but it is where many students get stuck. They receive feedback, agree with it, feel the weight of it, and then leave with a vague intention to do better next time.",
+        text: "That sounds obvious, but it is where many students get stuck. They receive feedback, agree with it, feel the weight of it, and then leave with a vague intention to do better next time. Vague intention is not a plan. It usually disappears as soon as the next scenario becomes noisy, the next lab day arrives, or the space between feedback and the next attempt fills up with other demands.",
       },
       {
         type: "paragraph",
-        text: "Vague intention is not a plan. It usually disappears as soon as the next scenario becomes noisy.",
+        text: "The gap between understanding feedback and acting on it is not a motivation problem. It is a translation problem. The feedback stays in the form it was delivered, accurate and general, rather than being converted into something small enough to carry and specific enough to test.",
       },
       {
         type: "heading",
@@ -8431,27 +8201,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Feedback after scenarios can be accurate and still be hard to use. A student may hear that they need to improve reassessment, communicate more clearly, manage time better, explain decisions, and avoid tunnel vision. All of that may be true.",
+        text: "Feedback after scenarios can be accurate and still be hard to use.",
       },
       {
         type: "paragraph",
-        text: "The problem is size. Too much feedback at once becomes a fog. The student understands the themes but does not know what to practise first.",
-      },
-      {
-        type: "heading",
-        text: "Turn feedback into one behaviour",
+        text: "A student may hear that they need to improve reassessment, communicate more clearly, manage time better, explain decisions, and avoid tunnel vision. All of that may be true. The problem is size. Too much feedback at once becomes a fog. The student understands the themes but does not know what to practise first, and by the time the next scenario starts, the fog is all that remains.",
       },
       {
         type: "paragraph",
-        text: "The first move is to translate feedback into one visible behaviour.",
-      },
-      {
-        type: "paragraph",
-        text: "“Improve reassessment” becomes “after every intervention, I will state what I am reassessing and why.” “Communicate better” becomes “before moving the patient, I will summarize the working concern and next step to my partner.” “Stop fixating” becomes “when something does not fit, I will name it out loud instead of ignoring it.”",
-      },
-      {
-        type: "paragraph",
-        text: "The behaviour should be small enough to try in the next scenario.",
+        text: "This is not a failure of caring or attention. It is a structural problem. Feedback delivered as a list of themes stays as a list of themes unless the student does something deliberate with it before the next attempt.",
       },
       {
         type: "heading",
@@ -8459,35 +8217,51 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Insight explains what happened. Adjustment changes what you do.",
+        text: "Insight explains what happened. Adjustment changes what you do next.",
       },
       {
         type: "paragraph",
-        text: "A student might realize they delayed transport because they were waiting for diagnostic certainty. That insight matters. But the adjustment has to be more concrete: “When risk is rising and the diagnosis is unclear, I will name my working concern and start moving while reassessing.”",
+        text: "A student might realize they delayed transport because they were waiting for diagnostic certainty. That insight is real and worth having. But insight alone does not change performance. The adjustment has to be more concrete: \"When risk is rising and the diagnosis is unclear, I will name my working concern and start moving while reassessing en route.\"",
       },
       {
         type: "paragraph",
-        text: "That is the difference between understanding the feedback and being ready to use it.",
+        text: "A student might understand that their reassessment disappeared after treatment. The insight is accurate. The adjustment is specific: \"After I intervene, I will identify the finding that made me intervene and check whether it has improved, stayed the same, or gotten worse before I move to the next task.\"",
+      },
+      {
+        type: "paragraph",
+        text: "A student might recognize that they committed to an early explanation and stopped testing it. The adjustment: \"When I form an early impression, I will name one finding that supports it and one finding that should make me pause before committing.\"",
+      },
+      {
+        type: "paragraph",
+        text: "In each case, the insight is necessary but not sufficient. The adjustment is what changes the next attempt.",
       },
       {
         type: "heading",
-        text: "A short feedback process",
+        text: "Turn feedback into one visible behaviour",
       },
       {
         type: "paragraph",
-        text: "After feedback, do not try to capture everything. Choose the piece that would most improve safety, reasoning, or flow if it changed next time.",
-      },
-      {
-        type: 'list',
-        items: [
-        "What is the most important pattern in the feedback?",
-        "What behaviour would show improvement?",
-        "Where will I try that behaviour next?",
-        ],
+        text: "The first practical move is to translate feedback into one visible behaviour.",
       },
       {
         type: "paragraph",
-        text: "Write the answer in one or two lines if needed. Then stop. The goal is not to preserve the entire debrief. The goal is to carry one useful adjustment forward.",
+        text: "\"Improve reassessment\" becomes: \"After every intervention, I will state what I am reassessing and why, even if only to myself.\"",
+      },
+      {
+        type: "paragraph",
+        text: "\"Communicate better\" becomes: \"Before moving the patient, I will summarize the working concern and next step to my partner in one sentence.\"",
+      },
+      {
+        type: "paragraph",
+        text: "\"Stop fixating\" becomes: \"When something does not fit my current explanation, I will name it out loud instead of absorbing it silently.\"",
+      },
+      {
+        type: "paragraph",
+        text: "\"Manage time better\" becomes: \"When I notice the assessment extending without a transport decision, I will ask myself whether the risk picture already justifies moving.\"",
+      },
+      {
+        type: "paragraph",
+        text: "The behaviour should be small enough to try in the next scenario without consuming additional working memory. If the adjustment requires significant conscious effort to remember, it is probably still too large.",
       },
       {
         type: "heading",
@@ -8495,15 +8269,43 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A student is told they lost reassessment after giving treatment. They understand the feedback, but if they leave with “reassess more” as the plan, little changes.",
+        text: "Consider a student who completes a scenario involving an older adult with a history of diabetes found at home, confused and not responding normally.
+
+The glucose is 3.1. The student recognizes hypoglycemia, treats it appropriately, and the patient begins to improve. The call feels organized. During debrief, the instructor says: "You treated the glucose correctly. Did you reassess fully after treatment? The patient's mental status improved but their blood pressure had drifted downward across two readings while you were preparing for transport."
+
+The student understands the feedback. If they leave with "watch vitals more carefully" as the plan, the behaviour probably will not change. They already know vitals matter.
+
+A stronger translation starts with the moment. Why did the blood pressure drift go unnoticed? Because the glucose correction felt like completion. The patient was improving, transport was being arranged, and the attention moved forward rather than returning to a full reassessment of the patient's overall status.
+
+The adjustment: "After treating a glucose emergency, I will not assume improvement in one finding means the patient is stable overall. I will reassess mental status, blood pressure, and skin before committing to a transport plan."
+
+That adjustment is visible. It can be practised. An instructor can observe it. The student will know whether it happened. It is also tied to a specific clinical reason: partial improvement after glucose correction can mask a second process that needs its own assessment.
+
+In the next scenario, the student does not need to be perfect. They need to test whether that one reassessment habit showed up after treatment.",
+      },
+      {
+        type: "heading",
+        text: "A short feedback process",
       },
       {
         type: "paragraph",
-        text: "A stronger adjustment is smaller: “After salbutamol, nitro, glucagon, oxygen, or a major positioning change, I will reassess the finding that justified the intervention and say whether the patient is better, worse, or unchanged.”",
+        text: "After a debrief, use this sequence before leaving the room or closing the session.",
       },
       {
         type: "paragraph",
-        text: "That adjustment is visible. It can be practised. An instructor can notice it. The student can tell whether it happened.",
+        text: "Name the most important pattern in the feedback. Not the longest list of issues, but the one that most directly affects safety, reasoning, or call flow if it does not change.",
+      },
+      {
+        type: "paragraph",
+        text: "Translate it into one visible behaviour. What would improvement look like from the outside? What would you say or do differently at a specific moment in the next scenario?",
+      },
+      {
+        type: "paragraph",
+        text: "Decide where you will test it. What kind of call, station, or moment will give that adjustment its next opportunity? Naming the context in advance helps the adjustment arrive when it is needed rather than only in retrospect.",
+      },
+      {
+        type: "paragraph",
+        text: "Write it in one or two lines if that helps. Then stop. The goal is to carry one useful adjustment forward, not to preserve the entire debrief.",
       },
       {
         type: "heading",
@@ -8511,15 +8313,51 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Some feedback lands hard because it touches confidence, identity, or fear of not being ready. That reaction is real, but it does not have to control the learning.",
+        text: "Some feedback lands hard because it touches confidence, identity, or the fear of not being ready.",
       },
       {
         type: "paragraph",
-        text: "Once the first emotional wave passes, return to the same question: what is one behaviour I can change next time? This keeps feedback from becoming a verdict and turns it back into training information.",
+        text: "That reaction is real, and it is worth acknowledging. Paramedicine students receive feedback in front of peers, from instructors they respect, in environments that already feel high-stakes. Feedback about clinical reasoning or directive decisions can feel like feedback about capability, about whether you are the kind of person who belongs in this work.",
       },
       {
         type: "paragraph",
-        text: "Reflection Without Journaling keeps the loop small. The Five Whys keeps it honest. This section makes it usable. Together, they give experience somewhere to go.",
+        text: "The emotional response is not a sign of weakness. It is a sign that the work matters to you, which is not a problem. The problem is when that response takes over the learning.",
+      },
+      {
+        type: "paragraph",
+        text: "There are a few things that tend to help. Giving the first emotional wave time to pass before trying to extract the adjustment is one of them. Most students who reflect on feedback two hours after a rough scenario come to a more useful place than students who try to process it immediately in the parking lot. The feedback does not change. The distance from the pressure does.",
+      },
+      {
+        type: "paragraph",
+        text: "It also helps to separate the feedback from the verdict. An instructor who says \"you closed too early on that explanation\" is not saying you are not capable of being a paramedic. They are describing one pattern that showed up in one scenario on one day, in a controlled environment where showing up and making mistakes is exactly the point. The feedback is not evidence of a fixed ceiling. It is data from a training exercise.",
+      },
+      {
+        type: "paragraph",
+        text: "Once the emotional weight has settled enough, return to the same question the rest of this section asks: what is one behaviour I can change next time? Keeping that question close turns feedback from a judgment back into training information.",
+      },
+      {
+        type: "heading",
+        text: "The full loop",
+      },
+      {
+        type: "paragraph",
+        text: "This section is the end of the Improvement System, but not because improvement stops here.",
+      },
+      {
+        type: "paragraph",
+        text: "Everything built across the last several sections, scenario days, common errors, focused practice, reflection, the Five Whys, and now feedback translation, is working on the same underlying problem: how to make experience produce something usable rather than just something that happened.",
+      },
+      {
+        type: "paragraph",
+        text: "Scenario days surface the pattern. Feedback names it. Reflection extracts one moment. The Five Whys trace it to the structure underneath. Focused practice builds it into the next attempt. And this section does the last piece: making sure the adjustment is specific enough, small enough, and grounded enough in the actual clinical moment to survive the noise of the next lab day.",
+      },
+      {
+        type: "paragraph",
+        text: "None of these tools require perfection. They require a willingness to look at what happened, identify one thing that could change, and carry it deliberately into the next attempt.",
+      },
+      {
+        type: "paragraph",
+        text: "That cycle, run honestly and often enough, is how paramedic thinking develops. Not by avoiding pressure or eliminating mistakes, but by getting incrementally better at learning from both.",
       },
     ],
     glossaryTerms: [
