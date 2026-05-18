@@ -8269,19 +8269,31 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Consider a student who completes a scenario involving an older adult with a history of diabetes found at home, confused and not responding normally.
-
-The glucose is 3.1. The student recognizes hypoglycemia, treats it appropriately, and the patient begins to improve. The call feels organized. During debrief, the instructor says: "You treated the glucose correctly. Did you reassess fully after treatment? The patient's mental status improved but their blood pressure had drifted downward across two readings while you were preparing for transport."
-
-The student understands the feedback. If they leave with "watch vitals more carefully" as the plan, the behaviour probably will not change. They already know vitals matter.
-
-A stronger translation starts with the moment. Why did the blood pressure drift go unnoticed? Because the glucose correction felt like completion. The patient was improving, transport was being arranged, and the attention moved forward rather than returning to a full reassessment of the patient's overall status.
-
-The adjustment: "After treating a glucose emergency, I will not assume improvement in one finding means the patient is stable overall. I will reassess mental status, blood pressure, and skin before committing to a transport plan."
-
-That adjustment is visible. It can be practised. An instructor can observe it. The student will know whether it happened. It is also tied to a specific clinical reason: partial improvement after glucose correction can mask a second process that needs its own assessment.
-
-In the next scenario, the student does not need to be perfect. They need to test whether that one reassessment habit showed up after treatment.",
+        text: "Consider a student who completes a scenario involving an older adult with a history of diabetes found at home, confused and not responding normally.",
+      },
+      {
+        type: "paragraph",
+        text: "The glucose is 3.1. The student recognizes hypoglycemia, treats it appropriately, and the patient begins to improve. The call feels organized. During debrief, the instructor says: \"You treated the glucose correctly. Did you reassess fully after treatment? The patient's mental status improved but their blood pressure had drifted downward across two readings while you were preparing for transport.\"",
+      },
+      {
+        type: "paragraph",
+        text: "The student understands the feedback. If they leave with \"watch vitals more carefully\" as the plan, the behaviour probably will not change. They already know vitals matter.",
+      },
+      {
+        type: "paragraph",
+        text: "A stronger translation starts with the moment. Why did the blood pressure drift go unnoticed? Because the glucose correction felt like completion. The patient was improving, transport was being arranged, and the attention moved forward rather than returning to a full reassessment of the patient's overall status.",
+      },
+      {
+        type: "paragraph",
+        text: "The adjustment: \"After treating a glucose emergency, I will not assume improvement in one finding means the patient is stable overall. I will reassess mental status, blood pressure, and skin before committing to a transport plan.\"",
+      },
+      {
+        type: "paragraph",
+        text: "That adjustment is visible. It can be practised. An instructor can observe it. The student will know whether it happened. It is also tied to a specific clinical reason: partial improvement after glucose correction can mask a second process that needs its own assessment.",
+      },
+      {
+        type: "paragraph",
+        text: "In the next scenario, the student does not need to be perfect. They need to test whether that one reassessment habit showed up after treatment.",
       },
       {
         type: "heading",
