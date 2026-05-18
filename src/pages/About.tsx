@@ -13,36 +13,49 @@ function About() {
 
       <div className="about-layout">
         <article className="about-panel about-panel-primary">
-          <h2>Built from a real teaching gap</h2>
+          <h2>Where this came from</h2>
           <p>
-            I created VitalNotes after watching students run into the same kind
-            of problem again and again. They had notes. They had slides. They
-            had protocols, medication lists, and exam expectations. Many were
-            putting in the time.
+            A few years ago, a student asked me a question in lab that stopped
+            me cold.
           </p>
           <p>
-            The harder part was not always knowing more. It was learning how to
-            organize what they knew, retrieve it under pressure, reason through
-            uncertainty, recover after mistakes, and keep improving without
-            turning every rough scenario into a verdict on their ability.
+            “How do I learn how to learn directives?”
           </p>
           <p>
-            Paramedic school gives students a lot to carry. VitalNotes is meant
-            to help students carry it with more structure and less wasted strain.
+            My first reaction was frustration. What kind of question is that?
+            You read them. You study them. You know them or you do not. I almost
+            said exactly that.
+          </p>
+          <p>
+            Instead, I sat with it for a while. Then I saw what the student
+            actually saw: knowing a directive and being able to use it under
+            pressure are two different things, and nobody had ever taught them
+            the space between. They were not asking for help memorizing. They
+            were asking for something I had not named yet.
+          </p>
+          <p>
+            Turns out I had an answer. It just took a student asking a question
+            I was not ready for to help me find it.
+          </p>
+          <p>
+            VitalNotes came from that gap. Not from a curriculum redesign or a
+            research project, but from a student standing in a lab, confused in
+            exactly the right way.
           </p>
         </article>
 
         <article className="about-panel">
           <h2>Who I am</h2>
           <p>
-            I am a working paramedic and paramedic instructor. I spend a lot of
-            time watching students learn in labs, scenarios, OSCEs, and clinical
-            practice preparation.
+            I am a working paramedic and paramedic instructor in Ontario. I have
+            spent years teaching in labs, simulation, and OSCE preparation,
+            watching students learn under pressure and trying to understand why
+            the same problems keep showing up in the same forms.
           </p>
           <p>
-            That matters because this guide is not written from a distance. It
-            comes from the places where students freeze, hesitate, overthink,
-            rush, recover, and slowly become steadier.
+            This guide is not written from a distance. It comes from the places
+            where students freeze, hesitate, overthink, rush, recover, and slowly
+            become steadier.
           </p>
         </article>
 
@@ -56,7 +69,7 @@ function About() {
             <li>Students who review often but still blank in scenarios.</li>
             <li>Students who know content but struggle to use it in context.</li>
             <li>Students preparing for labs, OSCEs, and early clinical practice.</li>
-            <li>Students trying to learn from feedback without spiraling.</li>
+            <li>Students who receive feedback but cannot carry it into the next attempt.</li>
             <li>Students who want better notes, recall, reasoning, and practice habits.</li>
           </ul>
         </article>
@@ -81,14 +94,12 @@ function About() {
           <h2>What VitalNotes does</h2>
           <p>
             VitalNotes focuses on the learning layer underneath paramedic
-            performance. It looks at cognitive load, memory, retrieval,
-            note-making, clinical reasoning, scenarios, pressure, and reflection
-            in plain language.
+            performance: cognitive load, memory, retrieval, note-making, clinical
+            reasoning, scenarios, pressure, and reflection, in plain language.
           </p>
           <p>
-            The goal is not to add more content to memorize. The goal is to help
-            students build habits that make their existing learning easier to
-            access, test, revise, and use when it matters.
+            The goal is to help students build habits that make their existing
+            learning easier to access, test, revise, and use when it matters.
           </p>
         </article>
 
