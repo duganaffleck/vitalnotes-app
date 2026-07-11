@@ -690,7 +690,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Ask what was competing for attention there. Were you trying to hold a sequence in mind while simultaneously managing the patient? Were you unsure what mattered most, so you kept gathering instead of deciding? Were you focused on a task while the patient's overall picture was changing around it? Were you waiting for certainty before acting on a risk that was already visible?",
+        text: "Ask what was competing for attention there. Were you holding a sequence in mind while also managing the patient, or unsure what mattered most and gathering instead of deciding? Maybe attention was locked on one task while the bigger picture kept changing around it.",
       },
       {
         type: "paragraph",
@@ -1107,7 +1107,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Was it missing knowledge, where the content itself was not there? Was it weak retrieval, where the content existed but would not return without the cues studying provides? Was it cognitive overload, where too many things competed for attention at once? Was it structural, where your assessment or call flow had gaps that pressure exposed? Was the feedback accurate but too broad to carry into the next attempt?",
+        text: "Was it missing knowledge, the content just was not there yet? Or weak retrieval, where the content existed but would not return without the cues studying provides? It might have been cognitive overload, too many things competing for attention at once, or something structural in your assessment or call flow that pressure exposed. Sometimes the feedback was accurate but too broad to actually carry into the next attempt.",
       },
       {
         type: "paragraph",
