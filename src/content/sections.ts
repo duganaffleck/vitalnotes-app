@@ -1572,7 +1572,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Consider a patient in their fifties found sitting at the kitchen table, diaphoretic, mildly confused, and breathing faster than normal. They deny chest pain. There is no obvious trauma. The family says they have type 2 diabetes and were fine at dinner. Blood glucose comes back at 2.1.",
+        text: "Consider a patient in their fifties found in bed, hard to rouse, diaphoretic, mildly confused, and breathing faster than normal. They deny chest pain. There is no obvious trauma. The family says they have type 2 diabetes and were fine at dinner. Blood glucose comes back at 2.1.",
       },
       {
         type: "paragraph",
@@ -1680,7 +1680,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is also why mechanism-based knowledge transfers across presentations in a way that diagnosis-based knowledge often does not. A student who has memorized the sepsis presentation does well when the patient has obvious fever, rigors, and a clear source. They may struggle when the patient is an older adult with vague decline, no fever, and a soft blood pressure that has not yet crossed the hypotension threshold. A student who understands how systemic infection loads the circulatory system recognizes the same physiological process in both presentations, even when the surface looks different.",
+        text: "This is also why mechanism-based knowledge transfers across presentations in a way that diagnosis-based knowledge often does not. A student who has memorized the opioid overdose presentation does well when the patient has pinpoint pupils, an obvious history, and someone on scene who saw it happen. They may struggle when the patient is an older adult on a stable pain management regimen who is simply breathing slow and shallow after a medication change, with no dramatic history offered. A student who understands that both patients share the same underlying problem, inadequate ventilation from central respiratory depression, recognizes the mechanism in both presentations, even when the surface looks completely different.",
       },
       {
         type: "heading",
@@ -1716,7 +1716,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Ask: what primary system is under stress? What is the body trying to maintain? What compensation would appear early, and what signs suggest compensation is failing? What would I reassess after treatment, and what would tell me the explanation is still holding?",
+        text: "Use the same questions the list above already gave you, but apply them to whatever mechanism you are studying rather than treating them as a one-time exercise. The habit is what transfers, not the specific answers.",
       },
       {
         type: "paragraph",
