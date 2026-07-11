@@ -3,7 +3,7 @@ function ScenarioGenerator() {
     <section className="page-stack">
       <header className="page-header">
         <p className="eyebrow">Scenario Generator</p>
-        <h1>A companion practice app for paramedic scenarios.</h1>
+        <h1>A companion practice tool for paramedic scenarios.</h1>
         <p>
           Use the Scenario Generator when you need a realistic case to work
           through, adapt, or discuss. VitalNotes helps you understand how to
@@ -16,7 +16,7 @@ function ScenarioGenerator() {
         <article className="about-panel about-panel-primary">
           <h2>What it is</h2>
           <p>
-            The Scenario Generator is a separate companion app that creates
+            The Scenario Generator is a separate companion tool that creates
             paramedic learning scenarios. It can help you practise assessment,
             clinical reasoning, communication, documentation, and reflection
             using realistic case material.
@@ -71,7 +71,7 @@ function ScenarioGenerator() {
           aria-labelledby="scenario-generator-link-title"
         >
           <div>
-            <p className="eyebrow">Companion app</p>
+            <p className="eyebrow">Companion tool</p>
             <h2 id="scenario-generator-link-title">Open Scenario Generator</h2>
             <p>
               This opens the Scenario Generator in a separate tab so you can
