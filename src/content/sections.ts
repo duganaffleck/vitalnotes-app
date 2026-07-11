@@ -46,7 +46,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That is usually where the frustration lives. Not only the mistake itself, but not knowing what the mistake means. Was it a knowledge gap? Was it nerves? Was it poor preparation? Or was something happening in the way the student was learning, organizing, and trying to use the material under pressure?",
+        text: "That is usually where the frustration lives. Not just the mistake, but not knowing what it means. Was it a gap in knowledge, nerves, or something happening in how the material was learned and organized in the first place?",
       },
       {
         type: "paragraph",
@@ -74,7 +74,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That is the important part. The knowledge was there, but it was not accessible enough, connected enough, or stable enough in the moment. If every problem like that gets treated as a simple knowledge problem, the answer always becomes more studying. More rereading. More rewriting. More time at the desk. Sometimes that helps. Sometimes it just adds more material to a system that already has too little structure.",
+        text: "The knowledge was there. It just was not accessible, connected, or stable enough in the moment to use. Treat every problem like that as a simple knowledge gap and the answer always becomes more studying: more rereading, more rewriting, more time at the desk. Sometimes that helps. Often it just adds more material to a system that already has too little structure holding it together.",
       },
       {
         type: "paragraph",
@@ -90,19 +90,19 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "You are not only learning information. You are learning how to act while information is incomplete. You are not only learning directives. You are learning what those directives are protecting when a patient is borderline, evolving, or messy. You are not only learning assessment structure. You are learning how to assess without letting assessment become a hiding place from decision-making.",
+        text: "You are not just learning directives. You are learning what each one is protecting when a patient is borderline, evolving, or messy, which is a different skill than reciting it back correctly on a quiz.",
       },
       {
         type: "paragraph",
-        text: "That is why this guide spends time on cognitive load, retrieval, meaning, Smart Notes, directives, clinical reasoning, pattern recognition, scenario days, OSCE preparation, pressure, and reflection. Those ideas can sound academic. Here, they are meant to be practical.",
+        text: "This guide spends time on cognitive load, retrieval, meaning, Smart Notes, directives, clinical reasoning, pattern recognition, scenario days, OSCE preparation, pressure, and reflection. Those ideas can sound academic. Here, they are meant to work, not just sound right.",
       },
       {
         type: "paragraph",
-        text: "Cognitive load is what happens when you are managing airway, monitoring vitals, tracking directive thresholds, and communicating with a family member at the same time, and something slips. Not because you forgot it. Because your working memory ran out of space. Retrieval is whether you can bring knowledge back when the notes are closed, the scenario is moving, and nothing is prompting you. Meaning is the difference between knowing that sepsis can present with tachycardia and fever, and understanding why an older adult with vague weakness, soft blood pressure, and a faster respiratory rate might be the same clinical problem in a different shape. Clinical reasoning is the process of building a working explanation while information is still arriving, and staying willing to change it when the patient stops fitting the story you were carrying. Reflection is taking one useful thing from a performance without turning the whole call into a personal trial.",
+        text: "Cognitive load, for example, is what happens when you are managing airway, tracking directive thresholds, and talking to a family member at the same time, and something slips. Not because you forgot it. Because your working memory ran out of room to hold it. Clinical reasoning is closer to building a working explanation while information is still arriving, and staying willing to change it when the patient stops fitting the story you were carrying. The rest of the guide unpacks the others as they come up.",
       },
       {
         type: "paragraph",
-        text: "That is the layer this guide works on: where studying, thinking, and performance meet.",
+        text: "This is the layer VitalNotes works on: where studying, thinking, and performance meet.",
       },
       {
         type: "heading",
@@ -185,11 +185,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Paramedic students already have enough pressing on them: lectures, labs, directives, skills, scenarios, OSCEs, placement expectations, and feedback that can be hard to sort through afterward. VitalNotes only helps if it gives some shape to that work. If it becomes another thing you feel behind on, it is not doing its job.",
-      },
-      {
-        type: "paragraph",
-        text: "You do not need to read every section before it becomes useful. You do not need to build every tool. The first goal is smaller than that: understand one part of your learning more clearly, then make one useful adjustment.",
+        text: "Paramedic students already have enough pressing on them: lectures, labs, directives, skills, scenarios, OSCEs, placement expectations, and feedback that takes real effort to sort through. VitalNotes only helps if it gives some shape to that work. You do not need to read every section or build every tool. The goal is smaller than that: understand one part of your learning more clearly, then make one useful adjustment.",
       },
       {
         type: "heading",
@@ -233,7 +229,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "If a section gives you three useful ideas, resist the urge to turn all three into tasks for tomorrow. Choose the one that actually connects to a problem you are seeing right now. A small adjustment that gets used is better than a complete system that collapses under the weight of a normal semester week.",
+        text: "If a section gives you three useful ideas, resist the urge to turn all three into tasks for tomorrow. Choose the one that actually connects to a problem you are seeing right now.",
       },
       {
         type: "heading",
@@ -281,19 +277,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The guide becomes less useful when it turns into a project.",
+        text: "The guide becomes less useful when it turns into a project of its own. That can happen quietly: you read too many sections in one sitting, collect tools without using them, and decide this is the week you rebuild your entire study system. For a few days that can feel productive. Then a busy week returns and the whole thing collapses.",
       },
       {
         type: "paragraph",
-        text: "That can happen quietly. You read too many sections in one sitting. You collect tools without using them. You decide this is the week you rebuild your entire study system. For a few days that can feel productive. Then a busy week returns, and the system collapses.",
-      },
-      {
-        type: "paragraph",
-        text: "One piece used well is worth more than five pieces you never return to.",
-      },
-      {
-        type: "paragraph",
-        text: "One section might change how you prepare before scenario days. One reflection structure might help you leave lab with a clearer next step instead of a long list of things that went wrong. One explanation might help you stop treating every missed reassessment as proof that you are not cut out for this. That is enough for a guide like this to be worth using.",
+        text: "One section might change how you prepare before scenario days. One reflection structure might help you leave lab with a clearer next step instead of a long list of things that went wrong. One explanation might help you stop treating every missed reassessment as proof you are not cut out for this. That is what this guide is for.",
       },
       {
         type: "heading",
@@ -352,7 +340,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "From there, move to Retrieval and Spaced Learning. That section explains why rereading can feel productive while still failing to prepare you for the moment when you need to bring knowledge back without anything prompting you.",
+        text: "From there, move to Retrieval and Spaced Learning. That section explains why rereading can feel productive while still leaving you unprepared for the moment a scenario asks you to produce the answer cold, with no notes and no prompt.",
       },
       {
         type: "heading",
