@@ -2231,7 +2231,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That note is not a full asthma review. It is one clinical distinction made visible and retrievable. The difference between that note and the original lecture notes is not length or accuracy. It is that this one is built around the moment where thinking breaks down, not around the order of how the topic was introduced.",
+        text: "That note is not a full asthma review. It is one clinical distinction made visible and retrievable, built around the moment where thinking breaks down instead of around the order the topic was originally taught.",
       },
       {
         type: "heading",
@@ -2578,7 +2578,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That note is not polished. It is holding pieces together long enough to return to them, compare, and eventually understand the pattern clearly enough to make a Smart Note worth building.",
+        text: "It's rough, not polished, and that's fine. It just needs to hold the pieces together long enough to compare them and eventually understand the pattern clearly enough to build a Smart Note worth keeping.",
       },
       {
         type: "heading",
@@ -2639,7 +2639,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That note is not a full trauma or cardiology review. It is one clinical distinction: the patient may look okay right up until they do not, and the window between compensated and decompensated can be short.",
+        text: "The real content here is one clinical distinction: the patient may look okay right up until they do not, and the window between compensated and decompensated can be short.",
       },
       {
         type: "heading",
@@ -3278,7 +3278,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             type: "paragraph",
-            text: "Patient more confused before oxygen saturation changed much."
+            text: "Patient rated pain a 3 but was guarding and would not move."
         },
         {
             type: "paragraph",
@@ -3299,11 +3299,11 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             type: "paragraph",
-            text: "Altered mental status can be an early warning sign in respiratory failure"
+            text: "Reported pain scores can undersell what the body is showing you"
         },
         {
             type: "paragraph",
-            text: "The Smart Note might explain that worsening confusion, agitation, drowsiness, or reduced ability to cooperate can signal poor oxygen delivery, rising carbon dioxide, fatigue, or broader physiologic stress before one dramatic monitor value appears."
+            text: "The Smart Note might explain that a patient's stated number is only one piece of the picture. Guarding, reluctance to move, shallow breathing to avoid pain, and a flat or distracted affect can signal more than the number alone suggests, especially in patients who minimize pain out of stoicism, fear of transport, or unfamiliarity with the scale. Reported and observed pain should be compared, not averaged."
         },
         {
             type: "paragraph",
