@@ -8,7 +8,7 @@ type LayoutProps = {
 
 function Layout({ currentPage, onNavigate, children }: LayoutProps) {
   return (
-    <div className="app-shell">
+    <div className="site-shell">
       <Header currentPage={currentPage} onNavigate={onNavigate} />
 
       <main className="main-content">{children}</main>

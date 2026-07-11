@@ -50,7 +50,7 @@ export const resourcesBridgeCard: ResourceCard = {
   id: 'tools-page-pointer',
   title: 'Looking for the learning tools?',
   body: [
-    'The Tools page is where you find the in-app supports: Smart Notes, Five Whys, Clinical Reasoning Check, OSCE Reset, and related learning tools.',
+    'The Tools page is where you find the tools built into the site: Smart Notes, Five Whys, Clinical Reasoning Check, OSCE Reset, and related learning tools.',
     'This page is different. Resources is for external setup, companion systems, and source transparency.',
   ],
   link: {

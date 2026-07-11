@@ -1,10 +1,10 @@
-# VitalNotes App Agent Instructions
+# VitalNotes Website Agent Instructions
 
-This repository contains the VitalNotes app.
+This repository contains the VitalNotes website.
 
 VitalNotes is a student-facing learning guide for paramedic students. It teaches students how to learn paramedicine, not how to memorize more content.
 
-The app must remain calm, readable, deliberate, practical, and content-driven.
+The site must remain calm, readable, deliberate, practical, and content-driven.
 
 ## Source of Truth
 
@@ -13,17 +13,17 @@ The Obsidian vault remains the source of truth.
 Reference files are stored in:
 
 - project-context/obsidian-source/
-- project-context/app-readiness/
+- project-context/site-readiness/
 - project-context/build-prompts/
 - project-context/decisions/
 
-Do not invent sections, clusters, tools, glossary terms, or app features.
+Do not invent sections, clusters, tools, glossary terms, or site features.
 
 If a needed source file is missing, ask for that exact file.
 
-## Current App Scope
+## Current Site Scope
 
-The app currently includes:
+The site currently includes:
 
 - Home page
 - Learning Path page
@@ -84,11 +84,11 @@ Do not add:
 - MDX pipeline
 - Obsidian import pipeline
 
-## App Philosophy
+## Site Philosophy
 
-The app renders the guide.
+The site renders the guide.
 
-The app does not reinvent the guide.
+The site does not reinvent the guide.
 
 Writing is the main experience.
 
@@ -151,4 +151,4 @@ Preserve the approved learning path.
 
 Do not rename approved sections, clusters, tools, or glossary terms without explicit approval.
 
-Keep related links useful and restrained in the app. Deeper linking belongs in Obsidian.
+Keep related links useful and restrained on the site. Deeper linking belongs in Obsidian.

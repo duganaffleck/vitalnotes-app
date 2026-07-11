@@ -4,9 +4,9 @@ This folder contains curated source-of-truth material copied from the VitalNotes
 
 The Obsidian vault remains the true source of truth.
 
-This folder exists only to give the app build and AI coding assistant stable local context.
+This folder exists only to give the site build and AI coding assistant stable local context.
 
-Do not treat these files as student-facing app content.
+Do not treat these files as student-facing site content.
 
 Do not render these files directly.
 
@@ -18,9 +18,9 @@ Student-facing content should be manually modelled into:
 - src/content/glossary.ts
 - src/content/types.ts
 
-## Current App Scope
+## Current Site Scope
 
-The app currently includes:
+The site currently includes:
 
 - Home
 - Learning Path
@@ -60,8 +60,8 @@ Current active tools:
 
 Do not add dashboards, accounts, quizzes, simulations, Anki integration, AI feedback, progress tracking, analytics, CMS, or automated Obsidian import features without explicit approval.
 
-The app should remain a calm guide for learning paramedicine.
+The site should remain a calm guide for learning paramedicine.
 
-The app should not become a productivity system, LMS, flashcard platform, or generic study-skills site.
+The site should not become a productivity system, LMS, flashcard platform, or generic study-skills site.
 
-The Obsidian vault remains the planning spine. The app remains the student-facing reading and tool interface.
+The Obsidian vault remains the planning spine. The site remains the student-facing reading and tool interface.
