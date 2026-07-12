@@ -44,20 +44,31 @@ function getToolExamples(tool: Tool): ToolExample[] {
   return tool.examples ?? []
 }
 
-function renderToolList(title: string, items: string[]) {
+function renderToolList(title: string, items: string[], toolId?: string) {
   if (items.length === 0) {
     return null
   }
 
   return (
-    <div className="tool-section">
-      <h3>{title}</h3>
-      <ul>
-        {items.map((item, index) => (
-          <li key={`${title}-${index}`}>{item}</li>
-        ))}
-      </ul>
-    </div>
+    <details
+      className="tool-section tool-example"
+      key={toolId ? `${toolId}-${title}` : title}
+    >
+      <summary
+        className="card-action-button tool-example-button"
+        aria-label={`View ${title.toLowerCase()}`}
+      >
+        {title}
+      </summary>
+
+      <div className="tool-example-content">
+        <ul>
+          {items.map((item, index) => (
+            <li key={`${title}-${index}`}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </details>
   )
 }
 
@@ -160,13 +171,13 @@ function renderTool(tool: Tool) {
       {renderExamples(tool)}
 
       {tool.whenNotToUse &&
-        renderToolList('Do not use this when', tool.whenNotToUse)}
+        renderToolList('Do not use this when', tool.whenNotToUse, tool.id)}
 
       {tool.commonMistakes &&
-        renderToolList('Common mistakes', tool.commonMistakes)}
+        renderToolList('Common mistakes', tool.commonMistakes, tool.id)}
 
       {tool.toolPointers &&
-        renderToolList('Possible next step', tool.toolPointers)}
+        renderToolList('Possible next step', tool.toolPointers, tool.id)}
     </article>
   )
 }

@@ -31,7 +31,7 @@ export const tools: Tool[] = [
       {
         "id": "clinical-risk",
         "label": "Clinical risk",
-        "helperText": "What patient risk is this directive built around? What happens if the decision is wrong, delayed, or applied without the information the directive requires?"
+        "helperText": "What patient risk is this directive built around? What happens if the decision is wrong or delayed?"
       },
       {
         "id": "physiology",
@@ -41,7 +41,7 @@ export const tools: Tool[] = [
       {
         "id": "firm-boundaries",
         "label": "Firm boundaries",
-        "helperText": "Name the boundaries that are not flexible. For each one, ask what it is protecting against. The goal is not to rewrite the directive. It is to understand why the limit exists so it becomes a clinical signal rather than a tripwire."
+        "helperText": "Name the boundaries that are not flexible, and what each one is protecting against."
       },
       {
         "id": "withhold-change",
@@ -51,7 +51,7 @@ export const tools: Tool[] = [
       {
         "id": "reassessment",
         "label": "Reassessment",
-        "helperText": "What should you reassess after acting? What change would show whether the treatment is still appropriate? What would make you stop, withhold the next dose, or reconsider the working explanation?"
+        "helperText": "What should you reassess after acting, and what change would tell you the treatment is still appropriate?"
       }
     ],
     "examples": [
@@ -87,9 +87,9 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Rewriting the directive instead of naming the patient risk. The fields ask why the directive exists, not what it says. If you are transcribing wording, you are using the wrong layer of the tool.",
-      "Treating boundaries as wording to memorize rather than clinical signals. A boundary that makes physiological sense is harder to forget and easier to apply when the patient is borderline. A boundary that is only memorized as a number will feel arbitrary when the patient is sitting right on it.",
-      "Stopping once the action is chosen. The directive decision does not end when the medication is given or the intervention is performed. The reassessment is the second half of the decision. A treatment without a reassessment plan is not a complete directive application. The tool is not finished until the reassessment fields are answered."
+      "Rewriting the directive instead of naming the patient risk it protects against.",
+      "Treating boundaries as numbers to memorize instead of clinical signals tied to physiology.",
+      "Stopping once the action is chosen. Reassessment is the second half of the decision, not an afterthought."
     ],
     "toolPointers": [
       "If a boundary keeps slipping during practice, turn it into a Clinical Recall Prompt.",
@@ -137,7 +137,7 @@ export const tools: Tool[] = [
       {
         "id": "explanation",
         "label": "Explanation",
-        "helperText": "What is happening, why it matters, what mechanism or decision it connects to, and how it could change what you do or notice next time."
+        "helperText": "What is happening, why it matters, and what decision or mechanism it connects to."
       },
       {
         "id": "clinical-signals",
@@ -210,11 +210,11 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Writing about a whole topic instead of one idea. A note called \"Shock\" is too large. A note called \"Compensatory tachycardia may appear before blood pressure falls\" is the right size. If the claim is too broad to test in one scenario moment, split it.",
-      "Writing a claim so broad it becomes advice rather than a working explanation. \"Always reassess after treatment\" is not a claim. \"After giving a bronchodilator, check whether air movement has actually changed before assuming improvement\" is.",
-      "Copying a definition without explaining what it changes. A note that says \"anaphylaxis is a systemic allergic response\" does nothing. A note that explains why epinephrine is the first intervention rather than antihistamines, and what finding would tell you a second dose is needed, does something.",
-      "Linking by topic rather than by reasoning connection. If the link does not change how you understand or use the current note, it does not belong there. \"Respiratory\" as a link is a category. \"Oxygenation Versus Ventilation\" as a link is a reasoning connection that changes how you read the current note.",
-      "Polishing the note instead of testing it. A Smart Note is not finished when it looks good. It is finished when future you can read it and know what to check or do differently in the next scenario."
+      "Writing about a whole topic instead of one idea. \"Shock\" is too large. \"Compensatory tachycardia may appear before blood pressure falls\" is the right size.",
+      "A claim so broad it becomes advice is not useful. \"Always reassess after treatment\" is advice. \"After a bronchodilator, check whether air movement changed\" is a claim.",
+      "Copying a definition without explaining what it changes. \"Anaphylaxis is a systemic allergic response\" does nothing. Explaining why epinephrine comes before antihistamines does.",
+      "Linking by topic instead of reasoning connection. \"Respiratory\" is a category. \"Oxygenation Versus Ventilation\" is a connection that changes how you read the note.",
+      "Polishing the note instead of testing it. It is finished when future you knows what to check differently next time, not when it looks good."
     ],
     "toolPointers": [
       "Once the note feels stable, use the Clinical Recall Prompt Builder to turn one cue, contrast, or boundary into retrieval practice.",
@@ -287,7 +287,7 @@ export const tools: Tool[] = [
       {
         "id": "communication",
         "label": "Communication prompt",
-        "helperText": "How would you explain the decision in one or two sentences to an instructor, partner, preceptor, or yourself? This field is not polish. It is the hardest prompt in the set, because it tests whether you can hold the reasoning and the patient picture at the same time while speaking out loud."
+        "helperText": "How would you explain the decision in one or two sentences to an instructor, partner, or preceptor? This tests whether you can hold the reasoning and the picture together while speaking out loud."
       }
     ],
     "examples": [
@@ -395,10 +395,10 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Leaving out the patient cue. A prompt that asks for a fact without naming when that fact should arrive is a memorization card, not a clinical recall prompt. The clinical cue prompt is not optional.",
-      "Testing the fact that is easiest to write instead of the detail that disappears under pressure. Medication doses are easy to write. The finding that would make you withhold the second dose is harder to write and more likely to matter during a scenario.",
-      "Forgetting the reassessment prompt. The decision is not finished when the action is taken. If a recall set has no reassessment prompt, it is training students to treat treatment as completion rather than as the start of the next question.",
-      "Making one large prompt when the knowledge needs multiple smaller retrieval attempts. If the prompt requires a four-paragraph answer to get it right, it is probably three prompts that need to be separated."
+      "Leaving out the patient cue. A fact prompt without a trigger for when it should arrive is a memorization card, not a clinical one.",
+      "Testing the fact that is easiest to write instead of the detail that disappears under pressure, like the finding that would make you withhold a second dose.",
+      "Forgetting the reassessment prompt. A recall set without one trains you to treat treatment as an endpoint instead of the start of the next question.",
+      "Making one large prompt when the knowledge needs several smaller retrieval attempts instead."
     ],
     "toolPointers": [
       "Use this after Smart Note Template when an explanation is clear enough to practise without the note open.",
@@ -440,7 +440,7 @@ export const tools: Tool[] = [
       {
         "id": "working-explanation",
         "label": "Working explanation",
-        "helperText": "What did you think was happening at the time? This does not need to be a final diagnosis. It can be a working concern, a risk, or a likely pattern."
+        "helperText": "What did you think was happening at the time? This can be a working concern or likely pattern, not a final diagnosis."
       },
       {
         "id": "supporting-cues",
@@ -450,17 +450,17 @@ export const tools: Tool[] = [
       {
         "id": "what-did-not-fit",
         "label": "What did not fit?",
-        "helperText": "What information was missing, conflicting, or changing? Look for the cue that could have widened your thinking, prompted reassessment, or pointed toward a different explanation."
+        "helperText": "What information was missing, conflicting, or changing, and could have widened your thinking?"
       },
       {
         "id": "reasoning-response",
         "label": "Reasoning response",
-        "helperText": "Did your thinking change as new information appeared? If not, what kept the first explanation in place? Name the mechanism, not just the mistake: was it cognitive load, a plausible early pattern, early confirmation, or pressure to keep moving?"
+        "helperText": "Did your thinking change as new information appeared? If not, what kept the first explanation in place: cognitive load, early confirmation, or pressure to keep moving?"
       },
       {
         "id": "next-reasoning-cue",
         "label": "Next reasoning cue",
-        "helperText": "What would you watch for, ask, or reassess next time? Choose one cue or question that would keep your working explanation open long enough for the patient to disagree with it."
+        "helperText": "What would you watch for, ask, or reassess next time, that would keep your working explanation open to disagreement?"
       }
     ],
     "examples": [
@@ -518,10 +518,10 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Using the tool to defend the first impression instead of testing whether it stayed flexible. If the supporting cues section is much longer than the \"what did not fit\" section, the tool is being used for justification rather than examination.",
-      "Writing a perfect diagnosis after the fact instead of examining how the explanation changed during the call. The goal is not to show what the right answer was. It is to find the moment when the reasoning stopped updating.",
-      "Skipping the cue that did not fit because it seems small once the scenario is over. The small cue is often the one that mattered most. Its smallness is part of why it was missed.",
-      "Trying to repair the whole call instead of choosing one reasoning cue. The tool finishes when the next reasoning cue is specific enough to carry into the next scenario. Everything else is analysis."
+      "Using the tool to defend the first impression instead of testing it. If \"supporting cues\" runs much longer than \"what did not fit,\" that is a sign.",
+      "Writing the perfect diagnosis after the fact instead of finding the moment your reasoning stopped updating.",
+      "Skipping the cue that seems small in hindsight. The small cue is often the one that mattered most.",
+      "Trying to repair the whole call instead of choosing one reasoning cue to carry forward."
     ],
     "toolPointers": [
       "If this reveals the same thinking pattern appearing across more than one scenario, take that pattern to the Five Whys Tool.",
@@ -570,12 +570,12 @@ export const tools: Tool[] = [
       {
         "id": "adjustment",
         "label": "One adjustment",
-        "helperText": "The single change you will carry into the next room. Small enough to remember under pressure. Specific enough that you will know whether it happened."
+        "helperText": "The one change you will carry into the next room. Small enough to remember, specific enough to notice."
       },
       {
         "id": "test-moment",
         "label": "Where I will test it",
-        "helperText": "Name the specific moment in the next scenario where this adjustment should appear. A moment is a point in the call, not a general intention."
+        "helperText": "The specific point in the next call where this adjustment should appear, not a general intention."
       }
     ],
     "examples": [
@@ -617,10 +617,10 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Choosing more than one adjustment. If you carry three things into the next room, you will probably carry none of them clearly. One adjustment, tested deliberately, does more than three adjustments held loosely.",
-      "Turning the reset into a full debrief when the next attempt is about to start. The reset should take two minutes, not twenty. If it is growing into a full reflection, stop and use Reflection Without Journaling after the day is over.",
-      "Choosing a vague adjustment. \"Stay calmer\" is not testable. \"After the first set of vitals, I will name a transport concern before asking more questions\" is testable. The adjustment is only useful if you can tell whether it showed up.",
-      "Skipping the moment. If you name a pattern and an adjustment but not a specific moment in the call where the adjustment should appear, the adjustment will probably only arrive during debrief, which is too late."
+      "Choosing more than one adjustment. Three things carried loosely usually means none of them land.",
+      "Turning the reset into a full debrief. It should take two minutes, not twenty. Save deeper reflection for after the day.",
+      "Choosing a vague adjustment. \"Stay calmer\" is not testable. \"Name a transport concern after the first vitals\" is.",
+      "Skipping the moment. Without a specific point in the call to test it, the adjustment usually only shows up during debrief, too late to matter."
     ],
     "toolPointers": [
       "If the practice day is over, use Reflection Without Journaling to keep the lesson small and usable.",
@@ -663,12 +663,12 @@ export const tools: Tool[] = [
       {
         "id": "structure",
         "label": "Structure to return to",
-        "helperText": "What assessment sequence, reasoning habit, directive check, or reassessment anchor keeps you safe when pressure rises? Name the internal framework, not the full protocol."
+        "helperText": "What assessment sequence or reasoning habit keeps you safe when pressure rises? Name the framework, not the full protocol."
       },
       {
         "id": "next-action",
         "label": "Next safest action",
-        "helperText": "What one action keeps the patient safe while you continue to clarify the situation? Name what you will reassess after that action and how you would explain the decision simply if asked."
+        "helperText": "What one action keeps the patient safe while you clarify the situation, and what will you reassess after it?"
       }
     ],
     "examples": [
@@ -710,11 +710,11 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Trying to look confident instead of returning to patient risk and structure. Confidence without structure produces fast errors. The reset is not about slowing down. It is about re-orienting before the next action.",
-      "Narrating everything you know while the priority decision stays unclear. Evaluators are not listening for volume. They are watching for whether the decision reflects what is actually happening with the patient.",
-      "Rushing to treatment before contraindications, reassessment needs, or transport priorities are protected. A treatment given correctly for the wrong reason, or without the reassessment that follows it, is not a complete clinical decision.",
-      "Freezing because the station does not match the version you rehearsed. The reset is for this moment. What is the primary risk right now, not in the version you expected?",
-      "Treating reassessment as an ending instead of part of the intervention. The station is not finished when the medication is given or the procedure is done. The reassessment is the second half of the decision."
+      "Trying to look confident instead of returning to patient risk and structure. Confidence without structure just produces fast errors.",
+      "Narrating everything you know while the priority decision stays unclear. Evaluators watch for whether the decision fits the patient, not volume.",
+      "Rushing to treatment before contraindications or reassessment needs are protected. Correct treatment without the reassessment after it is not a complete decision.",
+      "Freezing because the station does not match the version you rehearsed. Ask what the primary risk is right now, not the version you expected.",
+      "Treating reassessment as an ending instead of the second half of the decision."
     ],
     "toolPointers": [
       "If one station leaves a clear adjustment, use Reflection Without Journaling to preserve it before the next station begins.",
@@ -765,12 +765,12 @@ export const tools: Tool[] = [
       {
         "id": "what-shaped-response",
         "label": "What shaped my response?",
-        "helperText": "Explain the mechanism, not just the label. A surface answer names the outcome: \"I was overloaded.\" A useful answer explains what made that response happen: \"I had no structure to return to after the first intervention, so I moved to the next task instead of reassessing.\""
+        "helperText": "Explain the mechanism, not just the label. \"I was overloaded\" names the outcome. \"I had no structure to return to after the first intervention\" explains what caused it."
       },
       {
         "id": "notice-next-time",
         "label": "What would I notice next time?",
-        "helperText": "Name the specific cue, patient change, feeling, or question that would alert you earlier. This is not the adjustment yet. It is the perceptual trigger that should arrive before the adjustment fires. If you cannot name the trigger, the adjustment may not show up at the right moment."
+        "helperText": "Name the specific cue or change that would alert you earlier. This is the perceptual trigger that should arrive before the adjustment fires."
       },
       {
         "id": "one-adjustment",
@@ -833,10 +833,10 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Choosing the whole scenario instead of the one moment that would change next time. If the moment section runs longer than two or three sentences, it is probably too large. Find the specific decision point inside it.",
-      "Writing what sounds reflective instead of naming what should change in the next attempt. Reflection that ends without a specific adjustment has not finished its job. The one adjustment field is the output, not the summary.",
-      "Stopping at a label instead of identifying the mechanism. \"I was overloaded\" tells you what happened. \"I had no automatic reassessment trigger after the intervention, so attention moved forward\" tells you what to build. The mechanism is what makes the adjustment durable.",
-      "Continuing to replay the event after the useful adjustment is already clear. Once you can name the moment, the mechanism, and the adjustment, more analysis adds noise rather than clarity. Stop there."
+      "Choosing the whole scenario instead of one moment. If it runs longer than two or three sentences, it is too large.",
+      "Writing what sounds reflective instead of naming what should change next time. The adjustment is the output, not a summary.",
+      "Stopping at a label instead of the mechanism. \"I was overloaded\" tells you what happened. \"I had no reassessment trigger\" tells you what to build.",
+      "Continuing to replay the event after the adjustment is already clear. More analysis past that point adds noise, not clarity."
     ],
     "toolPointers": [
       "If you are still between scenario attempts, use Scenario Day Reset instead of a longer reflection.",
@@ -889,17 +889,17 @@ export const tools: Tool[] = [
       {
         "id": "keep-going",
         "label": "Keep going until actionable",
-        "helperText": "Ask what shaped the response beneath the surface answer. Look for uncertainty, cognitive load, weak structure, unclear directive purpose, retrieval gaps, fixation, or practice design problems. You do not need exactly five questions. Stop when the answer changes from description to something you can address."
+        "helperText": "Ask what shaped the response beneath the surface answer: cognitive load, weak structure, retrieval gaps, or fixation. You do not need exactly five questions. Stop when the answer becomes something you can address."
       },
       {
         "id": "where-stop",
         "label": "Where I should stop",
-        "helperText": "The useful stopping point is when the answer names a specific learning structure, reasoning habit, or practice gap rather than a general intention to do better. If the answer is \"I need to try harder,\" keep going. If the answer is \"I need a reliable post-intervention reassessment habit,\" stop there."
+        "helperText": "Stop when the answer names a specific habit or gap, not a general intention. \"I need to try harder\" means keep going. \"I need a reliable reassessment habit\" means stop."
       },
       {
         "id": "practice-target",
         "label": "Practice target",
-        "helperText": "One thing to practise, notice, or structure differently next time. Small enough to carry into the next attempt and specific enough that you will know whether it showed up."
+        "helperText": "One thing to practise or structure differently next time, small enough to carry forward and specific enough to notice."
       }
     ],
     "examples": [
@@ -957,10 +957,10 @@ export const tools: Tool[] = [
       }
     ],
     "commonMistakes": [
-      "Forcing exactly five whys after the useful answer has already appeared. The number is not the point. Stop when the answer names something you can practise, not when you have reached a specific count.",
-      "Turning the process into self-criticism instead of looking for a learning structure to adjust. If the chain ends with \"I am not good at this,\" it has gone off course. A useful endpoint names something external to your worth: a habit to build, a structure to improve, a directive to understand more deeply.",
-      "Stopping at \"I forgot\" without asking what made forgetting likely under pressure. Forgetting is the surface. What made the retrieval or the habit unavailable in that moment is the learning target.",
-      "Creating a practice target that cannot be seen or tested in the next scenario. \"Be more careful\" cannot be tested. \"After giving a treatment, name what I expect to change before I move to the next task\" can be tested. If you cannot tell whether the target showed up, it needs to be more specific."
+      "Forcing exactly five whys after the useful answer already appeared. The number is not the point, stop when the answer is actionable.",
+      "Turning the process into self-criticism instead of finding a structure to adjust. If the chain ends with \"I am not good at this,\" it has gone off course.",
+      "Stopping at \"I forgot\" without asking what made forgetting likely under pressure. That is the actual learning target.",
+      "Creating a practice target that cannot be tested. \"Be more careful\" cannot be. \"Name what I expect to change before moving on\" can."
     ],
     "toolPointers": [
       "If the surface pattern is already clear but the mechanism is not, use the Clinical Reasoning Check first to identify what shaped the reasoning during the call, then use this tool to trace it further.",
