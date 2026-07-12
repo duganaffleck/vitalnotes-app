@@ -6411,7 +6411,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The goal is not to feel good about the feedback. The goal is to make it specific enough to use.",
+        text: "Feeling good about the feedback isn't the point. Being able to use it is.",
       },
       {
         type: "heading",
@@ -6756,7 +6756,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That is not regression. That is the uncomfortable middle stage where a weak point has been made visible. The visibility is uncomfortable, especially when the target is embedded in the middle of a moving call. At first, the student is learning to notice the moment. Later, they learn to act in the moment. With enough useful repetition, the adjustment starts to feel less like an added task and more like a natural part of how they practise.",
+        text: "That discomfort isn't a step backward. It means a weak point has been made visible, which is uncomfortable, especially when the target is embedded in the middle of a moving call. At first, the student is learning to notice the moment. Later, they learn to act in the moment. With enough useful repetition, the adjustment starts to feel less like an added task and more like a natural part of how they practise.",
       },
       {
         type: "heading",
