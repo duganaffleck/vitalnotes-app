@@ -5960,7 +5960,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The third call is a patient with altered mental status and a history of diabetes. The glucose is low and the student corrects it. The patient improves partially but not fully. The student notices the partial response and explicitly holds the explanation open: glucose was likely contributing, but the incomplete recovery means something else may be present. They reassess mental status specifically, check for focal signs, ask about fever, check medications, and communicate the uncertainty to the receiving facility.",
+        text: "The third call is an older man, last seen fine by a neighbour the evening before, now found altered and slow to answer. He has a history of diabetes. The glucose is low and the student corrects it. He improves partially but not fully. The student notices the partial response and explicitly holds the explanation open: glucose was likely contributing, but the incomplete recovery means something else may be present. They reassess mental status specifically, check for focal signs, ask about fever, check medications, and communicate the uncertainty to the receiving facility.",
       },
       {
         type: "paragraph",
@@ -6952,11 +6952,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Consider an OSCE station involving a middle-aged woman found at home by her son. She is confused, has not eaten today, and has a history of type 2 diabetes and hypertension. The glucose is low and the student treats it. That is the expected response and it is correct.",
+        text: "Consider an OSCE station involving an older man found at home by a neighbour who checks on him most evenings. He is confused, has not eaten today, and has a history of type 2 diabetes and hypertension. The glucose is low and the student treats it. That is the expected response and it is correct.",
       },
       {
         type: "paragraph",
-        text: "But the station is not finished. After treatment, the patient improves partially but remains more confused than the glucose correction alone should explain. Her blood pressure is higher than expected. She has a mild headache she did not initially mention. The son says she seemed \"off\" since this morning before she became obviously confused.",
+        text: "But the station is not finished. After treatment, the patient improves partially but remains more confused than the glucose correction alone should explain. His blood pressure is higher than expected. He has a mild headache he did not initially mention. The neighbour says he seemed \"off\" since this morning before he became obviously confused.",
       },
       {
         type: "paragraph",
@@ -8257,7 +8257,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Consider a student who completes a scenario involving an older adult with a history of diabetes found at home, confused and not responding normally.",
+        text: "Consider a student who completes a scenario involving an older adult with a history of diabetes, found confused and not responding normally by a home care worker during a routine visit.",
       },
       {
         type: "paragraph",
