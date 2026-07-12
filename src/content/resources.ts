@@ -247,7 +247,7 @@ export const resourceSections: ResourceSection[] = [
         id: 'sustainable-setup',
         title: 'A sustainable setup',
         body: [
-          'The real test is not whether the system looks impressive on a quiet Sunday. The real test is whether you still use it in week eight of a semester, when assignments, labs, shifts, and fatigue are all competing for attention.',
+          'What actually matters isn\'t whether the system looks impressive on a quiet Sunday. It\'s whether you still use it in week eight of a semester, when assignments, labs, shifts, and fatigue are all competing for attention.',
         ],
         list: [
           'Start with defaults.',
