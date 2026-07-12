@@ -4195,7 +4195,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "paragraph",
-            "text": "A stronger prompt: a patient in their seventies has slowed speech and mild right arm weakness. The glucose is 4.8. The family says they had a similar episode three months ago that resolved. What changes in your risk picture, and what does not?"
+            "text": "A stronger prompt: a patient in their forties is having trouble finding words, and their partner notices a slight droop on one side that the patient has not mentioned. Glucose is 5.6. There is no similar history, but their blood pressure has been poorly controlled for years. What changes in your risk picture, and what does not?"
         },
         {
             "type": "paragraph",
