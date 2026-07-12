@@ -7082,11 +7082,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The family called because their father, who has a history of hypertension and type 2 diabetes, was found in the kitchen, not responding normally. He is awake. He answers simple questions slowly. His glucose is 5.4. There is no obvious trauma. The blood pressure is elevated, significantly more than you would expect for someone at rest. The son is asking you what is wrong.",
+        text: "The family called because their mother, who has a history of hypertension and type 2 diabetes, was found on the back porch, not making sense. She is awake. She answers simple questions slowly. Her glucose is 5.4. There is no obvious trauma. The blood pressure is elevated, significantly more than you would expect for someone at rest. Her daughter is asking you what is wrong.",
       },
       {
         type: "paragraph",
-        text: "You know stroke is in the differential. You know hypoglycemia is less likely with that glucose. You know the blood pressure matters. You know your primary survey is clear. But now the room is speeding up. The son is repeating his question. The evaluator is watching. You are trying to decide whether to say something definitive before you feel certain enough to say it, and the steps that usually come naturally are suddenly harder to sequence.",
+        text: "You know stroke is in the differential. You know hypoglycemia is less likely with that glucose. You know the blood pressure matters. You know your primary survey is clear. But now the room is speeding up. The daughter is repeating her question. The evaluator is watching. You are trying to decide whether to say something definitive before you feel certain enough to say it, and the steps that usually come naturally are suddenly harder to sequence.",
       },
       {
         type: "paragraph",
