@@ -8383,7 +8383,156 @@ const sectionSeeds: SectionSeed[] = [
         "osce-preparation",
         "resetting-when-thinking-narrows"
     ],
-  }
+  },
+  {
+    id: "design-and-run-your-own-scenarios",
+    title: "Design and Run Your Own Scenarios",
+    subtitle: "Lab time is scarce. Practice does not have to be.",
+    cluster: "10 Practice Like It's Real",
+    clusterOrder: 10,
+    sectionOrder: 0,
+    studentProblem: "I get one or two scenarios on lab days, and the rest of my week is studying alone at a desk. I do not know how to practice the actual job outside of lab.",
+    sectionPurpose: "Teach students how to design, run, and debrief their own practice scenarios with a partner, so scenario practice stops depending entirely on instructor-built lab time.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "On a good lab day, you might run two scenarios. Maybe three. The rest of the week, the skill that actually gets tested, thinking and acting while a call moves, gets no practice at all. Reading builds knowledge. Flashcards build recall. Neither one builds the thing scenarios measure: holding an assessment structure together while a patient talks, vitals change, and a decision needs to be made before you feel ready to make it.",
+      },
+      {
+        type: "paragraph",
+        text: "If I were doing paramedic school again, this is the habit I would build before any other: a standing weekly hour with one classmate, running scenarios we wrote ourselves. Not because homemade scenarios are as good as instructor-run ones. They are not. But a rough scenario you actually run beats a polished one you never get, and the volume matters more than students expect. The difference between two scenario exposures a week and six changes what the room feels like by the time evaluation arrives.",
+      },
+      {
+        type: "heading",
+        text: "Writing the case is half the learning",
+      },
+      {
+        type: "paragraph",
+        text: "Here is the part most students miss: designing the scenario teaches the designer as much as running it teaches the candidate. To write a believable hypoglycemia call, you have to know how it presents, what the vitals look like, how the patient should respond to treatment, and what would be different if something else were going on underneath. You cannot write a case you do not understand. The act of building one forces exactly the connections between mechanism, presentation, and decision that studying alone rarely demands.",
+      },
+      {
+        type: "paragraph",
+        text: "So when it is your week to design, treat it as study time, not admin work for your partner's benefit. The half hour you spend deciding what the blood pressure should do after treatment is some of the most useful pathophysiology review you will get.",
+      },
+      {
+        type: "heading",
+        text: "Start from a learning target, not a diagnosis",
+      },
+      {
+        type: "paragraph",
+        text: "The most common mistake in student-written scenarios is starting with a condition. Someone says let's do a STEMI, writes a chest pain call, and the whole run becomes a guessing game about the diagnosis. A diagnosis is not a learning target. A learning target is a specific behaviour the scenario is built to pull out and test.",
+      },
+      {
+        type: "paragraph",
+        text: "Good targets sound like this: reassessing after an intervention instead of moving on. Naming a transport decision before feeling certain. Catching the moment a directive threshold gets crossed while attention is somewhere else. Noticing that a patient who partially improved has stopped improving. Pick one target, then build a case where that exact moment has to happen.",
+      },
+      {
+        type: "paragraph",
+        text: "This is also what keeps homemade scenarios from becoming trivia. The candidate might correctly identify the condition and still miss the target, or get the diagnosis wrong and still hit it. The target is what gets debriefed. The diagnosis is just the vehicle.",
+      },
+      {
+        type: "heading",
+        text: "Keep the case to one page, five parts",
+      },
+      {
+        type: "list",
+        items: [
+          "Dispatch information: what the crew is told before arrival. Keep it as vague or misleading as real dispatch sometimes is.",
+          "Scene: where the patient is, who else is there, what is visible in the first ten seconds.",
+          "Patient script: who they are, what they say when asked, what they volunteer, what they hide unless asked directly.",
+          "Vitals that change: one set for arrival, one for after appropriate treatment, one for what happens if treatment is delayed or the wrong problem gets chased.",
+          "The decision point: the specific moment the learning target lives in, and what the patient does to create it.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "One page is a feature, not a limitation. If the case needs three pages, it is testing too many things at once, and the debrief will be as scattered as the scenario. The vitals sets matter most. A patient who responds to care, improving when the right thing happens, drifting when it does not, is what separates a scenario from an oral quiz with props.",
+      },
+      {
+        type: "paragraph",
+        text: "If writing a first case from nothing feels heavy, generate one with the Scenario Generator and strip it down. Cut it to one page, choose your own learning target, and adjust the vitals to serve it. Adapting a case teaches many of the same connections as writing one, and it gets a hesitant partnership running faster.",
+      },
+      {
+        type: "heading",
+        text: "Playing the patient is a real job",
+      },
+      {
+        type: "paragraph",
+        text: "A scenario is only as good as its patient. The job has three rules. Commit to the presentation: if the patient is short of breath, talk in broken sentences the whole run, not just the first minute. Answer what is asked, not what the candidate needs: real patients do not volunteer the medication list because the assessment stalled. And hold the script when your partner struggles. The urge to drop character and help is strong, especially between friends. Resist it. The struggle in the middle of a run, reaching for a next step that is not arriving, is where the practice actually lives. Rescuing your partner from that moment takes the learning with it.",
+      },
+      {
+        type: "paragraph",
+        text: "There is one exception. If the run has fully stalled and frustration is replacing thinking, pause it, name where things stand, and restart from thirty seconds earlier. A reset beats a rescue. The candidate still has to produce the next step themselves, just with the pressure momentarily lowered.",
+      },
+      {
+        type: "heading",
+        text: "Run it like it counts",
+      },
+      {
+        type: "paragraph",
+        text: "Out loud, on your feet, in real time. Say the assessment questions as questions, not summaries. Physically move to the patient's side, take a real radial pulse on a real wrist, speak the directive check before treating. For equipment you do not have, name the action and ask for the finding: I am auscultating, what do I hear? I am putting them on the monitor, what is the rhythm? The designer answers from the script. It feels awkward for about two runs, and then it stops feeling awkward and starts feeling like practice.",
+      },
+      {
+        type: "paragraph",
+        text: "The reason for all of this is transfer. Knowledge practiced silently at a desk arrives slower in a room where everything is out loud and physical. The closer the practice conditions sit to the performance conditions, the more of the practice survives the trip. This is the same reason the OSCE preparation section pushes practice toward realistic conditions: the format is part of the task.",
+      },
+      {
+        type: "heading",
+        text: "Debrief small and specific",
+      },
+      {
+        type: "paragraph",
+        text: "The debrief is five minutes, not twenty-five, and it belongs to the learning target. The designer speaks to three things: what the candidate did at the decision point, what it produced, and one adjustment for next time. Behaviour, moment, effect. Not a tour of everything imperfect in the run.",
+      },
+      {
+        type: "paragraph",
+        text: "Feedback between classmates drifts vague because nobody wants to sting a friend. Good job, maybe just watch your reassessment, helps no one. Anchor it to the moment instead: after the glucose came back, you moved straight to packaging, and the repeat mental status check never happened. What would need to be different next run for that check to fire? That is kind and useful at the same time. If the same pattern keeps surfacing across weeks, take it to the Five Whys Tool and trace it to a practice target. The Scenario Day Reset works between runs here exactly as it does on instructor-led days.",
+      },
+      {
+        type: "heading",
+        text: "Record a run occasionally",
+      },
+      {
+        type: "paragraph",
+        text: "Every few weeks, prop a phone on the counter and record one run. Watch it back once, ideally the next day. The gap between the run you remember and the run on the video is the whole value. Students consistently discover their hands went still for ninety seconds while they were thinking, that they asked a question and moved on before the answer finished, or that a reassessment they remember doing never actually happened. Memory edits performances. Video does not. One recorded run a month is plenty; the point is calibration, not surveillance.",
+      },
+      {
+        type: "heading",
+        text: "Trade roles and keep the cases",
+      },
+      {
+        type: "paragraph",
+        text: "Alternate who designs each week, and keep every case in a shared folder. By mid-semester you will have a case bank, and rerunning a case from six weeks ago is more valuable than it sounds. The presentation is half-familiar, but you have changed, and the run shows you exactly how. Old cases returning at intervals is spaced practice applied to the job itself rather than to facts about the job.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Four traps account for most failed attempts at this. Gotcha design, where the case is built to trick rather than to test, and the debrief becomes a reveal instead of a lesson. Kitchen-sink cases that stack complications until nothing can be debriefed cleanly. Breaking character to teach mid-run, which converts a scenario into a tutorial and removes the pressure that made it worth running. And debriefs that slide from the run into the person, from you missed the reassessment into you always rush things. The first is feedback. The second is a fight, and it will end the partnership.",
+      },
+      {
+        type: "paragraph",
+        text: "None of this needs to be polished to be worth doing. A one-page case, a committed patient, a real-time run, and a five-minute debrief anchored to one target. That is the whole practice. Done weekly with the same partner, it quietly becomes the largest source of scenario exposure in your entire program.",
+      },
+    ],
+    glossaryTerms: [
+      "deliberate-practice",
+      "feedback",
+      "practice-target",
+      "spacing",
+      "clinical-reasoning",
+    ],
+    relatedSections: [
+      "scenario-days-as-learning-tools",
+      "focused-practice-after-feedback",
+      "common-errors-and-what-they-reveal",
+      "osce-preparation",
+      "clinical-reasoning",
+    ],
+  },
 ]
 
 export const sections: Section[] = sectionSeeds.map((section, index) => ({
