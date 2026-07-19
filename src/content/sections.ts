@@ -8534,6 +8534,11 @@ const sectionSeeds: SectionSeed[] = [
       "spacing",
       "clinical-reasoning",
     ],
+    relatedTools: [
+      "scenario-design-template",
+      "scenario-day-reset",
+      "five-whys-tool",
+    ],
     relatedSections: [
       "scenario-days-as-learning-tools",
       "focused-practice-after-feedback",
@@ -8616,6 +8621,9 @@ const sectionSeeds: SectionSeed[] = [
       "smart-notes",
       "retrieval-practice",
     ],
+    relatedTools: [
+      "smart-note-template",
+    ],
     relatedSections: [
       "smart-notes-for-paramedic-students",
       "types-of-notes-and-idea-maturation",
@@ -8688,6 +8696,9 @@ const sectionSeeds: SectionSeed[] = [
       "directive-intent",
       "feedback",
       "spacing",
+    ],
+    relatedTools: [
+      "clinical-recall-prompt-builder",
     ],
     relatedSections: [
       "retrieval-and-spaced-learning",
@@ -8775,6 +8786,10 @@ const sectionSeeds: SectionSeed[] = [
       "error-pattern",
       "clinical-reasoning",
       "smart-notes",
+    ],
+    relatedTools: [
+      "clinical-recall-prompt-builder",
+      "smart-note-template",
     ],
     relatedSections: [
       "retrieval-and-spaced-learning",
@@ -8933,6 +8948,9 @@ const sectionSeeds: SectionSeed[] = [
       "performance-under-pressure",
       "retrieval-practice",
     ],
+    relatedTools: [
+      "osce-reset",
+    ],
     relatedSections: [
       "osce-preparation",
       "performance-under-pressure",
@@ -9009,6 +9027,11 @@ const sectionSeeds: SectionSeed[] = [
       "practice-target",
       "reflection",
       "error-pattern",
+    ],
+    relatedTools: [
+      "scenario-day-reset",
+      "five-whys-tool",
+      "reflection-without-journaling-tool",
     ],
     relatedSections: [
       "reflection-without-journaling",

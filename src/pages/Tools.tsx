@@ -30,7 +30,7 @@ const toolGroups: ToolGroup[] = [
     title: 'Practice and performance',
     purpose:
       'Use these during scenario days and OSCE prep, especially when feedback needs to become one clear adjustment.',
-    toolIds: ['scenario-day-reset', 'osce-reset'],
+    toolIds: ['scenario-design-template', 'scenario-day-reset', 'osce-reset'],
   },
   {
     title: 'Reflection and improvement',
