@@ -48,6 +48,8 @@ Current completed learning path clusters:
 - 06 Practice Better
 - 07 Perform Under Pressure
 - 08 Reflect and Improve
+- 09 Do the Work
+- 10 Practice Like It's Real
 
 Current active tools:
 

@@ -8533,6 +8533,482 @@ const sectionSeeds: SectionSeed[] = [
       "clinical-reasoning",
     ],
   },
+  {
+    id: "taking-notes-in-a-moving-lecture",
+    title: "Taking Notes in a Moving Lecture",
+    subtitle: "Capture decisions and confusions, not the slides.",
+    cluster: "09 Do the Work",
+    clusterOrder: 9,
+    sectionOrder: 0,
+    studentProblem: "Lectures move faster than I can write. I either try to capture everything and fall behind, or I stop writing and trust slides I never look at again.",
+    sectionPurpose: "Give students a live capture method for lectures that feeds their note system instead of duplicating the slides.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "There are two ways to lose a lecture. The first is transcription: writing so fast that you capture the words without processing any of them, a stenographer with no time to think. The second is surrender: the slides will be posted, so you stop writing, drift, and leave with nothing the slides do not already contain. Both feel like reasonable responses to a lecture that moves too fast. Both produce the same result, which is that the three hours pass through you without leaving much behind.",
+      },
+      {
+        type: "paragraph",
+        text: "The way out starts with one decision: your notes during a lecture are not for storing content. The slides already store the content. Your notes are for flagging, marking the moments worth returning to, so the lecture becomes raw material for later thinking instead of a performance you watched once.",
+      },
+      {
+        type: "heading",
+        text: "Only three things are worth writing down live",
+      },
+      {
+        type: "list",
+        items: [
+          "Things the instructor says that are not on the slide. Especially the clinical asides: why they double-check a first blood pressure taken on a moving truck, what they actually look at first when they walk into a bedroom. Those sentences are the closest thing to placement experience a classroom offers, and they exist nowhere else.",
+          "Moments you did not understand. Mark them with a question mark and the topic, then keep listening. Do not try to resolve confusion in real time while the lecture continues without you.",
+          "Connections to something you already know. An arrow and a few words: this links to the shock lecture, this is the same mechanism as last week's respiratory case. You are not writing the connection out. You are pinning it so it can be built later.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That is the whole live system. A page from a three-hour block might hold fifteen lines. That feels wrong at first, especially next to a classmate producing four dense pages. But those fifteen lines are decisions about what mattered, and the four dense pages are mostly a slower copy of a slide deck that already exists.",
+      },
+      {
+        type: "paragraph",
+        text: "This is a working memory problem before it is a discipline problem. Listening, understanding, and transcribing compete for the same limited attention. Something has to give, and when students try to do all three, understanding is usually what goes. Flagging costs almost nothing, which is exactly why it works while the room is moving.",
+      },
+      {
+        type: "heading",
+        text: "The same-day pass is where the notes become real",
+      },
+      {
+        type: "paragraph",
+        text: "Flags go cold fast. A question mark next to preload makes perfect sense at noon and is a mystery by Saturday. So the second half of this method is a ten-minute pass the same day: go through the flags, and turn each one into something usable. A confusion becomes a specific question to answer or bring to the next class. An instructor aside becomes a rough note in your capture inbox. A connection becomes a line linking two ideas, or the seed of a Smart Note if it keeps mattering.",
+      },
+      {
+        type: "paragraph",
+        text: "Ten minutes. Not a rewrite of the lecture, not a beautification project. The pass exists to move the flags into your actual note system while you still know what they meant. The Smart Notes and Types of Notes sections describe where this material goes next; this section is just the front door.",
+      },
+      {
+        type: "heading",
+        text: "The night before an exam",
+      },
+      {
+        type: "paragraph",
+        text: "The same logic runs all the way to exam eve, so it belongs here. The night before an exam is not for new material, and it is not for rereading everything one more time. It is for a final retrieval pass: work through your recall prompts and your flagged confusions, closed-book, and let the checked ones go. Then stop and sleep. The consolidation that locks material in happens while you are asleep, not during a fourth exhausted hour at the desk, and trading sleep for that hour almost always trades stronger memory for weaker.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Transcribing, still, because writing everything feels safer than choosing. Annotating the posted slides during the lecture, which feels active but is mostly reading along with extra steps. Highlighting, which marks text without processing it. And skipping the same-day pass, which quietly converts the whole method back into a pile of cryptic symbols. The flags are only worth what the pass turns them into.",
+      },
+    ],
+    glossaryTerms: [
+      "working-memory",
+      "cognitive-load",
+      "smart-notes",
+      "retrieval-practice",
+    ],
+    relatedSections: [
+      "smart-notes-for-paramedic-students",
+      "types-of-notes-and-idea-maturation",
+      "cognitive-load",
+      "retrieval-and-spaced-learning",
+    ],
+  },
+  {
+    id: "studying-with-a-partner",
+    title: "Studying With a Partner",
+    subtitle: "Both people retrieve, or it is not studying.",
+    cluster: "09 Do the Work",
+    clusterOrder: 9,
+    sectionOrder: 1,
+    studentProblem: "My study group either turns into hanging out, or one person teaches while everyone else nods. I leave feeling social but not more prepared.",
+    sectionPurpose: "Show students how to structure partner study so both people are retrieving and testing understanding instead of one person performing it.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "Most study groups fail, and the failure is structural, not personal. The default format is one confident student explaining while everyone else follows along and agrees. Following along produces recognition, and this guide has spent whole sections on why recognition is not the same as access. Everyone leaves feeling like the session worked. One person practiced. The rest watched practice happen.",
+      },
+      {
+        type: "paragraph",
+        text: "The fix is a single rule that changes everything downstream: both people retrieve. If one of you is always producing answers and the other is always confirming them, it is a tutoring session, which is fine, but call it that and take turns being the student.",
+      },
+      {
+        type: "heading",
+        text: "Closed-book rounds",
+      },
+      {
+        type: "paragraph",
+        text: "The core format is simple. One partner holds the notes and asks. The other answers cold, no notes, full sentences, out loud. Ten minutes, then swap. The asker is not resting during their turn: judging whether an answer is actually complete forces them to retrieve the material too, and catching a partner's almost-right answer is its own kind of test.",
+      },
+      {
+        type: "paragraph",
+        text: "Make the prompts do clinical work, not trivia work. Do not ask what TXA stands for. Ask your partner to walk through the tranexamic acid directive as if teaching it: who it is for, what it is protecting against, and why the intramuscular route matters for a PCP who does not have an IV certification yet. An answer to that question shows whether the directive is understood or just recognized. If your partner cannot get through it, neither of you found a failure. You found tomorrow's study target, which is the entire point of the session.",
+      },
+      {
+        type: "heading",
+        text: "When you disagree, argue before you look it up",
+      },
+      {
+        type: "paragraph",
+        text: "Disagreement is the most valuable thing a study partner produces, and most pairs waste it by reaching for the answer immediately. Hold off for two minutes. Each of you argues your version first, with the reasoning, not just the claim. Then check. The answer settles who was right, but the argument is what exposes how each of you was thinking, and a wrong model laid out in the open is worth far more than a wrong answer silently corrected.",
+      },
+      {
+        type: "heading",
+        text: "Keep it small",
+      },
+      {
+        type: "paragraph",
+        text: "Two people is the working size. Three works if the third rotates in as asker. Four is an audience, and audiences nod. If your program's study culture runs to big groups, go, enjoy them, and do your actual preparation with one partner on a different day.",
+      },
+      {
+        type: "paragraph",
+        text: "The same partner, ideally, week over week. Shared history compounds: they know which directive tripped you last month and can bring it back unannounced, which is spaced retrieval with a human doing the scheduling. And the partnership feeds directly into the scenario work in the Practice Like It's Real cluster. The person quizzing you on Tuesdays is the person playing your patient on Thursdays.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "The strong student teaches every week and gets stronger while the other nods and does not. Sessions run open-book start to finish, so nothing is ever actually retrieved. Or the hour drifts social by minute twenty. The social part is not the enemy, you are going to spend a career trusting partners, and liking your study partner is a feature. Just put the drift after the closed-book rounds instead of inside them. Work the hour, then hang out with the books shut.",
+      },
+    ],
+    glossaryTerms: [
+      "retrieval-practice",
+      "directive-intent",
+      "feedback",
+      "spacing",
+    ],
+    relatedSections: [
+      "retrieval-and-spaced-learning",
+      "clinical-recall-without-trivia",
+      "directives-through-purpose",
+      "design-and-run-your-own-scenarios",
+    ],
+  },
+  {
+    id: "practice-questions-that-teach",
+    title: "Practice Questions That Teach",
+    subtitle: "The wrong answer is the interesting part.",
+    cluster: "09 Do the Work",
+    clusterOrder: 9,
+    sectionOrder: 2,
+    studentProblem: "I do practice questions and my scores wobble. Right answers sometimes feel like luck, and wrong ones get a shrug and a next click.",
+    sectionPurpose: "Teach students to use practice questions as diagnostic and retrieval tools rather than a score to watch.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "Question banks are probably the most-used study resource in paramedic school, and the most commonly wasted. The waste has a signature: click, wrong, shrug, next. Sixty questions in a sitting, a percentage at the end, a vague feeling about whether it was a good day. The score gets all the attention, and the score is the least useful thing the question bank produced.",
+      },
+      {
+        type: "paragraph",
+        text: "A wrong answer is a small diagnostic gift. It just caught something, and clicking past it throws the catch away. The habit that changes everything is short: before moving on, name what kind of wrong it was.",
+      },
+      {
+        type: "heading",
+        text: "Five kinds of wrong",
+      },
+      {
+        type: "list",
+        items: [
+          "The fact was missing. You genuinely did not know it. This is the only kind that more content review fixes.",
+          "You misread the stem. The knowledge was fine; the reading was rushed. A pediatric airway question mentions a barking cough and drooling, and you anchored on the age and the cough, called it croup, and stopped reading before the drooling changed the picture. More studying will not fix that. Slower stems will.",
+          "Right fact, wrong application. You knew the rule and applied it to a patient it does not fit. This is a meaning problem, not a memory problem.",
+          "Two options both seemed right. A discrimination failure: the two ideas are stored close together without a clear boundary between them. This is exactly what a Smart Note on the distinction is for.",
+          "You changed a right answer. Worth tracking honestly across sessions, because it is a confidence calibration problem, and it has its own fix: when you catch yourself switching, require a reason you can say out loud, not a feeling.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Different wrongs need different fixes, which is the whole argument. A student who misses eight questions and responds with a general vow to study harder is treating five different problems with one medicine. Ten seconds of naming per miss turns the same sixty questions into an actual map of where the trouble lives.",
+      },
+      {
+        type: "heading",
+        text: "Right answers get one sentence too",
+      },
+      {
+        type: "paragraph",
+        text: "Before checking the explanation, say why your answer is right, one sentence, out loud or written. If the sentence will not come, the answer may have been pattern-matching on the wording rather than reasoning, and that difference matters, because the real exam will phrase it differently and the pattern will not be there. The explanation below the question is only worth reading after you have committed to your own version. Read passively first, and it just sounds agreeable.",
+      },
+      {
+        type: "heading",
+        text: "When misses cluster, the problem is structural",
+      },
+      {
+        type: "paragraph",
+        text: "One wrong answer about cardiac output is a fact gap. Five wrong answers scattered across preload, contractility, and compensation are not five fact gaps. They are one structure that never got built. More questions will keep finding the same hole from new angles.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the moment for a blank page. Put the concept in the middle, and draw what connects to what, from memory, no book. What drives it, what it affects, what compensates when it falls, what you would see in a patient at each stage. Then open the text and compare. The places your drawing is empty or wrong are the study plan, drawn by your own hand, which is why it sticks better than a to-do list someone else wrote. Building the map is the studying. Comparing it is the test.",
+      },
+      {
+        type: "heading",
+        text: "Write one question yourself",
+      },
+      {
+        type: "paragraph",
+        text: "Once per study session, write a question instead of answering one. A good stem with one right answer and three plausible wrongs forces you to know not just the correct idea but the exact ways it gets confused, which is a deeper demand than any amount of answering. Trade them with your study partner. The bad ones you write teach you almost as much as the good ones.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Running question banks before the material is understood, which trains you to memorize this bank rather than learn the content, and the real exam is not this bank. Treating the score as a verdict on your future instead of a snapshot of one session. And reading explanations the way people read terms of service: eyes moving, nothing landing. The bank is a diagnostic instrument. Used as a slot machine, it pays out about as reliably as one.",
+      },
+    ],
+    glossaryTerms: [
+      "retrieval-practice",
+      "error-pattern",
+      "clinical-reasoning",
+      "smart-notes",
+    ],
+    relatedSections: [
+      "retrieval-and-spaced-learning",
+      "clinical-recall-without-trivia",
+      "meaning-before-memorization",
+      "smart-notes-for-paramedic-students",
+      "studying-with-a-partner",
+    ],
+  },
+  {
+    id: "the-week-around-the-work",
+    title: "The Week Around the Work",
+    subtitle: "None of this runs on willpower. It runs on room.",
+    cluster: "09 Do the Work",
+    clusterOrder: 9,
+    sectionOrder: 3,
+    studentProblem: "I know what I should be doing. I just cannot find the hours, and by the time I sit down to study I am too cooked for any of it to stick.",
+    sectionPurpose: "Help students build a weekly structure where retrieval, practice, sleep, and rest actually happen, without turning planning into another project.",
+    pageType: "practical-system",
+    body: [
+      {
+        type: "paragraph",
+        text: "Everything else in this cluster assumes something this section has to say out loud: the techniques only run if the week has room for them. Retrieval practice that never gets scheduled is a good intention. A scenario partnership that meets whenever both people happen to be free meets twice a semester. The week is the container, and most students inherit theirs instead of building it.",
+      },
+      {
+        type: "heading",
+        text: "Plan backwards from the fixed points",
+      },
+      {
+        type: "paragraph",
+        text: "A paramedic program has a rhythm: lecture days, lab days, scenario days, placement blocks, and the exams that anchor each stretch. Those are fixed. Build backwards from them. The same-day pass goes on lecture days because that is when the flags are warm. The partner hour goes the day before lab so the material is freshly retrieved when it gets used. The recall prompts get their spacing across the gaps.",
+      },
+      {
+        type: "paragraph",
+        text: "Two or three protected blocks of forty-five to ninety minutes beat any number of scattered half-attention hours. Protected means the phone is in another room and the block has one named target before you sit down. Tonight is the flagged confusions from Tuesday's cardiology block is a target. Study cardio is a mood. The block with a name finishes with something done. The mood finishes when you are tired of it.",
+      },
+      {
+        type: "paragraph",
+        text: "One honest limit: fifteen minutes of planning per week is plenty. The calendar is not the work, and a planning system that keeps needing adjustment has quietly become a way of avoiding the work while feeling responsible about it.",
+      },
+      {
+        type: "heading",
+        text: "Cheat sheets are for making, not having",
+      },
+      {
+        type: "paragraph",
+        text: "Whether or not an exam allows one, building a one-page sheet is worth the evening it takes, because deciding what earns space on a single page is itself a complete review of the material. The rule that makes it work: build the page closed-book first, from memory, then open the book to check and fill. A sheet copied open-book is a transcription exercise with a nicer layout. A sheet built from recall is a retrieval session that leaves an artifact behind. What you could not produce from memory is highlighted for you automatically, by its absence.",
+      },
+      {
+        type: "heading",
+        text: "Sleep is when the studying gets saved",
+      },
+      {
+        type: "paragraph",
+        text: "This is scheduling advice, not wellness advice. The consolidation that turns a day of retrieval practice into stable memory happens during sleep. Trade sleep for one more hour at the desk and the exchange is almost always bad: the extra hour is your weakest of the day, and it is purchased with the process that was going to lock in the previous six. The same holds for skills. Motor learning consolidates overnight too, which is why an IV attempt that felt clumsy on Tuesday is sometimes mysteriously smoother on Wednesday. The all-nighter before a practical spends exactly the resource the practical needs most.",
+      },
+      {
+        type: "heading",
+        text: "Rest is part of the machine",
+      },
+      {
+        type: "paragraph",
+        text: "Protected focus has a cost, and the currency is real downtime. The failure mode is not laziness. It is the half-and-half week: guilt-studying in front of a show, resting with the textbook open nearby, six days of being simultaneously at work and off duty. That week produces neither the studying nor the recovery. Work the named block fully, then stop fully. An evening that is actually off does more for tomorrow's block than an evening of diluted both.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Rebuilding the entire system in one ambitious Sunday, which the opening pages of this guide already warned about and which remains the most popular way to quit by Thursday. Planning that grows more elaborate as the studying shrinks. And treating sleep and rest as the flexible parts of the week when they are the load-bearing ones. Start with one protected block and a fixed bedtime on lab-eve nights. Add from there only if the first pieces hold.",
+      },
+    ],
+    glossaryTerms: [
+      "spacing",
+      "retrieval-practice",
+      "cognitive-load",
+    ],
+    relatedSections: [
+      "retrieval-and-spaced-learning",
+      "taking-notes-in-a-moving-lecture",
+      "how-to-use-this-guide",
+      "learning-strain-is-not-always-a-personal-problem",
+    ],
+  },
+  {
+    id: "mental-rehearsal-and-visualization",
+    title: "Mental Rehearsal and Visualization",
+    subtitle: "You can run a call with your eyes closed, and it counts.",
+    cluster: "10 Practice Like It's Real",
+    clusterOrder: 10,
+    sectionOrder: 1,
+    studentProblem: "I only get to run a station a few times before the OSCE. I wish I could practice more without needing a lab, a partner, or equipment.",
+    sectionPurpose: "Teach students to use structured mental rehearsal as real practice volume for scenarios, skills, and OSCE stations.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "There is a kind of practice that needs no lab, no partner, no equipment, and no booking, and most paramedic students never use it on purpose. Athletes and surgeons rehearse mentally as a standard part of training, and the simulation research is consistent: mental practice layered on top of physical practice outperforms physical practice alone. Not as a replacement. As added volume, and volume is exactly what a paramedic student is short of.",
+      },
+      {
+        type: "paragraph",
+        text: "First, what this is not. It is not positive thinking, and it is not imagining yourself succeeding in a warm glow of confidence. Rehearsing the outcome is worthless. What works is rehearsing the process: the specific call, in first person, in real time, with the decisions included.",
+      },
+      {
+        type: "heading",
+        text: "How to actually run one",
+      },
+      {
+        type: "paragraph",
+        text: "Pick one call type or one station. Sit somewhere quiet, close your eyes, and start from the beginning: hear the dispatch information, see the door, walk in. Ask your assessment questions as actual sentences, not summaries. Feel your hands do the steps. Speak the directive check before you treat. Include the reassessment after the intervention, because if it is not in the rehearsal it will not be in the room. Run it at the speed the real call would take. Ten minutes of this, most days, does more than an hour once a week.",
+      },
+      {
+        type: "heading",
+        text: "The skips are the findings",
+      },
+      {
+        type: "paragraph",
+        text: "Somewhere in the run, your mind will do this: and then I would give epi. That skip, summarizing an action instead of performing it, is the most valuable thing mental rehearsal produces. It means that step exists in your head as a caption, not a sequence. Stop and run the actual motions: which concentration, drawn up how, landmarked where, said out loud to whom. The steps you cannot visualize concretely are precisely the steps that will wobble under evaluation, and mental rehearsal finds them for free, weeks early, with no audience.",
+      },
+      {
+        type: "heading",
+        text: "Rehearse what you will never get to practice",
+      },
+      {
+        type: "paragraph",
+        text: "Some calls are rare enough that the first real one may come after the exam that tests it. An imminent delivery is the clean example. Most students will run it live once or twice, if that. Mental rehearsal is the only place volume exists for a call like this: setting up the kit, positioning, the coaching words you would actually say, checking for the cord, drying and warming and stimulating, what changes if the infant does not respond. Run it enough times that the sequence has a rhythm. The first real one should not be the first run, and for the rare calls, rehearsal is the only way to make that true.",
+      },
+      {
+        type: "heading",
+        text: "Rehearse the recovery, not just the clean version",
+      },
+      {
+        type: "paragraph",
+        text: "Most students who try visualization rehearse the version where everything goes right, which builds a plan with no shock absorbers. Deliberately start some runs from the bad moment: you are three minutes into the station and you have just realized the allergy question never got asked. Rehearse exactly what you do next, the pause, naming the gap out loud, closing it, and continuing without spiraling. The OSCE Reset tool describes the structure; rehearsal is where the structure gets installed. A recovery that has been run twenty times in your head arrives on its own when it is needed, which is the entire point.",
+      },
+      {
+        type: "heading",
+        text: "The solo OSCE run",
+      },
+      {
+        type: "paragraph",
+        text: "The full-contact version needs an empty room, a timer, and a tolerance for feeling ridiculous that lasts about two minutes. Stand up. Run the station out loud, to an invisible patient and an invisible evaluator, with your hands doing the real motions. Speaking the questions matters: the difference between thinking an assessment and saying one is exactly the difference that shows up under evaluation. Set the timer to station length so the time pressure is part of the practice. Every few weeks, record one on your phone and watch it back, the same calibration habit the scenario section describes, and the gap between the run you remember and the run on video will tell you what to rehearse next.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Rehearsing outcomes instead of process, the pass, the compliment from the evaluator, the feeling of relief, none of which contains a single practicable step. Rehearsing only the clean version, so the first complication lands on an unrehearsed mind. And letting it replace physical practice, which it cannot. It is a multiplier on real practice, not a substitute for it. The students who get the most from it treat it like brushing teeth: short, daily, unremarkable, and non-negotiable.",
+      },
+    ],
+    glossaryTerms: [
+      "deliberate-practice",
+      "performance-under-pressure",
+      "retrieval-practice",
+    ],
+    relatedSections: [
+      "osce-preparation",
+      "performance-under-pressure",
+      "resetting-when-thinking-narrows",
+      "design-and-run-your-own-scenarios",
+    ],
+  },
+  {
+    id: "capturing-the-debrief",
+    title: "Capturing the Debrief",
+    subtitle: "Memory is a bad scribe. Write it down while it is true.",
+    cluster: "10 Practice Like It's Real",
+    clusterOrder: 10,
+    sectionOrder: 2,
+    studentProblem: "Debriefs are full of useful feedback and I remember almost none of it by the weekend. What I do remember is mostly the sting.",
+    sectionPurpose: "Give students a capture method for debrief feedback and a running practice-target list that turns scattered feedback into visible improvement across a semester.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "After a hard scenario, memory keeps the feeling and loses the specifics. By the drive home, a debrief full of precise, usable observations has started rounding itself into be faster and be more confident, which are not things a person can practice. By the next lab day, the sting is intact and the content is gone. This is not a character flaw. Emotion is a strong signal and detail is a weak one, and under stress the strong signal wins the storage competition.",
+      },
+      {
+        type: "paragraph",
+        text: "The reflection tools in this guide, the Five Whys, the Scenario Day Reset, Reflection Without Journaling, all assume raw material exists to work with. This section is about producing that raw material: what to actually write, during and after a debrief, so the feedback survives contact with the weekend.",
+      },
+      {
+        type: "heading",
+        text: "During the debrief: three lines, behaviours only",
+      },
+      {
+        type: "paragraph",
+        text: "Write behaviours and moments, as close to verbatim as you can get, and never judgments. Transport decision came at nine minutes, instructor says the risk was nameable at four. That is a line worth having. Too slow is not, because in three weeks too slow will have no moment attached and nothing to practice against. The discipline is the same as the lecture-capture method: you are flagging, not transcribing, because you also need to be present for the conversation. Three lines is the ceiling. If the debrief produced ten important things, the three you capture are the three you will actually work on, and that trade is fine.",
+      },
+      {
+        type: "paragraph",
+        text: "One distinction does most of the work here: feelings are labels, not data. I panicked is a label. My hands stopped while I tried to remember the sequence, and the instructor had to prompt the next step is data. Write the second kind. The first kind you will remember anyway, whether you want to or not.",
+      },
+      {
+        type: "paragraph",
+        text: "A worked example. After a call with a wet, hypothermic patient pulled from a November lake scenario, the instructor says the packaging and handling were genuinely good, but points out that your reassessments never included a temperature trend, so the patient's continued cooling was invisible to you. The line to write is: reassessed vitals twice, never rechecked temp, cooling trend invisible. The line not to write is: reassess better. One of those is a practice target waiting to happen. The other is a mood.",
+      },
+      {
+        type: "heading",
+        text: "Same day: ten minutes to one target",
+      },
+      {
+        type: "paragraph",
+        text: "The lines go stale like lecture flags do, so the same-day rule applies. Ten minutes, that evening: read the lines and turn them into one practice target, using whichever tool fits. Between runs on the same day, that is the Scenario Day Reset. A pattern that has now shown up three times gets the Five Whys. A debrief that left more emotional residue than content gets Reflection Without Journaling first, and the target extraction after. The capture is the front door to all of them, and without it they are all working from a memory that has already been edited.",
+      },
+      {
+        type: "heading",
+        text: "The running list",
+      },
+      {
+        type: "paragraph",
+        text: "One page, kept all semester, dated. Each entry is a practice target in one line. The rule that makes the page work: a target gets checked off when it has held for two consecutive scenario days, and checked-off targets get crossed out, never deleted. The crossed-out lines are the point. A student four weeks out from an OSCE, staring at the ceiling and certain they are not improving, can look at a page where named reassessment after intervention has a line through it and dated proof underneath. The earlier section on not being able to tell whether you are improving argued that trajectory beats single performances. This page is what makes the trajectory visible instead of a feeling you have to talk yourself into.",
+      },
+      {
+        type: "paragraph",
+        text: "Before each scenario day, read the list for three minutes and pick one live target to carry in. One. The whole apparatus of this guide keeps arriving at that same number for the same reason: one adjustment gets tested, three get gestured at.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Writing feelings as data, and ending up with a page of self-assessment instead of a page of behaviours. A list that only grows, because nothing ever gets formally retired, until it stops being a practice tool and becomes a guilt document that gets avoided. And capturing everything, ten lines a debrief, which produces an archive instead of a working list. Three lines, one target, crossed out when it holds. The page should be boring. Boring is what improvement looks like when it is actually written down.",
+      },
+    ],
+    glossaryTerms: [
+      "feedback",
+      "practice-target",
+      "reflection",
+      "error-pattern",
+    ],
+    relatedSections: [
+      "reflection-without-journaling",
+      "the-five-whys",
+      "turning-feedback-into-action",
+      "scenario-days-as-learning-tools",
+      "design-and-run-your-own-scenarios",
+    ],
+  },
 ]
 
 export const sections: Section[] = sectionSeeds.map((section, index) => ({

@@ -129,6 +129,40 @@ export const learningPath: LearningPathCluster[] = [
     ],
     status: 'drafted',
   },
+  {
+    id: 'do-the-work',
+    title: '09 Do the Work',
+    order: 9,
+    purpose:
+      'Run the actual week of learning: notes captured live, partners used properly, practice questions that teach, and a schedule with room for all of it.',
+    sections: [
+      'taking-notes-in-a-moving-lecture',
+      'studying-with-a-partner',
+      'practice-questions-that-teach',
+      'the-week-around-the-work',
+    ],
+    relatedTools: ['smart-note-template', 'clinical-recall-prompt-builder'],
+    status: 'drafted',
+  },
+  {
+    id: 'practice-like-its-real',
+    title: "10 Practice Like It's Real",
+    order: 10,
+    purpose:
+      'Build practice volume you control: self-designed scenarios, mental rehearsal, and debrief capture that survives past the drive home.',
+    sections: [
+      'design-and-run-your-own-scenarios',
+      'mental-rehearsal-and-visualization',
+      'capturing-the-debrief',
+    ],
+    relatedTools: [
+      'scenario-day-reset',
+      'five-whys-tool',
+      'reflection-without-journaling-tool',
+      'osce-reset',
+    ],
+    status: 'drafted',
+  },
 ]
 
 export const orderedLearningPath = [...learningPath].sort(
