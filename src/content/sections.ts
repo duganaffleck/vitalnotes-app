@@ -8410,7 +8410,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "If I were doing paramedic school again, this is the habit I would build before any other: a standing weekly hour with one classmate, running scenarios we wrote ourselves. Not because homemade scenarios are as good as instructor-run ones. They are not. But a rough scenario you actually run beats a polished one you never get, and the volume matters more than students expect. The difference between two scenario exposures a week and six changes what the room feels like by the time evaluation arrives.",
+        text: "The habit worth building before any other is a standing weekly hour with one classmate, running scenarios you wrote yourselves. Not because homemade scenarios are as good as instructor-run ones. They are not. But a rough scenario you actually run beats a polished one you never get, and the volume matters more than students expect. The difference between two scenario exposures a week and six changes what the room feels like by the time evaluation arrives.",
       },
       {
         type: "heading",
@@ -8418,7 +8418,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Here is the part most students miss: designing the scenario teaches the designer as much as running it teaches the candidate. To write a believable hypoglycemia call, you have to know how it presents, what the vitals look like, how the patient should respond to treatment, and what would be different if something else were going on underneath. You cannot write a case you do not understand. The act of building one forces exactly the connections between mechanism, presentation, and decision that studying alone rarely demands.",
+        text: "Most students miss that designing the scenario teaches the designer as much as running it teaches the candidate. To write a believable hypoglycemia call, you have to know how it presents, what the vitals look like, how the patient should respond to treatment, and what would be different if something else were going on underneath. You cannot write a case you do not understand. The act of building one forces exactly the connections between mechanism, presentation, and decision that studying alone rarely demands.",
       },
       {
         type: "paragraph",
@@ -8438,7 +8438,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is also what keeps homemade scenarios from becoming trivia. The candidate might correctly identify the condition and still miss the target, or get the diagnosis wrong and still hit it. The target is what gets debriefed. The diagnosis is just the vehicle.",
+        text: "This is also what keeps homemade scenarios from becoming trivia. The candidate might correctly identify the condition and still miss the target, or get the diagnosis wrong and still hit it. The target, not the diagnosis, is what gets debriefed.",
       },
       {
         type: "heading",
@@ -8559,7 +8559,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The way out starts with one decision: your notes during a lecture are not for storing content. The slides already store the content. Your notes are for flagging, marking the moments worth returning to, so the lecture becomes raw material for later thinking instead of a performance you watched once.",
+        text: "The way out starts with deciding what lecture notes are actually for. They are not for storing content, because the slides already do that. Your notes are for flagging, marking the moments worth returning to, so the lecture becomes raw material for later thinking instead of a performance you watched once.",
       },
       {
         type: "heading",
@@ -8575,7 +8575,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That is the whole live system. A page from a three-hour block might hold fifteen lines. That feels wrong at first, especially next to a classmate producing four dense pages. But those fifteen lines are decisions about what mattered, and the four dense pages are mostly a slower copy of a slide deck that already exists.",
+        text: "Nothing else needs to happen live. A page from a three-hour block might hold fifteen lines. That feels wrong at first, especially next to a classmate producing four dense pages. But those fifteen lines are decisions about what mattered, and the four dense pages are mostly a slower copy of a slide deck that already exists.",
       },
       {
         type: "paragraph",
@@ -8640,7 +8640,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The fix is a single rule that changes everything downstream: both people retrieve. If one of you is always producing answers and the other is always confirming them, it is a tutoring session, which is fine, but call it that and take turns being the student.",
+        text: "The fix is one rule that shapes everything else. Both people retrieve, every session. If one of you is always producing answers and the other is always confirming them, it is a tutoring session, which is fine, but call it that and take turns being the student.",
       },
       {
         type: "heading",
@@ -8648,11 +8648,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The core format is simple. One partner holds the notes and asks. The other answers cold, no notes, full sentences, out loud. Ten minutes, then swap. The asker is not resting during their turn: judging whether an answer is actually complete forces them to retrieve the material too, and catching a partner's almost-right answer is its own kind of test.",
+        text: "One partner holds the notes and asks. The other answers cold, no notes, full sentences, out loud. Ten minutes, then swap. The asker is not resting during their turn, since judging whether an answer is actually complete forces them to retrieve the material too, and catching a partner's almost-right answer is its own kind of test.",
       },
       {
         type: "paragraph",
-        text: "Make the prompts do clinical work, not trivia work. Do not ask what TXA stands for. Ask your partner to walk through the tranexamic acid directive as if teaching it: who it is for, what it is protecting against, and why the intramuscular route matters for a PCP who does not have an IV certification yet. An answer to that question shows whether the directive is understood or just recognized. If your partner cannot get through it, neither of you found a failure. You found tomorrow's study target, which is the entire point of the session.",
+        text: "Aim the prompts at clinical decisions rather than trivia. Do not ask what TXA stands for. Ask your partner to walk through the tranexamic acid directive as if teaching it: who it is for, what it is protecting against, and why the intramuscular route matters for a PCP who does not have an IV certification yet. An answer to that question shows whether the directive is understood or just recognized. If your partner cannot get through it, neither of you found a failure. You found tomorrow's study target, which is the entire point of the session.",
       },
       {
         type: "heading",
@@ -8672,7 +8672,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The same partner, ideally, week over week. Shared history compounds: they know which directive tripped you last month and can bring it back unannounced, which is spaced retrieval with a human doing the scheduling. And the partnership feeds directly into the scenario work in the Practice Like It's Real cluster. The person quizzing you on Tuesdays is the person playing your patient on Thursdays.",
+        text: "The same partner, ideally, week over week. Shared history compounds. They know which directive tripped you last month and can bring it back unannounced, which is spaced retrieval with a human doing the scheduling. And the partnership feeds directly into the scenario work in the Practice Like It's Real cluster. The person quizzing you on Tuesdays is the person playing your patient on Thursdays.",
       },
       {
         type: "heading",
@@ -8709,11 +8709,11 @@ const sectionSeeds: SectionSeed[] = [
     body: [
       {
         type: "paragraph",
-        text: "Question banks are probably the most-used study resource in paramedic school, and the most commonly wasted. The waste has a signature: click, wrong, shrug, next. Sixty questions in a sitting, a percentage at the end, a vague feeling about whether it was a good day. The score gets all the attention, and the score is the least useful thing the question bank produced.",
+        text: "Question banks are probably the most-used study resource in paramedic school, and the most commonly wasted. The waste usually looks the same. Click, wrong, shrug, next, sixty questions in a sitting, a percentage at the end, a vague feeling about whether it was a good day. The score gets all the attention, and the score is the least useful thing the question bank produced.",
       },
       {
         type: "paragraph",
-        text: "A wrong answer is a small diagnostic gift. It just caught something, and clicking past it throws the catch away. The habit that changes everything is short: before moving on, name what kind of wrong it was.",
+        text: "A wrong answer just caught something, and clicking past it throws the catch away. Before moving on, name what kind of wrong it was.",
       },
       {
         type: "heading",
@@ -8731,7 +8731,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Different wrongs need different fixes, which is the whole argument. A student who misses eight questions and responds with a general vow to study harder is treating five different problems with one medicine. Ten seconds of naming per miss turns the same sixty questions into an actual map of where the trouble lives.",
+        text: "Different wrongs need different fixes. A student who misses eight questions and responds with a general vow to study harder is treating five different problems with one medicine. Ten seconds of naming per miss turns the same sixty questions into an actual map of where the trouble lives.",
       },
       {
         type: "heading",
@@ -8751,7 +8751,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is the moment for a blank page. Put the concept in the middle, and draw what connects to what, from memory, no book. What drives it, what it affects, what compensates when it falls, what you would see in a patient at each stage. Then open the text and compare. The places your drawing is empty or wrong are the study plan, drawn by your own hand, which is why it sticks better than a to-do list someone else wrote. Building the map is the studying. Comparing it is the test.",
+        text: "This is the moment for a blank page. Put the concept in the middle, and draw what connects to what, from memory, no book. What drives it, what it affects, what compensates when it falls, what you would see in a patient at each stage. Then open the text and compare. The places your drawing is empty or wrong are the study plan, drawn by your own hand, which is why it sticks better than a to-do list someone else wrote.",
       },
       {
         type: "heading",
@@ -8767,7 +8767,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Running question banks before the material is understood, which trains you to memorize this bank rather than learn the content, and the real exam is not this bank. Treating the score as a verdict on your future instead of a snapshot of one session. And reading explanations the way people read terms of service: eyes moving, nothing landing. The bank is a diagnostic instrument. Used as a slot machine, it pays out about as reliably as one.",
+        text: "Running question banks before the material is understood, which trains you to memorize this bank rather than learn the content, and the real exam is not this bank. Treating the score as a verdict on your future instead of a snapshot of one session. And reading explanations the way people read terms of service, with eyes moving and nothing landing.",
       },
     ],
     glossaryTerms: [
@@ -8797,7 +8797,7 @@ const sectionSeeds: SectionSeed[] = [
     body: [
       {
         type: "paragraph",
-        text: "Everything else in this cluster assumes something this section has to say out loud: the techniques only run if the week has room for them. Retrieval practice that never gets scheduled is a good intention. A scenario partnership that meets whenever both people happen to be free meets twice a semester. The week is the container, and most students inherit theirs instead of building it.",
+        text: "Everything else in this cluster assumes something this section has to say out loud. The techniques only run if the week has room for them. Retrieval practice that never gets scheduled is a good intention. A scenario partnership that meets whenever both people happen to be free meets twice a semester. The week is the container, and most students inherit theirs instead of building it.",
       },
       {
         type: "heading",
@@ -8809,11 +8809,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Two or three protected blocks of forty-five to ninety minutes beat any number of scattered half-attention hours. Protected means the phone is in another room and the block has one named target before you sit down. Tonight is the flagged confusions from Tuesday's cardiology block is a target. Study cardio is a mood. The block with a name finishes with something done. The mood finishes when you are tired of it.",
+        text: "Two or three protected blocks of forty-five to ninety minutes beat any number of scattered half-attention hours. Protected means the phone is in another room and the block has one named target before you sit down. Planning to clear the flagged confusions from Tuesday's cardiology block is a target. Planning to study cardio is not, and a block without a target usually ends when you get tired rather than when something is done.",
       },
       {
         type: "paragraph",
-        text: "One honest limit: fifteen minutes of planning per week is plenty. The calendar is not the work, and a planning system that keeps needing adjustment has quietly become a way of avoiding the work while feeling responsible about it.",
+        text: "Fifteen minutes of planning per week is plenty. The calendar is not the work, and a planning system that keeps needing adjustment has quietly become a way of avoiding the work while feeling responsible about it.",
       },
       {
         type: "heading",
@@ -8821,7 +8821,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Whether or not an exam allows one, building a one-page sheet is worth the evening it takes, because deciding what earns space on a single page is itself a complete review of the material. The rule that makes it work: build the page closed-book first, from memory, then open the book to check and fill. A sheet copied open-book is a transcription exercise with a nicer layout. A sheet built from recall is a retrieval session that leaves an artifact behind. What you could not produce from memory is highlighted for you automatically, by its absence.",
+        text: "Whether or not an exam allows one, building a one-page sheet is worth the evening it takes, because deciding what earns space on a single page is itself a complete review of the material. Build the page closed-book first, from memory, then open the book to check and fill. A sheet copied open-book is a transcription exercise with a nicer layout. A sheet built from recall is a retrieval session that leaves an artifact behind. What you could not produce from memory is highlighted for you automatically, by its absence.",
       },
       {
         type: "heading",
@@ -8837,7 +8837,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Protected focus has a cost, and the currency is real downtime. The failure mode is not laziness. It is the half-and-half week: guilt-studying in front of a show, resting with the textbook open nearby, six days of being simultaneously at work and off duty. That week produces neither the studying nor the recovery. Work the named block fully, then stop fully. An evening that is actually off does more for tomorrow's block than an evening of diluted both.",
+        text: "Protected focus has a cost, and the currency is real downtime. The usual failure is the half-and-half week. Guilt-studying in front of a show, resting with the textbook open nearby, six days of being simultaneously at work and off duty. That week produces neither the studying nor the recovery. Work the named block fully, then stop fully. An evening that is actually off does more for tomorrow's block than an evening of diluted both.",
       },
       {
         type: "heading",
@@ -8877,7 +8877,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "First, what this is not. It is not positive thinking, and it is not imagining yourself succeeding in a warm glow of confidence. Rehearsing the outcome is worthless. What works is rehearsing the process: the specific call, in first person, in real time, with the decisions included.",
+        text: "This is not positive thinking, and it is not imagining yourself succeeding in a warm glow of confidence. Rehearsing an outcome does nothing. What works is rehearsing the process, meaning the specific call, in first person, in real time, with the decisions included.",
       },
       {
         type: "heading",
@@ -8917,7 +8917,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The full-contact version needs an empty room, a timer, and a tolerance for feeling ridiculous that lasts about two minutes. Stand up. Run the station out loud, to an invisible patient and an invisible evaluator, with your hands doing the real motions. Speaking the questions matters: the difference between thinking an assessment and saying one is exactly the difference that shows up under evaluation. Set the timer to station length so the time pressure is part of the practice. Every few weeks, record one on your phone and watch it back, the same calibration habit the scenario section describes, and the gap between the run you remember and the run on video will tell you what to rehearse next.",
+        text: "The full-contact version needs an empty room, a timer, and a tolerance for feeling ridiculous that lasts about two minutes. Stand up. Run the station out loud, to an invisible patient and an invisible evaluator, with your hands doing the real motions. Speaking the questions matters, because the difference between thinking an assessment and saying one is exactly the difference that shows up under evaluation. Set the timer to station length so the time pressure is part of the practice. Every few weeks, record one on your phone and watch it back, the same calibration habit the scenario section describes, and the gap between the run you remember and the run on video will tell you what to rehearse next.",
       },
       {
         type: "heading",
@@ -8925,7 +8925,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Rehearsing outcomes instead of process, the pass, the compliment from the evaluator, the feeling of relief, none of which contains a single practicable step. Rehearsing only the clean version, so the first complication lands on an unrehearsed mind. And letting it replace physical practice, which it cannot. It is a multiplier on real practice, not a substitute for it. The students who get the most from it treat it like brushing teeth: short, daily, unremarkable, and non-negotiable.",
+        text: "Rehearsing outcomes instead of process, the pass, the compliment from the evaluator, the feeling of relief, none of which contains a single practicable step. Rehearsing only the clean version, so the first complication lands on an unrehearsed mind. And letting it replace physical practice, which it cannot. It is a multiplier on real practice, not a substitute for it. The students who get the most from it treat it like brushing teeth, short and daily and unremarkable.",
       },
     ],
     glossaryTerms: [
@@ -8965,15 +8965,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Write behaviours and moments, as close to verbatim as you can get, and never judgments. Transport decision came at nine minutes, instructor says the risk was nameable at four. That is a line worth having. Too slow is not, because in three weeks too slow will have no moment attached and nothing to practice against. The discipline is the same as the lecture-capture method: you are flagging, not transcribing, because you also need to be present for the conversation. Three lines is the ceiling. If the debrief produced ten important things, the three you capture are the three you will actually work on, and that trade is fine.",
+        text: "Write behaviours and moments, as close to verbatim as you can get, and never judgments. Transport decision came at nine minutes, instructor says the risk was nameable at four. That is a line worth having. Too slow is not, because in three weeks too slow will have no moment attached and nothing to practice against. The discipline is the same as the lecture-capture method. You are flagging rather than transcribing, because you also need to be present for the conversation. Three lines is the ceiling. If the debrief produced ten important things, the three you capture are the three you will actually work on, and that trade is fine.",
       },
       {
         type: "paragraph",
-        text: "One distinction does most of the work here: feelings are labels, not data. I panicked is a label. My hands stopped while I tried to remember the sequence, and the instructor had to prompt the next step is data. Write the second kind. The first kind you will remember anyway, whether you want to or not.",
+        text: "One distinction does most of the work here. Feelings are labels, not data. I panicked is a label. My hands stopped while I tried to remember the sequence, and the instructor had to prompt the next step is data. Write the second kind. The first kind you will remember anyway, whether you want to or not.",
       },
       {
         type: "paragraph",
-        text: "A worked example. After a call with a wet, hypothermic patient pulled from a November lake scenario, the instructor says the packaging and handling were genuinely good, but points out that your reassessments never included a temperature trend, so the patient's continued cooling was invisible to you. The line to write is: reassessed vitals twice, never rechecked temp, cooling trend invisible. The line not to write is: reassess better. One of those is a practice target waiting to happen. The other is a mood.",
+        text: "A worked example. After a call with a wet, hypothermic patient pulled from a November lake scenario, the instructor says the packaging and handling were genuinely good, but points out that your reassessments never included a temperature trend, so the patient's continued cooling was invisible to you. The line to write is: reassessed vitals twice, never rechecked temp, cooling trend invisible. The line not to write is: reassess better. One of those can become a practice target. The other cannot become anything.",
       },
       {
         type: "heading",
@@ -8989,11 +8989,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "One page, kept all semester, dated. Each entry is a practice target in one line. The rule that makes the page work: a target gets checked off when it has held for two consecutive scenario days, and checked-off targets get crossed out, never deleted. The crossed-out lines are the point. A student four weeks out from an OSCE, staring at the ceiling and certain they are not improving, can look at a page where named reassessment after intervention has a line through it and dated proof underneath. The earlier section on not being able to tell whether you are improving argued that trajectory beats single performances. This page is what makes the trajectory visible instead of a feeling you have to talk yourself into.",
+        text: "One page, kept all semester, dated. Each entry is a practice target in one line. A target gets checked off when it has held for two consecutive scenario days, and checked-off targets get crossed out, never deleted. The crossed-out lines are the point. A student four weeks out from an OSCE, staring at the ceiling and certain they are not improving, can look at a page where named reassessment after intervention has a line through it and dated proof underneath. The earlier section on not being able to tell whether you are improving argued that trajectory beats single performances. This page is what makes the trajectory visible instead of a feeling you have to talk yourself into.",
       },
       {
         type: "paragraph",
-        text: "Before each scenario day, read the list for three minutes and pick one live target to carry in. One. The whole apparatus of this guide keeps arriving at that same number for the same reason: one adjustment gets tested, three get gestured at.",
+        text: "Before each scenario day, read the list for three minutes and pick one live target to carry in. One. The whole apparatus of this guide keeps arriving at that same number, because one adjustment carried deliberately does more than three carried loosely.",
       },
       {
         type: "heading",
@@ -9001,7 +9001,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Writing feelings as data, and ending up with a page of self-assessment instead of a page of behaviours. A list that only grows, because nothing ever gets formally retired, until it stops being a practice tool and becomes a guilt document that gets avoided. And capturing everything, ten lines a debrief, which produces an archive instead of a working list. Three lines, one target, crossed out when it holds. The page should be boring. Boring is what improvement looks like when it is actually written down.",
+        text: "Writing feelings as data, and ending up with a page of self-assessment instead of a page of behaviours. A list that only grows, because nothing ever gets formally retired, until it stops being a practice tool and becomes a guilt document that gets avoided. And capturing everything, ten lines a debrief, which produces an archive instead of a working list. Three lines, one target, crossed out when it holds. The page will look unremarkable, and that is what steady improvement usually looks like on paper.",
       },
     ],
     glossaryTerms: [

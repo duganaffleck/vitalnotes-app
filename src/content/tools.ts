@@ -1074,7 +1074,7 @@ export const tools: Tool[] = [
       "Choosing the target after the case is written, which produces a scenario about a condition instead of a behaviour.",
       "Building a gotcha, where the case is designed to trick and the debrief becomes a reveal.",
       "Vitals that ignore what the candidate does. A patient who responds to care is what makes it a scenario instead of a quiz.",
-      "Adding a second complication because the first one felt too simple. Simple runs clean. Clean debriefs teach."
+      "Adding a second complication because the first one felt too simple. Simple cases run clean and debrief clean."
     ],
     "toolPointers": [
       "Between runs, use the Scenario Day Reset to carry one adjustment into the next attempt.",
