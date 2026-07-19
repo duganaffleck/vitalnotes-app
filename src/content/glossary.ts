@@ -544,6 +544,33 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Working notes give students space to wrestle with new ideas before committing them to a form they will actually reuse.',
     relatedSections: ['smart-notes-for-paramedic-students', 'types-of-notes-and-idea-maturation'],
   },
+  {
+    id: 'mental-rehearsal',
+    term: 'Mental rehearsal',
+    shortDefinition:
+      'Running a call or station in your head, in first person and real time, with the decisions included.',
+    paramedicRelevance:
+      'Adds practice volume without a lab or partner. The steps you cannot picture concretely are the ones most likely to wobble under evaluation.',
+    relatedSections: ['mental-rehearsal-and-visualization', 'osce-preparation'],
+  },
+  {
+    id: 'learning-target',
+    term: 'Learning target',
+    shortDefinition:
+      'The one specific behaviour a practice scenario is built to pull out and test.',
+    paramedicRelevance:
+      'A diagnosis is not a target. Reassessing after an intervention, or naming a transport decision before feeling certain, is.',
+    relatedSections: ['design-and-run-your-own-scenarios', 'scenario-days-as-learning-tools'],
+  },
+  {
+    id: 'consolidation',
+    term: 'Consolidation',
+    shortDefinition:
+      'The process where new learning becomes stable memory, much of which happens during sleep.',
+    paramedicRelevance:
+      'Trading sleep for one more hour of studying spends the process that was going to lock in the previous six. Skills consolidate overnight too.',
+    relatedSections: ['the-week-around-the-work', 'retrieval-and-spaced-learning'],
+  },
 ]
 
 export const orderedGlossaryTerms = [...glossaryTerms].sort((a, b) =>

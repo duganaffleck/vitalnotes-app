@@ -1,4 +1,5 @@
 import type { Tool, ToolExample } from '../content/types'
+import { FieldCard, exportTool } from './ToolFields'
 
 type ToolDrawerProps = {
   tool: Tool | null
@@ -16,14 +17,21 @@ function renderToolList(title: string, items: string[]) {
   }
 
   return (
-    <div className="tool-drawer-section">
-      <h3>{title}</h3>
-      <ul>
-        {items.map((item, index) => (
-          <li key={`${title}-${index}`}>{item}</li>
-        ))}
-      </ul>
-    </div>
+    <details className="tool-drawer-section tool-example">
+      <summary
+        className="card-action-button tool-example-button"
+        aria-label={`View ${title.toLowerCase()}`}
+      >
+        {title}
+      </summary>
+      <div className="tool-example-content">
+        <ul>
+          {items.map((item, index) => (
+            <li key={`${title}-${index}`}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </details>
   )
 }
 
@@ -96,11 +104,22 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
             <p>{tool.fieldIntro ?? 'Use these fields as your working version.'}</p>
             <div className="drawer-field-list">
               {tool.fields.map((field) => (
-                <div className="drawer-field-card" key={field.id}>
-                  <strong>{field.label}</strong>
-                  <p>{field.helperText}</p>
-                </div>
+                <FieldCard
+                  key={field.id}
+                  toolId={tool.id}
+                  field={field}
+                  className="drawer-field-card"
+                />
               ))}
+            </div>
+            <div style={{ marginTop: '12px' }}>
+              <button
+                type="button"
+                className="card-action-button"
+                onClick={() => exportTool(tool)}
+              >
+                Export as PDF
+              </button>
             </div>
           </div>
         )}

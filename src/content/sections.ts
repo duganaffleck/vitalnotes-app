@@ -8554,6 +8554,7 @@ const sectionSeeds: SectionSeed[] = [
       },
     ],
     glossaryTerms: [
+      "learning-target",
       "deliberate-practice",
       "feedback",
       "practice-target",
@@ -8890,6 +8891,7 @@ const sectionSeeds: SectionSeed[] = [
       },
     ],
     glossaryTerms: [
+      "consolidation",
       "spacing",
       "retrieval-practice",
       "cognitive-load",
@@ -8970,6 +8972,7 @@ const sectionSeeds: SectionSeed[] = [
       },
     ],
     glossaryTerms: [
+      "mental-rehearsal",
       "deliberate-practice",
       "performance-under-pressure",
       "retrieval-practice",
