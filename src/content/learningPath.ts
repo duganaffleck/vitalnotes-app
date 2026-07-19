@@ -31,8 +31,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'build-understanding',
-    title: '02 Build Understanding',
-    order: 2,
+    title: '03 Build Understanding',
+    order: 3,
     purpose:
       'Work on connecting facts, physiology, and directives so they make more sense during patient assessment.',
     sections: [
@@ -45,8 +45,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'build-usable-notes',
-    title: '03 Build Usable Notes',
-    order: 3,
+    title: '04 Build Usable Notes',
+    order: 4,
     purpose:
       'Build notes that explain what matters and give you something useful to return to after class or lab.',
     sections: [
@@ -58,8 +58,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'build-recall',
-    title: '04 Build Recall',
-    order: 4,
+    title: '05 Build Recall',
+    order: 5,
     purpose:
       'Practise recall in a way that connects to calls, not just definitions or isolated facts.',
     sections: [
@@ -71,8 +71,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'think-clinically',
-    title: '05 Think Clinically',
-    order: 5,
+    title: '06 Think Clinically',
+    order: 6,
     purpose:
       'Use incomplete information more carefully, especially when an early impression feels convincing.',
     sections: [
@@ -85,8 +85,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'practice-better',
-    title: '06 Practice Better',
-    order: 6,
+    title: '07 Practice Better',
+    order: 7,
     purpose:
       'Use scenarios, common errors, and feedback to choose a smaller and clearer adjustment for next time.',
     sections: [
@@ -99,8 +99,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'perform-under-pressure',
-    title: '07 Perform Under Pressure',
-    order: 7,
+    title: '08 Perform Under Pressure',
+    order: 8,
     purpose:
       'Prepare for the moments when being watched, timed, or evaluated makes familiar skills harder to access.',
     sections: [
@@ -113,8 +113,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'reflect-and-improve',
-    title: '08 Reflect and Improve',
-    order: 8,
+    title: '09 Reflect and Improve',
+    order: 9,
     purpose:
       'Use feedback and difficult performances without turning every mistake into a long personal debrief.',
     sections: [
@@ -131,8 +131,8 @@ export const learningPath: LearningPathCluster[] = [
   },
   {
     id: 'do-the-work',
-    title: '09 Do the Work',
-    order: 9,
+    title: '02 Do the Work',
+    order: 2,
     purpose:
       'Run the actual week of learning: notes captured live, partners used properly, practice questions that teach, and a schedule with room for all of it.',
     sections: [

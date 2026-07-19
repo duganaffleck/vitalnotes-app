@@ -41,14 +41,14 @@ Current completed learning path clusters:
 
 - 00 Start Here
 - 01 Why Learning Feels Hard
-- 02 Build Understanding
-- 03 Build Usable Notes
-- 04 Build Recall
-- 05 Think Clinically
-- 06 Practice Better
-- 07 Perform Under Pressure
-- 08 Reflect and Improve
-- 09 Do the Work
+- 02 Do the Work
+- 03 Build Understanding
+- 04 Build Usable Notes
+- 05 Build Recall
+- 06 Think Clinically
+- 07 Practice Better
+- 08 Perform Under Pressure
+- 09 Reflect and Improve
 - 10 Practice Like It's Real
 
 Current active tools:
@@ -154,3 +154,7 @@ Preserve the approved learning path.
 Do not rename approved sections, clusters, tools, or glossary terms without explicit approval.
 
 Keep related links useful and restrained on the site. Deeper linking belongs in Obsidian.
+
+## Rendering notes
+
+The Tools page groups tools through a hardcoded toolGroups list in src/pages/Tools.tsx. Any new tool must be added to a group there or it will not render on the Tools page, even if it exists in tools.ts with drafted status.

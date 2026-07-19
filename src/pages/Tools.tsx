@@ -1,5 +1,51 @@
+import { useState } from 'react'
 import { activeTools } from '../content/tools'
 import type { Tool, ToolExample } from '../content/types'
+
+function FieldCard({ toolId, field }: { toolId: string; field: Tool['fields'][number] }) {
+  const storageKey = `vitalnotes-tool-${toolId}-${field.id}`
+  const [value, setValue] = useState<string>(() => {
+    try {
+      return window.localStorage.getItem(storageKey) ?? ''
+    } catch {
+      return ''
+    }
+  })
+
+  const update = (next: string) => {
+    setValue(next)
+    try {
+      window.localStorage.setItem(storageKey, next)
+    } catch {
+      // storage unavailable; keep in-memory only
+    }
+  }
+
+  return (
+    <div className="field-card">
+      <strong>{field.label}</strong>
+      <p>{field.helperText}</p>
+      <textarea
+        rows={3}
+        value={value}
+        placeholder="Write here. Saved on this device."
+        onChange={(event) => update(event.target.value)}
+        style={{
+          width: '100%',
+          marginTop: '8px',
+          padding: '10px',
+          fontFamily: 'inherit',
+          fontSize: '0.95rem',
+          lineHeight: 1.5,
+          border: '1px solid rgba(0, 0, 0, 0.15)',
+          borderRadius: '10px',
+          resize: 'vertical',
+          background: 'rgba(255, 255, 255, 0.6)',
+        }}
+      />
+    </div>
+  )
+}
 
 type ToolGroup = {
   title: string
@@ -159,10 +205,7 @@ function renderTool(tool: Tool) {
           <p>{tool.fieldIntro ?? 'Use these fields as your working version.'}</p>
           <div className="field-list">
             {tool.fields.map((field) => (
-              <div className="field-card" key={field.id}>
-                <strong>{field.label}</strong>
-                <p>{field.helperText}</p>
-              </div>
+              <FieldCard key={field.id} toolId={tool.id} field={field} />
             ))}
           </div>
         </div>

@@ -452,7 +452,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Start with Scenario Days as Learning Tools.",
+        text: "Start with Learning Strain Is Not Always a Personal Problem.",
       },
       {
         type: "paragraph",
@@ -460,7 +460,31 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A more useful question than \"how did that feel\" is whether your recovery is getting faster. Are you noticing problems sooner in the call rather than only in debrief? When a mistake repeats, is it exactly the same, or has it shifted after feedback? Are you starting to name risk earlier, even when the overall call still feels awkward? Those are better signals than how smooth any single scenario felt.",
+        text: "A more useful question than \"how did that feel\" is whether your recovery is getting faster. Are you noticing problems sooner in the call rather than only in debrief? When a mistake repeats, is it exactly the same, or has it shifted after feedback? Are you starting to name risk earlier, even when the overall call still feels awkward? Those are better signals than how smooth any single scenario felt. From there, move to Scenario Days as Learning Tools to read progress across repeated attempts rather than one run at a time.",
+      },
+      {
+        type: "heading",
+        text: "If lectures move faster than your notes",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Taking Notes in a Moving Lecture.",
+      },
+      {
+        type: "paragraph",
+        text: "Trying to write everything down while also listening is a losing trade, and giving up on notes entirely is the same trade in the other direction. That section shows you a capture method built for lectures that will not slow down for you, and how the ten-minute same-day pass turns rough flags into something your note system can actually use.",
+      },
+      {
+        type: "heading",
+        text: "If you want more practice than lab days give you",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Design and Run Your Own Scenarios.",
+      },
+      {
+        type: "paragraph",
+        text: "Two runs a week on lab days is not much exposure for the skill that decides your evaluations. That section shows you how to build and run practice scenarios with one classmate, and Mental Rehearsal and Visualization adds practice volume that needs no partner, equipment, or booking at all.",
       },
       {
         type: "heading",
@@ -502,7 +526,9 @@ const sectionSeeds: SectionSeed[] = [
         "performance-under-pressure",
         "reflection-without-journaling",
         "the-five-whys",
-        "turning-feedback-into-action"
+        "turning-feedback-into-action",
+        "taking-notes-in-a-moving-lecture",
+        "design-and-run-your-own-scenarios"
     ],
   },
   {
@@ -598,7 +624,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "A respiratory scenario, overloaded",
       },
       {
         type: "paragraph",
@@ -1166,8 +1192,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "meaning-before-memorization",
     title: "Meaning Before Memorization",
     subtitle: "Facts matter more when they connect to the patient.",
-    cluster: "02 Build Understanding",
-    clusterOrder: 2,
+    cluster: "03 Build Understanding",
+    clusterOrder: 3,
     sectionOrder: 0,
     studentProblem: "I know a lot of facts, signs, symptoms, and lists, but I still struggle to understand what they mean together during scenarios, labs, or OSCEs.",
     sectionPurpose: "Show how paramedic knowledge becomes more usable when facts are connected through meaning, mechanism, consequence, and patient care.",
@@ -1243,7 +1269,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "A weak patient who does not fit the flashcards",
       },
       {
         type: "paragraph",
@@ -1466,8 +1492,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "pathophysiology-through-patterns",
     title: "Pathophysiology Through Patterns",
     subtitle: "Use mechanisms to stay oriented when presentations are unclear.",
-    cluster: "02 Build Understanding",
-    clusterOrder: 2,
+    cluster: "03 Build Understanding",
+    clusterOrder: 3,
     sectionOrder: 1,
     studentProblem: "Pathophysiology feels separate from patient care, and I struggle to use it during scenarios, labs, or OSCEs.",
     sectionPurpose: "Connect pathophysiology to patient presentation so mechanisms can guide assessment, anticipation, and reassessment.",
@@ -1483,7 +1509,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That gap is real, and it is not a failure of studying. It is what happens when knowledge is built in one context and used in another. The fix is not reviewing pathophysiology harder. It is learning to use it differently: as a way to stay oriented during a call rather than as a set of facts to retrieve after the label has arrived.",
+        text: "That gap is real, and it does not mean the studying failed. Knowledge built in one context often struggles when it has to perform in another. The fix is not reviewing pathophysiology harder. It is learning to use it differently: as a way to stay oriented during a call rather than as a set of facts to retrieve after the label has arrived.",
       },
       {
         type: "heading",
@@ -1568,7 +1594,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "Watching mechanism thinking work",
       },
       {
         type: "paragraph",
@@ -1616,7 +1642,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A clinical pattern is not a snapshot. It is a trajectory. It includes what is changing, what is not changing, what improves after treatment, what worsens despite it, and what does not fit the initial impression. A patient can look stable and still be deteriorating. A patient can look alarming and still be compensating effectively. The difference is in the direction of travel, not the single point in time.",
+        text: "A clinical pattern is a trajectory rather than a snapshot. It includes what is changing, what is not changing, what improves after treatment, what worsens despite it, and what does not fit the initial impression. A patient can look stable and still be deteriorating. A patient can look alarming and still be compensating effectively. The difference is in the direction of travel, not the single point in time.",
       },
       {
         type: "paragraph",
@@ -1740,7 +1766,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The reason inferior STEMI changes the nitroglycerin decision becomes clearer once you understand right ventricular involvement and preload dependence. It is not an exception to memorize. It is a consequence of the same physiology the directive is built around.",
+        text: "The reason inferior STEMI changes the nitroglycerin decision becomes clearer once you understand right ventricular involvement and preload dependence. Treat it less as an exception to memorize and more as a consequence of the same physiology the directive is built around.",
       },
       {
         type: "paragraph",
@@ -1792,8 +1818,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "directives-through-purpose",
     title: "Directives Through Purpose",
     subtitle: "Protocols are easier to apply when you understand what they protect.",
-    cluster: "02 Build Understanding",
-    clusterOrder: 2,
+    cluster: "03 Build Understanding",
+    clusterOrder: 3,
     sectionOrder: 2,
     studentProblem: "Directives feel heavy, fragile, or intimidating, and I struggle to apply them confidently when patients do not fit the clean version I studied.",
     sectionPurpose: "Frame directives as risk-managed clinical decisions built around purpose, physiology, boundaries, and reassessment.",
@@ -2048,8 +2074,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "smart-notes-for-paramedic-students",
     title: "Smart Notes for Paramedic Students",
     subtitle: "Notes should help you explain, connect, and return to important ideas.",
-    cluster: "03 Build Usable Notes",
-    clusterOrder: 3,
+    cluster: "04 Build Usable Notes",
+    clusterOrder: 4,
     sectionOrder: 0,
     studentProblem: "My notes are organized, detailed, or complete, but they do not help me think clearly during scenarios, labs, or OSCEs.",
     sectionPurpose: "Use Smart Notes to turn scattered learning into explanations and connections students can return to during study, lab, and scenario preparation.",
@@ -2081,7 +2107,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A Smart Note is not defined by software. It is not defined by Obsidian, folders, backlinks, or tags. You can write one in an app, a notebook, or a plain text file.",
+        text: "A Smart Note is not defined by software, and it does not need Obsidian, folders, backlinks, or tags. You can write one in an app, a notebook, or a plain text file.",
       },
       {
         type: "paragraph",
@@ -2158,7 +2184,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "A note built for the moment it is needed",
       },
       {
         type: "paragraph",
@@ -2360,7 +2386,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That review is not memorization. It is reactivation. You are warming up a schema, a connected structure your brain can retrieve as a unit rather than rebuild from pieces under pressure. That is why this kind of preparation reduces blanking: the structure is already available, so attention during the scenario can go toward the patient rather than toward reconstructing the explanation from scratch.",
+        text: "That review works by reactivation rather than memorization. You are warming up a schema, a connected structure your brain can retrieve as a unit rather than rebuild from pieces under pressure. That is why this kind of preparation reduces blanking: the structure is already available, so attention during the scenario can go toward the patient rather than toward reconstructing the explanation from scratch.",
       },
       {
         type: "paragraph",
@@ -2394,7 +2420,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The output does not need to be large. A few useful notes each week will matter more than a large system that cannot survive a busy semester. The goal is not to build a second version of school. The goal is to keep the pieces of understanding that are worth returning to.",
+        text: "The output does not need to be large. A few useful notes each week will matter more than a large system that cannot survive a busy semester. You are not building a second version of school, just keeping the pieces of understanding worth returning to.",
       },
       {
         type: "heading",
@@ -2436,8 +2462,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "types-of-notes-and-idea-maturation",
     title: "Types of Notes and Idea Maturation",
     subtitle: "Understanding changes, and your notes need room to change with it.",
-    cluster: "03 Build Usable Notes",
-    clusterOrder: 3,
+    cluster: "04 Build Usable Notes",
+    clusterOrder: 4,
     sectionOrder: 1,
     studentProblem: "I do not know what kind of notes I should be writing, and I feel pressure to make every note complete, polished, or permanent right away.",
     sectionPurpose: "Show how notes can serve different jobs at different stages, from rough capture to more stable explanations that can be revised and reused.",
@@ -2724,7 +2750,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "One rough note growing up",
       },
       {
         type: "paragraph",
@@ -2965,8 +2991,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "obsidian-for-learning-paramedicine",
     title: "Obsidian for Learning Paramedicine",
     subtitle: "A simple workspace for connecting ideas without turning notes into a project.",
-    cluster: "03 Build Usable Notes",
-    clusterOrder: 3,
+    cluster: "04 Build Usable Notes",
+    clusterOrder: 4,
     sectionOrder: 2,
     studentProblem: "I want a place to keep and connect my learning, but note apps, folders, plugins, and organization systems quickly become overwhelming.",
     sectionPurpose: "Keep Obsidian simple: a place to keep, connect, and return to important ideas without making the app itself the project.",
@@ -3676,8 +3702,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "retrieval-and-spaced-learning",
     title: "Retrieval and Spaced Learning",
     subtitle: "Remembering improves when access is practiced over time.",
-    cluster: "04 Build Recall",
-    clusterOrder: 4,
+    cluster: "05 Build Recall",
+    clusterOrder: 5,
     sectionOrder: 0,
     studentProblem: "I study and recognize the material when I see it, but I struggle to bring it back during scenarios, labs, or OSCEs.",
     sectionPurpose: "Explain why recognizing material is not enough, and how spaced retrieval helps knowledge become easier to reach when training pressure rises.",
@@ -3765,7 +3791,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "Studying for a trauma day, two ways",
       },
       {
         type: "paragraph",
@@ -3924,8 +3950,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "clinical-recall-without-trivia",
     title: "Clinical Recall Without Trivia",
     subtitle: "Recall should help you notice, decide, reassess, and explain.",
-    cluster: "04 Build Recall",
-    clusterOrder: 4,
+    cluster: "05 Build Recall",
+    clusterOrder: 5,
     sectionOrder: 1,
     studentProblem: "I can remember isolated facts, but I do not always know how to use them during assessment, decisions, or scenarios.",
     sectionPurpose: "Keep recall practice tied to assessment, decisions, reassessment, explanation, and patient care.",
@@ -4308,8 +4334,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "anki-for-paramedic-learning",
     title: "Anki for Paramedic Learning",
     subtitle: "Use Anki to support recall, not to replace reasoning.",
-    cluster: "04 Build Recall",
-    clusterOrder: 4,
+    cluster: "05 Build Recall",
+    clusterOrder: 5,
     sectionOrder: 2,
     studentProblem: "I want to use flashcards to remember paramedic content, but I do not want to waste time memorizing isolated facts that do not help me in scenarios or patient care.",
     sectionPurpose: "Use Anki as a small retrieval and spacing tool while keeping clinical reasoning, assessment, directive use, and reassessment central.",
@@ -5010,8 +5036,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "clinical-reasoning",
     title: "Clinical Reasoning",
     subtitle: "Reasoning is a working explanation under uncertainty.",
-    cluster: "05 Think Clinically",
-    clusterOrder: 5,
+    cluster: "06 Think Clinically",
+    clusterOrder: 6,
     sectionOrder: 0,
     studentProblem: "I am told to think clinically, but I am not always sure what that means while a call is still unfolding.",
     sectionPurpose: "Describe clinical reasoning as the work of staying oriented, managing risk, and adjusting decisions while information is still incomplete.",
@@ -5317,8 +5343,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "pattern-recognition",
     title: "Pattern Recognition",
     subtitle: "Fast recognition is useful when it stays accountable.",
-    cluster: "05 Think Clinically",
-    clusterOrder: 5,
+    cluster: "06 Think Clinically",
+    clusterOrder: 6,
     sectionOrder: 1,
     studentProblem: "I either trust my first impression too quickly, or I distrust it because it feels too much like guessing.",
     sectionPurpose: "Describe early recognition as a useful starting point that still needs to be checked against the patient.",
@@ -5646,8 +5672,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "avoiding-premature-closure",
     title: "Avoiding Premature Closure",
     subtitle: "Keep early explanations flexible enough to be corrected.",
-    cluster: "05 Think Clinically",
-    clusterOrder: 5,
+    cluster: "06 Think Clinically",
+    clusterOrder: 6,
     sectionOrder: 2,
     studentProblem: "I sometimes form a reasonable early impression, then start filtering the rest of the call through it without realizing.",
     sectionPurpose: "Describe premature closure as an understandable reasoning trap and show how to keep an early explanation open to correction.",
@@ -5679,7 +5705,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is not a character flaw. It is how attention behaves when it is already carrying a lot. Assessment, communication, directive knowledge, equipment, partner coordination, and the patient's changing condition are all competing for the same limited space. When that space fills, the brain reaches for efficiency, and efficiency looks like staying with the explanation you already have.",
+        text: "That is not a character flaw, just how attention behaves when it is already carrying a lot. Assessment, communication, directive knowledge, equipment, partner coordination, and the patient's changing condition are all competing for the same limited space. When that space fills, the brain reaches for efficiency, and efficiency looks like staying with the explanation you already have.",
       },
       {
         type: "paragraph",
@@ -5687,7 +5713,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "The care home call that is not acting right",
       },
       {
         type: "paragraph",
@@ -5747,7 +5773,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Understanding this helps because it points toward the countermeasure. The goal is not to distrust every early impression. The goal is to keep the impression provisional long enough for the full picture to develop. That requires actively looking for what does not fit, rather than waiting for it to become undeniable.",
+        text: "Understanding this helps because it points toward the countermeasure. Early impressions are fine to have. The skill is holding them provisionally long enough for the full picture to develop. That requires actively looking for what does not fit, rather than waiting for it to become undeniable.",
       },
       {
         type: "heading",
@@ -5851,8 +5877,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "scenario-days-as-learning-tools",
     title: "Scenario Days as Learning Tools",
     subtitle: "What scenario days are actually showing you",
-    cluster: "06 Practice Better",
-    clusterOrder: 6,
+    cluster: "07 Practice Better",
+    clusterOrder: 7,
     sectionOrder: 0,
     studentProblem: "I sometimes treat scenario days as proof that I am ready or not ready, instead of using them to notice what changes under pressure.",
     sectionPurpose: "Treat scenario days as practice days that reveal patterns in recall, reasoning, communication, reassessment, and decision-making.",
@@ -5944,7 +5970,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "Three calls, one pattern",
       },
       {
         type: "paragraph",
@@ -6045,8 +6071,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "common-errors-and-what-they-reveal",
     title: "Common Errors and What They Reveal",
     subtitle: "How repeated mistakes point to what needs practice.",
-    cluster: "06 Practice Better",
-    clusterOrder: 6,
+    cluster: "07 Practice Better",
+    clusterOrder: 7,
     sectionOrder: 1,
     studentProblem: "I sometimes treat repeated mistakes as proof that I am not capable, instead of asking what part of the call needs more practice.",
     sectionPurpose: "Distinguish occasional mistakes from repeated patterns so feedback can become one specific practice target.",
@@ -6134,7 +6160,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "An abdominal pain call that drifts",
       },
       {
         type: "paragraph",
@@ -6296,7 +6322,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The point of this list is not to memorize more mistakes. It is to recognize the shape of a problem when it appears.",
+        text: "The list exists so the shape of a problem is recognizable when it appears, not as more material to memorize.",
       },
       {
         type: "heading",
@@ -6478,8 +6504,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "focused-practice-after-feedback",
     title: "Focused Practice After Feedback",
     subtitle: "Turning feedback into one adjustment you can test",
-    cluster: "06 Practice Better",
-    clusterOrder: 6,
+    cluster: "07 Practice Better",
+    clusterOrder: 7,
     sectionOrder: 2,
     studentProblem: "I receive feedback, but I often leave with too many corrections and no clear next action.",
     sectionPurpose: "Turn feedback into one focused practice target that can be tested in the next scenario, lab, or study session.",
@@ -6589,7 +6615,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "After the agitated patient call",
       },
       {
         type: "paragraph",
@@ -6862,8 +6888,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "osce-preparation",
     title: "OSCE Preparation",
     subtitle: "Prepare for evaluation pressure without abandoning patient care.",
-    cluster: "07 Perform Under Pressure",
-    clusterOrder: 7,
+    cluster: "08 Perform Under Pressure",
+    clusterOrder: 8,
     sectionOrder: 0,
     studentProblem: "OSCEs make me rush, freeze, over-explain, or lose structure even when I know the material.",
     sectionPurpose: "Prepare for OSCEs by rehearsing decision anchors, brief explanations, reassessment habits, and reset points instead of trying to predict every station.",
@@ -7075,8 +7101,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "performance-under-pressure",
     title: "Performance Under Pressure",
     subtitle: "Pressure changes what is easy to reach.",
-    cluster: "07 Perform Under Pressure",
-    clusterOrder: 7,
+    cluster: "08 Perform Under Pressure",
+    clusterOrder: 8,
     sectionOrder: 1,
     studentProblem: "I can think clearly in practice, but pressure changes what I notice, remember, and do during OSCEs or difficult scenarios.",
     sectionPurpose: "Explain how pressure affects access, attention, pattern recognition, and recovery, and why stable structure matters more than trying to feel calm.",
@@ -7281,8 +7307,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "resetting-when-thinking-narrows",
     title: "Resetting When Thinking Narrows",
     subtitle: "Get back to the patient when your thinking narrows.",
-    cluster: "07 Perform Under Pressure",
-    clusterOrder: 7,
+    cluster: "08 Perform Under Pressure",
+    clusterOrder: 8,
     sectionOrder: 2,
     studentProblem: "I can tell after a scenario or OSCE that my thinking narrowed, but I do not know how to recover while the call is still happening.",
     sectionPurpose: "Offer a small reset that returns attention to primary risk, assessment structure, and the next patient-facing action when pressure causes rushing, freezing, fixation, or over-talking.",
@@ -7346,7 +7372,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "A dialysis patient and a narrowing mind",
       },
       {
         type: "paragraph",
@@ -7506,8 +7532,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "reflection-without-journaling",
     title: "Reflection Without Journaling",
     subtitle: "Learn from experience without turning every scenario into another assignment.",
-    cluster: "08 Reflect and Improve",
-    clusterOrder: 8,
+    cluster: "09 Reflect and Improve",
+    clusterOrder: 9,
     sectionOrder: 0,
     studentProblem: "I am told to reflect after scenarios and OSCEs, but reflection often becomes vague, heavy, or turns into replaying the whole call.",
     sectionPurpose: "Use brief reflection to identify one meaningful moment, understand what shaped it, and carry one adjustment into the next attempt.",
@@ -7571,7 +7597,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "The fall call that follows you home",
       },
       {
         type: "paragraph",
@@ -7813,8 +7839,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "the-five-whys",
     title: "The Five Whys",
     subtitle: "Trace a repeated mistake back to something you can actually change.",
-    cluster: "08 Reflect and Improve",
-    clusterOrder: 8,
+    cluster: "09 Reflect and Improve",
+    clusterOrder: 9,
     sectionOrder: 1,
     studentProblem: "I received feedback or made a mistake, but I do not know what the real issue was. I keep fixing the surface behaviour instead of the pattern underneath.",
     sectionPurpose: "Use the Five Whys to trace a meaningful mistake back to something actionable in learning, reasoning, preparation, or call structure.",
@@ -7891,7 +7917,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "The long-lie call, traced backward",
       },
       {
         type: "paragraph",
@@ -8172,8 +8198,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "turning-feedback-into-action",
     title: "Turning Feedback Into Action",
     subtitle: "Carry one adjustment into the next attempt.",
-    cluster: "08 Reflect and Improve",
-    clusterOrder: 8,
+    cluster: "09 Reflect and Improve",
+    clusterOrder: 9,
     sectionOrder: 2,
     studentProblem: "I understand feedback after the fact, but I do not always carry it into the next scenario, OSCE, lab, study session, or placement moment.",
     sectionPurpose: "Turn reflection, feedback, or error analysis into one specific adjustment that can be tested later without trying to fix everything at once.",
@@ -8205,7 +8231,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is not a failure of caring or attention. It is a structural problem. Feedback delivered as a list of themes stays as a list of themes unless the student does something deliberate with it before the next attempt.",
+        text: "That is a structural problem, not a failure of caring or attention. Feedback delivered as a list of themes stays as a list of themes unless the student does something deliberate with it before the next attempt.",
       },
       {
         type: "heading",
@@ -8261,7 +8287,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A paramedic example",
+        text: "Feedback after the diabetes call",
       },
       {
         type: "paragraph",
@@ -8329,7 +8355,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The emotional response is not a sign of weakness. It is a sign that the work matters to you, which is not a problem. The problem is when that response takes over the learning.",
+        text: "The emotional response just means the work matters to you, and that is not a weakness. The problem is when that response takes over the learning.",
       },
       {
         type: "paragraph",
@@ -8337,7 +8363,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "It also helps to separate the feedback from the verdict. An instructor who says \"you closed too early on that explanation\" is not saying you are not capable of being a paramedic. They are describing one pattern that showed up in one scenario on one day, in a controlled environment where showing up and making mistakes is exactly the point. The feedback is not evidence of a fixed ceiling. It is data from a training exercise.",
+        text: "It also helps to separate the feedback from the verdict. An instructor who says \"you closed too early on that explanation\" is not saying you are not capable of being a paramedic. They are describing one pattern that showed up in one scenario on one day, in a controlled environment where showing up and making mistakes is exactly the point. The feedback is data from a training exercise, not evidence of a fixed ceiling.",
       },
       {
         type: "paragraph",
@@ -8551,8 +8577,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "taking-notes-in-a-moving-lecture",
     title: "Taking Notes in a Moving Lecture",
     subtitle: "Capture decisions and confusions, not the slides.",
-    cluster: "09 Do the Work",
-    clusterOrder: 9,
+    cluster: "02 Do the Work",
+    clusterOrder: 2,
     sectionOrder: 0,
     studentProblem: "Lectures move faster than I can write. I either try to capture everything and fall behind, or I stop writing and trust slides I never look at again.",
     sectionPurpose: "Give students a live capture method for lectures that feeds their note system instead of duplicating the slides.",
@@ -8635,8 +8661,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "studying-with-a-partner",
     title: "Studying With a Partner",
     subtitle: "Both people retrieve, or it is not studying.",
-    cluster: "09 Do the Work",
-    clusterOrder: 9,
+    cluster: "02 Do the Work",
+    clusterOrder: 2,
     sectionOrder: 1,
     studentProblem: "My study group either turns into hanging out, or one person teaches while everyone else nods. I leave feeling social but not more prepared.",
     sectionPurpose: "Show students how to structure partner study so both people are retrieving and testing understanding instead of one person performing it.",
@@ -8711,8 +8737,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "practice-questions-that-teach",
     title: "Practice Questions That Teach",
     subtitle: "The wrong answer is the interesting part.",
-    cluster: "09 Do the Work",
-    clusterOrder: 9,
+    cluster: "02 Do the Work",
+    clusterOrder: 2,
     sectionOrder: 2,
     studentProblem: "I do practice questions and my scores wobble. Right answers sometimes feel like luck, and wrong ones get a shrug and a next click.",
     sectionPurpose: "Teach students to use practice questions as diagnostic and retrieval tools rather than a score to watch.",
@@ -8803,8 +8829,8 @@ const sectionSeeds: SectionSeed[] = [
     id: "the-week-around-the-work",
     title: "The Week Around the Work",
     subtitle: "None of this runs on willpower. It runs on room.",
-    cluster: "09 Do the Work",
-    clusterOrder: 9,
+    cluster: "02 Do the Work",
+    clusterOrder: 2,
     sectionOrder: 3,
     studentProblem: "I know what I should be doing. I just cannot find the hours, and by the time I sit down to study I am too cooked for any of it to stick.",
     sectionPurpose: "Help students build a weekly structure where retrieval, practice, sleep, and rest actually happen, without turning planning into another project.",
