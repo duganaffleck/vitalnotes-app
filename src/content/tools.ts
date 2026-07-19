@@ -6,7 +6,7 @@ export const tools: Tool[] = [
     "title": "Directive Meaning Check",
     "status": "drafted",
     "toolType": "thinking-check",
-    "purpose": "Use this when a directive feels like wording you are trying to survive instead of a decision structure you understand. The goal is to connect the directive to the patient risk it is built around, so the boundaries make sense and the decision holds up when the patient does not fit the clean version you studied.",
+    "purpose": "Connect a directive to the patient risk it is built around, so the boundaries make sense and the decision holds up when the patient does not fit the clean version you studied.",
     "whenToUse": "A directive feels hard to remember under pressure. You can recite the indications but you cannot explain why the boundaries exist. You hesitate during scenarios or OSCEs not because you forgot the wording, but because the patient is borderline and the wording alone does not tell you what to do. The directive feels like a fragile memory test rather than a clinical reasoning structure.",
         "fieldIntro": "Use these fields to connect the directive to patient risk, physiology, firm boundaries, change points, and reassessment.",
 "whenNotToUse": [
@@ -422,7 +422,7 @@ export const tools: Tool[] = [
     "title": "Clinical Reasoning Check",
     "status": "drafted",
     "toolType": "thinking-check",
-    "purpose": "Use this when you need to examine how your thinking behaved during a scenario, OSCE, lab, or placement moment.",
+    "purpose": "Examine how your thinking behaved during a scenario, OSCE, lab, or placement moment, and find where the working explanation stopped updating.",
     "whenToUse": "After a call or scenario when your first explanation, decision, or plan may have become too narrow, too rigid, or hard to explain. Useful when feedback pointed at your reasoning rather than at a specific missed fact or skill step.",
         "fieldIntro": "Use these fields to test whether the working explanation stayed flexible as the patient changed.",
 "whenNotToUse": [
@@ -549,7 +549,7 @@ export const tools: Tool[] = [
     "title": "Scenario Day Reset",
     "status": "drafted",
     "toolType": "reset",
-    "purpose": "Use this between scenario attempts when you need to turn feedback into one clear adjustment before the next room.",
+    "purpose": "Turn feedback into one clear adjustment you can carry into the next room.",
     "whenToUse": "During scenario days, lab rotations, or repeated practice when the goal is to carry one small change into the next attempt rather than trying to fix everything at once.",
         "fieldIntro": "Use these fields to keep the next attempt focused on one testable adjustment.",
 "whenNotToUse": [
@@ -645,7 +645,7 @@ export const tools: Tool[] = [
     "title": "OSCE Reset",
     "status": "drafted",
     "toolType": "reset",
-    "purpose": "Use this before or during OSCE preparation when evaluation pressure starts pulling you away from safe structure and clear reasoning.",
+    "purpose": "Restore patient risk, structure, and a next safe action when evaluation pressure starts pulling you away from clear reasoning.",
     "whenToUse": "You are preparing for an OSCE station, recovering from a rough one, or noticing that pressure is making you rush, freeze, over-explain, or perform confidence instead of returning to patient risk and structure.",
         "fieldIntro": "Use these fields to restore patient risk, structure, and next action under evaluation pressure.",
 "whenNotToUse": [
@@ -741,7 +741,7 @@ export const tools: Tool[] = [
     "title": "Reflection Without Journaling Tool",
     "status": "drafted",
     "toolType": "thinking-check",
-    "purpose": "Use this when you need to learn from one moment without writing a long journal entry or replaying the whole scenario.",
+    "purpose": "Learn from one moment without writing a long journal entry or replaying the whole scenario.",
     "whenToUse": "After a lab, scenario, OSCE, feedback point, or placement moment when you need one clear adjustment and do not want a full written reflection.",
         "fieldIntro": "Use these fields to extract one usable adjustment without turning reflection into a full assignment.",
 "whenNotToUse": [
