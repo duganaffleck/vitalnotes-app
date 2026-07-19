@@ -648,7 +648,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A respiratory scenario, overloaded",
+        text: "An overloaded respiratory scenario",
       },
       {
         type: "paragraph",
@@ -1619,7 +1619,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Watching mechanism thinking work",
+        text: "Mechanism thinking on a real call",
       },
       {
         type: "paragraph",
@@ -2775,7 +2775,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "One rough note growing up",
+        text: "How a rough note matures",
       },
       {
         type: "paragraph",
@@ -3816,7 +3816,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Studying for a trauma day, two ways",
+        text: "Two ways to study for a trauma day",
       },
       {
         type: "paragraph",
@@ -5458,7 +5458,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "heading",
-            "text": "Watching a pattern earn its trust"
+            "text": "Testing a pattern against the patient"
         },
         {
             "type": "paragraph",
@@ -6008,7 +6008,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Three calls, one pattern",
+        text: "The same pattern across three calls",
       },
       {
         type: "paragraph",
@@ -7410,7 +7410,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "A dialysis patient and a narrowing mind",
+        text: "A dialysis call where thinking narrows",
       },
       {
         type: "paragraph",
@@ -7518,7 +7518,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Drills for the narrowed moment",
+        text: "Practising the reset",
       },
       {
         type: "paragraph",
@@ -7635,7 +7635,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "The fall call that follows you home",
+        text: "A fall call that stays with you",
       },
       {
         type: "paragraph",
@@ -7955,7 +7955,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "The long-lie call, traced backward",
+        text: "Tracing a long-lie call backward",
       },
       {
         type: "paragraph",
@@ -9319,7 +9319,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "What sours a placement",
+        text: "How the relationship goes wrong",
       },
       {
         type: "paragraph",
