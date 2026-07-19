@@ -31,6 +31,7 @@ function ScenarioGenerator() {
           <h2>When to use it</h2>
           <ul className="about-list">
             <li>Before lab, when you want another case to reason through.</li>
+            <li>When you and a practice partner need a case to run and want to skip the writing.</li>
             <li>After feedback, when you need to test one specific adjustment.</li>
             <li>Before an OSCE, when you want to practise staying organized under pressure.</li>
             <li>When a presentation, directive, or decision point still feels unstable.</li>
@@ -41,14 +42,21 @@ function ScenarioGenerator() {
         <article className="about-panel">
           <h2>How it connects to VitalNotes</h2>
           <p>
-            VitalNotes gives you the learning structure: retrieval, meaning,
-            clinical reasoning, feedback, reflection, and performance under
-            pressure.
+            The guide's Practice Like It's Real cluster teaches you to design
+            and run your own practice scenarios with a partner, and the
+            Scenario Design Template on the{' '}
+            <a href="#/tools">Tools page</a> gives that process a working
+            structure. The generator fits directly into that workflow: generate
+            a case, strip it to one page, choose your own learning target, and
+            run it.
           </p>
           <p>
-            The Scenario Generator gives you a place to apply that structure.
-            Use the tools and sections in VitalNotes before or after a generated
-            scenario so the practice turns into something you can carry forward.
+            Start with{' '}
+            <a href="#/section/design-and-run-your-own-scenarios">
+              Design and Run Your Own Scenarios
+            </a>{' '}
+            if you want the full method, including how to play the patient,
+            debrief in five minutes, and build a case bank across a semester.
           </p>
         </article>
 

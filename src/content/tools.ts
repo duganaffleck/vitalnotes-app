@@ -1077,6 +1077,7 @@ export const tools: Tool[] = [
       "Adding a second complication because the first one felt too simple. Simple cases run clean and debrief clean."
     ],
     "toolPointers": [
+      "If writing a case from nothing feels heavy, generate one with the Scenario Generator and strip it down around your own learning target.",
       "Between runs, use the Scenario Day Reset to carry one adjustment into the next attempt.",
       "If the same error pattern shows up across several homemade cases, take it to the Five Whys Tool."
     ],

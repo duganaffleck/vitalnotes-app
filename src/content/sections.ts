@@ -8926,7 +8926,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Pick one call type or one station. Sit somewhere quiet, close your eyes, and start from the beginning: hear the dispatch information, see the door, walk in. Ask your assessment questions as actual sentences, not summaries. Feel your hands do the steps. Speak the directive check before you treat. Include the reassessment after the intervention, because if it is not in the rehearsal it will not be in the room. Run it at the speed the real call would take. Ten minutes of this, most days, does more than an hour once a week.",
+        text: "Pick one call type or one station. A case from the Scenario Generator works as a script here if you want specifics to rehearse against. Sit somewhere quiet, close your eyes, and start from the beginning: hear the dispatch information, see the door, walk in. Ask your assessment questions as actual sentences, not summaries. Feel your hands do the steps. Speak the directive check before you treat. Include the reassessment after the intervention, because if it is not in the rehearsal it will not be in the room. Run it at the speed the real call would take. Ten minutes of this, most days, does more than an hour once a week.",
       },
       {
         type: "heading",
