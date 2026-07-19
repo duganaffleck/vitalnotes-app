@@ -488,6 +488,30 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
+        text: "If placement is coming and you feel unready",
+      },
+      {
+        type: "paragraph",
+        text: "Start with Learning During Placement.",
+      },
+      {
+        type: "paragraph",
+        text: "The truck has no pause button, no scheduled debrief, and no instructor building calls around what you need to practice. That section shows you how to bring the structure yourself: one target per shift, a three-line capture after calls, and slow shifts used as study halls. Working With Your Preceptor covers the part nobody prepares students for, including what to do when street practice and school teaching disagree.",
+      },
+      {
+        type: "heading",
+        text: "If you failed something and the retest is close",
+      },
+      {
+        type: "paragraph",
+        text: "Start with After You Fail Something.",
+      },
+      {
+        type: "paragraph",
+        text: "The two weeks between a failed station and its retest fill up fast with replay and not much preparation. That section builds the retest map: turning the scored-down behaviours into targets, rehearsing the recovery rather than just the clean version, and managing the attention that shame quietly consumes in the retest room.",
+      },
+      {
+        type: "heading",
         text: "If none of these fit perfectly",
       },
       {
@@ -744,7 +768,8 @@ const sectionSeeds: SectionSeed[] = [
         "smart-notes-for-paramedic-students",
         "scenario-days-as-learning-tools",
         "performance-under-pressure",
-        "resetting-when-thinking-narrows"
+        "resetting-when-thinking-narrows",
+        "training-your-hands",
     ],
   },
   {
@@ -3944,6 +3969,7 @@ const sectionSeeds: SectionSeed[] = [
         "performance-under-pressure",
         "reflection-without-journaling",
         "practice-questions-that-teach",
+        "preparing-for-the-aemca",
     ],
   },
   {
@@ -4304,7 +4330,19 @@ const sectionSeeds: SectionSeed[] = [
         {
             "type": "paragraph",
             "text": "This is not a script. It is a way to make recall practice shaped by what patient care actually asks for."
-        }
+        },
+      {
+        "type": "heading",
+        "text": "Where mnemonics fit"
+      },
+      {
+        "type": "paragraph",
+        "text": "Paramedic school runs on mnemonics, and this section would be incomplete without saying where they belong. OPQRST and SAMPLE are retrieval scaffolding for order: under load, they answer the question of what to ask next, and they protect completeness at exactly the moment working memory is too full to protect it alone. That is a real job, and they do it well. What they never answer is what the responses mean. You can run OPQRST flawlessly and still miss that the story you just collected is a cardiac story, because the acronym guaranteed the questions, not the interpretation."
+      },
+      {
+        "type": "paragraph",
+        "text": "So use them for what they are: completeness insurance while the deeper structure builds. The meaning work, why exertional onset matters, what a three-day history changes, happens separately, through everything this cluster teaches. And expect the scaffolding to matter less over time. When the assessment structure has internalized, the acronym stops being something you recite and becomes something you would only notice if a piece went missing, which is what it was for all along."
+      }
     ],
     glossaryTerms: [
         "clinical-recall",
@@ -8417,6 +8455,7 @@ const sectionSeeds: SectionSeed[] = [
         "osce-preparation",
         "resetting-when-thinking-narrows",
         "capturing-the-debrief",
+        "after-you-fail-something",
     ],
   },
   {
@@ -8883,6 +8922,18 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
+        text: "When you are already behind",
+      },
+      {
+        type: "paragraph",
+        text: "Everything above describes the good week. Some weeks are not that, three weeks of material owed, an exam on Friday, and no plan that recovers all of it. Damage control has its own rules, and the first is choosing by weight instead of by guilt: what is tested soonest, and what is foundational enough that other material leans on it, gets the hours. Everything else gets one honest pass or gets consciously released until after the deadline, released on purpose, not abandoned in a fog.",
+      },
+      {
+        type: "paragraph",
+        text: "The second rule is that retrieval still wins, especially now. The instinct when behind is to reread everything at speed, because coverage feels like catching up. It is coverage theatre. Two hours of closed-book retrieval on the highest-weight material outperforms six hours of skimming everything, and the gap gets wider under time pressure, not narrower. Behind is a schedule state, not an identity, and the way out is the same mechanism as the good week, just aimed harder at less.",
+      },
+      {
+        type: "heading",
         text: "Where this goes wrong",
       },
       {
@@ -9068,6 +9119,454 @@ const sectionSeeds: SectionSeed[] = [
       "turning-feedback-into-action",
       "scenario-days-as-learning-tools",
       "design-and-run-your-own-scenarios",
+      "learning-during-placement",
+    ],
+  },
+  {
+    id: "training-your-hands",
+    title: "Training Your Hands",
+    subtitle: "Skills stop stealing attention only after they stop needing it.",
+    cluster: "02 Do the Work",
+    clusterOrder: 2,
+    sectionOrder: 4,
+    studentProblem: "My hands are the problem. I know what to do, but the BVM seal slips, the splint takes forever, and every skill gets worse when someone is watching.",
+    sectionPurpose: "Teach students how motor skills are actually acquired, so practice builds automaticity instead of stopping at the first correct attempt.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "Most of this guide is about thinking. This section is about hands, because a skill that has not become automatic is quietly taxing everything else in the room. While your fingers are still negotiating the BVM seal, your working memory is paying for it, and the payment comes out of the same account that holds the reassessment you were supposed to do and the question the family just asked. A fumbling skill is a cognitive load problem wearing gloves.",
+      },
+      {
+        type: "heading",
+        text: "Say the sequence before you own it",
+      },
+      {
+        type: "paragraph",
+        text: "Early in a new skill, talk your way through it while doing it slowly. Naming each step out loud feels childish and works anyway, because it forces the sequence into a form you can check, and it exposes the step you were about to skip. Speed is not the goal yet. A slow, complete, spoken run builds the scaffold that fast runs will later stand on. When the steps start feeling obvious to say, that is the cue to stop saying them and let the hands take over.",
+      },
+      {
+        type: "heading",
+        text: "Blocked first, then mixed",
+      },
+      {
+        type: "paragraph",
+        text: "Repetition works in two phases. First comes blocked practice, the same skill, back to back, ten times in a row, refining one thing per repetition. That builds the basic motor pattern. Then comes the phase most students skip: mixed practice, where the skill appears inside varied situations rather than on its own. A splint applied ten times on a table is one skill. A splint applied while the patient guards, the space is tight, and your partner is asking about transport is a different one, and it is the one that gets tested. Blocked practice builds the movement. Mixed practice builds the movement's availability.",
+      },
+      {
+        type: "heading",
+        text: "Practice past correct",
+      },
+      {
+        type: "paragraph",
+        text: "The natural stopping point is the first clean repetition. That is exactly the wrong place to stop, because one clean rep means the skill works when it gets your full attention, and full attention is the one thing a real call will not give it. The target is the tenth clean rep, the one that happens while you are also answering a partner's question or tracking a timer. When a skill runs correctly with your attention elsewhere, it has stopped drawing from working memory, and everything else on the call gets that attention back.",
+      },
+      {
+        type: "heading",
+        text: "Add interference on purpose",
+      },
+      {
+        type: "paragraph",
+        text: "Once the basic pattern holds, make practice harder than the test. Have a partner ask you questions mid-skill and answer them. Run the skill against a timer. Do the medication draw while giving a verbal report. This feels like sabotage and is actually rehearsal, because calls interrupt, and a skill that has only ever run in silence will wobble the first time someone talks to you during it. The wobble under observation that students blame on nerves is often just this: the skill still needs attention, and the evaluator's presence is competing for it.",
+      },
+      {
+        type: "heading",
+        text: "Short and frequent beats long and rare",
+      },
+      {
+        type: "paragraph",
+        text: "Fifteen minutes of skill work most days outperforms a two-hour session once a week, partly because attention degrades across a marathon session, and partly because motor learning consolidates between sessions, much of it overnight. The clumsy Tuesday attempt that feels smoother on Wednesday was not luck. Spreading practice across days is not a scheduling compromise. It is how the skill actually gets written in.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Stopping at the first success, which builds a skill that only works under ideal conditions. Practicing only in clean-room conditions, so the first interruption on a real call is also the first interruption the skill has ever met. Marathon sessions that train fatigue more than technique. And reading fumbles as a verdict on your coordination, when almost every fumble is just a skill that has not had enough repetitions yet, in enough conditions, to run on its own.",
+      },
+    ],
+    glossaryTerms: [
+      "automaticity",
+      "cognitive-load",
+      "working-memory",
+      "deliberate-practice",
+    ],
+    relatedTools: [
+      "scenario-day-reset",
+    ],
+    relatedSections: [
+      "cognitive-load",
+      "the-week-around-the-work",
+      "osce-preparation",
+      "performance-under-pressure",
+    ],
+  },
+  {
+    id: "learning-during-placement",
+    title: "Learning During Placement",
+    subtitle: "The truck is a different classroom. It still has rules.",
+    cluster: "11 Learn on the Truck",
+    clusterOrder: 11,
+    sectionOrder: 0,
+    studentProblem: "I am on placement and every call happens once, fast, with no pause button. I do not know how to actually learn out here.",
+    sectionPurpose: "Show students how to keep learning deliberately during placement, where calls cannot be chosen, paused, or rerun.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "Placement breaks most of the assumptions the rest of this guide quietly relies on. There is no reset button, no scheduled debrief, and no instructor building the call around a learning objective. You cannot choose what comes in, you cannot run it twice, and you are being evaluated continuously rather than at appointed moments. Students who were strong in lab sometimes flounder here, and it is usually because they are waiting for the learning structure to appear the way it did at school. It will not. Out here, you bring the structure.",
+      },
+      {
+        type: "heading",
+        text: "One target per shift",
+      },
+      {
+        type: "paragraph",
+        text: "The scenario-day discipline transfers directly: carry one target into each shift, small enough to survive a busy day. Today I touch skin early on every patient. Today I form a transport opinion before my preceptor states one, even if I keep it to myself. Today I listen to lung sounds on every chest complaint and commit to what I heard before anyone confirms it. A shift with one deliberate target is practice. A shift without one is just exposure, and exposure alone teaches slowly.",
+      },
+      {
+        type: "heading",
+        text: "The jump-seat capture",
+      },
+      {
+        type: "paragraph",
+        text: "After a call, while the details are still warm, write three lines in whatever you carry: what happened at the decision points, what surprised you, and the one question the call left you with. Same discipline as capturing a debrief, behaviours and moments, never self-assessment. By end of shift, memory will have blurred four calls into each other and kept mostly the feelings. Three lines per call, written in the jump seat or during restock, is the difference between a shift you can learn from and a shift you can only vaguely remember.",
+      },
+      {
+        type: "heading",
+        text: "Slow shifts are study halls in disguise",
+      },
+      {
+        type: "paragraph",
+        text: "A quiet stretch is not dead time. Rig checks can be retrieval practice if you let them: for each piece of equipment, where does it live, what call reaches for it, and what would make you reach for it early. Run the morning's call back through the capture questions. Ask your preceptor what this area's call patterns look like, what the local hospitals are like to hand over to, which calls in their experience go sideways. Working medics carry years of pattern knowledge that never appears in any textbook, and a slow Tuesday afternoon is when it is available.",
+      },
+      {
+        type: "heading",
+        text: "Real patients change the register",
+      },
+      {
+        type: "paragraph",
+        text: "Some calls will follow you home. That is not a weakness in you or a flaw in the process, it is what happens when the patient is real and the outcome matters. The reflection tools in this guide still work here, one moment, one mechanism, one adjustment, and they are better than replaying the whole call on the drive home. But be honest about scale. A tool is for processing a call that bothered you. A call that is still sitting on your chest a week later deserves real people: your preceptor, your program's support, a peer support line. Knowing which one you are dealing with is part of the job you are learning.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Spending the shift performing for the preceptor instead of learning next to them, which they can see, and which teaches nothing. Treating slow shifts as waiting. Grading yourself against medics with ten years on the truck, whose fluency is exactly what a decade of shifts builds, rather than against your own last month. And saving all your questions for a giant end-of-shift download, when the better rhythm is one good question after the call it belongs to.",
+      },
+    ],
+    glossaryTerms: [
+      "practice-target",
+      "feedback",
+      "reflection",
+    ],
+    relatedTools: [
+      "reflection-without-journaling-tool",
+      "five-whys-tool",
+    ],
+    relatedSections: [
+      "working-with-your-preceptor",
+      "documentation-as-thinking",
+      "capturing-the-debrief",
+      "reflection-without-journaling",
+    ],
+  },
+  {
+    id: "working-with-your-preceptor",
+    title: "Working With Your Preceptor",
+    subtitle: "One medic, watching everything, is a different kind of teacher.",
+    cluster: "11 Learn on the Truck",
+    clusterOrder: 11,
+    sectionOrder: 1,
+    studentProblem: "My preceptor does things differently than school taught, and I cannot tell what I am supposed to copy, what I am supposed to ignore, and what I am allowed to ask.",
+    sectionPurpose: "Help students learn from a preceptor productively, including how to handle differences between street practice and school standards.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "A preceptor is not an instructor with a rubric. They are a working medic who agreed to run calls with a student attached, and they are reading you continuously: whether you are safe, whether you are coachable, whether your trend across the placement is upward. That continuous read is unnerving until you realize what it means. They are not scoring each call the way an OSCE is scored. A rough call followed by a visible adjustment on the next one often lands better with a preceptor than two mediocre calls that look the same.",
+      },
+      {
+        type: "heading",
+        text: "How to ask a question that teaches you something",
+      },
+      {
+        type: "paragraph",
+        text: "Timing first: after the call, not during patient care, unless it is a safety issue right now. Then form. Bring your own attempt before you ask for theirs. I was thinking transport priority because of the skin and the trend, but you called for the second set of vitals first. What were you seeing? That question does three things a plain why did you do that cannot: it shows your reasoning, it invites theirs instead of challenging it, and it turns the answer into a comparison between two thought processes rather than a correction of one. Preceptors respond to that form, because it sounds like a colleague learning, not a student auditing.",
+      },
+      {
+        type: "heading",
+        text: "When the street and the school disagree",
+      },
+      {
+        type: "paragraph",
+        text: "This will happen, and nobody warns students how to think about it. It helps to sort the differences into three piles. Most of what you will notice is adaptation: a different order, a compressed assessment, a shortcut in the flow, with the same standard intact underneath. Experienced medics have automated pieces that you still perform deliberately, and their sequence bends around real rooms and real patients. Learn the reasoning inside these, they are a preview of your own fluency. Some of it is just style: equipment preferences, phrasing, where things go on the bench. Interesting, optional, harmless.",
+      },
+      {
+        type: "paragraph",
+        text: "Rarely, something is a genuine deviation from the standard you are being taught. Two things are true at once here. On the truck, you keep practicing and charting to your school's standard, because that is the standard you are evaluated against and the one your certification is built on. And if what you saw raises a real safety concern, that conversation belongs with your school's placement contact, handled quietly and factually, not with the preceptor mid-shift and not with your cohort's group chat. Holding your standard without prosecuting theirs is a professional skill, and placement is where you first get to practice it.",
+      },
+      {
+        type: "heading",
+        text: "Getting feedback out of someone who gives it in shrugs",
+      },
+      {
+        type: "paragraph",
+        text: "Preceptor feedback is often compressed to the point of vapor: good call, nothing major, silence. The fix is asking one narrow question instead of an open one. How was my job in there is unanswerable and gets the shrug. Was my transport decision timed right, or should I have called it earlier, is answerable in one sentence, and the sentence is usually worth having. One narrow question per call, aimed at your shift's target, will harvest more usable feedback than any end-of-week summary conversation.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Copying what you see without learning why, which imports habits without their reasoning and leaves you unable to adapt them. Arguing the standard on the truck, which converts a learning relationship into a contest you cannot win and should not want to. Performing confidence you do not have, which preceptors read instantly and trust less than honest uncertainty. And staying silent all shift out of fear of asking something dumb, when the student who asks one thoughtful question per call is the one preceptors remember wanting to keep.",
+      },
+    ],
+    glossaryTerms: [
+      "feedback",
+      "directive-intent",
+    ],
+    relatedTools: [
+      "clinical-reasoning-check",
+      "reflection-without-journaling-tool",
+    ],
+    relatedSections: [
+      "learning-during-placement",
+      "documentation-as-thinking",
+      "turning-feedback-into-action",
+      "directives-through-purpose",
+    ],
+  },
+  {
+    id: "documentation-as-thinking",
+    title: "Documentation as Thinking",
+    subtitle: "The chart is your reasoning, made visible.",
+    cluster: "11 Learn on the Truck",
+    clusterOrder: 11,
+    sectionOrder: 2,
+    studentProblem: "My PCRs come back covered in feedback. I write everything I can remember, and it is still somehow both too long and missing what matters.",
+    sectionPurpose: "Reframe documentation as clinical reasoning made legible, and give students a practical way to build the skill.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "Students are taught documentation as a compliance task, fill the fields, cover yourself, do not miss the times. That framing produces exactly the charts that come back covered in ink: long, chronological memory dumps that record everything and explain nothing. The reframe that fixes most of it is simple to say. A narrative is your clinical reasoning, made legible to someone who was not there. What you found, what you made of it, what you did about it, and what happened next, in an order a stranger can follow.",
+      },
+      {
+        type: "heading",
+        text: "Write for the reader who was not there",
+      },
+      {
+        type: "paragraph",
+        text: "Every chart has at least four possible readers: the receiving nurse who has ninety seconds, a supervisor auditing the call, a lawyer years from now, and you, in a hearing, trying to reconstruct a call you no longer remember. All four need the same thing, and it is not more detail. It is your decision path. Findings, then your interpretation, then your action, then the patient's response. When a chart follows that skeleton, the reader can watch you think. When it follows the clock instead, the reader gets a diary and has to do your reasoning for you.",
+      },
+      {
+        type: "paragraph",
+        text: "Pertinent negatives are where this becomes real. Charting the absence that ruled something out, no chest pain with exertion, no neuro deficits on exam, no medication changes this month, is not padding. Each one is a decision made visible, proof that you considered a path and had a reason to close it. A chart with the right negatives reads like reasoning. A chart without them reads like luck.",
+      },
+      {
+        type: "heading",
+        text: "The refusal is the chart that matters most",
+      },
+      {
+        type: "paragraph",
+        text: "Nowhere does documentation carry more weight than a refusal, because the patient you did not transport is the call most likely to be examined later. The narrative has to show the conversation, not just its conclusion: that the patient had capacity and how that was assessed, what risks were explained and in what kind of language, that the patient demonstrated understanding rather than just nodding, what alternatives were offered, who else was present and heard it. Refused against advice, signature obtained records an outcome. The paragraph above records that the patient made an informed choice, which is the thing that actually protects them and you.",
+      },
+      {
+        type: "heading",
+        text: "The patch is a spoken chart",
+      },
+      {
+        type: "paragraph",
+        text: "Talking to a physician on the radio scares students out of proportion to what it is, because it is the same skeleton, compressed and spoken: who you have, what you found, what you think, what you want. Age, chief problem, the findings that matter, your working concern, your request. Rehearse patches the way this guide teaches mental rehearsal for anything else, out loud, in real time, for the calls where a patch is likely. A patch rehearsed twenty times in your head arrives organized the first time it happens for real, and an organized patch gets a faster, cleaner answer.",
+      },
+      {
+        type: "heading",
+        text: "How to actually get better at this",
+      },
+      {
+        type: "paragraph",
+        text: "One narrative per week, deliberately. Take a scenario you ran, at school or on shift, and write it as a full chart, then get one person with experience to mark it, an instructor, a preceptor, anyone who reads charts for a living. Keep the marked copies. The red ink on your own charts is the cheapest, most personalized documentation course that exists, and the pattern in it across a semester, the same weakness surfacing in different calls, is your curriculum. Most students never see the pattern because they treat each marked chart as a wound instead of a data point.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Chronological memory dumps that record the call minute by minute and never once show a decision. Charting judgments instead of findings, patient appeared fine is a conclusion, alert, skin warm and dry, walking without assistance is evidence. Copying a preceptor's shorthand before understanding what it stands for, which produces charts you cannot defend. And reading feedback ink as failure, when a heavily marked chart from someone who took the time to mark it is one of the few pieces of teaching in the program aimed at exactly you.",
+      },
+    ],
+    glossaryTerms: [
+      "clinical-reasoning",
+      "mental-rehearsal",
+    ],
+    relatedTools: [
+      "smart-note-template",
+      "clinical-reasoning-check",
+    ],
+    relatedSections: [
+      "learning-during-placement",
+      "clinical-reasoning",
+      "mental-rehearsal-and-visualization",
+      "smart-notes-for-paramedic-students",
+    ],
+  },
+  {
+    id: "after-you-fail-something",
+    title: "After You Fail Something",
+    subtitle: "The retest is a preparation problem, not a verdict.",
+    cluster: "09 Reflect and Improve",
+    clusterOrder: 9,
+    sectionOrder: 3,
+    studentProblem: "I failed a station and the retest is in two weeks. I cannot stop replaying it, and I do not know whether to review everything or just the thing I failed.",
+    sectionPurpose: "Give students a concrete way through the period between failing an evaluation and retesting, when shame and preparation are competing for the same attention.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "Failing a station, a megacode, or a practical exam is its own category of bad day, because it comes with a deadline attached. The replay starts immediately, the retest date sits on the calendar, and the two weeks between them fill with a question that has no good answer: how do I prepare for everything when I cannot stop thinking about one thing. This section is for exactly that stretch of time.",
+      },
+      {
+        type: "heading",
+        text: "The first two days",
+      },
+      {
+        type: "paragraph",
+        text: "You do not have to feel okay before starting the work, and waiting to feel okay wastes days you need. What you do first is small: get the evaluation sheet, or the most specific version of the feedback that exists, and write down what was actually scored down, in behaviours. Not I bombed it. The specific items. Almost always the list is shorter than the replay suggests, one to three behaviours, not the whole performance. The sheet is data. The replay is not. Everything that follows gets built from the sheet.",
+      },
+      {
+        type: "heading",
+        text: "A failed station is not a failed student",
+      },
+      {
+        type: "paragraph",
+        text: "This whole cluster has been arguing that feedback is data from a training exercise, and a failed evaluation is the moment that argument gets hard to hold. Hold it anyway, because it is not a platitude here, it is operationally true: the retest will examine specific behaviours under specific conditions, and it will not examine your worth, your fit for the profession, or the story you have been telling yourself since the debrief. Preparing for the retest means preparing those behaviours. The story preparation feeds is a different one, and it does not have a station.",
+      },
+      {
+        type: "heading",
+        text: "Build the retest map",
+      },
+      {
+        type: "paragraph",
+        text: "Retest preparation fails in one of two directions. Reviewing everything dilutes the two weeks across the whole course, so the actual weakness gets a fraction of the time it needs. Avoiding the failed material because it stings does the opposite. The map is the middle path: the one to three scored-down behaviours become learning targets, and the two weeks get built around them under realistic conditions. Partner runs where the scenario is designed to force exactly that moment. Mental rehearsal daily, and critically, rehearse the recovery, start some runs from the moment it went wrong last time and practice continuing cleanly, because walking in with a rehearsed recovery beats walking in hoping nothing wobbles. Then, in the last few days, one or two full runs under test conditions with a timer, to confirm the repaired piece holds inside the whole performance.",
+      },
+      {
+        type: "heading",
+        text: "The shame tax",
+      },
+      {
+        type: "paragraph",
+        text: "Shame is not just unpleasant, it is expensive. In the retest room, the part of your attention spent monitoring whether it is happening again is attention taken directly from the patient, the sequence, and the reassessment, the same working-memory economics this guide keeps returning to. You cannot argue shame away, but you can crowd it out with structure: the reset routine exists for exactly this, name the primary risk, return to your anchor, choose the next safe action. A rehearsed structure gives the anxious part of your mind a job, which is the only management strategy it reliably responds to.",
+      },
+      {
+        type: "heading",
+        text: "If this is not the first time",
+      },
+      {
+        type: "paragraph",
+        text: "A repeated failure in the same territory means the target is deeper than the behaviour, and it is time for two things. Run the pattern through the Five Whys honestly, the answer is usually a structural gap, not a character one. And talk to your instructors early, before the retest, not after. Students avoid this conversation because it feels like an admission. Instructors experience it the opposite way: the student who comes in with their evaluation sheet and a specific question is showing exactly the professional behaviour programs are trying to build, and that conversation routinely surfaces help, extra lab time, a different explanation, a practice partner, that suffering alone never finds.",
+      },
+      {
+        type: "heading",
+        text: "Where this goes wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Reviewing the entire course out of anxiety, so the retest arrives with everything lightly touched and nothing repaired. Avoiding the failed skill until the retest forces the reunion. Hiding from instructors until after a second attempt, when the earlier conversation was the cheaper one. And letting one evaluation rewrite your whole trajectory, when the crossed-out targets on your running list are sitting right there as evidence that repaired weaknesses are what your record actually looks like.",
+      },
+    ],
+    glossaryTerms: [
+      "practice-target",
+      "error-pattern",
+      "feedback",
+      "reflection",
+    ],
+    relatedTools: [
+      "five-whys-tool",
+      "osce-reset",
+      "scenario-design-template",
+    ],
+    relatedSections: [
+      "turning-feedback-into-action",
+      "mental-rehearsal-and-visualization",
+      "osce-preparation",
+      "learning-strain-is-not-always-a-personal-problem",
+    ],
+  },
+  {
+    id: "preparing-for-the-aemca",
+    title: "Preparing for the AEMCA",
+    subtitle: "The exam at the end is a retrieval problem you already know how to solve.",
+    cluster: "05 Build Recall",
+    clusterOrder: 5,
+    sectionOrder: 3,
+    studentProblem: "The AEMCA is coming and I do not know how to study for something that covers everything.",
+    sectionPurpose: "Map the guide's retrieval and recall methods onto preparation for the provincial certification exam.",
+    pageType: "practice-support",
+    body: [
+      {
+        type: "paragraph",
+        text: "At the end of the program sits the AEMCA, the provincial written exam standing between you and certification. Its reputation arrives before it does, and the reputation says the same thing to every cohort: it covers everything. That framing is technically true and strategically useless, because you cannot reread two years of a program, and trying is how students spend their final months busy and unprepared at the same time. Everything in this cluster was built for exactly this problem. The AEMCA is a retrieval exam, and retrieval is trainable.",
+      },
+      {
+        type: "heading",
+        text: "Start earlier than feels necessary",
+      },
+      {
+        type: "paragraph",
+        text: "Spaced retrieval needs runway. Recall built across three months holds in a way that recall built across three weeks does not, which means AEMCA preparation starts while the program is still running, not after it ends. The mechanism is the one this cluster already taught: short, regular, closed-book retrieval passes across the whole territory, weighted toward whatever refuses to stick, with the spacing between passes growing as material stabilizes.",
+      },
+      {
+        type: "heading",
+        text: "Question banks, used the right way",
+      },
+      {
+        type: "paragraph",
+        text: "Practice questions are the natural centre of exam prep, and everything from Practice Questions That Teach applies with more force here. Name the kind of wrong for every miss, because a misread stem and a missing fact need different fixes and the exam punishes both. Say why the right answer is right before reading the explanation. Track where misses cluster, a cluster is a structure that needs rebuilding, not five facts that need rereading. And be honest about the memorization trap: running the same bank until the scores look good measures your memory of that bank, and the exam is not that bank.",
+      },
+      {
+        type: "paragraph",
+        text: "Directives deserve their own retrieval stream, built the way Clinical Recall Without Trivia builds it: not the wording, but the clinical job, the boundary, and the reassessment that follows. An exam question about a directive is almost always a question about when and why, wearing the costume of what.",
+      },
+      {
+        type: "heading",
+        text: "The final week is for consolidation",
+      },
+      {
+        type: "paragraph",
+        text: "By the last week, acquisition is over, whatever is not in there is not going in by Friday, and pretending otherwise costs sleep that the exam needs more than it needs another pass through the textbook. The final week is light retrieval, shrinking in scope as the days count down, and full nights. The exam-eve rule from earlier in the guide applies with everything on the line: a final closed-book pass through your prompts, then stop, then sleep, because the consolidation that locks two years of work into place happens after the desk lamp goes off.",
+      },
+      {
+        type: "heading",
+        text: "In the room",
+      },
+      {
+        type: "paragraph",
+        text: "Multiple choice under pressure rewards one discipline above all: read the whole stem, every time, especially when the question looks familiar, because familiar-looking stems are where the misread-wrong lives. If you catch yourself changing an answer, require a reason you could say out loud, a specific thing in the stem you initially missed, not a feeling that the other option looks better. And when a question rattles you, the reset structure from scenario work applies at a desk too: one breath, next question, the rattled question is over and the next one is not.",
+      },
+      {
+        type: "paragraph",
+        text: "One practical note that belongs here: exam logistics, format, and registration details change, and a learning guide is the wrong place to get them. Confirm the current requirements through your program and the official Ministry materials, and let this section carry only the part that does not change, which is how humans get information to come back under pressure.",
+      },
+    ],
+    glossaryTerms: [
+      "retrieval-practice",
+      "spacing",
+      "consolidation",
+    ],
+    relatedTools: [
+      "clinical-recall-prompt-builder",
+    ],
+    relatedSections: [
+      "retrieval-and-spaced-learning",
+      "practice-questions-that-teach",
+      "clinical-recall-without-trivia",
+      "the-week-around-the-work",
     ],
   },
 ]

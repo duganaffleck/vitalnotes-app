@@ -65,6 +65,7 @@ export const learningPath: LearningPathCluster[] = [
     sections: [
       'retrieval-and-spaced-learning',
       'clinical-recall-without-trivia',
+      'preparing-for-the-aemca',
     ],
     relatedTools: ['clinical-recall-prompt-builder'],
     status: 'drafted',
@@ -121,6 +122,7 @@ export const learningPath: LearningPathCluster[] = [
       'reflection-without-journaling',
       'the-five-whys',
       'turning-feedback-into-action',
+      'after-you-fail-something',
     ],
     relatedTools: [
       'reflection-without-journaling-tool',
@@ -140,6 +142,7 @@ export const learningPath: LearningPathCluster[] = [
       'studying-with-a-partner',
       'practice-questions-that-teach',
       'the-week-around-the-work',
+      'training-your-hands',
     ],
     relatedTools: ['smart-note-template', 'clinical-recall-prompt-builder'],
     status: 'drafted',
@@ -161,6 +164,24 @@ export const learningPath: LearningPathCluster[] = [
       'reflection-without-journaling-tool',
       'osce-reset',
       'scenario-design-template',
+    ],
+    status: 'drafted',
+  },
+  {
+    id: 'learn-on-the-truck',
+    title: '11 Learn on the Truck',
+    order: 11,
+    purpose:
+      'Carry the learning system into placement: real calls, a preceptor, and charts that show your thinking.',
+    sections: [
+      'learning-during-placement',
+      'working-with-your-preceptor',
+      'documentation-as-thinking',
+    ],
+    relatedTools: [
+      'reflection-without-journaling-tool',
+      'five-whys-tool',
+      'clinical-reasoning-check',
     ],
     status: 'drafted',
   },

@@ -571,6 +571,15 @@ export const glossaryTerms: GlossaryTerm[] = [
       'Trading sleep for one more hour of studying spends the process that was going to lock in the previous six. Skills consolidate overnight too.',
     relatedSections: ['the-week-around-the-work', 'retrieval-and-spaced-learning'],
   },
+  {
+    id: 'automaticity',
+    term: 'Automaticity',
+    shortDefinition:
+      'When a skill runs with little conscious attention because it has been practiced well past merely correct.',
+    paramedicRelevance:
+      'An automatic BVM seal or medication draw frees working memory for the patient in front of you. Skills stop taxing attention only after deliberate over-practice.',
+    relatedSections: ['training-your-hands', 'cognitive-load'],
+  },
 ]
 
 export const orderedGlossaryTerms = [...glossaryTerms].sort((a, b) =>

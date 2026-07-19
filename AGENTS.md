@@ -50,6 +50,7 @@ Current completed learning path clusters:
 - 08 Perform Under Pressure
 - 09 Reflect and Improve
 - 10 Practice Like It's Real
+- 11 Learn on the Truck
 
 Current active tools:
 
