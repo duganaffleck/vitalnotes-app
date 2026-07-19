@@ -508,7 +508,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The two weeks between a failed station and its retest fill up fast with replay and not much preparation. That section builds the retest map: turning the scored-down behaviours into targets, rehearsing the recovery rather than just the clean version, and managing the attention that shame quietly consumes in the retest room.",
+        text: "The two weeks between a failed station and its retest fill up fast with replay and not much preparation. That section builds the retest map: turning the scored-down behaviours into targets, rehearsing the recovery rather than just the clean version, and managing the attention that shame consumes in the retest room.",
       },
       {
         type: "heading",
@@ -4071,7 +4071,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "heading",
-            "text": "A paramedic example"
+            "text": "Recall in the middle of a call"
         },
         {
             "type": "paragraph",
@@ -4337,7 +4337,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         "type": "paragraph",
-        "text": "Paramedic school runs on mnemonics, and this section would be incomplete without saying where they belong. OPQRST and SAMPLE are retrieval scaffolding for order: under load, they answer the question of what to ask next, and they protect completeness at exactly the moment working memory is too full to protect it alone. That is a real job, and they do it well. What they never answer is what the responses mean. You can run OPQRST flawlessly and still miss that the story you just collected is a cardiac story, because the acronym guaranteed the questions, not the interpretation."
+        "text": "Paramedic school runs on mnemonics, and this section would be incomplete without saying where they belong. OPQRST and SAMPLE are retrieval scaffolding for order: under load, they answer the question of what to ask next, and they protect completeness at the moment working memory is too full to protect it alone. That is a real job, and they do it well. What they never answer is what the responses mean. You can run OPQRST flawlessly and still miss that the story you just collected is a cardiac story, because the acronym guaranteed the questions, not the interpretation."
       },
       {
         "type": "paragraph",
@@ -5178,7 +5178,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "heading",
-            "text": "A paramedic example"
+            "text": "Reasoning through a live call"
         },
         {
             "type": "paragraph",
@@ -5458,7 +5458,7 @@ const sectionSeeds: SectionSeed[] = [
         },
         {
             "type": "heading",
-            "text": "A paramedic example"
+            "text": "Watching a pattern earn its trust"
         },
         {
             "type": "paragraph",
@@ -5868,7 +5868,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "What to practise",
+        text: "Habits that keep the picture open",
       },
       {
         type: "paragraph",
@@ -7518,7 +7518,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "What to practise",
+        text: "Drills for the narrowed moment",
       },
       {
         type: "paragraph",
@@ -8581,15 +8581,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "Four traps",
       },
       {
         type: "paragraph",
-        text: "Four traps account for most failed attempts at this. Gotcha design, where the case is built to trick rather than to test, and the debrief becomes a reveal instead of a lesson. Kitchen-sink cases that stack complications until nothing can be debriefed cleanly. Breaking character to teach mid-run, which converts a scenario into a tutorial and removes the pressure that made it worth running. And debriefs that slide from the run into the person, from you missed the reassessment into you always rush things. The first is feedback. The second is a fight, and it will end the partnership.",
+        text: "Most failed attempts at this come down to four things. Gotcha design, where the case is built to trick rather than to test, and the debrief becomes a reveal instead of a lesson. Kitchen-sink cases that stack complications until nothing can be debriefed cleanly. Breaking character to teach mid-run, which converts a scenario into a tutorial and removes the pressure that made it worth running. And debriefs that slide from the run into the person, from you missed the reassessment into you always rush things. The first is feedback. The second is a fight, and it will end the partnership.",
       },
       {
         type: "paragraph",
-        text: "None of this needs to be polished to be worth doing. A one-page case, a committed patient, a real-time run, and a five-minute debrief anchored to one target. That is the whole practice. Done weekly with the same partner, it quietly becomes the largest source of scenario exposure in your entire program.",
+        text: "None of this needs to be polished to be worth doing. A one-page case, a committed patient, a real-time run, and a five-minute debrief anchored to one target. That is the whole practice. Done weekly with the same partner, it becomes the largest source of scenario exposure in your entire program.",
       },
     ],
     glossaryTerms: [
@@ -8674,7 +8674,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "The old habits that creep back",
       },
       {
         type: "paragraph",
@@ -8750,7 +8750,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "How partnerships fall apart",
       },
       {
         type: "paragraph",
@@ -8840,11 +8840,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "Ways a question bank gets wasted",
       },
       {
         type: "paragraph",
-        text: "Running question banks before the material is understood, which trains you to memorize this bank rather than learn the content, and the real exam is not this bank. Treating the score as a verdict on your future instead of a snapshot of one session. And reading explanations the way people read terms of service, with eyes moving and nothing landing.",
+        text: "Running question banks before the material is understood, which trains you to memorize this bank rather than learn the content, and the real exam is not this bank. Treating the score as a verdict on your future instead of a snapshot of one session. Or reading explanations the way people read terms of service, with eyes moving and nothing landing.",
       },
     ],
     glossaryTerms: [
@@ -8934,7 +8934,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "What usually breaks first",
       },
       {
         type: "paragraph",
@@ -9015,11 +9015,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "Rehearsing the wrong things",
       },
       {
         type: "paragraph",
-        text: "Rehearsing outcomes instead of process, the pass, the compliment from the evaluator, the feeling of relief, none of which contains a single practicable step. Rehearsing only the clean version, so the first complication lands on an unrehearsed mind. And letting it replace physical practice, which it cannot. It is a multiplier on real practice, not a substitute for it. The students who get the most from it treat it like brushing teeth, short and daily and unremarkable.",
+        text: "Rehearsing outcomes instead of process, the pass, the compliment from the evaluator, the feeling of relief, none of which contains a single practicable step. Rehearsing only the clean version, so the first complication lands on an unrehearsed mind. Or letting it replace physical practice, which it cannot. It is a multiplier on real practice, not a substitute for it. The students who get the most from it treat it like brushing teeth, short and daily and unremarkable.",
       },
     ],
     glossaryTerms: [
@@ -9095,11 +9095,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "What ruins the page",
       },
       {
         type: "paragraph",
-        text: "Writing feelings as data, and ending up with a page of self-assessment instead of a page of behaviours. A list that only grows, because nothing ever gets formally retired, until it stops being a practice tool and becomes a guilt document that gets avoided. And capturing everything, ten lines a debrief, which produces an archive instead of a working list. Three lines, one target, crossed out when it holds. The page will look unremarkable, and that is what steady improvement usually looks like on paper.",
+        text: "Writing feelings as data, and ending up with a page of self-assessment instead of a page of behaviours. A list that only grows, because nothing ever gets formally retired, until it stops being a practice tool and becomes a guilt document that gets avoided. Or capturing everything, ten lines a debrief, which produces an archive instead of a working list. Three lines, one target, crossed out when it holds. The page will look unremarkable, and that is what steady improvement usually looks like on paper.",
       },
     ],
     glossaryTerms: [
@@ -9135,7 +9135,7 @@ const sectionSeeds: SectionSeed[] = [
     body: [
       {
         type: "paragraph",
-        text: "Most of this guide is about thinking. This section is about hands, because a skill that has not become automatic is quietly taxing everything else in the room. While your fingers are still negotiating the BVM seal, your working memory is paying for it, and the payment comes out of the same account that holds the reassessment you were supposed to do and the question the family just asked. A fumbling skill is a cognitive load problem wearing gloves.",
+        text: "Most of this guide is about thinking. This section is about hands, because a skill that has not become automatic is taxing everything else in the room. While your fingers are still negotiating the BVM seal, your working memory is paying for it, and the payment comes out of the same account that holds the reassessment you were supposed to do and the question the family just asked. A fumbling skill is a cognitive load problem wearing gloves.",
       },
       {
         type: "heading",
@@ -9159,7 +9159,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The natural stopping point is the first clean repetition. That is exactly the wrong place to stop, because one clean rep means the skill works when it gets your full attention, and full attention is the one thing a real call will not give it. The target is the tenth clean rep, the one that happens while you are also answering a partner's question or tracking a timer. When a skill runs correctly with your attention elsewhere, it has stopped drawing from working memory, and everything else on the call gets that attention back.",
+        text: "The natural stopping point is the first clean repetition. That is the wrong place to stop, because one clean rep means the skill works when it gets your full attention, and full attention is the one thing a real call will not give it. The target is the tenth clean rep, the one that happens while you are also answering a partner's question or tracking a timer. When a skill runs correctly with your attention elsewhere, it has stopped drawing from working memory, and everything else on the call gets that attention back.",
       },
       {
         type: "heading",
@@ -9167,7 +9167,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Once the basic pattern holds, make practice harder than the test. Have a partner ask you questions mid-skill and answer them. Run the skill against a timer. Do the medication draw while giving a verbal report. This feels like sabotage and is actually rehearsal, because calls interrupt, and a skill that has only ever run in silence will wobble the first time someone talks to you during it. The wobble under observation that students blame on nerves is often just this: the skill still needs attention, and the evaluator's presence is competing for it.",
+        text: "Once the basic pattern holds, make practice harder than the test. Have a partner ask you questions mid-skill and answer them. Run the skill against a timer. Do the medication draw while giving a verbal report. This feels like sabotage and is rehearsal, because calls interrupt, and a skill that has only ever run in silence will wobble the first time someone talks to you during it. The wobble under observation that students blame on nerves is often just this: the skill still needs attention, and the evaluator's presence is competing for it.",
       },
       {
         type: "heading",
@@ -9179,7 +9179,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "Why skill practice stalls",
       },
       {
         type: "paragraph",
@@ -9247,15 +9247,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Some calls will follow you home. That is not a weakness in you or a flaw in the process, it is what happens when the patient is real and the outcome matters. The reflection tools in this guide still work here, one moment, one mechanism, one adjustment, and they are better than replaying the whole call on the drive home. But be honest about scale. A tool is for processing a call that bothered you. A call that is still sitting on your chest a week later deserves real people: your preceptor, your program's support, a peer support line. Knowing which one you are dealing with is part of the job you are learning.",
+        text: "Some calls will come home with you. That is not a weakness in you or a flaw in the process, it is what happens when the patient is real and the outcome matters. The reflection tools in this guide still work here, one moment, one mechanism, one adjustment, and they are better than replaying the whole call on the way home. But be honest about scale. A tool is for processing a call that bothered you. A call that is still sitting on your chest a week later deserves real people: your preceptor, your program's support, a peer support line. Knowing which one you are dealing with is part of the job you are learning.",
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "The shifts that teach nothing",
       },
       {
         type: "paragraph",
-        text: "Spending the shift performing for the preceptor instead of learning next to them, which they can see, and which teaches nothing. Treating slow shifts as waiting. Grading yourself against medics with ten years on the truck, whose fluency is exactly what a decade of shifts builds, rather than against your own last month. And saving all your questions for a giant end-of-shift download, when the better rhythm is one good question after the call it belongs to.",
+        text: "Spending the shift performing for the preceptor instead of learning next to them, which they can see, and which teaches nothing. Treating slow shifts as waiting. Grading yourself against medics with ten years on the truck, whose fluency is exactly what a decade of shifts builds, rather than against your own last month. Or saving all your questions for a giant end-of-shift download, when the better rhythm is one good question after the call it belongs to.",
       },
     ],
     glossaryTerms: [
@@ -9319,11 +9319,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "What sours a placement",
       },
       {
         type: "paragraph",
-        text: "Copying what you see without learning why, which imports habits without their reasoning and leaves you unable to adapt them. Arguing the standard on the truck, which converts a learning relationship into a contest you cannot win and should not want to. Performing confidence you do not have, which preceptors read instantly and trust less than honest uncertainty. And staying silent all shift out of fear of asking something dumb, when the student who asks one thoughtful question per call is the one preceptors remember wanting to keep.",
+        text: "Copying what you see without learning why, which imports habits without their reasoning and leaves you unable to adapt them. Arguing the standard on the truck, which converts a learning relationship into a contest you cannot win and should not want to. Performing confidence you do not have, which preceptors read instantly and trust less than honest uncertainty. Or staying silent all shift out of fear of asking something dumb, when the student who asks one thoughtful question per call is the one preceptors remember wanting to keep.",
       },
     ],
     glossaryTerms: [
@@ -9386,7 +9386,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "How to actually get better at this",
+        text: "How to get better at this",
       },
       {
         type: "paragraph",
@@ -9394,11 +9394,11 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "Why charts come back covered in ink",
       },
       {
         type: "paragraph",
-        text: "Chronological memory dumps that record the call minute by minute and never once show a decision. Charting judgments instead of findings, patient appeared fine is a conclusion, alert, skin warm and dry, walking without assistance is evidence. Copying a preceptor's shorthand before understanding what it stands for, which produces charts you cannot defend. And reading feedback ink as failure, when a heavily marked chart from someone who took the time to mark it is one of the few pieces of teaching in the program aimed at exactly you.",
+        text: "Chronological memory dumps that record the call minute by minute and never once show a decision. Charting judgments instead of findings, patient appeared fine is a conclusion, alert, skin warm and dry, walking without assistance is evidence. Copying a preceptor's shorthand before understanding what it stands for, which produces charts you cannot defend. Or treating feedback ink as failure, when a heavily marked chart from someone who took the time to mark it is one of the few pieces of teaching in the program aimed directly at you.",
       },
     ],
     glossaryTerms: [
@@ -9461,7 +9461,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Shame is not just unpleasant, it is expensive. In the retest room, the part of your attention spent monitoring whether it is happening again is attention taken directly from the patient, the sequence, and the reassessment, the same working-memory economics this guide keeps returning to. You cannot argue shame away, but you can crowd it out with structure: the reset routine exists for exactly this, name the primary risk, return to your anchor, choose the next safe action. A rehearsed structure gives the anxious part of your mind a job, which is the only management strategy it reliably responds to.",
+        text: "Shame is not just unpleasant, it is expensive. In the retest room, the part of your attention spent monitoring whether it is happening again is attention taken directly from the patient, the sequence, and the reassessment, the same working-memory economics this guide keeps returning to. You cannot argue shame away, but you can crowd it out with structure: the reset routine exists for this moment, name the primary risk, return to your anchor, choose the next safe action. A rehearsed structure gives the anxious part of your mind a job, which is the only management strategy it reliably responds to.",
       },
       {
         type: "heading",
@@ -9469,15 +9469,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A repeated failure in the same territory means the target is deeper than the behaviour, and it is time for two things. Run the pattern through the Five Whys honestly, the answer is usually a structural gap, not a character one. And talk to your instructors early, before the retest, not after. Students avoid this conversation because it feels like an admission. Instructors experience it the opposite way: the student who comes in with their evaluation sheet and a specific question is showing exactly the professional behaviour programs are trying to build, and that conversation routinely surfaces help, extra lab time, a different explanation, a practice partner, that suffering alone never finds.",
+        text: "A repeated failure in the same territory means the target is deeper than the behaviour, and it is time for two things. Run the pattern through the Five Whys honestly, the answer is usually a structural gap, not a character one. And talk to your instructors early, before the retest, not after. Students avoid this conversation because it feels like an admission. Instructors experience it the opposite way: the student who comes in with their evaluation sheet and a specific question is showing the professional behaviour programs are trying to build, and that conversation routinely surfaces help, extra lab time, a different explanation, a practice partner, that suffering alone never finds.",
       },
       {
         type: "heading",
-        text: "Where this goes wrong",
+        text: "How the two weeks get wasted",
       },
       {
         type: "paragraph",
-        text: "Reviewing the entire course out of anxiety, so the retest arrives with everything lightly touched and nothing repaired. Avoiding the failed skill until the retest forces the reunion. Hiding from instructors until after a second attempt, when the earlier conversation was the cheaper one. And letting one evaluation rewrite your whole trajectory, when the crossed-out targets on your running list are sitting right there as evidence that repaired weaknesses are what your record actually looks like.",
+        text: "Reviewing the entire course out of anxiety, so the retest arrives with everything lightly touched and nothing repaired. Avoiding the failed skill until the retest forces the reunion. Hiding from instructors until after a second attempt, when the earlier conversation was the cheaper one. Or letting one evaluation rewrite your whole trajectory, when the crossed-out targets on your running list are sitting right there as evidence that repaired weaknesses are what your record looks like.",
       },
     ],
     glossaryTerms: [
