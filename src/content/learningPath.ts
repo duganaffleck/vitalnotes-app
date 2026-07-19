@@ -160,6 +160,7 @@ export const learningPath: LearningPathCluster[] = [
       'five-whys-tool',
       'reflection-without-journaling-tool',
       'osce-reset',
+      'scenario-design-template',
     ],
     status: 'drafted',
   },

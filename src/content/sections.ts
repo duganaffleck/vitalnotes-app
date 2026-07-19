@@ -2428,7 +2428,8 @@ const sectionSeeds: SectionSeed[] = [
         "meaning-before-memorization",
         "types-of-notes-and-idea-maturation",
         "obsidian-for-learning-paramedicine",
-        "retrieval-and-spaced-learning"
+        "retrieval-and-spaced-learning",
+        "taking-notes-in-a-moving-lecture",
     ],
   },
   {
@@ -2956,7 +2957,8 @@ const sectionSeeds: SectionSeed[] = [
     relatedSections: [
         "smart-notes-for-paramedic-students",
         "obsidian-for-learning-paramedicine",
-        "retrieval-and-spaced-learning"
+        "retrieval-and-spaced-learning",
+        "taking-notes-in-a-moving-lecture",
     ],
   },
   {
@@ -3914,7 +3916,8 @@ const sectionSeeds: SectionSeed[] = [
         "types-of-notes-and-idea-maturation",
         "clinical-recall-without-trivia",
         "performance-under-pressure",
-        "reflection-without-journaling"
+        "reflection-without-journaling",
+        "practice-questions-that-teach",
     ],
   },
   {
@@ -4297,7 +4300,8 @@ const sectionSeeds: SectionSeed[] = [
         "clinical-reasoning",
         "performance-under-pressure",
         "reflection-without-journaling",
-        "turning-feedback-into-action"
+        "turning-feedback-into-action",
+        "studying-with-a-partner",
     ],
   },
   {
@@ -6033,7 +6037,8 @@ const sectionSeeds: SectionSeed[] = [
         "performance-under-pressure",
         "reflection-without-journaling",
         "the-five-whys",
-        "turning-feedback-into-action"
+        "turning-feedback-into-action",
+        "design-and-run-your-own-scenarios",
     ],
   },
   {
@@ -7062,7 +7067,8 @@ const sectionSeeds: SectionSeed[] = [
         "performance-under-pressure",
         "resetting-when-thinking-narrows",
         "reflection-without-journaling",
-        "turning-feedback-into-action"
+        "turning-feedback-into-action",
+        "mental-rehearsal-and-visualization",
     ],
   },
   {
@@ -7267,7 +7273,8 @@ const sectionSeeds: SectionSeed[] = [
         "avoiding-premature-closure",
         "resetting-when-thinking-narrows",
         "reflection-without-journaling",
-        "turning-feedback-into-action"
+        "turning-feedback-into-action",
+        "mental-rehearsal-and-visualization",
     ],
   },
   {
@@ -7798,7 +7805,8 @@ const sectionSeeds: SectionSeed[] = [
         "osce-preparation",
         "performance-under-pressure",
         "resetting-when-thinking-narrows",
-        "the-five-whys"
+        "the-five-whys",
+        "capturing-the-debrief",
     ],
   },
   {
@@ -8381,7 +8389,8 @@ const sectionSeeds: SectionSeed[] = [
         "scenario-days-as-learning-tools",
         "common-errors-and-what-they-reveal",
         "osce-preparation",
-        "resetting-when-thinking-narrows"
+        "resetting-when-thinking-narrows",
+        "capturing-the-debrief",
     ],
   },
   {

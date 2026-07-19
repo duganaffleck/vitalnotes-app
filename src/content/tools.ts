@@ -224,7 +224,8 @@ export const tools: Tool[] = [
       "smart-notes-for-paramedic-students",
       "understanding-before-memorizing",
       "retrieval-practice",
-      "cognitive-load"
+      "cognitive-load",
+      "taking-notes-in-a-moving-lecture",
     ],
     "relatedTools": [
       "clinical-recall-prompt-builder",
@@ -408,7 +409,8 @@ export const tools: Tool[] = [
       "retrieval-practice",
       "spaced-learning",
       "smart-notes-for-paramedic-students",
-      "osce-preparation"
+      "osce-preparation",
+      "practice-questions-that-teach",
     ],
     "relatedTools": [
       "smart-note-template",
@@ -629,7 +631,9 @@ export const tools: Tool[] = [
     "relatedSections": [
       "scenario-days-as-learning-tools",
       "turning-feedback-into-action",
-      "resetting-when-thinking-narrows"
+      "resetting-when-thinking-narrows",
+      "design-and-run-your-own-scenarios",
+      "capturing-the-debrief",
     ],
     "relatedTools": [
       "reflection-without-journaling-tool",
@@ -724,7 +728,8 @@ export const tools: Tool[] = [
       "osce-preparation",
       "performance-under-pressure",
       "resetting-when-thinking-narrows",
-      "clinical-reasoning"
+      "clinical-reasoning",
+      "mental-rehearsal-and-visualization",
     ],
     "relatedTools": [
       "reflection-without-journaling-tool",
@@ -846,7 +851,8 @@ export const tools: Tool[] = [
       "reflection-without-journaling",
       "turning-feedback-into-action",
       "the-five-whys",
-      "scenario-days-as-learning-tools"
+      "scenario-days-as-learning-tools",
+      "capturing-the-debrief",
     ],
     "relatedTools": [
       "scenario-day-reset",
@@ -971,13 +977,120 @@ export const tools: Tool[] = [
       "reflection-without-journaling",
       "turning-feedback-into-action",
       "common-errors-and-what-they-reveal",
-      "focused-practice-after-feedback"
+      "focused-practice-after-feedback",
+      "capturing-the-debrief",
     ],
     "relatedTools": [
       "reflection-without-journaling-tool",
       "clinical-reasoning-check"
     ]
-  }
+  },
+  {
+    "id": "scenario-design-template",
+    "title": "Scenario Design Template",
+    "status": "drafted",
+    "toolType": "template",
+    "purpose": "Build a one-page practice scenario around a single learning target, so a homemade case tests something specific instead of becoming a diagnosis guessing game.",
+    "whenToUse": "You and a practice partner are writing your own scenarios and want a case that runs cleanly, responds to care, and produces a debrief worth having.",
+        "fieldIntro": "Use these fields to build the case around one target. One page is the ceiling.",
+"whenNotToUse": [
+      "Do not use this to build formal evaluation scenarios. That is your instructor's job, with different requirements.",
+      "Do not stack complications. One target, one decision point.",
+      "Do not treat homemade cases as a replacement for instructor-led simulation."
+    ],
+    "steps": [
+      "Choose the learning target first. The case exists to serve it.",
+      "Write dispatch information, as vague or misleading as real dispatch can be.",
+      "Set the scene: where the patient is, who else is present, what is visible early.",
+      "Write the patient script: what they say, what they volunteer, what they hold back unless asked directly.",
+      "Write three vitals sets: arrival, response if care is appropriate, drift if care is delayed or misdirected.",
+      "Define the decision point: the moment the target should fire, and what the patient does to create it."
+    ],
+    "fields": [
+      {
+        "id": "learning-target",
+        "label": "Learning target",
+        "helperText": "The one behaviour this case is built to pull out and test. Chosen before anything else is written."
+      },
+      {
+        "id": "dispatch",
+        "label": "Dispatch information",
+        "helperText": "What the crew is told before arrival. Real dispatch is often incomplete. Yours can be too."
+      },
+      {
+        "id": "scene",
+        "label": "Scene",
+        "helperText": "Where the patient is, who else is there, and what is visible in the first ten seconds."
+      },
+      {
+        "id": "patient-script",
+        "label": "Patient script",
+        "helperText": "Who the patient is, what they say when asked, what they volunteer, and what stays hidden unless asked directly."
+      },
+      {
+        "id": "vitals-sets",
+        "label": "Vitals that change",
+        "helperText": "Three sets: arrival, improvement if treated appropriately, drift if treatment is delayed or the wrong problem gets chased."
+      },
+      {
+        "id": "decision-point",
+        "label": "Decision point",
+        "helperText": "The specific moment the learning target should fire, and what the patient does to create it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Compensating GI bleed",
+        "context": "Two students want a case that tests naming a transport decision before the vitals force it. They build it around a patient who never becomes dramatically unstable.",
+        "entries": [
+          {
+            "label": "Learning target",
+            "text": "Recognize a compensating patient and commit to a transport decision before the numbers make it obvious."
+          },
+          {
+            "label": "Dispatch information",
+            "text": "68-year-old male, weakness, nearly fainted in the bathroom. No further details available."
+          },
+          {
+            "label": "Scene",
+            "text": "Patient seated on the bathroom floor, pale, apologetic about the fuss. Spouse hovering in the doorway. She mentions two days of dark stools only if someone asks her directly."
+          },
+          {
+            "label": "Patient script",
+            "text": "Minimizes everything. Says he is just tired lately. Takes apixaban for atrial fibrillation but will only surface it if medications are asked about specifically. Denies pain of any kind."
+          },
+          {
+            "label": "Vitals that change",
+            "text": "Arrival: HR 104, BP 112/84, skin pale and cool. If a transport decision is made and the patient is kept supine: holds stable en route. If the crew stays on scene for an extended assessment: HR 118, BP 96/70, lightheaded with movement."
+          },
+          {
+            "label": "Decision point",
+            "text": "About four minutes in, once the skin findings, the anticoagulant, and the first vitals are all on the table. The risk is nameable there. The case never forces the decision with a crash. The test is whether the candidate commits before being pushed."
+          }
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Choosing the target after the case is written, which produces a scenario about a condition instead of a behaviour.",
+      "Building a gotcha, where the case is designed to trick and the debrief becomes a reveal.",
+      "Vitals that ignore what the candidate does. A patient who responds to care is what makes it a scenario instead of a quiz.",
+      "Adding a second complication because the first one felt too simple. Simple runs clean. Clean debriefs teach."
+    ],
+    "toolPointers": [
+      "Between runs, use the Scenario Day Reset to carry one adjustment into the next attempt.",
+      "If the same error pattern shows up across several homemade cases, take it to the Five Whys Tool."
+    ],
+    "relatedSections": [
+      "design-and-run-your-own-scenarios",
+      "scenario-days-as-learning-tools",
+      "clinical-reasoning",
+      "capturing-the-debrief"
+    ],
+    "relatedTools": [
+      "scenario-day-reset",
+      "five-whys-tool"
+    ]
+  },
 ]
 
 export const activeTools = tools.filter((tool) => tool.status === 'drafted')
