@@ -2031,6 +2031,22 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
+        text: "Working through the PCS documents themselves",
+      },
+      {
+        type: "paragraph",
+        text: "At some point the thinking has to meet the actual documents, and students consistently do this the hard way: opening the standards and reading front to back like a novel, retaining the first ten pages and a blur. The documents are references, structured for lookup, and studying them works better when it matches that structure.",
+      },
+      {
+        type: "paragraph",
+        text: "Take them one directive at a time, and run the same three questions this section has been building: what clinical job is this directive doing, what are its boundaries protecting against, and what has to be reassessed after acting on it. Write the answers as recall prompts, not summaries, because the exam question and the scenario moment will both arrive as a prompt, not as a request to summarize. The standards of care around the directives, the assessment and transport expectations that apply to everything, are easier to study by call type: pull up a chest pain call in your head and walk the standards that touch it, rather than reading the standards in the order the document lists them.",
+      },
+      {
+        type: "paragraph",
+        text: "One habit worth building early: always work from the current version your program points you to. Directives change, auxiliary standards get updated, and a study system built on last year's PDF is quietly practicing the wrong answers. Checking the version is a thirty-second habit that working paramedics keep for their whole career, so it may as well start now.",
+      },
+      {
+        type: "heading",
         text: "What confidence with directives actually looks like",
       },
       {
@@ -2255,6 +2271,31 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "That note is not a full asthma review. It is one clinical distinction made visible and retrievable, built around the moment where thinking breaks down instead of around the order the topic was originally taught.",
+      },
+      {
+        type: "heading",
+        text: "The finished note, in full",
+      },
+      {
+        type: "paragraph",
+        text: "Here is that note complete, exactly as it might sit in your system:",
+      },
+      {
+        type: "paragraph",
+        text: "Title: Quieter can mean worse in asthma",
+      },
+      {
+        type: "list",
+        items: [
+          "The claim: In a tiring asthmatic, decreasing wheeze can mean decreasing air movement, not improvement. Wheeze needs airflow to exist. A chest going quiet may be a chest running out of it.",
+          "The mechanism: Prolonged work of breathing exhausts the muscles doing it. As effort fails, less air moves, so there is less turbulence to hear, while the patient often looks calmer because they are depleted, not relieved.",
+          "What to check next time: After a bronchodilator, compare air movement and work of breathing against the baseline, not against how noisy the chest is. A calmer patient with less air entry is a warning, and it arrives before the saturation falls.",
+          "Connects to: oxygenation versus ventilation, fatigue as a deterioration sign, reassessment after intervention.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Read what that note is not doing. No definition of asthma, no drug list, no pathophysiology chapter. Four moves: a claim, the mechanism behind it, the behaviour it should trigger, and the ideas it touches. Future you can read it in twenty seconds during a study pass, and the whole thing points at one moment in one kind of call, which is what makes it retrievable when that moment arrives.",
       },
       {
         type: "heading",
@@ -8221,6 +8262,10 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
+        text: "If the engine here feels familiar, it should. Focused Practice After Feedback built the practice-design version of it, and Capturing the Debrief handles collecting the raw material before memory edits it. This section is about the translation step in the middle: turning a sentence someone said to you into a behaviour you can actually run.",
+      },
+      {
+        type: "paragraph",
         text: "That sounds obvious, but it is where many students get stuck. They receive feedback, agree with it, feel the weight of it, and then leave with a vague intention to do better next time. Vague intention is not a plan. It usually disappears as soon as the next scenario becomes noisy, the next lab day arrives, or the space between feedback and the next attempt fills up with other demands.",
       },
       {
@@ -9151,6 +9196,28 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
+        text: "A worked ladder: the BVM seal",
+      },
+      {
+        type: "paragraph",
+        text: "Here is what the whole progression looks like applied to one skill, in fifteen-minute sessions:",
+      },
+      {
+        type: "list",
+        items: [
+          "Sessions one and two: slow, spoken, blocked. Ten seals on a manikin, naming each step out loud, position, mask size, the E and the C, jaw lift into the mask rather than mask pressed into face. Speed does not matter yet.",
+          "Sessions three and four: blocked and quiet. The same ten repetitions without narration, refining one thing per rep, usually the hand that keeps drifting.",
+          "Sessions five and six: mixed conditions. Seals on the floor, on a bed, kneeling at the head of a stretcher, with a partner ventilating. The skill starts meeting the rooms it will actually live in.",
+          "Sessions seven and eight: interference on purpose. Hold the seal while answering questions, while giving a verbal report, against a timer. This is the stage most students skip and the one that makes the skill survive a call.",
+          "After that: maintenance. Ten reps weekly, and every few weeks, one recorded set watched back, since the drift in a seal is easier to see than to feel.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Eight short sessions, spread across three or four weeks, and the seal stops being something you think about. The same ladder fits a medication draw, a splint, or an extrication sequence. The stages are the point, not the skill.",
+      },
+      {
+        type: "heading",
         text: "Why skill practice stalls",
       },
       {
@@ -9504,6 +9571,23 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "Directives deserve their own retrieval stream, built the way Clinical Recall Without Trivia builds it: not the wording, but the clinical job, the boundary, and the reassessment that follows. An exam question about a directive is almost always a question about when and why, wearing the costume of what.",
+      },
+      {
+        type: "heading",
+        text: "A shape for the final three months",
+      },
+      {
+        type: "paragraph",
+        text: "The exact plan depends on your program's calendar, but the shape tends to look like this:",
+      },
+      {
+        type: "list",
+        items: [
+          "Three months out: begin weekly closed-book retrieval passes across the whole program, light and broad, and start question banks with the autopsy habit from day one.",
+          "Two months out: add the directive recall stream, and make the partner sessions weekly and closed-book. Misses should be getting named and tracked by kind now, not just counted.",
+          "One month out: shift to full-scope mixed question sets, watch where misses cluster, and rebuild those structures with a blank page rather than more questions.",
+          "Final two weeks: shrink the scope to the weak territory your tracking has exposed, add timed sets for pacing, and protect sleep like it is part of the study plan, because it is.",
+        ],
       },
       {
         type: "heading",
