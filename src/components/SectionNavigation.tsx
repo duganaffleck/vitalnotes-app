@@ -1,4 +1,5 @@
 import { getSectionById } from '../content/sections'
+import { orderedLearningPath } from '../content/learningPath'
 import type { Section } from '../content/types'
 
 type SectionNavigationProps = {
@@ -6,28 +7,29 @@ type SectionNavigationProps = {
   onNavigate: (hash: string) => void
 }
 
-const supportOnlySectionIds = new Set([
-  'obsidian-for-learning-paramedicine',
-  'anki-for-paramedic-learning',
-])
+// The navigable order is derived from the learning path itself, so new
+// sections and reordered clusters are picked up automatically. Sections not
+// wired into the path (support-only pages) get no prev/next chain.
+const pathOrder: string[] = orderedLearningPath.flatMap(
+  (cluster) => cluster.sections,
+)
 
-function getNavigableSection(
-  sectionId: string | undefined,
+function getNeighbour(
+  sectionId: string,
   direction: 'previous' | 'next',
 ): Section | undefined {
-  let candidate = sectionId ? getSectionById(sectionId) : undefined
-
-  while (candidate && supportOnlySectionIds.has(candidate.id)) {
-    const nextId = direction === 'previous' ? candidate.previous : candidate.next
-    candidate = nextId ? getSectionById(nextId) : undefined
+  const index = pathOrder.indexOf(sectionId)
+  if (index === -1) {
+    return undefined
   }
-
-  return candidate
+  const neighbourId =
+    direction === 'previous' ? pathOrder[index - 1] : pathOrder[index + 1]
+  return neighbourId ? getSectionById(neighbourId) : undefined
 }
 
 function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
-  const previousSection = getNavigableSection(section.previous, 'previous')
-  const nextSection = getNavigableSection(section.next, 'next')
+  const previousSection = getNeighbour(section.id, 'previous')
+  const nextSection = getNeighbour(section.id, 'next')
 
   return (
     <nav className="section-navigation" aria-label="Section navigation">

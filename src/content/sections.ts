@@ -54,7 +54,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is a guide for learning paramedicine in a way that holds up better when things are moving. It does not replace class, lab, placement, instructors, feedback, repetition, or the basic responsibility of doing the work. The goal is to make the work clearer, so effort has somewhere useful to go.",
+        text: "This is a guide for learning paramedicine in a way that holds up better in the middle of a call. It does not replace class, lab, placement, instructors, feedback, repetition, or the basic responsibility of doing the work. The goal is to make the work clearer, so effort has somewhere useful to go.",
       },
       {
         type: "heading",
@@ -308,7 +308,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "This is one of the most common problems in paramedic school. You review the material, understand it while studying, and then lose access to it when the scenario starts moving. That is not always a studying problem. It may mean your working memory is overloaded during the call, your recall has not been practiced far enough away from the notes, or your assessment structure is not yet stable enough to hold when communication, decision-making, and skills all compete for attention at the same time.",
+        text: "This is one of the most common problems in paramedic school. You review the material, understand it while studying, and then lose access to it once the scenario starts. That is not always a studying problem. It may mean your working memory is overloaded during the call, your recall has not been practiced far enough away from the notes, or your assessment structure is not yet stable enough to hold when communication, decision-making, and skills all compete for attention at the same time.",
       },
       {
         type: "paragraph",
@@ -1687,7 +1687,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Without a mechanism, every finding becomes a separate item to hold. Pulse, respiratory rate, blood pressure, skin, mental status, lung sounds, history, medications, scene context: each one competes for working memory while the call is moving. That load is significant. Under pressure it becomes harder to manage, and findings start to drop.",
+        text: "Without a mechanism, every finding becomes a separate item to hold. Pulse, respiratory rate, blood pressure, skin, mental status, lung sounds, history, medications, scene context: each one competes for working memory mid-call. That load is significant. Under pressure it becomes harder to manage, and findings start to drop.",
       },
       {
         type: "paragraph",
@@ -2039,7 +2039,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Take them one directive at a time, and run the same three questions this section has been building: what clinical job is this directive doing, what are its boundaries protecting against, and what has to be reassessed after acting on it. Write the answers as recall prompts, not summaries, because the exam question and the scenario moment will both arrive as a prompt, not as a request to summarize. The standards of care around the directives, the assessment and transport expectations that apply to everything, are easier to study by call type: pull up a chest pain call in your head and walk the standards that touch it, rather than reading the standards in the order the document lists them.",
+        text: "Take them one directive at a time, and run the same three questions this section has been building: what clinical job is this directive doing, what are its boundaries protecting against, and what has to be reassessed after acting on it. Write the answers as recall prompts, not summaries, because the exam question and the scenario moment will both arrive as a prompt, not as a request to summarize. The standards of care around the directives, the assessment and transport expectations that apply to everything, are easier to study by call type: pull up a seizure call in your head and walk the standards that touch it, rather than reading the standards in the order the document lists them.",
       },
       {
         type: "paragraph",
@@ -6029,7 +6029,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The first is a middle-aged man found at home, sitting in a chair and not responding normally. He is awake but confused, and his speech is slower than usual. His glucose is 5.9. There is no obvious trauma. The blood pressure is elevated. The student works through a careful assessment, documents findings, and asks detailed history questions. But the blood pressure has been elevated across two readings and the patient's mentation has not improved, and the student keeps assessing without naming a working concern or a transport priority.",
+        text: "The first is a middle-aged man found at home, sitting in a chair and not responding normally. He is awake but confused, and his speech is slower than usual. His glucose is 5.9. There is no obvious trauma. The blood pressure is elevated. The student works through a careful assessment, documents findings, and asks detailed history questions. But the blood pressure has been elevated across two readings and the patient's mentation has not improved, and the student keeps assessing without committing to a working concern or a transport priority.",
       },
       {
         type: "paragraph",
@@ -6143,7 +6143,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still moving. Scenario days expose that system. They show where understanding is usable under load and where it is still fragile. A common error is not something to excuse or to catastrophize. It is something to read carefully, because it usually points toward a specific and addressable gap.",
+        text: "In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still unfolding. Scenario days expose that system. They show where understanding is usable under load and where it is still fragile. A common error is not something to excuse or to catastrophize. It is something to read carefully, because it usually points toward a specific and addressable gap.",
       },
       {
         type: "heading",
@@ -6163,7 +6163,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A student might delay transport across different call types while waiting for a cleaner diagnosis. They might lose reassessment after interventions consistently, regardless of the presenting complaint. They might gather increasingly detailed history without naming the main concern, whatever the chief complaint is. They might recognize a familiar pattern and close early every time.",
+        text: "A student might delay transport across different call types while waiting for a cleaner diagnosis. They might lose reassessment after interventions consistently, regardless of the presenting complaint. They might gather increasingly detailed history without ever stating the main concern, whatever the chief complaint is. They might recognize a familiar pattern and close early every time.",
       },
       {
         type: "paragraph",
@@ -6191,7 +6191,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A delayed transport decision often reveals that the student is waiting for the call to become obvious before naming risk, when naming risk is exactly what should move the transport decision.",
+        text: "A delayed transport decision often reveals that the student is waiting for the call to become obvious before committing to a risk, when saying the risk out loud is exactly what should move the transport decision.",
       },
       {
         type: "paragraph",
@@ -6389,7 +6389,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The practice target is risk naming. The student needs to practise saying: \"I do not know exactly what this is yet, but the risk is high enough that my plan needs to change.\"",
+        text: "The practice target is committing to risk out loud. The student needs to practise saying: \"I do not know exactly what this is yet, but the risk is high enough that my plan needs to change.\"",
       },
       {
         type: "heading",
@@ -6517,7 +6517,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Not: \"I need to be less hesitant.\" Better: \"When a patient looks unwell and two consecutive vital sign sets trend in the same direction, I will name a working concern and a transport priority before the third reading.\"",
+        text: "Not: \"I need to be less hesitant.\" Better: \"When a patient looks unwell and two consecutive vital sign sets trend in the same direction, I will state a working concern and a transport priority before the third reading.\"",
       },
       {
         type: "paragraph",
@@ -7201,7 +7201,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Under stress, confidence often attaches to the most familiar response rather than the most appropriate one. A student can move efficiently through a pediatric respiratory call, sound clear and composed, and still miss the point at which the child's work of breathing crossed from manageable to urgent. They did not forget the signs of increased effort. They lost access to the structure that makes reassessment happen automatically after an intervention. The call was moving forward. The reasoning had narrowed.",
+        text: "Under stress, confidence often attaches to the most familiar response rather than the most appropriate one. A student can move efficiently through a pediatric respiratory call, sound clear and composed, and still miss the point at which the child's work of breathing crossed from manageable to urgent. They did not forget the signs of increased effort. They lost access to the structure that makes reassessment happen automatically after an intervention. The call pressed forward. The reasoning had narrowed.",
       },
       {
         type: "paragraph",
@@ -7229,7 +7229,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "A student who has lost structure under pressure keeps repeating the same assessment steps because repetition feels like progress. They are doing things. The call is moving. But the explanation is not being tested, and the breathing change has not been incorporated into the plan.",
+        text: "A student who has lost structure under pressure keeps repeating the same assessment steps because repetition feels like progress. They are doing things. The call is progressing. But the explanation is not being tested, and the breathing change has not been incorporated into the plan.",
       },
       {
         type: "paragraph",
@@ -7439,7 +7439,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The student does not notice the change. They are still focused on the rhythm. They ask about the patient's last dialysis again. They check the ECG once more. The call is moving, but it has become smaller than the patient.",
+        text: "The student does not notice the change. They are still focused on the rhythm. They ask about the patient's last dialysis again. They check the ECG once more. The call is advancing, but it has become smaller than the patient.",
       },
       {
         type: "paragraph",
@@ -8656,7 +8656,7 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "list",
         items: [
-          "Things the instructor says that are not on the slide. Especially the clinical asides: why they double-check a first blood pressure taken on a moving truck, what they actually look at first when they walk into a bedroom. Those sentences are the closest thing to placement experience a classroom offers, and they exist nowhere else.",
+          "Things the instructor says that are not on the slide. Especially the clinical asides: why they never trust the first oximeter reading on cold fingers, what they actually look at first when they walk into a bedroom. Those sentences are the closest thing to placement experience a classroom offers, and they exist nowhere else.",
           "Moments you did not understand. Mark them with a question mark and the topic, then keep listening. Do not try to resolve confusion in real time while the lecture continues without you.",
           "Connections to something you already know. An arrow and a few words: this links to the shock lecture, this is the same mechanism as last week's respiratory case. You are not writing the connection out. You are pinning it so it can be built later.",
         ],
