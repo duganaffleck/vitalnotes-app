@@ -123,23 +123,7 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "This guide is for students who are working hard and want the work to land somewhere.",
-      },
-      {
-        type: "heading",
-        text: "How to approach it",
-      },
-      {
-        type: "paragraph",
-        text: "You do not need to figure out the whole guide right away.",
-      },
-      {
-        type: "paragraph",
-        text: "VitalNotes can be read in order, but it can also be entered through the problem you are actually having. Where to Begin, at the end of this opening cluster, maps those entry points so you can start with whatever is going wrong right now.",
-      },
-      {
-        type: "paragraph",
-        text: "The next page will show you how to move through the guide without turning it into another thing you feel behind on.",
-      },
+      },
       {
         type: "heading",
         text: "What this guide is working on",
@@ -150,7 +134,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "The rest of the guide builds it one piece at a time.",
+        text: "The next two pages cover how to move through the guide and where to enter it. The rest builds that layer one piece at a time.",
       },
     ],
     glossaryTerms: [
@@ -282,19 +266,7 @@ const sectionSeeds: SectionSeed[] = [
       {
         type: "paragraph",
         text: "One section might change how you prepare before scenario days. One reflection structure might help you leave lab with a clearer next step instead of a long list of things that went wrong. One explanation might help you stop treating every missed reassessment as proof you are not cut out for this. That is what this guide is for.",
-      },
-      {
-        type: "heading",
-        text: "Where to start",
-      },
-      {
-        type: "paragraph",
-        text: "If you are not sure where to begin, read the first few sections in order. The opening material and the cognitive load section will give you language for why learning can feel harder in labs and scenarios than it does while studying. From there, move into notes, retrieval, meaning, and the sections that connect learning to performance.",
-      },
-      {
-        type: "paragraph",
-        text: "If you already know what is bothering you, go to the next page and choose a starting point from the problem you are actually experiencing.",
-      },
+      },
     ],
     glossaryTerms: [
         "cognitive-load",
