@@ -90,7 +90,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "You are not just learning directives. You are learning what each one is protecting when a patient is borderline, evolving, or messy, which is a different skill than reciting it back correctly on a quiz.",
+        text: "You are not just learning directives. You are learning what each one is protecting when the patient in front of you sits halfway between categories, which is a different skill than reciting it back correctly on a quiz.",
       },
       {
         type: "paragraph",
@@ -134,7 +134,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "VitalNotes can be read in order, but it can also be entered through the problem you are actually having. Some students will arrive here because scenarios keep falling apart. Some will come because OSCEs make them rush. Some will come because their notes are large, organized, and still not very useful.",
+        text: "VitalNotes can be read in order, but it can also be entered through the problem you are actually having. Where to Begin, at the end of this opening cluster, maps those entry points so you can start with whatever is going wrong right now.",
       },
       {
         type: "paragraph",
@@ -209,7 +209,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "If scenarios keep falling apart, you may not need the full tour right away. You may need cognitive load, retrieval, and how scenario days expose thinking under pressure. If your notes are large but not useful, you may need Smart Notes and the sections on building understanding. If OSCEs make you rush or freeze, you may need the performance and pressure sections before anything else.",
+        text: "If a specific problem brought you here, you do not need the full tour first. The next page, Where to Begin, exists for that job, matching the most common problems to the sections that address them.",
       },
       {
         type: "paragraph",
@@ -384,7 +384,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Directives feel heavy because they are tied to safety, scope, evaluation, and consequences. Many students respond by trying to memorize every line perfectly. The problem is that memorization alone can make students freeze when the patient is borderline, evolving, or not matching the clean version they expected. You know the threshold, but the patient's blood pressure is sitting right on it and they are getting worse.",
+        text: "Directives feel heavy because they are tied to safety, scope, evaluation, and consequences. Many students respond by trying to memorize every line perfectly. The problem is that memorization alone can make students freeze when the patient does not match the clean version they expected. You know the threshold, but the patient's blood pressure is sitting right on it and they are getting worse.",
       },
       {
         type: "paragraph",
@@ -785,7 +785,7 @@ const sectionSeeds: SectionSeed[] = [
     body: [
       {
         type: "paragraph",
-        text: "Some studying feels productive because the environment does most of the work.",
+        text: "Cognitive Load looked at what the room costs you. This section is about the studying itself, and why honest effort at a desk can still fail to build the kind of access the room demands. Some studying feels productive because the environment does most of the work.",
       },
       {
         type: "paragraph",
@@ -1022,7 +1022,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "That interpretation is understandable. It is also usually incomplete.",
+        text: "That interpretation is understandable. It is also usually incomplete. The previous two sections described the machinery: rooms that drain attention, and studying that builds recognition without access. Strain is often just what it feels like to live inside that machinery while it runs.",
       },
       {
         type: "paragraph",
@@ -9307,7 +9307,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Rarely, something is a genuine deviation from the standard you are being taught. Two things are true at once here. On the truck, you keep practicing and charting to your school's standard, because that is the standard you are evaluated against and the one your certification is built on. And if what you saw raises a real safety concern, that conversation belongs with your school's placement contact, handled quietly and factually, not with the preceptor mid-shift and not with your cohort's group chat. Holding your standard without prosecuting theirs is a professional skill, and placement is where you first get to practice it.",
+        text: "Rarely, something is a genuine deviation from the standard you are being taught. Two things are true at once here. On the truck, you keep practicing and documenting to your school's standard, because that is the standard you are evaluated against and the one your certification is built on. And if what you saw raises a real safety concern, that conversation belongs with your school's placement contact, handled quietly and factually, not with the preceptor mid-shift and not with your cohort's group chat. Holding your standard without prosecuting theirs is a professional skill, and placement is where you first get to practice it.",
       },
       {
         type: "heading",
@@ -9344,17 +9344,17 @@ const sectionSeeds: SectionSeed[] = [
   {
     id: "documentation-as-thinking",
     title: "Documentation as Thinking",
-    subtitle: "The chart is your reasoning, made visible.",
+    subtitle: "The ACR is your reasoning, made visible.",
     cluster: "11 Learn on the Truck",
     clusterOrder: 11,
     sectionOrder: 2,
-    studentProblem: "My PCRs come back covered in feedback. I write everything I can remember, and it is still somehow both too long and missing what matters.",
+    studentProblem: "My ACRs keep coming back with feedback. I write everything I can remember, and it is still somehow both too long and missing what matters.",
     sectionPurpose: "Reframe documentation as clinical reasoning made legible, and give students a practical way to build the skill.",
     pageType: "practice-support",
     body: [
       {
         type: "paragraph",
-        text: "Students are taught documentation as a compliance task, fill the fields, cover yourself, do not miss the times. That framing produces exactly the charts that come back covered in ink: long, chronological memory dumps that record everything and explain nothing. The reframe that fixes most of it is simple to say. A narrative is your clinical reasoning, made legible to someone who was not there. What you found, what you made of it, what you did about it, and what happened next, in an order a stranger can follow.",
+        text: "Students are taught documentation as a compliance task, fill the fields, cover yourself, do not miss the times. That framing produces the ACRs that come back needing corrections: long, chronological memory dumps that record everything and explain nothing. The reframe that fixes most of it is simple to say. A narrative is your clinical reasoning, made legible to someone who was not there. What you found, what you made of it, what you did about it, and what happened next, in an order a stranger can follow.",
       },
       {
         type: "heading",
@@ -9362,15 +9362,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "Every chart has at least four possible readers: the receiving nurse who has ninety seconds, a supervisor auditing the call, a lawyer years from now, and you, in a hearing, trying to reconstruct a call you no longer remember. All four need the same thing, and it is not more detail. It is your decision path. Findings, then your interpretation, then your action, then the patient's response. When a chart follows that skeleton, the reader can watch you think. When it follows the clock instead, the reader gets a diary and has to do your reasoning for you.",
+        text: "Every ACR has at least four possible readers: the receiving nurse who has ninety seconds, a supervisor auditing the call, a lawyer years from now, and you, in a hearing, trying to reconstruct a call you no longer remember. All four need the same thing, and it is not more detail. It is your decision path. Findings, then your interpretation, then your action, then the patient's response. When a report follows that skeleton, the reader can watch you think. When it follows the clock instead, the reader gets a diary and has to do your reasoning for you.",
       },
       {
         type: "paragraph",
-        text: "Pertinent negatives are where this becomes real. Charting the absence that ruled something out, no chest pain with exertion, no neuro deficits on exam, no medication changes this month, is not padding. Each one is a decision made visible, proof that you considered a path and had a reason to close it. A chart with the right negatives reads like reasoning. A chart without them reads like luck.",
+        text: "Pertinent negatives are where this becomes real. Charting the absence that ruled something out, no chest pain with exertion, no neuro deficits on exam, no medication changes this month, is not padding. Each one is a decision made visible, proof that you considered a path and had a reason to close it. A report with the right negatives reads like reasoning. One without them reads like luck.",
       },
       {
         type: "heading",
-        text: "The refusal is the chart that matters most",
+        text: "The refusal is the ACR that matters most",
       },
       {
         type: "paragraph",
@@ -9378,7 +9378,7 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "heading",
-        text: "The patch is a spoken chart",
+        text: "The patch is a spoken report",
       },
       {
         type: "paragraph",
@@ -9390,15 +9390,15 @@ const sectionSeeds: SectionSeed[] = [
       },
       {
         type: "paragraph",
-        text: "One narrative per week, deliberately. Take a scenario you ran, at school or on shift, and write it as a full chart, then get one person with experience to mark it, an instructor, a preceptor, anyone who reads charts for a living. Keep the marked copies. The red ink on your own charts is the cheapest, most personalized documentation course that exists, and the pattern in it across a semester, the same weakness surfacing in different calls, is your curriculum. Most students never see the pattern because they treat each marked chart as a wound instead of a data point.",
+        text: "One narrative per week, deliberately. Take a scenario you ran, at school or on shift, and write it as a full ACR, then get one person with experience to review it, an instructor, a preceptor, anyone who reads call reports for a living. Keep every reviewed copy. The feedback on your own reports is the cheapest, most personalized documentation course that exists, and the pattern in it across a semester, the same weakness surfacing in different calls, is your curriculum. Most students never see the pattern because they treat each reviewed report as a wound instead of a data point.",
       },
       {
         type: "heading",
-        text: "Why charts come back covered in ink",
+        text: "Why ACRs come back with feedback",
       },
       {
         type: "paragraph",
-        text: "Chronological memory dumps that record the call minute by minute and never once show a decision. Charting judgments instead of findings, patient appeared fine is a conclusion, alert, skin warm and dry, walking without assistance is evidence. Copying a preceptor's shorthand before understanding what it stands for, which produces charts you cannot defend. Or treating feedback ink as failure, when a heavily marked chart from someone who took the time to mark it is one of the few pieces of teaching in the program aimed directly at you.",
+        text: "Chronological memory dumps that record the call minute by minute and never once show a decision. Charting judgments instead of findings, patient appeared fine is a conclusion, alert, skin warm and dry, walking without assistance is evidence. Copying a preceptor's shorthand before understanding what it stands for, which produces reports you cannot defend. Or treating reviewer feedback as failure, when a thoroughly reviewed ACR from someone who took the time to go through it is one of the few pieces of teaching in the program aimed directly at you.",
       },
     ],
     glossaryTerms: [

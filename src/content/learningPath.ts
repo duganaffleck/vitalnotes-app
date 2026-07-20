@@ -172,7 +172,7 @@ export const learningPath: LearningPathCluster[] = [
     title: '11 Learn on the Truck',
     order: 11,
     purpose:
-      'Carry the learning system into placement: real calls, a preceptor, and charts that show your thinking.',
+      'Carry the learning system into placement: real calls, a preceptor, and ACRs that show your thinking.',
     sections: [
       'learning-during-placement',
       'working-with-your-preceptor',
