@@ -1,3 +1,4 @@
+import { companionApps } from '../content/companionApps'
 import type { BodyBlock } from '../content/types'
 
 type SectionBodyProps = {
@@ -36,6 +37,23 @@ function SectionBody({ body }: SectionBodyProps) {
                 <li key={`${block.type}-${index}-${itemIndex}`}>{item}</li>
               ))}
             </ul>
+          )
+        }
+
+        if (block.type === 'companion') {
+          const app = companionApps[block.app]
+          return (
+            <aside
+              className="companion-callout"
+              key={`${block.type}-${index}`}
+              aria-label={`Companion app: ${app.name}`}
+            >
+              <span className="companion-callout-label">Companion app · {app.name}</span>
+              <p>{block.text}</p>
+              <a href={app.url} target="_blank" rel="noopener noreferrer">
+                {app.action}
+              </a>
+            </aside>
           )
         }
 

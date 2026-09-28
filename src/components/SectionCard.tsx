@@ -17,7 +17,9 @@ function SectionCard({ section, onNavigate }: SectionCardProps) {
         onNavigate(sectionHash)
       }}
     >
-      <p className="cluster-label">{section.cluster}</p>
+      <p className="cluster-label">
+        {section.chapter ? `Chapter ${section.chapter}` : section.cluster}
+      </p>
       <h3>{section.title}</h3>
       <p>{section.subtitle}</p>
       <span className="section-card-action">Read this section</span>

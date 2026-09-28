@@ -10,34 +10,28 @@ type ToolGroup = {
 
 const toolGroups: ToolGroup[] = [
   {
-    title: 'Understanding',
+    title: 'Field tools',
     purpose:
-      'Start here when a directive or concept feels unclear, or when an idea is becoming clear enough to keep and develop.',
-    toolIds: ['directive-meaning-check', 'smart-note-template'],
+      "The six tools from the book. Each one exists because a common student problem kept surviving ordinary advice. Use a tool when it changes the next attempt, and leave it alone when it doesn't.",
+    toolIds: [
+      'next-attempt-debrief',
+      'reset-card',
+      'directive-decision-map',
+      'cue-to-care-recall-card',
+      'skill-breakdown-sheet',
+      'scenario-run-sheet',
+    ],
   },
   {
-    title: 'Recall',
+    title: 'More tools',
     purpose:
-      'Use this when knowledge needs to show up during scenarios, not just look familiar during review.',
-    toolIds: ['clinical-recall-prompt-builder'],
-  },
-  {
-    title: 'Clinical thinking',
-    purpose:
-      'Use this when your first impression may have become too narrow, too confident, or hard to update.',
-    toolIds: ['clinical-reasoning-check'],
-  },
-  {
-    title: 'Practice and performance',
-    purpose:
-      'Use these during scenario days and OSCE prep, especially when feedback needs to become one clear adjustment.',
-    toolIds: ['scenario-design-template', 'scenario-day-reset', 'osce-reset'],
-  },
-  {
-    title: 'Reflection and improvement',
-    purpose:
-      'Use these after rough scenarios, repeated mistakes, and feedback that needs to become one clear change.',
-    toolIds: ['reflection-without-journaling-tool', 'five-whys-tool'],
+      "Tools from earlier versions of VitalNotes that the book doesn't include. They pair with the extra pages at the end of the Learning Path.",
+    toolIds: [
+      'smart-note-template',
+      'clinical-reasoning-check',
+      'reflection-without-journaling-tool',
+      'five-whys-tool',
+    ],
   },
 ]
 
@@ -198,10 +192,11 @@ function Tools() {
         <p className="eyebrow">Tools Library</p>
         <h1>Use a tool when you need a next step.</h1>
         <p>
-          These are small working aids for moments when reading is not quite
-          enough. Start with Understanding when something feels unclear, then
-          move toward Recall, Clinical thinking, Practice and performance, or
-          Reflection and improvement depending on the problem in front of you.
+          These pages aren't a second lab manual. The Next-Attempt Debrief will
+          probably see the most use; the others are for more occasional jobs.
+          Don't record patient names, addresses, health-card numbers, exact
+          dates of birth, or other identifying information from real calls or
+          placement.
         </p>
       </header>
 

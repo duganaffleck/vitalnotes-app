@@ -1,190 +1,198 @@
+// Generated from the VitalNotes book (v8.5) adaptation. Edit here, or rerun the build script.
 import type { LearningPathCluster } from './types'
 
 export const learningPath: LearningPathCluster[] = [
   {
-    id: 'start-here',
-    title: '00 Start Here',
-    order: 0,
-    purpose:
-      'Begin with what VitalNotes is for, how the guide is arranged, and where to start.',
-    sections: [
-      'start-here-what-vitalnotes-is',
-      'how-to-use-this-guide',
-      'where-to-begin',
+    "id": "start-here",
+    "title": "Start Here",
+    "order": 0,
+    "purpose": "Begin with where VitalNotes came from, how the guide is arranged, and where to start.",
+    "sections": [
+      "preface",
+      "introduction"
     ],
-    relatedTools: [],
-    status: 'drafted',
+    "relatedTools": [
+      "reset-card"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'why-learning-feels-hard',
-    title: '01 Why Learning Feels Hard',
-    order: 1,
-    purpose:
-      'Look at why studying can feel familiar but still become difficult in lab, scenarios, or OSCEs.',
-    sections: [
-      'cognitive-load',
-      'why-studying-feels-productive-but-fails-under-pressure',
-      'learning-strain-is-not-always-a-personal-problem',
+    "id": "part-one",
+    "title": "Part One: Why Learning Feels Hard",
+    "order": 1,
+    "purpose": "Look at why studying can feel familiar but still become difficult in lab, scenarios, or OSCEs.",
+    "sections": [
+      "cognitive-load",
+      "why-studying-feels-productive-but-fails-under-pressure",
+      "learning-strain-is-not-always-a-personal-problem"
     ],
-    relatedTools: [],
-    status: 'drafted',
+    "relatedTools": [
+      "reset-card",
+      "next-attempt-debrief"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'build-understanding',
-    title: '03 Build Understanding',
-    order: 3,
-    purpose:
-      'Work on connecting facts, physiology, and directives so they make more sense during patient assessment.',
-    sections: [
-      'meaning-before-memorization',
-      'pathophysiology-through-patterns',
-      'directives-through-purpose',
+    "id": "part-two",
+    "title": "Part Two: Do the Work",
+    "order": 2,
+    "purpose": "Run the actual week of learning: notes captured live, partners used properly, practice questions that teach, and a schedule with room for all of it.",
+    "sections": [
+      "taking-notes-in-a-moving-lecture",
+      "studying-with-a-partner",
+      "practice-questions-that-teach",
+      "the-week-around-the-work",
+      "training-your-hands"
     ],
-    relatedTools: ['directive-meaning-check'],
-    status: 'drafted',
+    "relatedTools": [
+      "skill-breakdown-sheet"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'build-usable-notes',
-    title: '04 Build Usable Notes',
-    order: 4,
-    purpose:
-      'Build notes that explain what matters and give you something useful to return to after class or lab.',
-    sections: [
-      'smart-notes-for-paramedic-students',
-      'types-of-notes-and-idea-maturation',
+    "id": "part-three",
+    "title": "Part Three: Build Understanding",
+    "order": 3,
+    "purpose": "Connect facts, physiology, and patient care standards so they remain useful when the patient doesn't match the version from class.",
+    "sections": [
+      "meaning-before-memorization",
+      "pathophysiology-through-patterns",
+      "learning-the-patient-care-standards"
     ],
-    relatedTools: ['smart-note-template'],
-    status: 'drafted',
+    "relatedTools": [
+      "directive-decision-map"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'build-recall',
-    title: '05 Build Recall',
-    order: 5,
-    purpose:
-      'Practise recall in a way that connects to calls, not just definitions or isolated facts.',
-    sections: [
-      'retrieval-and-spaced-learning',
-      'clinical-recall-without-trivia',
-      'preparing-for-the-aemca',
+    "id": "part-four",
+    "title": "Part Four: Build Notes and Recall",
+    "order": 4,
+    "purpose": "Develop notes worth keeping, then practise retrieving them after the original cues are gone.",
+    "sections": [
+      "from-capture-to-smart-note",
+      "retrieval-and-spaced-learning",
+      "clinical-recall-without-trivia",
+      "preparing-for-the-aemca"
     ],
-    relatedTools: ['clinical-recall-prompt-builder'],
-    status: 'drafted',
+    "relatedTools": [
+      "cue-to-care-recall-card"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'think-clinically',
-    title: '06 Think Clinically',
-    order: 6,
-    purpose:
-      'Use incomplete information more carefully, especially when an early impression feels convincing.',
-    sections: [
-      'clinical-reasoning',
-      'pattern-recognition',
-      'avoiding-premature-closure',
+    "id": "part-five",
+    "title": "Part Five: Think Clinically",
+    "order": 5,
+    "purpose": "Use incomplete information carefully, especially when an early impression feels convincing.",
+    "sections": [
+      "clinical-reasoning",
+      "pattern-recognition",
+      "avoiding-premature-closure"
     ],
-    relatedTools: ['clinical-reasoning-check'],
-    status: 'drafted',
+    "relatedTools": [],
+    "status": "drafted"
   },
   {
-    id: 'practice-better',
-    title: '07 Practice Better',
-    order: 7,
-    purpose:
-      'Use scenarios, common errors, and feedback to choose a smaller and clearer adjustment for next time.',
-    sections: [
-      'scenario-days-as-learning-tools',
-      'common-errors-and-what-they-reveal',
-      'focused-practice-after-feedback',
+    "id": "part-six",
+    "title": "Part Six: Practise and Perform",
+    "order": 6,
+    "purpose": "Use simulation, feedback, pressure, and recovery to make important behaviours more reliable.",
+    "sections": [
+      "from-scenario-to-practice-target",
+      "osce-preparation-and-pressure-practice",
+      "resetting-when-thinking-narrows"
     ],
-    relatedTools: ['scenario-day-reset', 'five-whys-tool'],
-    status: 'drafted',
+    "relatedTools": [
+      "next-attempt-debrief",
+      "reset-card"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'perform-under-pressure',
-    title: '08 Perform Under Pressure',
-    order: 8,
-    purpose:
-      'Prepare for the moments when being watched, timed, or evaluated makes familiar skills harder to access.',
-    sections: [
-      'osce-preparation',
-      'performance-under-pressure',
-      'resetting-when-thinking-narrows',
+    "id": "part-seven",
+    "title": "Part Seven: Reflect and Improve",
+    "order": 7,
+    "purpose": "Take the lesson without turning one performance into a verdict about yourself.",
+    "sections": [
+      "reflection-without-rumination",
+      "after-you-fail-something"
     ],
-    relatedTools: ['osce-reset'],
-    status: 'drafted',
+    "relatedTools": [
+      "next-attempt-debrief",
+      "reset-card"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'reflect-and-improve',
-    title: '09 Reflect and Improve',
-    order: 9,
-    purpose:
-      'Use feedback and difficult performances without turning every mistake into a long personal debrief.',
-    sections: [
-      'reflection-without-journaling',
-      'the-five-whys',
-      'turning-feedback-into-action',
-      'after-you-fail-something',
+    "id": "part-eight",
+    "title": "Part Eight: Practise Like It Is Real",
+    "order": 8,
+    "purpose": "Build targeted scenarios and mental rehearsal that create extra repetitions beyond scheduled lab time.",
+    "sections": [
+      "design-and-run-your-own-scenarios",
+      "mental-rehearsal-and-visualization"
     ],
-    relatedTools: [
-      'reflection-without-journaling-tool',
-      'five-whys-tool',
-      'clinical-reasoning-check',
+    "relatedTools": [
+      "scenario-run-sheet",
+      "next-attempt-debrief",
+      "reset-card"
     ],
-    status: 'drafted',
+    "status": "drafted"
   },
   {
-    id: 'do-the-work',
-    title: '02 Do the Work',
-    order: 2,
-    purpose:
-      'Run the actual week of learning: notes captured live, partners used properly, practice questions that teach, and a schedule with room for all of it.',
-    sections: [
-      'taking-notes-in-a-moving-lecture',
-      'studying-with-a-partner',
-      'practice-questions-that-teach',
-      'the-week-around-the-work',
-      'training-your-hands',
+    "id": "part-nine",
+    "title": "Part Nine: Learn on the Truck",
+    "order": 9,
+    "purpose": "Use placement to notice, ask, document, and improve without expecting yourself to be fully formed.",
+    "sections": [
+      "learning-during-placement",
+      "working-with-your-preceptor",
+      "documentation-as-thinking"
     ],
-    relatedTools: ['smart-note-template', 'clinical-recall-prompt-builder'],
-    status: 'drafted',
+    "relatedTools": [
+      "next-attempt-debrief"
+    ],
+    "status": "drafted"
   },
   {
-    id: 'practice-like-its-real',
-    title: "10 Practice Like It's Real",
-    order: 10,
-    purpose:
-      'Build practice volume you control: self-designed scenarios, mental rehearsal, and debrief capture that survives past the drive home.',
-    sections: [
-      'design-and-run-your-own-scenarios',
-      'mental-rehearsal-and-visualization',
-      'capturing-the-debrief',
+    "id": "conclusion",
+    "title": "Conclusion",
+    "order": 10,
+    "purpose": "Where the guide stops and the work carries on.",
+    "sections": [
+      "conclusion"
     ],
-    relatedTools: [
-      'scenario-day-reset',
-      'five-whys-tool',
-      'reflection-without-journaling-tool',
-      'osce-reset',
-      'scenario-design-template',
-    ],
-    status: 'drafted',
+    "relatedTools": [],
+    "status": "drafted"
   },
   {
-    id: 'learn-on-the-truck',
-    title: '11 Learn on the Truck',
-    order: 11,
-    purpose:
-      'Carry the learning system into placement: real calls, a preceptor, and ACRs that show your thinking.',
-    sections: [
-      'learning-during-placement',
-      'working-with-your-preceptor',
-      'documentation-as-thinking',
+    "id": "more",
+    "title": "More From VitalNotes",
+    "order": 11,
+    "purpose": "Extra pages that go further on feedback, debriefs, note types and study software. They aren't in the book.",
+    "sections": [
+      "types-of-notes-and-idea-maturation",
+      "common-errors-and-what-they-reveal",
+      "focused-practice-after-feedback",
+      "performance-under-pressure",
+      "the-five-whys",
+      "turning-feedback-into-action",
+      "capturing-the-debrief",
+      "obsidian-for-learning-paramedicine",
+      "anki-for-paramedic-learning"
     ],
-    relatedTools: [
-      'reflection-without-journaling-tool',
-      'five-whys-tool',
-      'clinical-reasoning-check',
+    "relatedTools": [
+      "smart-note-template",
+      "reset-card",
+      "five-whys-tool",
+      "reflection-without-journaling-tool",
+      "clinical-reasoning-check",
+      "cue-to-care-recall-card"
     ],
-    status: 'drafted',
-  },
+    "status": "drafted",
+    "extra": true
+  }
 ]
 
 export const orderedLearningPath = [...learningPath].sort(

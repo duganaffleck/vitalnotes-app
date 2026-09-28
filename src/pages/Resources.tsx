@@ -179,7 +179,7 @@ function Resources({ onNavigate }: ResourcesProps) {
           <div>
             <h2>What VitalNotes Is Built From</h2>
             <p>
-              VitalNotes is shaped by learning science, expertise research, clinical reasoning, simulation education, and Ontario paramedic standards. These sources are listed for transparency, not as required reading.
+              VitalNotes is a practical guide, but its central learning claims draw from established research on cognitive load, retrieval, spacing, deliberate practice, simulation, feedback, mental rehearsal, and reflection. Their application to Ontario paramedic education is the author's interpretation, informed by teaching, field experience, and student feedback. The field tools are practical adaptations developed for VitalNotes; they are not validated assessment instruments.
             </p>
           </div>
         </div>
