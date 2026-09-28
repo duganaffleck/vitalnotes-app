@@ -6,6 +6,10 @@ type SectionHeaderProps = {
 }
 
 function getSectionPositionLabel(section: Section) {
+  if (section.chapter) {
+    return `${section.cluster} · Chapter ${section.chapter}`
+  }
+
   const cluster = learningPath.find((item) => item.title === section.cluster)
 
   if (!cluster) {

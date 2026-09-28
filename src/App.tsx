@@ -9,6 +9,7 @@ import ScenarioGenerator from './pages/ScenarioGenerator'
 import Resources from './pages/Resources'
 import About from './pages/About'
 import { firstSection, getSectionById } from './content/sections'
+import { sectionRedirects } from './content/redirects'
 
 type AppRoute = {
   page:
@@ -42,7 +43,7 @@ function parseHash(): AppRoute {
     return { page: 'glossary' }
   }
 
-  if (hash === '/scenario-generator') {
+  if (hash === '/scenario-generator' || hash === '/practice-apps') {
     return { page: 'scenario-generator' }
   }
 
@@ -55,7 +56,8 @@ function parseHash(): AppRoute {
   }
 
   if (hash.startsWith('/section/')) {
-    const sectionId = hash.replace('/section/', '')
+    const requested = hash.replace('/section/', '')
+    const sectionId = sectionRedirects[requested] ?? requested
     return { page: 'section', sectionId }
   }
 

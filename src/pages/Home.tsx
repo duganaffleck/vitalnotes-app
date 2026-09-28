@@ -6,11 +6,12 @@ function Home({ onNavigate }: HomeProps) {
   return (
     <section className="page-stack">
       <div className="hero-card">
-        <p className="eyebrow">VitalNotes</p>
-        <h1>A guide for studying paramedicine when more review is not enough.</h1>
+        <p className="eyebrow">Learning how to learn paramedicine</p>
+        <h1>For the gap between studying and performing.</h1>
         <p>
-          VitalNotes helps paramedic students build the kind of learning that
-          holds up in lab, scenarios, OSCEs, and early clinical practice.
+          VitalNotes is a learning guide for Ontario Primary Care Paramedic
+          students. Read it in order, or go directly to the problem in front of
+          you. Use a field tool when it gives the next attempt a clearer job.
         </p>
 
         <div className="hero-actions">
@@ -20,6 +21,13 @@ function Home({ onNavigate }: HomeProps) {
             onClick={() => onNavigate('#/learning-path')}
           >
             Open the Learning Path
+          </button>
+          <button
+            type="button"
+            className="card-action-button"
+            onClick={() => onNavigate('#/section/introduction')}
+          >
+            Where to begin
           </button>
         </div>
       </div>
@@ -42,11 +50,10 @@ function Home({ onNavigate }: HomeProps) {
         </article>
 
         <article className="info-card">
-          <h2>If you need a next step.</h2>
+          <h2>If feedback needs to become a change.</h2>
           <p>
-            Use the Tools page when a section makes sense, but you need a small
-            structure for notes, recall, clinical reasoning, practice, or
-            feedback.
+            The six field tools each do one job. The Next-Attempt Debrief turns
+            feedback into one observable change you can test on the next call.
           </p>
           <button
             type="button"
@@ -66,9 +73,9 @@ function Home({ onNavigate }: HomeProps) {
           <button
             type="button"
             className="card-action-button"
-            onClick={() => onNavigate('#/section/reflection-without-journaling')}
+            onClick={() => onNavigate('#/section/reflection-without-rumination')}
           >
-            Read Reflection Without Journaling
+            Read Reflection Without Rumination
           </button>
         </article>
       </div>

@@ -2166,3 +2166,307 @@ body {
     line-height: 1.24;
   }
 }
+
+/* ==========================================================================
+   Family alignment with the Scenario Generator and ACR Review
+   Same teal, same type, same header band, so the three apps read as one family.
+   ========================================================================== */
+
+:root {
+  --vn-teal: #0d8b8b;
+  --vn-teal-deep: #0a6e72;
+  --vn-teal-soft: rgba(13, 139, 139, 0.12);
+  --vn-teal-soft-strong: rgba(13, 139, 139, 0.18);
+  --vn-focus: rgba(13, 139, 139, 0.32);
+  --vn-button-start: #0d8b8b;
+  --vn-button-end: #0a6e72;
+  --vn-font-heading: "Manrope", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --vn-page-bg:
+    radial-gradient(circle at 12% 10%, rgba(242, 140, 40, 0.12), transparent 30rem),
+    radial-gradient(circle at 88% 4%, rgba(40, 124, 122, 0.08), transparent 28rem),
+    linear-gradient(180deg, #fbfaf6 0%, #f7f3ea 58%, #f2eee6 100%);
+  --vn-hero-bg: linear-gradient(138deg, rgba(18, 48, 71, 0.95), rgba(10, 110, 114, 0.92));
+  --vn-hero-border: rgba(211, 234, 238, 0.45);
+  --vn-hero-shadow: 0 14px 38px rgba(18, 48, 71, 0.25);
+  --vn-hero-after: radial-gradient(circle, rgba(242, 140, 40, 0.36) 0%, rgba(242, 140, 40, 0) 72%);
+  --vn-badge-text: #dbeff2;
+  --vn-badge-bg: rgba(255, 255, 255, 0.11);
+  --vn-badge-border: rgba(235, 248, 250, 0.32);
+  --vn-hero-heading: #f6fbfc;
+  --vn-hero-copy: #d5e9ee;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--vn-font-heading);
+  letter-spacing: -0.02em;
+}
+
+.site-shell {
+  padding: 1rem 1rem 0;
+}
+
+.brand-hero {
+  position: relative;
+  z-index: 1;
+  width: min(1320px, 100%);
+  margin: 0 auto;
+  padding: 0.82rem 1rem 0.9rem;
+  border-radius: 18px;
+  background: var(--vn-hero-bg);
+  border: 1px solid var(--vn-hero-border);
+  box-shadow: var(--vn-hero-shadow);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.brand-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -28% -58% auto;
+  width: 420px;
+  height: 220px;
+  background: var(--vn-hero-after);
+  pointer-events: none;
+}
+
+.brand-hero-topline {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.62rem;
+  border: 1px solid var(--vn-badge-border);
+  border-radius: 999px;
+  background: var(--vn-badge-bg);
+  color: var(--vn-badge-text);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-family {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.brand-family-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.28rem 0.72rem;
+  border: 1px solid var(--vn-badge-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 6px 14px rgba(18, 48, 71, 0.2);
+  color: var(--vn-badge-text);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease;
+}
+
+.brand-family-link:hover,
+.brand-family-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.brand-family-link[aria-current="page"] {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.brand-heading-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.82rem;
+  align-items: center;
+  margin-top: 0.4rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+}
+
+.brand-title {
+  display: block;
+  color: var(--vn-hero-heading);
+  font-family: var(--vn-font-heading);
+  font-size: clamp(1.36rem, 2vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.brand-tagline {
+  display: block;
+  margin-top: 0.26rem;
+  color: var(--vn-hero-copy);
+  font-size: 0.97rem;
+}
+
+.brand-hero .site-nav {
+  position: relative;
+  z-index: 1;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 0.8rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(226, 240, 244, 0.22);
+}
+
+.brand-hero .nav-link {
+  min-height: 34px;
+  padding: 0.32rem 0.85rem;
+  border: 1px solid rgba(226, 240, 244, 0.34);
+  background: rgba(244, 251, 252, 0.1);
+  box-shadow: none;
+  color: #eef8fb;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.brand-hero .nav-link:hover {
+  border-color: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.brand-hero .nav-link.active {
+  border-color: rgba(242, 140, 40, 0.85);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: inset 0 -2px 0 var(--vn-orange);
+  color: var(--vn-heading-text);
+}
+
+/* Companion app callout inside a section */
+.companion-callout {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1.4rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(13, 139, 139, 0.28);
+  border-left: 4px solid var(--vn-teal);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(223, 240, 245, 0.72), rgba(255, 255, 255, 0.9));
+}
+
+.companion-callout-label {
+  color: var(--vn-teal-deep);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-body .companion-callout p {
+  margin: 0;
+}
+
+.companion-callout a {
+  justify-self: start;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--vn-button-start), var(--vn-button-end));
+  box-shadow: 0 8px 16px rgba(10, 110, 114, 0.22);
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.companion-callout a:hover,
+.companion-callout a:focus-visible {
+  filter: brightness(1.06);
+  outline: 2px solid var(--vn-focus);
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .site-shell {
+    padding: 0.62rem 0.62rem 0;
+  }
+
+  .brand-hero {
+    padding: 0.72rem;
+    border-radius: 14px;
+  }
+
+  .brand-hero-topline {
+    align-items: flex-start;
+  }
+
+  .brand-family-link {
+    min-height: 30px;
+    padding: 0.24rem 0.58rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .brand-heading-row {
+    gap: 0.65rem;
+    align-items: start;
+  }
+
+  .brand-tagline {
+    font-size: 0.9rem;
+  }
+
+  /* One swipeable row of pages instead of a wrapped stack */
+  .brand-hero .site-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-inline: -0.72rem;
+    padding-inline: 0.72rem;
+    scrollbar-width: none;
+  }
+
+  .brand-hero .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brand-hero .nav-link {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-hero-topline {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

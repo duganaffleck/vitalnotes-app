@@ -8,9 +8,11 @@ The site must remain calm, readable, deliberate, practical, and content-driven.
 
 ## Source of Truth
 
-The Obsidian vault remains the source of truth.
+The book is the source of truth: VitalNotes: Learning How to Learn Paramedicine, version 8.5 (August 2026).
+The site carries app-sized versions of its chapters: the same ideas in the same order, the book's own
+wording, lightly tightened for phone reading. Nothing clinical is added that the book doesn't say.
 
-Reference files are stored in:
+The Obsidian vault is still where drafting happens. Older reference files are in:
 
 - project-context/obsidian-source/
 - project-context/site-readiness/
@@ -27,41 +29,52 @@ The site currently includes:
 
 - Home page
 - Learning Path page
-- Section Reader page
+- Section Reader page (chapters show their part and chapter number)
 - Tools Library page
 - Glossary page
+- Practice Apps page (Scenario Generator and ACR Review)
+- Resources page (sources follow the book's Appendix C)
 - previous and next section navigation
-- related sections
-- related tools
-- glossary support
-- tool drawer support
-- expandable tool examples
+- related sections, related tools, glossary support, tool drawers, expandable tool examples
+- companion blocks in a section body (type "companion"), linking to the Scenario Generator or ACR Review
 
-Current completed learning path clusters:
+Learning path, following the book:
 
-- 00 Start Here
-- 01 Why Learning Feels Hard
-- 02 Do the Work
-- 03 Build Understanding
-- 04 Build Usable Notes
-- 05 Build Recall
-- 06 Think Clinically
-- 07 Practice Better
-- 08 Perform Under Pressure
-- 09 Reflect and Improve
-- 10 Practice Like It's Real
-- 11 Learn on the Truck
+- Start Here: Preface, Introduction
+- Part One: Why Learning Feels Hard (Chapters 1 to 3)
+- Part Two: Do the Work (4 to 8)
+- Part Three: Build Understanding (9 to 11)
+- Part Four: Build Notes and Recall (12 to 15)
+- Part Five: Think Clinically (16 to 18)
+- Part Six: Practise and Perform (19 to 21)
+- Part Seven: Reflect and Improve (22 and 23)
+- Part Eight: Practise Like It Is Real (24 and 25)
+- Part Nine: Learn on the Truck (26 to 28)
+- Conclusion
+- More From VitalNotes: pages from earlier versions of the site that the book doesn't include. They run as
+  their own chain and are marked `extra: true` in learningPath.ts.
 
-Current active tools:
+Field tools (the book's Appendix A):
 
-- Directive Meaning Check
-- Smart Note Template
-- Clinical Recall Prompt Builder
-- Scenario Day Reset
-- OSCE Reset
-- Reflection Without Journaling Tool
-- Five Whys Tool
-- Clinical Reasoning Check
+- Next-Attempt Debrief
+- Reset Card
+- Directive Decision Map
+- Cue-to-Care Recall Card
+- Skill Breakdown Sheet
+- Scenario Run Sheet
+
+The Appendix A pages have no text layer in the PDF proof, so these tools were built from how the chapters
+describe them. Replace them with the book's exact pages when a text copy is available.
+
+More tools (from earlier versions, not in the book): Smart Note Template, Clinical Reasoning Check,
+Reflection Without Journaling Tool, Five Whys Tool.
+
+Old page ids redirect to their replacements through src/content/redirects.ts, so saved links keep working.
+
+## Family look
+
+VitalNotes shares its header band, teal and type with the Scenario Generator and ACR Review
+(scenario-generator repo). Keep them in step when one changes.
 
 ## Do Not Add Without Explicit Approval
 
@@ -155,6 +168,8 @@ Preserve the approved learning path.
 Do not rename approved sections, clusters, tools, or glossary terms without explicit approval.
 
 Keep related links useful and restrained on the site. Deeper linking belongs in Obsidian.
+
+All content files carry a header saying they were generated from the book adaptation. They are ordinary TypeScript now; edit them directly.
 
 ## Rendering notes
 

@@ -13,10 +13,11 @@ function LearningPath({ onNavigate }: LearningPathProps) {
         <p className="eyebrow">Learning Path</p>
         <h1>Start with the first problem, then build from there.</h1>
         <p>
-          The guide begins with why studying can feel solid until lab gets
-          messy. From there, it moves into understanding, notes, recall,
-          clinical reasoning, scenario practice, OSCE pressure, and what to do
-          with feedback afterward.
+          The guide follows the book: nine parts, from why studying can feel
+          solid until lab gets messy, through understanding, notes, recall,
+          clinical reasoning, practice and reflection, to learning on the
+          truck. A few extra pages from earlier versions of VitalNotes sit at
+          the end.
         </p>
       </header>
 

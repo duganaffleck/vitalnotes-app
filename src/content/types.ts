@@ -23,6 +23,13 @@ export type BodyBlock =
       type: 'list'
       items: string[]
     }
+  | {
+      type: 'companion'
+      app: CompanionAppId
+      text: string
+    }
+
+export type CompanionAppId = 'scenario-generator' | 'acr-review'
 
 export type Section = {
   id: string
@@ -41,6 +48,7 @@ export type Section = {
   relatedSections: string[]
   previous: string
   next: string
+  chapter?: number
 }
 
 export type GlossaryTerm = {
@@ -49,6 +57,7 @@ export type GlossaryTerm = {
   shortDefinition: string
   paramedicRelevance: string
   relatedSections: string[]
+  source?: 'book' | 'app'
 }
 
 export type ToolField = {
@@ -84,6 +93,7 @@ export type Tool = {
   relatedTools?: string[]
   toolPointers?: string[]
   relatedSections: string[]
+  collection?: 'field' | 'more'
 }
 
 export type LearningPathCluster = {
@@ -94,4 +104,5 @@ export type LearningPathCluster = {
   sections: string[]
   relatedTools: string[]
   status: SectionStatus
+  extra?: boolean
 }

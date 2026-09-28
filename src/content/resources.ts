@@ -50,7 +50,7 @@ export const resourcesBridgeCard: ResourceCard = {
   id: 'tools-page-pointer',
   title: 'Looking for the learning tools?',
   body: [
-    'The Tools page is where you find the tools built into the site: Smart Notes, Five Whys, Clinical Reasoning Check, OSCE Reset, and related learning tools.',
+    'The Tools page is where you find the tools built into the site: the six field tools from the book, such as the Next-Attempt Debrief and the Reset Card, plus a few more.',
     'This page is different. Resources is for external setup, companion systems, and source transparency.',
   ],
   link: {
@@ -65,7 +65,7 @@ export const resourceSections: ResourceSection[] = [
     id: 'obsidian',
     title: 'Obsidian',
     intro: [
-      'Smart Notes for Paramedic Students treats notes as thinking tools rather than storage. Obsidian is one place to build that system. You do not need it, but if you want a digital setup that supports linked thinking and idea maturation, this page gives you a starting point.',
+      'From Capture to Smart Note treats notes as thinking tools rather than storage. Obsidian is one place to build that system. You do not need it, but if you want a digital setup that supports linked thinking and idea maturation, this page gives you a starting point.',
       'Obsidian is a note-taking app for building connected understanding. In VitalNotes, it is used as a thinking space, not a filing cabinet.',
       'You do not need to build a perfect vault before it becomes useful. The first goal is simple: create a place where your own explanations can grow, connect, and become easier to return to before labs, scenarios, and OSCEs.',
     ],
@@ -284,6 +284,20 @@ export const relatedSystemCards: ResourceCard[] = [
     accent: 'orange',
   },
   {
+    id: 'acr-review',
+    title: 'ACR Review',
+    body: [
+      'ACR Review is the Scenario Generator\'s documentation partner. Chart a practice call on the Practice ACR, upload it, and get feedback on what to fix first.',
+      'It checks the chart against the documentation standards and against the scenario it came from. It is for practice charts from lab only, never a real call or placement.',
+    ],
+    link: {
+      label: 'Open ACR Review',
+      href: 'https://scenario-generator-ten.vercel.app/#acr-review',
+      external: true,
+    },
+    accent: 'orange',
+  },
+  {
     id: 'glossary',
     title: 'Glossary',
     body: [
@@ -298,115 +312,176 @@ export const relatedSystemCards: ResourceCard[] = [
   },
 ]
 
+// From the book's Appendix C: Research and Further Reading.
 export const sourceCategories: SourceCategory[] = [
   {
-    id: 'learning-science-memory',
-    title: 'Learning science and memory',
-    items: [
+    "id": "cognitive-load",
+    "title": "Cognitive load and instructional design",
+    "items": [
       {
-        title: 'Make It Stick',
-        author: 'Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel',
+        "title": "Cognitive load during problem solving: Effects on learning. Cognitive Science, 12(2), 257–285.",
+        "author": "Sweller, J. (1988)"
       },
       {
-        title: 'How We Learn',
-        author: 'Stanislas Dehaene',
+        "title": "Cognitive load theory in health professional education: Design principles and strategies. Medical Education, 44(1), 85–93.",
+        "author": "van Merriënboer, J. J. G., & Sweller, J. (2010)"
       },
       {
-        title: 'Understanding How We Learn',
-        author: 'Yana Weinstein, Megan Sumeracki, and Oliver Caviglioli',
-      },
-      {
-        title: 'The Science of Learning',
-        author: 'Deans for Impact',
-      },
-      {
-        title: 'Cognitive Load Theory',
-        author: 'John Sweller and related cognitive load research',
-      },
-    ],
+        "title": "Cognitive load theory: Implications for medical education: AMEE Guide No. 86. Medical Teacher, 36(5), 371–384.",
+        "author": "Young, J. Q., Van Merriënboer, J., Durning, S., & ten Cate, O. (2014)"
+      }
+    ]
   },
   {
-    id: 'notes-attention-knowledge',
-    title: 'Notes, attention, and knowledge building',
-    items: [
+    "id": "retrieval-spacing",
+    "title": "Retrieval practice and spacing",
+    "items": [
       {
-        title: 'How to Take Smart Notes',
-        author: 'Sönke Ahrens',
+        "title": "Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354–380.",
+        "author": "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006)"
       },
       {
-        title: 'Deep Work',
-        author: 'Cal Newport',
+        "title": "Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. Psychological Science in the Public Interest, 14(1), 4–58.",
+        "author": "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013)"
       },
       {
-        title: 'The Pleasures of Reading in an Age of Distraction',
-        author: 'Alan Jacobs',
+        "title": "Retrieval practice produces more learning than elaborative studying with concept mapping. Science, 331(6018), 772–775.",
+        "author": "Karpicke, J. D., & Blunt, J. R. (2011)"
       },
       {
-        title: 'Do Nothing',
-        author: 'Celeste Headlee',
+        "title": "Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+        "author": "Roediger, H. L., III, & Karpicke, J. D. (2006)"
       },
-    ],
+      {
+        "title": "Systematic review of distributed practice and retrieval practice in health professions education. Advances in Health Sciences Education, 29(2), 689–714.",
+        "author": "Trumble, E., Lodge, J., Mandrusiak, A., & Forbes, R. (2024)"
+      }
+    ]
   },
   {
-    id: 'thinking-adaptability-expertise',
-    title: 'Thinking, adaptability, and expertise',
-    items: [
+    "id": "deliberate-practice",
+    "title": "Deliberate practice, simulation, and skill development",
+    "items": [
       {
-        title: 'Peak',
-        author: 'Anders Ericsson and Robert Pool',
+        "title": "Avoiding surgical skill decay: A systematic review on the spacing of training sessions. Journal of Surgical Education, 75(2), 471–480.",
+        "author": "Cecilio-Fernandes, D., Cnossen, F., Jaarsma, D. A. D. C., & Tio, R. A. (2018)"
       },
       {
-        title: 'Range',
-        author: 'David Epstein',
+        "title": "Technology-enhanced simulation for health professions education: A systematic review and meta-analysis. JAMA, 306(9), 978–988.",
+        "author": "Cook, D. A., Hatala, R., Brydges, R., Zendejas, B., Szostek, J. H., Wang, A. T., Erwin, P. J., & Hamstra, S. J. (2011)"
       },
       {
-        title: 'Think Again',
-        author: 'Adam Grant',
+        "title": "The role of deliberate practice in the acquisition of expert performance. Psychological Review, 100(3), 363–406.",
+        "author": "Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993)"
       },
       {
-        title: 'Blink',
-        author: 'Malcolm Gladwell',
+        "title": "Does simulation-based medical education with deliberate practice yield better results than traditional clinical education? A meta-analytic comparative review of the evidence. Academic Medicine, 86(6), 706–711.",
+        "author": "McGaghie, W. C., Issenberg, S. B., Cohen, E. R., Barsuk, J. H., & Wayne, D. B. (2011)"
       },
       {
-        title: 'Expertise and decision-making research',
-        author: 'Research area',
-      },
-      {
-        title: 'Stress performance research',
-        author: 'Research area',
-      },
-      {
-        title: 'Simulation-based education research',
-        author: 'Research area',
-      },
-    ],
+        "title": "Rapid cycle deliberate practice in medical education: A systematic review. Cureus, 9(4), e1180.",
+        "author": "Taras, J., & Everett, T. (2017)"
+      }
+    ]
   },
   {
-    id: 'ontario-paramedic-practice',
-    title: 'Ontario paramedic practice',
-    items: [
+    "id": "rehearsal-feedback-reflection",
+    "title": "Mental rehearsal, feedback, and reflection",
+    "items": [
       {
-        title: 'Ontario Basic Life Support Patient Care Standards',
-        author: 'Ontario practice document',
+        "title": "Does mental practice enhance performance? Journal of Applied Psychology, 79(4), 481–492.",
+        "author": "Driskell, J. E., Copper, C., & Moran, A. (1994)"
       },
       {
-        title: 'Ontario Advanced Life Support Patient Care Standards',
-        author: 'Ontario practice document',
+        "title": "The power of feedback. Review of Educational Research, 77(1), 81–112.",
+        "author": "Hattie, J., & Timperley, H. (2007)"
       },
       {
-        title: 'PESP standards and paramedic practice references',
-        author: 'Paramedic practice reference',
+        "title": "Effects of reflective practice on the accuracy of medical diagnoses. Medical Education, 42(5), 468–475.",
+        "author": "Mamede, S., Schmidt, H. G., & Penaforte, J. C. (2008)"
       },
       {
-        title: 'Ontario medical directives and clinical practice guidance',
-        author: 'Clinical practice guidance',
-      },
-      {
-        title: 'Simulation and OSCE-based education literature',
-        author: 'Education research area',
-      },
-    ],
+        "title": "Deliberate reflection and clinical reasoning: Founding ideas and empirical findings. Medical Education, 57(1), 76–85.",
+        "author": "Mamede, S., & Schmidt, H. G. (2023)"
+      }
+    ]
   },
+  {
+    "id": "further-reading",
+    "title": "Accessible further reading",
+    "items": [
+      {
+        "title": "How to take smart notes: One simple technique to boost writing, learning and thinking (2nd rev. & expanded ed.). Independently published.",
+        "author": "Ahrens, S. (2022)"
+      },
+      {
+        "title": "Make it stick: The science of successful learning. Belknap Press of Harvard University Press.",
+        "author": "Brown, P. C., Roediger, H. L., III, & McDaniel, M. A. (2014)"
+      },
+      {
+        "title": "The cognitive autopsy: A root cause analysis of medical decision making. Oxford University Press.",
+        "author": "Croskerry, P. (2020)"
+      },
+      {
+        "title": "How we learn: Why brains learn better than any machine ... for now. Viking.",
+        "author": "Dehaene, S. (2020)"
+      },
+      {
+        "title": "Peak: Secrets from the new science of expertise. Houghton Mifflin Harcourt.",
+        "author": "Ericsson, A., & Pool, R. (2016)"
+      },
+      {
+        "title": "Thinking, fast and slow. Farrar, Straus and Giroux.",
+        "author": "Kahneman, D. (2011)"
+      },
+      {
+        "title": "Sources of power: How people make decisions. MIT Press.",
+        "author": "Klein, G. (1998)"
+      },
+      {
+        "title": "Understanding how we learn: A visual guide. Routledge.",
+        "author": "Weinstein, Y., Sumeracki, M., & Caviglioli, O. (2018)"
+      }
+    ]
+  },
+  {
+    "id": "ontario-references",
+    "title": "Ontario paramedic practice references (checked August 2, 2026)",
+    "items": [
+      {
+        "title": "Advanced life support patient care standards (Version 5.4).",
+        "author": "Ontario Ministry of Health (2025)"
+      },
+      {
+        "title": "Basic life support patient care standards (Version 3.4).",
+        "author": "Ontario Ministry of Health (2023)"
+      },
+      {
+        "title": "Ontario ambulance documentation standards (Version 4.0).",
+        "author": "Ontario Ministry of Health (2025)"
+      },
+      {
+        "title": "Ambulance call report completion manual (Version 3.0).",
+        "author": "Ontario Ministry of Health and Long-Term Care (2017)"
+      },
+      {
+        "title": "Patient care and transportation standards (Version 3.0).",
+        "author": "Ontario Ministry of Health (2026)"
+      },
+      {
+        "title": "Prehospital emergency care syllabus (Version 3.0).",
+        "author": "Ontario Ministry of Health (2023)"
+      },
+      {
+        "title": "Paramedic practice documents; Certification and patient care standards; Exam dates and applications. Ontario.ca.",
+        "author": "Ontario Ministry of Health (n.d.)"
+      },
+      {
+        "title": "Paramedic Emergency Skills Program: Managing birth out-of-hospital.",
+        "author": "Association of Ontario Midwives & Ontario Base Hospital Group (n.d.)"
+      }
+    ]
+  }
 ]
 
 export const standardsLink: ResourceLink = {

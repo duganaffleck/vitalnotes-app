@@ -10,14 +10,19 @@ type SectionNavigationProps = {
 // The navigable order is derived from the learning path itself, so new
 // sections and reordered clusters are picked up automatically. Sections not
 // wired into the path (support-only pages) get no prev/next chain.
-const pathOrder: string[] = orderedLearningPath.flatMap(
-  (cluster) => cluster.sections,
-)
+// The book runs as one chain; the extra pages run as their own chain after it.
+const mainOrder: string[] = orderedLearningPath
+  .filter((cluster) => !cluster.extra)
+  .flatMap((cluster) => cluster.sections)
+const extraOrder: string[] = orderedLearningPath
+  .filter((cluster) => cluster.extra)
+  .flatMap((cluster) => cluster.sections)
 
 function getNeighbour(
   sectionId: string,
   direction: 'previous' | 'next',
 ): Section | undefined {
+  const pathOrder = mainOrder.includes(sectionId) ? mainOrder : extraOrder
   const index = pathOrder.indexOf(sectionId)
   if (index === -1) {
     return undefined
