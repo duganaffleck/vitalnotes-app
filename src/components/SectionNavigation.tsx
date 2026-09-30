@@ -36,7 +36,25 @@ function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
   const previousSection = getNeighbour(section.id, 'previous')
   const nextSection = getNeighbour(section.id, 'next')
 
+  const endOfGuide = !nextSection && mainOrder.includes(section.id)
+
   return (
+    <>
+    {endOfGuide && (
+      <aside className="companion-callout guide-end" aria-label="Where to go from here">
+        <span className="companion-callout-label">Where to go from here</span>
+        <p>
+          The field tools are the parts of the guide you take into lab and onto the truck. The practice apps give you
+          cases to run and charts to check. More From VitalNotes keeps the older pages on notes, feedback, Anki and
+          Obsidian.
+        </p>
+        <div className="guide-end-links">
+          <a href="#/tools">Field tools</a>
+          <a href="#/practice-apps">Practice apps</a>
+          {extraOrder[0] && <a href={`#/section/${extraOrder[0]}`}>More From VitalNotes</a>}
+        </div>
+      </aside>
+    )}
     <nav className="section-navigation" aria-label="Section navigation">
       {previousSection ? (
         <button
@@ -74,6 +92,7 @@ function SectionNavigation({ section, onNavigate }: SectionNavigationProps) {
         </button>
       )}
     </nav>
+    </>
   )
 }
 

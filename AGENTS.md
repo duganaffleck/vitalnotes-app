@@ -36,7 +36,11 @@ The site currently includes:
 - Resources page (sources follow the book's Appendix C)
 - previous and next section navigation
 - related sections, related tools, glossary support, tool drawers, expandable tool examples
-- companion blocks in a section body (type "companion"), linking to the Scenario Generator or ACR Review
+- companion blocks in a section body (type "companion"), linking to the Scenario Generator or ACR Review.
+  Optional `query` opens the Scenario Generator already set up (it reads semester, type, environment,
+  complexity and focus from the link) and optional `action` changes the button label. Chapters 16 to 18
+  use this for "Practise this chapter".
+- an end-of-guide card after the Conclusion, pointing to the field tools, the practice apps and the extras
 
 Learning path, following the book:
 

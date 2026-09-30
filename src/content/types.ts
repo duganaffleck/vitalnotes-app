@@ -27,6 +27,10 @@ export type BodyBlock =
       type: 'companion'
       app: CompanionAppId
       text: string
+      /** Query string that opens the app already set up, e.g. complexity=Complex&focus=... */
+      query?: string
+      /** Button label when it differs from the app's usual one */
+      action?: string
     }
 
 export type CompanionAppId = 'scenario-generator' | 'acr-review'

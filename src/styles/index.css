@@ -2402,6 +2402,11 @@ h3 {
   text-decoration: none;
 }
 
+.guide-end { margin: 0 0 1rem; }
+.guide-end p { margin: 0; line-height: 1.6; }
+.guide-end-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.guide-end-links a { justify-self: auto; }
+
 .companion-callout a:hover,
 .companion-callout a:focus-visible {
   filter: brightness(1.06);

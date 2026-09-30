@@ -42,6 +42,10 @@ function SectionBody({ body }: SectionBodyProps) {
 
         if (block.type === 'companion') {
           const app = companionApps[block.app]
+          const [base, hash = ''] = app.url.split('#')
+          const href = block.query
+            ? `${base}?${block.query}${hash ? `#${hash}` : ''}`
+            : app.url
           return (
             <aside
               className="companion-callout"
@@ -50,8 +54,8 @@ function SectionBody({ body }: SectionBodyProps) {
             >
               <span className="companion-callout-label">Companion app · {app.name}</span>
               <p>{block.text}</p>
-              <a href={app.url} target="_blank" rel="noopener noreferrer">
-                {app.action}
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {block.action ?? app.action}
               </a>
             </aside>
           )

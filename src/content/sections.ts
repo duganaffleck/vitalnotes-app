@@ -1,6 +1,7 @@
 // Generated from the VitalNotes book (v8.5) adaptation. Edit here, or rerun the build script.
 import type { Section } from './types'
 
+// previous and next follow each chain: the book, then the extra pages on their own.
 export const sections: Section[] = ([
   {
     "id": "preface",
@@ -98,7 +99,9 @@ export const sections: Section[] = ([
       "learning-strain-is-not-always-a-personal-problem",
       "learning-the-patient-care-standards",
       "cognitive-load"
-    ]
+    ],
+    "previous": "",
+    "next": "introduction"
   },
   {
     "id": "introduction",
@@ -205,7 +208,9 @@ export const sections: Section[] = ([
       "why-studying-feels-productive-but-fails-under-pressure",
       "from-scenario-to-practice-target",
       "retrieval-and-spaced-learning"
-    ]
+    ],
+    "previous": "preface",
+    "next": "cognitive-load"
   },
   {
     "id": "cognitive-load",
@@ -303,7 +308,8 @@ export const sections: Section[] = ([
       "reassessment"
     ],
     "relatedTools": [
-      "reset-card"
+      "reset-card",
+      "skill-breakdown-sheet"
     ],
     "relatedSections": [
       "resetting-when-thinking-narrows",
@@ -311,7 +317,9 @@ export const sections: Section[] = ([
       "why-studying-feels-productive-but-fails-under-pressure",
       "from-scenario-to-practice-target"
     ],
-    "chapter": 1
+    "chapter": 1,
+    "previous": "introduction",
+    "next": "why-studying-feels-productive-but-fails-under-pressure"
   },
   {
     "id": "why-studying-feels-productive-but-fails-under-pressure",
@@ -410,7 +418,9 @@ export const sections: Section[] = ([
       "meaning-before-memorization",
       "studying-with-a-partner"
     ],
-    "chapter": 2
+    "chapter": 2,
+    "previous": "cognitive-load",
+    "next": "learning-strain-is-not-always-a-personal-problem"
   },
   {
     "id": "learning-strain-is-not-always-a-personal-problem",
@@ -511,7 +521,9 @@ export const sections: Section[] = ([
       "reflection-without-rumination",
       "retrieval-and-spaced-learning"
     ],
-    "chapter": 3
+    "chapter": 3,
+    "previous": "why-studying-feels-productive-but-fails-under-pressure",
+    "next": "taking-notes-in-a-moving-lecture"
   },
   {
     "id": "taking-notes-in-a-moving-lecture",
@@ -599,13 +611,17 @@ export const sections: Section[] = ([
       "working-notes",
       "working-memory"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "smart-note-template"
+    ],
     "relatedSections": [
       "from-capture-to-smart-note",
       "the-week-around-the-work",
       "studying-with-a-partner"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "previous": "learning-strain-is-not-always-a-personal-problem",
+    "next": "studying-with-a-partner"
   },
   {
     "id": "studying-with-a-partner",
@@ -696,12 +712,14 @@ export const sections: Section[] = ([
       "learning-the-patient-care-standards",
       "the-week-around-the-work"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "previous": "taking-notes-in-a-moving-lecture",
+    "next": "practice-questions-that-teach"
   },
   {
     "id": "practice-questions-that-teach",
     "title": "Practice Questions That Teach",
-    "subtitle": "Use each answer to learn what happened, not only whether it was right.",
+    "subtitle": "Let each answer show what happened, not only whether it was right.",
     "cluster": "Part Two: Do the Work",
     "clusterOrder": 2,
     "sectionOrder": 2,
@@ -793,7 +811,9 @@ export const sections: Section[] = ([
       "studying-with-a-partner",
       "clinical-recall-without-trivia"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "previous": "studying-with-a-partner",
+    "next": "the-week-around-the-work"
   },
   {
     "id": "the-week-around-the-work",
@@ -891,7 +911,9 @@ export const sections: Section[] = ([
       "practice-questions-that-teach",
       "learning-strain-is-not-always-a-personal-problem"
     ],
-    "chapter": 7
+    "chapter": 7,
+    "previous": "practice-questions-that-teach",
+    "next": "training-your-hands"
   },
   {
     "id": "training-your-hands",
@@ -1018,7 +1040,9 @@ export const sections: Section[] = ([
       "mental-rehearsal-and-visualization",
       "studying-with-a-partner"
     ],
-    "chapter": 8
+    "chapter": 8,
+    "previous": "the-week-around-the-work",
+    "next": "meaning-before-memorization"
   },
   {
     "id": "meaning-before-memorization",
@@ -1114,19 +1138,23 @@ export const sections: Section[] = ([
       "recall",
       "reassessment"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "smart-note-template"
+    ],
     "relatedSections": [
       "pathophysiology-through-patterns",
       "learning-the-patient-care-standards",
       "clinical-recall-without-trivia",
       "pattern-recognition"
     ],
-    "chapter": 9
+    "chapter": 9,
+    "previous": "training-your-hands",
+    "next": "pathophysiology-through-patterns"
   },
   {
     "id": "pathophysiology-through-patterns",
     "title": "Pathophysiology Through Patterns",
-    "subtitle": "Use physiology to organize assessment before the diagnosis is clear.",
+    "subtitle": "Organize the assessment around physiology before the diagnosis is clear.",
     "cluster": "Part Three: Build Understanding",
     "clusterOrder": 3,
     "sectionOrder": 1,
@@ -1237,14 +1265,18 @@ export const sections: Section[] = ([
       "reassessment",
       "directive-boundary"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "directive-decision-map"
+    ],
     "relatedSections": [
       "learning-the-patient-care-standards",
       "meaning-before-memorization",
       "clinical-reasoning",
       "avoiding-premature-closure"
     ],
-    "chapter": 10
+    "chapter": 10,
+    "previous": "meaning-before-memorization",
+    "next": "learning-the-patient-care-standards"
   },
   {
     "id": "learning-the-patient-care-standards",
@@ -1424,7 +1456,8 @@ export const sections: Section[] = ([
       "retrieval-practice"
     ],
     "relatedTools": [
-      "directive-decision-map"
+      "directive-decision-map",
+      "scenario-run-sheet"
     ],
     "relatedSections": [
       "clinical-recall-without-trivia",
@@ -1432,7 +1465,9 @@ export const sections: Section[] = ([
       "clinical-reasoning",
       "retrieval-and-spaced-learning"
     ],
-    "chapter": 11
+    "chapter": 11,
+    "previous": "pathophysiology-through-patterns",
+    "next": "from-capture-to-smart-note"
   },
   {
     "id": "from-capture-to-smart-note",
@@ -1626,7 +1661,9 @@ export const sections: Section[] = ([
       "taking-notes-in-a-moving-lecture",
       "meaning-before-memorization"
     ],
-    "chapter": 12
+    "chapter": 12,
+    "previous": "learning-the-patient-care-standards",
+    "next": "retrieval-and-spaced-learning"
   },
   {
     "id": "retrieval-and-spaced-learning",
@@ -1722,14 +1759,18 @@ export const sections: Section[] = ([
       "recall",
       "recognition"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "cue-to-care-recall-card"
+    ],
     "relatedSections": [
       "clinical-recall-without-trivia",
       "from-capture-to-smart-note",
       "why-studying-feels-productive-but-fails-under-pressure",
       "preparing-for-the-aemca"
     ],
-    "chapter": 13
+    "chapter": 13,
+    "previous": "from-capture-to-smart-note",
+    "next": "clinical-recall-without-trivia"
   },
   {
     "id": "clinical-recall-without-trivia",
@@ -1845,7 +1886,8 @@ export const sections: Section[] = ([
       "reassessment"
     ],
     "relatedTools": [
-      "cue-to-care-recall-card"
+      "cue-to-care-recall-card",
+      "directive-decision-map"
     ],
     "relatedSections": [
       "clinical-reasoning",
@@ -1853,7 +1895,9 @@ export const sections: Section[] = ([
       "retrieval-and-spaced-learning",
       "learning-the-patient-care-standards"
     ],
-    "chapter": 14
+    "chapter": 14,
+    "previous": "retrieval-and-spaced-learning",
+    "next": "preparing-for-the-aemca"
   },
   {
     "id": "preparing-for-the-aemca",
@@ -1961,7 +2005,9 @@ export const sections: Section[] = ([
       "clinical-recall-without-trivia",
       "retrieval-and-spaced-learning"
     ],
-    "chapter": 15
+    "chapter": 15,
+    "previous": "clinical-recall-without-trivia",
+    "next": "clinical-reasoning"
   },
   {
     "id": "clinical-reasoning",
@@ -2082,6 +2128,13 @@ export const sections: Section[] = ([
       {
         "type": "paragraph",
         "text": "This should take seconds, not become a second assessment. Even a rough answer is useful. If you cannot name any working concern, that tells you where the assessment needs to focus next."
+      },
+      {
+        "type": "companion",
+        "app": "scenario-generator",
+        "text": "Practise this chapter: a complex case where the first explanation is reasonable and a later finding should change it. Say your working explanation out loud at each reassessment.",
+        "query": "complexity=Complex&focus=Give+the+crew+a+reasonable+first+explanation+early%2C+then+make+a+finding+at+the+second+set+of+vitals+that+should+change+the+working+diagnosis.",
+        "action": "Generate a practice case"
       }
     ],
     "glossaryTerms": [
@@ -2090,14 +2143,18 @@ export const sections: Section[] = ([
       "reassessment",
       "cue"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "clinical-reasoning-check"
+    ],
     "relatedSections": [
       "pattern-recognition",
       "avoiding-premature-closure",
       "pathophysiology-through-patterns",
       "clinical-recall-without-trivia"
     ],
-    "chapter": 16
+    "chapter": 16,
+    "previous": "preparing-for-the-aemca",
+    "next": "pattern-recognition"
   },
   {
     "id": "pattern-recognition",
@@ -2173,6 +2230,13 @@ export const sections: Section[] = ([
       {
         "type": "paragraph",
         "text": "That statement gives the team both the concern and the reason for acting on it. The first impression did its job by giving the assessment somewhere to start. It stops being useful when later findings are forced to fit it simply because it came first."
+      },
+      {
+        "type": "companion",
+        "app": "scenario-generator",
+        "text": "Practise this chapter: a case that looks like a common pattern at first, with one feature that doesn't fit. Name the pattern early, then look for what would prove it wrong.",
+        "query": "complexity=Complex&focus=Make+the+presentation+look+like+a+common%2C+familiar+pattern+at+first+glance%2C+with+one+early+finding+that+does+not+fit+that+pattern.",
+        "action": "Generate a practice case"
       }
     ],
     "glossaryTerms": [
@@ -2181,14 +2245,18 @@ export const sections: Section[] = ([
       "cue",
       "debrief"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "clinical-reasoning-check"
+    ],
     "relatedSections": [
       "avoiding-premature-closure",
       "clinical-reasoning",
       "pathophysiology-through-patterns",
       "clinical-recall-without-trivia"
     ],
-    "chapter": 17
+    "chapter": 17,
+    "previous": "clinical-reasoning",
+    "next": "avoiding-premature-closure"
   },
   {
     "id": "avoiding-premature-closure",
@@ -2260,6 +2328,13 @@ export const sections: Section[] = ([
       {
         "type": "paragraph",
         "text": "After a scenario, identify the cue that carried too much weight and the cue you explained away. What brief check could have made you stop and reconsider earlier?"
+      },
+      {
+        "type": "companion",
+        "app": "scenario-generator",
+        "text": "Practise this chapter: a case with a believable first story and one finding that should disturb it. The finding arrives in the second set of vitals, not the first.",
+        "query": "complexity=Complex&focus=Give+a+believable+first+story+that+fits+the+chief+complaint%2C+then+make+one+finding+in+the+second+set+of+vitals+disturb+it.",
+        "action": "Generate a practice case"
       }
     ],
     "glossaryTerms": [
@@ -2268,19 +2343,23 @@ export const sections: Section[] = ([
       "cue",
       "reassessment"
     ],
-    "relatedTools": [],
+    "relatedTools": [
+      "cue-to-care-recall-card"
+    ],
     "relatedSections": [
       "pattern-recognition",
       "clinical-reasoning",
       "resetting-when-thinking-narrows",
       "from-scenario-to-practice-target"
     ],
-    "chapter": 18
+    "chapter": 18,
+    "previous": "pattern-recognition",
+    "next": "from-scenario-to-practice-target"
   },
   {
     "id": "from-scenario-to-practice-target",
     "title": "From Scenario to Practice Target",
-    "subtitle": "Use the debrief to decide what the next attempt should actually practise.",
+    "subtitle": "Let the debrief decide what the next attempt should actually practise.",
     "cluster": "Part Six: Practise and Perform",
     "clusterOrder": 6,
     "sectionOrder": 0,
@@ -2419,7 +2498,9 @@ export const sections: Section[] = ([
       "bls-pcs"
     ],
     "relatedTools": [
-      "next-attempt-debrief"
+      "next-attempt-debrief",
+      "directive-decision-map",
+      "skill-breakdown-sheet"
     ],
     "relatedSections": [
       "reflection-without-rumination",
@@ -2427,7 +2508,9 @@ export const sections: Section[] = ([
       "osce-preparation-and-pressure-practice",
       "avoiding-premature-closure"
     ],
-    "chapter": 19
+    "chapter": 19,
+    "previous": "avoiding-premature-closure",
+    "next": "osce-preparation-and-pressure-practice"
   },
   {
     "id": "osce-preparation-and-pressure-practice",
@@ -2541,7 +2624,8 @@ export const sections: Section[] = ([
       "reset"
     ],
     "relatedTools": [
-      "reset-card"
+      "reset-card",
+      "skill-breakdown-sheet"
     ],
     "relatedSections": [
       "resetting-when-thinking-narrows",
@@ -2549,7 +2633,9 @@ export const sections: Section[] = ([
       "design-and-run-your-own-scenarios",
       "mental-rehearsal-and-visualization"
     ],
-    "chapter": 20
+    "chapter": 20,
+    "previous": "from-scenario-to-practice-target",
+    "next": "resetting-when-thinking-narrows"
   },
   {
     "id": "resetting-when-thinking-narrows",
@@ -2659,7 +2745,9 @@ export const sections: Section[] = ([
       "cognitive-load",
       "reflection-without-rumination"
     ],
-    "chapter": 21
+    "chapter": 21,
+    "previous": "osce-preparation-and-pressure-practice",
+    "next": "reflection-without-rumination"
   },
   {
     "id": "reflection-without-rumination",
@@ -2757,12 +2845,14 @@ export const sections: Section[] = ([
       "after-you-fail-something",
       "resetting-when-thinking-narrows"
     ],
-    "chapter": 22
+    "chapter": 22,
+    "previous": "resetting-when-thinking-narrows",
+    "next": "after-you-fail-something"
   },
   {
     "id": "after-you-fail-something",
     "title": "After You Fail Something",
-    "subtitle": "Use the evaluation to figure out what the retest actually needs from you.",
+    "subtitle": "Read the evaluation for what the retest actually needs from you.",
     "cluster": "Part Seven: Reflect and Improve",
     "clusterOrder": 7,
     "sectionOrder": 1,
@@ -2866,7 +2956,9 @@ export const sections: Section[] = ([
       "resetting-when-thinking-narrows",
       "osce-preparation-and-pressure-practice"
     ],
-    "chapter": 23
+    "chapter": 23,
+    "previous": "reflection-without-rumination",
+    "next": "design-and-run-your-own-scenarios"
   },
   {
     "id": "design-and-run-your-own-scenarios",
@@ -2930,7 +3022,7 @@ export const sections: Section[] = ([
       {
         "type": "companion",
         "app": "scenario-generator",
-        "text": "If you'd rather not write the case yourself, the Scenario Generator can supply the dispatch, patient, history and vitals that change with care or delay. Choose your target first, pick a case that gives a fair chance to practise it, and verify any generated clinical details before running it."
+        "text": "If you'd rather not write the case yourself, the Scenario Generator can supply the dispatch, patient, history and vitals that change with care or delay. Choose your target first, pick a case that gives a fair chance to practise it, and verify any generated clinical details before running it. Its Monitor screen puts the vitals on a second screen or beside the runner's notes, so the crew reads numbers instead of hearing them."
       },
       {
         "type": "paragraph",
@@ -3037,12 +3129,14 @@ export const sections: Section[] = ([
       "mental-rehearsal-and-visualization",
       "osce-preparation-and-pressure-practice"
     ],
-    "chapter": 24
+    "chapter": 24,
+    "previous": "after-you-fail-something",
+    "next": "mental-rehearsal-and-visualization"
   },
   {
     "id": "mental-rehearsal-and-visualization",
     "title": "Mental Rehearsal and Visualization",
-    "subtitle": "Use mental practice to add specific repetitions between physical sessions.",
+    "subtitle": "Mental practice can add specific repetitions between physical sessions.",
     "cluster": "Part Eight: Practise Like It Is Real",
     "clusterOrder": 8,
     "sectionOrder": 1,
@@ -3133,7 +3227,8 @@ export const sections: Section[] = ([
       "reassessment"
     ],
     "relatedTools": [
-      "reset-card"
+      "reset-card",
+      "scenario-run-sheet"
     ],
     "relatedSections": [
       "design-and-run-your-own-scenarios",
@@ -3141,12 +3236,14 @@ export const sections: Section[] = ([
       "osce-preparation-and-pressure-practice",
       "training-your-hands"
     ],
-    "chapter": 25
+    "chapter": 25,
+    "previous": "design-and-run-your-own-scenarios",
+    "next": "learning-during-placement"
   },
   {
     "id": "learning-during-placement",
     "title": "Learning During Placement",
-    "subtitle": "Use selected calls to test one learning target without turning every patient into a study exercise.",
+    "subtitle": "Test one learning target on selected calls without turning every patient into a study exercise.",
     "cluster": "Part Nine: Learn on the Truck",
     "clusterOrder": 9,
     "sectionOrder": 0,
@@ -3222,7 +3319,9 @@ export const sections: Section[] = ([
       "reflection-without-rumination",
       "from-scenario-to-practice-target"
     ],
-    "chapter": 26
+    "chapter": 26,
+    "previous": "mental-rehearsal-and-visualization",
+    "next": "working-with-your-preceptor"
   },
   {
     "id": "working-with-your-preceptor",
@@ -3342,7 +3441,9 @@ export const sections: Section[] = ([
       "from-scenario-to-practice-target",
       "learning-the-patient-care-standards"
     ],
-    "chapter": 27
+    "chapter": 27,
+    "previous": "learning-during-placement",
+    "next": "documentation-as-thinking"
   },
   {
     "id": "documentation-as-thinking",
@@ -3536,7 +3637,9 @@ export const sections: Section[] = ([
       "from-scenario-to-practice-target",
       "learning-the-patient-care-standards"
     ],
-    "chapter": 28
+    "chapter": 28,
+    "previous": "working-with-your-preceptor",
+    "next": "conclusion"
   },
   {
     "id": "conclusion",
@@ -3603,7 +3706,9 @@ export const sections: Section[] = ([
       "after-you-fail-something",
       "reflection-without-rumination",
       "preface"
-    ]
+    ],
+    "previous": "documentation-as-thinking",
+    "next": ""
   },
   {
     "id": "types-of-notes-and-idea-maturation",
@@ -3618,19 +3723,11 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "Not every note should be treated like a finished thought."
+        "text": "Not every note should be treated like a finished thought. That is where a lot of note systems break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete."
       },
       {
         "type": "paragraph",
-        "text": "That is where a lot of note systems break down. A quick thought from lab gets treated like a permanent explanation. A copied lecture point gets treated like understanding. A messy question gets cleaned up before the student has actually worked through it. A useful note gets rewritten again and again because it still does not feel complete."
-      },
-      {
-        "type": "paragraph",
-        "text": "After a while, the system starts to feel heavier than the learning."
-      },
-      {
-        "type": "paragraph",
-        "text": "Most students assume a good note is a complete note because school has historically rewarded completeness: collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing, which means a note written in week two should be able to change when a scenario in week six shows you something the textbook did not."
+        "text": "After a while, the system starts to feel heavier than the learning. Most students assume a good note is a complete note because school has historically rewarded completeness: collect the material, clean it up, review it, and hope it stays available. But paramedic learning asks notes to do more than preserve content. It asks them to support thinking that is still developing, which means a note written in week two should be able to change when a scenario in week six shows you something the textbook did not."
       },
       {
         "type": "paragraph",
@@ -3642,19 +3739,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A first version of an idea may be useful without being complete."
+        "text": "A first version of an idea may be useful without being complete. It may not include the edge case yet, or the mistake you made in the scenario that finally made the concept matter, or the directive boundary that changed how you read the presentation, or the patient who did not match the clean textbook version and forced you to think more carefully."
       },
       {
         "type": "paragraph",
-        "text": "It may not include the edge case yet, or the mistake you made in the scenario that finally made the concept matter, or the directive boundary that changed how you read the presentation, or the patient who did not match the clean textbook version and forced you to think more carefully."
-      },
-      {
-        "type": "paragraph",
-        "text": "If notes feel finished too early, they freeze your first version of understanding. That version may not be wrong. It is often just too thin to survive contact with a real call."
-      },
-      {
-        "type": "paragraph",
-        "text": "A useful note does not need to be correct forever. It needs to help you think now, while staying open to revision later."
+        "text": "If notes feel finished too early, they freeze your first version of understanding. That version may not be wrong. It is often just too thin to survive contact with a real call. A useful note does not need to be correct forever. It needs to help you think now, while staying open to revision later."
       },
       {
         "type": "heading",
@@ -3662,11 +3751,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "For this system, you only need three note types: capture notes, working notes, and Smart Notes."
-      },
-      {
-        "type": "paragraph",
-        "text": "These are stages of development, not rigid categories. Some ideas move through all three. A quick reminder may stay as a capture note and get deleted. A messy explanation may stay as a working note for weeks. A high-value idea earns a Smart Note because it keeps showing up in scenarios, directives, feedback, or clinical decisions."
+        "text": "For this system, you only need three note types: capture notes, working notes, and Smart Notes. These are stages of development, not rigid categories. Some ideas move through all three. A quick reminder may stay as a capture note and get deleted. A messy explanation may stay as a working note for weeks. A high-value idea earns a Smart Note because it keeps showing up in scenarios, directives, feedback, or clinical decisions."
       },
       {
         "type": "paragraph",
@@ -3678,15 +3763,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Capture notes are fast, messy, and temporary."
-      },
-      {
-        "type": "paragraph",
-        "text": "They exist to catch something before it disappears, not to explain it."
-      },
-      {
-        "type": "paragraph",
-        "text": "That might be:"
+        "text": "Capture notes are fast, messy, and temporary. They exist to catch something before it disappears, not to explain it. That might be:"
       },
       {
         "type": "list",
@@ -3725,19 +3802,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Working notes are where you wrestle with an idea."
+        "text": "Working notes are where you wrestle with an idea. They are not raw capture anymore, but they are not stable Smart Notes yet. A working note lets you say \"I think this is what is happening, but I am not fully sure.\" That matters because paramedic students often want to jump too quickly from confusion to final answer. Working notes give partial understanding somewhere to live while it develops."
       },
       {
         "type": "paragraph",
-        "text": "They are not raw capture anymore, but they are not stable Smart Notes yet. A working note lets you say \"I think this is what is happening, but I am not fully sure.\" That matters because paramedic students often want to jump too quickly from confusion to final answer. Working notes give partial understanding somewhere to live while it develops."
-      },
-      {
-        "type": "paragraph",
-        "text": "A working note might include rough explanations, cause-and-effect chains, small comparison tables, questions still being sorted out, examples from lab or scenarios, and early attempts to explain a mechanism."
-      },
-      {
-        "type": "paragraph",
-        "text": "For example, a working note on cardiac tamponade might include:"
+        "text": "A working note might include rough explanations, cause-and-effect chains, small comparison tables, questions still being sorted out, examples from lab or scenarios, and early attempts to explain a mechanism. For example, a working note on cardiac tamponade might include:"
       },
       {
         "type": "list",
@@ -3760,15 +3829,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Smart Notes are more stable. They explain one idea clearly enough that future you can reuse it."
-      },
-      {
-        "type": "paragraph",
-        "text": "A Smart Note usually includes a clear claim, an explanation in your own words, clinical signals, common confusion, and meaningful links."
-      },
-      {
-        "type": "paragraph",
-        "text": "For example:"
+        "text": "Smart Notes are more stable. They explain one idea clearly enough that future you can reuse it. A Smart Note usually includes a clear claim, an explanation in your own words, clinical signals, common confusion, and meaningful links. For example:"
       },
       {
         "type": "paragraph",
@@ -3795,11 +3856,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Common confusion: Students often wait for all three components of Beck's triad. In real patients, early tamponade may show only tachycardia and subtle JVD while blood pressure is still compensated."
-      },
-      {
-        "type": "paragraph",
-        "text": "Links:"
+        "text": "Common confusion: Students often wait for all three components of Beck's triad. In real patients, early tamponade may show only tachycardia and subtle JVD while blood pressure is still compensated. Links:"
       },
       {
         "type": "list",
@@ -3821,19 +3878,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "If every captured idea becomes a Smart Note, the system becomes too heavy to use during a real semester."
+        "text": "If every captured idea becomes a Smart Note, the system becomes too heavy to use during a real semester. Some notes are useful only for a day. Some are reminders. Some are questions that get answered quickly and do not need to live anywhere. Some are rough thoughts that no longer matter once a better explanation appears."
       },
       {
         "type": "paragraph",
-        "text": "Some notes are useful only for a day. Some are reminders. Some are questions that get answered quickly and do not need to live anywhere. Some are rough thoughts that no longer matter once a better explanation appears."
-      },
-      {
-        "type": "paragraph",
-        "text": "A healthy note system includes deletion, and it includes leaving some notes unfinished."
-      },
-      {
-        "type": "paragraph",
-        "text": "Smart Notes should be reserved for ideas that keep mattering:"
+        "text": "A healthy note system includes deletion, and it includes leaving some notes unfinished. Smart Notes should be reserved for ideas that keep mattering:"
       },
       {
         "type": "list",
@@ -3857,35 +3906,19 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "An idea often begins as something vague. You hear it once and only partly understand it."
+        "text": "An idea often begins as something vague. You hear it once and only partly understand it. Then it appears again. Maybe during lab you see a patient who does not match the clean textbook version. Maybe during a scenario you miss a cue. Maybe feedback shows you that your treatment was reasonable but your reassessment was weak. Maybe while studying, you realize two conditions look similar until you examine the mechanism."
       },
       {
         "type": "paragraph",
-        "text": "Then it appears again. Maybe during lab you see a patient who does not match the clean textbook version. Maybe during a scenario you miss a cue. Maybe feedback shows you that your treatment was reasonable but your reassessment was weak. Maybe while studying, you realize two conditions look similar until you examine the mechanism."
+        "text": "Each exposure changes the idea slightly. At first, your note may say:"
       },
       {
         "type": "paragraph",
-        "text": "Each exposure changes the idea slightly."
+        "text": "Sepsis can look vague. Later, it might become:"
       },
       {
         "type": "paragraph",
-        "text": "At first, your note may say:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Sepsis can look vague."
-      },
-      {
-        "type": "paragraph",
-        "text": "Later, it might become:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Older adults may show sepsis through weakness, confusion, poor intake, and subtle vital sign changes before the presentation looks dramatic."
-      },
-      {
-        "type": "paragraph",
-        "text": "Later still, after scenarios and feedback, the note might become:"
+        "text": "Older adults may show sepsis through weakness, confusion, poor intake, and subtle vital sign changes before the presentation looks dramatic. Later still, after scenarios and feedback, the note might become:"
       },
       {
         "type": "paragraph",
@@ -3901,27 +3934,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Imagine a student creates an early note after learning about hypoxia."
+        "text": "Imagine a student creates an early note after learning about hypoxia. The first capture note says: hypoxia causes confusion. Fine as a starting point. After a respiratory scenario, the student notices something more specific. The patient became more confused and less cooperative before the oxygen saturation changed much. The instructor emphasized mental status and work of breathing during debrief."
       },
       {
         "type": "paragraph",
-        "text": "The first capture note says: hypoxia causes confusion."
-      },
-      {
-        "type": "paragraph",
-        "text": "Fine as a starting point."
-      },
-      {
-        "type": "paragraph",
-        "text": "After a respiratory scenario, the student notices something more specific. The patient became more confused and less cooperative before the oxygen saturation changed much. The instructor emphasized mental status and work of breathing during debrief."
-      },
-      {
-        "type": "paragraph",
-        "text": "The working note becomes: mental status can change before oxygen numbers look dramatic. Need to watch confusion, agitation, fatigue, and ability to speak. Saturation is useful but does not tell the whole story."
-      },
-      {
-        "type": "paragraph",
-        "text": "Later, after more practice, the Smart Note becomes:"
+        "text": "The working note becomes: mental status can change before oxygen numbers look dramatic. Need to watch confusion, agitation, fatigue, and ability to speak. Saturation is useful but does not tell the whole story. Later, after more practice, the Smart Note becomes:"
       },
       {
         "type": "paragraph",
@@ -3933,11 +3950,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Now the note gives the student something to notice in a future scenario. It connects to assessment. It supports reassessment. It targets the specific mistake of waiting for one number to make the situation obvious."
-      },
-      {
-        "type": "paragraph",
-        "text": "The idea matured because the student kept returning to it as understanding changed."
+        "text": "Now the note gives the student something to notice in a future scenario. It connects to assessment. It supports reassessment. It targets the specific mistake of waiting for one number to make the situation obvious. The idea matured because the student kept returning to it as understanding changed."
       },
       {
         "type": "heading",
@@ -3945,11 +3958,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Revision should follow learning, not the feeling that the note looks untidy."
-      },
-      {
-        "type": "paragraph",
-        "text": "Good reasons to revise:"
+        "text": "Revision should follow learning, not the feeling that the note looks untidy. Good reasons to revise:"
       },
       {
         "type": "list",
@@ -3965,11 +3974,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Do not revise a note because it feels unfinished, the wording could be smoother, your folder system feels messy, you are avoiding harder study, or you are chasing the feeling of being organized."
-      },
-      {
-        "type": "paragraph",
-        "text": "A note system can become a safe place to look busy. You can spend hours reorganizing, rewriting, renaming, and adjusting templates while very little understanding changes. That is maintenance pretending to be learning."
+        "text": "Do not revise a note because it feels unfinished, the wording could be smoother, your folder system feels messy, you are avoiding harder study, or you are chasing the feeling of being organized. A note system can become a safe place to look busy. You can spend hours reorganizing, rewriting, renaming, and adjusting templates while very little understanding changes. That is maintenance pretending to be learning."
       },
       {
         "type": "heading",
@@ -3977,11 +3982,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "As understanding deepens, linking becomes more important than rewriting."
-      },
-      {
-        "type": "paragraph",
-        "text": "Not every note needs to be revised. Sometimes it needs to be connected."
+        "text": "As understanding deepens, linking becomes more important than rewriting. Not every note needs to be revised. Sometimes it needs to be connected."
       },
       {
         "type": "paragraph",
@@ -4004,11 +4005,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Those links matter because the ideas influence the same decisions. They help you see how one concept behaves across different situations without collapsing them into a single giant note that becomes too broad to use."
-      },
-      {
-        "type": "paragraph",
-        "text": "A mature note system is not necessarily bigger. It is usually better connected."
+        "text": "Those links matter because the ideas influence the same decisions. They help you see how one concept behaves across different situations without collapsing them into a single giant note that becomes too broad to use. A mature note system is not necessarily bigger. It is usually better connected."
       },
       {
         "type": "heading",
@@ -4016,11 +4013,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "As ideas mature, some notes need to split."
-      },
-      {
-        "type": "paragraph",
-        "text": "A note called \"Shock\" may eventually become too large and too general. It might split into:"
+        "text": "As ideas mature, some notes need to split. A note called \"Shock\" may eventually become too large and too general. It might split into:"
       },
       {
         "type": "list",
@@ -4034,11 +4027,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That split does not mean the original note was bad. It means your understanding became more granular and each distinction earned its own space."
-      },
-      {
-        "type": "paragraph",
-        "text": "Other notes shrink. A long working note may compress to a few clear sentences once the idea is stable, because the note no longer needs to hold every piece of the reasoning. It only needs to preserve the part that helps you think at the moment of use."
+        "text": "That split does not mean the original note was bad. It means your understanding became more granular and each distinction earned its own space. Other notes shrink. A long working note may compress to a few clear sentences once the idea is stable, because the note no longer needs to hold every piece of the reasoning. It only needs to preserve the part that helps you think at the moment of use."
       },
       {
         "type": "paragraph",
@@ -4050,19 +4039,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A mature note system does not require constant maintenance."
+        "text": "A mature note system does not require constant maintenance. If you are endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is pulling attention away from learning. That is a warning sign."
       },
       {
         "type": "paragraph",
-        "text": "If you are endlessly reorganizing folders, rewriting notes without new insight, chasing a cleaner structure, or delaying new notes because old ones are imperfect, the system is pulling attention away from learning. That is a warning sign."
-      },
-      {
-        "type": "paragraph",
-        "text": "The goal is not a perfect vault. The goal is a thinking system that can survive paramedic school."
-      },
-      {
-        "type": "paragraph",
-        "text": "Some mess is allowed. Some notes can stay rough until they have a reason to change. If a note helps you think better today, it is good enough for today. Refinement should come from use, not from the need to make the system feel clean."
+        "text": "The goal is not a perfect vault. The goal is a thinking system that can survive paramedic school. Some mess is allowed. Some notes can stay rough until they have a reason to change. If a note helps you think better today, it is good enough for today. Refinement should come from use, not from the need to make the system feel clean."
       },
       {
         "type": "heading",
@@ -4070,11 +4051,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Mature notes create stronger retrieval prompts."
-      },
-      {
-        "type": "paragraph",
-        "text": "When a note is built around a decision, a contrast, an early warning sign, or a common error rather than a definition, it naturally generates questions worth practicing:"
+        "text": "Mature notes create stronger retrieval prompts. When a note is built around a decision, a contrast, an early warning sign, or a common error rather than a definition, it naturally generates questions worth practicing:"
       },
       {
         "type": "list",
@@ -4109,11 +4086,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Then choose one action: delete it, leave it, process it, link it, split it, or revise it."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is enough. You are not overhauling the system. You are keeping it alive and honest about where your understanding actually is."
+        "text": "Then choose one action: delete it, leave it, process it, link it, split it, or revise it. That is enough. You are not overhauling the system. You are keeping it alive and honest about where your understanding actually is."
       }
     ],
     "glossaryTerms": [
@@ -4132,7 +4105,9 @@ export const sections: Section[] = ([
       "obsidian-for-learning-paramedicine",
       "retrieval-and-spaced-learning",
       "taking-notes-in-a-moving-lecture"
-    ]
+    ],
+    "previous": "",
+    "next": "common-errors-and-what-they-reveal"
   },
   {
     "id": "common-errors-and-what-they-reveal",
@@ -4147,19 +4122,11 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "After a rough scenario, it is easy to turn one mistake into a much bigger story."
+        "text": "After a rough scenario, it is easy to turn one mistake into a much bigger story. A student misses a reassessment, freezes on a directive, gets pulled into the wrong diagnosis, or knows exactly what should have happened and still did not do it. That last part is usually the hardest to sit with. Many scenario mistakes happen in areas the student has already studied. They can explain the concept at a desk. They recognize the error the moment the scenario ends. And it happens anyway."
       },
       {
         "type": "paragraph",
-        "text": "A student misses a reassessment, freezes on a directive, gets pulled into the wrong diagnosis, or knows exactly what should have happened and still did not do it. That last part is usually the hardest to sit with. Many scenario mistakes happen in areas the student has already studied. They can explain the concept at a desk. They recognize the error the moment the scenario ends. And it happens anyway."
-      },
-      {
-        "type": "paragraph",
-        "text": "That does not make the error meaningless. It means the problem may not be knowledge alone."
-      },
-      {
-        "type": "paragraph",
-        "text": "In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still unfolding. Scenario days expose that system. They show where understanding is usable under load and where it is still fragile. A common error is not something to excuse or to catastrophize. It is something to read carefully, because it usually points toward a specific and addressable gap."
+        "text": "That does not make the error meaningless. It means the problem may not be knowledge alone. In paramedicine, performance depends on what a student can notice, retrieve, prioritize, and adjust while the call is still unfolding. Scenario days expose that system. They show where understanding is usable under load and where it is still fragile. A common error is not something to excuse or to catastrophize. It is something to read carefully, because it usually points toward a specific and addressable gap."
       },
       {
         "type": "heading",
@@ -4167,15 +4134,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Not every mistake reveals a deep issue."
-      },
-      {
-        "type": "paragraph",
-        "text": "Sometimes a student mishears a number, phrases a question awkwardly, forgets a small step once, or gets disrupted by something unexpected in the room. Those moments still matter, but they do not always tell the full story."
-      },
-      {
-        "type": "paragraph",
-        "text": "Repeated errors are different. If the same kind of mistake appears across scenarios, the surface details may change while the shape stays familiar."
+        "text": "Not every mistake reveals a deep issue. Sometimes a student mishears a number, phrases a question awkwardly, forgets a small step once, or gets disrupted by something unexpected in the room. Those moments still matter, but they do not always tell the full story. Repeated errors are different. If the same kind of mistake appears across scenarios, the surface details may change while the shape stays familiar."
       },
       {
         "type": "paragraph",
@@ -4191,35 +4150,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A useful error review asks a better question than \"what did I do wrong?\""
+        "text": "A useful error review asks a better question than \"what did I do wrong?\" It asks: what does this error reveal? Different errors point to different problems. A missed medication check usually reveals that a procedural habit is not yet stable enough to survive under load, not that the student does not know the medication."
       },
       {
         "type": "paragraph",
-        "text": "It asks: what does this error reveal?"
+        "text": "A delayed transport decision often reveals that the student is waiting for the call to become obvious before committing to a risk, when saying the risk out loud is exactly what should move the transport decision. A weak reassessment after treatment usually reveals that the student sees the intervention as the end of the decision, rather than the beginning of the next one."
       },
       {
         "type": "paragraph",
-        "text": "Different errors point to different problems."
-      },
-      {
-        "type": "paragraph",
-        "text": "A missed medication check usually reveals that a procedural habit is not yet stable enough to survive under load, not that the student does not know the medication."
-      },
-      {
-        "type": "paragraph",
-        "text": "A delayed transport decision often reveals that the student is waiting for the call to become obvious before committing to a risk, when saying the risk out loud is exactly what should move the transport decision."
-      },
-      {
-        "type": "paragraph",
-        "text": "A weak reassessment after treatment usually reveals that the student sees the intervention as the end of the decision, rather than the beginning of the next one."
-      },
-      {
-        "type": "paragraph",
-        "text": "A premature closure on a diagnosis reveals that the first familiar pattern moved faster than the verification step that should follow it."
-      },
-      {
-        "type": "paragraph",
-        "text": "A scattered history in a student who cares and has prepared usually reveals cognitive overload, not carelessness."
+        "text": "A premature closure on a diagnosis reveals that the first familiar pattern moved faster than the verification step that should follow it. A scattered history in a student who cares and has prepared usually reveals cognitive overload, not carelessness."
       },
       {
         "type": "paragraph",
@@ -4231,19 +4170,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Consider a student working through a scenario involving an older patient with abdominal pain, nausea, and vague weakness."
+        "text": "Consider a student working through a scenario involving an older patient with abdominal pain, nausea, and vague weakness. The student is careful. They complete a primary assessment, ask a detailed history, check medications, and repeat parts of the abdominal exam. Their approach is not careless. They are trying to be thorough and safe."
       },
       {
         "type": "paragraph",
-        "text": "The student is careful. They complete a primary assessment, ask a detailed history, check medications, and repeat parts of the abdominal exam. Their approach is not careless. They are trying to be thorough and safe."
-      },
-      {
-        "type": "paragraph",
-        "text": "But the patient looks worse over time. The blood pressure trends downward. Skin becomes cooler. The patient is increasingly uncomfortable and less able to answer clearly. Nothing has become perfectly obvious, but the overall picture has changed."
-      },
-      {
-        "type": "paragraph",
-        "text": "The student continues gathering information, hoping the scenario will eventually point to a clean answer."
+        "text": "But the patient looks worse over time. The blood pressure trends downward. Skin becomes cooler. The patient is increasingly uncomfortable and less able to answer clearly. Nothing has become perfectly obvious, but the overall picture has changed. The student continues gathering information, hoping the scenario will eventually point to a clean answer."
       },
       {
         "type": "paragraph",
@@ -4255,15 +4186,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Once that pattern is named, the practice target becomes specific."
-      },
-      {
-        "type": "paragraph",
-        "text": "Not: \"Be better at abdominal pain.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "More useful: \"In the next scenario, if an older patient looks unwell and trends worse, I will name the working concern earlier and decide what action keeps them safest while I continue to clarify.\""
+        "text": "Once that pattern is named, the practice target becomes specific. Not: \"Be better at abdominal pain.\" More useful: \"In the next scenario, if an older patient looks unwell and trends worse, I will name the working concern earlier and decide what action keeps them safest while I continue to clarify.\""
       },
       {
         "type": "paragraph",
@@ -4275,19 +4198,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Repeated errors can be frustrating because they often come from reasonable instincts."
+        "text": "Repeated errors can be frustrating because they often come from reasonable instincts. A careful student may delay action because they do not want to overreact. A thorough student may gather too much information because they want to be accurate. A cautious student may hesitate with directives because they understand that protocol errors matter. A confident student may commit early because they recognize a familiar pattern and want to move efficiently."
       },
       {
         "type": "paragraph",
-        "text": "A careful student may delay action because they do not want to overreact. A thorough student may gather too much information because they want to be accurate. A cautious student may hesitate with directives because they understand that protocol errors matter. A confident student may commit early because they recognize a familiar pattern and want to move efficiently."
-      },
-      {
-        "type": "paragraph",
-        "text": "Those instincts are not bad on their own. They are often part of what makes the student conscientious. The problem is that each instinct can be pushed too far under pressure."
-      },
-      {
-        "type": "paragraph",
-        "text": "Caution becomes delay. Thoroughness becomes overload. Confidence becomes premature closure. Protocol respect becomes paralysis."
+        "text": "Those instincts are not bad on their own. They are often part of what makes the student conscientious. The problem is that each instinct can be pushed too far under pressure. Caution becomes delay. Thoroughness becomes overload. Confidence becomes premature closure. Protocol respect becomes paralysis."
       },
       {
         "type": "paragraph",
@@ -4299,11 +4214,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Correction tells you what should have happened. Learning changes what happens next time. Those are related but they need different responses."
-      },
-      {
-        "type": "paragraph",
-        "text": "After a scenario, feedback might sound like this:"
+        "text": "Correction tells you what should have happened. Learning changes what happens next time. Those are related but they need different responses. After a scenario, feedback might sound like this:"
       },
       {
         "type": "list",
@@ -4317,11 +4228,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That feedback identifies the issue. It does not automatically create the fix. To make feedback useful, the student has to translate the correction into a practice target."
-      },
-      {
-        "type": "paragraph",
-        "text": "For example:"
+        "text": "That feedback identifies the issue. It does not automatically create the fix. To make feedback useful, the student has to translate the correction into a practice target. For example:"
       },
       {
         "type": "list",
@@ -4343,19 +4250,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A long list of mistakes makes students feel busy without making practice sharper."
+        "text": "A long list of mistakes makes students feel busy without making practice sharper. It can also create defensive learning, where the student becomes focused on avoiding errors rather than thinking clearly and acting safely. Those are not the same goal, and the second produces better paramedics."
       },
       {
         "type": "paragraph",
-        "text": "It can also create defensive learning, where the student becomes focused on avoiding errors rather than thinking clearly and acting safely. Those are not the same goal, and the second produces better paramedics."
-      },
-      {
-        "type": "paragraph",
-        "text": "After feedback, a useful question is: what is the one error pattern most likely to affect my next scenario if I do not address it?"
-      },
-      {
-        "type": "paragraph",
-        "text": "That question narrows attention without dismissing everything else. It also protects learning from becoming another source of overload, which would simply add a new layer to the same problem that caused the errors in the first place."
+        "text": "After feedback, a useful question is: what is the one error pattern most likely to affect my next scenario if I do not address it? That question narrows attention without dismissing everything else. It also protects learning from becoming another source of overload, which would simply add a new layer to the same problem that caused the errors in the first place."
       },
       {
         "type": "heading",
@@ -4363,11 +4262,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "When an error repeats, pause long enough to look underneath it."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ask:"
+        "text": "When an error repeats, pause long enough to look underneath it. Ask:"
       },
       {
         "type": "list",
@@ -4397,11 +4292,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "This pattern shows up when students keep assessing because they want the decision to become obvious before they act."
-      },
-      {
-        "type": "paragraph",
-        "text": "It appears across many call types: vague abdominal pain, weakness, altered mental status, early shock, obstetrical calls where the risk is present but not yet dramatic. The student may have enough information to act safely but keeps searching for confirmation that never arrives cleanly."
+        "text": "This pattern shows up when students keep assessing because they want the decision to become obvious before they act. It appears across many call types: vague abdominal pain, weakness, altered mental status, early shock, obstetrical calls where the risk is present but not yet dramatic. The student may have enough information to act safely but keeps searching for confirmation that never arrives cleanly."
       },
       {
         "type": "paragraph",
@@ -4413,11 +4304,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "This pattern shows up after an intervention."
-      },
-      {
-        "type": "paragraph",
-        "text": "The student gives oxygen, administers a medication, moves the patient, or completes a skill, then continues forward without checking whether the original problem changed. Treatment feels like completion. In paramedicine, treatment should create the next question: did that help? Did it fail? Did it create a new concern?"
+        "text": "This pattern shows up after an intervention. The student gives oxygen, administers a medication, moves the patient, or completes a skill, then continues forward without checking whether the original problem changed. Treatment feels like completion. In paramedicine, treatment should create the next question: did that help? Did it fail? Did it create a new concern?"
       },
       {
         "type": "paragraph",
@@ -4441,11 +4328,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The first pattern may be correct. The risk is closing the case before checking what does not fit."
-      },
-      {
-        "type": "paragraph",
-        "text": "The practice target is verification. After naming a working explanation, ask: what finding would make this pattern unsafe to trust?"
+        "text": "The first pattern may be correct. The risk is closing the case before checking what does not fit. The practice target is verification. After naming a working explanation, ask: what finding would make this pattern unsafe to trust?"
       },
       {
         "type": "heading",
@@ -4473,11 +4356,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "This pattern appears when a procedure takes over attention."
-      },
-      {
-        "type": "paragraph",
-        "text": "The student becomes focused on placing leads, obtaining a blood pressure, preparing a medication, or performing a skill cleanly. Meanwhile, the broader clinical picture drifts."
+        "text": "This pattern appears when a procedure takes over attention. The student becomes focused on placing leads, obtaining a blood pressure, preparing a medication, or performing a skill cleanly. Meanwhile, the broader clinical picture drifts."
       },
       {
         "type": "paragraph",
@@ -4485,11 +4364,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The skill may be technically fine. The patient may still be poorly managed."
-      },
-      {
-        "type": "paragraph",
-        "text": "The practice target is maintaining global awareness during tasks. A useful orientation question: what is changing while I am doing this?"
+        "text": "The skill may be technically fine. The patient may still be poorly managed. The practice target is maintaining global awareness during tasks. A useful orientation question: what is changing while I am doing this?"
       },
       {
         "type": "heading",
@@ -4497,11 +4372,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "When instructors point out repeated errors, they are often showing a pattern forming across attempts rather than commenting on a single run."
-      },
-      {
-        "type": "paragraph",
-        "text": "That can feel larger than expected because it is larger. It is not only about one missed reassessment or one delayed decision. It is about the shape of a student's thinking when pressure rises, and about whether that shape is changing across attempts."
+        "text": "When instructors point out repeated errors, they are often showing a pattern forming across attempts rather than commenting on a single run. That can feel larger than expected because it is larger. It is not only about one missed reassessment or one delayed decision. It is about the shape of a student's thinking when pressure rises, and about whether that shape is changing across attempts."
       },
       {
         "type": "paragraph",
@@ -4517,27 +4388,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A practice target should be narrow enough to carry into the next scenario and specific enough to test."
+        "text": "A practice target should be narrow enough to carry into the next scenario and specific enough to test. Not: \"I need to improve my clinical reasoning.\" Better: \"In the next scenario, I will name my working concern out loud before I have a confirmed diagnosis.\""
       },
       {
         "type": "paragraph",
-        "text": "Not: \"I need to improve my clinical reasoning.\" Better: \"In the next scenario, I will name my working concern out loud before I have a confirmed diagnosis.\""
+        "text": "Not: \"I need to stop missing reassessment.\" Better: \"After each intervention, I will go back to the specific finding that made me intervene and check whether it has changed.\" Not: \"I need to understand directives better.\" Better: \"When reviewing epinephrine for anaphylaxis, I will practise identifying what separates a systemic allergic response from a localized one, and why the directive is not asking me to wait for shock before acting.\""
       },
       {
         "type": "paragraph",
-        "text": "Not: \"I need to stop missing reassessment.\" Better: \"After each intervention, I will go back to the specific finding that made me intervene and check whether it has changed.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "Not: \"I need to understand directives better.\" Better: \"When reviewing epinephrine for anaphylaxis, I will practise identifying what separates a systemic allergic response from a localized one, and why the directive is not asking me to wait for shock before acting.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "Not: \"I need to be less hesitant.\" Better: \"When a patient looks unwell and two consecutive vital sign sets trend in the same direction, I will state a working concern and a transport priority before the third reading.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "The error reveals the pattern. The pattern helps define the target. The target shapes the next attempt. That sequence is where improvement actually happens: not in trying to be better in general, but in changing one specific thing on purpose."
+        "text": "Not: \"I need to be less hesitant.\" Better: \"When a patient looks unwell and two consecutive vital sign sets trend in the same direction, I will state a working concern and a transport priority before the third reading.\" The error reveals the pattern. The pattern helps define the target. The target shapes the next attempt. That sequence is where improvement actually happens: not in trying to be better in general, but in changing one specific thing on purpose."
       }
     ],
     "glossaryTerms": [
@@ -4565,7 +4424,9 @@ export const sections: Section[] = ([
       "reflection-without-rumination",
       "the-five-whys",
       "turning-feedback-into-action"
-    ]
+    ],
+    "previous": "types-of-notes-and-idea-maturation",
+    "next": "focused-practice-after-feedback"
   },
   {
     "id": "focused-practice-after-feedback",
@@ -4580,15 +4441,7 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "Most students do not ignore feedback."
-      },
-      {
-        "type": "paragraph",
-        "text": "They hear it. They nod. They understand what the instructor is saying. Sometimes they agree completely. Then the next scenario starts, the room gets busy again, and the same issue comes back."
-      },
-      {
-        "type": "paragraph",
-        "text": "That can feel confusing, because the feedback was clear enough. The student knew what went wrong. They may have left the room genuinely intending to fix it. The missing step is usually not caring. It is conversion."
+        "text": "Most students do not ignore feedback. They hear it. They nod. They understand what the instructor is saying. Sometimes they agree completely. Then the next scenario starts, the room gets busy again, and the same issue comes back. That can feel confusing, because the feedback was clear enough. The student knew what went wrong. They may have left the room genuinely intending to fix it. The missing step is usually not caring. It is conversion."
       },
       {
         "type": "paragraph",
@@ -4611,11 +4464,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "All of that feedback may be accurate. It is also too much to carry all at once."
-      },
-      {
-        "type": "paragraph",
-        "text": "The useful question after feedback is not \"how do I fix everything?\" It is \"what is the next adjustment I can actually test?\""
+        "text": "All of that feedback may be accurate. It is also too much to carry all at once. The useful question after feedback is not \"how do I fix everything?\" It is \"what is the next adjustment I can actually test?\""
       },
       {
         "type": "heading",
@@ -4623,15 +4472,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Feedback identifies a gap. Practice changes how the student responds to that gap next time."
-      },
-      {
-        "type": "paragraph",
-        "text": "Those are connected, but they are not the same thing."
-      },
-      {
-        "type": "paragraph",
-        "text": "An instructor might say, \"You lost reassessment after the first intervention.\" That names something important. But the student still needs to decide what it means in practical terms."
+        "text": "Feedback identifies a gap. Practice changes how the student responds to that gap next time. Those are connected, but they are not the same thing. An instructor might say, \"You lost reassessment after the first intervention.\" That names something important. But the student still needs to decide what it means in practical terms."
       },
       {
         "type": "paragraph",
@@ -4647,11 +4488,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "After a difficult scenario, students often want to fix everything immediately."
-      },
-      {
-        "type": "paragraph",
-        "text": "That impulse makes sense. Nobody likes leaving a room feeling exposed or slow. A student may want to prove they took the feedback seriously by working on every identified issue."
+        "text": "After a difficult scenario, students often want to fix everything immediately. That impulse makes sense. Nobody likes leaving a room feeling exposed or slow. A student may want to prove they took the feedback seriously by working on every identified issue."
       },
       {
         "type": "paragraph",
@@ -4659,11 +4496,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Focused practice chooses one adjustment and gives it enough room to show up."
-      },
-      {
-        "type": "paragraph",
-        "text": "One adjustment might be:"
+        "text": "Focused practice chooses one adjustment and gives it enough room to show up. One adjustment might be:"
       },
       {
         "type": "list",
@@ -4686,11 +4519,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Consider a student who has just finished a scenario involving an agitated patient."
-      },
-      {
-        "type": "paragraph",
-        "text": "The patient was found at home, confused and combative, by a family member who called for help. The student recognized the agitation, attempted to calm the patient, assessed for obvious injury, and checked glucose. Nothing immediately dangerous was found. The student attributed the agitation to a behavioural cause and focused energy on managing the patient's behaviour."
+        "text": "Consider a student who has just finished a scenario involving an agitated patient. The patient was found at home, confused and combative, by a family member who called for help. The student recognized the agitation, attempted to calm the patient, assessed for obvious injury, and checked glucose. Nothing immediately dangerous was found. The student attributed the agitation to a behavioural cause and focused energy on managing the patient's behaviour."
       },
       {
         "type": "paragraph",
@@ -4698,19 +4527,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "After the scenario, the instructor says: \"You managed the behaviour, but you did not close the loop. You needed to go back to the physical findings after your initial attempts to settle the patient.\""
+        "text": "After the scenario, the instructor says: \"You managed the behaviour, but you did not close the loop. You needed to go back to the physical findings after your initial attempts to settle the patient.\" The student understands the comment. They might write down: \"Reassess more.\""
       },
       {
         "type": "paragraph",
-        "text": "The student understands the comment. They might write down: \"Reassess more.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "That is not wrong, but it is not yet usable."
-      },
-      {
-        "type": "paragraph",
-        "text": "A better practice target would be: \"After attempting to settle an agitated patient, I will return to the physical findings: skin, breathing effort, temperature if available, vital signs, and anything that suggests the agitation has a medical cause I have not yet explained.\""
+        "text": "That is not wrong, but it is not yet usable. A better practice target would be: \"After attempting to settle an agitated patient, I will return to the physical findings: skin, breathing effort, temperature if available, vital signs, and anything that suggests the agitation has a medical cause I have not yet explained.\""
       },
       {
         "type": "paragraph",
@@ -4722,23 +4543,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A good practice target is specific enough to test."
+        "text": "A good practice target is specific enough to test. It should answer three questions: what will I notice? What will I do differently? Where will I test it next? A weak target: \"I need to improve communication.\" A stronger target: \"In the next scenario, I will explain my working concern to my partner before moving to treatment or transport.\""
       },
       {
         "type": "paragraph",
-        "text": "It should answer three questions: what will I notice? What will I do differently? Where will I test it next?"
-      },
-      {
-        "type": "paragraph",
-        "text": "A weak target: \"I need to improve communication.\" A stronger target: \"In the next scenario, I will explain my working concern to my partner before moving to treatment or transport.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "A weak target: \"I need better clinical reasoning.\" A stronger target: \"When I form an early impression, I will name one finding that supports it and one finding that could challenge it.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "A weak target: \"I need to be less nervous with directives.\" A stronger target: \"When reviewing a directive, I will identify the clinical risk it is protecting against, then practise applying it to one borderline patient example before the next lab.\""
+        "text": "A weak target: \"I need better clinical reasoning.\" A stronger target: \"When I form an early impression, I will name one finding that supports it and one finding that could challenge it.\" A weak target: \"I need to be less nervous with directives.\" A stronger target: \"When reviewing a directive, I will identify the clinical risk it is protecting against, then practise applying it to one borderline patient example before the next lab.\""
       },
       {
         "type": "paragraph",
@@ -4750,23 +4559,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A practice target that only works when the student is calm and unrushed is probably too large."
+        "text": "A practice target that only works when the student is calm and unrushed is probably too large. Good targets are small enough to survive a real lab environment. They have to be usable while the student is managing a patient, hearing new information, talking to a partner, and watching the scene change."
       },
       {
         "type": "paragraph",
-        "text": "Good targets are small enough to survive a real lab environment. They have to be usable while the student is managing a patient, hearing new information, talking to a partner, and watching the scene change."
-      },
-      {
-        "type": "paragraph",
-        "text": "\"Improve prioritization\" is too large. \"Name the primary risk before collecting more history\" is smaller."
-      },
-      {
-        "type": "paragraph",
-        "text": "\"Use better reassessment\" is too broad. \"After treatment, recheck the finding that justified the treatment\" is smaller."
-      },
-      {
-        "type": "paragraph",
-        "text": "\"Stop premature closure\" is too abstract. \"Ask what does not fit before committing to the first explanation\" is smaller."
+        "text": "\"Improve prioritization\" is too large. \"Name the primary risk before collecting more history\" is smaller. \"Use better reassessment\" is too broad. \"After treatment, recheck the finding that justified the treatment\" is smaller. \"Stop premature closure\" is too abstract. \"Ask what does not fit before committing to the first explanation\" is smaller."
       },
       {
         "type": "paragraph",
@@ -4778,43 +4575,19 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "After a scenario, feedback can come quickly and from several directions. The student does not need to capture every word. The job is to extract one adjustment."
+        "text": "After a scenario, feedback can come quickly and from several directions. The student does not need to capture every word. The job is to extract one adjustment. Use this sequence:"
       },
       {
         "type": "paragraph",
-        "text": "Use this sequence:"
+        "text": "Listen for the repeated pattern. Identify the moment where the pattern showed up. Translate the feedback into one specific behaviour. Decide where that behaviour will be tested next. For example:"
       },
       {
         "type": "paragraph",
-        "text": "Listen for the repeated pattern. Identify the moment where the pattern showed up. Translate the feedback into one specific behaviour. Decide where that behaviour will be tested next."
+        "text": "Feedback: \"You kept gathering information, but you never really changed your plan.\" Pattern: Waiting for certainty. Moment: The patient was trending worse, but assessment continued as if the call were still low risk. Practice target: \"When a patient trends worse across two sets of findings, I will name the working concern and decide whether my transport priority needs to change.\""
       },
       {
         "type": "paragraph",
-        "text": "For example:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Feedback: \"You kept gathering information, but you never really changed your plan.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "Pattern: Waiting for certainty."
-      },
-      {
-        "type": "paragraph",
-        "text": "Moment: The patient was trending worse, but assessment continued as if the call were still low risk."
-      },
-      {
-        "type": "paragraph",
-        "text": "Practice target: \"When a patient trends worse across two sets of findings, I will name the working concern and decide whether my transport priority needs to change.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "Next test: Any scenario involving vague symptoms, abnormal vitals, or a patient whose condition changes over time."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is enough. The student does not need a full analysis after every run. They need one usable adjustment."
+        "text": "Next test: Any scenario involving vague symptoms, abnormal vitals, or a patient whose condition changes over time. That is enough. The student does not need a full analysis after every run. They need one usable adjustment."
       },
       {
         "type": "heading",
@@ -4822,15 +4595,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "More practice can help, but only if something about the practice changes."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student can repeat the same error many times. They can even become smoother at repeating it. This is why \"just do more scenarios\" is incomplete advice."
-      },
-      {
-        "type": "paragraph",
-        "text": "Focused practice means repeating with attention to one specific change."
+        "text": "More practice can help, but only if something about the practice changes. A student can repeat the same error many times. They can even become smoother at repeating it. This is why \"just do more scenarios\" is incomplete advice. Focused practice means repeating with attention to one specific change."
       },
       {
         "type": "paragraph",
@@ -4846,11 +4611,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Focused practice can make a student feel less smooth for a while."
-      },
-      {
-        "type": "paragraph",
-        "text": "When a student starts paying deliberate attention to one part of their performance, other parts of the call may feel less fluid. Something that used to run on habit is now being examined on purpose. A student who is actively monitoring for the moment to reassess may feel slower overall, even though they are doing something more careful. A student who is deliberately naming what does not fit may seem to pause in places where they used to move through quickly."
+        "text": "Focused practice can make a student feel less smooth for a while. When a student starts paying deliberate attention to one part of their performance, other parts of the call may feel less fluid. Something that used to run on habit is now being examined on purpose. A student who is actively monitoring for the moment to reassess may feel slower overall, even though they are doing something more careful. A student who is deliberately naming what does not fit may seem to pause in places where they used to move through quickly."
       },
       {
         "type": "paragraph",
@@ -4862,27 +4623,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A good practice target often changes attention before it changes action."
+        "text": "A good practice target often changes attention before it changes action. Students sometimes assume improvement means doing something new. Sometimes it does. But often, improvement begins by noticing the right thing sooner. A student working on reassessment starts noticing what changes after an intervention, rather than only that the intervention happened."
       },
       {
         "type": "paragraph",
-        "text": "Students sometimes assume improvement means doing something new. Sometimes it does. But often, improvement begins by noticing the right thing sooner."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student working on reassessment starts noticing what changes after an intervention, rather than only that the intervention happened."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student working on transport decisions starts noticing trends earlier, rather than waiting for a threshold to cross."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student working on communication starts noticing when the patient does not understand the risk being explained, rather than only that an explanation was given."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student working on directive application starts noticing whether the clinical picture actually matches the reason the directive exists, rather than only whether the wording was correct."
+        "text": "A student working on transport decisions starts noticing trends earlier, rather than waiting for a threshold to cross. A student working on communication starts noticing when the patient does not understand the risk being explained, rather than only that an explanation was given. A student working on directive application starts noticing whether the clinical picture actually matches the reason the directive exists, rather than only whether the wording was correct."
       },
       {
         "type": "paragraph",
@@ -4894,19 +4639,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Trying to fix everything creates overload and usually leads to shallow change across everything rather than real change in anything. Choose one adjustment."
+        "text": "Trying to fix everything creates overload and usually leads to shallow change across everything rather than real change in anything. Choose one adjustment. Turning feedback into self-criticism can feel active but rarely improves the next attempt on its own. Translate the feedback into behaviour rather than into a judgment about capability."
       },
       {
         "type": "paragraph",
-        "text": "Turning feedback into self-criticism can feel active but rarely improves the next attempt on its own. Translate the feedback into behaviour rather than into a judgment about capability."
-      },
-      {
-        "type": "paragraph",
-        "text": "Practising only what feels comfortable restores confidence but avoids the actual gap. Spend some time where the pattern is actually weak."
-      },
-      {
-        "type": "paragraph",
-        "text": "Treating the next scenario as a chance to prove yourself shifts the goal from learning to performing. The better question is not \"can I be flawless now?\" but \"can I apply the one thing I said I would practise?\""
+        "text": "Practising only what feels comfortable restores confidence but avoids the actual gap. Spend some time where the pattern is actually weak. Treating the next scenario as a chance to prove yourself shifts the goal from learning to performing. The better question is not \"can I be flawless now?\" but \"can I apply the one thing I said I would practise?\""
       },
       {
         "type": "heading",
@@ -4914,11 +4651,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Use this after a scenario or lab when feedback feels important but too broad."
-      },
-      {
-        "type": "paragraph",
-        "text": "Name the pattern: what kind of error showed up? Choose one adjustment: what is the smallest useful change? Decide where it will show up: in what kind of scenario, patient, or moment will this matter? Test it deliberately: carry that adjustment into the next attempt. Check whether it changed anything: did you notice it sooner, act differently, or recover faster?"
+        "text": "Use this after a scenario or lab when feedback feels important but too broad. Name the pattern: what kind of error showed up? Choose one adjustment: what is the smallest useful change? Decide where it will show up: in what kind of scenario, patient, or moment will this matter? Test it deliberately: carry that adjustment into the next attempt. Check whether it changed anything: did you notice it sooner, act differently, or recover faster?"
       },
       {
         "type": "paragraph",
@@ -4949,7 +4682,9 @@ export const sections: Section[] = ([
       "reflection-without-rumination",
       "the-five-whys",
       "turning-feedback-into-action"
-    ]
+    ],
+    "previous": "common-errors-and-what-they-reveal",
+    "next": "performance-under-pressure"
   },
   {
     "id": "performance-under-pressure",
@@ -4964,11 +4699,7 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "You are four minutes into a station involving a patient who is conscious but not making sense."
-      },
-      {
-        "type": "paragraph",
-        "text": "The family called because their mother, who has a history of hypertension and type 2 diabetes, was found on the back porch, not making sense. She is awake. She answers simple questions slowly. Her glucose is 5.4. There is no obvious trauma. The blood pressure is elevated, significantly more than you would expect for someone at rest. Her daughter is asking you what is wrong."
+        "text": "You are four minutes into a station involving a patient who is conscious but not making sense. The family called because their mother, who has a history of hypertension and type 2 diabetes, was found on the back porch, not making sense. She is awake. She answers simple questions slowly. Her glucose is 5.4. There is no obvious trauma. The blood pressure is elevated, significantly more than you would expect for someone at rest. Her daughter is asking you what is wrong."
       },
       {
         "type": "paragraph",
@@ -5020,11 +4751,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Strong performance under pressure is often quieter than students expect."
-      },
-      {
-        "type": "paragraph",
-        "text": "It is not fast. It does not involve saying everything at once or demonstrating mastery by covering every possibility. It usually involves fewer actions, done deliberately, with reassessment built into the sequence rather than added as an afterthought."
+        "text": "Strong performance under pressure is often quieter than students expect. It is not fast. It does not involve saying everything at once or demonstrating mastery by covering every possibility. It usually involves fewer actions, done deliberately, with reassessment built into the sequence rather than added as an afterthought."
       },
       {
         "type": "paragraph",
@@ -5048,11 +4775,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Structure matters under pressure because it reduces the number of decisions working memory has to remake in real time."
-      },
-      {
-        "type": "paragraph",
-        "text": "When your assessment sequence is reliable, attention frees up for the parts of the call that actually require judgment. When your reassessment habit is automatic, it fires after an intervention without needing to be consciously initiated. When a directive decision is understood by purpose rather than memorized by wording, it consolidates into one clinical question rather than a list of separate rules."
+        "text": "Structure matters under pressure because it reduces the number of decisions working memory has to remake in real time. When your assessment sequence is reliable, attention frees up for the parts of the call that actually require judgment. When your reassessment habit is automatic, it fires after an intervention without needing to be consciously initiated. When a directive decision is understood by purpose rather than memorized by wording, it consolidates into one clinical question rather than a list of separate rules."
       },
       {
         "type": "paragraph",
@@ -5068,15 +4791,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Pressure tolerance is not built by waiting for high-stakes moments and hoping experience accumulates."
-      },
-      {
-        "type": "paragraph",
-        "text": "It is built by practising the specific parts of performance that disappear when stress rises."
-      },
-      {
-        "type": "paragraph",
-        "text": "For most students, these are: naming a working concern before certainty arrives, reassessing after intervention before moving to the next task, explaining reasoning to another person while simultaneously managing the patient, and adjusting when new information does not fit the first explanation."
+        "text": "Pressure tolerance is not built by waiting for high-stakes moments and hoping experience accumulates. It is built by practising the specific parts of performance that disappear when stress rises. For most students, these are: naming a working concern before certainty arrives, reassessing after intervention before moving to the next task, explaining reasoning to another person while simultaneously managing the patient, and adjusting when new information does not fit the first explanation."
       },
       {
         "type": "paragraph",
@@ -5092,11 +4807,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "When pressure rises and thinking starts to narrow, a short check can restore orientation without turning the call into a pause exercise."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ask:"
+        "text": "When pressure rises and thinking starts to narrow, a short check can restore orientation without turning the call into a pause exercise. Ask:"
       },
       {
         "type": "list",
@@ -5116,11 +4827,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Students often worry when one scenario feels smooth and the next feels scattered."
-      },
-      {
-        "type": "paragraph",
-        "text": "Variation is normal, particularly while new layers of attention are being integrated. A student who is actively building reassessment timing, transport prioritization, and communication skills simultaneously will have uneven days. That unevenness is not evidence of capability. It is evidence of integration in progress."
+        "text": "Students often worry when one scenario feels smooth and the next feels scattered. Variation is normal, particularly while new layers of attention are being integrated. A student who is actively building reassessment timing, transport prioritization, and communication skills simultaneously will have uneven days. That unevenness is not evidence of capability. It is evidence of integration in progress."
       },
       {
         "type": "paragraph",
@@ -5155,7 +4862,9 @@ export const sections: Section[] = ([
       "reflection-without-rumination",
       "turning-feedback-into-action",
       "mental-rehearsal-and-visualization"
-    ]
+    ],
+    "previous": "focused-practice-after-feedback",
+    "next": "the-five-whys"
   },
   {
     "id": "the-five-whys",
@@ -5170,11 +4879,7 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "Mistakes do not teach automatically."
-      },
-      {
-        "type": "paragraph",
-        "text": "It would be convenient if they did. You miss a reassessment, feel the sting of it, and never miss it again. You delay treatment, get feedback, and the pattern disappears. But more often, the same pattern comes back in a slightly different shape."
+        "text": "Mistakes do not teach automatically. It would be convenient if they did. You miss a reassessment, feel the sting of it, and never miss it again. You delay treatment, get feedback, and the pattern disappears. But more often, the same pattern comes back in a slightly different shape."
       },
       {
         "type": "paragraph",
@@ -5190,11 +4895,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The Five Whys are a way of asking what led to a mistake until the answer becomes useful."
-      },
-      {
-        "type": "paragraph",
-        "text": "The point is not to reach exactly five questions. The number matters less than the movement. You are trying to move from the visible behaviour to the structure underneath it."
+        "text": "The Five Whys are a way of asking what led to a mistake until the answer becomes useful. The point is not to reach exactly five questions. The number matters less than the movement. You are trying to move from the visible behaviour to the structure underneath it."
       },
       {
         "type": "paragraph",
@@ -5219,11 +4920,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The Five Whys can sound harsher than they need to be. If the process feels like cross-examining yourself, it will become unhelpful. Students are already good at replaying mistakes. They do not need another method for proving they should have done better."
-      },
-      {
-        "type": "paragraph",
-        "text": "Used properly, the Five Whys are not about blame. They are about tracing the conditions that made the action make sense at the time."
+        "text": "The Five Whys can sound harsher than they need to be. If the process feels like cross-examining yourself, it will become unhelpful. Students are already good at replaying mistakes. They do not need another method for proving they should have done better. Used properly, the Five Whys are not about blame. They are about tracing the conditions that made the action make sense at the time."
       },
       {
         "type": "paragraph",
@@ -5243,11 +4940,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Consider a student managing a patient found by family after an extended time on the floor following a fall."
-      },
-      {
-        "type": "paragraph",
-        "text": "The patient is an older adult, found in the bedroom. They had been down for an unknown period: possibly a few hours, possibly longer. They are conscious and answering questions, but slow. There is a hip injury, and the student appropriately manages pain, assesses circulation and sensation, and begins preparing for transport. The patient tolerates movement acceptably."
+        "text": "Consider a student managing a patient found by family after an extended time on the floor following a fall. The patient is an older adult, found in the bedroom. They had been down for an unknown period: possibly a few hours, possibly longer. They are conscious and answering questions, but slow. There is a hip injury, and the student appropriately manages pain, assesses circulation and sensation, and begins preparing for transport. The patient tolerates movement acceptably."
       },
       {
         "type": "paragraph",
@@ -5255,43 +4948,19 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "During debrief, the instructor says: \"You managed the injury well. Did you think about how long she might have been down?\""
+        "text": "During debrief, the instructor says: \"You managed the injury well. Did you think about how long she might have been down?\" The student pauses. They had not. A shallow fix: I need to ask about time down for all fall patients. A Five Whys chain:"
       },
       {
         "type": "paragraph",
-        "text": "The student pauses. They had not."
+        "text": "Why was the duration not explored? Because the injury was visible and the patient was conscious, so the call organized itself around those facts. Why did the injury become the organizing frame? Because the dispatch said \"fall with injury\" and the presentation confirmed injury immediately."
       },
       {
         "type": "paragraph",
-        "text": "A shallow fix: I need to ask about time down for all fall patients."
+        "text": "Why did confirmation of the injury close the assessment? Because I completed the injury assessment and moved toward transport without asking what else the presentation might include. Why did I not ask what else might be present? Because I had no reliable habit of asking \"what might prolonged immobility have caused\" as part of the assessment for any patient found down."
       },
       {
         "type": "paragraph",
-        "text": "A Five Whys chain:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Why was the duration not explored? Because the injury was visible and the patient was conscious, so the call organized itself around those facts."
-      },
-      {
-        "type": "paragraph",
-        "text": "Why did the injury become the organizing frame? Because the dispatch said \"fall with injury\" and the presentation confirmed injury immediately."
-      },
-      {
-        "type": "paragraph",
-        "text": "Why did confirmation of the injury close the assessment? Because I completed the injury assessment and moved toward transport without asking what else the presentation might include."
-      },
-      {
-        "type": "paragraph",
-        "text": "Why did I not ask what else might be present? Because I had no reliable habit of asking \"what might prolonged immobility have caused\" as part of the assessment for any patient found down."
-      },
-      {
-        "type": "paragraph",
-        "text": "What does that point to? For any patient found after time on the floor, I need to build in a specific question about duration and a targeted check for the complications that prolonged immobility produces in older adults: perfusion, skin, temperature, and renal risk."
-      },
-      {
-        "type": "paragraph",
-        "text": "Now the student has a target that addresses the actual gap: not the fall assessment itself, but the layer of thinking underneath it that asks what the circumstances surrounding the fall may have produced beyond the injury."
+        "text": "What does that point to? For any patient found after time on the floor, I need to build in a specific question about duration and a targeted check for the complications that prolonged immobility produces in older adults: perfusion, skin, temperature, and renal risk. Now the student has a target that addresses the actual gap: not the fall assessment itself, but the layer of thinking underneath it that asks what the circumstances surrounding the fall may have produced beyond the injury."
       },
       {
         "type": "heading",
@@ -5299,19 +4968,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "One useful thing about the Five Whys is that the error often changes shape as the questions improve."
+        "text": "One useful thing about the Five Whys is that the error often changes shape as the questions improve. At first, the problem may look like a missed action. Then it starts to look like hesitation. Then it becomes a decision-framing problem. Eventually, it may point to the learning structure underneath: the directive was memorized as wording but not understood as a way of managing risk. Or the physiology was known in pieces but not connected enough to guide action. Or the student had an assessment sequence but no reliable place where reassessment returned after intervention."
       },
       {
         "type": "paragraph",
-        "text": "At first, the problem may look like a missed action. Then it starts to look like hesitation. Then it becomes a decision-framing problem. Eventually, it may point to the learning structure underneath: the directive was memorized as wording but not understood as a way of managing risk. Or the physiology was known in pieces but not connected enough to guide action. Or the student had an assessment sequence but no reliable place where reassessment returned after intervention."
-      },
-      {
-        "type": "paragraph",
-        "text": "This does not excuse the original error. It makes the repair more accurate."
-      },
-      {
-        "type": "paragraph",
-        "text": "If a student treats every delayed treatment as a speed problem, they may become rushed. If they treat every missed reassessment as a memory problem, they may write \"reassess\" in bigger letters and still lose it under pressure. If they treat every fixation error as a confidence problem, they may miss the real issue: their thinking needs a deliberate check for what does not fit."
+        "text": "This does not excuse the original error. It makes the repair more accurate. If a student treats every delayed treatment as a speed problem, they may become rushed. If they treat every missed reassessment as a memory problem, they may write \"reassess\" in bigger letters and still lose it under pressure. If they treat every fixation error as a confidence problem, they may miss the real issue: their thinking needs a deliberate check for what does not fit."
       },
       {
         "type": "paragraph",
@@ -5362,11 +5023,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The endpoint of a Five Whys chain should point toward a specific learning target, not a vague promise."
-      },
-      {
-        "type": "paragraph",
-        "text": "Less useful endpoints:"
+        "text": "The endpoint of a Five Whys chain should point toward a specific learning target, not a vague promise. Less useful endpoints:"
       },
       {
         "type": "list",
@@ -5401,47 +5058,19 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Consider a student who delays nitroglycerin in a chest pain scenario."
+        "text": "Consider a student who delays nitroglycerin in a chest pain scenario. The patient reports central chest pressure that started while walking up stairs. They are pale and nauseated. Their blood pressure is within range. The 12-lead is not diagnostic. The student gives ASA, continues assessment, asks more history questions, and keeps waiting for the presentation to become clearer before moving toward nitro."
       },
       {
         "type": "paragraph",
-        "text": "The patient reports central chest pressure that started while walking up stairs. They are pale and nauseated. Their blood pressure is within range. The 12-lead is not diagnostic. The student gives ASA, continues assessment, asks more history questions, and keeps waiting for the presentation to become clearer before moving toward nitro."
+        "text": "During debrief, the feedback is direct: nitro was indicated, and the delay mattered. A surface-level response: I need to give nitro faster next time. That may be true, but it is not enough. A Five Whys chain:"
       },
       {
         "type": "paragraph",
-        "text": "During debrief, the feedback is direct: nitro was indicated, and the delay mattered."
+        "text": "Why was nitro delayed? Because I was not fully sure the pain was cardiac. Why did uncertainty stop the decision? Because the ECG did not show a STEMI, and I treated that as a reason to keep gathering information. Why did the ECG carry that much weight? Because I was looking for proof before I felt comfortable acting."
       },
       {
         "type": "paragraph",
-        "text": "A surface-level response: I need to give nitro faster next time."
-      },
-      {
-        "type": "paragraph",
-        "text": "That may be true, but it is not enough."
-      },
-      {
-        "type": "paragraph",
-        "text": "A Five Whys chain:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Why was nitro delayed? Because I was not fully sure the pain was cardiac."
-      },
-      {
-        "type": "paragraph",
-        "text": "Why did uncertainty stop the decision? Because the ECG did not show a STEMI, and I treated that as a reason to keep gathering information."
-      },
-      {
-        "type": "paragraph",
-        "text": "Why did the ECG carry that much weight? Because I was looking for proof before I felt comfortable acting."
-      },
-      {
-        "type": "paragraph",
-        "text": "Why did I feel I needed proof? Because I was thinking of nitro as something I give after certainty, not as a treatment considered within a risk-managed directive when the patient fits and contraindications have been checked."
-      },
-      {
-        "type": "paragraph",
-        "text": "What does that point to? The issue is not only timing. It is how I understand chest pain risk, directive intent, contraindication screening, and reassessment after treatment."
+        "text": "Why did I feel I needed proof? Because I was thinking of nitro as something I give after certainty, not as a treatment considered within a risk-managed directive when the patient fits and contraindications have been checked. What does that point to? The issue is not only timing. It is how I understand chest pain risk, directive intent, contraindication screening, and reassessment after treatment."
       },
       {
         "type": "paragraph",
@@ -5453,27 +5082,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Use this only when the mistake is worth a closer look."
+        "text": "Use this only when the mistake is worth a closer look. Choose one moment: pick the decision, hesitation, fixation, or missed step that mattered most. Do not analyze the whole call. Describe what happened plainly in one sentence. Avoid drama and self-judgment. Ask what led to it: start with the visible behaviour, then keep asking what made that behaviour more likely in the moment."
       },
       {
         "type": "paragraph",
-        "text": "Choose one moment: pick the decision, hesitation, fixation, or missed step that mattered most. Do not analyze the whole call."
-      },
-      {
-        "type": "paragraph",
-        "text": "Describe what happened plainly in one sentence. Avoid drama and self-judgment."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ask what led to it: start with the visible behaviour, then keep asking what made that behaviour more likely in the moment."
-      },
-      {
-        "type": "paragraph",
-        "text": "Stop when the answer becomes actionable: you are looking for a learning target, not a perfect explanation."
-      },
-      {
-        "type": "paragraph",
-        "text": "Convert the endpoint into one adjustment specific enough to use in the next scenario, lab, OSCE, or placement shift."
+        "text": "Stop when the answer becomes actionable: you are looking for a learning target, not a perfect explanation. Convert the endpoint into one adjustment specific enough to use in the next scenario, lab, OSCE, or placement shift."
       },
       {
         "type": "heading",
@@ -5481,11 +5094,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Do not use them to prove that you failed. Do not apply them to every small imperfection. Do not keep asking why after the answer has already become useful. Do not make the endpoint a personality judgment."
-      },
-      {
-        "type": "paragraph",
-        "text": "If the chain ends with \"I am bad at this,\" the process has gone off course. A useful endpoint should point toward something you can practise, notice, compare, rehearse, or build into structure."
+        "text": "Do not use them to prove that you failed. Do not apply them to every small imperfection. Do not keep asking why after the answer has already become useful. Do not make the endpoint a personality judgment. If the chain ends with \"I am bad at this,\" the process has gone off course. A useful endpoint should point toward something you can practise, notice, compare, rehearse, or build into structure."
       },
       {
         "type": "paragraph",
@@ -5514,7 +5123,9 @@ export const sections: Section[] = ([
       "clinical-reasoning",
       "avoiding-premature-closure",
       "turning-feedback-into-action"
-    ]
+    ],
+    "previous": "performance-under-pressure",
+    "next": "turning-feedback-into-action"
   },
   {
     "id": "turning-feedback-into-action",
@@ -5529,11 +5140,7 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "Feedback is only useful if it changes what happens next."
-      },
-      {
-        "type": "paragraph",
-        "text": "If the engine here feels familiar, it should. Focused Practice After Feedback built the practice-design version of it, and Capturing the Debrief handles collecting the raw material before memory edits it. This section is about the translation step in the middle: turning a sentence someone said to you into a behaviour you can actually run."
+        "text": "Feedback is only useful if it changes what happens next. If the engine here feels familiar, it should. Focused Practice After Feedback built the practice-design version of it, and Capturing the Debrief handles collecting the raw material before memory edits it. This section is about the translation step in the middle: turning a sentence someone said to you into a behaviour you can actually run."
       },
       {
         "type": "paragraph",
@@ -5549,11 +5156,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Feedback after scenarios can be accurate and still be hard to use."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student may hear that they need to improve reassessment, communicate more clearly, manage time better, explain decisions, and avoid tunnel vision. All of that may be true. The problem is size. Too much feedback at once becomes a fog. The student understands the themes but does not know what to practise first, and by the time the next scenario starts, the fog is all that remains."
+        "text": "Feedback after scenarios can be accurate and still be hard to use. A student may hear that they need to improve reassessment, communicate more clearly, manage time better, explain decisions, and avoid tunnel vision. All of that may be true. The problem is size. Too much feedback at once becomes a fog. The student understands the themes but does not know what to practise first, and by the time the next scenario starts, the fog is all that remains."
       },
       {
         "type": "paragraph",
@@ -5565,11 +5168,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Insight explains what happened. Adjustment changes what you do next."
-      },
-      {
-        "type": "paragraph",
-        "text": "A student might realize they delayed transport because they were waiting for diagnostic certainty. That insight is real and worth having. But insight alone does not change performance. The adjustment has to be more concrete: \"When risk is rising and the diagnosis is unclear, I will name my working concern and start moving while reassessing en route.\""
+        "text": "Insight explains what happened. Adjustment changes what you do next. A student might realize they delayed transport because they were waiting for diagnostic certainty. That insight is real and worth having. But insight alone does not change performance. The adjustment has to be more concrete: \"When risk is rising and the diagnosis is unclear, I will name my working concern and start moving while reassessing en route.\""
       },
       {
         "type": "paragraph",
@@ -5577,11 +5176,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A student might recognize that they committed to an early explanation and stopped testing it. The adjustment: \"When I form an early impression, I will name one finding that supports it and one finding that should make me pause before committing.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "In each case, the insight is necessary but not sufficient. The adjustment is what changes the next attempt."
+        "text": "A student might recognize that they committed to an early explanation and stopped testing it. The adjustment: \"When I form an early impression, I will name one finding that supports it and one finding that should make me pause before committing.\" In each case, the insight is necessary but not sufficient. The adjustment is what changes the next attempt."
       },
       {
         "type": "heading",
@@ -5589,23 +5184,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The first practical move is to translate feedback into one visible behaviour."
+        "text": "The first practical move is to translate feedback into one visible behaviour. \"Improve reassessment\" becomes: \"After every intervention, I will state what I am reassessing and why, even if only to myself.\" \"Communicate better\" becomes: \"Before moving the patient, I will summarize the working concern and next step to my partner in one sentence.\""
       },
       {
         "type": "paragraph",
-        "text": "\"Improve reassessment\" becomes: \"After every intervention, I will state what I am reassessing and why, even if only to myself.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "\"Communicate better\" becomes: \"Before moving the patient, I will summarize the working concern and next step to my partner in one sentence.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "\"Stop fixating\" becomes: \"When something does not fit my current explanation, I will name it out loud instead of absorbing it silently.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "\"Manage time better\" becomes: \"When I notice the assessment extending without a transport decision, I will ask myself whether the risk picture already justifies moving.\""
+        "text": "\"Stop fixating\" becomes: \"When something does not fit my current explanation, I will name it out loud instead of absorbing it silently.\" \"Manage time better\" becomes: \"When I notice the assessment extending without a transport decision, I will ask myself whether the risk picture already justifies moving.\""
       },
       {
         "type": "paragraph",
@@ -5617,27 +5200,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Consider a student who completes a scenario involving an older adult with a history of diabetes, found confused and not responding normally by a home care worker during a routine visit."
+        "text": "Consider a student who completes a scenario involving an older adult with a history of diabetes, found confused and not responding normally by a home care worker during a routine visit. The glucose is 3.1. The student recognizes hypoglycemia, treats it appropriately, and the patient begins to improve. The call feels organized. During debrief, the instructor says: \"You treated the glucose correctly. Did you reassess fully after treatment? The patient's mental status improved but their blood pressure had drifted downward across two readings while you were preparing for transport.\""
       },
       {
         "type": "paragraph",
-        "text": "The glucose is 3.1. The student recognizes hypoglycemia, treats it appropriately, and the patient begins to improve. The call feels organized. During debrief, the instructor says: \"You treated the glucose correctly. Did you reassess fully after treatment? The patient's mental status improved but their blood pressure had drifted downward across two readings while you were preparing for transport.\""
+        "text": "The student understands the feedback. If they leave with \"watch vitals more carefully\" as the plan, the behaviour probably will not change. They already know vitals matter. A stronger translation starts with the moment. Why did the blood pressure drift go unnoticed? Because the glucose correction felt like completion. The patient was improving, transport was being arranged, and the attention moved forward rather than returning to a full reassessment of the patient's overall status."
       },
       {
         "type": "paragraph",
-        "text": "The student understands the feedback. If they leave with \"watch vitals more carefully\" as the plan, the behaviour probably will not change. They already know vitals matter."
-      },
-      {
-        "type": "paragraph",
-        "text": "A stronger translation starts with the moment. Why did the blood pressure drift go unnoticed? Because the glucose correction felt like completion. The patient was improving, transport was being arranged, and the attention moved forward rather than returning to a full reassessment of the patient's overall status."
-      },
-      {
-        "type": "paragraph",
-        "text": "The adjustment: \"After treating a glucose emergency, I will not assume improvement in one finding means the patient is stable overall. I will reassess mental status, blood pressure, and skin before committing to a transport plan.\""
-      },
-      {
-        "type": "paragraph",
-        "text": "That adjustment is visible. It can be practised. An instructor can observe it. The student will know whether it happened. It is also tied to a specific clinical reason: partial improvement after glucose correction can mask a second process that needs its own assessment."
+        "text": "The adjustment: \"After treating a glucose emergency, I will not assume improvement in one finding means the patient is stable overall. I will reassess mental status, blood pressure, and skin before committing to a transport plan.\" That adjustment is visible. It can be practised. An instructor can observe it. The student will know whether it happened. It is also tied to a specific clinical reason: partial improvement after glucose correction can mask a second process that needs its own assessment."
       },
       {
         "type": "paragraph",
@@ -5649,19 +5220,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "After a debrief, use this sequence before leaving the room or closing the session."
+        "text": "After a debrief, use this sequence before leaving the room or closing the session. Name the most important pattern in the feedback. Not the longest list of issues, but the one that most directly affects safety, reasoning, or call flow if it does not change."
       },
       {
         "type": "paragraph",
-        "text": "Name the most important pattern in the feedback. Not the longest list of issues, but the one that most directly affects safety, reasoning, or call flow if it does not change."
-      },
-      {
-        "type": "paragraph",
-        "text": "Translate it into one visible behaviour. What would improvement look like from the outside? What would you say or do differently at a specific moment in the next scenario?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Decide where you will test it. What kind of call, station, or moment will give that adjustment its next opportunity? Naming the context in advance helps the adjustment arrive when it is needed rather than only in retrospect."
+        "text": "Translate it into one visible behaviour. What would improvement look like from the outside? What would you say or do differently at a specific moment in the next scenario? Decide where you will test it. What kind of call, station, or moment will give that adjustment its next opportunity? Naming the context in advance helps the adjustment arrive when it is needed rather than only in retrospect."
       },
       {
         "type": "paragraph",
@@ -5673,19 +5236,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Some feedback lands hard because it touches confidence, identity, or the fear of not being ready."
+        "text": "Some feedback lands hard because it touches confidence, identity, or the fear of not being ready. That reaction is real, and it is worth acknowledging. Paramedicine students receive feedback in front of peers, from instructors they respect, in environments that already feel high-stakes. Feedback about clinical reasoning or directive decisions can feel like feedback about capability, about whether you are the kind of person who belongs in this work."
       },
       {
         "type": "paragraph",
-        "text": "That reaction is real, and it is worth acknowledging. Paramedicine students receive feedback in front of peers, from instructors they respect, in environments that already feel high-stakes. Feedback about clinical reasoning or directive decisions can feel like feedback about capability, about whether you are the kind of person who belongs in this work."
-      },
-      {
-        "type": "paragraph",
-        "text": "The emotional response just means the work matters to you, and that is not a weakness. The problem is when that response takes over the learning."
-      },
-      {
-        "type": "paragraph",
-        "text": "There are a few things that tend to help. Giving the first emotional wave time to pass before trying to extract the adjustment is one of them. Most students who reflect on feedback two hours after a rough scenario come to a more useful place than students who try to process it immediately in the parking lot. The feedback does not change. The distance from the pressure does."
+        "text": "The emotional response just means the work matters to you, and that is not a weakness. The problem is when that response takes over the learning. There are a few things that tend to help. Giving the first emotional wave time to pass before trying to extract the adjustment is one of them. Most students who reflect on feedback two hours after a rough scenario come to a more useful place than students who try to process it immediately in the parking lot. The feedback does not change. The distance from the pressure does."
       },
       {
         "type": "paragraph",
@@ -5701,11 +5256,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "This section is the end of the Improvement System, but not because improvement stops here."
-      },
-      {
-        "type": "paragraph",
-        "text": "Everything built across the last several sections, scenario days, common errors, focused practice, reflection, the Five Whys, and now feedback translation, is working on the same underlying problem: how to make experience produce something usable rather than just something that happened."
+        "text": "This section is the end of the Improvement System, but not because improvement stops here. Everything built across the last several sections, scenario days, common errors, focused practice, reflection, the Five Whys, and now feedback translation, is working on the same underlying problem: how to make experience produce something usable rather than just something that happened."
       },
       {
         "type": "paragraph",
@@ -5713,11 +5264,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "None of these tools require perfection. They require a willingness to look at what happened, identify one thing that could change, and carry it deliberately into the next attempt."
-      },
-      {
-        "type": "paragraph",
-        "text": "That cycle, run honestly and often enough, is how paramedic thinking develops. Not by avoiding pressure or eliminating mistakes, but by getting incrementally better at learning from both."
+        "text": "None of these tools require perfection. They require a willingness to look at what happened, identify one thing that could change, and carry it deliberately into the next attempt. That cycle, run honestly and often enough, is how paramedic thinking develops. Not by avoiding pressure or eliminating mistakes, but by getting incrementally better at learning from both."
       }
     ],
     "glossaryTerms": [
@@ -5744,7 +5291,9 @@ export const sections: Section[] = ([
       "resetting-when-thinking-narrows",
       "capturing-the-debrief",
       "after-you-fail-something"
-    ]
+    ],
+    "previous": "the-five-whys",
+    "next": "capturing-the-debrief"
   },
   {
     "id": "capturing-the-debrief",
@@ -5828,7 +5377,9 @@ export const sections: Section[] = ([
       "from-scenario-to-practice-target",
       "design-and-run-your-own-scenarios",
       "learning-during-placement"
-    ]
+    ],
+    "previous": "turning-feedback-into-action",
+    "next": "obsidian-for-learning-paramedicine"
   },
   {
     "id": "obsidian-for-learning-paramedicine",
@@ -5843,35 +5394,15 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "Obsidian can be useful for paramedic learning, but only if it stays simple enough to use during a real semester."
+        "text": "Obsidian can be useful for paramedic learning, but only if it stays simple enough to use during a real semester. That part matters. A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet."
       },
       {
         "type": "paragraph",
-        "text": "That part matters."
+        "text": "Eventually, the system asks for more attention than the learning. That is not what we want here. For VitalNotes, Obsidian is not meant to become another project. It is a place where your thinking can live, connect, and change over time. It should help you return to important ideas without asking you to rebuild your understanding every time you sit down to study."
       },
       {
         "type": "paragraph",
-        "text": "A lot of students start note systems with good intentions. At first, the system feels like relief. There is finally a place to put everything. Then it grows. Folders multiply. Tags appear. Templates get added. Plugins become tempting. The student starts adjusting layouts, building dashboards, changing themes, and organizing notes that have not actually helped them think yet."
-      },
-      {
-        "type": "paragraph",
-        "text": "Eventually, the system asks for more attention than the learning."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is not what we want here."
-      },
-      {
-        "type": "paragraph",
-        "text": "For VitalNotes, Obsidian is not meant to become another project. It is a place where your thinking can live, connect, and change over time. It should help you return to important ideas without asking you to rebuild your understanding every time you sit down to study."
-      },
-      {
-        "type": "paragraph",
-        "text": "The goal is not to become good at Obsidian."
-      },
-      {
-        "type": "paragraph",
-        "text": "The goal is to make your learning easier to return to."
+        "text": "The goal is not to become good at Obsidian. The goal is to make your learning easier to return to."
       },
       {
         "type": "heading",
@@ -5879,19 +5410,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Obsidian is a note-taking app that stores your notes as plain text files on your computer."
+        "text": "Obsidian is a note-taking app that stores your notes as plain text files on your computer. A group of notes in Obsidian is called a vault. A vault is just a folder. Inside that folder, each note is a simple text file written in Markdown."
       },
       {
         "type": "paragraph",
-        "text": "A group of notes in Obsidian is called a vault. A vault is just a folder. Inside that folder, each note is a simple text file written in Markdown."
-      },
-      {
-        "type": "paragraph",
-        "text": "You do not need to understand Markdown deeply to use it. For this guide, it is enough to know that you can write normal text, make headings, create lists, and connect notes with double brackets."
-      },
-      {
-        "type": "paragraph",
-        "text": "A link might look like this:"
+        "text": "You do not need to understand Markdown deeply to use it. For this guide, it is enough to know that you can write normal text, make headings, create lists, and connect notes with double brackets. A link might look like this:"
       },
       {
         "type": "paragraph",
@@ -5899,15 +5422,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That link can connect one note to another."
-      },
-      {
-        "type": "paragraph",
-        "text": "This is the main reason Obsidian works well for Smart Notes. It lets you connect ideas without forcing everything into a rigid folder system."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is useful in paramedic learning because ideas rarely stay in one place. Respiratory fatigue connects to work of breathing. Work of breathing connects to reassessment. Reassessment connects to treatment decisions. Treatment decisions connect to directives. Directives connect back to risk, physiology, and patient presentation."
+        "text": "That link can connect one note to another. This is the main reason Obsidian works well for Smart Notes. It lets you connect ideas without forcing everything into a rigid folder system. That is useful in paramedic learning because ideas rarely stay in one place. Respiratory fatigue connects to work of breathing. Work of breathing connects to reassessment. Reassessment connects to treatment decisions. Treatment decisions connect to directives. Directives connect back to risk, physiology, and patient presentation."
       },
       {
         "type": "paragraph",
@@ -5919,15 +5434,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Obsidian can do a lot."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is useful, but it can also become a trap."
-      },
-      {
-        "type": "paragraph",
-        "text": "For this guide, Obsidian is not:"
+        "text": "Obsidian can do a lot. That is useful, but it can also become a trap. For this guide, Obsidian is not:"
       },
       {
         "type": "list",
@@ -5944,15 +5451,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "If Obsidian becomes all of those things, it will probably become too heavy."
-      },
-      {
-        "type": "paragraph",
-        "text": "You need a place to capture ideas, develop notes, connect related thinking, and return to those notes before scenarios, labs, OSCEs, and studying."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is enough for now."
+        "text": "If Obsidian becomes all of those things, it will probably become too heavy. You need a place to capture ideas, develop notes, connect related thinking, and return to those notes before scenarios, labs, OSCEs, and studying. That is enough for now."
       },
       {
         "type": "heading",
@@ -5972,19 +5471,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That is enough at the beginning."
-      },
-      {
-        "type": "paragraph",
-        "text": "Do not start by creating a folder for every course, body system, directive, medication, week, lab, and exam. That may feel organized, but it often creates more places for ideas to disappear."
-      },
-      {
-        "type": "paragraph",
-        "text": "Start smaller."
-      },
-      {
-        "type": "paragraph",
-        "text": "Let the structure grow from actual use."
+        "text": "That is enough at the beginning. Do not start by creating a folder for every course, body system, directive, medication, week, lab, and exam. That may feel organized, but it often creates more places for ideas to disappear. Start smaller. Let the structure grow from actual use."
       },
       {
         "type": "heading",
@@ -5992,19 +5479,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The Inbox is for capture."
-      },
-      {
-        "type": "paragraph",
-        "text": "This is where messy things go before you know what they are."
-      },
-      {
-        "type": "paragraph",
-        "text": "Use it during lectures, labs, readings, debriefs, and scenario days. Capture quickly. Do not polish. Do not format. Do not worry too much about titles."
-      },
-      {
-        "type": "paragraph",
-        "text": "Inbox notes might look like this:"
+        "text": "The Inbox is for capture. This is where messy things go before you know what they are. Use it during lectures, labs, readings, debriefs, and scenario days. Capture quickly. Do not polish. Do not format. Do not worry too much about titles. Inbox notes might look like this:"
       },
       {
         "type": "list",
@@ -6020,15 +5495,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "These are not finished thoughts."
-      },
-      {
-        "type": "paragraph",
-        "text": "They are moments worth returning to."
-      },
-      {
-        "type": "paragraph",
-        "text": "Nothing should live in the Inbox forever. The Inbox is a holding space. Its job is to catch the idea before it disappears, not to become a storage room for everything you did not process."
+        "text": "These are not finished thoughts. They are moments worth returning to. Nothing should live in the Inbox forever. The Inbox is a holding space. Its job is to catch the idea before it disappears, not to become a storage room for everything you did not process."
       },
       {
         "type": "heading",
@@ -6036,35 +5503,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The Notes folder is where thinking happens."
+        "text": "The Notes folder is where thinking happens. This is where working notes and Smart Notes live. A working note is still developing. It may contain rough explanations, questions, examples, and partial links. A Smart Note is more stable. It explains one idea clearly enough that future you can reuse it."
       },
       {
         "type": "paragraph",
-        "text": "This is where working notes and Smart Notes live."
+        "text": "These do not need separate folders at first. You can keep them together and let the note itself show its stage. A rough note can stay rough while the idea is still forming. A clearer note can become a Smart Note when it is ready."
       },
       {
         "type": "paragraph",
-        "text": "A working note is still developing. It may contain rough explanations, questions, examples, and partial links."
-      },
-      {
-        "type": "paragraph",
-        "text": "A Smart Note is more stable. It explains one idea clearly enough that future you can reuse it."
-      },
-      {
-        "type": "paragraph",
-        "text": "These do not need separate folders at first."
-      },
-      {
-        "type": "paragraph",
-        "text": "You can keep them together and let the note itself show its stage. A rough note can stay rough while the idea is still forming. A clearer note can become a Smart Note when it is ready."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Notes folder is for ideas you are thinking with."
-      },
-      {
-        "type": "paragraph",
-        "text": "That means not everything belongs there. A copied table, a PDF, a lecture slide, or a directive document may be useful, but those things are not automatically your thinking. Your thinking begins when you explain, compare, question, connect, or apply the material."
+        "text": "The Notes folder is for ideas you are thinking with. That means not everything belongs there. A copied table, a PDF, a lecture slide, or a directive document may be useful, but those things are not automatically your thinking. Your thinking begins when you explain, compare, question, connect, or apply the material."
       },
       {
         "type": "heading",
@@ -6072,11 +5519,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Reference is for material you may need to look up, but are not actively turning into your own thinking yet."
-      },
-      {
-        "type": "paragraph",
-        "text": "This might include:"
+        "text": "Reference is for material you may need to look up, but are not actively turning into your own thinking yet. This might include:"
       },
       {
         "type": "list",
@@ -6093,23 +5536,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Reference material is useful. It helps with accuracy. It gives you something to check against."
+        "text": "Reference material is useful. It helps with accuracy. It gives you something to check against. But reference material is not the same as understanding. A copied table can support a Smart Note, but it is not a Smart Note by itself. A directive can sit in Reference, but your thinking about the directive should live in Notes. A lecture slide can help you check a detail, but it should not replace your own explanation of why the idea matters."
       },
       {
         "type": "paragraph",
-        "text": "But reference material is not the same as understanding."
-      },
-      {
-        "type": "paragraph",
-        "text": "A copied table can support a Smart Note, but it is not a Smart Note by itself. A directive can sit in Reference, but your thinking about the directive should live in Notes. A lecture slide can help you check a detail, but it should not replace your own explanation of why the idea matters."
-      },
-      {
-        "type": "paragraph",
-        "text": "Reference supports thinking."
-      },
-      {
-        "type": "paragraph",
-        "text": "It should not become a graveyard for files you never return to."
+        "text": "Reference supports thinking. It should not become a graveyard for files you never return to."
       },
       {
         "type": "heading",
@@ -6117,31 +5548,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A simple note system has a simple path."
-      },
-      {
-        "type": "paragraph",
-        "text": "First, capture."
-      },
-      {
-        "type": "paragraph",
-        "text": "You write something quickly because it might matter."
-      },
-      {
-        "type": "paragraph",
-        "text": "Second, process."
-      },
-      {
-        "type": "paragraph",
-        "text": "You return to the captured note and ask what it is really about."
-      },
-      {
-        "type": "paragraph",
-        "text": "Third, stabilize."
-      },
-      {
-        "type": "paragraph",
-        "text": "If the idea matters enough, you turn it into a working note or Smart Note."
+        "text": "A simple note system has a simple path. First, capture. You write something quickly because it might matter. Second, process. You return to the captured note and ask what it is really about. Third, stabilize. If the idea matters enough, you turn it into a working note or Smart Note."
       },
       {
         "type": "paragraph",
@@ -6149,11 +5556,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Patient rated pain a 3 but was guarding and would not move."
-      },
-      {
-        "type": "paragraph",
-        "text": "When processing it, you might ask:"
+        "text": "Patient rated pain a 3 but was guarding and would not move. When processing it, you might ask:"
       },
       {
         "type": "list",
@@ -6178,11 +5581,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Now the note is useful."
-      },
-      {
-        "type": "paragraph",
-        "text": "It is no longer just a memory from one scenario. It has become a clinical idea you can return to, link, revise, and retrieve."
+        "text": "Now the note is useful. It is no longer just a memory from one scenario. It has become a clinical idea you can return to, link, revise, and retrieve."
       },
       {
         "type": "heading",
@@ -6190,11 +5589,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Good note titles should communicate meaning."
-      },
-      {
-        "type": "paragraph",
-        "text": "A title like:"
+        "text": "Good note titles should communicate meaning. A title like:"
       },
       {
         "type": "paragraph",
@@ -6202,15 +5597,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "may be too broad."
-      },
-      {
-        "type": "paragraph",
-        "text": "It names a topic, but it does not tell you what the note is trying to say."
-      },
-      {
-        "type": "paragraph",
-        "text": "More useful titles might be:"
+        "text": "may be too broad. It names a topic, but it does not tell you what the note is trying to say. More useful titles might be:"
       },
       {
         "type": "list",
@@ -6225,15 +5612,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Those titles do more work."
-      },
-      {
-        "type": "paragraph",
-        "text": "They carry a claim, distinction, or clinical warning. They help future you know why the note exists before you open it."
-      },
-      {
-        "type": "paragraph",
-        "text": "If a title could be a textbook chapter, it is probably too broad for a Smart Note."
+        "text": "Those titles do more work. They carry a claim, distinction, or clinical warning. They help future you know why the note exists before you open it. If a title could be a textbook chapter, it is probably too broad for a Smart Note."
       },
       {
         "type": "heading",
@@ -6241,15 +5620,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Links should represent relationships that matter."
-      },
-      {
-        "type": "paragraph",
-        "text": "Do not link notes only because they belong to the same broad topic. Link them because one idea changes how you understand another."
-      },
-      {
-        "type": "paragraph",
-        "text": "A note on respiratory fatigue might link to:"
+        "text": "Links should represent relationships that matter. Do not link notes only because they belong to the same broad topic. Link them because one idea changes how you understand another. A note on respiratory fatigue might link to:"
       },
       {
         "type": "list",
@@ -6263,15 +5634,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Those links are useful because the ideas influence the same decisions."
-      },
-      {
-        "type": "paragraph",
-        "text": "They help you follow a reasoning trail."
-      },
-      {
-        "type": "paragraph",
-        "text": "If a link does not help you think differently, compare more clearly, or find a useful connection later, it probably does not need to be there."
+        "text": "Those links are useful because the ideas influence the same decisions. They help you follow a reasoning trail. If a link does not help you think differently, compare more clearly, or find a useful connection later, it probably does not need to be there."
       },
       {
         "type": "heading",
@@ -6279,15 +5642,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "You do not need to live inside Obsidian."
-      },
-      {
-        "type": "paragraph",
-        "text": "During the week, capture rough notes as they appear."
-      },
-      {
-        "type": "paragraph",
-        "text": "This might happen during:"
+        "text": "You do not need to live inside Obsidian. During the week, capture rough notes as they appear. This might happen during:"
       },
       {
         "type": "list",
@@ -6302,11 +5657,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Then, once or twice a week, process a small number of captured notes."
-      },
-      {
-        "type": "paragraph",
-        "text": "For each note, choose one action:"
+        "text": "Then, once or twice a week, process a small number of captured notes. For each note, choose one action:"
       },
       {
         "type": "list",
@@ -6320,15 +5671,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That is enough."
-      },
-      {
-        "type": "paragraph",
-        "text": "You are not trying to process everything. You are trying to keep the important ideas from disappearing."
-      },
-      {
-        "type": "paragraph",
-        "text": "A useful weekly rhythm might be as small as twenty minutes. Open the Inbox. Pick three notes. Clean one up. Delete one. Link one to something that already matters."
+        "text": "That is enough. You are not trying to process everything. You are trying to keep the important ideas from disappearing. A useful weekly rhythm might be as small as twenty minutes. Open the Inbox. Pick three notes. Clean one up. Delete one. Link one to something that already matters."
       },
       {
         "type": "paragraph",
@@ -6340,15 +5683,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Obsidian can help you prepare by reactivating connected understanding."
-      },
-      {
-        "type": "paragraph",
-        "text": "Before a respiratory scenario day, you might open one useful note and follow a few links for five or ten minutes."
-      },
-      {
-        "type": "paragraph",
-        "text": "You might move from:"
+        "text": "Obsidian can help you prepare by reactivating connected understanding. Before a respiratory scenario day, you might open one useful note and follow a few links for five or ten minutes. You might move from:"
       },
       {
         "type": "paragraph",
@@ -6380,15 +5715,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That kind of review is different from rereading a folder."
-      },
-      {
-        "type": "paragraph",
-        "text": "You are not trying to memorize everything again. You are warming up relationships that matter."
-      },
-      {
-        "type": "paragraph",
-        "text": "This can help because scenarios rarely test isolated facts in isolation. They ask you to use connected understanding while the patient is changing, while other tasks compete for attention, and while you still have to decide what matters next."
+        "text": "That kind of review is different from rereading a folder. You are not trying to memorize everything again. You are warming up relationships that matter. This can help because scenarios rarely test isolated facts in isolation. They ask you to use connected understanding while the patient is changing, while other tasks compete for attention, and while you still have to decide what matters next."
       },
       {
         "type": "heading",
@@ -6396,11 +5723,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Avoid building the system before you have notes that need a system."
-      },
-      {
-        "type": "paragraph",
-        "text": "Common traps include:"
+        "text": "Avoid building the system before you have notes that need a system. Common traps include:"
       },
       {
         "type": "list",
@@ -6417,19 +5740,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "These things can feel productive."
-      },
-      {
-        "type": "paragraph",
-        "text": "Sometimes they are just another way to avoid the harder work of understanding."
-      },
-      {
-        "type": "paragraph",
-        "text": "Start with writing, linking, and returning to ideas."
-      },
-      {
-        "type": "paragraph",
-        "text": "The rest can wait."
+        "text": "These things can feel productive. Sometimes they are just another way to avoid the harder work of understanding. Start with writing, linking, and returning to ideas. The rest can wait."
       },
       {
         "type": "heading",
@@ -6437,11 +5748,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Change the system only when the current system stops helping."
-      },
-      {
-        "type": "paragraph",
-        "text": "Good reasons to adjust include:"
+        "text": "Change the system only when the current system stops helping. Good reasons to adjust include:"
       },
       {
         "type": "list",
@@ -6457,15 +5764,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Do not change the system just because it feels imperfect."
-      },
-      {
-        "type": "paragraph",
-        "text": "Some imperfection is normal."
-      },
-      {
-        "type": "paragraph",
-        "text": "A note system should evolve from use, not from discomfort with mess."
+        "text": "Do not change the system just because it feels imperfect. Some imperfection is normal. A note system should evolve from use, not from discomfort with mess."
       },
       {
         "type": "heading",
@@ -6473,19 +5772,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A working Obsidian system is usually not impressive from the outside."
-      },
-      {
-        "type": "paragraph",
-        "text": "It may look plain. It may have a small number of folders. It may have rough notes beside clearer ones. It may not have a beautiful graph or elaborate dashboard."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is fine."
-      },
-      {
-        "type": "paragraph",
-        "text": "Success looks more like this:"
+        "text": "A working Obsidian system is usually not impressive from the outside. It may look plain. It may have a small number of folders. It may have rough notes beside clearer ones. It may not have a beautiful graph or elaborate dashboard. That is fine. Success looks more like this:"
       },
       {
         "type": "list",
@@ -6501,27 +5788,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "If Obsidian helps with that, it is working."
+        "text": "If Obsidian helps with that, it is working. If the system demands attention instead of supporting learning, simplify it. Obsidian is only useful if it helps you think. Used well, it gives your Smart Notes a simple home. It lets ideas move from rough capture to working explanation to reusable understanding. It helps you connect physiology, directives, patient presentations, scenario errors, and clinical reasoning without forcing everything into rigid folders."
       },
       {
         "type": "paragraph",
-        "text": "If the system demands attention instead of supporting learning, simplify it."
-      },
-      {
-        "type": "paragraph",
-        "text": "Obsidian is only useful if it helps you think."
-      },
-      {
-        "type": "paragraph",
-        "text": "Used well, it gives your Smart Notes a simple home. It lets ideas move from rough capture to working explanation to reusable understanding. It helps you connect physiology, directives, patient presentations, scenario errors, and clinical reasoning without forcing everything into rigid folders."
-      },
-      {
-        "type": "paragraph",
-        "text": "This completes the Build Usable Notes cluster."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you are following the main guide, the next core step is recall: whether the understanding you have built can come back when you need it."
+        "text": "This completes the Build Usable Notes cluster. If you are following the main guide, the next core step is recall: whether the understanding you have built can come back when you need it."
       }
     ],
     "glossaryTerms": [
@@ -6538,7 +5809,9 @@ export const sections: Section[] = ([
       "from-capture-to-smart-note",
       "types-of-notes-and-idea-maturation",
       "retrieval-and-spaced-learning"
-    ]
+    ],
+    "previous": "capturing-the-debrief",
+    "next": "anki-for-paramedic-learning"
   },
   {
     "id": "anki-for-paramedic-learning",
@@ -6553,31 +5826,15 @@ export const sections: Section[] = ([
     "body": [
       {
         "type": "paragraph",
-        "text": "Anki can help paramedic students."
+        "text": "Anki can help paramedic students. Used well, it gives you a structured way to practice retrieval over time. It brings material back after a delay. It makes you answer before looking. During busy weeks, when lectures, labs, scenarios, work, and life are all competing for attention, that can be genuinely useful."
       },
       {
         "type": "paragraph",
-        "text": "Used well, it gives you a structured way to practice retrieval over time. It brings material back after a delay. It makes you answer before looking. During busy weeks, when lectures, labs, scenarios, work, and life are all competing for attention, that can be genuinely useful."
+        "text": "But Anki is still only a tool. It does not decide what matters clinically. It does not build understanding for you. It does not know whether a card is useful, misleading, too easy, too vague, or disconnected from patient care. It will repeat whatever you give it."
       },
       {
         "type": "paragraph",
-        "text": "But Anki is still only a tool."
-      },
-      {
-        "type": "paragraph",
-        "text": "It does not decide what matters clinically. It does not build understanding for you. It does not know whether a card is useful, misleading, too easy, too vague, or disconnected from patient care. It will repeat whatever you give it."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is the important part."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you put shallow prompts into Anki, it will help you practice shallow recall very consistently. That can feel productive while quietly pulling your attention away from the kind of thinking you need during scenarios."
-      },
-      {
-        "type": "paragraph",
-        "text": "So the better question is not simply, “Should I use Anki?”"
+        "text": "That is the important part. If you put shallow prompts into Anki, it will help you practice shallow recall very consistently. That can feel productive while quietly pulling your attention away from the kind of thinking you need during scenarios. So the better question is not simply, “Should I use Anki?”"
       },
       {
         "type": "paragraph",
@@ -6597,11 +5854,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Anki is strongest when important information needs to be brought back repeatedly over time."
-      },
-      {
-        "type": "paragraph",
-        "text": "In paramedic school, that may include:"
+        "text": "Anki is strongest when important information needs to be brought back repeatedly over time. In paramedic school, that may include:"
       },
       {
         "type": "list",
@@ -6618,19 +5871,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "These are reasonable Anki targets because they need to be reachable without a long search."
+        "text": "These are reasonable Anki targets because they need to be reachable without a long search. If a student has to rebuild every basic detail from scratch during a scenario, working memory gets crowded quickly. Some information needs to become easier to reach so attention can stay with the patient, the pattern, and the next decision."
       },
       {
         "type": "paragraph",
-        "text": "If a student has to rebuild every basic detail from scratch during a scenario, working memory gets crowded quickly. Some information needs to become easier to reach so attention can stay with the patient, the pattern, and the next decision."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is where Anki can reduce load."
-      },
-      {
-        "type": "paragraph",
-        "text": "It can make certain pieces of knowledge more available, which leaves more room for assessment and reasoning."
+        "text": "That is where Anki can reduce load. It can make certain pieces of knowledge more available, which leaves more room for assessment and reasoning."
       },
       {
         "type": "heading",
@@ -6638,43 +5883,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Anki becomes less helpful when it makes clean answers feel like clinical readiness."
+        "text": "Anki becomes less helpful when it makes clean answers feel like clinical readiness. A flashcard can ask for a definition. It can ask for a dose. It can ask for a list. Those are sometimes useful. But real calls are not organized that way. You do not get the topic heading first."
       },
       {
         "type": "paragraph",
-        "text": "A flashcard can ask for a definition. It can ask for a dose. It can ask for a list. Those are sometimes useful. But real calls are not organized that way."
+        "text": "You do not get the exact wording from your card. You do not get the patient problem neatly labelled. You get a person who is vague, anxious, compensating, deteriorating, distracted, embarrassed, or unable to explain what is happening clearly. You get family members adding details out of order. You get findings that only become meaningful when they are connected."
       },
       {
         "type": "paragraph",
-        "text": "You do not get the topic heading first."
-      },
-      {
-        "type": "paragraph",
-        "text": "You do not get the exact wording from your card."
-      },
-      {
-        "type": "paragraph",
-        "text": "You do not get the patient problem neatly labelled."
-      },
-      {
-        "type": "paragraph",
-        "text": "You get a person who is vague, anxious, compensating, deteriorating, distracted, embarrassed, or unable to explain what is happening clearly. You get family members adding details out of order. You get findings that only become meaningful when they are connected."
-      },
-      {
-        "type": "paragraph",
-        "text": "Anki does not automatically train that kind of complexity."
-      },
-      {
-        "type": "paragraph",
-        "text": "It can support clinical learning, but it cannot replace it. Scenarios, labs, debriefs, assessment practice, directive interpretation, and Smart Notes still matter."
-      },
-      {
-        "type": "paragraph",
-        "text": "Anki should strengthen access to useful knowledge."
-      },
-      {
-        "type": "paragraph",
-        "text": "It should not flatten clinical reasoning into isolated answers."
+        "text": "Anki does not automatically train that kind of complexity. It can support clinical learning, but it cannot replace it. Scenarios, labs, debriefs, assessment practice, directive interpretation, and Smart Notes still matter. Anki should strengthen access to useful knowledge. It should not flatten clinical reasoning into isolated answers."
       },
       {
         "type": "heading",
@@ -6682,27 +5899,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Most students who struggle with Anki do not fail because the app is weak."
+        "text": "Most students who struggle with Anki do not fail because the app is weak. They struggle because the deck becomes too large, too detailed, too repetitive, or too disconnected from actual use. If you are starting, start smaller than feels impressive. Do not try to turn every lecture slide into cards. Do not make hundreds of cards in one weekend. Do not create a deck that requires perfect daily discipline just to survive."
       },
       {
         "type": "paragraph",
-        "text": "They struggle because the deck becomes too large, too detailed, too repetitive, or too disconnected from actual use."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you are starting, start smaller than feels impressive."
-      },
-      {
-        "type": "paragraph",
-        "text": "Do not try to turn every lecture slide into cards. Do not make hundreds of cards in one weekend. Do not create a deck that requires perfect daily discipline just to survive."
-      },
-      {
-        "type": "paragraph",
-        "text": "Start with a small number of high-value cards from material that keeps appearing in class, lab, directives, or scenarios."
-      },
-      {
-        "type": "paragraph",
-        "text": "A reasonable starting point might be:"
+        "text": "Start with a small number of high-value cards from material that keeps appearing in class, lab, directives, or scenarios. A reasonable starting point might be:"
       },
       {
         "type": "list",
@@ -6715,11 +5916,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "That is enough to begin."
-      },
-      {
-        "type": "paragraph",
-        "text": "A smaller deck that you actually review is better than a large deck that becomes another source of guilt."
+        "text": "That is enough to begin. A smaller deck that you actually review is better than a large deck that becomes another source of guilt."
       },
       {
         "type": "heading",
@@ -6727,31 +5924,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Before making a card, ask what the knowledge is supposed to help you do."
-      },
-      {
-        "type": "paragraph",
-        "text": "Does it help you notice something?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Does it help you decide something?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Does it help you avoid harm?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Does it help you reassess?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Does it help you explain your reasoning?"
-      },
-      {
-        "type": "paragraph",
-        "text": "If the answer is yes, the card probably has a clinical job. That does not mean every card needs to be complicated. It means the card should point toward use."
+        "text": "Before making a card, ask what the knowledge is supposed to help you do. Does it help you notice something? Does it help you decide something? Does it help you avoid harm? Does it help you reassess? Does it help you explain your reasoning? If the answer is yes, the card probably has a clinical job. That does not mean every card needs to be complicated. It means the card should point toward use."
       },
       {
         "type": "paragraph",
@@ -6759,43 +5932,19 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "What is hypoxia?"
+        "text": "What is hypoxia? A stronger card asks:"
       },
       {
         "type": "paragraph",
-        "text": "A stronger card asks:"
+        "text": "What early changes might suggest poor oxygen delivery before the patient looks dramatically unstable? A weak card asks:"
       },
       {
         "type": "paragraph",
-        "text": "What early changes might suggest poor oxygen delivery before the patient looks dramatically unstable?"
+        "text": "What is the dose of nitroglycerin? A better set of cards might include:"
       },
       {
         "type": "paragraph",
-        "text": "A weak card asks:"
-      },
-      {
-        "type": "paragraph",
-        "text": "What is the dose of nitroglycerin?"
-      },
-      {
-        "type": "paragraph",
-        "text": "A better set of cards might include:"
-      },
-      {
-        "type": "paragraph",
-        "text": "What must be assessed before giving nitroglycerin?"
-      },
-      {
-        "type": "paragraph",
-        "text": "What findings would make nitroglycerin unsafe or require caution?"
-      },
-      {
-        "type": "paragraph",
-        "text": "What should be reassessed before repeating nitroglycerin?"
-      },
-      {
-        "type": "paragraph",
-        "text": "The dose still matters. It may deserve a simple card. But the dose should not be the only thing the student practices retrieving."
+        "text": "What must be assessed before giving nitroglycerin? What findings would make nitroglycerin unsafe or require caution? What should be reassessed before repeating nitroglycerin? The dose still matters. It may deserve a simple card. But the dose should not be the only thing the student practices retrieving."
       },
       {
         "type": "heading",
@@ -6803,15 +5952,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Some students try to make one perfect card for a complex topic."
-      },
-      {
-        "type": "paragraph",
-        "text": "That usually creates a card that is too vague, too heavy, or too frustrating to answer well."
-      },
-      {
-        "type": "paragraph",
-        "text": "A better approach is to make several smaller cards that approach the idea from different angles."
+        "text": "Some students try to make one perfect card for a complex topic. That usually creates a card that is too vague, too heavy, or too frustrating to answer well. A better approach is to make several smaller cards that approach the idea from different angles."
       },
       {
         "type": "paragraph",
@@ -6829,11 +5970,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Each card is small enough to answer. Together, they build a more usable pattern."
-      },
-      {
-        "type": "paragraph",
-        "text": "The goal is not to memorize a paragraph about asthma. The goal is to make the important pieces easier to reach when the patient is in front of you."
+        "text": "Each card is small enough to answer. Together, they build a more usable pattern. The goal is not to memorize a paragraph about asthma. The goal is to make the important pieces easier to reach when the patient is in front of you."
       },
       {
         "type": "heading",
@@ -6841,27 +5978,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Not every card needs to be clinically elaborate."
+        "text": "Not every card needs to be clinically elaborate. Some cards should be simple because some facts need clean access. Medication doses, routes, age limits, contraindications, timing rules, and key assessment values may need straightforward cards. There is nothing wrong with that. The problem is not simple cards."
       },
       {
         "type": "paragraph",
-        "text": "Some cards should be simple because some facts need clean access. Medication doses, routes, age limits, contraindications, timing rules, and key assessment values may need straightforward cards."
-      },
-      {
-        "type": "paragraph",
-        "text": "There is nothing wrong with that."
-      },
-      {
-        "type": "paragraph",
-        "text": "The problem is not simple cards."
-      },
-      {
-        "type": "paragraph",
-        "text": "The problem is a deck made only of simple cards."
-      },
-      {
-        "type": "paragraph",
-        "text": "A useful paramedic deck usually needs a mix:"
+        "text": "The problem is a deck made only of simple cards. A useful paramedic deck usually needs a mix:"
       },
       {
         "type": "list",
@@ -6876,15 +5997,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Simple cards help with accuracy."
-      },
-      {
-        "type": "paragraph",
-        "text": "Clinical cards help with use."
-      },
-      {
-        "type": "paragraph",
-        "text": "Both matter."
+        "text": "Simple cards help with accuracy. Clinical cards help with use. Both matter."
       },
       {
         "type": "heading",
@@ -6892,19 +6005,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A common Anki trap is creating cards that become easy because the wording is familiar."
-      },
-      {
-        "type": "paragraph",
-        "text": "You see the same question over and over. Eventually, you may not be retrieving the idea anymore. You may just be recognizing the card."
-      },
-      {
-        "type": "paragraph",
-        "text": "That can create false confidence."
-      },
-      {
-        "type": "paragraph",
-        "text": "To avoid this, vary the way important ideas are tested. The deck does not need to become complicated. It just needs more than one route back to important knowledge."
+        "text": "A common Anki trap is creating cards that become easy because the wording is familiar. You see the same question over and over. Eventually, you may not be retrieving the idea anymore. You may just be recognizing the card. That can create false confidence. To avoid this, vary the way important ideas are tested. The deck does not need to become complicated. It just needs more than one route back to important knowledge."
       },
       {
         "type": "paragraph",
@@ -6912,11 +6013,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "What is sepsis?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Also ask:"
+        "text": "What is sepsis? Also ask:"
       },
       {
         "type": "list",
@@ -6937,35 +6034,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "One of the best uses of Anki is repairing repeated errors."
+        "text": "One of the best uses of Anki is repairing repeated errors. If a scenario exposes a gap, that gap is valuable. It tells you what did not come back when you needed it. After a scenario, do not turn the whole call into cards. That becomes too much. Instead, choose one or two moments where better access would have helped."
       },
       {
         "type": "paragraph",
-        "text": "If a scenario exposes a gap, that gap is valuable. It tells you what did not come back when you needed it."
-      },
-      {
-        "type": "paragraph",
-        "text": "After a scenario, do not turn the whole call into cards. That becomes too much. Instead, choose one or two moments where better access would have helped."
-      },
-      {
-        "type": "paragraph",
-        "text": "Maybe you forgot a contraindication."
-      },
-      {
-        "type": "paragraph",
-        "text": "Maybe you missed that mental status was worsening."
-      },
-      {
-        "type": "paragraph",
-        "text": "Maybe you did not reassess after an intervention."
-      },
-      {
-        "type": "paragraph",
-        "text": "Maybe you knew a directive but could not explain why it applied."
-      },
-      {
-        "type": "paragraph",
-        "text": "Those moments can become useful cards because they come from performance, not abstract study."
+        "text": "Maybe you forgot a contraindication. Maybe you missed that mental status was worsening. Maybe you did not reassess after an intervention. Maybe you knew a directive but could not explain why it applied. Those moments can become useful cards because they come from performance, not abstract study."
       },
       {
         "type": "paragraph",
@@ -6990,27 +6063,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Anki works best when it is fed by understanding."
+        "text": "Anki works best when it is fed by understanding. Smart Notes help with this because they give you clearer source material. A Smart Note captures one idea, explains it in your own words, identifies clinical signals, and names common confusion. That is better source material than a copied slide or a highlighted paragraph."
       },
       {
         "type": "paragraph",
-        "text": "Smart Notes help with this because they give you clearer source material. A Smart Note captures one idea, explains it in your own words, identifies clinical signals, and names common confusion. That is better source material than a copied slide or a highlighted paragraph."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Smart Note is where understanding develops."
-      },
-      {
-        "type": "paragraph",
-        "text": "Anki is where selected pieces of that understanding are practiced over time."
-      },
-      {
-        "type": "paragraph",
-        "text": "Those jobs should stay separate."
-      },
-      {
-        "type": "paragraph",
-        "text": "Do not put the whole Smart Note into Anki. That usually creates long, clumsy cards. Instead, pull out the pieces that need stronger access."
+        "text": "The Smart Note is where understanding develops. Anki is where selected pieces of that understanding are practiced over time. Those jobs should stay separate. Do not put the whole Smart Note into Anki. That usually creates long, clumsy cards. Instead, pull out the pieces that need stronger access."
       },
       {
         "type": "paragraph",
@@ -7018,31 +6075,11 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Why can ischemic chest pain remain concerning even when the first ECG is not diagnostic?"
+        "text": "Why can ischemic chest pain remain concerning even when the first ECG is not diagnostic? What changes would make reassessment more urgent? What should be considered before repeating nitroglycerin? From a Smart Note about directive intent, you might create:"
       },
       {
         "type": "paragraph",
-        "text": "What changes would make reassessment more urgent?"
-      },
-      {
-        "type": "paragraph",
-        "text": "What should be considered before repeating nitroglycerin?"
-      },
-      {
-        "type": "paragraph",
-        "text": "From a Smart Note about directive intent, you might create:"
-      },
-      {
-        "type": "paragraph",
-        "text": "What clinical risk is this directive trying to manage?"
-      },
-      {
-        "type": "paragraph",
-        "text": "What finding would make me stop and reassess?"
-      },
-      {
-        "type": "paragraph",
-        "text": "This keeps Anki connected to meaning without forcing it to carry the full explanation."
+        "text": "What clinical risk is this directive trying to manage? What finding would make me stop and reassess? This keeps Anki connected to meaning without forcing it to carry the full explanation."
       },
       {
         "type": "heading",
@@ -7050,43 +6087,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Anki can make review feel automatic."
+        "text": "Anki can make review feel automatic. That is useful, but it can also become mindless. When a card appears, pause long enough to actually answer. Do not flip the card the moment it feels familiar. Try to say the answer, explain the decision, or name the boundary before checking."
       },
       {
         "type": "paragraph",
-        "text": "That is useful, but it can also become mindless."
+        "text": "If you were wrong, take a few seconds to notice why. Did you forget the fact? Did you recognize the card but not understand the idea? Did you remember the indication but miss the contraindication? Did you know the answer but fail to connect it to a patient situation?"
       },
       {
         "type": "paragraph",
-        "text": "When a card appears, pause long enough to actually answer. Do not flip the card the moment it feels familiar. Try to say the answer, explain the decision, or name the boundary before checking."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you were wrong, take a few seconds to notice why."
-      },
-      {
-        "type": "paragraph",
-        "text": "Did you forget the fact?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Did you recognize the card but not understand the idea?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Did you remember the indication but miss the contraindication?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Did you know the answer but fail to connect it to a patient situation?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Those are different problems. Treating them the same way makes Anki less useful."
-      },
-      {
-        "type": "paragraph",
-        "text": "Anki is not only a review queue. It can also show you what kind of access is weak."
+        "text": "Those are different problems. Treating them the same way makes Anki less useful. Anki is not only a review queue. It can also show you what kind of access is weak."
       },
       {
         "type": "heading",
@@ -7094,15 +6103,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "A deck should not be permanent just because you made it."
-      },
-      {
-        "type": "paragraph",
-        "text": "Some cards should be edited. Some should be suspended. Some should be deleted."
-      },
-      {
-        "type": "paragraph",
-        "text": "Change a card when:"
+        "text": "A deck should not be permanent just because you made it. Some cards should be edited. Some should be suspended. Some should be deleted. Change a card when:"
       },
       {
         "type": "list",
@@ -7131,11 +6132,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "This is not failure. It is maintenance."
-      },
-      {
-        "type": "paragraph",
-        "text": "A good deck gets cleaner over time."
+        "text": "This is not failure. It is maintenance. A good deck gets cleaner over time."
       },
       {
         "type": "heading",
@@ -7143,19 +6140,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Anki should not become the place where all learning goes."
-      },
-      {
-        "type": "paragraph",
-        "text": "It should not replace reading, Smart Notes, scenarios, directive study, lab practice, or asking questions when something does not make sense."
-      },
-      {
-        "type": "paragraph",
-        "text": "It also should not become a daily guilt machine."
-      },
-      {
-        "type": "paragraph",
-        "text": "If Anki becomes heavy enough that it crowds out understanding, the tool has started to work against the goal. The point is not to have a perfect deck. The point is to make important knowledge easier to reach when you need it."
+        "text": "Anki should not become the place where all learning goes. It should not replace reading, Smart Notes, scenarios, directive study, lab practice, or asking questions when something does not make sense. It also should not become a daily guilt machine. If Anki becomes heavy enough that it crowds out understanding, the tool has started to work against the goal. The point is not to have a perfect deck. The point is to make important knowledge easier to reach when you need it."
       },
       {
         "type": "paragraph",
@@ -7167,15 +6152,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Here is a reasonable way to begin."
-      },
-      {
-        "type": "paragraph",
-        "text": "After lecture, lab, reading, or a scenario, choose a small number of important ideas."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ask:"
+        "text": "Here is a reasonable way to begin. After lecture, lab, reading, or a scenario, choose a small number of important ideas. Ask:"
       },
       {
         "type": "list",
@@ -7189,35 +6166,15 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "Make a few cards from those answers."
+        "text": "Make a few cards from those answers. Keep them short. Keep them specific. Keep them connected to use. During reviews, answer before flipping. Notice misses. Edit cards that are not helping. Let the deck stay smaller than your ambition. That is enough to make Anki useful."
       },
       {
         "type": "paragraph",
-        "text": "Keep them short. Keep them specific. Keep them connected to use."
+        "text": "The Build Recall cluster has focused on access. First, retrieval and spacing helped explain how knowledge becomes easier to reach over time. Then clinical recall helped shape what kind of knowledge is worth practicing. Anki can support that work, as long as it strengthens clinical access instead of flattening learning into disconnected answers."
       },
       {
         "type": "paragraph",
-        "text": "During reviews, answer before flipping. Notice misses. Edit cards that are not helping. Let the deck stay smaller than your ambition."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is enough to make Anki useful."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Build Recall cluster has focused on access."
-      },
-      {
-        "type": "paragraph",
-        "text": "First, retrieval and spacing helped explain how knowledge becomes easier to reach over time. Then clinical recall helped shape what kind of knowledge is worth practicing. Anki can support that work, as long as it strengthens clinical access instead of flattening learning into disconnected answers."
-      },
-      {
-        "type": "paragraph",
-        "text": "The next part of the guide moves from recall into clinical reasoning."
-      },
-      {
-        "type": "paragraph",
-        "text": "That shift matters. Remembering information is not the same as knowing what to do with it. From there, the guide moves into how students keep a working explanation of the call while information is incomplete, changing, and sometimes misleading."
+        "text": "The next part of the guide moves from recall into clinical reasoning. That shift matters. Remembering information is not the same as knowing what to do with it. From there, the guide moves into how students keep a working explanation of the call while information is incomplete, changing, and sometimes misleading."
       }
     ],
     "glossaryTerms": [
@@ -7237,15 +6194,12 @@ export const sections: Section[] = ([
       "from-capture-to-smart-note",
       "types-of-notes-and-idea-maturation",
       "learning-the-patient-care-standards"
-    ]
+    ],
+    "previous": "obsidian-for-learning-paramedicine",
+    "next": ""
   }
-] as Omit<Section, 'status' | 'previous' | 'next'>[]).map(
-  (section, index, all) => ({
-    ...section,
-    status: 'drafted',
-    previous: all[index - 1]?.id ?? '',
-    next: all[index + 1]?.id ?? '',
-  }),
+] as Omit<Section, 'status'>[]).map(
+  (section) => ({ ...section, status: 'drafted' }),
 )
 
 export const getSectionById = (id: string) =>
