@@ -2490,7 +2490,7 @@ h3 {
   box-shadow: var(--vn-shadow-soft);
 }
 .tool-choice strong { color: var(--vn-teal-deep); font-size: 1.02rem; }
-.tool-choice span { color: var(--vn-soft-text); font-size: 0.9rem; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tool-choice span { color: var(--vn-soft-text); font-size: 0.9rem; line-height: 1.45; }
 .tool-choice:hover, .tool-choice:focus-visible { box-shadow: var(--vn-shadow-hover); outline: 2px solid var(--vn-focus); outline-offset: 2px; }
 .tool-back { display: flex; }
 
