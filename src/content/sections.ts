@@ -2450,7 +2450,7 @@ export const sections: Section[] = ([
       },
       {
         "type": "paragraph",
-        "text": "The page doesn't need a paragraph about confidence, resilience, or what the station taught you about yourself. Choose the correction with the greatest consequence or the one that has appeared before, and don't expect the next scenario to repair the entire debrief."
+        "text": "Choose the correction with the greatest consequence or the one that has appeared before, and don't expect the next scenario to repair the entire debrief."
       },
       {
         "type": "heading",

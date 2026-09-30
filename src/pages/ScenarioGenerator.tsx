@@ -80,13 +80,13 @@ function PracticeApps() {
           <ul className="about-list">
             <li>
               Choose one decision or behaviour to test. The{' '}
-              <a href="#/tools">Scenario Run Sheet</a> keeps the case fair.
+              <a href="#/tools/scenario-run-sheet">Scenario Run Sheet</a> keeps the case fair.
             </li>
             <li>Generate a case that fits it, and run it with a partner.</li>
             <li>Chart the call on the Practice ACR and upload it to ACR Review.</li>
             <li>
               Turn what you learned into one change with the{' '}
-              <a href="#/tools">Next-Attempt Debrief</a>, then test it on the
+              <a href="#/tools/next-attempt-debrief">Next-Attempt Debrief</a>, then test it on the
               next case.
             </li>
           </ul>

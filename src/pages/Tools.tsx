@@ -1,5 +1,6 @@
 import { activeTools } from '../content/tools'
-import { FieldCard, exportTool } from '../components/ToolFields'
+import { ToolWorkspace } from '../components/ToolFields'
+import { toolRedirects } from '../content/redirects'
 import type { Tool, ToolExample } from '../content/types'
 
 type ToolGroup = {
@@ -152,20 +153,7 @@ function renderTool(tool: Tool) {
         <div className="tool-section">
           <h3>Fields</h3>
           <p>{tool.fieldIntro ?? 'Use these fields as your working version.'}</p>
-          <div className="field-list">
-            {tool.fields.map((field) => (
-              <FieldCard key={field.id} toolId={tool.id} field={field} />
-            ))}
-            <div style={{ marginTop: '12px' }}>
-              <button
-                type="button"
-                className="card-action-button"
-                onClick={() => exportTool(tool)}
-              >
-                Export as PDF
-              </button>
-            </div>
-          </div>
+          <ToolWorkspace tool={tool} />
         </div>
       )}
 
@@ -183,8 +171,29 @@ function renderTool(tool: Tool) {
   )
 }
 
-function Tools() {
+type ToolsProps = {
+  toolId?: string
+  onNavigate: (hash: string) => void
+}
+
+// The Tools page is a chooser: every tool as a short card. Opening one shows just that tool, with its own
+// address (#/tools/next-attempt-debrief), so other pages can send a student straight to it.
+function Tools({ toolId, onNavigate }: ToolsProps) {
   const toolsById = new Map(activeTools.map((tool) => [tool.id, tool]))
+  const selected = toolId ? toolsById.get(toolRedirects[toolId] ?? toolId) : undefined
+
+  if (selected) {
+    return (
+      <section className="page-stack">
+        <nav className="tool-back">
+          <button type="button" className="card-action-button" onClick={() => onNavigate('#/tools')}>
+            All tools
+          </button>
+        </nav>
+        {renderTool(selected)}
+      </section>
+    )
+  }
 
   return (
     <section className="page-stack">
@@ -220,7 +229,14 @@ function Tools() {
                 </div>
               </div>
 
-              <div className="tool-list">{groupTools.map(renderTool)}</div>
+              <div className="tool-chooser">
+                {groupTools.map((tool) => (
+                  <a className="tool-choice" key={tool.id} href={`#/tools/${tool.id}`}>
+                    <strong>{tool.title}</strong>
+                    <span>{tool.purpose}</span>
+                  </a>
+                ))}
+              </div>
             </section>
           )
         })}

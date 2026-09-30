@@ -1,8 +1,19 @@
+import { getSectionById } from '../content/sections'
+
 type HomeProps = {
   onNavigate: (hash: string) => void
 }
 
+function readLastSection() {
+  try {
+    return getSectionById(window.localStorage.getItem('vitalnotes-last-section') ?? '')
+  } catch {
+    return undefined
+  }
+}
+
 function Home({ onNavigate }: HomeProps) {
+  const last = readLastSection()
   return (
     <section className="page-stack">
       <div className="hero-card">
@@ -15,9 +26,18 @@ function Home({ onNavigate }: HomeProps) {
         </p>
 
         <div className="hero-actions">
+          {last && (
+            <button
+              type="button"
+              className="primary-button"
+              onClick={() => onNavigate(`#/section/${last.id}`)}
+            >
+              Continue reading: {last.title}
+            </button>
+          )}
           <button
             type="button"
-            className="primary-button"
+            className={last ? 'card-action-button' : 'primary-button'}
             onClick={() => onNavigate('#/learning-path')}
           >
             Open the Learning Path

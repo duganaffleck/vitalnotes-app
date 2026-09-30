@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import GlossaryTerms from '../components/GlossaryTerms'
 import SectionBody from '../components/SectionBody'
 import SectionHeader from '../components/SectionHeader'
@@ -24,6 +24,15 @@ function isSection(section: Section | undefined): section is Section {
 function SectionPage({ section, onNavigate }: SectionPageProps) {
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null)
 
+  // Remembered on this device, so the home page can offer "Continue reading".
+  useEffect(() => {
+    try {
+      window.localStorage.setItem('vitalnotes-last-section', section.id)
+    } catch {
+      // storage unavailable
+    }
+  }, [section.id])
+
   const relatedTools = section.relatedTools
     .map((toolId) => getToolById(toolId))
     .filter(isTool)
@@ -40,7 +49,7 @@ function SectionPage({ section, onNavigate }: SectionPageProps) {
       <article className="reader-layout">
         <SectionHeader section={section} />
 
-        <SectionBody body={section.body} />
+        <SectionBody body={section.body} sectionId={section.id} />
 
         <div className="reader-support-stack">
           <SectionNavigation section={section} onNavigate={onNavigate} />

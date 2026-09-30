@@ -1,8 +1,40 @@
+import type { ReactNode } from 'react'
 import { companionApps } from '../content/companionApps'
+import { sections } from '../content/sections'
+import { tools } from '../content/tools'
 import type { BodyBlock } from '../content/types'
 
 type SectionBodyProps = {
   body: BodyBlock[]
+  sectionId?: string
+}
+
+// Chapter and tool names in the text become links: "start with Cognitive Load" takes you there, and
+// "the Reset Card" opens that tool. Longest names first, so "Clinical Reasoning Check" wins over "Clinical Reasoning".
+const TARGETS = [
+  ...sections.map((s) => ({ title: s.title, href: `#/section/${s.id}`, id: s.id })),
+  ...tools.map((t) => ({ title: t.title, href: `#/tools/${t.id}`, id: t.id })),
+].sort((a, b) => b.title.length - a.title.length)
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+const TITLE_RE = new RegExp(`\\b(${TARGETS.map((t) => escapeRe(t.title)).join('|')})\\b`, 'g')
+
+function linkTitles(text: string, selfId?: string): ReactNode {
+  const out: ReactNode[] = []
+  let last = 0
+  for (const m of text.matchAll(TITLE_RE)) {
+    const target = TARGETS.find((t) => t.title === m[1])
+    if (!target || target.id === selfId || m.index === undefined) continue
+    if (m.index > last) out.push(text.slice(last, m.index))
+    out.push(
+      <a className="inline-xref" href={target.href} key={`${m.index}-${target.id}`}>
+        {m[1]}
+      </a>,
+    )
+    last = m.index + m[1].length
+  }
+  if (!out.length) return text
+  if (last < text.length) out.push(text.slice(last))
+  return out
 }
 
 function getListClassName(body: BodyBlock[], index: number, itemCount: number) {
@@ -19,7 +51,7 @@ function getListClassName(body: BodyBlock[], index: number, itemCount: number) {
     .join(' ')
 }
 
-function SectionBody({ body }: SectionBodyProps) {
+function SectionBody({ body, sectionId }: SectionBodyProps) {
   return (
     <div className="section-body">
       {body.map((block, index) => {
@@ -34,7 +66,7 @@ function SectionBody({ body }: SectionBodyProps) {
               key={`${block.type}-${index}`}
             >
               {block.items.map((item, itemIndex) => (
-                <li key={`${block.type}-${index}-${itemIndex}`}>{item}</li>
+                <li key={`${block.type}-${index}-${itemIndex}`}>{linkTitles(item, sectionId)}</li>
               ))}
             </ul>
           )
@@ -69,7 +101,7 @@ function SectionBody({ body }: SectionBodyProps) {
           )
         }
 
-        return <p key={`${block.type}-${index}`}>{block.text}</p>
+        return <p key={`${block.type}-${index}`}>{linkTitles(block.text, sectionId)}</p>
       })}
     </div>
   )
