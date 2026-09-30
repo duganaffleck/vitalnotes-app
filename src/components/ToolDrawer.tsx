@@ -1,5 +1,5 @@
 import type { Tool, ToolExample } from '../content/types'
-import { FieldCard, exportTool } from './ToolFields'
+import { ToolWorkspace } from './ToolFields'
 
 type ToolDrawerProps = {
   tool: Tool | null
@@ -102,25 +102,7 @@ function ToolDrawer({ tool, isOpen, onClose }: ToolDrawerProps) {
           <div className="tool-drawer-section">
             <h3>Fields</h3>
             <p>{tool.fieldIntro ?? 'Use these fields as your working version.'}</p>
-            <div className="drawer-field-list">
-              {tool.fields.map((field) => (
-                <FieldCard
-                  key={field.id}
-                  toolId={tool.id}
-                  field={field}
-                  className="drawer-field-card"
-                />
-              ))}
-            </div>
-            <div style={{ marginTop: '12px' }}>
-              <button
-                type="button"
-                className="card-action-button"
-                onClick={() => exportTool(tool)}
-              >
-                Export as PDF
-              </button>
-            </div>
+            <ToolWorkspace tool={tool} drawer />
           </div>
         )}
 

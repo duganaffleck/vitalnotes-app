@@ -2475,3 +2475,34 @@ h3 {
     gap: 0.5rem;
   }
 }
+
+/* Tools chooser: a short card per tool; the tool opens on its own page */
+.tool-chooser { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem; }
+.tool-choice {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--vn-border-soft);
+  border-radius: 14px;
+  background: var(--vn-card-bg-strong);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: var(--vn-shadow-soft);
+}
+.tool-choice strong { color: var(--vn-teal-deep); font-size: 1.02rem; }
+.tool-choice span { color: var(--vn-soft-text); font-size: 0.9rem; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tool-choice:hover, .tool-choice:focus-visible { box-shadow: var(--vn-shadow-hover); outline: 2px solid var(--vn-focus); outline-offset: 2px; }
+.tool-back { display: flex; }
+
+/* A tool's working copy and its earlier entries */
+.tool-workspace-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 12px; }
+.tool-workspace-hint, .tool-workspace-note { margin: 0.5rem 0 0; font-size: 0.86rem; color: var(--vn-muted-text); }
+.tool-workspace-note { color: var(--vn-teal-deep); font-weight: 700; }
+.tool-history { margin-top: 14px; }
+.tool-history-entry { border-top: 1px solid var(--vn-border-soft); padding: 0.6rem 0; }
+.tool-history-entry > summary { cursor: pointer; display: flex; gap: 0.8rem; align-items: baseline; flex-wrap: wrap; }
+.tool-history-entry > summary span { color: var(--vn-soft-text); font-size: 0.9rem; }
+
+/* Chapter and tool names in the text */
+.section-body a.inline-xref { color: var(--vn-teal-deep); font-weight: 650; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.section-body a.inline-xref:hover { color: var(--vn-orange-deep); }

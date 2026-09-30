@@ -22,6 +22,7 @@ type AppRoute = {
     | 'resources'
     | 'about'
   sectionId?: string
+  toolId?: string
 }
 
 function parseHash(): AppRoute {
@@ -37,6 +38,10 @@ function parseHash(): AppRoute {
 
   if (hash === '/tools') {
     return { page: 'tools' }
+  }
+
+  if (hash.startsWith('/tools/')) {
+    return { page: 'tools', toolId: hash.replace('/tools/', '') }
   }
 
   if (hash === '/glossary') {
@@ -101,7 +106,7 @@ function App() {
       {route.page === 'section' && currentSection && (
         <SectionPage section={currentSection} onNavigate={navigateTo} />
       )}
-      {route.page === 'tools' && <Tools />}
+      {route.page === 'tools' && <Tools toolId={route.toolId} onNavigate={navigateTo} />}
       {route.page === 'glossary' && <Glossary onNavigate={navigateTo} />}
       {route.page === 'scenario-generator' && <ScenarioGenerator />}
       {route.page === 'resources' && <Resources onNavigate={navigateTo} />}

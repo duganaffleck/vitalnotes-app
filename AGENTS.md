@@ -41,6 +41,11 @@ The site currently includes:
   complexity and focus from the link) and optional `action` changes the button label. Chapters 16 to 18
   use this for "Practise this chapter".
 - an end-of-guide card after the Conclusion, pointing to the field tools, the practice apps and the extras
+- chapter and tool names in section text become links (SectionBody linkTitles)
+- Tools page: a chooser of short cards; each tool has its own address, #/tools/<tool-id>
+- tools keep a working copy plus dated earlier entries ("Start a new entry"), all in localStorage;
+  the Next-Attempt Debrief's "Practise this target" opens the Scenario Generator with the next behaviour as its focus
+- Home offers "Continue reading" from the last chapter opened on this device
 
 Learning path, following the book:
 
