@@ -9,6 +9,9 @@ export type CompanionApp = {
   action: string
 }
 
+export const practiceAcrVersion = '3.6.1'
+export const practiceAcrUrl = `https://scenario-generator-ten.vercel.app/acr/ACR_practice_v${practiceAcrVersion}.pdf`
+
 export const companionApps: Record<CompanionAppId, CompanionApp> = {
   'scenario-generator': {
     id: 'scenario-generator',
