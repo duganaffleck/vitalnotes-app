@@ -1,3 +1,5 @@
+import { practiceAcrVersion } from './companionApps'
+
 export type ResourceLink = {
   label: string
   href: string
@@ -287,7 +289,7 @@ export const relatedSystemCards: ResourceCard[] = [
     id: 'acr-review',
     title: 'ACR Review',
     body: [
-      'ACR Review is the Scenario Generator\'s documentation partner. Chart a practice call on the Practice ACR, upload it, and get feedback on what to fix first.',
+      `ACR Review is the Scenario Generator's documentation partner. Use Practice ACR v${practiceAcrVersion} for a new chart. Fill it in and save it in Adobe Acrobat Reader, then upload the saved PDF for feedback on what to fix first.`,
       'It checks the chart against the documentation standards and against the scenario it came from. It is for practice charts from lab only, never a real call or placement.',
     ],
     link: {

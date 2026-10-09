@@ -1,4 +1,4 @@
-import { companionApps } from '../content/companionApps'
+import { companionApps, practiceAcrVersion, practiceAcrUrl } from '../content/companionApps'
 
 // The two practice apps that sit beside the guide: where they help, and where the guide covers the method.
 function PracticeApps() {
@@ -64,6 +64,14 @@ function PracticeApps() {
               Documentation as Thinking
             </a>{' '}
             explains what to practise and why.
+          </p>
+          <p>
+            For a new chart, use{' '}
+            <a href={practiceAcrUrl} target="_blank" rel="noopener noreferrer">
+              Practice ACR v{practiceAcrVersion}
+            </a>. Fill it in and save it in Adobe Acrobat Reader, then close and
+            reopen the saved PDF to check your entries before uploading it.
+            Completed earlier v3 forms are still accepted by ACR Review.
           </p>
           <a
             className="external-resource-button"
